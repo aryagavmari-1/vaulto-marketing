@@ -6,45 +6,65 @@ import { BRAND } from '../config/brand';
   <section class="section">
     <div class="container prose">
       <span class="eyebrow">Trust</span>
-      <h1>Security at {BRAND.name}</h1>
+      <h1>Private by design.</h1>
+      <p class="lead">
+        Your family's financial life is some of the most sensitive information you have.
+        Here's plainly how {BRAND.name} protects it — and what we don't yet claim.
+      </p>
       <p class="updated">Last updated June 2026</p>
 
-      <h2>Your data is isolated to you</h2>
+      <h2>What we do today</h2>
+
+      <h3>Your vault is isolated to you</h3>
       <p>
-        Access controls are enforced on every request so that your vault is visible only to
-        you and the people you explicitly grant access. One account cannot reach another
-        account's data.
+        Every request is checked against your account. Your records are scoped to your vault and
+        verified for ownership before anything is returned — one user's data is never served to
+        another.
       </p>
 
-      <h2>Sharing is consent-based and revocable</h2>
+      <h3>You control every share, and you can revoke it</h3>
       <p>
-        When you share a snapshot with a professional — a solicitor, advisor, or accountant —
-        you choose exactly what to include. Consent is recorded, and you can revoke access at
-        any time.
+        Nothing is shared unless you grant it. When you create a referral package or share with a
+        professional, you choose what's included, and consent is recorded with a clear scope. You
+        can revoke access at any time, and the revocation is tracked.
       </p>
 
-      <h2>We keep an audit trail</h2>
+      <h3>We keep an audit trail</h3>
       <p>
-        Consent and access events are logged, so there is a record of what happened with your
-        information.
+        Key actions on your vault are recorded — what happened, when, and on which vault — so
+        there's an accountable history of access and changes.
       </p>
 
-      <h2>Passwords</h2>
+      <h3>Your sign-in is protected</h3>
       <p>
-        Account passwords are stored using a salted, computationally-hard hashing scheme
-        (scrypt) — we never store your password in plain text.
+        Passwords are hashed with scrypt and verified using a timing-safe comparison. We never
+        store your password in plain text.
       </p>
 
-      <h2>We don't sell your data</h2>
+      <h3>Document links are time-limited</h3>
       <p>
-        Your family's information is yours. We do not sell it. See our
-        <a href="/privacy/">Privacy</a> page for how we handle data.
+        When you open or share a stored document, access runs through a short-lived signed link
+        that expires — links don't live forever.
       </p>
 
-      <h2>Responsible disclosure</h2>
+      <h3>We don't sell your data</h3>
       <p>
-        Found a security issue? Email <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>
-        and we'll respond promptly.
+        Your vault exists to serve you and the people you choose to share it with. We do not sell
+        your personal or financial data.
+      </p>
+
+      <h2>What we don't claim (yet)</h2>
+      <p>
+        We'd rather be honest than impressive. Today we do <strong>not</strong> claim
+        application-level encryption-at-rest, "bank-grade" or "military-grade" encryption, or any
+        third-party security certification (such as SOC 2 or ISO). As we add and independently
+        validate further protections, we'll update this page — and we'll only say what's true.
+      </p>
+
+      <h2>Questions</h2>
+      <p>
+        For privacy or security questions, contact us at
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
       </p>
     </div>
   </section>

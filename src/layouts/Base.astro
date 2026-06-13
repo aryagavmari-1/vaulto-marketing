@@ -42,5 +42,23 @@ const canonical = new URL(path, BRAND.url).href;
       <slot />
     </main>
     <Footer />
+
+    <!-- Analytics (ARY-25 spec). Cookieless, no PII in event props. Sink is
+         Plausible/Umami when configured; otherwise track() is a safe no-op. -->
+    <script is:inline>
+      (() => {
+        window.track = (name, props) => {
+          try { window.plausible && window.plausible(name, { props: props || {} }); } catch (e) {}
+        };
+        // page_view is emitted natively by the analytics script; here we wire
+        // the marketing CTAs declared via data attributes.
+        document.addEventListener('click', (e) => {
+          const cta = e.target.closest('[data-cta]');
+          if (cta) window.track('cta_click', { cta_id: cta.getAttribute('data-cta'), path: location.pathname });
+          const out = e.target.closest('[data-outbound]');
+          if (out) window.track('outbound_click', { destination: out.getAttribute('data-outbound') });
+        });
+      })();
+    </script>
   </body>
 </html>

@@ -1,18 +1,20 @@
 ---
 import { WAITLIST } from '../config/content';
 import { ESP } from '../config/brand';
+const placement = 'closing';
 ---
 <section class="section" id="waitlist">
   <div class="container">
     <div class="waitlist">
       <h2>{WAITLIST.title}</h2>
       <p>{WAITLIST.body}</p>
-      <form class="wl-form" id="wl-form" data-endpoint={ESP.endpoint} data-formid={ESP.formId} novalidate>
+      <form class="wl-form" id="wl-form" data-endpoint={ESP.endpoint} data-formid={ESP.formId} data-placement={placement} novalidate>
         <label class="visually-hidden" for="wl-email">Email address</label>
         <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder={WAITLIST.placeholder} />
         <button class="btn btn-primary" type="submit">{WAITLIST.cta}</button>
       </form>
       <p class="wl-msg" id="wl-msg" role="status" aria-live="polite"></p>
+      <p class="wl-note">{WAITLIST.reassurance}</p>
       {!ESP.endpoint && (
         <p class="wl-note">Preview mode — no ESP endpoint configured yet. Set <code>PUBLIC_ESP_ENDPOINT</code> to capture live signups.</p>
       )}
@@ -26,6 +28,21 @@ import { ESP } from '../config/brand';
     if (!form) return;
     const msg = document.getElementById('wl-msg');
     const input = document.getElementById('wl-email');
+    const placement = form.dataset.placement || 'closing';
+    const track = (n, p) => { try { window.track && window.track(n, p); } catch (e) {} };
+
+    // waitlist_view when the form scrolls into view (once).
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) { track('waitlist_view', { placement }); io.disconnect(); }
+        });
+      }, { threshold: 0.4 });
+      io.observe(form);
+    } else {
+      track('waitlist_view', { placement });
+    }
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = (input.value || '').trim();
@@ -51,6 +68,8 @@ import { ESP } from '../config/brand';
           await new Promise((r) => setTimeout(r, 350));
           try { localStorage.setItem('waitlist:' + email, new Date().toISOString()); } catch {}
         }
+        // No email value in analytics — only the boolean (ARY-25: no PII).
+        track('waitlist_submit', { placement, email_provided: true });
         form.reset();
         msg.textContent = successMsg;
         msg.style.color = '#bff0d8';

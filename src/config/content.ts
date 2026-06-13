@@ -1,63 +1,60 @@
 /**
- * Landing-page copy. Grounded ONLY in shipped capabilities per the ARY-17 plan
- * (§3 positioning, §10 guardrails). Do NOT add security claims beyond what the
- * code supports (no encryption-at-rest / "bank-grade" / SOC 2 until shipped).
- *
- * Trust-page (/security, /privacy) and blog copy come from the CMO (C1/C2) and
- * live in their own files — this is the marketing landing surface only.
+ * Landing-page copy — verbatim from the CMO's approved deck (ARY-23 §2),
+ * which is grounded 1:1 to shipped code (ARY-23 §0 traceability table) and
+ * passes the §10 honesty guardrail. Do NOT add security claims beyond shipped
+ * capabilities (no encryption-at-rest / "bank-grade" / SOC 2).
  */
-import { BRAND } from './brand';
 
 export const HERO = {
   eyebrow: 'Private family asset vault',
   title: 'Everything your family owns, in one private place.',
   subtitle:
-    "Inventory your assets, store the documents that prove them, and see your net worth at a glance. When a big life moment comes, get clear AI guidance — and a clean handoff to your advisor.",
+    'Vaulto turns scattered accounts, property, and documents into one clear picture of your net worth — and gets you ready for life’s big moments. Snap a photo; we do the data entry.',
   primaryCta: 'Join the waitlist',
-  secondaryCta: 'See how it works',
-  reassurance: 'Free to join · Private by design · No card required',
+  secondaryCta: 'See how it works ↓',
+  reassurance: 'Private by design. Your data is isolated to you, and you control every share.',
 };
 
 export const PILLARS = [
   {
     icon: 'layers',
-    title: 'One source of truth',
+    title: 'One source of truth for what you own',
     body:
-      'Assets, liabilities, documents and net worth in a single private vault. Group everything into collections and track value over time.',
-    proof: 'Dashboard · collections · net-worth history',
+      'Record every asset and liability — value or value-range, where it is, whether it’s insured, condition, serial number, tags — and group it into collections. Watch your household net worth in one dashboard, with history over time. No more “which account was that in?”',
+    proof: 'Inventory · collections · net-worth history',
   },
   {
     icon: 'camera',
-    title: 'Effortless capture',
+    title: 'Snap a photo. We’ll do the data entry.',
     body:
-      'Snap a photo on your phone and AI does the data entry — drafting asset records you confirm, edit, or reject. Quick "sprints" make a whole room fast.',
-    proof: 'Live camera & document scanner · AI draft review',
+      'Point your phone at a room, a receipt, or a document. AI reads it and drafts the record — you just confirm, edit, or skip. Capture sprints (“a room”, “20 things”, “your documents”) turn an overwhelming job into a few short sessions.',
+    proof: 'Live camera & scanner · AI draft review queue',
   },
   {
     icon: 'compass',
-    title: "Ready for life's big events",
+    title: 'Be ready before life forces it',
     body:
-      'A free AI overview of what is at stake — wills, inheritance, tax, divorce, business succession and more — then a clean snapshot you can share with a professional.',
-    proof: 'AI advisory across 8+ life events · advisor referral packages',
+      'Get a free AI overview of what’s at stake across 11 life-event topics — from will planning and inheritance to divorce, a prenup, family-business succession, insurance, and tax. Ask deeper questions, get a report of risks and recommended actions, then hand a clean snapshot to your solicitor or advisor.',
+    proof: 'AI guidance is informational — it doesn’t replace your professional',
   },
 ];
 
 export const CAPTURE_DEMO = {
-  title: 'Snap a photo. We do the paperwork.',
-  body:
-    'Point your camera at a room, a receipt, or a document. The AI reads it and drafts a structured record — value, location, condition, serial number — that you review in seconds. No spreadsheets, no manual entry.',
+  title: 'From a shoebox to a vault — in an afternoon',
+  body: 'No spreadsheets. No marathon data-entry session.',
   steps: [
-    { n: '01', label: 'Capture', text: 'Photograph an item or document with the in-app scanner.' },
-    { n: '02', label: 'AI drafts', text: 'AI extracts the details and proposes a ready-to-save record.' },
-    { n: '03', label: 'Confirm', text: 'You approve, tweak, or reject — you stay in control of your data.' },
+    { n: '01', label: 'Snap', text: 'Photograph items, receipts, or documents on your phone.' },
+    { n: '02', label: 'Review', text: 'AI drafts the details; you confirm or tweak in seconds.' },
+    { n: '03', label: 'See it add up', text: 'Each item updates your net worth and vault strength.' },
   ],
 };
 
 export const ADVISORY = {
-  eyebrow: 'AI life-event advisory',
-  title: 'Guidance before life forces the question.',
+  eyebrow: 'A free read on what to do next',
+  title: 'Be ready before life forces it.',
   body:
-    'Most families cannot answer a simple question: what do we own, and where is the proof? Once your vault is in place, get a free AI overview of what to do for the moments that matter — with estimate ranges, key risks, and recommended next steps.',
+    'Facing a will, an inheritance, or a separation? Answer a few questions and get an instant overview — the key risks and the actions worth taking — at no cost. Go deeper when you’re ready, and share a clean summary with the professional handling it.',
+  // The verified 11 advisory channels (ARY-23 §0 — real names, do not invent).
   channels: [
     'Will planning',
     'Inheritance',
@@ -67,26 +64,32 @@ export const ADVISORY = {
     'Family-business succession',
     'Insurance',
     'Tax efficiency',
+    'Cross-border',
+    'Financial overview',
+    'Asset financing',
   ],
-  footnote: 'Educational guidance, not legal or financial advice. Hand a clean snapshot to your own professional when you are ready.',
+  cta: 'Try a free overview (closed beta)',
+  footnote: 'Guidance is informational and helps you prepare — it doesn’t replace your professional.',
 };
 
-/** Trust strip — ONLY shipped, code-grounded claims (ARY-17 §3 trust narrative + §10). */
+/** Trust strip — ARY-23 §2; each chip maps to shipped code. No overclaim. */
 export const TRUST = {
-  title: 'Private by design.',
+  title: 'Built to be trusted with your most private records',
   points: [
-    { title: 'Your data is isolated to you', text: 'Per-user isolation is enforced on every request — nobody else can see your vault.' },
-    { title: 'Sharing is consent-based & revocable', text: 'You choose exactly what to share with a professional, and you can revoke access anytime.' },
-    { title: 'We keep an audit trail', text: 'Consent and access events are recorded, so you can see what happened with your data.' },
-    { title: "We don't sell your data", text: 'Your family information is yours. It is never sold.' },
+    { title: 'Isolated to you', text: 'Your vault is scoped to your account on every request.' },
+    { title: 'Consent-based sharing', text: 'Every share is granted by you and revocable anytime.' },
+    { title: 'Audit trail', text: 'We keep a record of access and changes.' },
+    { title: 'Protected sign-in', text: 'Passwords are scrypt-hashed, never stored in plain text.' },
   ],
-  link: { label: 'Read our security overview', href: '/security/' },
+  link: { label: 'How we protect your data', href: '/security/' },
 };
 
 export const WAITLIST = {
-  title: `Be first into ${BRAND.shortName}.`,
-  body: 'Join the waitlist for early access to the closed beta. We will email you when your invite is ready — no spam, unsubscribe anytime.',
+  title: 'Get early access',
+  body:
+    'Vaulto is in closed beta. Join the waitlist and we’ll invite you in — and help you capture your first assets in minutes.',
   cta: 'Join the waitlist',
-  success: "You're on the list. We'll be in touch when your invite is ready.",
-  placeholder: 'you@example.com',
+  success: 'You’re on the list. We’ll email you when your invite is ready.',
+  placeholder: 'Email address',
+  reassurance: 'We’ll only email you about your invite. We don’t sell your data.',
 };

@@ -11,6 +11,9 @@ import { ADVISORY } from '../config/content';
     <div class="chips">
       {ADVISORY.channels.map((c) => <span class="chip">{c}</span>)}
     </div>
+    <div style="margin:18px 0 6px;">
+      <a class="btn btn-primary" href="#waitlist" data-cta="advisory_waitlist" style="background:var(--accent);color:#2a1c08;">{ADVISORY.cta}</a>
+    </div>
     <p class="footnote">{ADVISORY.footnote}</p>
   </div>
 </section>
