@@ -1,42 +1,36 @@
 /**
  * SINGLE SOURCE OF TRUTH for everything brand-/domain-specific.
  *
- * ⚠️  BRAND IS PROVISIONAL. The name + domain below are the CMO's *current*
- *     recommended pick and are pending board approval (approval f9b21c08 —
- *     "Pick a brand name (fresh, more distinctive set) + authorize domain").
- *     The whole site is built brand-agnostically so that confirming the brand
- *     is a one-file edit:
+ * ✅  BRAND LOCKED 2026-06-13: `Vaulto` — domain `myvaulto.com`.
+ *     Board pick on ARY-39 (approval 8fea6e98-29c2-4353-aea9-ee50877fc06e),
+ *     superseding the rejected Kithvault set (approval f9b21c08). The site was
+ *     built brand-agnostically, so locking the brand was a one-file edit here
+ *     plus two static assets (public/og.svg, public/robots.txt sitemap URL).
  *
- *       1. Set `provisional: false`.
- *       2. Update `name`, `shortName`, `domain`, `url`, `email.*` to the approved values.
- *       3. Drop in CMO copy for /security + /privacy (C1) and /blog (C2).
- *       4. Set ESP + analytics IDs from env (see .env.example).
- *       5. `npm run build` → deploy.
- *     Also update the brand text baked into two static assets: public/og.svg
- *     and public/robots.txt (sitemap URL).
- *
- * Current candidates (approval f9b21c08): Kithvault (kithvault.com, rec.) ·
- * Stowevault (stowevault.com) · FamilyNetWorth (familynetworth.com).
- * NOTE: the prior set (Our Asset Vault / HearthVault, approval 59f8fc72) was
- * REJECTED by the board as too literal — kept brand-agnostic so it cost 0 rework.
+ *     Remaining to go fully live (tracked on ARY-27 / DNS+email):
+ *       - Domain purchase + DNS for myvaulto.com (board → CMO).
+ *       - Set ESP + analytics IDs from env (see .env.example).
+ *       - `npm run build` → deploy (Cloudflare Pages / Vercel free tier, $0).
+ *     The hello@/privacy@ inboxes go live once ARY-27 provisions email.
  */
 export const BRAND = {
-  provisional: true,
+  provisional: false,
 
-  name: 'Kithvault',
-  shortName: 'Kithvault',
+  name: 'Vaulto',
+  shortName: 'Vaulto',
   // No scheme-less host here; `url` is the canonical origin used by Astro/sitemap.
-  domain: 'kithvault.com',
-  url: 'https://kithvault.com',
+  domain: 'myvaulto.com',
+  url: 'https://myvaulto.com',
 
-  tagline: 'Everything your family owns, in one private place — and a plan for what happens next.',
+  // Primary tagline locked from messaging deck §4 (ARY-23); long form kept as description.
+  tagline: 'Everything your family owns, in one place.',
   description:
     'A private family asset vault that turns scattered accounts and documents into a clear net-worth picture and an estate-ready plan — so when life happens, your family is prepared.',
 
   // Contact inboxes (provisioned once the domain is owned — ARY-27 / DNS+email).
   email: {
-    hello: 'hello@kithvault.com',
-    privacy: 'privacy@kithvault.com',
+    hello: 'hello@myvaulto.com',
+    privacy: 'privacy@myvaulto.com',
   },
 
   social: {

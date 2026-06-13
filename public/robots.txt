@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kithvault.com/sitemap-index.xml
+Sitemap: https://myvaulto.com/sitemap-index.xml
