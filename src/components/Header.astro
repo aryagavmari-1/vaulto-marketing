@@ -1,0 +1,23 @@
+---
+import { BRAND } from '../config/brand';
+---
+{BRAND.provisional && (
+  <div class="badge-provisional">
+    Provisional brand &amp; domain — pending board approval. Name/domain swap in one file (<code>src/config/brand.ts</code>).
+  </div>
+)}
+<header class:list={["site-header", BRAND.provisional && "with-banner"]}>
+  <div class="container nav">
+    <a class="brandmark" href="/">
+      <span class="brand-dot" aria-hidden="true"></span>
+      {BRAND.name}
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#how">How it works</a>
+      <a href="/#advisory">Advisory</a>
+      <a href="/security/">Security</a>
+      <a href="/blog/">Blog</a>
+      <a class="btn btn-primary" href="/#waitlist" style="padding:9px 18px;">Join waitlist</a>
+    </nav>
+  </div>
+</header>

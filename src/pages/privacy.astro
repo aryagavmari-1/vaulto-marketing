@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { BRAND } from '../config/brand';
+---
+<Base title="Privacy" path="/privacy/" description={`How ${BRAND.name} handles your personal data.`}>
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">Trust</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Placeholder copy — final policy pending CMO content deliverable C1 and legal review.</p>
+
+      <div class="note">
+        <strong>Editor note (remove before launch):</strong> This is a structural placeholder,
+        not a finished legal policy. CMO C1 + legal review supply the binding text before public
+        launch. Keep claims within shipped capabilities (ARY-17 §10).
+      </div>
+
+      <h2>What we collect</h2>
+      <p>
+        The information you choose to put into your vault (assets, documents, and related
+        details), the account details needed to sign you in, and basic usage data needed to run
+        and improve the service.
+      </p>
+
+      <h2>How we use it</h2>
+      <p>
+        To provide the product: store your inventory and documents, calculate your net worth,
+        generate AI overviews you request, and create the snapshots you choose to share. We do
+        not sell your data.
+      </p>
+
+      <h2>Sharing &amp; consent</h2>
+      <p>
+        Data is only shared with a professional when you explicitly create and send a snapshot.
+        Consent is recorded and can be revoked at any time.
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Access and export the information in your vault.</li>
+        <li>Revoke a professional's access to a shared snapshot.</li>
+        <li>Request deletion of your account and data.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about privacy? Email
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

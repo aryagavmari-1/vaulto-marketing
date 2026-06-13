@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+<Base title="Blog" path="/blog/" description="Guides on family asset inventories, wills, inheritance, net worth, and estate planning.">
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:36px;">
+        <span class="eyebrow">Guides</span>
+        <h1>Get your family's affairs in order.</h1>
+        <p class="lead">Practical, plain-English guides on inventories, wills, inheritance, and net worth.</p>
+      </div>
+      <div class="post-list">
+        {posts.length === 0 && (
+          <p class="center muted">Cornerstone articles (CMO C2) are on the way.</p>
+        )}
+        {posts.map((post) => (
+          <a class="post-item" href={`/blog/${post.id}/`}>
+            <div class="meta">{fmt(post.data.pubDate)}{post.data.placeholder ? ' · template' : ''}</div>
+            <h3>{post.data.title}</h3>
+            <p class="excerpt">{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

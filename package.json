@@ -1,0 +1,17 @@
+{
+  "name": "asset-vault-marketing",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "v1 marketing site for the Family Asset Vault product (brand provisional — see src/config/brand.ts). Static Astro site, $0 hosting on Cloudflare Pages / Vercel.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5.6.1",
+    "@astrojs/sitemap": "^3.3.0"
+  }
+}

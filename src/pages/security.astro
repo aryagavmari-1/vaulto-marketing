@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import { BRAND } from '../config/brand';
+---
+<Base title="Security" path="/security/" description={`How ${BRAND.name} protects your family's data.`}>
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">Trust</span>
+      <h1>Security at {BRAND.name}</h1>
+      <p class="updated">Placeholder copy — final wording pending CMO content deliverable C1.</p>
+
+      <div class="note">
+        <strong>Editor note (remove before launch):</strong> This page is intentionally
+        conservative. Every statement below maps to a shipped capability per the ARY-17 plan
+        (§3, §10). Do <em>not</em> add claims about encryption-at-rest, “bank-grade” or
+        “military-grade” encryption, SOC 2, or ISO certification until the code and audits
+        support them. CMO C1 copy replaces this body.
+      </div>
+
+      <h2>Your data is isolated to you</h2>
+      <p>
+        Access controls are enforced on every request so that your vault is visible only to
+        you and the people you explicitly grant access. One account cannot reach another
+        account's data.
+      </p>
+
+      <h2>Sharing is consent-based and revocable</h2>
+      <p>
+        When you share a snapshot with a professional — a solicitor, advisor, or accountant —
+        you choose exactly what to include. Consent is recorded, and you can revoke access at
+        any time.
+      </p>
+
+      <h2>We keep an audit trail</h2>
+      <p>
+        Consent and access events are logged, so there is a record of what happened with your
+        information.
+      </p>
+
+      <h2>Passwords</h2>
+      <p>
+        Account passwords are stored using a salted, computationally-hard hashing scheme
+        (scrypt) — we never store your password in plain text.
+      </p>
+
+      <h2>We don't sell your data</h2>
+      <p>
+        Your family's information is yours. We do not sell it. See our
+        <a href="/privacy/">Privacy</a> page for how we handle data.
+      </p>
+
+      <h2>Responsible disclosure</h2>
+      <p>
+        Found a security issue? Email <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>
+        and we'll respond promptly.
+      </p>
+    </div>
+  </section>
+</Base>

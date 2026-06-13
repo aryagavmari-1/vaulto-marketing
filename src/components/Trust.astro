@@ -1,0 +1,26 @@
+---
+import { TRUST } from '../config/content';
+import Icon from './Icon.astro';
+---
+<section class="section" id="trust">
+  <div class="container">
+    <div class="center" style="margin-bottom:36px;">
+      <h2>{TRUST.title}</h2>
+      <p class="lead">Only what the product actually does today — no claims we can't back.</p>
+    </div>
+    <div class="grid grid-2">
+      {TRUST.points.map((pt) => (
+        <div class="trust-item">
+          <span class="trust-check"><Icon name="check" size={15} /></span>
+          <div>
+            <h3>{pt.title}</h3>
+            <p style="margin:0;">{pt.text}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div class="center" style="margin-top:30px;">
+      <a class="btn btn-ghost" href={TRUST.link.href}>{TRUST.link.label}</a>
+    </div>
+  </div>
+</section>

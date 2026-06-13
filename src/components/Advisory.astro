@@ -1,0 +1,16 @@
+---
+import { ADVISORY } from '../config/content';
+---
+<section class="section advisory" id="advisory">
+  <div class="container">
+    <div style="max-width:640px;">
+      <span class="eyebrow">{ADVISORY.eyebrow}</span>
+      <h2>{ADVISORY.title}</h2>
+      <p>{ADVISORY.body}</p>
+    </div>
+    <div class="chips">
+      {ADVISORY.channels.map((c) => <span class="chip">{c}</span>)}
+    </div>
+    <p class="footnote">{ADVISORY.footnote}</p>
+  </div>
+</section>
