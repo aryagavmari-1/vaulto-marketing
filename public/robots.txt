@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ourassetvault.com/sitemap-index.xml
+Sitemap: https://kithvault.com/sitemap-index.xml

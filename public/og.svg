@@ -13,7 +13,7 @@
   <circle cx="1040" cy="120" r="260" fill="#ffffff" opacity="0.05"/>
   <g transform="translate(90,90)">
     <rect width="56" height="56" rx="14" fill="url(#dot)"/>
-    <text x="76" y="38" fill="#eaf3f1" font-family="system-ui, sans-serif" font-size="30" font-weight="700">Our Asset Vault</text>
+    <text x="76" y="38" fill="#eaf3f1" font-family="system-ui, sans-serif" font-size="30" font-weight="700">Kithvault</text>
   </g>
   <text x="90" y="320" fill="#ffffff" font-family="system-ui, sans-serif" font-size="62" font-weight="800" letter-spacing="-1.5">
     <tspan x="90" dy="0">Everything your family owns,</tspan>
