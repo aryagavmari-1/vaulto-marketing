@@ -25,6 +25,13 @@ permissions:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    # The `secrets` context cannot be referenced directly inside a step `if:` —
+    # doing so is a parse-time workflow error (run fails at 0s with no logs).
+    # Hoist the gate into a job-level env (secrets ARE allowed here), then the
+    # deploy step keys off `env`. This keeps build-validation running even when
+    # the Cloudflare secrets aren't set yet.
+    env:
+      HAS_CF_DEPLOY: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -39,7 +46,7 @@ jobs:
           PUBLIC_ESP_FORM_ID: ${{ secrets.PUBLIC_ESP_FORM_ID }}
         run: npm run build
       - name: Deploy to Cloudflare Pages
-        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        if: ${{ env.HAS_CF_DEPLOY == 'true' }}
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
