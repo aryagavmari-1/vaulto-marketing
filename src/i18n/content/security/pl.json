@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Szyfrowanie podczas przesyłania.",
-      "body": "Każde połączenie z Vaulto używa TLS (HTTPS), więc Twoje dane są szyfrowane podczas przesyłania między Tobą a nami."
+      "body": "Każde połączenie z Vaulto korzysta z TLS (HTTPS) — tego samego szyfrowania z ikoną kłódki, które widzisz na stronach bankowych i sklepowych. Twoje dane są szyfrowane, gdy podróżują między Tobą a nami, więc nikt po drodze nie może ich odczytać."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Szyfrowane w spoczynku.",
+      "body": "Twoje dane i przesłane pliki znajdują się na profesjonalnie zarządzanych, zabezpieczonych serwerach i są szyfrowane w spoczynku — „w spoczynku” oznacza po prostu, gdy są przechowywane, a nie gdy są w ruchu. Baza danych przechowująca Twoje rekordy oraz magazyn przechowujący Twoje zdjęcia i skany są oba zaszyfrowane, a Twoje pliki są dostępne wyłącznie poprzez krótkotrwałe, podpisane linki."
     },
     {
       "title": "Hasła nigdy nie są przechowywane w postaci jawnej.",
-      "body": "Haszujemy Twoje hasło przy użyciu silnego, nowoczesnego algorytmu (scrypt) — nawet my nie możemy go odczytać."
+      "body": "„Haszujemy” Twoje hasło silną, nowoczesną metodą o nazwie scrypt — hasz to jednokierunkowe wymieszanie, którego nie da się odwrócić z powrotem do Twojego hasła. Nawet my nie możemy go odczytać."
     },
     {
       "title": "Sesje o krótkim czasie życia.",
-      "body": "Tokeny logowania mają krótki czas życia i są przechowywane w pamięci; token, który utrzymuje Cię zalogowaną/zalogowanym, znajduje się w bezpiecznym pliku cookie odpornym na skrypty."
+      "body": "„Token” logowania, który potwierdza, że to Ty, szybko wygasa i jest przechowywany w pamięci. Token, który utrzymuje Twoje zalogowanie, znajduje się w bezpiecznym, odpornym na skrypty pliku cookie — małym pliku przeglądarki, którego szkodliwe skrypty na stronie nie mogą odczytać ani wykraść."
     },
     {
       "title": "Ochrona przed nadużyciami.",
-      "body": "Ograniczamy liczbę prób logowania i innych wrażliwych działań, aby bronić się przed zautomatyzowanymi atakami."
+      "body": "Ograniczamy, ile razy z rzędu można próbować logowania i innych wrażliwych działań — nazywa się to „ograniczaniem częstotliwości” (rate-limiting). Blokuje to szybkie, powtarzane zgadywanie, na którym opierają się ataki automatyczne."
     },
     {
       "title": "Kontrola dostępu.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Twoje dane należą do Ciebie",
-    "body": ""
+    "body": "Twoje dane należą do Ciebie — w dowolnej chwili wyeksportuj pełną, odczytywalną maszynowo kopię swoich rekordów (JSON, CSV lub PDF) z Ustawień. „Odczytywalny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Masowe pobieranie Twoich oryginalnych plików jest w naszych planach.) Wspiera to Twoje prawo do przenoszenia danych na mocy GDPR — unijnego prawa o ochronie prywatności (artykuł 20), które pozwala zabrać dane ze sobą."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Prosty język, bez przesady.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie w trakcie przesyłania, zaszyfrowaną bazę danych, pliki w prywatnym magazynie, zahaszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że mamy „zero-knowledge” (gdzie nawet my nigdy nie moglibyśmy odblokować Twoich danych), „poziom bankowy” ani żadnej certyfikacji, na którą nie zasłużyliśmy. Eksport danych działa (powyżej). Gdy dodamy szyfrowanie na poziomie aplikacji — dodatkowy zamek stosowany wewnątrz samej aplikacji, na wierzchu powyższego szyfrowania — lub formalny audyt zewnętrzny, w którym niezależna firma zajmująca się bezpieczeństwem nas sprawdza, ta strona to odnotuje.",
     "contact": "W sprawach prywatności lub bezpieczeństwa skontaktuj się z"
   }
 }

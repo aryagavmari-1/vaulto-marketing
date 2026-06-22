@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Sind meine Daten sicher?",
-      "a": "",
+      "a": "Ja. Deine Verbindung ist bei der Übertragung mit TLS verschlüsselt — der Verschlüsselung mit dem Schloss-Symbol (HTTPS), die du auf Banking- und Shopping-Seiten siehst — sodass deine Daten unterwegs verschlüsselt sind und niemand dazwischen sie lesen kann. Die Datenbank deines Kontos ist im Ruhezustand (während sie gespeichert ist) auf professionell verwalteten, gesicherten Servern verschlüsselt, und hochgeladene Dateien werden in privatem Speicher aufbewahrt, der nur über kurzlebige, signierte Links erreichbar ist. Dein Passwort wird niemals im Klartext gespeichert, und der Zugriff ist streng auf dein Konto beschränkt.",
       "onward": "So halten wir alles sicher →"
     },
     {

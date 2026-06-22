@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Encrypted in transit.",
-      "body": "Every connection to Vaulto uses TLS (HTTPS), so your data is encrypted as it travels between you and us."
+      "body": "Every connection to Vaulto uses TLS (HTTPS) — the same padlock-icon encryption you see on banking and shopping sites. Your data is scrambled while it travels between you and us, so no one in between can read it."
     },
     {
-      "title": "Encrypted database; private file storage.",
-      "body": "Your account data is stored in a managed database that is encrypted at rest. Your uploaded files are kept in private storage, reachable only through short-lived, signed links."
+      "title": "Encrypted at rest.",
+      "body": "Your records and uploaded files sit on professionally managed, secured servers, encrypted at rest — \"at rest\" simply means while they're stored, not while they're moving. The database that holds your records and the storage that holds your photos and scans are both encrypted, and your files are reachable only through short-lived, signed links."
     },
     {
       "title": "Passwords never stored plainly.",
-      "body": "We hash your password with a strong, modern algorithm (scrypt) — even we can't read it."
+      "body": "We \"hash\" your password with a strong, modern method called scrypt — a hash is a one-way scramble that can't be turned back into your password. Even we can't read it."
     },
     {
       "title": "Short-lived sessions.",
-      "body": "Sign-in tokens are short-lived and kept in memory; the token that keeps you signed in lives in a secure, script-proof cookie."
+      "body": "The sign-in \"token\" that proves it's you expires quickly and is kept in memory. The token that keeps you signed in lives in a secure, script-proof cookie — a small browser file that harmful scripts on a page can't read or steal."
     },
     {
       "title": "Protected against abuse.",
-      "body": "We rate-limit sign-in and other sensitive actions to defend against automated attacks."
+      "body": "We limit how many times sign-in and other sensitive actions can be tried in a row — this is called \"rate-limiting.\" It blocks the fast, repeated guessing that automated attacks rely on."
     },
     {
       "title": "Access controls.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Your data is yours",
-    "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) anytime, from Settings. No lock-in, no waiting on us. (Bulk download of your original uploaded files is on our roadmap.) This export supports your data-portability rights."
+    "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) anytime, from Settings. Machine-readable means a standard file another app or spreadsheet can open and re-use — not a locked PDF. No lock-in, no waiting on us. (Bulk download of your original uploaded files is on our roadmap.) This supports your right to data portability under GDPR — the EU privacy law (Article 20) that lets you take your data with you."
   },
   "honesty": {
-    "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit, an encrypted database, files kept in private storage, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge,\" \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption or a formal third-party audit, this page will say so.",
+    "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit, an encrypted database, files kept in private storage, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge\" (where not even we could ever unlock your data), \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption — an extra lock applied inside the app itself, on top of the encryption above — or a formal third-party audit, where an independent security firm reviews us, this page will say so.",
     "contact": "For privacy or security questions, contact"
   },
   "finalCta": {

@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Verilerim güvende mi?",
-      "a": "",
+      "a": "Evet. Bağlantınız aktarım sırasında TLS ile şifrelenir — bankacılık ve alışveriş sitelerinde gördüğünüz asma kilit simgeli şifreleme (HTTPS) — böylece verileriniz yol alırken şifrelenir ve aradaki hiç kimse onları okuyamaz. Hesabınızın veritabanı, profesyonelce yönetilen, güvenli sunucularda beklemede (depolanırken) şifrelenir ve yüklenen dosyalar yalnızca kısa ömürlü, imzalı bağlantılar aracılığıyla erişilebilen özel depolamada tutulur. Parolanız asla düz metin olarak saklanmaz ve erişim kesinlikle hesabınızla sınırlıdır.",
       "onward": "Onu nasıl güvende tuttuğumuzu görün →"
     },
     {

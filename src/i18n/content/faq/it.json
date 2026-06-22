@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "I miei dati sono al sicuro?",
-      "a": "",
+      "a": "Sì. La tua connessione è cifrata in transito con TLS — la crittografia con l'icona del lucchetto (HTTPS) che vedi sui siti bancari e di shopping — così i tuoi dati vengono cifrati mentre viaggiano e nessuno nel mezzo può leggerli. Il database del tuo account è cifrato a riposo (mentre è archiviato) su server gestiti professionalmente e protetti, e i file caricati sono conservati in archivio privato raggiungibile solo tramite link firmati di breve durata. La tua password non è mai memorizzata in chiaro e l'accesso è strettamente limitato al tuo account.",
       "onward": "Scopri come li teniamo al sicuro →"
     },
     {

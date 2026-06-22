@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Aktarım sırasında şifreli.",
-      "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır, böylece verilerin seninle bizim aramızda yol alırken şifrelenir."
+      "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır — bankacılık ve alışveriş sitelerinde gördüğünüz aynı asma kilit simgeli şifreleme. Verileriniz sizinle bizim aramızda yol alırken şifrelenir, böylece aradaki hiç kimse onları okuyamaz."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Beklemede şifreli.",
+      "body": "Kayıtlarınız ve yüklediğiniz dosyalar profesyonelce yönetilen, güvenli sunucularda durur ve beklemede şifrelidir — \"beklemede\" yalnızca depolanırken demektir, hareket halindeyken değil. Kayıtlarınızı tutan veritabanı ile fotoğraf ve taramalarınızı tutan depolama alanının her ikisi de şifrelidir ve dosyalarınıza yalnızca kısa ömürlü, imzalı bağlantılar aracılığıyla erişilebilir."
     },
     {
       "title": "Parolalar asla düz metin olarak saklanmaz.",
-      "body": "Parolanı güçlü ve modern bir algoritmayla (scrypt) karma hale getiriyoruz — biz bile okuyamayız."
+      "body": "Parolanızı scrypt adlı güçlü, modern bir yöntemle \"hash'leriz\" — hash, parolanıza geri çevrilemeyen tek yönlü bir karıştırmadır. Onu biz bile okuyamayız."
     },
     {
       "title": "Kısa ömürlü oturumlar.",
-      "body": "Oturum açma belirteçleri kısa ömürlüdür ve bellekte tutulur; oturumu açık tutan belirteç ise güvenli, komut dosyalarına kapalı bir çerezde yaşar."
+      "body": "Sizin siz olduğunuzu kanıtlayan oturum açma \"token\"ı hızla sona erer ve bellekte tutulur. Oturumunuzu açık tutan token, güvenli, betiğe dayanıklı bir çerezde bulunur — bir sayfadaki zararlı betiklerin okuyamayacağı ya da çalamayacağı küçük bir tarayıcı dosyası."
     },
     {
       "title": "Kötüye kullanıma karşı korumalı.",
-      "body": "Otomatik saldırılara karşı savunmak için oturum açma ve diğer hassas işlemlerde hız sınırlaması uygularız."
+      "body": "Oturum açma ve diğer hassas işlemlerin arka arkaya kaç kez denenebileceğini sınırlarız — buna \"hız sınırlama\" (rate-limiting) denir. Otomatik saldırıların dayandığı hızlı, tekrarlı tahminleri engeller."
     },
     {
       "title": "Erişim kontrolleri.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Verilerin sana ait",
-    "body": ""
+    "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makinece okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman Ayarlar'dan dışa aktarın. \"Makinece okunabilir\", başka bir uygulamanın veya hesap tablosunun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Bağımlılık yok, bizi beklemek yok. (Orijinal dosyalarınızın toplu indirilmesi yol haritamızda.) Bu, verilerinizi yanınızda götürmenize olanak tanıyan AB gizlilik yasası (madde 20) olan GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Sade dil, abartı yok.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamada tutulan dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi. Bilerek \"zero-knowledge\" (verilerinizi bizim bile asla açamayacağımız), \"banka düzeyi\" ya da hak etmediğimiz herhangi bir sertifikayı <b>iddia etmiyoruz</b>. Veri dışa aktarma etkin (yukarıda). Uygulama katmanı şifrelemesi — yukarıdaki şifrelemenin üzerine, uygulamanın kendi içinde uygulanan ek bir kilit — ya da bağımsız bir güvenlik firmasının bizi incelediği resmi bir üçüncü taraf denetimi eklediğimizde, bu sayfa bunu belirtecek.",
     "contact": "Gizlilik veya güvenlik soruları için iletişime geç:"
   }
 }

@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Är mina data säkra?",
-      "a": "",
+      "a": "Ja. Din anslutning krypteras under överföring med TLS — krypteringen med hänglåsikonen (HTTPS) som du ser på bank- och shoppingsajter — så att dina data krypteras medan de färdas och ingen däremellan kan läsa dem. Ditt kontos databas krypteras i vila (medan den lagras) på professionellt hanterade, säkrade servrar, och uppladdade filer förvaras i privat lagring som endast är åtkomlig via kortlivade, signerade länkar. Ditt lösenord lagras aldrig i klartext, och åtkomsten är strikt begränsad till ditt konto.",
       "onward": "Se hur vi håller det säkert →"
     },
     {

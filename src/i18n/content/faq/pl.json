@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Czy moje dane są bezpieczne?",
-      "a": "",
+      "a": "Tak. Twoje połączenie jest szyfrowane w trakcie przesyłania za pomocą TLS — szyfrowania z ikoną kłódki (HTTPS), które widzisz na stronach bankowych i sklepowych — więc Twoje dane są szyfrowane podczas podróży i nikt po drodze nie może ich odczytać. Baza danych Twojego konta jest szyfrowana w spoczynku (gdy jest przechowywana) na profesjonalnie zarządzanych, zabezpieczonych serwerach, a przesłane pliki są przechowywane w prywatnym magazynie dostępnym wyłącznie poprzez krótkotrwałe, podpisane linki. Twoje hasło nigdy nie jest przechowywane jako zwykły tekst, a dostęp jest ściśle ograniczony do Twojego konta.",
       "onward": "Zobacz, jak dbamy o bezpieczeństwo →"
     },
     {

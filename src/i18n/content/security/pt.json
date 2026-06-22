@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Encriptado em trânsito.",
-      "body": "Todas as ligações à Vaulto usam TLS (HTTPS), para que os seus dados sejam encriptados enquanto circulam entre si e nós."
+      "body": "Cada conexão com a Vaulto usa TLS (HTTPS) — a mesma criptografia do ícone de cadeado que você vê em sites de bancos e de compras. Seus dados são embaralhados enquanto viajam entre você e nós, de modo que ninguém no meio do caminho consegue lê-los."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Criptografado em repouso.",
+      "body": "Seus registros e arquivos enviados ficam em servidores gerenciados profissionalmente e protegidos, criptografados em repouso — \"em repouso\" significa simplesmente enquanto estão armazenados, não enquanto estão em movimento. O banco de dados que guarda seus registros e o armazenamento que guarda suas fotos e digitalizações estão ambos criptografados, e seus arquivos só são acessíveis por meio de links assinados de curta duração."
     },
     {
       "title": "As palavras-passe nunca são guardadas em texto simples.",
-      "body": "Aplicamos hash à sua palavra-passe com um algoritmo forte e moderno (scrypt) — nem nós a conseguimos ler."
+      "body": "Nós aplicamos um \"hash\" à sua senha com um método forte e moderno chamado scrypt — um hash é um embaralhamento de mão única que não pode ser revertido para a sua senha. Nem nós conseguimos lê-la."
     },
     {
       "title": "Sessões de curta duração.",
-      "body": "Os tokens de início de sessão têm curta duração e são mantidos em memória; o token que mantém a sessão iniciada fica num cookie seguro, imune a scripts."
+      "body": "O \"token\" de login que comprova que é você expira rápido e é mantido na memória. O token que mantém você conectado fica em um cookie seguro e protegido contra scripts — um pequeno arquivo do navegador que scripts maliciosos em uma página não conseguem ler nem roubar."
     },
     {
       "title": "Protegido contra abusos.",
-      "body": "Limitamos a frequência de inícios de sessão e de outras ações sensíveis para defender contra ataques automatizados."
+      "body": "Limitamos quantas vezes seguidas o login e outras ações sensíveis podem ser tentados — isso se chama \"limitação de taxa\" (rate-limiting). Bloqueia as tentativas rápidas e repetidas em que os ataques automatizados se baseiam."
     },
     {
       "title": "Controlos de acesso.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Os seus dados são seus",
-    "body": ""
+    "body": "Seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF) quando quiser, nas Configurações. \"Legível por máquina\" significa um arquivo padrão que outro aplicativo ou planilha pode abrir e reutilizar — não um PDF bloqueado. Sem aprisionamento, sem esperar por nós. (O download em massa dos seus arquivos originais está em nosso roteiro.) Isso apoia o seu direito à portabilidade de dados sob a GDPR — a lei de privacidade da UE (artigo 20) que permite que você leve seus dados com você."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Linguagem clara, sem exagero.</b> Descrevemos apenas o que é verdade hoje: criptografia em trânsito, um banco de dados criptografado, arquivos guardados em armazenamento privado, senhas com hash e controle de acesso rigoroso. Deliberadamente <b>não</b> afirmamos \"conhecimento zero\" (em que nem mesmo nós poderíamos desbloquear seus dados), \"nível bancário\" nem qualquer certificação que não tenhamos conquistado. A exportação de dados está ativa (acima). Quando adicionarmos criptografia na camada do aplicativo — uma trava extra aplicada dentro do próprio aplicativo, sobre a criptografia acima — ou uma auditoria formal de terceiros, em que uma empresa de segurança independente nos avalia, esta página dirá isso.",
     "contact": "Para questões de privacidade ou segurança, contacte"
   }
 }

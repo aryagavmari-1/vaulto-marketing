@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Zijn mijn gegevens veilig?",
-      "a": "",
+      "a": "Ja. Je verbinding is tijdens verzending versleuteld met TLS — de versleuteling met het hangslot-pictogram (HTTPS) die je op bank- en winkelsites ziet — zodat je gegevens onderweg worden versleuteld en niemand ertussen ze kan lezen. De database van je account is versleuteld in rust (terwijl die is opgeslagen) op professioneel beheerde, beveiligde servers, en geüploade bestanden worden bewaard in privéopslag die alleen bereikbaar is via kortlevende, ondertekende links. Je wachtwoord wordt nooit als platte tekst opgeslagen en de toegang is strikt beperkt tot je account.",
       "onward": "Bekijk hoe we het veilig houden →"
     },
     {

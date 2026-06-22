@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Krypterat under överföring.",
-      "body": "Varje anslutning till Vaulto använder TLS (HTTPS), så dina data är krypterade när de färdas mellan dig och oss."
+      "body": "Varje anslutning till Vaulto använder TLS (HTTPS) — samma kryptering med hänglåsikonen som du ser på bank- och shoppingsajter. Dina data krypteras medan de färdas mellan dig och oss, så att ingen däremellan kan läsa dem."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Krypterat i vila.",
+      "body": "Dina uppgifter och uppladdade filer ligger på professionellt hanterade, säkrade servrar och är krypterade i vila — \"i vila\" betyder helt enkelt medan de lagras, inte medan de är i rörelse. Databasen som rymmer dina poster och lagringen som rymmer dina foton och skanningar är båda krypterade, och dina filer är endast åtkomliga via kortlivade, signerade länkar."
     },
     {
       "title": "Lösenord lagras aldrig i klartext.",
-      "body": "Vi hashar ditt lösenord med en stark, modern algoritm (scrypt) — inte ens vi kan läsa det."
+      "body": "Vi \"hashar\" ditt lösenord med en stark, modern metod som heter scrypt — en hash är en envägsförvrängning som inte kan göras om till ditt lösenord. Inte ens vi kan läsa det."
     },
     {
       "title": "Kortlivade sessioner.",
-      "body": "Inloggningstoken är kortlivade och hålls i minnet; tokenen som håller dig inloggad ligger i en säker cookie som inte kan nås av script."
+      "body": "Inloggnings-\"token\" som bevisar att det är du upphör snabbt och hålls i minnet. Token som håller dig inloggad finns i en säker, skriptskyddad cookie — en liten webbläsarfil som skadliga skript på en sida inte kan läsa eller stjäla."
     },
     {
       "title": "Skydd mot missbruk.",
-      "body": "Vi begränsar inloggningar och andra känsliga åtgärder för att försvara mot automatiserade attacker."
+      "body": "Vi begränsar hur många gånger i rad inloggning och andra känsliga åtgärder kan försökas — detta kallas \"rate-limiting\" (frekvensbegränsning). Det blockerar de snabba, upprepade gissningar som automatiserade attacker bygger på."
     },
     {
       "title": "Åtkomstkontroller.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Dina data är dina",
-    "body": ""
+    "body": "Dina data är dina — exportera en komplett, maskinläsbar kopia av dina poster (JSON, CSV eller PDF) när som helst, från Inställningar. \"Maskinläsbar\" betyder en standardfil som en annan app eller ett kalkylprogram kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Massnedladdning av dina originalfiler finns på vår färdplan.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (artikel 20) som låter dig ta med dig dina data."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant idag: kryptering under överföring, en krypterad databas, filer i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi hävdar medvetet <b>inte</b> \"zero-knowledge\" (där inte ens vi någonsin skulle kunna låsa upp dina data), \"banknivå\" eller någon certifiering som vi inte har förtjänat. Dataexport är aktiv (ovan). När vi lägger till kryptering på applagret — ett extra lås som tillämpas inuti själva appen, ovanpå krypteringen ovan — eller en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att ange det.",
     "contact": "För frågor om integritet eller säkerhet, kontakta"
   }
 }

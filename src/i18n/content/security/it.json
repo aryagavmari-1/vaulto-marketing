@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Crittografati in transito.",
-      "body": "Ogni connessione a Vaulto usa TLS (HTTPS), quindi i tuoi dati sono crittografati mentre viaggiano tra te e noi."
+      "body": "Ogni connessione a Vaulto usa TLS (HTTPS) — la stessa crittografia con l'icona del lucchetto che vedi sui siti bancari e di shopping. I tuoi dati vengono cifrati mentre viaggiano tra te e noi, così nessuno nel mezzo può leggerli."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Cifrato a riposo.",
+      "body": "I tuoi dati e i file caricati risiedono su server gestiti professionalmente e protetti, cifrati a riposo — \"a riposo\" significa semplicemente mentre sono archiviati, non mentre sono in movimento. Il database che contiene i tuoi record e l'archivio che contiene le tue foto e scansioni sono entrambi cifrati, e i tuoi file sono raggiungibili solo tramite link firmati di breve durata."
     },
     {
       "title": "Le password non vengono mai archiviate in chiaro.",
-      "body": "Applichiamo un hash alla tua password con un algoritmo moderno e robusto (scrypt) — nemmeno noi possiamo leggerla."
+      "body": "Applichiamo un \"hash\" alla tua password con un metodo solido e moderno chiamato scrypt — un hash è un rimescolamento a senso unico che non può essere riconvertito nella tua password. Nemmeno noi possiamo leggerla."
     },
     {
       "title": "Sessioni di breve durata.",
-      "body": "I token di accesso hanno una durata breve e vengono tenuti in memoria; il token che mantiene attivo il tuo accesso vive in un cookie sicuro, non accessibile agli script."
+      "body": "Il \"token\" di accesso che dimostra che sei tu scade rapidamente e resta in memoria. Il token che ti tiene connesso risiede in un cookie sicuro e a prova di script — un piccolo file del browser che gli script dannosi di una pagina non possono leggere né rubare."
     },
     {
       "title": "Protetti dagli abusi.",
-      "body": "Limitiamo la frequenza degli accessi e di altre azioni sensibili per difenderci dagli attacchi automatizzati."
+      "body": "Limitiamo quante volte di seguito si possono tentare l'accesso e altre azioni sensibili — si chiama \"limitazione della frequenza\" (rate-limiting). Blocca i tentativi rapidi e ripetuti su cui si basano gli attacchi automatizzati."
     },
     {
       "title": "Controlli di accesso.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "I tuoi dati sono tuoi",
-    "body": ""
+    "body": "I tuoi dati sono tuoi — esporta una copia completa e leggibile dalla macchina dei tuoi record (JSON, CSV o PDF) quando vuoi, dalle Impostazioni. \"Leggibile dalla macchina\" significa un file standard che un'altra app o un foglio di calcolo possono aprire e riutilizzare — non un PDF bloccato. Nessun vincolo, nessuna attesa da parte nostra. (Il download in blocco dei tuoi file originali è nella nostra roadmap.) Questo sostiene il tuo diritto alla portabilità dei dati ai sensi del GDPR — la legge europea sulla privacy (articolo 20) che ti permette di portare con te i tuoi dati."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Linguaggio chiaro, senza esagerazioni.</b> Descriviamo solo ciò che è vero oggi: crittografia in transito, un database cifrato, file conservati in archivio privato, password sottoposte ad hash e controllo degli accessi rigoroso. Deliberatamente <b>non</b> dichiariamo \"zero-knowledge\" (dove nemmeno noi potremmo mai sbloccare i tuoi dati), \"livello bancario\" né alcuna certificazione che non abbiamo ottenuto. L'esportazione dei dati è attiva (sopra). Quando aggiungeremo la crittografia a livello di app — un lucchetto in più applicato all'interno dell'app stessa, sopra la crittografia sopra descritta — o un audit formale di terze parti, in cui una società di sicurezza indipendente ci esamina, questa pagina lo indicherà.",
     "contact": "Per domande su privacy o sicurezza, contatta"
   }
 }
