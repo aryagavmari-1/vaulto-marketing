@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
 import { BRAND } from '../config/brand';
-import { DEFAULT_LOCALE } from '../config/i18n';
+import { DEFAULT_LOCALE, HREFLANG, localizedPath, type Locale } from '../config/i18n';
+import type { FaqItem, Crumb } from '../config/structured-data';
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -10,20 +11,25 @@ interface Props {
   title?: string;
   description?: string;
   path?: string;
+  locale?: Locale;        // page locale (default `en`); drives <html lang> + canonical
   type?: 'website' | 'article';
   image?: string;
   publishedTime?: string;
   noindex?: boolean;
+  faq?: FaqItem[];        // emits FAQPage structured data (ARY-399 §2d)
+  breadcrumbs?: Crumb[];  // emits BreadcrumbList structured data (ARY-399 §2d)
 }
 const {
-  title, description = BRAND.description, path = '/',
-  type = 'website', image, publishedTime, noindex = false,
+  title, description = BRAND.description, path = '/', locale = DEFAULT_LOCALE,
+  type = 'website', image, publishedTime, noindex = false, faq, breadcrumbs,
 } = Astro.props;
 const fullTitle = title ? `${title} · ${BRAND.name}` : `${BRAND.name} — ${BRAND.tagline}`;
-const canonical = new URL(path, BRAND.url).href;
+// Canonical is the locale-prefixed URL (English un-prefixed) so each localized
+// page is self-canonical and hreflang pairs resolve correctly.
+const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
 ---
 <!doctype html>
-<html lang={DEFAULT_LOCALE}>
+<html lang={HREFLANG[locale]}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,10 +39,13 @@ const canonical = new URL(path, BRAND.url).href;
       description={description}
       canonical={canonical}
       path={path}
+      locale={locale}
       type={type}
       image={image}
       publishedTime={publishedTime}
       noindex={noindex}
+      faq={faq}
+      breadcrumbs={breadcrumbs}
     />
   </head>
   <body>

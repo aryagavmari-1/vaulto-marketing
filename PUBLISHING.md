@@ -42,8 +42,9 @@ writing content.
 ## What's automatic (no sub-agent action needed)
 
 - Canonical URL, `<title>`/meta, Open Graph + Twitter cards
-- JSON-LD structured data (`Organization`, `WebSite`, `BlogPosting`)
-- `hreflang` alternates + `sitemap-index.xml` (regenerated each build)
+- JSON-LD structured data (`Organization`, `WebSite`, `SoftwareApplication`,
+  `FAQPage`, `BreadcrumbList`, `BlogPosting`) — see `I18N.md`
+- `hreflang` alternates + localized `sitemap-index.xml` (regenerated each build)
 - Privacy-friendly analytics + on-site event tracking
 
 ## Social posting

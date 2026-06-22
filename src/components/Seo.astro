@@ -3,27 +3,46 @@
  * Centralised SEO + structured-data + analytics head block (ARY-401 / ARY-403).
  * Base.astro renders exactly one <Seo /> per page. Adding meta/JSON-LD here
  * propagates everywhere, so content sub-agents get correct SEO for free.
+ *
+ * Structured data (CMO ARY-399 §2d): Organization + WebSite site-wide;
+ * SoftwareApplication auto-attached to the home page; BlogPosting on articles;
+ * FAQPage and BreadcrumbList opt-in via props (pass `faq` / `breadcrumbs` from
+ * <Base/>). hreflang + the localized sitemap are driven from config/i18n.ts.
  */
 import { BRAND, ANALYTICS } from '../config/brand';
-import { alternatesFor, DEFAULT_LOCALE } from '../config/i18n';
+import { alternatesFor, DEFAULT_LOCALE, HREFLANG, type Locale } from '../config/i18n';
+import {
+  softwareApplication,
+  faqPage,
+  breadcrumbList,
+  orgId,
+  websiteId,
+  type FaqItem,
+  type Crumb,
+} from '../config/structured-data';
 
 interface Props {
   title: string;          // fully composed <title> text
   description: string;
   canonical: string;
   path: string;
+  locale?: Locale;        // page locale — drives JSON-LD inLanguage + og:locale
   type?: 'website' | 'article';
   image?: string;         // path or absolute URL; defaults to /og.svg
   publishedTime?: string; // ISO 8601, articles only
   noindex?: boolean;
+  faq?: FaqItem[];        // emits FAQPage JSON-LD (ARY-399 §2d)
+  breadcrumbs?: Crumb[];  // emits BreadcrumbList JSON-LD (ARY-399 §2d)
 }
 const {
-  title, description, canonical, path,
+  title, description, canonical, path, locale = DEFAULT_LOCALE,
   type = 'website', image, publishedTime, noindex = false,
+  faq, breadcrumbs,
 } = Astro.props;
 
 const ogImage = new URL(image ?? '/og.svg', BRAND.url).href;
 const alternates = alternatesFor(path, BRAND.url);
+const lang = HREFLANG[locale];
 
 // Privacy-friendly, cookieless analytics. Cloudflare Web Analytics is the
 // primary ($0, unlimited, no consent banner). The Plausible/Umami-compatible
@@ -32,24 +51,40 @@ const alternates = alternatesFor(path, BRAND.url);
 const cfToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN ?? '';
 const gscVerify = import.meta.env.PUBLIC_GSC_VERIFICATION ?? '';
 
-// schema.org graph: Organization + WebSite on every page; BlogPosting on posts.
+// schema.org graph. Organization + WebSite are site-wide; SoftwareApplication is
+// the home page; BlogPosting on articles; FAQPage/BreadcrumbList are opt-in.
 const org = {
   '@type': 'Organization',
-  '@id': `${BRAND.url}/#org`,
+  '@id': orgId(BRAND.url),
   name: BRAND.name,
   url: BRAND.url,
   logo: new URL('/favicon.svg', BRAND.url).href,
   description: BRAND.description,
+  ...(BRAND.social.linkedin || BRAND.social.x
+    ? { sameAs: [BRAND.social.linkedin, BRAND.social.x].filter(Boolean) }
+    : {}),
 };
 const website = {
   '@type': 'WebSite',
-  '@id': `${BRAND.url}/#website`,
+  '@id': websiteId(BRAND.url),
   url: BRAND.url,
   name: BRAND.name,
-  publisher: { '@id': `${BRAND.url}/#org` },
-  inLanguage: DEFAULT_LOCALE,
+  publisher: { '@id': orgId(BRAND.url) },
+  inLanguage: lang,
 };
 const graph: Record<string, unknown>[] = [org, website];
+
+// SoftwareApplication (FinanceApplication, free offer) on the home page only.
+const isHome = path === '/' || path === '';
+if (isHome) {
+  graph.push(softwareApplication(BRAND.url, BRAND.name, BRAND.description));
+}
+if (faq && faq.length) {
+  graph.push(faqPage(faq));
+}
+if (breadcrumbs && breadcrumbs.length) {
+  graph.push(breadcrumbList(breadcrumbs));
+}
 if (type === 'article') {
   graph.push({
     '@type': 'BlogPosting',
@@ -58,9 +93,9 @@ if (type === 'article') {
     url: canonical,
     image: ogImage,
     ...(publishedTime ? { datePublished: publishedTime } : {}),
-    author: { '@id': `${BRAND.url}/#org` },
-    publisher: { '@id': `${BRAND.url}/#org` },
-    inLanguage: DEFAULT_LOCALE,
+    author: { '@id': orgId(BRAND.url) },
+    publisher: { '@id': orgId(BRAND.url) },
+    inLanguage: lang,
     mainEntityOfPage: canonical,
   });
 }
@@ -76,6 +111,7 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
 
 <meta property="og:type" content={type} />
 <meta property="og:site_name" content={BRAND.name} />
+<meta property="og:locale" content={lang} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
