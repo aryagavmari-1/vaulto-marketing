@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Ailenizin sahip olduğu her şey için sakin, güvenli bir yuva",
+    "description": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — özel olarak, güçlü güvenlikle. Ücretsiz başlayın."
+  },
+  "hero": {
+    "eyebrow": "🔒 Tasarım gereği özel ve şifreli",
+    "heading": "Ailenizin sahip olduğu her şey için tek bir sakin, güvenli yer.",
+    "sub": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — böylece aileniz her zaman neyin nerede olduğunu ve sonra ne yapacağını bilir.",
+    "trust": [
+      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "Verileriniz asla satılmaz",
+      "Aileler için tasarlandı"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Aile evi",
+          "sub": "Gayrimenkul · tapu ve sigorta eklendi"
+        },
+        {
+          "icon": "📄",
+          "label": "Vasiyetname ve miras belgeleri",
+          "sub": "3 dosya · şifrelenmiş kasa"
+        },
+        {
+          "icon": "📈",
+          "label": "Yatırımlar ve emeklilikler",
+          "sub": "Koleksiyon · 5 öğe"
+        }
+      ],
+      "secured": "Güvence altında",
+      "lock": "🔒 Depoda şifreli"
+    }
+  },
+  "value": {
+    "heading": "Her şey tek bir güvenilir yerde",
+    "sub": "Ne hesap tabloları. Ne dağınık çekmeceler. Sadece netlik.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Neye sahip olduğunu bil.",
+        "body": "Gayrimenkuller, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — çekmecelere ve hesap tablolarına dağılmak yerine tek bir düzenli yerde toplanır."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Güvende tut.",
+        "body": "Önemli belgeleri — tapular, poliçeler, hesap özetleri — güçlü güvenlik arkasında, özel olarak sakla."
+      },
+      {
+        "icon": "🧭",
+        "title": "Güvenle plan yap.",
+        "body": "Tüm tabloyu gör ve miras, vasiyetname veya sonrasında ne olacağı hakkında düşünmeye hazır olduğunda net, ücretsiz bir genel bakış elde et."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Üç adımda hazır",
+    "items": [
+      {
+        "title": "Sahip olduklarını ekle.",
+        "body": "Bir fotoğraf çek veya belge yükle — Vaulto bunu okuyabilir ve ayrıntıları önerebilir, böylece her şeyi tek tek elle yazman gerekmez."
+      },
+      {
+        "title": "Vaulto düzenlesin.",
+        "body": "Varlıkları koleksiyonlar halinde grupla, temel bilgileri ekle ve belgeleri ait oldukları yere ekli tut."
+      },
+      {
+        "title": "Tüm tabloyu gör.",
+        "body": "Ailenizin varlıkları tek bir görünümde — önemli kişilerle paylaşmaya ve ileriyi planlamaya hazır."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "En hassas bilgilerine emanet edilebilecek şekilde tasarlandı.",
+    "lead": "Verilerin bize gelirken ve saklandığı yerde şifrelenir. Erişim korunur ve bilgilerini asla satmayız.",
+    "cta": "Onu tam olarak nasıl güvende tuttuğumuzu gör →",
+    "proof": [
+      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "Parolalar hashlenir — biz bile onları okuyamayız",
+      "Kısa ömürlü, tarayıcı tarafından korunan oturumlar",
+      "Yalnızca kendi kasanı görebilirsin",
+      "Verilerini asla satmayız veya paylaşmayız"
+    ]
+  },
+  "finalCta": {
+    "title": "Ailenin kasasını bugün başlat.",
+    "body": "Başlamak ücretsiz. Hesap tabloları gerekmez."
+  }
+}

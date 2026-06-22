@@ -1,0 +1,21 @@
+{
+  "nav.home": "首页",
+  "nav.howItWorks": "运作方式",
+  "nav.features": "功能",
+  "nav.planning": "规划",
+  "nav.security": "安全",
+  "nav.faq": "常见问题",
+  "nav.blog": "博客",
+  "cta.getStarted": "免费开始",
+  "cta.seeHow": "查看运作方式",
+  "cta.startVault": "创建你的保险库 — 免费",
+  "cta.explorePlanning": "了解规划",
+  "footer.tagline": "一个平静、安全的地方，收纳你家拥有的一切。",
+  "footer.security": "安全与隐私",
+  "footer.privacy": "隐私",
+  "footer.rights": "保留所有权利。",
+  "footer.signIn": "登录 →",
+  "lang.switch": "语言",
+  "a11y.skip": "跳至内容",
+  "trust.strip": "传输中 (TLS) 和静态存储时均加密 · 你的数据绝不会被出售 · 专为家庭打造"
+}

@@ -1,0 +1,12 @@
+---
+/** Localized Planning (ARY-427). One route → every non-default locale. */
+import { NON_DEFAULT_LOCALES, type Locale } from '../../config/i18n';
+import PlanningPage from '../../components/pages/PlanningPage.astro';
+
+export function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+---
+<PlanningPage locale={locale} />

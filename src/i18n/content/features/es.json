@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funciones",
+    "description": "Lo que Vaulto hace hoy: inventario de activos, una bóveda de documentos cifrada, captura asistida por IA, colecciones y una vista clara de todo lo que posee tu familia."
+  },
+  "crumbs": {
+    "home": "Inicio",
+    "features": "Funciones"
+  },
+  "hero": {
+    "eyebrow": "Funciones",
+    "heading": "Todo lo que necesitas para saber lo que tienes.",
+    "intro": "Un conjunto de herramientas centrado que hace trabajo real hoy. Esto es lo que ya está disponible — sin promesas de hoja de ruta ni señuelos de \"próximamente\"."
+  },
+  "features": [
+    {
+      "title": "Inventario de activos",
+      "body": "Registra todo lo que tienes — propiedades, cuentas, inversiones, objetos de valor, pensiones — con los detalles que importan: valor o rango de valor, ubicación, estado y las personas a las que afecta."
+    },
+    {
+      "title": "Bóveda de documentos",
+      "body": "Mantén escrituras, pólizas, testamentos y extractos a salvo y vinculados a los activos a los que pertenecen. Sube archivos de hasta 20MB, almacenados en infraestructura cifrada."
+    },
+    {
+      "title": "Captura asistida por IA",
+      "body": "Fotografía un objeto o un documento y Vaulto lo lee, preparando el registro para que lo confirmes o edites. La introducción de datos se hace sola."
+    },
+    {
+      "title": "Colecciones",
+      "body": "Agrupa activos y documentos relacionados como tu familia realmente piensa en ellos — una propiedad y su documentación, un patrimonio, una persona."
+    },
+    {
+      "title": "La visión completa",
+      "body": "Ve todo en una sola vista organizada y obtén un resumen gratuito cuando estés listo para planificar lo que viene — una herencia, un testamento o lo que pase después."
+    },
+    {
+      "title": "Exporta cuando quieras — tus datos son tuyos",
+      "body": "Tus datos son tuyos — exporta todo (tus datos + tus archivos originales) en cualquier momento. Una sola descarga te da una copia completa y legible por máquina de tus registros, además de cada foto y escaneo original que subiste. Sin dependencia."
+    }
+  ],
+  "foot": "Solo mostramos lo que ya está disponible. Cuando lancemos algo nuevo, aparecerá aquí — no antes.",
+  "finalCta": {
+    "title": "Míralo con tus propias cosas.",
+    "body": "Empieza gratis y añade tus primeros activos en minutos."
+  }
+}

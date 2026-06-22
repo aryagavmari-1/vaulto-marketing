@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planning",
+    "description": "Een gratis overzicht van wat er speelt — erfenissen, testamenten, grensoverschrijdende zaken en meer — en ga daarna in je eigen tempo verder de diepte in. Informatieve begeleiding, nooit een vervanging voor je professional."
+  },
+  "crumbs": {
+    "home": "Home",
+    "planning": "Planning"
+  },
+  "hero": {
+    "eyebrow": "Planning & advies",
+    "heading": "Wees voorbereid, voordat het leven je ertoe dwingt.",
+    "intro": "Begin met een gratis overzicht van wat er speelt. Ga verder de diepte in wanneer jij er klaar voor bent, in je eigen tempo — en deel een helder overzicht met de professional die het behandelt. De begeleiding is informatief; ze vervangt je notaris of adviseur niet."
+  },
+  "areas": [
+    {
+      "title": "Testamentplanning",
+      "tagline": "Begrijp wat een testament moet omvatten en waar de hiaten zitten, voordat je met een notaris om tafel gaat."
+    },
+    {
+      "title": "Erfenis",
+      "tagline": "Zie wat het doorgeven van bezittingen voor je gezin kan betekenen — rustig en in je eigen tempo."
+    },
+    {
+      "title": "Financieel overzicht",
+      "tagline": "Een helder beeld van het geheel: wat je bezit, wat het betekent en waar je daarna naar kunt kijken."
+    },
+    {
+      "title": "Grensoverschrijdend",
+      "tagline": "Bezittingen of familie in meer dan één land? Begrijp welke aandachtspunten daarbij komen kijken."
+    },
+    {
+      "title": "Huwelijkse voorwaarden",
+      "tagline": "Denk rustig na over hoe je beschermt wat voor ieder van jullie belangrijk is, met duidelijkheid en zonder druk."
+    },
+    {
+      "title": "Echtscheiding & scheiding",
+      "tagline": "Een rustig, praktisch beginpunt om bezittingen te begrijpen wanneer er dingen veranderen."
+    }
+  ],
+  "areaCta": "Gratis overzicht → Plan wanneer jij eraan toe bent",
+  "more": {
+    "heading": "Meer onderwerpen die je kunt verkennen"
+  },
+  "moreAreas": [
+    "Erfbelasting",
+    "Opvolging in het familiebedrijf",
+    "Verzekeringen",
+    "Fiscale efficiëntie",
+    "Financiering van bezittingen"
+  ],
+  "cta": {
+    "label": "Probeer een gratis overzicht"
+  }
+}

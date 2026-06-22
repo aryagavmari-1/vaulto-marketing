@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funktioner",
+    "description": "Vad Vaulto gör i dag: tillgångsinventering, ett krypterat dokumentvalv, AI-stödd registrering, samlingar och en tydlig överblick över allt din familj äger."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "features": "Funktioner"
+  },
+  "hero": {
+    "eyebrow": "Funktioner",
+    "heading": "Allt du behöver för att veta vad du äger.",
+    "intro": "Ett fokuserat verktygspaket som gör verklig nytta i dag. Här är det som redan finns — inga löften om en roadmap, inget lockbete med \"kommer snart\"."
+  },
+  "features": [
+    {
+      "title": "Tillgångsinventering",
+      "body": "Registrera allt du äger — fastigheter, konton, investeringar, värdesaker, pensioner — med de uppgifter som betyder något: värde eller värdespann, plats, skick och de personer det berör."
+    },
+    {
+      "title": "Dokumentvalv",
+      "body": "Förvara lagfarter, försäkringar, testamenten och kontoutdrag säkert och kopplade till de tillgångar de hör till. Ladda upp filer upp till 20MB, lagrade på krypterad infrastruktur."
+    },
+    {
+      "title": "AI-stödd registrering",
+      "body": "Fotografera ett föremål eller ett dokument så läser Vaulto det och utkastar posten så att du kan bekräfta eller redigera. Datainmatningen gör sig själv."
+    },
+    {
+      "title": "Samlingar",
+      "body": "Gruppera relaterade tillgångar och dokument så som din familj faktiskt tänker på dem — en fastighet och dess handlingar, ett dödsbo, en person."
+    },
+    {
+      "title": "Helhetsbilden",
+      "body": "Se allt i en organiserad vy och få en kostnadsfri överblick när du är redo att planera framåt — arv, ett testamente eller vad som händer härnäst."
+    },
+    {
+      "title": "Exportera när som helst — dina data är dina",
+      "body": "Dina data är dina — exportera allt (dina data + dina originalfiler) när som helst. En nedladdning ger dig en komplett, maskinläsbar kopia av dina poster plus varje originalfoto och skanning som du laddat upp. Ingen inlåsning."
+    }
+  ],
+  "foot": "Vi listar bara det som är live. När vi lanserar något nytt dyker det upp här — inte före det.",
+  "finalCta": {
+    "title": "Se det med dina egna saker.",
+    "body": "Kom igång gratis och lägg till dina första tillgångar på några minuter."
+  }
+}

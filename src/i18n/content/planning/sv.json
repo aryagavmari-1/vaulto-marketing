@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planering",
+    "description": "En kostnadsfri översikt över vad som står på spel — arv, testamenten, gränsöverskridande frågor med mera — och fördjupa dig sedan i din egen takt. Vägledningen är informativ och ersätter aldrig din jurist eller rådgivare."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "planning": "Planering"
+  },
+  "hero": {
+    "eyebrow": "Planering & rådgivning",
+    "heading": "Var förberedd innan livet tvingar fram det.",
+    "intro": "Börja med en kostnadsfri översikt över vad som står på spel. Fördjupa dig när du är redo, i din egen takt — och dela en tydlig sammanfattning med den yrkesperson som hanterar det. Vägledningen är informativ; den ersätter inte din jurist eller rådgivare."
+  },
+  "areas": [
+    {
+      "title": "Testamentsplanering",
+      "tagline": "Förstå vad ett testamente bör omfatta och var luckorna finns, innan du sätter dig ner med en jurist."
+    },
+    {
+      "title": "Arv",
+      "tagline": "Se vad det kan innebära för din familj att föra vidare tillgångar — lugnt och i din egen takt."
+    },
+    {
+      "title": "Ekonomisk översikt",
+      "tagline": "En tydlig bild av helheten: vad du äger, vad det innebär och vad du bör titta på härnäst."
+    },
+    {
+      "title": "Gränsöverskridande",
+      "tagline": "Tillgångar eller familj i mer än ett land? Förstå vilka överväganden det för med sig."
+    },
+    {
+      "title": "Äktenskapsförord",
+      "tagline": "Tänk igenom hur ni skyddar det som är viktigt för er båda, med tydlighet och utan press."
+    },
+    {
+      "title": "Skilsmässa & separation",
+      "tagline": "En lugn, praktisk startpunkt för att förstå tillgångar när saker förändras."
+    }
+  ],
+  "areaCta": "Kostnadsfri översikt → Planera när du är redo",
+  "more": {
+    "heading": "Fler områden du kan utforska"
+  },
+  "moreAreas": [
+    "Arvsskatt",
+    "Generationsskifte i familjeföretag",
+    "Försäkring",
+    "Skatteeffektivitet",
+    "Finansiering av tillgångar"
+  ],
+  "cta": {
+    "label": "Prova en kostnadsfri översikt"
+  }
+}

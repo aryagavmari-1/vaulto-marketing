@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Fonctionnalités",
+    "description": "Ce que Vaulto fait aujourd'hui : inventaire des actifs, coffre-fort de documents chiffré, capture assistée par l'IA, collections, et une vue claire de tout ce que possède votre famille."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "features": "Fonctionnalités"
+  },
+  "hero": {
+    "eyebrow": "Fonctionnalités",
+    "heading": "Tout ce qu'il vous faut pour savoir ce que vous possédez.",
+    "intro": "Un ensemble d'outils ciblés qui font un vrai travail dès aujourd'hui. Voici ce qui est disponible — pas de promesses de feuille de route, pas d'appâts \"bientôt disponible\"."
+  },
+  "features": [
+    {
+      "title": "Inventaire des actifs",
+      "body": "Enregistrez tout ce que vous possédez — biens immobiliers, comptes, investissements, objets de valeur, retraites — avec les détails qui comptent : valeur ou fourchette de valeur, emplacement, état, et les personnes concernées."
+    },
+    {
+      "title": "Coffre-fort de documents",
+      "body": "Gardez en sécurité titres de propriété, polices, testaments et relevés, et reliez-les aux actifs auxquels ils appartiennent. Téléversez des fichiers jusqu'à 20MB, stockés sur une infrastructure chiffrée."
+    },
+    {
+      "title": "Capture assistée par l'IA",
+      "body": "Photographiez un objet ou un document et Vaulto le lit, puis prépare l'enregistrement pour que vous le confirmiez ou le modifiiez. La saisie des données se fait presque toute seule."
+    },
+    {
+      "title": "Collections",
+      "body": "Regroupez les actifs et documents liés comme votre famille les voit vraiment — un bien immobilier et ses papiers, une succession, une personne."
+    },
+    {
+      "title": "Vue d'ensemble",
+      "body": "Voyez tout dans une vue organisée, et obtenez un aperçu gratuit quand vous êtes prêt à anticiper — héritage, testament, ou ce qui vient ensuite."
+    },
+    {
+      "title": "Exportez à tout moment — vos données vous appartiennent",
+      "body": "Vos données vous appartiennent — exportez tout (vos données + vos fichiers d'origine) à tout moment. Un seul téléchargement vous donne une copie complète et lisible par machine de vos enregistrements, ainsi que chaque photo et scan d'origine que vous avez téléversés. Aucun enfermement."
+    }
+  ],
+  "foot": "Nous ne listons que ce qui est déjà disponible. Quand nous mettons quelque chose de nouveau en ligne, cela apparaît ici — pas avant.",
+  "finalCta": {
+    "title": "Voyez-le avec vos propres éléments.",
+    "body": "Commencez gratuitement et ajoutez vos premiers actifs en quelques minutes."
+  }
+}

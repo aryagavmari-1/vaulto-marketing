@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Sicherheit & Datenschutz",
+    "description": "Wie Vaulto die Informationen deiner Familie schützt — Verschlüsselung bei der Übertragung und im Ruhezustand, gehashte Passwörter, strenge Zugriffskontrolle. Klar erklärt, ohne Übertreibungen."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "security": "Sicherheit & Datenschutz"
+  },
+  "hero": {
+    "eyebrow": "Sicherheit & Datenschutz",
+    "heading": "Die Informationen deiner Familie, geschützt.",
+    "intro": "Vaulto enthält sensible Angaben — was du besitzt, wo es sich befindet und die Dokumente, die es belegen. Wir nehmen diese Verantwortung ernst. Hier erfährst du genau, wie wir sie schützen, in klarer Sprache."
+  },
+  "protect": {
+    "heading": "Wie wir deine Daten schützen"
+  },
+  "protections": [
+    {
+      "title": "Bei der Übertragung verschlüsselt.",
+      "body": "Jede Verbindung zu Vaulto nutzt TLS (HTTPS), sodass deine Daten auf dem Weg zwischen dir und uns verschlüsselt sind."
+    },
+    {
+      "title": "Im Ruhezustand verschlüsselt.",
+      "body": "Deine Informationen und Dokumente werden auf verschlüsselter Infrastruktur gespeichert — verwaltete Datenbank und Objektspeicher."
+    },
+    {
+      "title": "Passwörter werden nie im Klartext gespeichert.",
+      "body": "Wir hashen dein Passwort mit einem starken, modernen Algorithmus (scrypt) — selbst wir können es nicht lesen."
+    },
+    {
+      "title": "Kurzlebige Sitzungen.",
+      "body": "Anmelde-Tokens sind nur kurz gültig und werden im Arbeitsspeicher gehalten; das Token, das dich angemeldet hält, liegt in einem sicheren, script-sicheren Cookie."
+    },
+    {
+      "title": "Gegen Missbrauch geschützt.",
+      "body": "Wir begrenzen Anmeldungen und andere sensible Aktionen, um uns gegen automatisierte Angriffe zu schützen."
+    },
+    {
+      "title": "Zugriffskontrollen.",
+      "body": "Du kannst nur deinen eigenen Tresor sehen und bearbeiten. Unsere Systeme erzwingen das bei jeder Anfrage."
+    }
+  ],
+  "promise": {
+    "heading": "Unsere Datenschutzversprechen"
+  },
+  "promises": [
+    {
+      "title": "Wir verkaufen deine Daten nie.",
+      "body": "Punkt."
+    },
+    {
+      "title": "Wir teilen nichts für Werbung.",
+      "body": "Deine Informationen werden nicht an Dritte weitergegeben, damit sie dich mit Werbung ansprechen."
+    },
+    {
+      "title": "Du hast die Kontrolle.",
+      "body": "Du entscheidest, was du hinzufügst — und was du entfernst."
+    }
+  ],
+  "yours": {
+    "heading": "Deine Daten gehören dir",
+    "body": "Deine Daten gehören dir — exportiere jederzeit alles (deine Daten + deine Originaldateien). Unter Einstellungen erstellt <b>Alles herunterladen (.zip)</b> eine Datei mit einer vollständigen, maschinenlesbaren Kopie deiner Einträge sowie jedem Originalfoto und Scan, das du hochgeladen hast. Kein Lock-in, kein Warten auf uns. Der maschinenlesbare Export erfüllt außerdem dein Recht auf Datenübertragbarkeit nach GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Klar erklärt, ohne Übertreibungen.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung und im Ruhezustand, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten ausdrücklich <b>nicht</b> „zero-knowledge“, „bank-level“ oder irgendeine Zertifizierung, die wir nicht erworben haben. Datenexport ist live (oben). Wenn wir Verschlüsselung auf Anwendungsebene oder ein formelles Audit durch Dritte hinzufügen, wird diese Seite das sagen.",
+    "contact": "Bei Fragen zu Datenschutz oder Sicherheit kontaktiere"
+  }
+}

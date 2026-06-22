@@ -1,0 +1,21 @@
+{
+  "nav.home": "ホーム",
+  "nav.howItWorks": "使い方",
+  "nav.features": "機能",
+  "nav.planning": "計画",
+  "nav.security": "セキュリティ",
+  "nav.faq": "よくある質問",
+  "nav.blog": "ブログ",
+  "cta.getStarted": "無料で始める",
+  "cta.seeHow": "使い方を見る",
+  "cta.startVault": "あなたの保管庫を始める — 無料",
+  "cta.explorePlanning": "計画を見る",
+  "footer.tagline": "家族の大切なものを、ひとつの落ち着いた安全な場所に。",
+  "footer.security": "セキュリティとプライバシー",
+  "footer.privacy": "プライバシー",
+  "footer.rights": "All rights reserved.",
+  "footer.signIn": "ログイン →",
+  "lang.switch": "言語",
+  "a11y.skip": "コンテンツへスキップ",
+  "trust.strip": "転送中 (TLS) と保存時に暗号化 · あなたのデータが売られることはありません · 家族のために設計"
+}

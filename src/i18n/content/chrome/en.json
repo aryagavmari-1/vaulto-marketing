@@ -1,0 +1,21 @@
+{
+  "nav.home": "Home",
+  "nav.howItWorks": "How it works",
+  "nav.features": "Features",
+  "nav.planning": "Planning",
+  "nav.security": "Security",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Get started free",
+  "cta.seeHow": "See how it works",
+  "cta.startVault": "Start your vault — free",
+  "cta.explorePlanning": "Explore planning",
+  "footer.tagline": "One calm, secure place for everything your family owns.",
+  "footer.security": "Security & Privacy",
+  "footer.privacy": "Privacy",
+  "footer.rights": "All rights reserved.",
+  "footer.signIn": "Sign in →",
+  "lang.switch": "Language",
+  "a11y.skip": "Skip to content",
+  "trust.strip": "Encrypted in transit (TLS) and at rest · Your data is never sold · Built for families"
+}

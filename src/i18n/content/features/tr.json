@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Özellikler",
+    "description": "Vaulto'nun bugün yaptıkları: varlık envanteri, şifrelenmiş bir belge kasası, yapay zekâ destekli yakalama, koleksiyonlar ve ailenizin sahip olduğu her şeyi tek bir net görünümde görme."
+  },
+  "crumbs": {
+    "home": "Ana sayfa",
+    "features": "Özellikler"
+  },
+  "hero": {
+    "eyebrow": "Özellikler",
+    "heading": "Neye sahip olduğunu bilmek için ihtiyacın olan her şey.",
+    "intro": "Bugün gerçekten iş yapan, odaklı bir araç seti. İşte yayında olanlar — yol haritası vaatleri yok, \"yakında\" yemi yok."
+  },
+  "features": [
+    {
+      "title": "Varlık envanteri",
+      "body": "Sahip olduğun her şeyi kaydet — gayrimenkul, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — önemli ayrıntılarla birlikte: değer veya değer aralığı, konum, durum ve ilgili kişiler."
+    },
+    {
+      "title": "Belge kasası",
+      "body": "Tapuları, poliçeleri, vasiyetleri ve ekstreleri güvende tut ve ait oldukları varlıklara ekle. 20MB'a kadar dosya yükle; şifrelenmiş altyapıda saklanır."
+    },
+    {
+      "title": "Yapay zekâ destekli yakalama",
+      "body": "Bir eşyanın ya da belgenin fotoğrafını çek, Vaulto onu okusun ve onaylaman veya düzenlemen için kaydı hazırlasın. Veri girişi kendi kendine yapılır."
+    },
+    {
+      "title": "Koleksiyonlar",
+      "body": "İlgili varlıkları ve belgeleri ailenin gerçekten düşündüğü şekilde grupla — bir mülk ve evrakları, bir miras, bir kişi."
+    },
+    {
+      "title": "Bütün tablo",
+      "body": "Her şeyi tek bir düzenli görünümde gör ve ileriye dönük plan yapmaya hazır olduğunda ücretsiz bir genel bakış al — miras, vasiyet ya da sırada ne olduğu."
+    },
+    {
+      "title": "İstediğin zaman dışa aktar — verilerin sana ait",
+      "body": "Verilerin sana ait — her şeyi istediğin zaman dışa aktar (verilerin + orijinal dosyaların). Tek bir indirme, kayıtlarının eksiksiz, makine tarafından okunabilir bir kopyasını ve yüklediğin her orijinal fotoğraf ile taramayı sana verir. Kilitlenme yok."
+    }
+  ],
+  "foot": "Yalnızca yayında olanları listeliyoruz. Yeni bir şey yayınladığımızda burada görünür — daha önce değil.",
+  "finalCta": {
+    "title": "Kendi şeylerinle gör.",
+    "body": "Ücretsiz başla ve ilk birkaç varlığını dakikalar içinde ekle."
+  }
+}

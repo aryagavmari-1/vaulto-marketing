@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Privacidad",
+    "description": "Cómo gestiona Vaulto tus datos personales."
+  },
+  "crumbs": {
+    "home": "Inicio",
+    "privacy": "Privacidad"
+  },
+  "hero": {
+    "eyebrow": "Confianza",
+    "heading": "Privacidad",
+    "lead": "Resumen en lenguaje claro de lo que Vaulto recopila, cómo lo usamos y el control que mantienes. Complementa nuestro <a href=\"/security/\">resumen de seguridad</a>.",
+    "updated": "Última actualización: junio de 2026 · Se publicará una política legal completa antes del lanzamiento público."
+  },
+  "sections": [
+    {
+      "title": "Qué recopilamos",
+      "body": "La información que eliges guardar en tu bóveda (activos, pasivos, documentos y detalles relacionados), los datos de la cuenta necesarios para iniciar sesión y los datos básicos de uso necesarios para operar y mejorar el servicio."
+    },
+    {
+      "title": "Cómo lo usamos",
+      "body": "Para ofrecer el producto: guardar tu inventario y documentos, calcular tu patrimonio neto, generar los resúmenes de IA que solicites y crear las capturas que elijas compartir. No vendemos tus datos."
+    },
+    {
+      "title": "Compartición &amp; consentimiento",
+      "body": "Tus datos solo se comparten cuando lo autorizas explícitamente; por ejemplo, cuando creas un paquete de referencia para un profesional. El consentimiento se registra con un alcance claro y puede revocarse en cualquier momento, y esa revocación queda registrada."
+    },
+    {
+      "title": "Cómo se protege",
+      "body": "Tu bóveda está aislada en tu cuenta en cada solicitud, las contraseñas se almacenan con hash scrypt y el acceso a documentos utiliza enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
+    }
+  ],
+  "choices": {
+    "title": "Tus opciones",
+    "items": [
+      "Accede a la información de tu bóveda y expórtala.",
+      "Revoca el acceso de un profesional a una captura compartida.",
+      "Solicita la eliminación de tu cuenta y tus datos."
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "lead": "¿Tienes preguntas sobre privacidad? Escribe a"
+  }
+}

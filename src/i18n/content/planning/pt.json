@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planeamento",
+    "description": "Uma visão geral gratuita do que está em jogo — heranças, testamentos, questões transfronteiriças e mais — e depois aprofunda ao teu ritmo. Orientação informativa, nunca um substituto do teu profissional."
+  },
+  "crumbs": {
+    "home": "Início",
+    "planning": "Planeamento"
+  },
+  "hero": {
+    "eyebrow": "Planeamento e aconselhamento",
+    "heading": "Está preparado, antes de a vida o exigir.",
+    "intro": "Começa com uma visão geral gratuita do que está em jogo. Aprofunda quando estiveres pronto, ao teu ritmo — e partilha um resumo claro com o profissional que trata disso. A orientação é informativa; não substitui o teu advogado ou consultor."
+  },
+  "areas": [
+    {
+      "title": "Planeamento de testamento",
+      "tagline": "Compreende o que um testamento deve abranger e onde podem existir lacunas, antes de te sentares com um advogado."
+    },
+    {
+      "title": "Herança",
+      "tagline": "Vê o que passar bens à geração seguinte pode implicar para a tua família — com calma e ao teu ritmo."
+    },
+    {
+      "title": "Visão financeira geral",
+      "tagline": "Uma leitura clara da tua situação como um todo: o que tens, o que isso significa e o que analisar a seguir."
+    },
+    {
+      "title": "Transfronteiriço",
+      "tagline": "Tens bens ou família em mais do que um país? Compreende as questões a considerar que isso implica."
+    },
+    {
+      "title": "Acordo pré-nupcial",
+      "tagline": "Reflete sobre como proteger o que importa a cada um, com clareza e sem pressão."
+    },
+    {
+      "title": "Divórcio e separação",
+      "tagline": "Um ponto de partida discreto e prático para compreender os bens quando as coisas estão a mudar."
+    }
+  ],
+  "areaCta": "Visão geral gratuita → Planeia quando estiveres pronto",
+  "more": {
+    "heading": "Mais áreas que podes explorar"
+  },
+  "moreAreas": [
+    "Imposto sobre heranças",
+    "Sucessão de empresas familiares",
+    "Seguros",
+    "Eficiência fiscal",
+    "Financiamento de ativos"
+  ],
+  "cta": {
+    "label": "Experimenta uma visão geral gratuita"
+  }
+}

@@ -1,0 +1,57 @@
+---
+/**
+ * Features page body, locale-aware (ARY-427). All copy comes from
+ * `content/features/<locale>.json` via `getContent`; emoji/icons stay here
+ * (never machine-translated). English is the source + fallback.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import Eyebrow from '../marketing/Eyebrow.astro';
+import FinalCta from '../marketing/FinalCta.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('features', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.features, url: `${BRAND.url}/features/` },
+];
+const featureIcons = ['🗂️', '📄', '📸', '🧺', '🧭', '⬇️'];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/features/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+      <h1 class="t-display">{c.hero.heading}</h1>
+      <p class="intro t-bodyL">{c.hero.intro}</p>
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="feature-list">
+        {c.features.map((f: any, i: number) => (
+          <div class="feature-row card">
+            <div class="ico" aria-hidden="true">{featureIcons[i]}</div>
+            <div>
+              <h3 class="t-heading">{f.title}</h3>
+              <p class="t-body">{f.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="feature-foot">{c.foot}</p>
+    </div>
+  </section>
+
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="features_final" />
+</Base>

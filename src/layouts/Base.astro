@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { BRAND } from '../config/brand';
-import { DEFAULT_LOCALE, HREFLANG, localizedPath, type Locale } from '../config/i18n';
+import { DEFAULT_LOCALE, HREFLANG, dirFor, localizedPath, type Locale } from '../config/i18n';
 import type { FaqItem, Crumb } from '../config/structured-data';
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
@@ -29,7 +29,7 @@ const fullTitle = title ? `${title} · ${BRAND.name}` : `${BRAND.name} — ${BRA
 const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
 ---
 <!doctype html>
-<html lang={HREFLANG[locale]}>
+<html lang={HREFLANG[locale]} dir={dirFor(locale)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

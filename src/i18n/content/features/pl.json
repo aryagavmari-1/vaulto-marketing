@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funkcje",
+    "description": "Co Vaulto robi dziś: inwentaryzacja majątku, szyfrowany sejf na dokumenty, przechwytywanie wspomagane przez AI, kolekcje i jeden przejrzysty widok wszystkiego, co posiada Twoja rodzina."
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "features": "Funkcje"
+  },
+  "hero": {
+    "eyebrow": "Funkcje",
+    "heading": "Wszystko, czego potrzebujesz, aby wiedzieć, co posiadasz.",
+    "intro": "Skupiony zestaw narzędzi, które już dziś naprawdę działają. Oto, co jest już dostępne — bez obietnic z roadmapy i bez przynęty typu „wkrótce”."
+  },
+  "features": [
+    {
+      "title": "Inwentaryzacja majątku",
+      "body": "Zapisuj wszystko, co posiadasz — nieruchomości, konta, inwestycje, kosztowności, emerytury — wraz ze szczegółami, które mają znaczenie: wartość lub przedział wartości, lokalizacja, stan i osoby, których to dotyczy."
+    },
+    {
+      "title": "Sejf na dokumenty",
+      "body": "Przechowuj akty własności, polisy, testamenty i wyciągi bezpiecznie, przypisane do majątku, którego dotyczą. Przesyłaj pliki do 20MB, przechowywane w szyfrowanej infrastrukturze."
+    },
+    {
+      "title": "Przechwytywanie wspomagane przez AI",
+      "body": "Zrób zdjęcie przedmiotu lub dokumentu, a Vaulto je odczyta, przygotowując wpis do potwierdzenia lub edycji. Wprowadzanie danych robi się niemal samo."
+    },
+    {
+      "title": "Kolekcje",
+      "body": "Grupuj powiązane składniki majątku i dokumenty tak, jak naprawdę myśli o nich Twoja rodzina — nieruchomość i jej dokumenty, spadek, osoba."
+    },
+    {
+      "title": "Pełny obraz",
+      "body": "Zobacz wszystko w jednym uporządkowanym widoku i otrzymaj bezpłatny przegląd, gdy będziesz gotów planować z wyprzedzeniem — spadek, testament albo to, co wydarzy się później."
+    },
+    {
+      "title": "Eksport w każdej chwili — Twoje dane należą do Ciebie",
+      "body": "Twoje dane należą do Ciebie — wyeksportuj wszystko (Twoje dane + Twoje oryginalne pliki) w dowolnym momencie. Jedno pobranie daje Ci kompletną kopię Twoich zapisów w formacie do odczytu maszynowego oraz każde oryginalne zdjęcie i skan, które przesłałeś. Bez uzależnienia od usługi."
+    }
+  ],
+  "foot": "Wymieniamy tylko to, co jest już dostępne. Gdy udostępnimy coś nowego, pojawi się to tutaj — nie wcześniej.",
+  "finalCta": {
+    "title": "Zobacz to na własnych danych.",
+    "body": "Zacznij za darmo i dodaj swoje pierwsze składniki majątku w kilka minut."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Frequently asked questions",
+    "description": "Answers about Vaulto — is my data safe, what it costs, what you can store, and how AI-assisted capture saves you the typing."
+  },
+  "crumbs": { "home": "Home", "faq": "FAQ" },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Questions, answered plainly.",
+    "intro": "Straight answers about your data, what it costs, and how Vaulto works. Still curious? Read <a href=\"/security/\">how we keep it safe</a> or <a href=\"/how-it-works/\">how it works</a>."
+  },
+  "items": [
+    {
+      "q": "Is my data safe?",
+      "a": "Yes. Your information is encrypted in transit (TLS) and at rest on managed infrastructure, your password is never stored in plain text, and access is strictly controlled to your account.",
+      "onward": "See how we keep it safe →"
+    },
+    {
+      "q": "Do you sell my data?",
+      "a": "No — never. We don’t sell or share your information for advertising.",
+      "onward": "Read our privacy promises →"
+    },
+    {
+      "q": "What does it cost?",
+      "a": "Vaulto is free to start. Deeper planning reports are available when you’re ready; you’ll always see what’s included before anything is charged."
+    },
+    {
+      "q": "Do I have to enter everything by hand?",
+      "a": "No — upload a photo or document and Vaulto can read it and suggest the details for you.",
+      "onward": "See how capture works →"
+    },
+    {
+      "q": "Who is Vaulto for?",
+      "a": "Families and individuals who want one trusted place to know what they own, keep key documents safe, and plan ahead."
+    },
+    {
+      "q": "What can I store?",
+      "a": "Assets of all kinds — property, accounts, investments, valuables, pensions — plus the documents that go with them."
+    },
+    {
+      "q": "Can I use Vaulto in my language?",
+      "a": "The app is available in 16 languages. We’re adding localized site content market by market."
+    }
+  ],
+  "finalCta": {
+    "title": "Ready when you are.",
+    "body": "Start free and add your first few things in minutes."
+  }
+}

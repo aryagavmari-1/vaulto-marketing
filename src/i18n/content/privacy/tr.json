@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Gizlilik",
+    "description": "Vaulto'nun kişisel verilerinizi nasıl işlediği."
+  },
+  "crumbs": {
+    "home": "Ana Sayfa",
+    "privacy": "Gizlilik"
+  },
+  "hero": {
+    "eyebrow": "Güven",
+    "heading": "Gizlilik",
+    "lead": "Vaulto'nun neleri topladığı, bunları nasıl kullandığı ve kontrolün sizde nasıl kaldığına dair sade bir özet. <a href=\"/security/\">güvenliğe genel bakışımızla</a> birlikte okunmalıdır.",
+    "updated": "Son güncelleme Haziran 2026 · Tam yasal politika, halka açık lansmandan önce yayımlanacaktır."
+  },
+  "sections": [
+    {
+      "title": "Neleri topluyoruz",
+      "body": "Kasanıza koymayı seçtiğiniz bilgiler (varlıklar, borçlar, belgeler ve ilgili ayrıntılar), oturum açmanız için gereken hesap bilgileri ve hizmeti işletmek ve iyileştirmek için gereken temel kullanım verileri."
+    },
+    {
+      "title": "Bunu nasıl kullanıyoruz",
+      "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net varlığınızı hesaplamak, talep ettiğiniz AI özetlerini oluşturmak ve paylaşmayı seçtiğiniz anlık görüntüleri hazırlamak. Verilerinizi satmıyoruz."
+    },
+    {
+      "title": "Paylaşım &amp; onay",
+      "body": "Verileriniz yalnızca bunu açıkça onayladığınızda paylaşılır — örneğin, bir uzman için yönlendirme paketi hazırladığınızda. Onay açık bir kapsamla kaydedilir ve istediğiniz zaman geri alınabilir; geri alma işlemi de takip edilir."
+    },
+    {
+      "title": "Nasıl korunuyor",
+      "body": "Kasanız her istekte hesabınıza özel olarak yalıtılır, parolalar scrypt ile hash'lenir ve belgelere erişimde kısa ömürlü imzalı bağlantılar kullanılır. Ayrıntılar için <a href=\"/security/\">güvenliğe genel bakışa</a> bakın — henüz neyi iddia etmediğimiz dahil."
+    }
+  ],
+  "choices": {
+    "title": "Seçimleriniz",
+    "items": [
+      "Kasanızdaki bilgilere erişin ve bunları dışa aktarın.",
+      "Paylaşılan bir anlık görüntüye bir uzmanın erişimini iptal edin.",
+      "Hesabınızın ve verilerinizin silinmesini isteyin."
+    ]
+  },
+  "contact": {
+    "title": "İletişim",
+    "lead": "Gizlilikle ilgili sorularınız mı var? E-posta"
+  }
+}

@@ -1,0 +1,58 @@
+---
+/**
+ * Privacy page body, locale-aware (ARY-427). All copy comes from
+ * `content/privacy/<locale>.json` via `getContent`; the contact email link
+ * stays here (never machine-translated). English is the source + fallback.
+ * Inline legal prose (links, &amp;) is preserved inside the JSON strings and
+ * rendered via `set:html`. Mirrors the SecurityPage pattern.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('privacy', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.privacy, url: `${BRAND.url}/privacy/` },
+];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/privacy/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">{c.hero.eyebrow}</span>
+      <h1>{c.hero.heading}</h1>
+      <p class="lead" set:html={c.hero.lead} />
+      <p class="updated">{c.hero.updated}</p>
+
+      {c.sections.map((s: any) => (
+        <Fragment>
+          <h2 set:html={s.title} />
+          <p set:html={s.body} />
+        </Fragment>
+      ))}
+
+      <h2 set:html={c.choices.title} />
+      <ul>
+        {c.choices.items.map((item: string) => (
+          <li set:html={item} />
+        ))}
+      </ul>
+
+      <h2 set:html={c.contact.title} />
+      <p>
+        {c.contact.lead}{' '}
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

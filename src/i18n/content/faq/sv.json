@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Vanliga frågor",
+    "description": "Svar om Vaulto — om dina data är säkra, vad det kostar, vad du kan lagra och hur AI-assisterad insamling sparar dig från allt skrivande."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Frågor, besvarade enkelt.",
+    "intro": "Raka svar om dina data, vad det kostar och hur Vaulto fungerar. Fortfarande nyfiken? Läs <a href=\"/security/\">hur vi håller det säkert</a> eller <a href=\"/how-it-works/\">hur det fungerar</a>."
+  },
+  "items": [
+    {
+      "q": "Är mina data säkra?",
+      "a": "Ja. Din information krypteras under överföring (TLS) och i vila på hanterad infrastruktur, ditt lösenord lagras aldrig i klartext och åtkomsten är strikt begränsad till ditt konto.",
+      "onward": "Se hur vi håller det säkert →"
+    },
+    {
+      "q": "Säljer ni mina data?",
+      "a": "Nej — aldrig. Vi säljer eller delar inte din information för annonsering.",
+      "onward": "Läs våra integritetslöften →"
+    },
+    {
+      "q": "Vad kostar det?",
+      "a": "Vaulto är gratis att komma igång med. Mer djupgående planeringsrapporter finns när du är redo; du ser alltid vad som ingår innan något debiteras."
+    },
+    {
+      "q": "Måste jag lägga in allt manuellt?",
+      "a": "Nej — ladda upp ett foto eller dokument så kan Vaulto läsa det och föreslå uppgifterna åt dig.",
+      "onward": "Se hur insamlingen fungerar →"
+    },
+    {
+      "q": "Vem är Vaulto för?",
+      "a": "Familjer och privatpersoner som vill ha en pålitlig plats för att veta vad de äger, hålla viktiga dokument säkra och planera framåt."
+    },
+    {
+      "q": "Vad kan jag lagra?",
+      "a": "Tillgångar av alla slag — fastigheter, konton, investeringar, värdesaker, pensioner — plus dokumenten som hör till dem."
+    },
+    {
+      "q": "Kan jag använda Vaulto på mitt språk?",
+      "a": "Appen finns på 16 språk. Vi lägger till lokaliserat webbplatsinnehåll marknad för marknad."
+    }
+  ],
+  "finalCta": {
+    "title": "Redo när du är det.",
+    "body": "Börja gratis och lägg till dina första saker på några minuter."
+  }
+}

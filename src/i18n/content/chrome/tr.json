@@ -1,0 +1,21 @@
+{
+  "nav.home": "Ana sayfa",
+  "nav.howItWorks": "Nasıl çalışır",
+  "nav.features": "Özellikler",
+  "nav.planning": "Planlama",
+  "nav.security": "Güvenlik",
+  "nav.faq": "SSS",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Ücretsiz başlayın",
+  "cta.seeHow": "Nasıl çalıştığını görün",
+  "cta.startVault": "Kasanızı başlatın — ücretsiz",
+  "cta.explorePlanning": "Planlamayı keşfedin",
+  "footer.tagline": "Ailenizin sahip olduğu her şey için sakin ve güvenli bir yer.",
+  "footer.security": "Güvenlik ve Gizlilik",
+  "footer.privacy": "Gizlilik",
+  "footer.rights": "Tüm hakları saklıdır.",
+  "footer.signIn": "Giriş yap →",
+  "lang.switch": "Dil",
+  "a11y.skip": "İçeriğe geç",
+  "trust.strip": "Aktarım sırasında (TLS) ve depoda şifrelenir · Verileriniz asla satılmaz · Aileler için tasarlandı"
+}

@@ -1,0 +1,12 @@
+---
+/** Localized Features (ARY-427). One route → every non-default locale. */
+import { NON_DEFAULT_LOCALES, type Locale } from '../../config/i18n';
+import FeaturesPage from '../../components/pages/FeaturesPage.astro';
+
+export function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+---
+<FeaturesPage locale={locale} />

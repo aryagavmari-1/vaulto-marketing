@@ -9,3 +9,6 @@ npm-debug.log*
 
 # local working files (fetched copy, screenshots) — not part of the site
 .assets/
+
+# local run-time secrets (ARY-427 translate script)
+.translate-env

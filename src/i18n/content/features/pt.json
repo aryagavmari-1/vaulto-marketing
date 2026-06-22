@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funcionalidades",
+    "description": "O que o Vaulto faz hoje: inventário de bens, um cofre de documentos encriptado, captura assistida por IA, coleções e uma visão clara de tudo o que a sua família possui."
+  },
+  "crumbs": {
+    "home": "Início",
+    "features": "Funcionalidades"
+  },
+  "hero": {
+    "eyebrow": "Funcionalidades",
+    "heading": "Tudo o que precisa para saber o que tem.",
+    "intro": "Um conjunto focado de ferramentas que faz trabalho real hoje. Eis o que já foi lançado — sem promessas de roadmap, sem iscos de \"em breve\"."
+  },
+  "features": [
+    {
+      "title": "Inventário de bens",
+      "body": "Registe tudo o que possui — imóveis, contas, investimentos, bens valiosos, pensões — com os detalhes que importam: valor ou intervalo de valor, localização, estado e as pessoas a quem diz respeito."
+    },
+    {
+      "title": "Cofre de documentos",
+      "body": "Mantenha escrituras, apólices, testamentos e extratos em segurança e associados aos bens a que pertencem. Carregue ficheiros até 20MB, armazenados em infraestrutura encriptada."
+    },
+    {
+      "title": "Captura assistida por IA",
+      "body": "Fotografe um objeto ou um documento e o Vaulto lê-o, preparando o registo para confirmar ou editar. A introdução de dados faz-se praticamente sozinha."
+    },
+    {
+      "title": "Coleções",
+      "body": "Agrupe bens e documentos relacionados da forma como a sua família realmente pensa neles — um imóvel e a sua documentação, um património, uma pessoa."
+    },
+    {
+      "title": "A visão completa",
+      "body": "Veja tudo numa única vista organizada e obtenha uma visão geral gratuita quando estiver pronto para planear o futuro — uma herança, um testamento ou o que acontece a seguir."
+    },
+    {
+      "title": "Exporte a qualquer momento — os seus dados são seus",
+      "body": "Os seus dados são seus — exporte tudo (os seus dados + os seus ficheiros originais) a qualquer momento. Um único download dá-lhe uma cópia completa, legível por máquina, dos seus registos, além de todas as fotos e digitalizações originais que carregou. Sem dependência."
+    }
+  ],
+  "foot": "Só listamos o que já está disponível. Quando lançarmos algo novo, aparece aqui — não antes.",
+  "finalCta": {
+    "title": "Veja com as suas próprias coisas.",
+    "body": "Comece grátis e adicione os seus primeiros bens em poucos minutos."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Domande frequenti",
+    "description": "Risposte su Vaulto — se i miei dati sono al sicuro, quanto costa, cosa puoi archiviare e come l'acquisizione assistita dall'IA ti fa risparmiare digitazione."
+  },
+  "crumbs": {
+    "home": "Home",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Domande, con risposte chiare.",
+    "intro": "Risposte dirette sui tuoi dati, sui costi e su come funziona Vaulto. Hai ancora domande? Leggi <a href=\"/security/\">come li teniamo al sicuro</a> o <a href=\"/how-it-works/\">come funziona</a>."
+  },
+  "items": [
+    {
+      "q": "I miei dati sono al sicuro?",
+      "a": "Sì. Le tue informazioni sono crittografate in transito (TLS) e a riposo su infrastruttura gestita, la tua password non viene mai memorizzata in chiaro e l'accesso è rigidamente controllato sul tuo account.",
+      "onward": "Scopri come li teniamo al sicuro →"
+    },
+    {
+      "q": "Vendete i miei dati?",
+      "a": "No — mai. Non vendiamo né condividiamo le tue informazioni per la pubblicità.",
+      "onward": "Leggi le nostre promesse sulla privacy →"
+    },
+    {
+      "q": "Quanto costa?",
+      "a": "Vaulto è gratuito per iniziare. Report di pianificazione più approfonditi sono disponibili quando vuoi; vedrai sempre cosa è incluso prima di qualsiasi addebito."
+    },
+    {
+      "q": "Devo inserire tutto a mano?",
+      "a": "No — carica una foto o un documento e Vaulto può leggerlo e suggerirti i dettagli.",
+      "onward": "Scopri come funziona l'acquisizione →"
+    },
+    {
+      "q": "Per chi è Vaulto?",
+      "a": "Per famiglie e singoli che vogliono un unico posto affidabile per sapere cosa possiedono, tenere al sicuro i documenti importanti e pianificare il futuro."
+    },
+    {
+      "q": "Cosa posso archiviare?",
+      "a": "Beni di ogni tipo — proprietà, conti, investimenti, oggetti di valore, pensioni — più i documenti associati."
+    },
+    {
+      "q": "Posso usare Vaulto nella mia lingua?",
+      "a": "L'app è disponibile in 16 lingue. Stiamo aggiungendo contenuti localizzati del sito mercato per mercato."
+    }
+  ],
+  "finalCta": {
+    "title": "Pronto quando lo sei tu.",
+    "body": "Inizia gratis e aggiungi le tue prime cose in pochi minuti."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Segurança e Privacidade",
+    "description": "Como a Vaulto protege a informação da sua família — encriptação em trânsito e em repouso, palavras-passe com hash, controlo de acesso rigoroso. Linguagem clara, sem exageros."
+  },
+  "crumbs": {
+    "home": "Início",
+    "security": "Segurança e Privacidade"
+  },
+  "hero": {
+    "eyebrow": "Segurança e privacidade",
+    "heading": "A informação da sua família, protegida.",
+    "intro": "A Vaulto guarda detalhes sensíveis — o que possui, onde está, os documentos que o comprovam. Levamos essa responsabilidade a sério. Eis exatamente como os protegemos, em linguagem clara."
+  },
+  "protect": {
+    "heading": "Como protegemos os seus dados"
+  },
+  "protections": [
+    {
+      "title": "Encriptado em trânsito.",
+      "body": "Todas as ligações à Vaulto usam TLS (HTTPS), para que os seus dados sejam encriptados enquanto circulam entre si e nós."
+    },
+    {
+      "title": "Encriptado em repouso.",
+      "body": "A sua informação e os seus documentos são armazenados em infraestrutura encriptada — base de dados gerida e armazenamento de objetos."
+    },
+    {
+      "title": "As palavras-passe nunca são guardadas em texto simples.",
+      "body": "Aplicamos hash à sua palavra-passe com um algoritmo forte e moderno (scrypt) — nem nós a conseguimos ler."
+    },
+    {
+      "title": "Sessões de curta duração.",
+      "body": "Os tokens de início de sessão têm curta duração e são mantidos em memória; o token que mantém a sessão iniciada fica num cookie seguro, imune a scripts."
+    },
+    {
+      "title": "Protegido contra abusos.",
+      "body": "Limitamos a frequência de inícios de sessão e de outras ações sensíveis para defender contra ataques automatizados."
+    },
+    {
+      "title": "Controlos de acesso.",
+      "body": "Só pode ver e editar o seu próprio cofre. Os nossos sistemas aplicam isto em todos os pedidos."
+    }
+  ],
+  "promise": {
+    "heading": "As nossas promessas de privacidade"
+  },
+  "promises": [
+    {
+      "title": "Nunca vendemos os seus dados.",
+      "body": "Ponto final."
+    },
+    {
+      "title": "Não partilhamos para publicidade.",
+      "body": "A sua informação não é entregue a terceiros para lhe fazerem marketing."
+    },
+    {
+      "title": "Tem o controlo.",
+      "body": "Decide o que adiciona — e o que remove."
+    }
+  ],
+  "yours": {
+    "heading": "Os seus dados são seus",
+    "body": "Os seus dados são seus — exporte tudo (os seus dados + os seus ficheiros originais) a qualquer momento. Em Definições, <b>Transferir tudo (.zip)</b> dá-lhe um único ficheiro com uma cópia completa, legível por máquina, dos seus registos, mais todas as fotos e digitalizações originais que carregou. Sem dependência, sem ter de esperar por nós. A exportação legível por máquina também satisfaz o seu direito à portabilidade dos dados ao abrigo do GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Linguagem clara, sem exageros.</b> Descrevemos apenas o que é verdade hoje: encriptação em trânsito e em repouso, palavras-passe com hash, controlo de acesso rigoroso. Deliberadamente <b>não</b> alegamos \"zero-knowledge\", \"bank-level\" nem qualquer certificação que não tenhamos obtido. A exportação de dados está disponível agora (acima). Quando adicionarmos encriptação ao nível da aplicação ou uma auditoria formal de terceiros, esta página dirá isso.",
+    "contact": "Para questões de privacidade ou segurança, contacte"
+  }
+}

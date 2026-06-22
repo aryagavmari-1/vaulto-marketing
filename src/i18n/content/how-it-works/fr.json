@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Comment ça marche",
+    "description": "Ajoutez ce que vous possédez, laissez Vaulto l’organiser et obtenez une vue d’ensemble en trois étapes simples. La capture assistée par IA s’occupe de la saisie pour vous."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "howItWorks": "Comment ça marche"
+  },
+  "hero": {
+    "eyebrow": "Comment ça marche",
+    "heading": "Du dispersé à l’organisé, en trois étapes.",
+    "intro": "Vous n’avez pas besoin de tout saisir à la main. Vaulto lit vos photos et documents et fait le plus gros du travail — pour démarrer en quelques minutes, pas en plusieurs week-ends."
+  },
+  "steps": [
+    {
+      "title": "Ajoutez ce que vous possédez.",
+      "body": "Prenez une photo ou importez un document, et Vaulto le lit pour vous — en préparant les informations pour que vous n’ayez pas à tout saisir à la main. Ajoutez une pièce, un reçu ou un dossier de documents en une seule fois.",
+      "detail": "La capture assistée par IA transforme une tâche écrasante en quelques courtes sessions."
+    },
+    {
+      "title": "Laissez Vaulto l’organiser.",
+      "body": "Regroupez vos actifs en collections, ajoutez les informations clés qui comptent et gardez les documents qui les justifient attachés exactement là où ils doivent être.",
+      "detail": "Biens, comptes, investissements, objets de valeur, retraites — tout dans une seule structure."
+    },
+    {
+      "title": "Voyez l’ensemble clairement.",
+      "body": "Les actifs et documents de votre famille dans une vue claire — prêts à être partagés avec les personnes qui comptent, et à vous aider à planifier avec un aperçu gratuit quand vous serez prêt.",
+      "detail": "Un aperçu clair que vous pouvez remettre à un notaire ou à un conseiller."
+    }
+  ],
+  "securityLink": "Comment nous le gardons en sécurité →",
+  "finalCta": {
+    "title": "Commencez votre coffre-fort — gratuit",
+    "body": "Ajoutez vos premiers éléments en quelques minutes. Aucun tableur nécessaire."
+  }
+}

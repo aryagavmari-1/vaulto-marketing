@@ -1,0 +1,21 @@
+{
+  "nav.home": "Strona główna",
+  "nav.howItWorks": "Jak to działa",
+  "nav.features": "Funkcje",
+  "nav.planning": "Planowanie",
+  "nav.security": "Bezpieczeństwo",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Zacznij za darmo",
+  "cta.seeHow": "Zobacz, jak to działa",
+  "cta.startVault": "Załóż swój sejf — za darmo",
+  "cta.explorePlanning": "Poznaj planowanie",
+  "footer.tagline": "Jedno spokojne, bezpieczne miejsce na wszystko, co posiada Twoja rodzina.",
+  "footer.security": "Bezpieczeństwo i prywatność",
+  "footer.privacy": "Prywatność",
+  "footer.rights": "Wszelkie prawa zastrzeżone.",
+  "footer.signIn": "Zaloguj się →",
+  "lang.switch": "Język",
+  "a11y.skip": "Przejdź do treści",
+  "trust.strip": "Szyfrowanie w tranzycie (TLS) i w spoczynku · Twoje dane nigdy nie są sprzedawane · Stworzone dla rodzin"
+}

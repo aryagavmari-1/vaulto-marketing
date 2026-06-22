@@ -6,16 +6,17 @@
  */
 import { BRAND } from '../config/brand';
 import MarketingButton from './marketing/MarketingButton.astro';
-import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
+import { DEFAULT_LOCALE, LOCALES, LOCALE_NAMES, localizedPath, type Locale } from '../config/i18n';
 import { useTranslations, type UIKey } from '../i18n/ui';
 
 interface Props { path?: string; locale?: Locale; }
 const { path = '/', locale = DEFAULT_LOCALE } = Astro.props;
 const t = useTranslations(locale);
 
-// Nav hrefs stay on the canonical (English-unprefixed) pages: only Home is
-// localized for now, so prefixing these would point at /es/... pages that
-// don't exist yet. Labels come from the chrome catalog with English fallback.
+// Nav hrefs are localized to the current locale (ARY-427: every page is now
+// translated in all locales), so a visitor stays in their language as they
+// navigate. English is un-prefixed via `localizedPath`. Labels come from the
+// chrome catalog with English fallback.
 const links: { href: string; key: UIKey }[] = [
   { href: '/', key: 'nav.home' },
   { href: '/security/', key: 'nav.security' },
@@ -26,6 +27,12 @@ const links: { href: string; key: UIKey }[] = [
 ];
 const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const isActive = (href: string) => norm(href) === norm(path);
+// Language switcher: each option navigates to this same page in that locale.
+const langOptions = LOCALES.map((l) => ({
+  value: localizedPath(path, l),
+  label: LOCALE_NAMES[l],
+  selected: l === locale,
+}));
 ---
 <header class="site-head">
   <div class="wrap">
@@ -35,8 +42,16 @@ const isActive = (href: string) => norm(href) === norm(path);
     <nav class="nav" aria-label="Primary">
       {links.map((l) => (
         <a class:list={['nav-link', isActive(l.href) && 'active']}
-           href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{t(l.key)}</a>
+           href={localizedPath(l.href, locale)} aria-current={isActive(l.href) ? 'page' : undefined}>{t(l.key)}</a>
       ))}
+      <label class="lang-switch">
+        <span class="sr-only">{t('lang.switch')}</span>
+        <select aria-label={t('lang.switch')} data-lang-switch>
+          {langOptions.map((o) => (
+            <option value={o.value} selected={o.selected}>{o.label}</option>
+          ))}
+        </select>
+      </label>
       <MarketingButton href={BRAND.app} nav cta="nav_get_started" outbound="app">{t('cta.getStarted')}</MarketingButton>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-drawer-toggle>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -52,6 +67,14 @@ const isActive = (href: string) => norm(href) === norm(path);
       <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{t(l.key)}</a>
     ))}
     <MarketingButton href={BRAND.app} cta="drawer_get_started" outbound="app">{t('cta.getStarted')}</MarketingButton>
+    <label class="lang-switch drawer-lang">
+      <span class="sr-only">{t('lang.switch')}</span>
+      <select aria-label={t('lang.switch')} data-lang-switch>
+        {langOptions.map((o) => (
+          <option value={o.value} selected={o.selected}>{o.label}</option>
+        ))}
+      </select>
+    </label>
   </nav>
 </div>
 <script is:inline>
@@ -66,4 +89,31 @@ const isActive = (href: string) => norm(href) === norm(path);
       toggle.setAttribute('aria-expanded', String(!open));
     });
   })();
+  // Language switcher: navigate to the selected locale's URL for this page.
+  (() => {
+    document.querySelectorAll('[data-lang-switch]').forEach((sel) => {
+      sel.addEventListener('change', (e) => {
+        const v = e.target && e.target.value;
+        if (v) window.location.href = v;
+      });
+    });
+  })();
 </script>
+<style>
+  .lang-switch { display: inline-flex; align-items: center; }
+  .lang-switch select {
+    font: inherit; font-size: 0.86rem; color: var(--ink, #2b2a26);
+    background: transparent; border: 1px solid var(--line, #e3e0d8);
+    border-radius: 8px; padding: 6px 26px 6px 10px; cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23837d6f' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 8px center;
+  }
+  .lang-switch select:focus-visible { outline: 2px solid var(--accent, #6b7a4f); outline-offset: 1px; }
+  .drawer-lang { margin-top: 8px; }
+  .drawer-lang select { width: 100%; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>

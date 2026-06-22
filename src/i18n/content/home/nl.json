@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Een rustige, veilige plek voor alles wat je gezin bezit",
+    "description": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — privé, met sterke beveiliging. Begin gratis."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privé & versleuteld van ontwerp af aan",
+    "heading": "Eén rustige, veilige plek voor alles wat je gezin bezit.",
+    "sub": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — zodat je gezin altijd weet wat er is, en wat de volgende stap is.",
+    "trust": [
+      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "Je gegevens worden nooit verkocht",
+      "Gemaakt voor gezinnen"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Gezinswoning",
+          "sub": "Vastgoed · eigendomsakte & verzekering toegevoegd"
+        },
+        {
+          "icon": "📄",
+          "label": "Testament- & nalatenschapsdocumenten",
+          "sub": "3 bestanden · versleutelde kluis"
+        },
+        {
+          "icon": "📈",
+          "label": "Beleggingen & pensioenen",
+          "sub": "Collectie · 5 items"
+        }
+      ],
+      "secured": "Beveiligd",
+      "lock": "🔒 Versleuteld in opslag"
+    }
+  },
+  "value": {
+    "heading": "Alles op één vertrouwde plek",
+    "sub": "Geen spreadsheets. Geen verspreide laden. Gewoon overzicht.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Weet wat je bezit.",
+        "body": "Vastgoed, rekeningen, beleggingen, kostbaarheden, pensioenen — vastgelegd op één overzichtelijke plek, niet verspreid over laden en spreadsheets."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Bewaar het veilig.",
+        "body": "Sla de documenten op die ertoe doen — aktes, polissen, overzichten — privé, achter sterke beveiliging."
+      },
+      {
+        "icon": "🧭",
+        "title": "Plan met vertrouwen.",
+        "body": "Zie het complete overzicht en krijg een helder, vrijblijvend overzicht wanneer je klaar bent om na te denken over erfenis, testamenten of wat er hierna gebeurt."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Aan de slag in drie stappen",
+    "items": [
+      {
+        "title": "Voeg toe wat je bezit.",
+        "body": "Maak een foto of upload een document — Vaulto kan het lezen en details voorstellen, zodat je niet alles met de hand hoeft in te typen."
+      },
+      {
+        "title": "Laat Vaulto het organiseren.",
+        "body": "Groepeer bezittingen in collecties, voeg de belangrijkste gegevens toe en houd documenten gekoppeld waar ze horen."
+      },
+      {
+        "title": "Zie het complete overzicht.",
+        "body": "De bezittingen van je gezin in één overzicht — klaar om te delen met de mensen die belangrijk zijn en om vooruit te plannen."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Gemaakt om je meest gevoelige informatie toe te vertrouwen.",
+    "lead": "Je gegevens zijn versleuteld onderweg naar ons en waar ze worden opgeslagen. Toegang is beveiligd, en we verkopen je informatie nooit.",
+    "cta": "Bekijk precies hoe we het veilig houden →",
+    "proof": [
+      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "Wachtwoorden gehasht — zelfs wij kunnen ze niet lezen",
+      "Kortdurende, door de browser beveiligde sessies",
+      "Je kunt alleen je eigen kluis zien",
+      "We verkopen of delen je gegevens nooit"
+    ]
+  },
+  "finalCta": {
+    "title": "Begin vandaag met de kluis van je gezin.",
+    "body": "Gratis om te beginnen. Geen spreadsheets nodig."
+  }
+}

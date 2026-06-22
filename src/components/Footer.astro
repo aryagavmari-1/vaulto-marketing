@@ -4,7 +4,7 @@
  * Sign in →. "Sign in →" is the hand-off to the live app.
  */
 import { BRAND } from '../config/brand';
-import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
+import { DEFAULT_LOCALE, localizedPath, type Locale } from '../config/i18n';
 import { useTranslations } from '../i18n/ui';
 
 interface Props { locale?: Locale; }
@@ -18,8 +18,8 @@ const t = useTranslations(locale);
     </a>
     <nav class="foot-links" aria-label="Footer">
       <span class="muted">© {BRAND.name}</span>
-      <a href="/security/">{t('nav.security')}</a>
-      <a href="/privacy/">{t('footer.privacy')}</a>
+      <a href={localizedPath('/security/', locale)}>{t('nav.security')}</a>
+      <a href={localizedPath('/privacy/', locale)}>{t('footer.privacy')}</a>
       <a href={BRAND.app} data-outbound="app">{t('footer.signIn')}</a>
     </nav>
   </div>

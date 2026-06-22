@@ -1,0 +1,21 @@
+{
+  "nav.home": "Accueil",
+  "nav.howItWorks": "Comment ça marche",
+  "nav.features": "Fonctionnalités",
+  "nav.planning": "Planification",
+  "nav.security": "Sécurité",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Commencer gratuitement",
+  "cta.seeHow": "Voir comment ça marche",
+  "cta.startVault": "Créez votre coffre-fort — gratuit",
+  "cta.explorePlanning": "Découvrir la planification",
+  "footer.tagline": "Un endroit calme et sécurisé pour tout ce que votre famille possède.",
+  "footer.security": "Sécurité et confidentialité",
+  "footer.privacy": "Confidentialité",
+  "footer.rights": "Tous droits réservés.",
+  "footer.signIn": "Se connecter →",
+  "lang.switch": "Langue",
+  "a11y.skip": "Aller au contenu",
+  "trust.strip": "Chiffré en transit (TLS) et au repos · Vos données ne sont jamais vendues · Conçu pour les familles"
+}

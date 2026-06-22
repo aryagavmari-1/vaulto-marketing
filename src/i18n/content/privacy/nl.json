@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Privacy",
+    "description": "Hoe Vaulto met je persoonsgegevens omgaat."
+  },
+  "crumbs": {
+    "home": "Home",
+    "privacy": "Privacy"
+  },
+  "hero": {
+    "eyebrow": "Vertrouwen",
+    "heading": "Privacy",
+    "lead": "Duidelijke samenvatting van wat Vaulto verzamelt, hoe we het gebruiken en welke controle jij houdt. Hoort bij ons <a href=\"/security/\">beveiligingsoverzicht</a>.",
+    "updated": "Laatst bijgewerkt in juni 2026 · Een volledig juridisch beleid wordt gepubliceerd vóór de publieke lancering."
+  },
+  "sections": [
+    {
+      "title": "Wat we verzamelen",
+      "body": "De informatie die je zelf in je kluis zet (bezittingen, schulden, documenten en gerelateerde gegevens), de accountgegevens die nodig zijn om je aan te melden, en basisgebruiksgegevens die nodig zijn om de dienst te laten werken en te verbeteren."
+    },
+    {
+      "title": "Hoe we het gebruiken",
+      "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten maken die je opvraagt en de snapshots maken die je kiest om te delen. We verkopen je gegevens niet."
+    },
+    {
+      "title": "Delen &amp; toestemming",
+      "body": "Je gegevens worden alleen gedeeld wanneer jij daar expliciet toestemming voor geeft — bijvoorbeeld wanneer je een doorverwijspakket voor een professional samenstelt. Toestemming wordt vastgelegd met een duidelijke reikwijdte en kan op elk moment worden ingetrokken; ook die intrekking wordt bijgehouden."
+    },
+    {
+      "title": "Hoe het wordt beschermd",
+      "body": "Je kluis is bij elk verzoek geïsoleerd tot je account, wachtwoorden worden met scrypt gehasht en toegang tot documenten gebruikt kort geldige ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor details — inclusief wat we nog niet claimen."
+    }
+  ],
+  "choices": {
+    "title": "Jouw keuzes",
+    "items": [
+      "Krijg toegang tot de informatie in je kluis en exporteer die.",
+      "Trek de toegang van een professional tot een gedeelde snapshot in.",
+      "Vraag om verwijdering van je account en gegevens."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Vragen over privacy? Mail"
+  }
+}

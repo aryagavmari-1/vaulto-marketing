@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planlama",
+    "description": "Miras, vasiyet, sınır ötesi konular ve daha fazlasında nelerin söz konusu olduğuna dair ücretsiz bir genel bakış alın — sonra kendi hızınızda daha derine inin. Bilgilendirici rehberlik sunar; uzmanınızın yerini asla tutmaz."
+  },
+  "crumbs": {
+    "home": "Ana Sayfa",
+    "planning": "Planlama"
+  },
+  "hero": {
+    "eyebrow": "Planlama ve danışmanlık",
+    "heading": "Hayat sizi zorlamadan önce hazır olun.",
+    "intro": "Önce nelerin söz konusu olduğuna dair ücretsiz bir genel bakışla başlayın. Hazır olduğunuzda, kendi hızınızda daha derine inin — ve konuyla ilgilenen uzmana temiz bir özet paylaşın. Bu rehberlik bilgilendirme amaçlıdır; avukatınızın veya danışmanınızın yerini tutmaz."
+  },
+  "areas": [
+    {
+      "title": "Vasiyet planlaması",
+      "tagline": "Bir vasiyetin neleri kapsaması gerektiğini ve eksiklerin nerede olduğunu, bir avukatla oturmadan önce anlayın."
+    },
+    {
+      "title": "Miras",
+      "tagline": "Bir şeyleri devretmenin aileniz için neler içerebileceğini — sakin bir şekilde ve kendi hızınızda — görün."
+    },
+    {
+      "title": "Finansal genel bakış",
+      "tagline": "Tüm tablonuza net bir bakış: sahip olduklarınız, bunların anlamı ve sırada neye bakmanız gerektiği."
+    },
+    {
+      "title": "Sınır ötesi",
+      "tagline": "Birden fazla ülkede varlıklarınız veya aileniz mi var? Bununla birlikte gelen hususları anlayın."
+    },
+    {
+      "title": "Evlilik sözleşmesi",
+      "tagline": "İkiniz için de önemli olanı korumayı, netlik içinde ve baskı olmadan değerlendirin."
+    },
+    {
+      "title": "Boşanma ve ayrılık",
+      "tagline": "Koşullar değişirken varlıkları anlamak için sakin ve pratik bir başlangıç noktası."
+    }
+  ],
+  "areaCta": "Ücretsiz genel bakış → Hazır olduğunuzda planlayın",
+  "more": {
+    "heading": "Keşfedebileceğiniz diğer alanlar"
+  },
+  "moreAreas": [
+    "Veraset vergisi",
+    "Aile işletmesinde halefiyet",
+    "Sigorta",
+    "Vergi verimliliği",
+    "Varlık finansmanı"
+  ],
+  "cta": {
+    "label": "Ücretsiz bir genel bakışı deneyin"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Spokojny, bezpieczny dom dla wszystkiego, co posiada Twoja rodzina",
+    "description": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — prywatnie, z silnymi zabezpieczeniami. Zacznij za darmo."
+  },
+  "hero": {
+    "eyebrow": "🔒 Prywatność i szyfrowanie od podstaw",
+    "heading": "Jedno spokojne, bezpieczne miejsce na wszystko, co posiada Twoja rodzina.",
+    "sub": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — żeby Twoja rodzina zawsze wiedziała, co jest na miejscu i co zrobić dalej.",
+    "trust": [
+      "Szyfrowanie w transmisji (TLS) i w spoczynku",
+      "Twoje dane nigdy nie są sprzedawane",
+      "Stworzone dla rodzin"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Dom rodzinny",
+          "sub": "Nieruchomość · akt własności i polisa w załączniku"
+        },
+        {
+          "icon": "📄",
+          "label": "Testament i dokumenty spadkowe",
+          "sub": "3 pliki · zaszyfrowany sejf"
+        },
+        {
+          "icon": "📈",
+          "label": "Inwestycje i emerytury",
+          "sub": "Kolekcja · 5 pozycji"
+        }
+      ],
+      "secured": "Zabezpieczone",
+      "lock": "🔒 Szyfrowane w spoczynku"
+    }
+  },
+  "value": {
+    "heading": "Wszystko w jednym zaufanym miejscu",
+    "sub": "Bez arkuszy. Bez porozrzucanych szuflad. Po prostu przejrzystość.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Wiedz, co posiadasz.",
+        "body": "Nieruchomości, konta, inwestycje, kosztowności, emerytury — zebrane w jednym uporządkowanym miejscu, a nie rozproszone po szufladach i arkuszach."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Trzymaj to bezpiecznie.",
+        "body": "Przechowuj ważne dokumenty — akty własności, polisy, wyciągi — prywatnie, za silnymi zabezpieczeniami."
+      },
+      {
+        "icon": "🧭",
+        "title": "Planuj ze spokojem.",
+        "body": "Zobacz pełny obraz i uzyskaj jasny, bezpłatny przegląd, gdy będziesz gotów pomyśleć o spadku, testamencie lub o tym, co dalej."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Zacznij w trzech krokach",
+    "items": [
+      {
+        "title": "Dodaj to, co posiadasz.",
+        "body": "Zrób zdjęcie lub prześlij dokument — Vaulto może go odczytać i zasugerować szczegóły, więc nie musisz wpisywać wszystkiego ręcznie."
+      },
+      {
+        "title": "Pozwól Vaulto to uporządkować.",
+        "body": "Grupuj aktywa w kolekcje, dodawaj kluczowe informacje i trzymaj dokumenty tam, gdzie powinny być."
+      },
+      {
+        "title": "Zobacz pełny obraz.",
+        "body": "Majątek Twojej rodziny w jednym widoku — gotowy do udostępnienia ważnym osobom i do planowania z wyprzedzeniem."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Stworzone po to, by można było powierzyć mu Twoje najbardziej wrażliwe informacje.",
+    "lead": "Twoje dane są szyfrowane w drodze do nas i tam, gdzie są przechowywane. Dostęp jest chroniony, a my nigdy nie sprzedajemy Twoich informacji.",
+    "cta": "Zobacz dokładnie, jak dbamy o ich bezpieczeństwo →",
+    "proof": [
+      "Szyfrowanie w transmisji (TLS) i w spoczynku",
+      "Hasła są haszowane — nawet my nie możemy ich odczytać",
+      "Krótkotrwałe sesje chronione przez przeglądarkę",
+      "Możesz zobaczyć tylko swój własny sejf",
+      "Nigdy nie sprzedajemy ani nie udostępniamy Twoich danych"
+    ]
+  },
+  "finalCta": {
+    "title": "Załóż sejf swojej rodziny już dziś.",
+    "body": "Na początek za darmo. Bez arkuszy kalkulacyjnych."
+  }
+}

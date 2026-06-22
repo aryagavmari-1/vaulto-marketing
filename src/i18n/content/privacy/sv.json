@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Integritet",
+    "description": "Så hanterar Vaulto dina personuppgifter."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "privacy": "Integritet"
+  },
+  "hero": {
+    "eyebrow": "Förtroende",
+    "heading": "Integritet",
+    "lead": "En sammanfattning på enkel svenska av vad Vaulto samlar in, hur vi använder det och vilken kontroll du har. Läser du tillsammans med vår <a href=\"/security/\">säkerhetsöversikt</a>.",
+    "updated": "Senast uppdaterad juni 2026 · En fullständig juridisk policy publiceras före offentlig lansering."
+  },
+  "sections": [
+    {
+      "title": "Vad vi samlar in",
+      "body": "Informationen du väljer att lägga in i ditt valv (tillgångar, skulder, dokument och relaterade uppgifter), kontouppgifterna som behövs för att logga in dig och grundläggande användningsdata som behövs för att driva och förbättra tjänsten."
+    },
+    {
+      "title": "Hur vi använder det",
+      "body": "För att tillhandahålla produkten: lagra din inventering och dina dokument, beräkna ditt nettoförmögenhet, skapa de AI-översikter du begär och skapa de ögonblicksbilder du väljer att dela. Vi säljer inte dina data."
+    },
+    {
+      "title": "Delning &amp; samtycke",
+      "body": "Dina data delas bara när du uttryckligen godkänner det — till exempel när du bygger ett hänvisningspaket för en professionell rådgivare. Samtycke registreras med en tydlig omfattning och kan återkallas när som helst, och återkallelsen spåras."
+    },
+    {
+      "title": "Hur det skyddas",
+      "body": "Ditt valv är isolerat till ditt konto vid varje begäran, lösenord är scrypt-hashade och dokumentåtkomst använder signerade länkar med kort giltighetstid. Se <a href=\"/security/\">säkerhetsöversikten</a> för detaljer — inklusive vad vi ännu inte gör anspråk på."
+    }
+  ],
+  "choices": {
+    "title": "Dina val",
+    "items": [
+      "Få tillgång till och exportera informationen i ditt valv.",
+      "Återkalla en professionell rådgivares åtkomst till en delad ögonblicksbild.",
+      "Begär radering av ditt konto och dina data."
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Frågor om integritet? Mejla"
+  }
+}

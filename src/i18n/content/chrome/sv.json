@@ -1,0 +1,21 @@
+{
+  "nav.home": "Hem",
+  "nav.howItWorks": "Så fungerar det",
+  "nav.features": "Funktioner",
+  "nav.planning": "Planering",
+  "nav.security": "Säkerhet",
+  "nav.faq": "Vanliga frågor",
+  "nav.blog": "Blogg",
+  "cta.getStarted": "Kom igång gratis",
+  "cta.seeHow": "Se hur det fungerar",
+  "cta.startVault": "Starta ditt valv — gratis",
+  "cta.explorePlanning": "Utforska planering",
+  "footer.tagline": "En lugn och säker plats för allt din familj äger.",
+  "footer.security": "Säkerhet & integritet",
+  "footer.privacy": "Integritet",
+  "footer.rights": "Alla rättigheter förbehållna.",
+  "footer.signIn": "Logga in →",
+  "lang.switch": "Språk",
+  "a11y.skip": "Hoppa till innehåll",
+  "trust.strip": "Krypterat under överföring (TLS) och i vila · Dina data säljs aldrig · Byggt för familjer"
+}

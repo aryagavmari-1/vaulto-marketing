@@ -1,0 +1,21 @@
+{
+  "nav.home": "Inicio",
+  "nav.howItWorks": "Cómo funciona",
+  "nav.features": "Funciones",
+  "nav.planning": "Planificación",
+  "nav.security": "Seguridad",
+  "nav.faq": "Preguntas frecuentes",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Empieza gratis",
+  "cta.seeHow": "Ver cómo funciona",
+  "cta.startVault": "Crea tu bóveda — gratis",
+  "cta.explorePlanning": "Explora la planificación",
+  "footer.tagline": "Un lugar tranquilo y seguro para todo lo que tu familia posee.",
+  "footer.security": "Seguridad y privacidad",
+  "footer.privacy": "Privacidad",
+  "footer.rights": "Todos los derechos reservados.",
+  "footer.signIn": "Iniciar sesión →",
+  "lang.switch": "Idioma",
+  "a11y.skip": "Saltar al contenido",
+  "trust.strip": "Cifrado en tránsito (TLS) y en reposo · Tus datos nunca se venden · Hecho para familias"
+}

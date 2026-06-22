@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Veelgestelde vragen",
+    "description": "Antwoorden over Vaulto — of mijn gegevens veilig zijn, wat het kost, wat je kunt opslaan en hoe AI-ondersteunde vastlegging je typewerk bespaart."
+  },
+  "crumbs": {
+    "home": "Home",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Vragen, helder beantwoord.",
+    "intro": "Duidelijke antwoorden over je gegevens, wat het kost en hoe Vaulto werkt. Nog nieuwsgierig? Lees <a href=\"/security/\">hoe we het veilig houden</a> of <a href=\"/how-it-works/\">hoe het werkt</a>."
+  },
+  "items": [
+    {
+      "q": "Zijn mijn gegevens veilig?",
+      "a": "Ja. Je informatie wordt versleuteld tijdens verzending (TLS) en in rust op beheerde infrastructuur, je wachtwoord wordt nooit in platte tekst opgeslagen en toegang tot je account wordt strikt beheerd.",
+      "onward": "Bekijk hoe we het veilig houden →"
+    },
+    {
+      "q": "Verkopen jullie mijn gegevens?",
+      "a": "Nee — nooit. We verkopen of delen je informatie niet voor advertenties.",
+      "onward": "Lees onze privacybeloften →"
+    },
+    {
+      "q": "Wat kost het?",
+      "a": "Vaulto is gratis om mee te beginnen. Uitgebreidere planningsrapporten zijn beschikbaar wanneer je er klaar voor bent; je ziet altijd wat is inbegrepen voordat er iets in rekening wordt gebracht."
+    },
+    {
+      "q": "Moet ik alles met de hand invoeren?",
+      "a": "Nee — upload een foto of document en Vaulto kan het lezen en de gegevens voor je voorstellen.",
+      "onward": "Bekijk hoe vastleggen werkt →"
+    },
+    {
+      "q": "Voor wie is Vaulto?",
+      "a": "Voor gezinnen en individuen die één vertrouwde plek willen om te weten wat ze bezitten, belangrijke documenten veilig te bewaren en vooruit te plannen."
+    },
+    {
+      "q": "Wat kan ik opslaan?",
+      "a": "Allerlei soorten bezittingen — vastgoed, rekeningen, beleggingen, waardevolle spullen, pensioenen — plus de documenten die erbij horen."
+    },
+    {
+      "q": "Kan ik Vaulto in mijn taal gebruiken?",
+      "a": "De app is beschikbaar in 16 talen. We voegen gelokaliseerde site-inhoud markt voor markt toe."
+    }
+  ],
+  "finalCta": {
+    "title": "Klaar wanneer jij dat bent.",
+    "body": "Begin gratis en voeg je eerste paar dingen in enkele minuten toe."
+  }
+}

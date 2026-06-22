@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Um lar calmo e seguro para tudo o que a sua família possui",
+    "description": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — em privado, com segurança robusta. Comece grátis."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privado e encriptado desde a origem",
+    "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
+    "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
+    "trust": [
+      "Encriptado em trânsito (TLS) e em repouso",
+      "Os seus dados nunca são vendidos",
+      "Feito para famílias"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Casa de família",
+          "sub": "Imóvel · escritura e seguro anexados"
+        },
+        {
+          "icon": "📄",
+          "label": "Testamento e documentos da herança",
+          "sub": "3 ficheiros · cofre encriptado"
+        },
+        {
+          "icon": "📈",
+          "label": "Investimentos e pensões",
+          "sub": "Coleção · 5 itens"
+        }
+      ],
+      "secured": "Protegido",
+      "lock": "🔒 Encriptado em repouso"
+    }
+  },
+  "value": {
+    "heading": "Tudo num só lugar de confiança",
+    "sub": "Sem folhas de cálculo. Sem gavetas desorganizadas. Apenas clareza.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Saiba o que possui.",
+        "body": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo reunido num só lugar organizado, e não espalhado por gavetas e folhas de cálculo."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Mantenha tudo seguro.",
+        "body": "Guarde os documentos importantes — escrituras, apólices, extratos — em privado, protegidos por segurança robusta."
+      },
+      {
+        "icon": "🧭",
+        "title": "Planeie com confiança.",
+        "body": "Veja o panorama completo e tenha uma visão geral clara e gratuita quando estiver pronto para pensar em herança, testamentos ou no que acontece a seguir."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Pronto a usar em três passos",
+    "items": [
+      {
+        "title": "Adicione o que possui.",
+        "body": "Tire uma foto ou carregue um documento — o Vaulto pode lê-lo e sugerir os detalhes, para que não tenha de escrever tudo à mão."
+      },
+      {
+        "title": "Deixe o Vaulto organizar.",
+        "body": "Agrupe os bens em coleções, adicione os factos principais e mantenha os documentos anexados onde devem estar."
+      },
+      {
+        "title": "Veja o panorama completo.",
+        "body": "Os bens da sua família numa única vista — prontos para partilhar com as pessoas importantes e para planear o futuro."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
+    "lead": "Os seus dados são encriptados no caminho até nós e onde ficam armazenados. O acesso é protegido e nunca vendemos a sua informação.",
+    "cta": "Veja exatamente como mantemos tudo seguro →",
+    "proof": [
+      "Encriptado em trânsito (TLS) e em repouso",
+      "Palavras-passe com hash — nem nós as conseguimos ler",
+      "Sessões de curta duração, protegidas pelo navegador",
+      "Só pode ver o seu próprio cofre",
+      "Nunca vendemos nem partilhamos os seus dados"
+    ]
+  },
+  "finalCta": {
+    "title": "Comece hoje o cofre da sua família.",
+    "body": "Grátis para começar. Sem folhas de cálculo."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funktionen",
+    "description": "Was Vaulto heute kann: Vermögensinventar, ein verschlüsselter Dokumententresor, KI-gestützte Erfassung, Sammlungen und ein klarer Überblick über alles, was deine Familie besitzt."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "features": "Funktionen"
+  },
+  "hero": {
+    "eyebrow": "Funktionen",
+    "heading": "Alles, was du brauchst, um zu wissen, was dir gehört.",
+    "intro": "Ein fokussierter Satz an Werkzeugen, die heute echte Arbeit leisten. Das ist bereits verfügbar — keine Roadmap-Versprechen, keine \"bald verfügbar\"-Köder."
+  },
+  "features": [
+    {
+      "title": "Vermögensinventar",
+      "body": "Erfasse alles, was dir gehört — Immobilien, Konten, Anlagen, Wertgegenstände, Renten — mit den Details, die zählen: Wert oder Wertspanne, Ort, Zustand und die betroffenen Personen."
+    },
+    {
+      "title": "Dokumententresor",
+      "body": "Bewahre Urkunden, Policen, Testamente und Kontoauszüge sicher auf und verknüpfe sie mit den Vermögenswerten, zu denen sie gehören. Lade Dateien bis zu 20MB hoch, gespeichert auf verschlüsselter Infrastruktur."
+    },
+    {
+      "title": "KI-gestützte Erfassung",
+      "body": "Fotografiere einen Gegenstand oder ein Dokument, und Vaulto liest es aus und erstellt einen Entwurf des Eintrags, den du bestätigen oder bearbeiten kannst. Die Dateneingabe erledigt sich fast von selbst."
+    },
+    {
+      "title": "Sammlungen",
+      "body": "Gruppiere zusammengehörige Vermögenswerte und Dokumente so, wie deine Familie tatsächlich darüber denkt — eine Immobilie mit ihren Unterlagen, ein Nachlass, eine Person."
+    },
+    {
+      "title": "Das große Ganze",
+      "body": "Sieh alles in einer gut organisierten Übersicht und erhalte einen kostenlosen Überblick, wenn du bereit bist, vorauszuplanen — Erbschaft, ein Testament oder was als Nächstes passiert."
+    },
+    {
+      "title": "Jederzeit exportieren — deine Daten gehören dir",
+      "body": "Deine Daten gehören dir — exportiere jederzeit alles (deine Daten + deine Originaldateien). Mit einem Download erhältst du eine vollständige, maschinenlesbare Kopie deiner Einträge plus jedes Originalfoto und jeden Scan, den du hochgeladen hast. Kein Lock-in."
+    }
+  ],
+  "foot": "Wir listen nur auf, was live ist. Wenn wir etwas Neues veröffentlichen, erscheint es hier — nicht vorher.",
+  "finalCta": {
+    "title": "Sieh es mit deinen eigenen Dingen.",
+    "body": "Starte kostenlos und füge deine ersten Vermögenswerte in wenigen Minuten hinzu."
+  }
+}

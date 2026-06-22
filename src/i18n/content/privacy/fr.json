@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Confidentialité",
+    "description": "Comment Vaulto traite vos données personnelles."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "privacy": "Confidentialité"
+  },
+  "hero": {
+    "eyebrow": "Confiance",
+    "heading": "Confidentialité",
+    "lead": "Résumé en langage clair de ce que Vaulto collecte, de la façon dont nous l’utilisons et du contrôle que vous gardez. À lire avec notre <a href=\"/security/\">aperçu de la sécurité</a>.",
+    "updated": "Dernière mise à jour : juin 2026 · Une politique juridique complète sera publiée avant le lancement public."
+  },
+  "sections": [
+    {
+      "title": "Ce que nous collectons",
+      "body": "Les informations que vous choisissez de placer dans votre coffre-fort (actifs, passifs, documents et détails associés), les informations de compte nécessaires pour vous connecter, ainsi que des données d’usage de base nécessaires au fonctionnement et à l’amélioration du service."
+    },
+    {
+      "title": "Comment nous les utilisons",
+      "body": "Pour fournir le produit : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les synthèses IA que vous demandez et créer les instantanés que vous choisissez de partager. Nous ne vendons pas vos données."
+    },
+    {
+      "title": "Partage &amp; consentement",
+      "body": "Vos données ne sont partagées que lorsque vous l’autorisez explicitement — par exemple, lorsque vous créez un dossier de transmission pour un professionnel. Le consentement est enregistré avec une portée claire et peut être retiré à tout moment, et ce retrait est consigné."
+    },
+    {
+      "title": "Comment c’est protégé",
+      "body": "Votre coffre-fort est isolé à votre compte à chaque requête, les mots de passe sont hachés avec scrypt, et l’accès aux documents utilise des liens signés de courte durée. Consultez l’<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous ne revendiquons pas encore."
+    }
+  ],
+  "choices": {
+    "title": "Vos choix",
+    "items": [
+      "Accéder aux informations de votre coffre-fort et les exporter.",
+      "Retirer l’accès d’un professionnel à un instantané partagé.",
+      "Demander la suppression de votre compte et de vos données."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Des questions sur la confidentialité ? Écrivez à"
+  }
+}

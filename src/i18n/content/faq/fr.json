@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Questions fréquentes",
+    "description": "Réponses sur Vaulto — sécurité de vos données, coût, ce que vous pouvez stocker, et comment la capture assistée par l’IA vous évite de tout saisir."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Des réponses claires à vos questions.",
+    "intro": "Des réponses directes sur vos données, le coût, et le fonctionnement de Vaulto. Vous vous posez encore des questions ? Lisez <a href=\"/security/\">comment nous les protégeons</a> ou <a href=\"/how-it-works/\">comment ça marche</a>."
+  },
+  "items": [
+    {
+      "q": "Mes données sont-elles en sécurité ?",
+      "a": "Oui. Vos informations sont chiffrées en transit (TLS) et au repos sur une infrastructure gérée, votre mot de passe n’est jamais stocké en clair, et l’accès à votre compte est strictement contrôlé.",
+      "onward": "Voir comment nous les protégeons →"
+    },
+    {
+      "q": "Vendez-vous mes données ?",
+      "a": "Non — jamais. Nous ne vendons ni ne partageons vos informations à des fins publicitaires.",
+      "onward": "Lire nos engagements de confidentialité →"
+    },
+    {
+      "q": "Combien ça coûte ?",
+      "a": "Vaulto est gratuit pour commencer. Des rapports de planification plus détaillés sont disponibles quand vous êtes prêt ; vous verrez toujours ce qui est inclus avant toute facturation."
+    },
+    {
+      "q": "Dois-je tout saisir à la main ?",
+      "a": "Non — téléchargez une photo ou un document et Vaulto peut le lire et vous proposer les informations correspondantes.",
+      "onward": "Voir comment fonctionne la capture →"
+    },
+    {
+      "q": "À qui s’adresse Vaulto ?",
+      "a": "Aux familles et aux particuliers qui veulent un lieu de confiance unique pour savoir ce qu’ils possèdent, garder leurs documents importants en sécurité et planifier à l’avance."
+    },
+    {
+      "q": "Que puis-je stocker ?",
+      "a": "Des actifs de toutes sortes — biens immobiliers, comptes, placements, objets de valeur, pensions — ainsi que les documents qui les accompagnent."
+    },
+    {
+      "q": "Puis-je utiliser Vaulto dans ma langue ?",
+      "a": "L’application est disponible en 16 langues. Nous ajoutons du contenu de site localisé marché par marché."
+    }
+  ],
+  "finalCta": {
+    "title": "Prêt quand vous l’êtes.",
+    "body": "Commencez gratuitement et ajoutez vos premiers éléments en quelques minutes."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Una casa calma e sicura per tutto ciò che la tua famiglia possiede",
+    "description": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — in privato, con una sicurezza solida. Inizia gratis."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privato e crittografato fin dalla progettazione",
+    "heading": "Un unico posto calmo e sicuro per tutto ciò che la tua famiglia possiede.",
+    "sub": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — così la tua famiglia saprà sempre cosa c'è e cosa fare dopo.",
+    "trust": [
+      "Crittografato in transito (TLS) e a riposo",
+      "I tuoi dati non vengono mai venduti",
+      "Pensato per le famiglie"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Casa di famiglia",
+          "sub": "Immobile · atto e assicurazione allegati"
+        },
+        {
+          "icon": "📄",
+          "label": "Testamento e documenti successori",
+          "sub": "3 file · cassaforte crittografata"
+        },
+        {
+          "icon": "📈",
+          "label": "Investimenti e pensioni",
+          "sub": "Raccolta · 5 elementi"
+        }
+      ],
+      "secured": "Protetto",
+      "lock": "🔒 Crittografato a riposo"
+    }
+  },
+  "value": {
+    "heading": "Tutto in un unico posto affidabile",
+    "sub": "Niente fogli di calcolo. Niente cassetti sparsi. Solo chiarezza.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Sapere cosa possiedi.",
+        "body": "Immobili, conti, investimenti, oggetti di valore, pensioni — raccolti in un unico posto organizzato, non sparsi tra cassetti e fogli di calcolo."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Tieni tutto al sicuro.",
+        "body": "Conserva i documenti che contano — atti, polizze, estratti conto — in privato, protetti da una sicurezza solida."
+      },
+      {
+        "icon": "🧭",
+        "title": "Pianifica con fiducia.",
+        "body": "Vedi il quadro completo e ottieni una panoramica chiara e gratuita quando sei pronto a pensare a successione, testamento o a cosa succede dopo."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Pronto in tre passaggi",
+    "items": [
+      {
+        "title": "Aggiungi ciò che possiedi.",
+        "body": "Scatta una foto o carica un documento — Vaulto può leggerlo e suggerire i dettagli, così non devi digitare tutto a mano."
+      },
+      {
+        "title": "Lascia che Vaulto lo organizzi.",
+        "body": "Raggruppa i beni in raccolte, aggiungi le informazioni chiave e tieni i documenti allegati dove devono stare."
+      },
+      {
+        "title": "Vedi il quadro completo.",
+        "body": "I beni della tua famiglia in un'unica vista — pronti da condividere con le persone che contano e per pianificare il futuro."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Pensato per meritare fiducia con le tue informazioni più sensibili.",
+    "lead": "I tuoi dati sono crittografati mentre ci raggiungono e dove vengono conservati. L'accesso è protetto e non vendiamo mai le tue informazioni.",
+    "cta": "Scopri esattamente come li teniamo al sicuro →",
+    "proof": [
+      "Crittografato in transito (TLS) e a riposo",
+      "Password sottoposte ad hashing — nemmeno noi possiamo leggerle",
+      "Sessioni di breve durata, protette dal browser",
+      "Puoi vedere solo la tua cassaforte",
+      "Non vendiamo né condividiamo mai i tuoi dati"
+    ]
+  },
+  "finalCta": {
+    "title": "Inizia oggi la cassaforte della tua famiglia.",
+    "body": "Gratis per cominciare. Nessun foglio di calcolo necessario."
+  }
+}

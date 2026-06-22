@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planificación",
+    "description": "Una visión general gratuita de lo que está en juego — herencias, testamentos, cuestiones transfronterizas y más — y luego profundiza a tu ritmo. Orientación informativa, nunca un sustituto de tu profesional."
+  },
+  "crumbs": {
+    "home": "Inicio",
+    "planning": "Planificación"
+  },
+  "hero": {
+    "eyebrow": "Planificación y asesoramiento",
+    "heading": "Prepárate, antes de que la vida te obligue.",
+    "intro": "Empieza con una visión general gratuita de lo que está en juego. Profundiza cuando quieras, a tu ritmo — y comparte un resumen claro con el profesional que lo lleve. La orientación es informativa; no sustituye a tu abogado o asesor."
+  },
+  "areas": [
+    {
+      "title": "Planificación testamentaria",
+      "tagline": "Entiende qué debería cubrir un testamento y dónde están las carencias, antes de sentarte con un abogado."
+    },
+    {
+      "title": "Herencia",
+      "tagline": "Mira con calma lo que puede implicar transmitir tus bienes a tu familia — a tu ritmo."
+    },
+    {
+      "title": "Visión financiera general",
+      "tagline": "Una visión clara del conjunto: lo que tienes, lo que significa y qué conviene revisar después."
+    },
+    {
+      "title": "Transfronterizo",
+      "tagline": "¿Tienes bienes o familia en más de un país? Entiende las consideraciones que eso implica."
+    },
+    {
+      "title": "Acuerdo prenupcial",
+      "tagline": "Reflexiona sobre cómo proteger lo que importa a cada uno, con claridad y sin presiones."
+    },
+    {
+      "title": "Divorcio y separación",
+      "tagline": "Un punto de partida sereno y práctico para entender los bienes cuando las cosas están cambiando."
+    }
+  ],
+  "areaCta": "Visión general gratuita → Planifica cuando quieras",
+  "more": {
+    "heading": "Más áreas que puedes explorar"
+  },
+  "moreAreas": [
+    "Impuesto de sucesiones",
+    "Sucesión en la empresa familiar",
+    "Seguros",
+    "Eficiencia fiscal",
+    "Financiación de activos"
+  ],
+  "cta": {
+    "label": "Prueba una visión general gratuita"
+  }
+}

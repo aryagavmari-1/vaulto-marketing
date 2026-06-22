@@ -1,0 +1,21 @@
+{
+  "nav.home": "홈",
+  "nav.howItWorks": "이용 방법",
+  "nav.features": "기능",
+  "nav.planning": "계획",
+  "nav.security": "보안",
+  "nav.faq": "FAQ",
+  "nav.blog": "블로그",
+  "cta.getStarted": "무료로 시작하기",
+  "cta.seeHow": "이용 방법 보기",
+  "cta.startVault": "내 금고 시작하기 — 무료",
+  "cta.explorePlanning": "계획 살펴보기",
+  "footer.tagline": "가족의 모든 자산을 위한 차분하고 안전한 한 곳.",
+  "footer.security": "보안 및 개인정보 보호",
+  "footer.privacy": "개인정보 보호",
+  "footer.rights": "모든 권리 보유.",
+  "footer.signIn": "로그인 →",
+  "lang.switch": "언어",
+  "a11y.skip": "본문으로 건너뛰기",
+  "trust.strip": "전송 중(TLS) 및 저장 시 암호화 · 귀하의 데이터는 절대 판매되지 않습니다 · 가족을 위해 만들었습니다"
+}

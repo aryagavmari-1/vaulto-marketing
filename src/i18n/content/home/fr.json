@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Un lieu calme et sûr pour tout ce que possède votre famille",
+    "description": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — en privé, avec une sécurité solide. Commencez gratuitement."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privé et chiffré par conception",
+    "heading": "Un lieu unique, calme et sûr pour tout ce que possède votre famille.",
+    "sub": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — pour que votre famille sache toujours ce qui existe et quoi faire ensuite.",
+    "trust": [
+      "Chiffré en transit (TLS) et au repos",
+      "Vos données ne sont jamais vendues",
+      "Conçu pour les familles"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Maison familiale",
+          "sub": "Bien immobilier · acte et assurance joints"
+        },
+        {
+          "icon": "📄",
+          "label": "Testament et documents de succession",
+          "sub": "3 fichiers · coffre-fort chiffré"
+        },
+        {
+          "icon": "📈",
+          "label": "Investissements et retraites",
+          "sub": "Collection · 5 éléments"
+        }
+      ],
+      "secured": "Sécurisé",
+      "lock": "🔒 Chiffré au repos"
+    }
+  },
+  "value": {
+    "heading": "Tout en un seul endroit de confiance",
+    "sub": "Pas de tableurs. Pas de tiroirs éparpillés. Juste de la clarté.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Sachez ce que vous possédez.",
+        "body": "Biens immobiliers, comptes, investissements, objets de valeur, retraites — réunis dans un seul espace organisé, pas dispersés entre tiroirs et tableurs."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Gardez tout en sécurité.",
+        "body": "Stockez les documents importants — actes, contrats, relevés — en privé, derrière une sécurité solide."
+      },
+      {
+        "icon": "🧭",
+        "title": "Planifiez en toute confiance.",
+        "body": "Voyez l’ensemble de votre situation et obtenez une vue d’ensemble claire et gratuite quand vous êtes prêt à réfléchir à l’héritage, aux testaments ou à la suite."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Prêt en trois étapes",
+    "items": [
+      {
+        "title": "Ajoutez ce que vous possédez.",
+        "body": "Prenez une photo ou importez un document — Vaulto peut le lire et suggérer les détails, pour que vous n’ayez pas à tout saisir à la main."
+      },
+      {
+        "title": "Laissez Vaulto l’organiser.",
+        "body": "Regroupez vos biens en collections, ajoutez les informations clés et gardez les documents joints là où ils doivent être."
+      },
+      {
+        "title": "Voyez l’ensemble de la situation.",
+        "body": "Les biens de votre famille en une seule vue — prêts à être partagés avec les personnes qui comptent et à vous aider à planifier la suite."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Conçu pour mériter votre confiance avec vos informations les plus sensibles.",
+    "lead": "Vos données sont chiffrées pendant leur transmission jusqu’à nous et là où elles sont stockées. L’accès est protégé, et nous ne vendons jamais vos informations.",
+    "cta": "Voyez exactement comment nous les gardons en sécurité →",
+    "proof": [
+      "Chiffré en transit (TLS) et au repos",
+      "Mots de passe hachés — même nous ne pouvons pas les lire",
+      "Sessions de courte durée, protégées par le navigateur",
+      "Vous ne pouvez voir que votre propre coffre-fort",
+      "Nous ne vendons ni ne partageons jamais vos données"
+    ]
+  },
+  "finalCta": {
+    "title": "Commencez le coffre-fort de votre famille dès aujourd’hui.",
+    "body": "Gratuit pour commencer. Aucun tableur nécessaire."
+  }
+}

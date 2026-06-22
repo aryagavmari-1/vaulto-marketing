@@ -1,0 +1,21 @@
+{
+  "nav.home": "Home",
+  "nav.howItWorks": "Come funziona",
+  "nav.features": "Funzionalità",
+  "nav.planning": "Pianificazione",
+  "nav.security": "Sicurezza",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Inizia gratis",
+  "cta.seeHow": "Scopri come funziona",
+  "cta.startVault": "Crea la tua cassaforte — gratis",
+  "cta.explorePlanning": "Esplora la pianificazione",
+  "footer.tagline": "Un unico posto tranquillo e sicuro per tutto ciò che possiede la tua famiglia.",
+  "footer.security": "Sicurezza e privacy",
+  "footer.privacy": "Privacy",
+  "footer.rights": "Tutti i diritti riservati.",
+  "footer.signIn": "Accedi →",
+  "lang.switch": "Lingua",
+  "a11y.skip": "Vai al contenuto",
+  "trust.strip": "Crittografato in transito (TLS) e a riposo · I tuoi dati non vengono mai venduti · Creato per le famiglie"
+}

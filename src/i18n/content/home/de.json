@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt",
+    "description": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — privat, mit starker Sicherheit. Starte kostenlos."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privat & von Grund auf verschlüsselt",
+    "heading": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt.",
+    "sub": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — damit deine Familie immer weiß, was da ist und was als Nächstes zu tun ist.",
+    "trust": [
+      "Verschlüsselt bei der Übertragung (TLS) und im Ruhezustand",
+      "Deine Daten werden niemals verkauft",
+      "Für Familien entwickelt"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Familienhaus",
+          "sub": "Immobilie · Grundbuch & Versicherung angehängt"
+        },
+        {
+          "icon": "📄",
+          "label": "Testament & Nachlassdokumente",
+          "sub": "3 Dateien · verschlüsselter Tresor"
+        },
+        {
+          "icon": "📈",
+          "label": "Anlagen & Renten",
+          "sub": "Sammlung · 5 Einträge"
+        }
+      ],
+      "secured": "Gesichert",
+      "lock": "🔒 Im Ruhezustand verschlüsselt"
+    }
+  },
+  "value": {
+    "heading": "Alles an einem vertrauenswürdigen Ort",
+    "sub": "Keine Tabellen. Keine verstreuten Schubladen. Nur Klarheit.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Wisse, was du besitzt.",
+        "body": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles an einem organisierten Ort erfasst, nicht verteilt auf Schubladen und Tabellen."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Bewahre es sicher auf.",
+        "body": "Speichere die wichtigen Dokumente — Urkunden, Policen, Kontoauszüge — privat und hinter starker Sicherheit."
+      },
+      {
+        "icon": "🧭",
+        "title": "Plane mit Zuversicht.",
+        "body": "Behalte den Überblick und erhalte eine klare, kostenlose Übersicht, wenn du bereit bist, über Erbschaft, Testamente oder die nächsten Schritte nachzudenken."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "In drei Schritten startklar",
+    "items": [
+      {
+        "title": "Füge hinzu, was du besitzt.",
+        "body": "Mach ein Foto oder lade ein Dokument hoch — Vaulto kann es lesen und Details vorschlagen, damit du nicht alles von Hand eingeben musst."
+      },
+      {
+        "title": "Lass Vaulto es organisieren.",
+        "body": "Gruppiere Vermögenswerte in Sammlungen, ergänze die wichtigsten Fakten und halte Dokumente dort angehängt, wo sie hingehören."
+      },
+      {
+        "title": "Behalte den Überblick.",
+        "body": "Das Vermögen deiner Familie in einer Ansicht — bereit, es mit den wichtigen Menschen zu teilen und vorauszuplanen."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Entwickelt, damit du ihm deine sensibelsten Informationen anvertrauen kannst.",
+    "lead": "Deine Daten sind auf dem Weg zu uns und dort, wo sie gespeichert werden, verschlüsselt. Der Zugriff ist geschützt, und wir verkaufen deine Informationen niemals.",
+    "cta": "Sieh dir genau an, wie wir alles sicher halten →",
+    "proof": [
+      "Verschlüsselt bei der Übertragung (TLS) und im Ruhezustand",
+      "Passwörter gehasht — selbst wir können sie nicht lesen",
+      "Kurzlebige, browsergeschützte Sitzungen",
+      "Du kannst immer nur deinen eigenen Tresor sehen",
+      "Wir verkaufen oder teilen deine Daten niemals"
+    ]
+  },
+  "finalCta": {
+    "title": "Starte noch heute mit dem Tresor deiner Familie.",
+    "body": "Der Einstieg ist kostenlos. Keine Tabellen nötig."
+  }
+}

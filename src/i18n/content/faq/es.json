@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Preguntas frecuentes",
+    "description": "Respuestas sobre Vaulto: si mis datos están seguros, cuánto cuesta, qué puedes guardar y cómo la captura asistida por IA te ahorra escribir."
+  },
+  "crumbs": {
+    "home": "Inicio",
+    "faq": "Preguntas frecuentes"
+  },
+  "hero": {
+    "eyebrow": "Preguntas frecuentes",
+    "heading": "Preguntas, respondidas con claridad.",
+    "intro": "Respuestas claras sobre tus datos, cuánto cuesta y cómo funciona Vaulto. ¿Aún tienes curiosidad? Lee <a href=\"/security/\">cómo lo mantenemos seguro</a> o <a href=\"/how-it-works/\">cómo funciona</a>."
+  },
+  "items": [
+    {
+      "q": "¿Mis datos están seguros?",
+      "a": "Sí. Tu información se cifra en tránsito (TLS) y en reposo en infraestructura gestionada, tu contraseña nunca se almacena en texto plano y el acceso está estrictamente controlado en tu cuenta.",
+      "onward": "Ver cómo lo mantenemos seguro →"
+    },
+    {
+      "q": "¿Vendéis mis datos?",
+      "a": "No — nunca. No vendemos ni compartimos tu información para publicidad.",
+      "onward": "Lee nuestras promesas de privacidad →"
+    },
+    {
+      "q": "¿Cuánto cuesta?",
+      "a": "Empezar con Vaulto es gratis. Hay informes de planificación más avanzados disponibles cuando quieras; siempre verás qué está incluido antes de que se te cobre nada."
+    },
+    {
+      "q": "¿Tengo que introducirlo todo a mano?",
+      "a": "No — sube una foto o un documento y Vaulto puede leerlo y sugerirte los datos.",
+      "onward": "Ver cómo funciona la captura →"
+    },
+    {
+      "q": "¿Para quién es Vaulto?",
+      "a": "Para familias y personas que quieren un lugar de confianza para saber lo que tienen, guardar documentos importantes de forma segura y planificar con tiempo."
+    },
+    {
+      "q": "¿Qué puedo guardar?",
+      "a": "Activos de todo tipo — propiedades, cuentas, inversiones, objetos de valor, pensiones — además de los documentos relacionados."
+    },
+    {
+      "q": "¿Puedo usar Vaulto en mi idioma?",
+      "a": "La aplicación está disponible en 16 idiomas. Estamos añadiendo contenido localizado del sitio mercado por mercado."
+    }
+  ],
+  "finalCta": {
+    "title": "Listo cuando tú lo estés.",
+    "body": "Empieza gratis y añade tus primeras cosas en minutos."
+  }
+}

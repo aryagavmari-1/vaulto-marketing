@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "How it works",
+    "description": "Add what you own, let Vaulto organise it, and see your whole picture in three simple steps. AI-assisted capture does the data entry for you."
+  },
+  "crumbs": { "home": "Home", "howItWorks": "How it works" },
+  "hero": {
+    "eyebrow": "How it works",
+    "heading": "From scattered to organised, in three steps.",
+    "intro": "You don't have to type everything by hand. Vaulto reads your photos and documents and does the heavy lifting — so getting started takes minutes, not weekends."
+  },
+  "steps": [
+    {
+      "title": "Add what you own.",
+      "body": "Snap a photo or upload a document and Vaulto reads it for you — drafting the details so you're not typing everything by hand. Add a room, a receipt, or a folder of paperwork in one go.",
+      "detail": "AI-assisted capture turns an overwhelming job into a few short sessions."
+    },
+    {
+      "title": "Let Vaulto organise it.",
+      "body": "Group assets into collections, add the key facts that matter, and keep the documents that prove them attached right where they belong.",
+      "detail": "Property, accounts, investments, valuables, pensions — all in one structure."
+    },
+    {
+      "title": "See the whole picture.",
+      "body": "Your family's assets and documents in one clear view — ready to share with the people who matter, and to plan ahead with a free overview when you're ready.",
+      "detail": "A clean snapshot you can hand to a solicitor or advisor."
+    }
+  ],
+  "securityLink": "How we keep it safe →",
+  "finalCta": {
+    "title": "Start your vault — free",
+    "body": "Add your first few things in minutes. No spreadsheets required."
+  }
+}

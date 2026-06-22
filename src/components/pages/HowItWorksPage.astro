@@ -1,0 +1,65 @@
+---
+/**
+ * How it works page body, locale-aware (ARY-427). All copy comes from
+ * `content/how-it-works/<locale>.json` via `getContent`; emoji/glyphs, step
+ * numbers, and the security link href stay here. English is the source +
+ * fallback.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import Eyebrow from '../marketing/Eyebrow.astro';
+import FinalCta from '../marketing/FinalCta.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('how-it-works', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.howItWorks, url: `${BRAND.url}/how-it-works/` },
+];
+const stepGlyphs = ['📸', '🗂️', '🧭'];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/how-it-works/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+      <h1 class="t-display">{c.hero.heading}</h1>
+      <p class="intro t-bodyL">{c.hero.intro}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="steps-rows">
+        {c.steps.map((s: any, i: number) => (
+          <>
+            <div class:list={['step-row', i % 2 === 1 && 'reverse']}>
+              <div class="step-body">
+                <div class="num" aria-hidden="true">{i + 1}</div>
+                <h2 class="t-title">{s.title}</h2>
+                <p class="t-bodyL">{s.body}</p>
+                <p class="detail">{s.detail}</p>
+              </div>
+              <div class="step-visual" aria-hidden="true"><span class="glyph">{stepGlyphs[i]}</span></div>
+            </div>
+            {i < c.steps.length - 1 && <div class="connector" aria-hidden="true"></div>}
+          </>
+        ))}
+      </div>
+      <p class="center" style="margin-top:32px;">
+        <a href="/security/" data-cta="how_security">{c.securityLink}</a>
+      </p>
+    </div>
+  </section>
+
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="how_final" />
+</Base>

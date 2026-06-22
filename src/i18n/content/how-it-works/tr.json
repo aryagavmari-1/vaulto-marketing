@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Nasıl çalışır",
+    "description": "Sahip olduklarını ekle, Vaulto onları düzenlesin ve tüm tabloyu üç basit adımda gör. Yapay zekâ destekli yakalama, veri girişini senin yerine yapar."
+  },
+  "crumbs": {
+    "home": "Ana sayfa",
+    "howItWorks": "Nasıl çalışır"
+  },
+  "hero": {
+    "eyebrow": "Nasıl çalışır",
+    "heading": "Dağınıktan düzenliye, üç adımda.",
+    "intro": "Her şeyi tek tek elle yazmana gerek yok. Vaulto fotoğraflarını ve belgelerini okur, ağır işi üstlenir — böylece başlamak hafta sonlarını değil, dakikaları alır."
+  },
+  "steps": [
+    {
+      "title": "Sahip olduklarını ekle.",
+      "body": "Bir fotoğraf çek ya da bir belge yükle, Vaulto onu senin için okusun — böylece tüm ayrıntıları tek tek yazman gerekmeden taslağını hazırlasın. Bir odayı, bir fişi ya da bir belge klasörünü tek seferde ekle.",
+      "detail": "Yapay zekâ destekli yakalama, gözünde büyüyen bir işi birkaç kısa oturuma indirir."
+    },
+    {
+      "title": "Bırak Vaulto düzenlesin.",
+      "body": "Varlıkları koleksiyonlarda grupla, önemli temel bilgileri ekle ve bunları kanıtlayan belgeleri ait oldukları yerde bağlı tut.",
+      "detail": "Gayrimenkul, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — hepsi tek bir düzende."
+    },
+    {
+      "title": "Bütün tabloyu gör.",
+      "body": "Ailenin varlıkları ve belgeleri tek bir net görünümde — önemli kişilerle paylaşmaya hazır ve hazır olduğunda ücretsiz bir genel bakışla önceden plan yapman için elinin altında.",
+      "detail": "Bir avukata veya danışmana verebileceğin sade bir özet."
+    }
+  ],
+  "securityLink": "Onu nasıl güvende tutuyoruz →",
+  "finalCta": {
+    "title": "Kasanı başlat — ücretsiz",
+    "body": "İlk birkaç şeyini dakikalar içinde ekle. Hesap tabloları gerekmez."
+  }
+}

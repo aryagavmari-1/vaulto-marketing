@@ -1,0 +1,21 @@
+{
+  "nav.home": "الرئيسية",
+  "nav.howItWorks": "كيف يعمل",
+  "nav.features": "الميزات",
+  "nav.planning": "التخطيط",
+  "nav.security": "الأمان",
+  "nav.faq": "الأسئلة الشائعة",
+  "nav.blog": "المدونة",
+  "cta.getStarted": "ابدأ مجانًا",
+  "cta.seeHow": "اطّلع على طريقة العمل",
+  "cta.startVault": "ابدأ خزنتك — مجانًا",
+  "cta.explorePlanning": "استكشف التخطيط",
+  "footer.tagline": "مكان واحد هادئ وآمن لكل ما تملكه عائلتك.",
+  "footer.security": "الأمان والخصوصية",
+  "footer.privacy": "الخصوصية",
+  "footer.rights": "جميع الحقوق محفوظة.",
+  "footer.signIn": "سجّل الدخول →",
+  "lang.switch": "اللغة",
+  "a11y.skip": "تخطَّ إلى المحتوى",
+  "trust.strip": "مشفّر أثناء النقل (TLS) وأثناء التخزين · لا يتم بيع بياناتك أبدًا · مصمم للعائلات"
+}

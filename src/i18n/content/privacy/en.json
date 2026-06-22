@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Privacy",
+    "description": "How Vaulto handles your personal data."
+  },
+  "crumbs": { "home": "Home", "privacy": "Privacy" },
+  "hero": {
+    "eyebrow": "Trust",
+    "heading": "Privacy",
+    "lead": "Plain-English summary of what Vaulto collects, how we use it, and the control you keep. Pairs with our <a href=\"/security/\">security overview</a>.",
+    "updated": "Last updated June 2026 · A full legal policy is published before public launch."
+  },
+  "sections": [
+    {
+      "title": "What we collect",
+      "body": "The information you choose to put into your vault (assets, liabilities, documents, and related details), the account details needed to sign you in, and basic usage data needed to run and improve the service."
+    },
+    {
+      "title": "How we use it",
+      "body": "To provide the product: store your inventory and documents, calculate your net worth, generate the AI overviews you request, and create the snapshots you choose to share. We do not sell your data."
+    },
+    {
+      "title": "Sharing &amp; consent",
+      "body": "Your data is only shared when you explicitly grant it — for example, when you build a referral package for a professional. Consent is recorded with a clear scope and can be revoked at any time, and the revocation is tracked."
+    },
+    {
+      "title": "How it's protected",
+      "body": "Your vault is isolated to your account on every request, passwords are scrypt-hashed, and document access uses short-lived signed links. See the <a href=\"/security/\">security overview</a> for specifics — including what we don't yet claim."
+    }
+  ],
+  "choices": {
+    "title": "Your choices",
+    "items": [
+      "Access and export the information in your vault.",
+      "Revoke a professional's access to a shared snapshot.",
+      "Request deletion of your account and data."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "Questions about privacy? Email"
+  }
+}

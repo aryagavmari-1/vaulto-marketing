@@ -1,0 +1,21 @@
+{
+  "nav.home": "Início",
+  "nav.howItWorks": "Como funciona",
+  "nav.features": "Funcionalidades",
+  "nav.planning": "Planeamento",
+  "nav.security": "Segurança",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Começa grátis",
+  "cta.seeHow": "Vê como funciona",
+  "cta.startVault": "Cria o teu cofre — grátis",
+  "cta.explorePlanning": "Explora o planeamento",
+  "footer.tagline": "Um lugar tranquilo e seguro para tudo o que a tua família tem.",
+  "footer.security": "Segurança e Privacidade",
+  "footer.privacy": "Privacidade",
+  "footer.rights": "Todos os direitos reservados.",
+  "footer.signIn": "Iniciar sessão →",
+  "lang.switch": "Idioma",
+  "a11y.skip": "Saltar para o conteúdo",
+  "trust.strip": "Encriptado em trânsito (TLS) e em repouso · Os teus dados nunca são vendidos · Feito para famílias"
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Hoe het werkt",
+    "description": "Voeg toe wat je bezit, laat Vaulto het organiseren en zie het complete overzicht in drie eenvoudige stappen. AI-ondersteunde vastlegging doet de gegevensinvoer voor je."
+  },
+  "crumbs": {
+    "home": "Home",
+    "howItWorks": "Hoe het werkt"
+  },
+  "hero": {
+    "eyebrow": "Hoe het werkt",
+    "heading": "Van verspreid naar georganiseerd, in drie stappen.",
+    "intro": "Je hoeft niet alles met de hand te typen. Vaulto leest je foto's en documenten en doet het zware werk — zodat je in minuten kunt beginnen, niet pas na een heel weekend."
+  },
+  "steps": [
+    {
+      "title": "Voeg toe wat je bezit.",
+      "body": "Maak een foto of upload een document en Vaulto leest het voor je — en stelt de details op, zodat je niet alles met de hand hoeft te typen. Voeg een kamer, een bon of een map met papierwerk in één keer toe.",
+      "detail": "AI-ondersteunde vastlegging maakt van een overweldigende klus een paar korte sessies."
+    },
+    {
+      "title": "Laat Vaulto het organiseren.",
+      "body": "Groepeer bezittingen in verzamelingen, voeg de belangrijke kerngegevens toe en houd de documenten die ze bewijzen precies daar gekoppeld waar ze horen.",
+      "detail": "Vastgoed, rekeningen, beleggingen, waardevolle spullen, pensioenen — alles in één structuur."
+    },
+    {
+      "title": "Zie het complete overzicht.",
+      "body": "De bezittingen en documenten van je gezin in één helder overzicht — klaar om te delen met de mensen die belangrijk zijn, en om vooruit te plannen met een gratis overzicht wanneer jij er klaar voor bent.",
+      "detail": "Een helder overzicht dat je aan een notaris of adviseur kunt geven."
+    }
+  ],
+  "securityLink": "Hoe we het veilig houden →",
+  "finalCta": {
+    "title": "Start je kluis — gratis",
+    "body": "Voeg je eerste spullen in enkele minuten toe. Geen spreadsheets nodig."
+  }
+}

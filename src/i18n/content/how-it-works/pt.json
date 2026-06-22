@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Como funciona",
+    "description": "Adicione o que tem, deixe o Vaulto organizar e veja o panorama completo em três passos simples. A captura assistida por IA faz a introdução de dados por si."
+  },
+  "crumbs": {
+    "home": "Início",
+    "howItWorks": "Como funciona"
+  },
+  "hero": {
+    "eyebrow": "Como funciona",
+    "heading": "Do disperso ao organizado, em três passos.",
+    "intro": "Não tem de escrever tudo à mão. O Vaulto lê as suas fotos e documentos e trata do trabalho pesado — para começar em minutos, não em fins de semana."
+  },
+  "steps": [
+    {
+      "title": "Adicione o que tem.",
+      "body": "Tire uma foto ou carregue um documento e o Vaulto lê-o por si — preparando os detalhes para que não tenha de escrever tudo à mão. Adicione uma divisão, um recibo ou uma pasta de documentos de uma só vez.",
+      "detail": "A captura assistida por IA transforma uma tarefa esmagadora em algumas sessões curtas."
+    },
+    {
+      "title": "Deixe o Vaulto organizar.",
+      "body": "Agrupe bens em coleções, adicione os factos principais que importam e mantenha os documentos que os comprovam anexados exatamente onde pertencem.",
+      "detail": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo numa só estrutura."
+    },
+    {
+      "title": "Veja o panorama completo.",
+      "body": "Os bens e documentos da sua família numa vista clara — prontos para partilhar com as pessoas importantes e para planear o futuro com uma visão geral gratuita quando estiver pronto.",
+      "detail": "Uma imagem clara que pode entregar a um solicitador ou consultor."
+    }
+  ],
+  "securityLink": "Como o mantemos seguro →",
+  "finalCta": {
+    "title": "Comece o seu cofre — grátis",
+    "body": "Adicione as suas primeiras coisas em minutos. Sem folhas de cálculo."
+  }
+}

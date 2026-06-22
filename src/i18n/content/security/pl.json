@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Bezpieczeństwo i prywatność",
+    "description": "Jak Vaulto chroni informacje o Twojej rodzinie — szyfrowanie podczas przesyłania i przechowywania, haszowane hasła, ścisła kontrola dostępu. Prosty język, bez przesadnych deklaracji."
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "security": "Bezpieczeństwo i prywatność"
+  },
+  "hero": {
+    "eyebrow": "Bezpieczeństwo i prywatność",
+    "heading": "Informacje o Twojej rodzinie są chronione.",
+    "intro": "Vaulto przechowuje wrażliwe informacje — co posiadasz, gdzie się to znajduje i dokumenty, które to potwierdzają. Traktujemy tę odpowiedzialność poważnie. Oto dokładnie, jak to chronimy, prostym językiem."
+  },
+  "protect": {
+    "heading": "Jak chronimy Twoje dane"
+  },
+  "protections": [
+    {
+      "title": "Szyfrowanie podczas przesyłania.",
+      "body": "Każde połączenie z Vaulto używa TLS (HTTPS), więc Twoje dane są szyfrowane podczas przesyłania między Tobą a nami."
+    },
+    {
+      "title": "Szyfrowanie podczas przechowywania.",
+      "body": "Twoje informacje i dokumenty są przechowywane na szyfrowanej infrastrukturze — zarządzanej bazie danych i magazynie obiektowym."
+    },
+    {
+      "title": "Hasła nigdy nie są przechowywane w postaci jawnej.",
+      "body": "Haszujemy Twoje hasło przy użyciu silnego, nowoczesnego algorytmu (scrypt) — nawet my nie możemy go odczytać."
+    },
+    {
+      "title": "Sesje o krótkim czasie życia.",
+      "body": "Tokeny logowania mają krótki czas życia i są przechowywane w pamięci; token, który utrzymuje Cię zalogowaną/zalogowanym, znajduje się w bezpiecznym pliku cookie odpornym na skrypty."
+    },
+    {
+      "title": "Ochrona przed nadużyciami.",
+      "body": "Ograniczamy liczbę prób logowania i innych wrażliwych działań, aby bronić się przed zautomatyzowanymi atakami."
+    },
+    {
+      "title": "Kontrola dostępu.",
+      "body": "Możesz widzieć i edytować tylko swój własny sejf. Nasze systemy wymuszają to przy każdym żądaniu."
+    }
+  ],
+  "promise": {
+    "heading": "Nasze obietnice dotyczące prywatności"
+  },
+  "promises": [
+    {
+      "title": "Nigdy nie sprzedajemy Twoich danych.",
+      "body": "I kropka."
+    },
+    {
+      "title": "Nie udostępniamy danych do reklam.",
+      "body": "Twoje informacje nie są przekazywane stronom trzecim, aby kierować do Ciebie marketing."
+    },
+    {
+      "title": "To Ty masz kontrolę.",
+      "body": "Ty decydujesz, co dodajesz — i co usuwasz."
+    }
+  ],
+  "yours": {
+    "heading": "Twoje dane należą do Ciebie",
+    "body": "Twoje dane należą do Ciebie — w każdej chwili możesz wyeksportować wszystko (Twoje dane + oryginalne pliki). W Ustawieniach <b>Pobierz wszystko (.zip)</b> daje Ci jeden plik z pełną kopią Twoich danych w formacie czytelnym maszynowo oraz z każdym oryginalnym zdjęciem i skanem, które przesłałaś/przesłałeś. Bez uzależnienia od usługi, bez czekania na nas. Eksport w formacie czytelnym maszynowo spełnia też Twoje prawo do przenoszenia danych zgodnie z GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Prosty język, bez przesadnych deklaracji.</b> Opisujemy tylko to, co jest dziś prawdą: szyfrowanie podczas przesyłania i przechowywania, haszowane hasła, ścisła kontrola dostępu. Świadomie <b>nie</b> twierdzimy, że oferujemy \"zero-knowledge\", \"bank-level\" ani żadną certyfikację, której nie uzyskaliśmy. Eksport danych już działa (powyżej). Gdy dodamy szyfrowanie na poziomie aplikacji lub formalny audyt zewnętrzny, ta strona zostanie o tym zaktualizowana.",
+    "contact": "W sprawach prywatności lub bezpieczeństwa skontaktuj się z"
+  }
+}

@@ -1,19 +1,14 @@
 /**
- * Home page content catalog (ARY-413).
+ * Home page content (ARY-413, migrated to JSON catalog in ARY-427).
  *
- * The Home page is the highest-funnel surface, so its long-form copy is made
- * locale-aware here rather than left inline — this is what turns "localize the
- * Home page" into a content-only op: a translator fills the `es`/`fr`/`de`
- * overlay below and `src/pages/<loc>/index.astro` lights up. It mirrors the
- * chrome catalog in `ui.ts`: English is the source of truth, overlays are
- * `DeepPartial<>`, and ANY missing field falls back to English so a
- * half-translated locale never ships a blank string.
- *
- * Scope: visible Home copy only. Shared chrome (nav/CTAs/footer) stays in
- * `ui.ts`; the two CTA labels the hero reuses (`cta.getStarted`, `cta.seeHow`)
- * are pulled from there in `HomePage.astro`, not duplicated here.
+ * The Home copy now lives in `content/home/<locale>.json` like every other page,
+ * so it shares the one OpenAI translate script and the `getContent` fallback.
+ * This module keeps the `HomeContent` type (so `HomePage.astro` stays strongly
+ * typed) and a thin `useHomeContent` accessor. English is canonical; any missing
+ * field in a translated locale falls back to English.
  */
 import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
+import { getContent } from './content';
 
 export interface HomeContent {
   meta: { title: string; description: string };
@@ -38,203 +33,16 @@ export interface HomeContent {
     heading: string;
     items: { title: string; body: string }[];
   };
-  trustBand: { heading: string; lead: string; cta: string; proof: string[] };
-  finalCta: { title: string; body: string };
-}
-
-/** English source — canonical; every field must exist here. */
-const en: HomeContent = {
-  meta: {
-    title: 'A calm, secure home for everything your family owns',
-    description:
-      'Inventory your assets, keep important documents safe, and see your whole picture — privately, with strong security. Get started free.',
-  },
-  hero: {
-    eyebrow: '🔒 Private & encrypted by design',
-    heading: 'One calm, secure place for everything your family owns.',
-    sub: "Inventory your assets, keep important documents safe, and see your whole picture — so your family always knows what's there, and what to do next.",
-    trust: ['Encrypted in transit (TLS) and at rest', 'Your data is never sold', 'Built for families'],
-    art: {
-      cards: [
-        { icon: '🏡', label: 'Family home', sub: 'Property · deed & insurance attached' },
-        { icon: '📄', label: 'Will & estate documents', sub: '3 files · encrypted vault' },
-        { icon: '📈', label: 'Investments & pensions', sub: 'Collection · 5 items' },
-      ],
-      secured: 'Secured',
-      lock: '🔒 Encrypted at rest',
-    },
-  },
-  value: {
-    heading: 'Everything in one trusted place',
-    sub: 'No spreadsheets. No scattered drawers. Just clarity.',
-    cards: [
-      {
-        icon: '🗂️',
-        title: 'Know what you own.',
-        body: 'Property, accounts, investments, valuables, pensions — captured in one organised place, not scattered across drawers and spreadsheets.',
-      },
-      {
-        icon: '🛡️',
-        title: 'Keep it safe.',
-        body: 'Store the documents that matter — deeds, policies, statements — privately, behind strong security.',
-      },
-      {
-        icon: '🧭',
-        title: 'Plan with confidence.',
-        body: "See the whole picture and get a clear, free overview when you're ready to think about inheritance, wills, or what happens next.",
-      },
-    ],
-  },
-  steps: {
-    heading: 'Up and running in three steps',
-    items: [
-      {
-        title: 'Add what you own.',
-        body: "Snap a photo or upload a document — Vaulto can read it and suggest the details, so you're not typing everything by hand.",
-      },
-      {
-        title: 'Let Vaulto organise it.',
-        body: 'Group assets into collections, add the key facts, and keep documents attached where they belong.',
-      },
-      {
-        title: 'See the whole picture.',
-        body: "Your family's assets in one view — ready to share with the people who matter and to plan ahead.",
-      },
-    ],
-  },
   trustBand: {
-    heading: 'Built to be trusted with your most sensitive information.',
-    lead: "Your data is encrypted on the way to us and where it's stored. Access is protected, and we never sell your information.",
-    cta: 'See exactly how we keep it safe →',
-    proof: [
-      'Encrypted in transit (TLS) and at rest',
-      "Passwords hashed — even we can't read them",
-      'Short-lived, browser-protected sessions',
-      'You can only ever see your own vault',
-      'We never sell or share your data',
-    ],
-  },
-  finalCta: {
-    title: "Start your family's vault today.",
-    body: 'Free to begin. No spreadsheets required.',
-  },
-};
-
-/** Recursive partial: overlays may translate any subtree; arrays replace wholesale. */
-type DeepPartial<T> = T extends (infer U)[]
-  ? U[]
-  : T extends object
-    ? { [K in keyof T]?: DeepPartial<T[K]> }
-    : T;
-
-/**
- * Per-locale overlays. Phase-1: ES/FR/DE are empty and inherit English; the
- * translation pack (ARY-407 `phase1-translation-pack`) drops in here. A locale
- * stays English until its overlay is filled — correct for a phased rollout.
- */
-const overlays: Record<Locale, DeepPartial<HomeContent>> = {
-  en: {},
-  // ES Home (ARY-407, Path A / $0 — CEO-approved 2026-06-22). Vaulto Calm voice,
-  // warm "tú", brand "Vaulto" + "bóveda" (vault) locked per glossary. Encryption
-  // strings mirror the ARY-419-reconciled English (infra-level AES-256 at rest,
-  // verified done `0335b4d`). Published live via PAGE_LOCALES '/' → ['en','es'].
-  es: {
-    meta: {
-      title: 'Un hogar tranquilo y seguro para todo lo que tu familia posee',
-      description:
-        'Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — de forma privada y con seguridad sólida. Empieza gratis.',
-    },
-    hero: {
-      eyebrow: '🔒 Privado y cifrado desde el diseño',
-      heading: 'Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.',
-      sub: 'Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.',
-      trust: ['Cifrado en tránsito (TLS) y en reposo', 'Tus datos nunca se venden', 'Hecho para familias'],
-      art: {
-        cards: [
-          { icon: '🏡', label: 'Vivienda familiar', sub: 'Propiedad · escritura y seguro adjuntos' },
-          { icon: '📄', label: 'Testamento y documentos del patrimonio', sub: '3 archivos · bóveda cifrada' },
-          { icon: '📈', label: 'Inversiones y pensiones', sub: 'Colección · 5 elementos' },
-        ],
-        secured: 'Protegido',
-        lock: '🔒 Cifrado en reposo',
-      },
-    },
-    value: {
-      heading: 'Todo en un único lugar de confianza',
-      sub: 'Sin hojas de cálculo. Sin cajones desordenados. Solo claridad.',
-      cards: [
-        {
-          icon: '🗂️',
-          title: 'Conoce lo que posees.',
-          body: 'Propiedades, cuentas, inversiones, objetos de valor, pensiones — reunido en un solo lugar organizado, no disperso entre cajones y hojas de cálculo.',
-        },
-        {
-          icon: '🛡️',
-          title: 'Mantenlo a salvo.',
-          body: 'Guarda los documentos que importan — escrituras, pólizas, extractos — de forma privada y con seguridad sólida.',
-        },
-        {
-          icon: '🧭',
-          title: 'Planifica con confianza.',
-          body: 'Ve el panorama completo y obtén una visión clara y gratuita cuando quieras pensar en la herencia, el testamento o lo que viene después.',
-        },
-      ],
-    },
-    steps: {
-      heading: 'Listo en tres pasos',
-      items: [
-        {
-          title: 'Añade lo que posees.',
-          body: 'Haz una foto o sube un documento — Vaulto puede leerlo y sugerir los datos, para que no tengas que escribirlo todo a mano.',
-        },
-        {
-          title: 'Deja que Vaulto lo organice.',
-          body: 'Agrupa los bienes en colecciones, añade los datos clave y mantén los documentos adjuntos donde corresponde.',
-        },
-        {
-          title: 'Ve el panorama completo.',
-          body: 'Los bienes de tu familia en una sola vista — listos para compartir con las personas que importan y para planificar el futuro.',
-        },
-      ],
-    },
-    trustBand: {
-      heading: 'Diseñado para merecer la confianza de tu información más sensible.',
-      lead: 'Tus datos se cifran de camino a nosotros y allí donde se guardan. El acceso está protegido y nunca vendemos tu información.',
-      cta: 'Mira exactamente cómo lo mantenemos a salvo →',
-      proof: [
-        'Cifrado en tránsito (TLS) y en reposo',
-        'Contraseñas protegidas con hash — ni nosotros podemos leerlas',
-        'Sesiones efímeras y protegidas por el navegador',
-        'Solo tú puedes ver tu propia bóveda',
-        'Nunca vendemos ni compartimos tus datos',
-      ],
-    },
-    finalCta: {
-      title: 'Crea hoy la bóveda de tu familia.',
-      body: 'Gratis para empezar. Sin hojas de cálculo.',
-    },
-  },
-  fr: {},
-  de: {},
-};
-
-/** Deep-merge an overlay over English: objects recurse, arrays/primitives replace. */
-function merge<T>(base: T, over: DeepPartial<T> | undefined): T {
-  if (over === undefined) return base;
-  if (Array.isArray(base)) return over as unknown as T;
-  if (base !== null && typeof base === 'object') {
-    const out: Record<string, unknown> = { ...(base as Record<string, unknown>) };
-    for (const k of Object.keys(over as Record<string, unknown>)) {
-      const ov = (over as Record<string, unknown>)[k];
-      if (ov === undefined) continue;
-      out[k] = merge((base as Record<string, unknown>)[k], ov as DeepPartial<unknown>);
-    }
-    return out as T;
-  }
-  return over as unknown as T;
+    heading: string;
+    lead: string;
+    cta: string;
+    proof: string[];
+  };
+  finalCta: { title: string; body: string };
 }
 
 /** Localized Home content for a locale, with English fallback per field. */
 export function useHomeContent(locale: Locale = DEFAULT_LOCALE): HomeContent {
-  return merge(en, overlays[locale]);
+  return getContent<HomeContent>('home', locale);
 }

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "So funktioniert's",
+    "description": "Füge hinzu, was du besitzt, lass Vaulto es ordnen und sieh dein Gesamtbild in drei einfachen Schritten. KI-gestützte Erfassung übernimmt die Dateneingabe für dich."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "howItWorks": "So funktioniert's"
+  },
+  "hero": {
+    "eyebrow": "So funktioniert's",
+    "heading": "Von verstreut zu geordnet — in drei Schritten.",
+    "intro": "Du musst nicht alles von Hand eintippen. Vaulto liest deine Fotos und Dokumente und übernimmt die Hauptarbeit — damit der Einstieg Minuten statt Wochenenden dauert."
+  },
+  "steps": [
+    {
+      "title": "Füge hinzu, was du besitzt.",
+      "body": "Mach ein Foto oder lade ein Dokument hoch, und Vaulto liest es für dich — und erstellt die Details vor, damit du nicht alles von Hand eintippen musst. Füge einen Raum, einen Beleg oder einen ganzen Unterlagen-Ordner auf einmal hinzu.",
+      "detail": "KI-gestützte Erfassung macht aus einer überwältigenden Aufgabe ein paar kurze Sitzungen."
+    },
+    {
+      "title": "Lass Vaulto es ordnen.",
+      "body": "Gruppiere Vermögenswerte in Sammlungen, ergänze die wichtigen Eckdaten und halte die Nachweisdokumente direkt dort angehängt, wo sie hingehören.",
+      "detail": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles in einer Struktur."
+    },
+    {
+      "title": "Sieh das Gesamtbild.",
+      "body": "Die Vermögenswerte und Dokumente deiner Familie in einer klaren Übersicht — bereit zum Teilen mit den Menschen, die wichtig sind, und zum Vorausplanen mit einer kostenlosen Übersicht, wenn du so weit bist.",
+      "detail": "Eine klare Übersicht, die du einem Anwalt oder Berater geben kannst."
+    }
+  ],
+  "securityLink": "Wie wir es sicher aufbewahren →",
+  "finalCta": {
+    "title": "Starte deinen Tresor — kostenlos",
+    "body": "Füge deine ersten Dinge in wenigen Minuten hinzu. Keine Tabellen nötig."
+  }
+}

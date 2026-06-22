@@ -1,30 +1,46 @@
 /**
- * i18n / hreflang seam (ARY-401).
+ * i18n / hreflang seam (ARY-401, expanded ARY-427).
  *
- * One file owns everything routing-and-locale aware: `<html lang>`, hreflang
- * alternates, the localized sitemap, and localized URL prefixes. Content/layout
- * sub-agents (CMO copy, UXDesigner pages) never touch routing code — they add a
- * locale to a path's entry, drop a translated page file under `src/pages/<loc>/`,
- * and the plumbing below lights up automatically.
+ * One file owns everything routing-and-locale aware: `<html lang>`, text
+ * direction, hreflang alternates, the localized sitemap, and localized URL
+ * prefixes. Content sub-systems never touch routing code — they add a locale to
+ * a path's entry, the translated strings exist as JSON overlays, and the
+ * plumbing below lights up automatically.
  *
- * Phase-1 language set (CMO ARY-399 §3, CEO-approved): English (source) + ES + FR
- * + DE. English ships first; ES/FR/DE are layered as their pages land — see
- * `localesWithPage()` for why a half-translated locale never emits a broken
- * hreflang.
+ * Language set (ARY-427, board directive ARY-425): the FULL set of locales the
+ * Vaulto app supports — enumerated from the app's i18n catalog
+ * (`lib/i18n/src/translations.ts`, the 16-locale set). Marketing translations
+ * are machine-generated via the OpenAI API at $0 (see `scripts/translate.mjs`)
+ * with English as the canonical source + per-string fallback.
  */
 
-/** Every locale we intend to publish marketing pages in (Phase-1 set). */
-export const LOCALES = ['en', 'es', 'fr', 'de'] as const;
+/** Every locale we publish marketing pages in — mirrors the app's supported set. */
+export const LOCALES = [
+  'en', 'es', 'fr', 'pt', 'de', 'it', 'nl', 'zh',
+  'ja', 'ar', 'hi', 'ru', 'pl', 'tr', 'ko', 'sv',
+] as const;
 export type Locale = (typeof LOCALES)[number];
 
 export const DEFAULT_LOCALE: Locale = 'en';
 
-/** Human-readable names (used in the language switcher + sitemap notes). */
+/** Human-readable native names (language switcher + sitemap notes). */
 export const LOCALE_NAMES: Record<Locale, string> = {
   en: 'English',
   es: 'Español',
   fr: 'Français',
+  pt: 'Português',
   de: 'Deutsch',
+  it: 'Italiano',
+  nl: 'Nederlands',
+  zh: '中文',
+  ja: '日本語',
+  ar: 'العربية',
+  hi: 'हिन्दी',
+  ru: 'Русский',
+  pl: 'Polski',
+  tr: 'Türkçe',
+  ko: '한국어',
+  sv: 'Svenska',
 };
 
 /**
@@ -36,8 +52,31 @@ export const HREFLANG: Record<Locale, string> = {
   en: 'en',
   es: 'es',
   fr: 'fr',
+  pt: 'pt',
   de: 'de',
+  it: 'it',
+  nl: 'nl',
+  zh: 'zh',
+  ja: 'ja',
+  ar: 'ar',
+  hi: 'hi',
+  ru: 'ru',
+  pl: 'pl',
+  tr: 'tr',
+  ko: 'ko',
+  sv: 'sv',
 };
+
+/** Locales whose script reads right-to-left (drives `<html dir>`). */
+export const RTL_LOCALES = new Set<Locale>(['ar']);
+
+/** Text direction for a locale — `rtl` for Arabic, `ltr` otherwise. */
+export function dirFor(locale: Locale): 'ltr' | 'rtl' {
+  return RTL_LOCALES.has(locale) ? 'rtl' : 'ltr';
+}
+
+/** All non-default locales — the set the dynamic `[locale]/` routes enumerate. */
+export const NON_DEFAULT_LOCALES = LOCALES.filter((l) => l !== DEFAULT_LOCALE);
 
 /**
  * Which locales actually have a published page for a given path.
@@ -45,20 +84,23 @@ export const HREFLANG: Record<Locale, string> = {
  * This is the single most important multilingual-SEO correctness control (CMO
  * ARY-399 §2e): hreflang and the sitemap must only ever point at pages that
  * exist. Emitting `hreflang="es"` for a `/es/...` URL that 404s is the #1
- * multilingual SEO bug, so until a translation is published we list ONLY the
- * locales whose page is live.
+ * multilingual SEO bug.
  *
- * `PAGE_LOCALES` overrides per path; anything not listed falls back to
- * English-only. As CMO/UXDesigner publish `src/pages/es/security.astro` etc.,
- * add the locale to that path's entry (or set it to all of `LOCALES` once fully
- * translated). The default English launch therefore emits a clean
- * `en` + `x-default` only — no broken alternates.
+ * ARY-427: every Phase-1 page is now machine-translated into the full locale
+ * set, so each path lists ALL locales. `PAGE_LOCALES` still overrides per path,
+ * so a future English-only page can opt out by omitting it (falls back to
+ * English-only). Translated strings always carry an English fallback, so no
+ * locale ever ships a blank.
  */
+const ALL: readonly Locale[] = LOCALES;
 const PAGE_LOCALES: Record<string, readonly Locale[]> = {
-  // ES Home published (ARY-407, Path A) — lights up the /↔/es/ hreflang pair
-  // + sitemap alternate. Trust-critical pages (/security, /privacy) follow once
-  // the §5 review budget (ARY-414) is approved; FR/DE per §3 organic demand.
-  '/': ['en', 'es'],
+  '/': ALL,
+  '/how-it-works/': ALL,
+  '/features/': ALL,
+  '/planning/': ALL,
+  '/security/': ALL,
+  '/privacy/': ALL,
+  '/faq/': ALL,
 };
 
 /** Normalises a path to the form used as a PAGE_LOCALES key (leading+trailing /). */

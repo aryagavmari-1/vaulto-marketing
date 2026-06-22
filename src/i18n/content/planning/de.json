@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planung",
+    "description": "Ein kostenloser Überblick darüber, worum es geht — Erbschaften, Testamente, grenzüberschreitende Themen und mehr — und dann tiefer einsteigen, in deinem eigenen Tempo. Informative Orientierung, niemals ein Ersatz für deine Fachperson."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "planning": "Planung"
+  },
+  "hero": {
+    "eyebrow": "Planung & Beratung",
+    "heading": "Sei vorbereitet, bevor das Leben dich dazu zwingt.",
+    "intro": "Starte mit einem kostenlosen Überblick darüber, worum es geht. Geh tiefer, wenn du bereit bist, in deinem eigenen Tempo — und teile eine klare Zusammenfassung mit der Fachperson, die sich darum kümmert. Die Orientierung ist informativ; sie ersetzt nicht deinen Anwalt oder Berater."
+  },
+  "areas": [
+    {
+      "title": "Testamentsplanung",
+      "tagline": "Verstehe, was ein Testament abdecken sollte und wo Lücken sind, bevor du dich mit einem Anwalt zusammensetzt."
+    },
+    {
+      "title": "Erbschaft",
+      "tagline": "Sieh, was die Weitergabe für deine Familie bedeuten könnte — ruhig und in deinem eigenen Tempo."
+    },
+    {
+      "title": "Finanzüberblick",
+      "tagline": "Ein klarer Blick auf das Gesamtbild: was du besitzt, was es bedeutet und was du dir als Nächstes ansehen solltest."
+    },
+    {
+      "title": "Grenzüberschreitend",
+      "tagline": "Vermögen oder Familie in mehr als einem Land? Verstehe, welche Aspekte damit verbunden sind."
+    },
+    {
+      "title": "Ehevertrag",
+      "tagline": "Denk in Ruhe darüber nach, wie ihr schützen könnt, was euch jeweils wichtig ist — mit Klarheit und ohne Druck."
+    },
+    {
+      "title": "Scheidung & Trennung",
+      "tagline": "Ein ruhiger, praktischer Ausgangspunkt, um Vermögenswerte zu verstehen, wenn sich Dinge verändern."
+    }
+  ],
+  "areaCta": "Kostenloser Überblick → Plane, wenn du bereit bist",
+  "more": {
+    "heading": "Weitere Bereiche, die du erkunden kannst"
+  },
+  "moreAreas": [
+    "Erbschaftsteuer",
+    "Nachfolge im Familienunternehmen",
+    "Versicherungen",
+    "Steuereffizienz",
+    "Vermögensfinanzierung"
+  ],
+  "cta": {
+    "label": "Kostenlosen Überblick ausprobieren"
+  }
+}

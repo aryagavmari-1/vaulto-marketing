@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Antworten zu Vaulto — ob meine Daten sicher sind, was es kostet, was du speichern kannst und wie die KI-gestützte Erfassung dir Tipparbeit erspart."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Fragen, klar beantwortet.",
+    "intro": "Klare Antworten zu deinen Daten, den Kosten und dazu, wie Vaulto funktioniert. Noch Fragen? Lies <a href=\"/security/\">wie wir alles sicher halten</a> oder <a href=\"/how-it-works/\">wie es funktioniert</a>."
+  },
+  "items": [
+    {
+      "q": "Sind meine Daten sicher?",
+      "a": "Ja. Deine Informationen werden bei der Übertragung (TLS) und im Ruhezustand auf verwalteter Infrastruktur verschlüsselt, dein Passwort wird nie im Klartext gespeichert, und der Zugriff auf dein Konto ist streng kontrolliert.",
+      "onward": "So halten wir alles sicher →"
+    },
+    {
+      "q": "Verkauft ihr meine Daten?",
+      "a": "Nein — niemals. Wir verkaufen oder teilen deine Informationen nicht für Werbung.",
+      "onward": "Lies unsere Datenschutzversprechen →"
+    },
+    {
+      "q": "Was kostet es?",
+      "a": "Der Einstieg mit Vaulto ist kostenlos. Detailliertere Planungsberichte sind verfügbar, wenn du so weit bist; du siehst immer, was enthalten ist, bevor etwas berechnet wird."
+    },
+    {
+      "q": "Muss ich alles von Hand eingeben?",
+      "a": "Nein — lade ein Foto oder Dokument hoch, und Vaulto kann es lesen und dir die Details vorschlagen.",
+      "onward": "Sieh, wie die Erfassung funktioniert →"
+    },
+    {
+      "q": "Für wen ist Vaulto gedacht?",
+      "a": "Für Familien und Einzelpersonen, die einen vertrauenswürdigen Ort wollen, um zu wissen, was sie besitzen, wichtige Dokumente sicher aufzubewahren und vorauszuplanen."
+    },
+    {
+      "q": "Was kann ich speichern?",
+      "a": "Vermögenswerte aller Art — Immobilien, Konten, Anlagen, Wertsachen, Renten — plus die dazugehörigen Dokumente."
+    },
+    {
+      "q": "Kann ich Vaulto in meiner Sprache nutzen?",
+      "a": "Die App ist in 16 Sprachen verfügbar. Wir fügen lokalisierte Website-Inhalte Markt für Markt hinzu."
+    }
+  ],
+  "finalCta": {
+    "title": "Bereit, wenn du es bist.",
+    "body": "Starte kostenlos und füge in wenigen Minuten deine ersten Dinge hinzu."
+  }
+}

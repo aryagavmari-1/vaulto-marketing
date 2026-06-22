@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "title": "Ett lugnt, säkert hem för allt din familj äger",
+    "description": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — privat, med stark säkerhet. Kom igång gratis."
+  },
+  "hero": {
+    "eyebrow": "🔒 Privat och krypterat från grunden",
+    "heading": "En lugn, säker plats för allt din familj äger.",
+    "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — så att din familj alltid vet vad som finns och vad ni ska göra härnäst.",
+    "trust": [
+      "Krypterat under överföring (TLS) och vid lagring",
+      "Dina data säljs aldrig",
+      "Byggt för familjer"
+    ],
+    "art": {
+      "cards": [
+        {
+          "icon": "🏡",
+          "label": "Familjens hem",
+          "sub": "Fastighet · lagfart och försäkring bifogade"
+        },
+        {
+          "icon": "📄",
+          "label": "Testamente och dödsbodelshandlingar",
+          "sub": "3 filer · krypterat valv"
+        },
+        {
+          "icon": "📈",
+          "label": "Investeringar och pensioner",
+          "sub": "Samling · 5 poster"
+        }
+      ],
+      "secured": "Skyddat",
+      "lock": "🔒 Krypterat vid lagring"
+    }
+  },
+  "value": {
+    "heading": "Allt på ett pålitligt ställe",
+    "sub": "Inga kalkylblad. Inga utspridda lådor. Bara tydlighet.",
+    "cards": [
+      {
+        "icon": "🗂️",
+        "title": "Vet vad du äger.",
+        "body": "Fastigheter, konton, investeringar, värdesaker, pensioner — samlat på ett organiserat ställe, inte utspritt i lådor och kalkylblad."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Håll det säkert.",
+        "body": "Förvara dokumenten som betyder mest — lagfarter, försäkringar, kontoutdrag — privat, bakom stark säkerhet."
+      },
+      {
+        "icon": "🧭",
+        "title": "Planera med trygghet.",
+        "body": "Se hela bilden och få en tydlig, kostnadsfri överblick när du är redo att tänka på arv, testamente eller vad som händer härnäst."
+      }
+    ]
+  },
+  "steps": {
+    "heading": "Kom igång i tre steg",
+    "items": [
+      {
+        "title": "Lägg till det du äger.",
+        "body": "Ta en bild eller ladda upp ett dokument — Vaulto kan läsa det och föreslå detaljerna, så att du slipper skriva in allt för hand."
+      },
+      {
+        "title": "Låt Vaulto organisera det.",
+        "body": "Gruppera tillgångar i samlingar, lägg till nyckeluppgifter och behåll dokumenten kopplade där de hör hemma."
+      },
+      {
+        "title": "Se hela bilden.",
+        "body": "Din familjs tillgångar i en vy — redo att delas med de personer som är viktiga och att planera framåt med."
+      }
+    ]
+  },
+  "trustBand": {
+    "heading": "Byggt för att vara betrott med din mest känsliga information.",
+    "lead": "Dina data krypteras på väg till oss och där de lagras. Åtkomst är skyddad, och vi säljer aldrig din information.",
+    "cta": "Se exakt hur vi håller det säkert →",
+    "proof": [
+      "Krypterat under överföring (TLS) och vid lagring",
+      "Lösenord hashas — inte ens vi kan läsa dem",
+      "Kortlivade, webbläsarskyddade sessioner",
+      "Du kan bara någonsin se ditt eget valv",
+      "Vi säljer eller delar aldrig dina data"
+    ]
+  },
+  "finalCta": {
+    "title": "Starta din familjs valv idag.",
+    "body": "Gratis att börja. Inga kalkylblad behövs."
+  }
+}

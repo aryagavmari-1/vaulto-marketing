@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Datenschutz",
+    "description": "Wie Vaulto mit deinen personenbezogenen Daten umgeht."
+  },
+  "crumbs": {
+    "home": "Startseite",
+    "privacy": "Datenschutz"
+  },
+  "hero": {
+    "eyebrow": "Vertrauen",
+    "heading": "Datenschutz",
+    "lead": "Zusammenfassung in klarer Sprache, was Vaulto erfasst, wie wir es nutzen und welche Kontrolle du behältst. Passt zu unserer <a href=\"/security/\">Sicherheitsübersicht</a>.",
+    "updated": "Zuletzt aktualisiert im Juni 2026 · Eine vollständige rechtliche Richtlinie wird vor dem öffentlichen Start veröffentlicht."
+  },
+  "sections": [
+    {
+      "title": "Was wir erfassen",
+      "body": "Die Informationen, die du in deinen Tresor legst (Vermögenswerte, Verbindlichkeiten, Dokumente und zugehörige Details), die Kontodaten, die für deine Anmeldung nötig sind, sowie grundlegende Nutzungsdaten, die für den Betrieb und die Verbesserung des Dienstes erforderlich sind."
+    },
+    {
+      "title": "Wie wir sie nutzen",
+      "body": "Um das Produkt bereitzustellen: dein Inventar und deine Dokumente zu speichern, dein Nettovermögen zu berechnen, die von dir angeforderten KI-Übersichten zu erstellen und die Momentaufnahmen zu erzeugen, die du teilen möchtest. Wir verkaufen deine Daten nicht."
+    },
+    {
+      "title": "Teilen &amp; Einwilligung",
+      "body": "Deine Daten werden nur geteilt, wenn du es ausdrücklich erlaubst — zum Beispiel, wenn du ein Empfehlungspaket für eine Fachperson erstellst. Die Einwilligung wird mit einem klaren Umfang dokumentiert und kann jederzeit widerrufen werden; auch der Widerruf wird nachverfolgt."
+    },
+    {
+      "title": "Wie es geschützt wird",
+      "body": "Dein Tresor ist bei jeder Anfrage auf dein Konto beschränkt, Passwörter werden mit scrypt gehasht, und der Dokumentenzugriff erfolgt über kurzlebige signierte Links. In der <a href=\"/security/\">Sicherheitsübersicht</a> findest du die Details — einschließlich dessen, was wir noch nicht behaupten."
+    }
+  ],
+  "choices": {
+    "title": "Deine Möglichkeiten",
+    "items": [
+      "Auf die Informationen in deinem Tresor zugreifen und sie exportieren.",
+      "Den Zugriff einer Fachperson auf eine geteilte Momentaufnahme widerrufen.",
+      "Die Löschung deines Kontos und deiner Daten anfordern."
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Fragen zum Datenschutz? E-Mail an"
+  }
+}

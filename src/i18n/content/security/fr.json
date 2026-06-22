@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Sécurité et confidentialité",
+    "description": "Comment Vaulto protège les informations de votre famille — chiffrement en transit et au repos, mots de passe hachés, contrôle d’accès strict. En termes simples, sans exagération."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "security": "Sécurité et confidentialité"
+  },
+  "hero": {
+    "eyebrow": "Sécurité et confidentialité",
+    "heading": "Les informations de votre famille, protégées.",
+    "intro": "Vaulto contient des informations sensibles — ce que vous possédez, où cela se trouve, les documents qui le prouvent. Nous prenons cette responsabilité au sérieux. Voici exactement comment nous les protégeons, en termes simples."
+  },
+  "protect": {
+    "heading": "Comment nous protégeons vos données"
+  },
+  "protections": [
+    {
+      "title": "Chiffré en transit.",
+      "body": "Chaque connexion à Vaulto utilise TLS (HTTPS), afin que vos données soient chiffrées pendant leur transfert entre vous et nous."
+    },
+    {
+      "title": "Chiffré au repos.",
+      "body": "Vos informations et documents sont stockés sur une infrastructure chiffrée — base de données gérée et stockage d’objets."
+    },
+    {
+      "title": "Les mots de passe ne sont jamais stockés en clair.",
+      "body": "Nous hachons votre mot de passe avec un algorithme fort et moderne (scrypt) — même nous ne pouvons pas le lire."
+    },
+    {
+      "title": "Sessions de courte durée.",
+      "body": "Les jetons de connexion ont une courte durée de vie et sont conservés en mémoire ; le jeton qui vous garde connecté vit dans un cookie sécurisé, inaccessible aux scripts."
+    },
+    {
+      "title": "Protégé contre les abus.",
+      "body": "Nous limitons le nombre de tentatives de connexion et d’autres actions sensibles pour nous défendre contre les attaques automatisées."
+    },
+    {
+      "title": "Contrôles d’accès.",
+      "body": "Vous pouvez uniquement voir et modifier votre propre coffre-fort. Nos systèmes l’appliquent à chaque requête."
+    }
+  ],
+  "promise": {
+    "heading": "Nos promesses de confidentialité"
+  },
+  "promises": [
+    {
+      "title": "Nous ne vendons jamais vos données.",
+      "body": "Point final."
+    },
+    {
+      "title": "Nous ne les partageons pas à des fins publicitaires.",
+      "body": "Vos informations ne sont pas transmises à des tiers pour vous faire du marketing."
+    },
+    {
+      "title": "Vous gardez le contrôle.",
+      "body": "Vous décidez de ce que vous ajoutez — et de ce que vous supprimez."
+    }
+  ],
+  "yours": {
+    "heading": "Vos données vous appartiennent",
+    "body": "Vos données vous appartiennent — exportez tout (vos données + vos fichiers d’origine) à tout moment. Depuis Paramètres, <b>Tout télécharger (.zip)</b> vous donne un seul fichier avec une copie complète et lisible par machine de vos enregistrements, plus chaque photo et scan d’origine que vous avez téléversé. Aucun enfermement, pas d’attente de notre côté. L’export lisible par machine répond aussi à votre droit à la portabilité des données au titre du GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>En termes simples, sans exagération.</b> Nous décrivons seulement ce qui est vrai aujourd’hui : chiffrement en transit et au repos, mots de passe hachés, contrôle d’accès strict. Nous ne revendiquons délibérément <b>pas</b> le \"zero-knowledge\", le \"bank-level\" ni une quelconque certification que nous n’avons pas obtenue. L’export des données est disponible dès maintenant (ci-dessus). Lorsque nous ajouterons un chiffrement au niveau de l’application ou un audit formel par un tiers, cette page l’indiquera.",
+    "contact": "Pour toute question sur la confidentialité ou la sécurité, contactez"
+  }
+}

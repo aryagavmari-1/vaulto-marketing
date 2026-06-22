@@ -1,0 +1,21 @@
+{
+  "nav.home": "Startseite",
+  "nav.howItWorks": "So funktioniert's",
+  "nav.features": "Funktionen",
+  "nav.planning": "Planung",
+  "nav.security": "Sicherheit",
+  "nav.faq": "FAQ",
+  "nav.blog": "Blog",
+  "cta.getStarted": "Kostenlos starten",
+  "cta.seeHow": "So funktioniert's",
+  "cta.startVault": "Deinen Tresor starten — kostenlos",
+  "cta.explorePlanning": "Planung ansehen",
+  "footer.tagline": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt.",
+  "footer.security": "Sicherheit & Privatsphäre",
+  "footer.privacy": "Privatsphäre",
+  "footer.rights": "Alle Rechte vorbehalten.",
+  "footer.signIn": "Anmelden →",
+  "lang.switch": "Sprache",
+  "a11y.skip": "Zum Inhalt springen",
+  "trust.strip": "Bei der Übertragung (TLS) und im Ruhezustand verschlüsselt · Deine Daten werden niemals verkauft · Für Familien gemacht"
+}

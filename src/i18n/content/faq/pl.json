@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Często zadawane pytania",
+    "description": "Odpowiedzi o Vaulto — czy moje dane są bezpieczne, ile to kosztuje, co możesz przechowywać i jak przechwytywanie wspomagane AI oszczędza Ci pisania."
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "heading": "Proste odpowiedzi na pytania.",
+    "intro": "Konkretne odpowiedzi o Twoich danych, kosztach i działaniu Vaulto. Nadal chcesz wiedzieć więcej? Przeczytaj, <a href=\"/security/\">jak dbamy o bezpieczeństwo</a> lub <a href=\"/how-it-works/\">jak to działa</a>."
+  },
+  "items": [
+    {
+      "q": "Czy moje dane są bezpieczne?",
+      "a": "Tak. Twoje informacje są szyfrowane podczas przesyłania (TLS) i w spoczynku w zarządzanej infrastrukturze, Twoje hasło nigdy nie jest przechowywane w postaci jawnej, a dostęp do Twojego konta jest ściśle kontrolowany.",
+      "onward": "Zobacz, jak dbamy o bezpieczeństwo →"
+    },
+    {
+      "q": "Czy sprzedajecie moje dane?",
+      "a": "Nie — nigdy. Nie sprzedajemy ani nie udostępniamy Twoich informacji do celów reklamowych.",
+      "onward": "Przeczytaj nasze obietnice dotyczące prywatności →"
+    },
+    {
+      "q": "Ile to kosztuje?",
+      "a": "Z Vaulto możesz zacząć za darmo. Bardziej szczegółowe raporty planistyczne są dostępne, gdy będziesz gotowy(-a); zawsze zobaczysz, co obejmuje usługa, zanim cokolwiek zostanie naliczone."
+    },
+    {
+      "q": "Czy muszę wszystko wpisywać ręcznie?",
+      "a": "Nie — prześlij zdjęcie lub dokument, a Vaulto odczyta go i zaproponuje odpowiednie szczegóły.",
+      "onward": "Zobacz, jak działa przechwytywanie →"
+    },
+    {
+      "q": "Dla kogo jest Vaulto?",
+      "a": "Dla rodzin i osób, które chcą mieć jedno zaufane miejsce, by wiedzieć, co posiadają, bezpiecznie przechowywać ważne dokumenty i planować z wyprzedzeniem."
+    },
+    {
+      "q": "Co mogę przechowywać?",
+      "a": "Aktywa wszelkiego rodzaju — nieruchomości, konta, inwestycje, kosztowności, emerytury — a także powiązane z nimi dokumenty."
+    },
+    {
+      "q": "Czy mogę używać Vaulto w swoim języku?",
+      "a": "Aplikacja jest dostępna w 16 językach. Dodajemy lokalne treści strony rynek po rynku."
+    }
+  ],
+  "finalCta": {
+    "title": "Gdy będziesz gotowy(-a).",
+    "body": "Zacznij za darmo i dodaj pierwsze rzeczy w kilka minut."
+  }
+}

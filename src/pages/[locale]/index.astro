@@ -1,0 +1,16 @@
+---
+/**
+ * Localized Home (ARY-427). One dynamic route renders the Home page in every
+ * non-default locale (`/es/`, `/fr/`, …). English lives un-prefixed at
+ * `src/pages/index.astro`. All copy comes from `content/home/<locale>.json`.
+ */
+import { NON_DEFAULT_LOCALES, type Locale } from '../../config/i18n';
+import HomePage from '../../components/HomePage.astro';
+
+export function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+---
+<HomePage locale={locale} />

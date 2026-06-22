@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Pianificazione",
+    "description": "Una panoramica gratuita di ciò che è in gioco — eredità, testamenti, aspetti transfrontalieri e altro — poi approfondisci al tuo ritmo. Indicazioni informative, mai un sostituto del tuo professionista."
+  },
+  "crumbs": {
+    "home": "Home",
+    "planning": "Pianificazione"
+  },
+  "hero": {
+    "eyebrow": "Pianificazione e consulenza",
+    "heading": "Fatti trovare pronto, prima che la vita lo imponga.",
+    "intro": "Inizia con una panoramica gratuita di ciò che è in gioco. Approfondisci quando vuoi, al tuo ritmo — e condividi un riepilogo chiaro con il professionista che se ne occupa. Le indicazioni sono informative; non sostituiscono il tuo avvocato o consulente."
+  },
+  "areas": [
+    {
+      "title": "Pianificazione testamentaria",
+      "tagline": "Capisci cosa dovrebbe includere un testamento e dove ci sono lacune, prima di sederti con un avvocato."
+    },
+    {
+      "title": "Eredità",
+      "tagline": "Scopri cosa potrebbe comportare il passaggio dei beni per la tua famiglia — con calma e al tuo ritmo."
+    },
+    {
+      "title": "Quadro finanziario",
+      "tagline": "Una lettura chiara dell'insieme: cosa possiedi, cosa significa e cosa guardare dopo."
+    },
+    {
+      "title": "Transfrontaliero",
+      "tagline": "Beni o famiglia in più di un Paese? Comprendi gli aspetti da considerare."
+    },
+    {
+      "title": "Accordo prematrimoniale",
+      "tagline": "Rifletti su come proteggere ciò che conta per entrambi, con chiarezza e senza pressione."
+    },
+    {
+      "title": "Divorzio e separazione",
+      "tagline": "Un punto di partenza pratico e sereno per capire i beni quando le cose cambiano."
+    }
+  ],
+  "areaCta": "Panoramica gratuita → Pianifica quando vuoi",
+  "more": {
+    "heading": "Altre aree che puoi esplorare"
+  },
+  "moreAreas": [
+    "Imposta di successione",
+    "Successione dell'impresa familiare",
+    "Assicurazione",
+    "Efficienza fiscale",
+    "Finanziamento dei beni"
+  ],
+  "cta": {
+    "label": "Prova una panoramica gratuita"
+  }
+}

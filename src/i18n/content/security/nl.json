@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Beveiliging & privacy",
+    "description": "Hoe Vaulto de informatie van je gezin beschermt — versleuteling tijdens verzending en in opslag, gehashte wachtwoorden, strikte toegangscontrole. Heldere taal, zonder overdrijving."
+  },
+  "crumbs": {
+    "home": "Home",
+    "security": "Beveiliging & privacy"
+  },
+  "hero": {
+    "eyebrow": "Beveiliging & privacy",
+    "heading": "De informatie van je gezin, beschermd.",
+    "intro": "Vaulto bevat gevoelige gegevens — wat je bezit, waar het is, en de documenten die dat bewijzen. We nemen die verantwoordelijkheid serieus. Dit is precies hoe we die beschermen, in heldere taal."
+  },
+  "protect": {
+    "heading": "Hoe we je gegevens beschermen"
+  },
+  "protections": [
+    {
+      "title": "Versleuteld tijdens verzending.",
+      "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS), zodat je gegevens versleuteld zijn terwijl ze tussen jou en ons worden verzonden."
+    },
+    {
+      "title": "Versleuteld in opslag.",
+      "body": "Je informatie en documenten worden opgeslagen op versleutelde infrastructuur — beheerde database en objectopslag."
+    },
+    {
+      "title": "Wachtwoorden worden nooit onversleuteld opgeslagen.",
+      "body": "We hashen je wachtwoord met een sterk, modern algoritme (scrypt) — zelfs wij kunnen het niet lezen."
+    },
+    {
+      "title": "Kortdurende sessies.",
+      "body": "Inlogtokens zijn kort geldig en worden in het geheugen bewaard; het token dat je ingelogd houdt staat in een veilige, scriptbestendige cookie."
+    },
+    {
+      "title": "Beschermd tegen misbruik.",
+      "body": "We beperken inlogpogingen en andere gevoelige acties om te beschermen tegen geautomatiseerde aanvallen."
+    },
+    {
+      "title": "Toegangscontrole.",
+      "body": "Je kunt alleen je eigen kluis zien en bewerken. Onze systemen dwingen dit af bij elk verzoek."
+    }
+  ],
+  "promise": {
+    "heading": "Onze privacybeloften"
+  },
+  "promises": [
+    {
+      "title": "We verkopen je gegevens nooit.",
+      "body": "Punt."
+    },
+    {
+      "title": "We delen niets voor advertenties.",
+      "body": "Je informatie wordt niet aan derden gegeven om je reclame te sturen."
+    },
+    {
+      "title": "Jij hebt de controle.",
+      "body": "Jij bepaalt wat je toevoegt — en wat je verwijdert."
+    }
+  ],
+  "yours": {
+    "heading": "Je gegevens zijn van jou",
+    "body": "Je gegevens zijn van jou — exporteer alles (je gegevens + je originele bestanden) op elk moment. Via Instellingen geeft <b>Alles downloaden (.zip)</b> je één bestand met een volledige, machineleesbare kopie van je gegevens plus elke originele foto en scan die je hebt geüpload. Geen lock-in, niet wachten op ons. De machineleesbare export voldoet ook aan je recht op dataportabiliteit onder GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Heldere taal, zonder overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending en in opslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>niet</b> \"zero-knowledge\", \"bank-level\" of een certificering die we niet hebben behaald. Gegevensexport is live (hierboven). Als we encryptie op applicatieniveau of een formele audit door een derde partij toevoegen, vermelden we dat op deze pagina.",
+    "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
+  }
+}

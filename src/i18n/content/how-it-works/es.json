@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Cómo funciona",
+    "description": "Añade lo que tienes, deja que Vaulto lo organice y ve tu panorama completo en tres sencillos pasos. La captura asistida por IA hace la entrada de datos por ti."
+  },
+  "crumbs": {
+    "home": "Inicio",
+    "howItWorks": "Cómo funciona"
+  },
+  "hero": {
+    "eyebrow": "Cómo funciona",
+    "heading": "De disperso a organizado, en tres pasos.",
+    "intro": "No tienes que escribirlo todo a mano. Vaulto lee tus fotos y documentos y hace el trabajo pesado por ti, así que empezar te lleva minutos, no fines de semana."
+  },
+  "steps": [
+    {
+      "title": "Añade lo que tienes.",
+      "body": "Haz una foto o sube un documento y Vaulto lo lee por ti, preparando los detalles para que no tengas que escribirlo todo a mano. Añade una habitación, un recibo o una carpeta de documentos de una sola vez.",
+      "detail": "La captura asistida por IA convierte una tarea abrumadora en unas pocas sesiones cortas."
+    },
+    {
+      "title": "Deja que Vaulto lo organice.",
+      "body": "Agrupa los activos en colecciones, añade los datos clave que importan y guarda adjuntos, justo donde corresponden, los documentos que los acreditan.",
+      "detail": "Propiedades, cuentas, inversiones, objetos de valor, pensiones: todo en una sola estructura."
+    },
+    {
+      "title": "Ve el panorama completo.",
+      "body": "Los activos y documentos de tu familia en una vista clara, listos para compartir con las personas importantes y para planificar con una visión general gratuita cuando quieras.",
+      "detail": "Una visión clara que puedes entregar a un abogado o asesor."
+    }
+  ],
+  "securityLink": "Cómo lo mantenemos seguro →",
+  "finalCta": {
+    "title": "Empieza tu bóveda — gratis",
+    "body": "Añade tus primeras cosas en minutos. No necesitas hojas de cálculo."
+  }
+}

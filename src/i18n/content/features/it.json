@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Funzionalità",
+    "description": "Cosa fa oggi Vaulto: inventario dei beni, una cassaforte documentale crittografata, acquisizione assistita dall'AI, raccolte e una visione chiara di tutto ciò che possiede la tua famiglia."
+  },
+  "crumbs": {
+    "home": "Home",
+    "features": "Funzionalità"
+  },
+  "hero": {
+    "eyebrow": "Funzionalità",
+    "heading": "Tutto ciò che ti serve per sapere cosa possiedi.",
+    "intro": "Un insieme essenziale di strumenti che oggi fanno davvero il loro lavoro. Ecco cosa è già disponibile — nessuna promessa di roadmap, nessuna esca del tipo \"in arrivo presto\"."
+  },
+  "features": [
+    {
+      "title": "Inventario dei beni",
+      "body": "Registra tutto ciò che possiedi — proprietà, conti, investimenti, oggetti di valore, pensioni — con i dettagli che contano: valore o fascia di valore, posizione, stato e le persone coinvolte."
+    },
+    {
+      "title": "Cassaforte documentale",
+      "body": "Conserva al sicuro atti, polizze, testamenti ed estratti, collegati ai beni a cui appartengono. Carica file fino a 20MB, archiviati su infrastruttura crittografata."
+    },
+    {
+      "title": "Acquisizione assistita dall'AI",
+      "body": "Fotografa un oggetto o un documento e Vaulto lo legge, preparando la scheda perché tu possa confermarla o modificarla. L'inserimento dei dati si fa quasi da solo."
+    },
+    {
+      "title": "Raccolte",
+      "body": "Raggruppa beni e documenti correlati nel modo in cui la tua famiglia li considera davvero — una proprietà e la sua documentazione, un patrimonio, una persona."
+    },
+    {
+      "title": "Il quadro completo",
+      "body": "Vedi tutto in un'unica vista ordinata e ottieni una panoramica gratuita quando sei pronto a pianificare il futuro — un'eredità, un testamento o ciò che succede dopo."
+    },
+    {
+      "title": "Esporta in qualsiasi momento — i tuoi dati sono tuoi",
+      "body": "I tuoi dati sono tuoi — esporta tutto (i tuoi dati + i tuoi file originali) in qualsiasi momento. Un solo download ti offre una copia completa e leggibile da una macchina dei tuoi archivi, più ogni foto e scansione originale che hai caricato. Nessun vincolo."
+    }
+  ],
+  "foot": "Elenchiamo solo ciò che è già disponibile. Quando rilasciamo qualcosa di nuovo, appare qui — non prima.",
+  "finalCta": {
+    "title": "Vedilo con le tue cose.",
+    "body": "Inizia gratis e aggiungi i tuoi primi beni in pochi minuti."
+  }
+}

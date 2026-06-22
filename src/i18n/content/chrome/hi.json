@@ -1,0 +1,21 @@
+{
+  "nav.home": "होम",
+  "nav.howItWorks": "यह कैसे काम करता है",
+  "nav.features": "सुविधाएँ",
+  "nav.planning": "योजना",
+  "nav.security": "सुरक्षा",
+  "nav.faq": "FAQ",
+  "nav.blog": "ब्लॉग",
+  "cta.getStarted": "मुफ़्त शुरू करें",
+  "cta.seeHow": "देखें यह कैसे काम करता है",
+  "cta.startVault": "अपनी तिजोरी शुरू करें — मुफ़्त",
+  "cta.explorePlanning": "योजना देखें",
+  "footer.tagline": "आपके परिवार की हर महत्वपूर्ण चीज़ के लिए एक शांत, सुरक्षित जगह।",
+  "footer.security": "सुरक्षा और गोपनीयता",
+  "footer.privacy": "गोपनीयता",
+  "footer.rights": "सर्वाधिकार सुरक्षित।",
+  "footer.signIn": "साइन इन करें →",
+  "lang.switch": "भाषा",
+  "a11y.skip": "सामग्री पर जाएँ",
+  "trust.strip": "स्थानांतरण के दौरान (TLS) और संग्रहित होने पर एन्क्रिप्टेड · आपका डेटा कभी बेचा नहीं जाता · परिवारों के लिए बनाया गया"
+}

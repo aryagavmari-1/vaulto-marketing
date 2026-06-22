@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Come funziona",
+    "description": "Aggiungi ciò che possiedi, lascia che Vaulto lo organizzi e vedi il quadro completo in tre semplici passaggi. L'acquisizione assistita dall'AI inserisce i dati per te."
+  },
+  "crumbs": {
+    "home": "Home",
+    "howItWorks": "Come funziona"
+  },
+  "hero": {
+    "eyebrow": "Come funziona",
+    "heading": "Da sparso a organizzato, in tre passaggi.",
+    "intro": "Non devi digitare tutto a mano. Vaulto legge le tue foto e i tuoi documenti e fa il grosso del lavoro — così per iniziare bastano pochi minuti, non interi weekend."
+  },
+  "steps": [
+    {
+      "title": "Aggiungi ciò che possiedi.",
+      "body": "Scatta una foto o carica un documento e Vaulto lo legge per te — preparando i dettagli così non devi digitare tutto a mano. Aggiungi una stanza, una ricevuta o una cartella di documenti in una volta sola.",
+      "detail": "L'acquisizione assistita dall'AI trasforma un compito impegnativo in poche brevi sessioni."
+    },
+    {
+      "title": "Lascia che Vaulto lo organizzi.",
+      "body": "Raggruppa i beni in raccolte, aggiungi i fatti chiave che contano e tieni allegati i documenti che li dimostrano, proprio dove devono stare.",
+      "detail": "Immobili, conti, investimenti, oggetti di valore, pensioni — tutto in un'unica struttura."
+    },
+    {
+      "title": "Vedi il quadro completo.",
+      "body": "I beni e i documenti della tua famiglia in una vista chiara e unica — pronti da condividere con le persone che contano e per pianificare il futuro con una panoramica gratuita quando sei pronto.",
+      "detail": "Un quadro chiaro che puoi consegnare a un notaio o a un consulente."
+    }
+  ],
+  "securityLink": "Come lo teniamo al sicuro →",
+  "finalCta": {
+    "title": "Inizia il tuo caveau — gratis",
+    "body": "Aggiungi le tue prime cose in pochi minuti. Nessun foglio di calcolo necessario."
+  }
+}

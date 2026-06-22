@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Säkerhet och integritet",
+    "description": "Så skyddar Vaulto din familjs information — kryptering under överföring och lagring, hashade lösenord, strikt åtkomstkontroll. Klarspråk, inga överdrifter."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "security": "Säkerhet och integritet"
+  },
+  "hero": {
+    "eyebrow": "Säkerhet och integritet",
+    "heading": "Din familjs information, skyddad.",
+    "intro": "Vaulto lagrar känsliga uppgifter — vad du äger, var det finns och dokumenten som bevisar det. Vi tar det ansvaret på stort allvar. Här är exakt hur vi skyddar det, på klarspråk."
+  },
+  "protect": {
+    "heading": "Så skyddar vi dina data"
+  },
+  "protections": [
+    {
+      "title": "Krypterat under överföring.",
+      "body": "Varje anslutning till Vaulto använder TLS (HTTPS), så dina data är krypterade när de färdas mellan dig och oss."
+    },
+    {
+      "title": "Krypterat vid lagring.",
+      "body": "Din information och dina dokument lagras på krypterad infrastruktur — hanterad databas och objektlagring."
+    },
+    {
+      "title": "Lösenord lagras aldrig i klartext.",
+      "body": "Vi hashar ditt lösenord med en stark, modern algoritm (scrypt) — inte ens vi kan läsa det."
+    },
+    {
+      "title": "Kortlivade sessioner.",
+      "body": "Inloggningstoken är kortlivade och hålls i minnet; tokenen som håller dig inloggad ligger i en säker cookie som inte kan nås av script."
+    },
+    {
+      "title": "Skydd mot missbruk.",
+      "body": "Vi begränsar inloggningar och andra känsliga åtgärder för att försvara mot automatiserade attacker."
+    },
+    {
+      "title": "Åtkomstkontroller.",
+      "body": "Du kan bara se och redigera ditt eget valv. Våra system upprätthåller detta vid varje förfrågan."
+    }
+  ],
+  "promise": {
+    "heading": "Våra integritetslöften"
+  },
+  "promises": [
+    {
+      "title": "Vi säljer aldrig dina data.",
+      "body": "Punkt slut."
+    },
+    {
+      "title": "Vi delar inte för reklam.",
+      "body": "Din information lämnas inte ut till tredje parter för att marknadsföra till dig."
+    },
+    {
+      "title": "Du har kontrollen.",
+      "body": "Du bestämmer vad du lägger till — och vad du tar bort."
+    }
+  ],
+  "yours": {
+    "heading": "Dina data är dina",
+    "body": "Dina data är dina — exportera allt (dina data + dina originalfiler) när som helst. Under Inställningar ger <b>Ladda ner allt (.zip)</b> dig en fil med en fullständig, maskinläsbar kopia av dina uppgifter plus varje originalfoto och skanning du har laddat upp. Ingen inlåsning, inget väntande på oss. Den maskinläsbara exporten uppfyller också din rätt till dataportabilitet enligt GDPR (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant i dag: kryptering under överföring och vid lagring, hashade lösenord, strikt åtkomstkontroll. Vi påstår medvetet <b>inte</b> \"zero-knowledge\", \"bank-level\" eller någon certifiering vi inte har fått. Dataexport är redan live (ovan). När vi lägger till kryptering på applikationsnivå eller en formell tredjepartsgranskning kommer den här sidan att säga det.",
+    "contact": "För frågor om integritet eller säkerhet, kontakta"
+  }
+}

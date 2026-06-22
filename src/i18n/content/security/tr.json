@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "title": "Güvenlik ve Gizlilik",
+    "description": "Vaulto ailenizin bilgilerini nasıl korur — aktarım sırasında ve depolamada şifreleme, karma parola saklama, sıkı erişim kontrolü. Sade dil, abartısız."
+  },
+  "crumbs": {
+    "home": "Ana Sayfa",
+    "security": "Güvenlik ve Gizlilik"
+  },
+  "hero": {
+    "eyebrow": "Güvenlik ve gizlilik",
+    "heading": "Ailenizin bilgileri, koruma altında.",
+    "intro": "Vaulto hassas ayrıntıları saklar — sahip oldukların, nerede oldukları ve bunu kanıtlayan belgeler. Bu sorumluluğu ciddiye alıyoruz. İşte bunları nasıl koruduğumuz, tam olarak ve sade bir dille."
+  },
+  "protect": {
+    "heading": "Verilerini nasıl koruyoruz"
+  },
+  "protections": [
+    {
+      "title": "Aktarım sırasında şifreli.",
+      "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır, böylece verilerin seninle bizim aramızda yol alırken şifrelenir."
+    },
+    {
+      "title": "Depolamada şifreli.",
+      "body": "Bilgilerin ve belgelerin şifreli altyapıda saklanır — yönetilen veritabanı ve nesne depolama."
+    },
+    {
+      "title": "Parolalar asla düz metin olarak saklanmaz.",
+      "body": "Parolanı güçlü ve modern bir algoritmayla (scrypt) karma hale getiriyoruz — biz bile okuyamayız."
+    },
+    {
+      "title": "Kısa ömürlü oturumlar.",
+      "body": "Oturum açma belirteçleri kısa ömürlüdür ve bellekte tutulur; oturumu açık tutan belirteç ise güvenli, komut dosyalarına kapalı bir çerezde yaşar."
+    },
+    {
+      "title": "Kötüye kullanıma karşı korumalı.",
+      "body": "Otomatik saldırılara karşı savunmak için oturum açma ve diğer hassas işlemlerde hız sınırlaması uygularız."
+    },
+    {
+      "title": "Erişim kontrolleri.",
+      "body": "Yalnızca kendi kasanı görebilir ve düzenleyebilirsin. Sistemlerimiz bunu her istekte uygular."
+    }
+  ],
+  "promise": {
+    "heading": "Gizlilik sözlerimiz"
+  },
+  "promises": [
+    {
+      "title": "Verilerini asla satmayız.",
+      "body": "Nokta."
+    },
+    {
+      "title": "Reklam için paylaşmayız.",
+      "body": "Bilgilerin, sana pazarlama yapmak için üçüncü taraflara verilmez."
+    },
+    {
+      "title": "Kontrol sende.",
+      "body": "Ne ekleyeceğine de ne kaldıracağına da sen karar verirsin."
+    }
+  ],
+  "yours": {
+    "heading": "Verilerin sana ait",
+    "body": "Verilerin sana ait — her şeyi (verilerin + özgün dosyaların) istediğin zaman dışa aktar. Ayarlar'dan, <b>Her şeyi indir (.zip)</b> seçeneği; kayıtlarının eksiksiz, makine tarafından okunabilir bir kopyasını ve yüklediğin her özgün fotoğraf ile taramayı tek bir dosyada verir. Kilitlenme yok, bizden onay bekleme yok. Makine tarafından okunabilir dışa aktarma, GDPR kapsamındaki veri taşınabilirliği hakkını da karşılar (Article&nbsp;20)."
+  },
+  "honesty": {
+    "body": "<b>Sade dil, abartısız.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında ve depolamada şifreleme, karma parola saklama, sıkı erişim kontrolü. Bilerek <b>\"zero-knowledge,\" \"bank-level,\"</b> ya da sahip olmadığımız herhangi bir sertifikayı iddia etmiyoruz. Veri dışa aktarma şu anda aktif (yukarıda). Uygulama katmanında şifreleme veya resmî bir üçüncü taraf denetimi eklediğimizde, bu sayfada bunu açıkça belirtiriz.",
+    "contact": "Gizlilik veya güvenlik soruları için iletişime geç:"
+  }
+}

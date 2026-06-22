@@ -1,0 +1,87 @@
+---
+/**
+ * Security & Privacy page body, locale-aware (ARY-427). All copy comes from
+ * `content/security/<locale>.json` via `getContent`; emoji/icons and the
+ * contact email link stay here (never machine-translated). English is the
+ * source + fallback. Trust-critical encryption claims mirror the ARY-419
+ * reconciliation — the translate script is instructed to preserve their meaning.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import Eyebrow from '../marketing/Eyebrow.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('security', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.security, url: `${BRAND.url}/security/` },
+];
+const protectIcons = ['🔒', '🗄️', '🔑', '⏳', '🚦', '👤'];
+const promiseIcons = ['🚫', '🤝', '🎛️'];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/security/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="info">🛡️ {c.hero.eyebrow}</Eyebrow>
+      <h1 class="t-display">{c.hero.heading}</h1>
+      <p class="intro t-bodyL">{c.hero.intro}</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><h2 class="t-title">{c.protect.heading}</h2></div>
+      <div class="grid-3">
+        {c.protections.map((p: any, i: number) => (
+          <div class="pcard card">
+            <div class="ico" aria-hidden="true">{protectIcons[i]}</div>
+            <h3 class="t-heading">{p.title}</h3>
+            <p class="t-body">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="promise callout">
+    <div class="wrap" style="display:block;">
+      <h2 class="t-title">{c.promise.heading}</h2>
+      <div class="promise-grid">
+        {c.promises.map((p: any, i: number) => (
+          <div class="promise-item">
+            <div class="big" aria-hidden="true">{promiseIcons[i]}</div>
+            <h3 class="t-heading">{p.title}</h3>
+            <p class="t-body">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><h2 class="t-title">{c.yours.heading}</h2></div>
+      <p class="t-body" style="max-width:680px;margin:0 auto;text-align:center;" set:html={c.yours.body} />
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="honesty">
+        <Fragment set:html={c.honesty.body} />
+        {' '}{c.honesty.contact}{' '}
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

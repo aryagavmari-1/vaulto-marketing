@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Sık sorulan sorular",
+    "description": "Vaulto hakkında yanıtlar — verilerim güvende mi, ücreti ne kadar, neleri saklayabilirsiniz ve yapay zekâ destekli yakalama yazma işini nasıl azaltır."
+  },
+  "crumbs": {
+    "home": "Ana sayfa",
+    "faq": "SSS"
+  },
+  "hero": {
+    "eyebrow": "SSS",
+    "heading": "Sorular, açıkça yanıtlandı.",
+    "intro": "Verileriniz, maliyeti ve Vaulto'nun nasıl çalıştığı hakkında net yanıtlar. Hâlâ merak mı ediyorsunuz? <a href=\"/security/\">Onu nasıl güvende tuttuğumuzu</a> veya <a href=\"/how-it-works/\">nasıl çalıştığını</a> okuyun."
+  },
+  "items": [
+    {
+      "q": "Verilerim güvende mi?",
+      "a": "Evet. Bilgileriniz aktarım sırasında (TLS) ve yönetilen altyapıda bekleme halinde şifrelenir, parolanız asla düz metin olarak saklanmaz ve erişim hesabınızla sıkı şekilde kontrol edilir.",
+      "onward": "Onu nasıl güvende tuttuğumuzu görün →"
+    },
+    {
+      "q": "Verilerimi satıyor musunuz?",
+      "a": "Hayır — asla. Bilgilerinizi reklam için satmayız veya paylaşmayız.",
+      "onward": "Gizlilik taahhütlerimizi okuyun →"
+    },
+    {
+      "q": "Ücreti ne kadar?",
+      "a": "Vaulto'ya başlamak ücretsizdir. Daha kapsamlı planlama raporları hazır olduğunuzda sunulur; herhangi bir ücret alınmadan önce nelerin dahil olduğunu her zaman görürsünüz."
+    },
+    {
+      "q": "Her şeyi tek tek elle girmem gerekiyor mu?",
+      "a": "Hayır — bir fotoğraf veya belge yükleyin, Vaulto bunu okuyup sizin için ayrıntıları önerebilir.",
+      "onward": "Yakalamanın nasıl çalıştığını görün →"
+    },
+    {
+      "q": "Vaulto kimler için?",
+      "a": "Sahip olduklarını bilmek, önemli belgeleri güvende tutmak ve önceden plan yapmak için güvenilir tek bir yer isteyen aileler ve bireyler için."
+    },
+    {
+      "q": "Neleri saklayabilirim?",
+      "a": "Her türden varlık — gayrimenkuller, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — ve bunlarla ilgili belgeler."
+    },
+    {
+      "q": "Vaulto'yu kendi dilimde kullanabilir miyim?",
+      "a": "Uygulama 16 dilde kullanılabilir. Yerelleştirilmiş site içeriğini pazar pazar ekliyoruz."
+    }
+  ],
+  "finalCta": {
+    "title": "Hazır olduğunda burada.",
+    "body": "Ücretsiz başla ve ilk birkaç şeyini dakikalar içinde ekle."
+  }
+}

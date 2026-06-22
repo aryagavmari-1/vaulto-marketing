@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Prywatność",
+    "description": "Jak Vaulto przetwarza Twoje dane osobowe."
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "privacy": "Prywatność"
+  },
+  "hero": {
+    "eyebrow": "Zaufanie",
+    "heading": "Prywatność",
+    "lead": "Proste podsumowanie tego, co Vaulto zbiera, jak to wykorzystujemy i jaką kontrolę zachowujesz. Uzupełnia nasz <a href=\"/security/\">przegląd zabezpieczeń</a>.",
+    "updated": "Ostatnia aktualizacja: czerwiec 2026 · Pełna polityka prawna zostanie opublikowana przed publicznym uruchomieniem."
+  },
+  "sections": [
+    {
+      "title": "Co zbieramy",
+      "body": "Informacje, które zdecydujesz się umieścić w swoim sejfie (aktywa, zobowiązania, dokumenty i powiązane szczegóły), dane konta potrzebne do zalogowania oraz podstawowe dane o korzystaniu potrzebne do działania i ulepszania usługi."
+    },
+    {
+      "title": "Jak to wykorzystujemy",
+      "body": "Aby świadczyć usługę: przechowywać Twój spis majątku i dokumenty, obliczać Twoją wartość netto, tworzyć zamówione przez Ciebie podsumowania AI oraz przygotowywać migawki, które zdecydujesz się udostępnić. Nie sprzedajemy Twoich danych."
+    },
+    {
+      "title": "Udostępnianie &amp; zgoda",
+      "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to zezwolisz — na przykład gdy tworzysz pakiet polecający dla specjalisty. Zgoda jest rejestrowana z jasno określonym zakresem i może zostać cofnięta w dowolnym momencie, a cofnięcie jest odnotowywane."
+    },
+    {
+      "title": "Jak są chronione",
+      "body": "Twój sejf jest odseparowany w ramach Twojego konta przy każdym żądaniu, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótko ważne podpisane linki. Szczegóły znajdziesz w <a href=\"/security/\">przeglądzie zabezpieczeń</a> — w tym także to, czego jeszcze nie deklarujemy."
+    }
+  ],
+  "choices": {
+    "title": "Twoje wybory",
+    "items": [
+      "Uzyskaj dostęp do informacji w swoim sejfie i je wyeksportuj.",
+      "Cofnij specjaliście dostęp do udostępnionej migawki.",
+      "Poproś o usunięcie swojego konta i danych."
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "lead": "Masz pytania o prywatność? Napisz na adres"
+  }
+}

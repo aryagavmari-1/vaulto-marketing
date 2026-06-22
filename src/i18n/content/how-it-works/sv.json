@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "title": "Så fungerar det",
+    "description": "Lägg till det du äger, låt Vaulto organisera det och se hela bilden i tre enkla steg. AI-assisterad inläsning sköter registreringen åt dig."
+  },
+  "crumbs": {
+    "home": "Hem",
+    "howItWorks": "Så fungerar det"
+  },
+  "hero": {
+    "eyebrow": "Så fungerar det",
+    "heading": "Från utspritt till organiserat, i tre steg.",
+    "intro": "Du behöver inte skriva in allt för hand. Vaulto läser dina foton och dokument och gör grovjobbet — så du kommer igång på minuter, inte helger."
+  },
+  "steps": [
+    {
+      "title": "Lägg till det du äger.",
+      "body": "Ta en bild eller ladda upp ett dokument så läser Vaulto det åt dig — och utkastar uppgifterna så att du slipper skriva in allt för hand. Lägg till ett rum, ett kvitto eller en mapp med papper på en gång.",
+      "detail": "AI-assisterad inläsning gör ett överväldigande jobb till några korta stunder."
+    },
+    {
+      "title": "Låt Vaulto organisera det.",
+      "body": "Gruppera tillgångar i samlingar, lägg till de viktigaste uppgifterna och behåll dokumenten som styrker dem precis där de hör hemma.",
+      "detail": "Fastigheter, konton, investeringar, värdesaker, pensioner — allt i en struktur."
+    },
+    {
+      "title": "Se hela bilden.",
+      "body": "Din familjs tillgångar och dokument i en tydlig vy — redo att delas med personerna som betyder mest, och att planera framåt med en kostnadsfri översikt när du är redo.",
+      "detail": "En ren ögonblicksbild som du kan ge till en jurist eller rådgivare."
+    }
+  ],
+  "securityLink": "Så håller vi det säkert →",
+  "finalCta": {
+    "title": "Börja med ditt valv — gratis",
+    "body": "Lägg till dina första saker på några minuter. Inga kalkylblad behövs."
+  }
+}

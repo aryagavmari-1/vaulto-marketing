@@ -1,0 +1,64 @@
+---
+/**
+ * Planning & advisory page body, locale-aware (ARY-427). All copy comes from
+ * `content/planning/<locale>.json` via `getContent`; layout-only metadata
+ * (which cards get the softer "sensitive" styling) stays here as a fixed array
+ * keyed by index. English is the source + fallback.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import Eyebrow from '../marketing/Eyebrow.astro';
+import MarketingButton from '../marketing/MarketingButton.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('planning', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.planning, url: `${BRAND.url}/planning/` },
+];
+
+// Advisory focus areas — channel names verified from shipped product (ARY-23 §0
+// / content.ts). Primary cards per ARY-404 §4.5; calm, no-urgency taglines.
+// `sensitive: true` gets softer styling — extra whitespace, zero celebration.
+const areaSensitive = [false, true, false, false, true, true];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/planning/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+      <h1 class="t-display">{c.hero.heading}</h1>
+      <p class="intro t-bodyL">{c.hero.intro}</p>
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="plan-grid">
+        {c.areas.map((a: any, i: number) => (
+          <div class:list={['plan-card card', areaSensitive[i] && 'sensitive']}>
+            <h3 class="t-heading">{a.title}</h3>
+            <p class="tagline">{a.tagline}</p>
+            <span class="pcta">{c.areaCta}</span>
+          </div>
+        ))}
+      </div>
+      <p class="center t-body" style="margin-top:36px;">{c.more.heading}</p>
+      <div class="plan-chips">
+        {c.moreAreas.map((m: string) => <span class="plan-chip">{m}</span>)}
+      </div>
+      <p class="center" style="margin-top:36px;">
+        <MarketingButton href={BRAND.app} cta="planning_get_started" outbound="app">{c.cta.label}</MarketingButton>
+      </p>
+    </div>
+  </section>
+</Base>

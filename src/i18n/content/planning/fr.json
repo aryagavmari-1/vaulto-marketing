@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planification",
+    "description": "Un aperçu gratuit de ce qui est en jeu — succession, testaments, international, et plus encore — puis approfondissez à votre rythme. Des informations à titre indicatif, jamais un remplacement de votre professionnel."
+  },
+  "crumbs": {
+    "home": "Accueil",
+    "planning": "Planification"
+  },
+  "hero": {
+    "eyebrow": "Planification & conseil",
+    "heading": "Soyez prêt, avant que la vie ne l'impose.",
+    "intro": "Commencez par un aperçu gratuit de ce qui est en jeu. Approfondissez quand vous êtes prêt, à votre rythme — et partagez un résumé clair avec le professionnel qui s'en charge. Ces informations sont indicatives ; elles ne remplacent pas votre notaire ou conseiller."
+  },
+  "areas": [
+    {
+      "title": "Planification testamentaire",
+      "tagline": "Comprenez ce qu'un testament devrait couvrir et où se trouvent les lacunes, avant de vous asseoir avec un notaire."
+    },
+    {
+      "title": "Succession",
+      "tagline": "Voyez ce que transmettre vos biens pourrait impliquer pour votre famille — sereinement, et à votre rythme."
+    },
+    {
+      "title": "Vue d'ensemble financière",
+      "tagline": "Une lecture claire de votre situation dans son ensemble : ce que vous possédez, ce que cela implique, et ce qu'il faut examiner ensuite."
+    },
+    {
+      "title": "International",
+      "tagline": "Des biens ou de la famille dans plus d'un pays ? Comprenez les points à prendre en compte."
+    },
+    {
+      "title": "Contrat prénuptial",
+      "tagline": "Réfléchissez à la protection de ce qui compte pour chacun de vous, avec clarté et sans pression."
+    },
+    {
+      "title": "Divorce & séparation",
+      "tagline": "Un point de départ discret et pratique pour comprendre le patrimoine quand les choses changent."
+    }
+  ],
+  "areaCta": "Aperçu gratuit → Planifiez quand vous êtes prêt",
+  "more": {
+    "heading": "D'autres domaines à explorer"
+  },
+  "moreAreas": [
+    "Droits de succession",
+    "Transmission d'entreprise familiale",
+    "Assurance",
+    "Optimisation fiscale",
+    "Financement d'actifs"
+  ],
+  "cta": {
+    "label": "Essayer un aperçu gratuit"
+  }
+}

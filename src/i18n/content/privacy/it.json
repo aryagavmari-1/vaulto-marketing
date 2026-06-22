@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Privacy",
+    "description": "Come Vaulto gestisce i tuoi dati personali."
+  },
+  "crumbs": {
+    "home": "Home",
+    "privacy": "Privacy"
+  },
+  "hero": {
+    "eyebrow": "Fiducia",
+    "heading": "Privacy",
+    "lead": "Riepilogo in linguaggio semplice di ciò che Vaulto raccoglie, come lo usiamo e del controllo che mantieni. Si abbina alla nostra <a href=\"/security/\">panoramica sulla sicurezza</a>.",
+    "updated": "Ultimo aggiornamento giugno 2026 · Una policy legale completa sarà pubblicata prima del lancio pubblico."
+  },
+  "sections": [
+    {
+      "title": "Cosa raccogliamo",
+      "body": "Le informazioni che scegli di inserire nella tua cassaforte (beni, passività, documenti e dettagli correlati), i dati dell'account necessari per accedere e i dati di utilizzo di base necessari per gestire e migliorare il servizio."
+    },
+    {
+      "title": "Come lo usiamo",
+      "body": "Per fornire il prodotto: archiviare il tuo inventario e i tuoi documenti, calcolare il tuo patrimonio netto, generare le panoramiche AI che richiedi e creare le istantanee che scegli di condividere. Non vendiamo i tuoi dati."
+    },
+    {
+      "title": "Condivisione &amp; consenso",
+      "body": "I tuoi dati vengono condivisi solo quando concedi esplicitamente l'autorizzazione — per esempio, quando crei un pacchetto di riferimento per un professionista. Il consenso viene registrato con un ambito chiaro e può essere revocato in qualsiasi momento, e la revoca viene tracciata."
+    },
+    {
+      "title": "Come viene protetto",
+      "body": "La tua cassaforte è isolata al tuo account a ogni richiesta, le password sono sottoposte ad hashing con scrypt e l'accesso ai documenti usa link firmati a breve durata. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli specifici — incluso ciò che non dichiariamo ancora."
+    }
+  ],
+  "choices": {
+    "title": "Le tue scelte",
+    "items": [
+      "Accedi alle informazioni nella tua cassaforte ed esportale.",
+      "Revoca l'accesso di un professionista a un'istantanea condivisa.",
+      "Richiedi l'eliminazione del tuo account e dei tuoi dati."
+    ]
+  },
+  "contact": {
+    "title": "Contatto",
+    "lead": "Hai domande sulla privacy? Scrivi a"
+  }
+}

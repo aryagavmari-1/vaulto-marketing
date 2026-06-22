@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Planowanie",
+    "description": "Bezpłatny przegląd tego, o co toczy się gra — spadek, testamenty, sprawy transgraniczne i nie tylko — a potem możesz zagłębiać się dalej we własnym tempie. To wskazówki informacyjne, nigdy zamiennik dla Twojego specjalisty."
+  },
+  "crumbs": {
+    "home": "Strona główna",
+    "planning": "Planowanie"
+  },
+  "hero": {
+    "eyebrow": "Planowanie i doradztwo",
+    "heading": "Bądź gotów, zanim życie Cię do tego zmusi.",
+    "intro": "Zacznij od bezpłatnego przeglądu tego, o co toczy się gra. Wejdź głębiej, gdy będziesz gotów, we własnym tempie — i udostępnij przejrzyste podsumowanie specjaliście, który się tym zajmuje. Wskazówki mają charakter informacyjny; nie zastępują Twojego prawnika ani doradcy."
+  },
+  "areas": [
+    {
+      "title": "Planowanie testamentu",
+      "tagline": "Zrozum, co testament powinien obejmować i gdzie są luki, zanim usiądziesz do rozmowy z prawnikiem."
+    },
+    {
+      "title": "Spadek",
+      "tagline": "Zobacz spokojnie i we własnym tempie, co przekazanie majątku może oznaczać dla Twojej rodziny."
+    },
+    {
+      "title": "Przegląd finansowy",
+      "tagline": "Jasny obraz całej Twojej sytuacji: co posiadasz, co to oznacza i czemu warto przyjrzeć się dalej."
+    },
+    {
+      "title": "Sprawy transgraniczne",
+      "tagline": "Masz majątek lub rodzinę w więcej niż jednym kraju? Zrozum kwestie, które się z tym wiążą."
+    },
+    {
+      "title": "Intercyza",
+      "tagline": "Spokojnie przemyśl, jak chronić to, co ważne dla każdego z Was — jasno i bez presji."
+    },
+    {
+      "title": "Rozwód i separacja",
+      "tagline": "Spokojny, praktyczny punkt wyjścia do zrozumienia majątku, gdy sytuacja się zmienia."
+    }
+  ],
+  "areaCta": "Bezpłatny przegląd → Zaplanuj, kiedy będziesz gotów",
+  "more": {
+    "heading": "Więcej obszarów do odkrycia"
+  },
+  "moreAreas": [
+    "Podatek od spadku",
+    "Sukcesja w firmie rodzinnej",
+    "Ubezpieczenia",
+    "Efektywność podatkowa",
+    "Finansowanie majątku"
+  ],
+  "cta": {
+    "label": "Wypróbuj bezpłatny przegląd"
+  }
+}

@@ -1,0 +1,95 @@
+---
+/**
+ * FAQ page body, locale-aware (ARY-427). All copy comes from
+ * `content/faq/<locale>.json` via `getContent`; hrefs/URLs and the accordion
+ * behaviour stay here (never machine-translated). English is the source +
+ * fallback.
+ *
+ * Single source of truth per locale: the FAQPage JSON-LD passed to <Base faq>
+ * and the visible accordion are both built from the SAME translated `c.items`,
+ * so the structured data always matches what the page shows. Answers are plain
+ * text in the catalog (no inline HTML), so the JSON-LD `answer` uses them
+ * verbatim; the visible onward links (ARY-404 §4.6) are visible-only and never
+ * enter the JSON-LD answer text.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import Eyebrow from '../marketing/Eyebrow.astro';
+import FinalCta from '../marketing/FinalCta.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('faq', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.faq, url: `${BRAND.url}/faq/` },
+];
+
+// One source: build the FAQPage JSON-LD from the SAME translated items the page
+// renders. Answers are plain text in the catalog → strip any stray tags so the
+// structured-data answer is guaranteed plain text.
+const stripTags = (s: string) => s.replace(/<[^>]*>/g, '');
+const items = c.items as Array<{ q: string; a: string; onward?: string }>;
+const faqLd = items.map((it) => ({ q: it.q, a: stripTags(it.a) }));
+
+// Onward-link hrefs per ARY-404 §4.6 — URLs stay in code, keyed by item index.
+// The translatable label lives in the catalog as `item.onward`.
+const onwardHref: Record<number, string> = {
+  0: '/security/',
+  1: '/security/',
+  3: '/how-it-works/',
+};
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/faq/"
+  locale={locale}
+  faq={faqLd}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+      <h1 class="t-display">{c.hero.heading}</h1>
+      <p class="intro t-bodyL" set:html={c.hero.intro} />
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="faq-list">
+        {items.map((it, i) => (
+          <div class="faq-item">
+            <h2>
+              <button class="faq-q" type="button" aria-expanded={i === 0 ? 'true' : 'false'} aria-controls={`faq-a-${i}`} id={`faq-q-${i}`}>
+                <span>{it.q}</span>
+                <span class="caret" aria-hidden="true">⌄</span>
+              </button>
+            </h2>
+            <div class="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
+              <p>
+                {it.a}
+                {it.onward && onwardHref[i] && <> <a href={onwardHref[i]} data-cta={`faq_link_${i}`}>{it.onward}</a></>}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="faq_final" />
+
+  <script is:inline>
+    document.querySelectorAll('.faq-q').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    });
+  </script>
+</Base>
