@@ -32,7 +32,7 @@ const en = {
   'footer.rights': 'All rights reserved.',
   'footer.signIn': 'Sign in →',
   'lang.switch': 'Language',
-  'trust.strip': 'Encrypted in transit and at rest · Your data is never sold · Built for families',
+  'trust.strip': 'Encrypted in transit (TLS) and at rest · Your data is never sold · Built for families',
 } as const;
 
 /** Key namespace — guarantees overlays can only translate real keys. */

@@ -53,7 +53,7 @@ const en: HomeContent = {
     eyebrow: '🔒 Private & encrypted by design',
     heading: 'One calm, secure place for everything your family owns.',
     sub: "Inventory your assets, keep important documents safe, and see your whole picture — so your family always knows what's there, and what to do next.",
-    trust: ['Encrypted in transit & at rest', 'Your data is never sold', 'Built for families'],
+    trust: ['Encrypted in transit (TLS) and at rest', 'Your data is never sold', 'Built for families'],
     art: {
       cards: [
         { icon: '🏡', label: 'Family home', sub: 'Property · deed & insurance attached' },
