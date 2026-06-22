@@ -13,6 +13,7 @@
   --primary: #4F6230;          /* the single action color (white on it 6.73:1 AA) */
   --primary-pressed: #3F4E26;  /* hover/active */
   --on-primary: #FFFFFF;
+  --on-primary-muted: #EAF0DE; /* tinted on-primary for secondary text on olive (5.77:1 AA) */
   --accent: #B4542F;           /* terra-cotta — sparing delight only, never CTA/body */
   --surface: #FAF6EF;          /* page background */
   --card: #FFFFFF;             /* cards, trust band */
@@ -115,7 +116,7 @@ section { padding-block: 56px; }
 .btn-ghost:hover { background: var(--muted); }
 .btn-nav { min-height: 44px; padding: 0 18px; font-size: 15px; }
 .btn-inverted { background: var(--on-primary); color: var(--primary); }
-.btn-inverted:hover { background: #f3efe6; }
+.btn-inverted:hover { background: var(--muted); }
 
 /* 2. TrustStrip */
 .trust-strip {
@@ -177,7 +178,7 @@ section { padding-block: 56px; }
   color: var(--on-primary); padding: 56px 32px;
 }
 .final h2 { color: var(--on-primary); }
-.final p { color: #EAF0DE; margin: 14px auto 26px; max-width: 46ch; }
+.final p { color: var(--on-primary-muted); margin: 14px auto 26px; max-width: 46ch; }
 
 /* ============================================================================
  * Global shell — Header / Footer
@@ -193,7 +194,7 @@ section { padding-block: 56px; }
 .logo { width: 30px; height: 30px; border-radius: 8px; background: var(--primary); position: relative; flex: none; }
 .logo::after {
   content: ""; position: absolute; inset: 9px 9px 7px;
-  border: 2.5px solid #fff; border-bottom: none; border-radius: 7px 7px 0 0;
+  border: 2.5px solid var(--on-primary); border-bottom: none; border-radius: 7px 7px 0 0;
 }
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav a:not(.btn) { color: var(--ink2); font-size: 15px; font-weight: 500; }
@@ -224,12 +225,13 @@ section { padding-block: 56px; }
 /* Home hero art — pure CSS/vector, no render-blocking image (LCP) */
 .hero-art {
   aspect-ratio: 4 / 3.4; border-radius: 20px;
-  background: radial-gradient(120% 90% at 20% 0%, #fff 0%, #FBF8F2 55%, #F0EADD 100%);
+  /* #FBF8F2 is an intentional gradient mid-stop between --card and --muted (not a §5 token). */
+  background: radial-gradient(120% 90% at 20% 0%, var(--card) 0%, #FBF8F2 55%, var(--muted) 100%);
   border: 1px solid var(--hairline); box-shadow: var(--shadow-raised);
   position: relative; overflow: hidden; padding: 22px;
 }
 .mini-card {
-  background: #fff; border: 1px solid var(--hairline); border-radius: 12px;
+  background: var(--card); border: 1px solid var(--hairline); border-radius: 12px;
   padding: 14px 16px; box-shadow: var(--shadow-rest);
   display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
 }
