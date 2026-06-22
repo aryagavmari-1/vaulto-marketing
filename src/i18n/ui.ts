@@ -15,6 +15,7 @@ import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
 
 /** English source strings — the canonical set; every key must exist here. */
 const en = {
+  'nav.home': 'Home',
   'nav.howItWorks': 'How it works',
   'nav.features': 'Features',
   'nav.planning': 'Planning',
@@ -29,6 +30,7 @@ const en = {
   'footer.security': 'Security & Privacy',
   'footer.privacy': 'Privacy',
   'footer.rights': 'All rights reserved.',
+  'footer.signIn': 'Sign in →',
   'lang.switch': 'Language',
   'trust.strip': 'Encrypted in transit and at rest · Your data is never sold · Built for families',
 } as const;

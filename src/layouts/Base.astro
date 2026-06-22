@@ -50,11 +50,11 @@ const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header path={path} />
+    <Header path={path} locale={locale} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer locale={locale} />
 
     <!-- Analytics (ARY-25 spec). Cookieless, no PII in event props. Sink is
          Plausible/Umami when configured; otherwise track() is a safe no-op. -->

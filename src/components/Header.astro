@@ -6,17 +6,23 @@
  */
 import { BRAND } from '../config/brand';
 import MarketingButton from './marketing/MarketingButton.astro';
+import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
+import { useTranslations, type UIKey } from '../i18n/ui';
 
-interface Props { path?: string; }
-const { path = '/' } = Astro.props;
+interface Props { path?: string; locale?: Locale; }
+const { path = '/', locale = DEFAULT_LOCALE } = Astro.props;
+const t = useTranslations(locale);
 
-const links = [
-  { href: '/', label: 'Home' },
-  { href: '/security/', label: 'Security' },
-  { href: '/how-it-works/', label: 'How it works' },
-  { href: '/features/', label: 'Features' },
-  { href: '/planning/', label: 'Planning' },
-  { href: '/faq/', label: 'FAQ' },
+// Nav hrefs stay on the canonical (English-unprefixed) pages: only Home is
+// localized for now, so prefixing these would point at /es/... pages that
+// don't exist yet. Labels come from the chrome catalog with English fallback.
+const links: { href: string; key: UIKey }[] = [
+  { href: '/', key: 'nav.home' },
+  { href: '/security/', key: 'nav.security' },
+  { href: '/how-it-works/', key: 'nav.howItWorks' },
+  { href: '/features/', key: 'nav.features' },
+  { href: '/planning/', key: 'nav.planning' },
+  { href: '/faq/', key: 'nav.faq' },
 ];
 const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const isActive = (href: string) => norm(href) === norm(path);
@@ -29,9 +35,9 @@ const isActive = (href: string) => norm(href) === norm(path);
     <nav class="nav" aria-label="Primary">
       {links.map((l) => (
         <a class:list={['nav-link', isActive(l.href) && 'active']}
-           href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+           href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{t(l.key)}</a>
       ))}
-      <MarketingButton href={BRAND.app} nav cta="nav_get_started" outbound="app">Get started free</MarketingButton>
+      <MarketingButton href={BRAND.app} nav cta="nav_get_started" outbound="app">{t('cta.getStarted')}</MarketingButton>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-drawer-toggle>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -43,9 +49,9 @@ const isActive = (href: string) => norm(href) === norm(path);
 <div class="drawer" id="mobile-drawer" hidden>
   <nav aria-label="Mobile">
     {links.map((l) => (
-      <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+      <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{t(l.key)}</a>
     ))}
-    <MarketingButton href={BRAND.app} cta="drawer_get_started" outbound="app">Get started free</MarketingButton>
+    <MarketingButton href={BRAND.app} cta="drawer_get_started" outbound="app">{t('cta.getStarted')}</MarketingButton>
   </nav>
 </div>
 <script is:inline>

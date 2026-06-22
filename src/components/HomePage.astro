@@ -1,0 +1,106 @@
+---
+/**
+ * Home page body, locale-aware (ARY-413).
+ *
+ * All visible copy comes from the `home.ts` catalog keyed by `locale`; the two
+ * hero CTA labels reuse the shared chrome catalog (`ui.ts`). Adding a localized
+ * Home is therefore content-only: fill the `es`/`fr`/`de` overlays in those two
+ * catalogs and drop a one-line `src/pages/<loc>/index.astro` that renders
+ * `<HomePage locale="<loc>" />`.
+ */
+import Base from '../layouts/Base.astro';
+import { BRAND } from '../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../config/i18n';
+import { useTranslations } from '../i18n/ui';
+import { useHomeContent } from '../i18n/home';
+import Eyebrow from './marketing/Eyebrow.astro';
+import MarketingButton from './marketing/MarketingButton.astro';
+import TrustStrip from './marketing/TrustStrip.astro';
+import ValueCard from './marketing/ValueCard.astro';
+import StepCard from './marketing/StepCard.astro';
+import CalloutBand from './marketing/CalloutBand.astro';
+import ProofList from './marketing/ProofList.astro';
+import ReservedSlot from './marketing/ReservedSlot.astro';
+import FinalCta from './marketing/FinalCta.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const t = useTranslations(locale);
+const c = useHomeContent(locale);
+---
+<Base title={c.meta.title} description={c.meta.description} path="/" locale={locale}>
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+          <h1 class="t-display">{c.hero.heading}</h1>
+          <p class="sub t-bodyL">{c.hero.sub}</p>
+          <div class="cta-row">
+            <MarketingButton href={BRAND.app} cta="hero_get_started" outbound="app">{t('cta.getStarted')}</MarketingButton>
+            <MarketingButton variant="ghost" href="/how-it-works/" cta="hero_how">{t('cta.seeHow')}</MarketingButton>
+          </div>
+          <TrustStrip items={c.hero.trust} under />
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          {c.hero.art.cards.map((card) => (
+            <div class="mini-card">
+              <div class="ico">{card.icon}</div>
+              <div class="meta"><b>{card.label}</b><span>{card.sub}</span></div>
+              <span class="secured">{c.hero.art.secured}</span>
+            </div>
+          ))}
+          <span class="lock-pill">{c.hero.art.lock}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Value cards -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="t-title">{c.value.heading}</h2>
+        <p class="t-bodyL">{c.value.sub}</p>
+      </div>
+      <div class="grid-3">
+        {c.value.cards.map((card) => (
+          <ValueCard icon={card.icon} title={card.title}>{card.body}</ValueCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Steps teaser -->
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="t-title">{c.steps.heading}</h2></div>
+      <div class="grid-3">
+        {c.steps.items.map((step, i) => (
+          <StepCard n={i + 1} title={step.title}>{step.body}</StepCard>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Trust callout -->
+  <CalloutBand>
+    <div slot="left">
+      <h2 class="t-title">{c.trustBand.heading}</h2>
+      <p class="t-bodyL lead">{c.trustBand.lead}</p>
+      <MarketingButton variant="ghost" href="/security/" cta="home_security">{c.trustBand.cta}</MarketingButton>
+    </div>
+    <div slot="right">
+      <ProofList items={c.trustBand.proof} />
+    </div>
+  </CalloutBand>
+
+  <!-- 5. Reserved testimonials -->
+  <section>
+    <div class="wrap"><ReservedSlot /></div>
+  </section>
+
+  <!-- 6. Final CTA -->
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="home_final" />
+</Base>
