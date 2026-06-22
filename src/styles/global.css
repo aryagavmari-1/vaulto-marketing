@@ -157,15 +157,7 @@ section { padding-block: 56px; }
 .proof-list li { display: flex; gap: 12px; font-size: 15.5px; color: var(--ink); line-height: 1.5; }
 .proof-list .chk { margin-top: 1px; flex: none; }
 
-/* 6. ReservedSlot */
-.reserved {
-  border: 1.5px dashed var(--hairline); border-radius: var(--r-sheet);
-  padding: 30px; text-align: center; color: var(--ink2); background: transparent;
-}
-.reserved .t-label { color: var(--primary); margin-bottom: 6px; display: block; }
-.reserved p { max-width: 52ch; margin: 0 auto; }
-
-/* 7. CalloutBand */
+/* 6. CalloutBand */
 .callout { background: var(--card); border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
 .callout .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding-block: 56px; }
 .callout h2 { margin-bottom: 16px; }
