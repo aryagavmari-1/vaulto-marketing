@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Sind meine Daten sicher?",
-      "a": "Ja. Deine Informationen werden bei der Übertragung (TLS) und im Ruhezustand auf verwalteter Infrastruktur verschlüsselt, dein Passwort wird nie im Klartext gespeichert, und der Zugriff auf dein Konto ist streng kontrolliert.",
+      "a": "",
       "onward": "So halten wir alles sicher →"
     },
     {

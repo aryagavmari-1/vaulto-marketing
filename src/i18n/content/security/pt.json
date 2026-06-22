@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Segurança e Privacidade",
-    "description": "Como a Vaulto protege a informação da sua família — encriptação em trânsito e em repouso, palavras-passe com hash, controlo de acesso rigoroso. Linguagem clara, sem exageros."
+    "description": ""
   },
   "crumbs": {
     "home": "Início",
@@ -21,8 +21,8 @@
       "body": "Todas as ligações à Vaulto usam TLS (HTTPS), para que os seus dados sejam encriptados enquanto circulam entre si e nós."
     },
     {
-      "title": "Encriptado em repouso.",
-      "body": "A sua informação e os seus documentos são armazenados em infraestrutura encriptada — base de dados gerida e armazenamento de objetos."
+      "title": "",
+      "body": ""
     },
     {
       "title": "As palavras-passe nunca são guardadas em texto simples.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Os seus dados são seus",
-    "body": "Os seus dados são seus — exporte tudo (os seus dados + os seus ficheiros originais) a qualquer momento. Em Definições, <b>Transferir tudo (.zip)</b> dá-lhe um único ficheiro com uma cópia completa, legível por máquina, dos seus registos, mais todas as fotos e digitalizações originais que carregou. Sem dependência, sem ter de esperar por nós. A exportação legível por máquina também satisfaz o seu direito à portabilidade dos dados ao abrigo do GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Linguagem clara, sem exageros.</b> Descrevemos apenas o que é verdade hoje: encriptação em trânsito e em repouso, palavras-passe com hash, controlo de acesso rigoroso. Deliberadamente <b>não</b> alegamos \"zero-knowledge\", \"bank-level\" nem qualquer certificação que não tenhamos obtido. A exportação de dados está disponível agora (acima). Quando adicionarmos encriptação ao nível da aplicação ou uma auditoria formal de terceiros, esta página dirá isso.",
+    "body": "",
     "contact": "Para questões de privacidade ou segurança, contacte"
   }
 }

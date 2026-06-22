@@ -3,7 +3,10 @@
     "title": "Privacy",
     "description": "How Vaulto handles your personal data."
   },
-  "crumbs": { "home": "Home", "privacy": "Privacy" },
+  "crumbs": {
+    "home": "Home",
+    "privacy": "Privacy"
+  },
   "hero": {
     "eyebrow": "Trust",
     "heading": "Privacy",
@@ -21,7 +24,7 @@
     },
     {
       "title": "Sharing &amp; consent",
-      "body": "Your data is only shared when you explicitly grant it — for example, when you build a referral package for a professional. Consent is recorded with a clear scope and can be revoked at any time, and the revocation is tracked."
+      "body": "Your data is only shared when you explicitly grant it — for example, when you build a referral package for a professional. You choose what's included, and you can stop sharing at any time."
     },
     {
       "title": "How it's protected",
@@ -33,7 +36,7 @@
     "items": [
       "Access and export the information in your vault.",
       "Revoke a professional's access to a shared snapshot.",
-      "Request deletion of your account and data."
+      "Delete vaults and their contents anytime. To delete your whole account, email the privacy address below and we'll erase your data."
     ]
   },
   "contact": {

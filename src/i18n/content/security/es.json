@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Seguridad y privacidad",
-    "description": "Cómo Vaulto protege la información de tu familia — cifrado en tránsito y en reposo, contraseñas con hash, control de acceso estricto. Lenguaje claro, sin exageraciones."
+    "description": ""
   },
   "crumbs": {
     "home": "Inicio",
@@ -21,8 +21,8 @@
       "body": "Todas las conexiones con Vaulto usan TLS (HTTPS), para que tus datos vayan cifrados mientras viajan entre tú y nosotros."
     },
     {
-      "title": "Cifrado en reposo.",
-      "body": "Tu información y tus documentos se almacenan en infraestructura cifrada — base de datos gestionada y almacenamiento de objetos."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Las contraseñas nunca se guardan en texto plano.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Tus datos son tuyos",
-    "body": "Tus datos son tuyos — exporta todo (tus datos + tus archivos originales) en cualquier momento. En Ajustes, <b>Descargar todo (.zip)</b> te da un archivo con una copia completa y legible por máquina de tus registros, además de cada foto y escaneo original que hayas subido. Sin dependencia, sin esperas por nuestra parte. La exportación legible por máquina también satisface tu derecho a la portabilidad de los datos según el GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Lenguaje claro, sin exageraciones.</b> Describimos solo lo que es cierto hoy: cifrado en tránsito y en reposo, contraseñas con hash, control de acceso estricto. Deliberadamente <b>no</b> afirmamos \"zero-knowledge\", \"bank-level\" ni ninguna certificación que no hayamos obtenido. La exportación de datos ya está disponible (arriba). Cuando añadamos cifrado en la capa de la aplicación o una auditoría formal de terceros, esta página lo dirá.",
+    "body": "",
     "contact": "Para preguntas sobre privacidad o seguridad, contacta con"
   }
 }

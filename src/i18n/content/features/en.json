@@ -1,21 +1,42 @@
 {
   "meta": {
     "title": "Features",
-    "description": "What Vaulto does today: asset inventory, an encrypted document vault, AI-assisted capture, collections, and one clear view of everything your family owns."
+    "description": "What Vaulto does today: asset inventory, a private document vault, AI-assisted capture, collections, and one clear view of everything your family owns."
   },
-  "crumbs": { "home": "Home", "features": "Features" },
+  "crumbs": {
+    "home": "Home",
+    "features": "Features"
+  },
   "hero": {
     "eyebrow": "Features",
     "heading": "Everything you need to know what you own.",
     "intro": "A focused set of tools that do real work today. Here's what's shipped — no roadmap promises, no \"coming soon\" bait."
   },
   "features": [
-    { "title": "Asset inventory", "body": "Record everything you own — property, accounts, investments, valuables, pensions — with the details that matter: value or value-range, location, condition, and the people it concerns." },
-    { "title": "Document vault", "body": "Keep deeds, policies, wills, and statements safe and attached to the assets they belong to. Upload files up to 20MB, stored on encrypted infrastructure." },
-    { "title": "AI-assisted capture", "body": "Photograph an item or a document and Vaulto reads it, drafting the record for you to confirm or edit. The data entry does itself." },
-    { "title": "Collections", "body": "Group related assets and documents the way your family actually thinks about them — a property and its paperwork, an estate, a person." },
-    { "title": "The whole picture", "body": "See everything in one organised view, and get a free overview when you're ready to plan ahead — inheritance, a will, or what happens next." },
-    { "title": "Export anytime — your data is yours", "body": "Your data is yours — export everything (your data + your original files) at any time. One download gives you a complete, machine-readable copy of your records plus every original photo and scan you uploaded. No lock-in." }
+    {
+      "title": "Asset inventory",
+      "body": "Record everything you own — property, accounts, investments, valuables, pensions — with the details that matter: value or value-range, location, condition, and the people it concerns."
+    },
+    {
+      "title": "Document vault",
+      "body": "Keep deeds, policies, wills, and statements safe and attached to the assets they belong to. Upload files up to 20MB, kept in private storage and reachable only through short-lived, signed links."
+    },
+    {
+      "title": "AI-assisted capture",
+      "body": "Photograph an item or a document and Vaulto reads it, drafting the record for you to confirm or edit. The data entry does itself."
+    },
+    {
+      "title": "Collections",
+      "body": "Group related assets and documents the way your family actually thinks about them — a property and its paperwork, an estate, a person."
+    },
+    {
+      "title": "The whole picture",
+      "body": "See everything in one organised view, and get a free overview when you're ready to plan ahead — inheritance, a will, or what happens next."
+    },
+    {
+      "title": "Export anytime — your data is yours",
+      "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) at any time. No lock-in. (Bulk download of your original uploaded files is on our roadmap.)"
+    }
   ],
   "foot": "We only list what's live. When we ship something new, it shows up here — not before.",
   "finalCta": {

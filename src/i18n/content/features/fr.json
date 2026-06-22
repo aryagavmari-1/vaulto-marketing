@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Fonctionnalités",
-    "description": "Ce que Vaulto fait aujourd'hui : inventaire des actifs, coffre-fort de documents chiffré, capture assistée par l'IA, collections, et une vue claire de tout ce que possède votre famille."
+    "description": ""
   },
   "crumbs": {
     "home": "Accueil",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Coffre-fort de documents",
-      "body": "Gardez en sécurité titres de propriété, polices, testaments et relevés, et reliez-les aux actifs auxquels ils appartiennent. Téléversez des fichiers jusqu'à 20MB, stockés sur une infrastructure chiffrée."
+      "body": ""
     },
     {
       "title": "Capture assistée par l'IA",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Exportez à tout moment — vos données vous appartiennent",
-      "body": "Vos données vous appartiennent — exportez tout (vos données + vos fichiers d'origine) à tout moment. Un seul téléchargement vous donne une copie complète et lisible par machine de vos enregistrements, ainsi que chaque photo et scan d'origine que vous avez téléversés. Aucun enfermement."
+      "body": ""
     }
   ],
   "foot": "Nous ne listons que ce qui est déjà disponible. Quand nous mettons quelque chose de nouveau en ligne, cela apparaît ici — pas avant.",

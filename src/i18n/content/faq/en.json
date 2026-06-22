@@ -3,7 +3,10 @@
     "title": "Frequently asked questions",
     "description": "Answers about Vaulto — is my data safe, what it costs, what you can store, and how AI-assisted capture saves you the typing."
   },
-  "crumbs": { "home": "Home", "faq": "FAQ" },
+  "crumbs": {
+    "home": "Home",
+    "faq": "FAQ"
+  },
   "hero": {
     "eyebrow": "FAQ",
     "heading": "Questions, answered plainly.",
@@ -12,7 +15,7 @@
   "items": [
     {
       "q": "Is my data safe?",
-      "a": "Yes. Your information is encrypted in transit (TLS) and at rest on managed infrastructure, your password is never stored in plain text, and access is strictly controlled to your account.",
+      "a": "Yes. Your connection is encrypted in transit (TLS), your account database is encrypted at rest, and uploaded files are kept in private storage reachable only through short-lived, signed links. Your password is never stored in plain text, and access is strictly scoped to your account.",
       "onward": "See how we keep it safe →"
     },
     {

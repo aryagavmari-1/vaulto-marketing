@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Os meus dados estão seguros?",
-      "a": "Sim. As tuas informações são encriptadas em trânsito (TLS) e em repouso numa infraestrutura gerida, a tua palavra-passe nunca é armazenada em texto simples e o acesso à tua conta é estritamente controlado.",
+      "a": "",
       "onward": "Vê como os mantemos seguros →"
     },
     {

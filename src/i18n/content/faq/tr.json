@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Verilerim güvende mi?",
-      "a": "Evet. Bilgileriniz aktarım sırasında (TLS) ve yönetilen altyapıda bekleme halinde şifrelenir, parolanız asla düz metin olarak saklanmaz ve erişim hesabınızla sıkı şekilde kontrol edilir.",
+      "a": "",
       "onward": "Onu nasıl güvende tuttuğumuzu görün →"
     },
     {

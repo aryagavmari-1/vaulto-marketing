@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Mes données sont-elles en sécurité ?",
-      "a": "Oui. Vos informations sont chiffrées en transit (TLS) et au repos sur une infrastructure gérée, votre mot de passe n’est jamais stocké en clair, et l’accès à votre compte est strictement contrôlé.",
+      "a": "",
       "onward": "Voir comment nous les protégeons →"
     },
     {

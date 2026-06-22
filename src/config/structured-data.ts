@@ -87,7 +87,7 @@ export const FAQ_ITEMS: Record<Locale, FaqItem[] | null> = {
   en: [
     {
       q: 'Is my data safe?',
-      a: 'Yes. Your information is encrypted in transit (TLS) and at rest on managed infrastructure, your password is never stored in plain text, and access is strictly controlled to your account.',
+      a: 'Yes. Your connection is encrypted in transit (TLS), your account database is encrypted at rest, and uploaded files are kept in private storage reachable only through short-lived, signed links. Your password is never stored in plain text, and access is strictly scoped to your account.',
     },
     {
       q: 'Do you sell my data?',

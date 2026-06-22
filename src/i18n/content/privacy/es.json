@@ -24,7 +24,7 @@
     },
     {
       "title": "Compartición &amp; consentimiento",
-      "body": "Tus datos solo se comparten cuando lo autorizas explícitamente; por ejemplo, cuando creas un paquete de referencia para un profesional. El consentimiento se registra con un alcance claro y puede revocarse en cualquier momento, y esa revocación queda registrada."
+      "body": ""
     },
     {
       "title": "Cómo se protege",
@@ -36,7 +36,7 @@
     "items": [
       "Accede a la información de tu bóveda y expórtala.",
       "Revoca el acceso de un profesional a una captura compartida.",
-      "Solicita la eliminación de tu cuenta y tus datos."
+      ""
     ]
   },
   "contact": {

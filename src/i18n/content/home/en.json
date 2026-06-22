@@ -4,43 +4,80 @@
     "description": "Inventory your assets, keep important documents safe, and see your whole picture — privately, with strong security. Get started free."
   },
   "hero": {
-    "eyebrow": "🔒 Private & encrypted by design",
+    "eyebrow": "🔒 Private & secure by design",
     "heading": "One calm, secure place for everything your family owns.",
     "sub": "Inventory your assets, keep important documents safe, and see your whole picture — so your family always knows what's there, and what to do next.",
-    "trust": ["Encrypted in transit (TLS) and at rest", "Your data is never sold", "Built for families"],
+    "trust": [
+      "Encrypted in transit (TLS)",
+      "Your data is never sold",
+      "Built for families"
+    ],
     "art": {
       "cards": [
-        { "icon": "🏡", "label": "Family home", "sub": "Property · deed & insurance attached" },
-        { "icon": "📄", "label": "Will & estate documents", "sub": "3 files · encrypted vault" },
-        { "icon": "📈", "label": "Investments & pensions", "sub": "Collection · 5 items" }
+        {
+          "icon": "🏡",
+          "label": "Family home",
+          "sub": "Property · deed & insurance attached"
+        },
+        {
+          "icon": "📄",
+          "label": "Will & estate documents",
+          "sub": "3 files · private storage"
+        },
+        {
+          "icon": "📈",
+          "label": "Investments & pensions",
+          "sub": "Collection · 5 items"
+        }
       ],
       "secured": "Secured",
-      "lock": "🔒 Encrypted at rest"
+      "lock": "🔒 Private storage"
     }
   },
   "value": {
     "heading": "Everything in one trusted place",
     "sub": "No spreadsheets. No scattered drawers. Just clarity.",
     "cards": [
-      { "icon": "🗂️", "title": "Know what you own.", "body": "Property, accounts, investments, valuables, pensions — captured in one organised place, not scattered across drawers and spreadsheets." },
-      { "icon": "🛡️", "title": "Keep it safe.", "body": "Store the documents that matter — deeds, policies, statements — privately, behind strong security." },
-      { "icon": "🧭", "title": "Plan with confidence.", "body": "See the whole picture and get a clear, free overview when you're ready to think about inheritance, wills, or what happens next." }
+      {
+        "icon": "🗂️",
+        "title": "Know what you own.",
+        "body": "Property, accounts, investments, valuables, pensions — captured in one organised place, not scattered across drawers and spreadsheets."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Keep it safe.",
+        "body": "Store the documents that matter — deeds, policies, statements — privately, behind strong security."
+      },
+      {
+        "icon": "🧭",
+        "title": "Plan with confidence.",
+        "body": "See the whole picture and get a clear, free overview when you're ready to think about inheritance, wills, or what happens next."
+      }
     ]
   },
   "steps": {
     "heading": "Up and running in three steps",
     "items": [
-      { "title": "Add what you own.", "body": "Snap a photo or upload a document — Vaulto can read it and suggest the details, so you're not typing everything by hand." },
-      { "title": "Let Vaulto organise it.", "body": "Group assets into collections, add the key facts, and keep documents attached where they belong." },
-      { "title": "See the whole picture.", "body": "Your family's assets in one view — ready to share with the people who matter and to plan ahead." }
+      {
+        "title": "Add what you own.",
+        "body": "Snap a photo or upload a document — Vaulto can read it and suggest the details, so you're not typing everything by hand."
+      },
+      {
+        "title": "Let Vaulto organise it.",
+        "body": "Group assets into collections, add the key facts, and keep documents attached where they belong."
+      },
+      {
+        "title": "See the whole picture.",
+        "body": "Your family's assets in one view — ready to share with the people who matter and to plan ahead."
+      }
     ]
   },
   "trustBand": {
     "heading": "Built to be trusted with your most sensitive information.",
-    "lead": "Your data is encrypted on the way to us and where it's stored. Access is protected, and we never sell your information.",
+    "lead": "Your data is encrypted on the way to us, your database is encrypted at rest, and your files are kept in private storage. Access is protected, and we never sell your information.",
     "cta": "See exactly how we keep it safe →",
     "proof": [
-      "Encrypted in transit (TLS) and at rest",
+      "Encrypted in transit (TLS); files in private storage",
       "Passwords hashed — even we can't read them",
       "Short-lived, browser-protected sessions",
       "You can only ever see your own vault",

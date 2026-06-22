@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Güvenlik ve Gizlilik",
-    "description": "Vaulto ailenizin bilgilerini nasıl korur — aktarım sırasında ve depolamada şifreleme, karma parola saklama, sıkı erişim kontrolü. Sade dil, abartısız."
+    "description": ""
   },
   "crumbs": {
     "home": "Ana Sayfa",
@@ -21,8 +21,8 @@
       "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır, böylece verilerin seninle bizim aramızda yol alırken şifrelenir."
     },
     {
-      "title": "Depolamada şifreli.",
-      "body": "Bilgilerin ve belgelerin şifreli altyapıda saklanır — yönetilen veritabanı ve nesne depolama."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Parolalar asla düz metin olarak saklanmaz.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Verilerin sana ait",
-    "body": "Verilerin sana ait — her şeyi (verilerin + özgün dosyaların) istediğin zaman dışa aktar. Ayarlar'dan, <b>Her şeyi indir (.zip)</b> seçeneği; kayıtlarının eksiksiz, makine tarafından okunabilir bir kopyasını ve yüklediğin her özgün fotoğraf ile taramayı tek bir dosyada verir. Kilitlenme yok, bizden onay bekleme yok. Makine tarafından okunabilir dışa aktarma, GDPR kapsamındaki veri taşınabilirliği hakkını da karşılar (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Sade dil, abartısız.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında ve depolamada şifreleme, karma parola saklama, sıkı erişim kontrolü. Bilerek <b>\"zero-knowledge,\" \"bank-level,\"</b> ya da sahip olmadığımız herhangi bir sertifikayı iddia etmiyoruz. Veri dışa aktarma şu anda aktif (yukarıda). Uygulama katmanında şifreleme veya resmî bir üçüncü taraf denetimi eklediğimizde, bu sayfada bunu açıkça belirtiriz.",
+    "body": "",
     "contact": "Gizlilik veya güvenlik soruları için iletişime geç:"
   }
 }

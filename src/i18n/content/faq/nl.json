@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Zijn mijn gegevens veilig?",
-      "a": "Ja. Je informatie wordt versleuteld tijdens verzending (TLS) en in rust op beheerde infrastructuur, je wachtwoord wordt nooit in platte tekst opgeslagen en toegang tot je account wordt strikt beheerd.",
+      "a": "",
       "onward": "Bekijk hoe we het veilig houden →"
     },
     {
