@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacidade",
-    "description": "Como o Vaulto trata os teus dados pessoais."
+    "description": "Como o Vaulto trata os seus dados pessoais."
   },
   "crumbs": {
     "home": "Início",
@@ -10,37 +10,37 @@
   "hero": {
     "eyebrow": "Confiança",
     "heading": "Privacidade",
-    "lead": "Resumo em linguagem simples do que o Vaulto recolhe, como usamos essa informação e o controlo que manténs. Complementa a nossa <a href=\"/security/\">visão geral de segurança</a>.",
+    "lead": "Resumo em linguagem simples do que o Vaulto recolhe, como usamos essa informação e o controlo que mantém. Complementa a nossa <a href=\"/security/\">visão geral de segurança</a>.",
     "updated": "Última atualização em junho de 2026 · Uma política legal completa será publicada antes do lançamento público."
   },
   "sections": [
     {
       "title": "O que recolhemos",
-      "body": "A informação que escolhes colocar no teu cofre (ativos, passivos, documentos e detalhes relacionados), os dados da conta necessários para iniciares sessão e os dados básicos de utilização necessários para operar e melhorar o serviço."
+      "body": "A informação que escolhe colocar no seu cofre (ativos, passivos, documentos e detalhes relacionados), os dados da conta necessários para iniciar sessão e os dados básicos de utilização necessários para operar e melhorar o serviço."
     },
     {
       "title": "Como a usamos",
-      "body": "Para fornecer o produto: guardar o teu inventário e documentos, calcular o teu património líquido, gerar os resumos de IA que pedes e criar as capturas que escolhes partilhar. Não vendemos os teus dados."
+      "body": "Para fornecer o produto: guardar o seu inventário e documentos, calcular o seu património líquido, gerar os resumos de IA que pede e criar as capturas que escolhe partilhar. Não vendemos os seus dados."
     },
     {
       "title": "Partilha &amp; consentimento",
-      "body": "Os teus dados só são partilhados quando dás autorização explícita para isso — por exemplo, quando crias um pacote de referência para um profissional. O consentimento é registado com um âmbito claro e pode ser revogado a qualquer momento, e essa revogação é registada."
+      "body": "Os seus dados só são partilhados quando dá autorização explícita para isso — por exemplo, quando cria um pacote de referência para um profissional. O consentimento é registado com um âmbito claro e pode ser revogado a qualquer momento, e essa revogação é registada."
     },
     {
       "title": "Como é protegido",
-      "body": "O teu cofre é isolado à tua conta em cada pedido, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa links assinados de curta duração. Consulta a <a href=\"/security/\">visão geral de segurança</a> para detalhes — incluindo o que ainda não afirmamos."
+      "body": "O seu cofre é isolado à sua conta em cada pedido, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa links assinados de curta duração. Consulte a <a href=\"/security/\">visão geral de segurança</a> para detalhes — incluindo o que ainda não afirmamos."
     }
   ],
   "choices": {
-    "title": "As tuas escolhas",
+    "title": "As suas escolhas",
     "items": [
-      "Aceder e exportar a informação no teu cofre.",
+      "Aceder e exportar a informação no seu cofre.",
       "Revogar o acesso de um profissional a uma captura partilhada.",
-      "Pedir a eliminação da tua conta e dos teus dados."
+      "Pedir a eliminação da sua conta e dos seus dados."
     ]
   },
   "contact": {
     "title": "Contacto",
-    "lead": "Tens perguntas sobre privacidade? Envia um email para"
+    "lead": "Tem perguntas sobre privacidade? Envie um email para"
   }
 }
