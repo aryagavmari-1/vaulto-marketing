@@ -6,7 +6,7 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
 ---
-<Base title="Blog" path="/blog/" description="Guides on family asset inventories, wills, inheritance, net worth, and estate planning.">
+<Base title="Family asset & estate planning guides" path="/blog/" description="Guides on family asset inventories, wills, inheritance, net worth, and estate planning.">
   <section class="section">
     <div class="container">
       <div class="center" style="margin-bottom:36px;">

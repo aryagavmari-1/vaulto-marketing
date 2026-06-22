@@ -11,8 +11,6 @@
  * is `price: "0"`. Do NOT add review/aggregateRating (no real customers) or
  * certification claims.
  */
-import type { Locale } from './i18n';
-
 /** Org node id — referenced by other nodes so the graph stays a single entity. */
 export const orgId = (base: string) => `${base}/#org`;
 export const websiteId = (base: string) => `${base}/#website`;
@@ -77,49 +75,9 @@ export function breadcrumbList(crumbs: Crumb[]) {
   };
 }
 
-/**
- * Phase-1 FAQ content — verbatim from CMO ARY-399 §4.6 (grounded, honesty-gated).
- * Lives here so both the /faq page body and its FAQPage JSON-LD read ONE source,
- * and so it localizes alongside the rest of the catalog. English is the source;
- * translations are layered per `Locale` as they land (English fallback for now).
- */
-export const FAQ_ITEMS: Record<Locale, FaqItem[] | null> = {
-  en: [
-    {
-      q: 'Is my data safe?',
-      a: 'Yes. Your connection is encrypted in transit (TLS), your account database is encrypted at rest, and uploaded files are kept in private storage reachable only through short-lived, signed links. Your password is never stored in plain text, and access is strictly scoped to your account.',
-    },
-    {
-      q: 'Do you sell my data?',
-      a: 'No — never. We don’t sell or share your information for advertising.',
-    },
-    {
-      q: 'What does it cost?',
-      a: 'Vaulto is free to start. Deeper planning reports are available when you’re ready; you’ll always see what’s included before anything is charged.',
-    },
-    {
-      q: 'Do I have to enter everything by hand?',
-      a: 'No — upload a photo or document and Vaulto can read it and suggest the details for you.',
-    },
-    {
-      q: 'Who is Vaulto for?',
-      a: 'Families and individuals who want one trusted place to know what they own, keep key documents safe, and plan ahead.',
-    },
-    {
-      q: 'What can I store?',
-      a: 'Assets of all kinds — property, accounts, investments, valuables, pensions — plus the documents that go with them.',
-    },
-    {
-      q: 'Can I use Vaulto in my language?',
-      a: 'The app is available in 16 languages. We’re adding localized site content market by market.',
-    },
-  ],
-  es: null,
-  fr: null,
-  de: null,
-};
-
-/** FAQ items for a locale, falling back to English until a translation lands. */
-export function faqItemsFor(locale: Locale): FaqItem[] {
-  return FAQ_ITEMS[locale] ?? FAQ_ITEMS.en!;
-}
+// NOTE (ARY-449 #8): the old `FAQ_ITEMS`/`faqItemsFor` English-only table that
+// lived here was removed. As of ARY-427 the /faq page body AND its FAQPage
+// JSON-LD are both built from the SAME per-locale translated overlay
+// (`content/faq/<locale>.json`, all 16 locales present) in FaqPage.astro — so
+// the structured data is now correctly localized and no English fallback leaks
+// under `hreflang="es"`/etc. Keep FAQ content in the content overlays, not here.
