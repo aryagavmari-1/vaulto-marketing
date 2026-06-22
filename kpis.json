@@ -1,7 +1,9 @@
 {
-  "$comment": "Machine-readable KPI surface for the marketing engine (ARY-403). The measurement sub-agent refreshes `latest`/`asOf` via scripts/pull-kpis.mjs. The CMO owns the KPI list + targets in ARY-402; update `kpis[]` to match once finalised. Humans read KPIS.md.",
+  "$comment": "Machine-readable KPI surface for the marketing engine (ARY-403). The measurement sub-agent refreshes `latest`/`asOf` via scripts/pull-kpis.mjs by mapping pulled numbers onto kpis[].latest by `id`. The CMO owns the KPI list + targets (finalised in ARY-402, 2026-06-22). Targets are directional 90-day baselines for a DA~0 domain at $0 ads, pre-launch — recalibrate after 30 days of real GSC/Cloudflare data. Humans read KPIS.md.",
   "schemaVersion": 1,
   "asOf": null,
+  "northStar": "activated_vaults",
+  "northStarProxy": "waitlist_signups",
   "source": {
     "traffic": "Cloudflare Web Analytics (privacy-friendly, $0)",
     "search": "Google Search Console API (impressions/clicks/position, $0)",
@@ -9,52 +11,79 @@
   },
   "kpis": [
     {
-      "id": "organic_sessions",
-      "label": "Organic sessions / mo",
-      "source": "traffic",
-      "target": null,
-      "latest": null,
-      "unit": "sessions"
-    },
-    {
       "id": "search_impressions",
       "label": "Search impressions / mo",
+      "stage": "awareness",
       "source": "search",
-      "target": null,
+      "target": 8000,
       "latest": null,
       "unit": "impressions"
     },
     {
+      "id": "organic_sessions",
+      "label": "Organic sessions / mo",
+      "stage": "acquisition",
+      "source": "traffic",
+      "target": 400,
+      "latest": null,
+      "unit": "sessions"
+    },
+    {
       "id": "search_clicks",
       "label": "Search clicks / mo",
+      "stage": "acquisition",
       "source": "search",
-      "target": null,
+      "target": 250,
       "latest": null,
       "unit": "clicks"
     },
     {
       "id": "avg_position",
       "label": "Avg. search position",
+      "stage": "acquisition",
       "source": "search",
-      "target": null,
+      "target": 25,
       "latest": null,
-      "unit": "rank"
+      "unit": "rank",
+      "goal": "lower_is_better"
     },
     {
       "id": "waitlist_signups",
       "label": "Waitlist signups / mo",
+      "stage": "activation",
       "source": "conversion",
-      "target": null,
+      "target": 50,
       "latest": null,
       "unit": "signups"
     },
     {
       "id": "signup_conversion_rate",
       "label": "Visit → signup conversion",
+      "stage": "activation",
+      "source": "conversion",
+      "target": 3,
+      "latest": null,
+      "unit": "percent"
+    },
+    {
+      "id": "activated_vaults",
+      "label": "Activated vaults / mo (north-star)",
+      "stage": "activation",
       "source": "conversion",
       "target": null,
       "latest": null,
-      "unit": "percent"
+      "unit": "vaults",
+      "note": "post-launch; null until app GA"
+    },
+    {
+      "id": "referral_share_rate",
+      "label": "Referral / share rate",
+      "stage": "referral",
+      "source": "traffic",
+      "target": null,
+      "latest": null,
+      "unit": "percent",
+      "note": "enable once traffic base exists"
     }
   ]
 }
