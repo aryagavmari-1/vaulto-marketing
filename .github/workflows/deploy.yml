@@ -1,18 +1,21 @@
 name: Deploy marketing site
 
-# Push-to-publish (ARY-403): every push to master builds the static site and
-# deploys it to Cloudflare Pages ($0). This is the "publish" step of the content
-# pipeline — a content sub-agent merging a post triggers a live deploy.
+# Push-to-publish (ARY-403 / ARY-405): every push to master validates the build
+# then triggers a Render Static Site deploy ($0 host). A content sub-agent merging
+# a post is the "publish" step of the content pipeline — push → live.
+#
+# Host: Render Static Site `vaulto-marketing` (https://vaulto-marketing.onrender.com,
+# branded preview https://marketing.myvaulto.com). Render rebuilds from source on
+# each deploy and injects build-time PUBLIC_* vars from its own service env, so
+# analytics/SEO tokens are set ONCE on the Render service, never committed here.
 #
 # Required repo secrets (none committed):
-#   CLOUDFLARE_API_TOKEN  — Pages:Edit token
-#   CLOUDFLARE_ACCOUNT_ID — Cloudflare account id
-# Optional build-time vars (repo variables / secrets):
-#   PUBLIC_CF_BEACON_TOKEN, PUBLIC_GSC_VERIFICATION,
-#   PUBLIC_ESP_ENDPOINT, PUBLIC_ESP_FORM_ID
+#   RENDER_API_KEY    — Render API key (scoped to the team that owns the service)
+#   RENDER_SERVICE_ID — srv-... id of the vaulto-marketing static site
 #
-# Until the Cloudflare secrets exist the deploy step is skipped (build still
-# runs + validates), so the workflow never hard-fails the repo.
+# Until those secrets exist the deploy step is skipped (the build still runs and
+# validates every push), so the workflow never hard-fails the repo. Render's own
+# auto-deploy is also enabled as a belt-and-suspenders path.
 
 on:
   push:
@@ -26,29 +29,40 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     # The `secrets` context cannot be referenced directly inside a step `if:` —
-    # doing so is a parse-time workflow error (run fails at 0s with no logs).
-    # Hoist the gate into a job-level env (secrets ARE allowed here), then the
-    # deploy step keys off `env`. This keeps build-validation running even when
-    # the Cloudflare secrets aren't set yet.
+    # doing so is a parse-time workflow error. Hoist the gate into a job-level env
+    # (secrets ARE allowed here); the deploy step keys off `env`. This keeps the
+    # build-validation gate running even before the Render secrets are set.
     env:
-      HAS_CF_DEPLOY: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+      HAS_RENDER_DEPLOY: ${{ secrets.RENDER_API_KEY != '' && secrets.RENDER_SERVICE_ID != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - run: npm ci || npm install
-      - name: Build
+      # Validation build — a schema-invalid blog post fails here and never
+      # reaches Render. PUBLIC_* are optional; the real deploy build runs on
+      # Render with the service's env.
+      - name: Build (validate)
         env:
           PUBLIC_CF_BEACON_TOKEN: ${{ secrets.PUBLIC_CF_BEACON_TOKEN }}
           PUBLIC_GSC_VERIFICATION: ${{ secrets.PUBLIC_GSC_VERIFICATION }}
           PUBLIC_ESP_ENDPOINT: ${{ secrets.PUBLIC_ESP_ENDPOINT }}
           PUBLIC_ESP_FORM_ID: ${{ secrets.PUBLIC_ESP_FORM_ID }}
         run: npm run build
-      - name: Deploy to Cloudflare Pages
-        if: ${{ env.HAS_CF_DEPLOY == 'true' }}
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=vaulto-marketing --branch=master
+      - name: Deploy to Render
+        if: ${{ env.HAS_RENDER_DEPLOY == 'true' }}
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+        run: |
+          set -euo pipefail
+          echo "Triggering Render deploy for $RENDER_SERVICE_ID (commit $GITHUB_SHA)…"
+          resp=$(curl -sS -X POST \
+            "https://api.render.com/v1/services/${RENDER_SERVICE_ID}/deploys" \
+            -H "Authorization: Bearer ${RENDER_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d '{}')
+          id=$(echo "$resp" | python3 -c 'import sys,json;print(json.load(sys.stdin).get("id",""))')
+          if [ -z "$id" ]; then echo "Deploy trigger failed: $resp"; exit 1; fi
+          echo "Render deploy queued: $id"
