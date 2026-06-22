@@ -28,7 +28,7 @@ interface Props {
   path: string;
   locale?: Locale;        // page locale — drives JSON-LD inLanguage + og:locale
   type?: 'website' | 'article';
-  image?: string;         // path or absolute URL; defaults to /og.svg
+  image?: string;         // path or absolute URL; defaults to /og.png
   publishedTime?: string; // ISO 8601, articles only
   noindex?: boolean;
   faq?: FaqItem[];        // emits FAQPage JSON-LD (ARY-399 §2d)
@@ -40,8 +40,14 @@ const {
   faq, breadcrumbs,
 } = Astro.props;
 
-const ogImage = new URL(image ?? '/og.svg', BRAND.url).href;
+// Default share card MUST be a PNG: Facebook/Twitter/LinkedIn/iMessage do not
+// render SVG OG images (ARY-449 P0 #1). `public/og.png` is baked from og.svg by
+// scripts/build-og.mjs (wired into prebuild). og.svg stays the editable source.
+const ogImage = new URL(image ?? '/og.png', BRAND.url).href;
 const alternates = alternatesFor(path, BRAND.url);
+// Twitter @handle for card attribution (ARY-449 P1 #7). Empty until the profile
+// exists (ARY-27) — when populated, twitter:site lights up automatically.
+const twitterSite = BRAND.social.xHandle || '';
 const lang = HREFLANG[locale];
 
 // Privacy-friendly, cookieless analytics. Cloudflare Web Analytics is the
@@ -116,11 +122,16 @@ const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': grap
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={`${BRAND.name} — ${BRAND.tagline}`} />
 {publishedTime && <meta property="article:published_time" content={publishedTime} />}
 <meta name="twitter:card" content="summary_large_image" />
+{twitterSite && <meta name="twitter:site" content={twitterSite} />}
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={`${BRAND.name} — ${BRAND.tagline}`} />
 
 <script type="application/ld+json" set:html={jsonLd} />
 

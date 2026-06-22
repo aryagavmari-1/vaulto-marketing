@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "A calm, secure home for everything your family owns",
-    "description": "Inventory your assets, keep important documents safe, and see your whole picture — privately, with strong security. Get started free."
+    "title": "Family asset inventory, document vault & net worth",
+    "description": "Inventory your assets, keep documents safe, and see your whole net worth — privately and securely. Snap a photo; Vaulto does the data entry. Start free."
   },
   "hero": {
     "eyebrow": "🔒 Private & secure by design",
-    "heading": "One calm, secure place for everything your family owns.",
-    "sub": "Inventory your assets, keep important documents safe, and see your whole picture — so your family always knows what's there, and what to do next.",
+    "heading": "Everything your family owns, in one private place.",
+    "sub": "Inventory your assets, keep important documents safe, and see your whole picture — and you don't type it all in: snap a photo and Vaulto reads it for you.",
     "trust": [
       "Encrypted in transit (TLS)",
       "Your data is never sold",

@@ -32,9 +32,13 @@ export const BRAND = {
     privacy: 'privacy@myvaulto.com',
   },
 
+  // Social profiles — populated once the accounts exist (ARY-27). When set,
+  // `linkedin`/`x` feed Organization JSON-LD `sameAs`, and `xHandle` (the
+  // "@vaulto" form) drives the Twitter card `twitter:site` attribution.
   social: {
     linkedin: '',
     x: '',
+    xHandle: '',
   },
 } as const;
 

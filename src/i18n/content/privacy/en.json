@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacy",
-    "description": "How Vaulto handles your personal data."
+    "description": "A plain-English summary of what Vaulto collects, how your data is used and protected, and the control you keep over it — including what we don't yet claim."
   },
   "crumbs": {
     "home": "Home",
@@ -9,7 +9,7 @@
   },
   "hero": {
     "eyebrow": "Trust",
-    "heading": "Privacy",
+    "heading": "Your privacy, in plain English.",
     "lead": "Plain-English summary of what Vaulto collects, how we use it, and the control you keep. Pairs with our <a href=\"/security/\">security overview</a>.",
     "updated": "Last updated June 2026 · A full legal policy is published before public launch."
   },
