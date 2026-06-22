@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funcionalidades",
-    "description": ""
+    "description": "O que o Vaulto faz hoje: inventário de bens, um cofre privado de documentos, captura assistida por IA, coleções e uma visão clara de tudo o que a sua família possui."
   },
   "crumbs": {
     "home": "Início",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Cofre de documentos",
-      "body": ""
+      "body": "Guarde escrituras, apólices, testamentos e extratos em segurança, associados aos bens a que pertencem. Carregue ficheiros até 20MB, mantidos em armazenamento privado e acessíveis apenas através de ligações assinadas e de curta duração."
     },
     {
       "title": "Captura assistida por IA",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Exporte a qualquer momento — os seus dados são seus",
-      "body": ""
+      "body": "Os seus dados são seus — exporte a qualquer momento uma cópia completa e legível por máquina dos seus registos (JSON, CSV ou PDF). Sem dependência. (A transferência em massa dos seus ficheiros originais está no nosso roteiro.)"
     }
   ],
   "foot": "Só listamos o que já está disponível. Quando lançarmos algo novo, aparece aqui — não antes.",

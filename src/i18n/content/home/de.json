@@ -4,11 +4,11 @@
     "description": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — privat, mit starker Sicherheit. Starte kostenlos."
   },
   "hero": {
-    "eyebrow": "",
+    "eyebrow": "Privat und sicher von Grund auf",
     "heading": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt.",
     "sub": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — damit deine Familie immer weiß, was da ist und was als Nächstes zu tun ist.",
     "trust": [
-      "",
+      "Verschlüsselt bei der Übertragung (TLS)",
       "Deine Daten werden niemals verkauft",
       "Für Familien entwickelt"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "document",
           "label": "Testament & Nachlassdokumente",
-          "sub": ""
+          "sub": "3 Dateien · privater Speicher"
         },
         {
           "icon": "chart",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Gesichert",
-      "lock": ""
+      "lock": "Privater Speicher"
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Entwickelt, damit du ihm deine sensibelsten Informationen anvertrauen kannst.",
-    "lead": "",
+    "lead": "Deine Daten werden auf dem Weg zu uns verschlüsselt, deine Datenbank ist im Ruhezustand verschlüsselt und deine Dateien liegen in privatem Speicher. Der Zugriff ist geschützt, und wir verkaufen deine Informationen niemals.",
     "cta": "Sieh dir genau an, wie wir alles sicher halten →",
     "proof": [
-      "",
+      "Verschlüsselt bei der Übertragung (TLS); Dateien in privatem Speicher",
       "Passwörter gehasht — selbst wir können sie nicht lesen",
       "Kurzlebige, browsergeschützte Sitzungen",
       "Du kannst immer nur deinen eigenen Tresor sehen",

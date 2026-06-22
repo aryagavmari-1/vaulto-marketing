@@ -4,11 +4,11 @@
     "description": "Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — de forma privada y con seguridad sólida. Empieza gratis."
   },
   "hero": {
-    "eyebrow": "",
+    "eyebrow": "Privado y seguro por diseño",
     "heading": "Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.",
     "sub": "Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.",
     "trust": [
-      "",
+      "Cifrado en tránsito (TLS)",
       "Tus datos nunca se venden",
       "Hecho para familias"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "document",
           "label": "Testamento y documentos del patrimonio",
-          "sub": ""
+          "sub": "3 archivos · almacenamiento privado"
         },
         {
           "icon": "chart",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Protegido",
-      "lock": ""
+      "lock": "Almacenamiento privado"
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Diseñado para merecer la confianza de tu información más sensible.",
-    "lead": "",
+    "lead": "Tus datos se cifran de camino a nosotros, tu base de datos está cifrada en reposo y tus archivos se conservan en almacenamiento privado. El acceso está protegido y nunca vendemos tu información.",
     "cta": "Mira exactamente cómo lo mantenemos a salvo →",
     "proof": [
-      "",
+      "Cifrado en tránsito (TLS); archivos en almacenamiento privado",
       "Contraseñas protegidas con hash — ni nosotros podemos leerlas",
       "Sesiones efímeras y protegidas por el navegador",
       "Solo tú puedes ver tu propia bóveda",

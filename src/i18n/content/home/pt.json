@@ -4,11 +4,11 @@
     "description": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — em privado, com segurança robusta. Comece grátis."
   },
   "hero": {
-    "eyebrow": "",
+    "eyebrow": "Privado e seguro por design",
     "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
     "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
     "trust": [
-      "",
+      "Criptografado em trânsito (TLS)",
       "Os seus dados nunca são vendidos",
       "Feito para famílias"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "document",
           "label": "Testamento e documentos da herança",
-          "sub": ""
+          "sub": "3 ficheiros · armazenamento privado"
         },
         {
           "icon": "chart",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Protegido",
-      "lock": ""
+      "lock": "Armazenamento privado"
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
-    "lead": "",
+    "lead": "Os seus dados são criptografados a caminho de nós, a sua base de dados é criptografada em repouso e os seus ficheiros são mantidos em armazenamento privado. O acesso é protegido e nunca vendemos as suas informações.",
     "cta": "Veja exatamente como mantemos tudo seguro →",
     "proof": [
-      "",
+      "Criptografado em trânsito (TLS); ficheiros em armazenamento privado",
       "Palavras-passe com hash — nem nós as conseguimos ler",
       "Sessões de curta duração, protegidas pelo navegador",
       "Só pode ver o seu próprio cofre",

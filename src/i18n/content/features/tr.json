@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Özellikler",
-    "description": ""
+    "description": "Vaulto'nun bugün yaptıkları: varlık envanteri, özel bir belge kasası, yapay zekâ destekli kayıt, koleksiyonlar ve ailenizin sahip olduğu her şeyin tek ve net görünümü."
   },
   "crumbs": {
     "home": "Ana sayfa",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Belge kasası",
-      "body": ""
+      "body": "Tapuları, poliçeleri, vasiyetleri ve ekstreleri güvenle saklayın; ait oldukları varlıklara bağlı tutun. 20MB'a kadar dosya yükleyin; bu dosyalar özel depolamada tutulur ve yalnızca kısa ömürlü, imzalı bağlantılarla erişilebilir."
     },
     {
       "title": "Yapay zekâ destekli yakalama",
@@ -35,7 +35,7 @@
     },
     {
       "title": "İstediğin zaman dışa aktar — verilerin sana ait",
-      "body": ""
+      "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makine tarafından okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman dışa aktarın. Bağımlılık yok. (Yüklediğiniz orijinal dosyaların toplu indirilmesi yol haritamızda.)"
     }
   ],
   "foot": "Yalnızca yayında olanları listeliyoruz. Yeni bir şey yayınladığımızda burada görünür — daha önce değil.",

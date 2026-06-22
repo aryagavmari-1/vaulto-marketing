@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funktioner",
-    "description": ""
+    "description": "Vad Vaulto gör i dag: tillgångsinventering, ett privat dokumentvalv, AI-stödd registrering, samlingar och en tydlig överblick över allt din familj äger."
   },
   "crumbs": {
     "home": "Hem",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Dokumentvalv",
-      "body": ""
+      "body": "Förvara lagfarter, försäkringar, testamenten och kontoutdrag säkert, kopplade till de tillgångar de hör till. Ladda upp filer upp till 20MB, som lagras i privat lagring och endast nås via kortlivade, signerade länkar."
     },
     {
       "title": "AI-stödd registrering",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Exportera när som helst — dina data är dina",
-      "body": ""
+      "body": "Dina uppgifter är dina — exportera när som helst en fullständig, maskinläsbar kopia av dina uppgifter (JSON, CSV eller PDF). Ingen inlåsning. (Massnedladdning av dina ursprungligt uppladdade filer finns på vår färdplan.)"
     }
   ],
   "foot": "Vi listar bara det som är live. När vi lanserar något nytt dyker det upp här — inte före det.",

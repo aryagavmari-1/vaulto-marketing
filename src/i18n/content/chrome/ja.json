@@ -17,5 +17,5 @@
   "footer.signIn": "ログイン →",
   "lang.switch": "言語",
   "a11y.skip": "コンテンツへスキップ",
-  "trust.strip": ""
+  "trust.strip": "通信時に暗号化 (TLS) · あなたのデータは決して売られません · 家族のために作られました"
 }
