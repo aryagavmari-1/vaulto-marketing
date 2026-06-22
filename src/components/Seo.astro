@@ -1,0 +1,99 @@
+---
+/**
+ * Centralised SEO + structured-data + analytics head block (ARY-401 / ARY-403).
+ * Base.astro renders exactly one <Seo /> per page. Adding meta/JSON-LD here
+ * propagates everywhere, so content sub-agents get correct SEO for free.
+ */
+import { BRAND, ANALYTICS } from '../config/brand';
+import { alternatesFor, DEFAULT_LOCALE } from '../config/i18n';
+
+interface Props {
+  title: string;          // fully composed <title> text
+  description: string;
+  canonical: string;
+  path: string;
+  type?: 'website' | 'article';
+  image?: string;         // path or absolute URL; defaults to /og.svg
+  publishedTime?: string; // ISO 8601, articles only
+  noindex?: boolean;
+}
+const {
+  title, description, canonical, path,
+  type = 'website', image, publishedTime, noindex = false,
+} = Astro.props;
+
+const ogImage = new URL(image ?? '/og.svg', BRAND.url).href;
+const alternates = alternatesFor(path, BRAND.url);
+
+// Privacy-friendly, cookieless analytics. Cloudflare Web Analytics is the
+// primary ($0, unlimited, no consent banner). The Plausible/Umami-compatible
+// hook from ARY-25 is kept as a drop-in alternative. Both are env-gated, so the
+// site builds and previews with neither configured.
+const cfToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN ?? '';
+const gscVerify = import.meta.env.PUBLIC_GSC_VERIFICATION ?? '';
+
+// schema.org graph: Organization + WebSite on every page; BlogPosting on posts.
+const org = {
+  '@type': 'Organization',
+  '@id': `${BRAND.url}/#org`,
+  name: BRAND.name,
+  url: BRAND.url,
+  logo: new URL('/favicon.svg', BRAND.url).href,
+  description: BRAND.description,
+};
+const website = {
+  '@type': 'WebSite',
+  '@id': `${BRAND.url}/#website`,
+  url: BRAND.url,
+  name: BRAND.name,
+  publisher: { '@id': `${BRAND.url}/#org` },
+  inLanguage: DEFAULT_LOCALE,
+};
+const graph: Record<string, unknown>[] = [org, website];
+if (type === 'article') {
+  graph.push({
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    url: canonical,
+    image: ogImage,
+    ...(publishedTime ? { datePublished: publishedTime } : {}),
+    author: { '@id': `${BRAND.url}/#org` },
+    publisher: { '@id': `${BRAND.url}/#org` },
+    inLanguage: DEFAULT_LOCALE,
+    mainEntityOfPage: canonical,
+  });
+}
+const jsonLd = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph });
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+{gscVerify && <meta name="google-site-verification" content={gscVerify} />}
+
+{alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={BRAND.name} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<script type="application/ld+json" set:html={jsonLd} />
+
+{/* Cloudflare Web Analytics — primary, $0, cookieless. */}
+{cfToken && (
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={`{"token": "${cfToken}"}`}></script>
+)}
+{/* Plausible/Umami-compatible alternative (ARY-25). */}
+{ANALYTICS.src && ANALYTICS.domain && (
+  <script defer data-domain={ANALYTICS.domain} src={ANALYTICS.src}></script>
+)}

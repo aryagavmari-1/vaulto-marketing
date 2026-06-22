@@ -8,7 +8,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "new:post": "node scripts/new-post.mjs",
+    "kpis": "node scripts/pull-kpis.mjs"
   },
   "dependencies": {
     "astro": "^5.6.1",

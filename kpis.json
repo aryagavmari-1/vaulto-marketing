@@ -1,0 +1,60 @@
+{
+  "$comment": "Machine-readable KPI surface for the marketing engine (ARY-403). The measurement sub-agent refreshes `latest`/`asOf` via scripts/pull-kpis.mjs. The CMO owns the KPI list + targets in ARY-402; update `kpis[]` to match once finalised. Humans read KPIS.md.",
+  "schemaVersion": 1,
+  "asOf": null,
+  "source": {
+    "traffic": "Cloudflare Web Analytics (privacy-friendly, $0)",
+    "search": "Google Search Console API (impressions/clicks/position, $0)",
+    "conversion": "Analytics goal: waitlist signup + app sign-up (UTM-tagged)"
+  },
+  "kpis": [
+    {
+      "id": "organic_sessions",
+      "label": "Organic sessions / mo",
+      "source": "traffic",
+      "target": null,
+      "latest": null,
+      "unit": "sessions"
+    },
+    {
+      "id": "search_impressions",
+      "label": "Search impressions / mo",
+      "source": "search",
+      "target": null,
+      "latest": null,
+      "unit": "impressions"
+    },
+    {
+      "id": "search_clicks",
+      "label": "Search clicks / mo",
+      "source": "search",
+      "target": null,
+      "latest": null,
+      "unit": "clicks"
+    },
+    {
+      "id": "avg_position",
+      "label": "Avg. search position",
+      "source": "search",
+      "target": null,
+      "latest": null,
+      "unit": "rank"
+    },
+    {
+      "id": "waitlist_signups",
+      "label": "Waitlist signups / mo",
+      "source": "conversion",
+      "target": null,
+      "latest": null,
+      "unit": "signups"
+    },
+    {
+      "id": "signup_conversion_rate",
+      "label": "Visit → signup conversion",
+      "source": "conversion",
+      "target": null,
+      "latest": null,
+      "unit": "percent"
+    }
+  ]
+}

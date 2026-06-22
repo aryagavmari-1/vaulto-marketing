@@ -1,0 +1,47 @@
+name: Deploy marketing site
+
+# Push-to-publish (ARY-403): every push to master builds the static site and
+# deploys it to Cloudflare Pages ($0). This is the "publish" step of the content
+# pipeline — a content sub-agent merging a post triggers a live deploy.
+#
+# Required repo secrets (none committed):
+#   CLOUDFLARE_API_TOKEN  — Pages:Edit token
+#   CLOUDFLARE_ACCOUNT_ID — Cloudflare account id
+# Optional build-time vars (repo variables / secrets):
+#   PUBLIC_CF_BEACON_TOKEN, PUBLIC_GSC_VERIFICATION,
+#   PUBLIC_ESP_ENDPOINT, PUBLIC_ESP_FORM_ID
+#
+# Until the Cloudflare secrets exist the deploy step is skipped (build still
+# runs + validates), so the workflow never hard-fails the repo.
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci || npm install
+      - name: Build
+        env:
+          PUBLIC_CF_BEACON_TOKEN: ${{ secrets.PUBLIC_CF_BEACON_TOKEN }}
+          PUBLIC_GSC_VERIFICATION: ${{ secrets.PUBLIC_GSC_VERIFICATION }}
+          PUBLIC_ESP_ENDPOINT: ${{ secrets.PUBLIC_ESP_ENDPOINT }}
+          PUBLIC_ESP_FORM_ID: ${{ secrets.PUBLIC_ESP_FORM_ID }}
+        run: npm run build
+      - name: Deploy to Cloudflare Pages
+        if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=vaulto-marketing --branch=master

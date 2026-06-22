@@ -11,7 +11,13 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
 ---
-<Base title={post.data.title} path={`/blog/${post.id}/`} description={post.data.description}>
+<Base
+  title={post.data.title}
+  path={`/blog/${post.id}/`}
+  description={post.data.description}
+  type="article"
+  publishedTime={post.data.pubDate.toISOString()}
+>
   <article class="section">
     <div class="container prose">
       <p class="updated"><a href="/blog/">← All guides</a></p>
