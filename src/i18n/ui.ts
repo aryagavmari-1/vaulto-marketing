@@ -45,10 +45,8 @@ export type UIKey = keyof typeof en;
  */
 const overlays: Record<Locale, Partial<Record<UIKey, string>>> = {
   en: {},
-  // ES chrome (ARY-407, Path A / $0 — CEO-approved 2026-06-22). `trust.strip` is
-  // intentionally left to English fallback: it carries the "encrypted … at rest"
-  // claim under reconciliation in ARY-419; it gets translated once the corrected
-  // English source lands, alongside the Home trust-band strings.
+  // ES chrome (ARY-407, Path A / $0 — CEO-approved 2026-06-22). `trust.strip`
+  // mirrors the ARY-419-reconciled English (infra-level AES-256 at rest, verified).
   es: {
     'nav.home': 'Inicio',
     'nav.howItWorks': 'Cómo funciona',
@@ -67,6 +65,7 @@ const overlays: Record<Locale, Partial<Record<UIKey, string>>> = {
     'footer.rights': 'Todos los derechos reservados.',
     'footer.signIn': 'Iniciar sesión →',
     'lang.switch': 'Idioma',
+    'trust.strip': 'Cifrado en tránsito (TLS) y en reposo · Tus datos nunca se venden · Hecho para familias',
   },
   fr: {},
   de: {},

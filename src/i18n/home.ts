@@ -135,13 +135,9 @@ type DeepPartial<T> = T extends (infer U)[]
 const overlays: Record<Locale, DeepPartial<HomeContent>> = {
   en: {},
   // ES Home (ARY-407, Path A / $0 — CEO-approved 2026-06-22). Vaulto Calm voice,
-  // warm "tú", brand "Vaulto" + "bóveda" (vault) locked per glossary.
-  // INTENTIONALLY OMITTED → English fallback until ARY-419 reconciles the English
-  // "encrypted … at rest" claim (trust strip vs Security page): `hero.trust`,
-  // `hero.art.lock`, `trustBand.lead`, `trustBand.proof`. Once the corrected
-  // English lands I translate those + `ui.ts` `trust.strip`, then flip
-  // PAGE_LOCALES '/' → ['en','es'] to publish (do NOT publish before then —
-  // the hero must not assert a claim under active correction in a 2nd language).
+  // warm "tú", brand "Vaulto" + "bóveda" (vault) locked per glossary. Encryption
+  // strings mirror the ARY-419-reconciled English (infra-level AES-256 at rest,
+  // verified done `0335b4d`). Published live via PAGE_LOCALES '/' → ['en','es'].
   es: {
     meta: {
       title: 'Un hogar tranquilo y seguro para todo lo que tu familia posee',
@@ -152,6 +148,7 @@ const overlays: Record<Locale, DeepPartial<HomeContent>> = {
       eyebrow: '🔒 Privado y cifrado desde el diseño',
       heading: 'Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.',
       sub: 'Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.',
+      trust: ['Cifrado en tránsito (TLS) y en reposo', 'Tus datos nunca se venden', 'Hecho para familias'],
       art: {
         cards: [
           { icon: '🏡', label: 'Vivienda familiar', sub: 'Propiedad · escritura y seguro adjuntos' },
@@ -159,6 +156,7 @@ const overlays: Record<Locale, DeepPartial<HomeContent>> = {
           { icon: '📈', label: 'Inversiones y pensiones', sub: 'Colección · 5 elementos' },
         ],
         secured: 'Protegido',
+        lock: '🔒 Cifrado en reposo',
       },
     },
     value: {
@@ -201,7 +199,15 @@ const overlays: Record<Locale, DeepPartial<HomeContent>> = {
     },
     trustBand: {
       heading: 'Diseñado para merecer la confianza de tu información más sensible.',
+      lead: 'Tus datos se cifran de camino a nosotros y allí donde se guardan. El acceso está protegido y nunca vendemos tu información.',
       cta: 'Mira exactamente cómo lo mantenemos a salvo →',
+      proof: [
+        'Cifrado en tránsito (TLS) y en reposo',
+        'Contraseñas protegidas con hash — ni nosotros podemos leerlas',
+        'Sesiones efímeras y protegidas por el navegador',
+        'Solo tú puedes ver tu propia bóveda',
+        'Nunca vendemos ni compartimos tus datos',
+      ],
     },
     finalCta: {
       title: 'Crea hoy la bóveda de tu familia.',

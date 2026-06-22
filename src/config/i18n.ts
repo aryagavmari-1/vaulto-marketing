@@ -55,8 +55,10 @@ export const HREFLANG: Record<Locale, string> = {
  * `en` + `x-default` only — no broken alternates.
  */
 const PAGE_LOCALES: Record<string, readonly Locale[]> = {
-  // e.g. once /security is translated to ES + FR:
-  // '/security/': ['en', 'es', 'fr'],
+  // ES Home published (ARY-407, Path A) — lights up the /↔/es/ hreflang pair
+  // + sitemap alternate. Trust-critical pages (/security, /privacy) follow once
+  // the §5 review budget (ARY-414) is approved; FR/DE per §3 organic demand.
+  '/': ['en', 'es'],
 };
 
 /** Normalises a path to the form used as a PAGE_LOCALES key (leading+trailing /). */
