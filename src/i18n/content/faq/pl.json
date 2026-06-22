@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Czy moje dane są bezpieczne?",
-      "a": "Tak. Twoje informacje są szyfrowane podczas przesyłania (TLS) i w spoczynku w zarządzanej infrastrukturze, Twoje hasło nigdy nie jest przechowywane w postaci jawnej, a dostęp do Twojego konta jest ściśle kontrolowany.",
+      "a": "",
       "onward": "Zobacz, jak dbamy o bezpieczeństwo →"
     },
     {

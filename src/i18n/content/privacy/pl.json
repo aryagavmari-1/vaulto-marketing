@@ -24,7 +24,7 @@
     },
     {
       "title": "Udostępnianie &amp; zgoda",
-      "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to zezwolisz — na przykład gdy tworzysz pakiet polecający dla specjalisty. Zgoda jest rejestrowana z jasno określonym zakresem i może zostać cofnięta w dowolnym momencie, a cofnięcie jest odnotowywane."
+      "body": ""
     },
     {
       "title": "Jak są chronione",
@@ -36,7 +36,7 @@
     "items": [
       "Uzyskaj dostęp do informacji w swoim sejfie i je wyeksportuj.",
       "Cofnij specjaliście dostęp do udostępnionej migawki.",
-      "Poproś o usunięcie swojego konta i danych."
+      ""
     ]
   },
   "contact": {

@@ -4,11 +4,11 @@
     "description": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — özel olarak, güçlü güvenlikle. Ücretsiz başlayın."
   },
   "hero": {
-    "eyebrow": "🔒 Tasarım gereği özel ve şifreli",
+    "eyebrow": "",
     "heading": "Ailenizin sahip olduğu her şey için tek bir sakin, güvenli yer.",
     "sub": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — böylece aileniz her zaman neyin nerede olduğunu ve sonra ne yapacağını bilir.",
     "trust": [
-      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "",
       "Verileriniz asla satılmaz",
       "Aileler için tasarlandı"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "📄",
           "label": "Vasiyetname ve miras belgeleri",
-          "sub": "3 dosya · şifrelenmiş kasa"
+          "sub": ""
         },
         {
           "icon": "📈",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Güvence altında",
-      "lock": "🔒 Depoda şifreli"
+      "lock": ""
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "En hassas bilgilerine emanet edilebilecek şekilde tasarlandı.",
-    "lead": "Verilerin bize gelirken ve saklandığı yerde şifrelenir. Erişim korunur ve bilgilerini asla satmayız.",
+    "lead": "",
     "cta": "Onu tam olarak nasıl güvende tuttuğumuzu gör →",
     "proof": [
-      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "",
       "Parolalar hashlenir — biz bile onları okuyamayız",
       "Kısa ömürlü, tarayıcı tarafından korunan oturumlar",
       "Yalnızca kendi kasanı görebilirsin",

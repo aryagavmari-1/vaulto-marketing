@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "¿Mis datos están seguros?",
-      "a": "Sí. Tu información se cifra en tránsito (TLS) y en reposo en infraestructura gestionada, tu contraseña nunca se almacena en texto plano y el acceso está estrictamente controlado en tu cuenta.",
+      "a": "",
       "onward": "Ver cómo lo mantenemos seguro →"
     },
     {

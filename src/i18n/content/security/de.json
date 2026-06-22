@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sicherheit & Datenschutz",
-    "description": "Wie Vaulto die Informationen deiner Familie schützt — Verschlüsselung bei der Übertragung und im Ruhezustand, gehashte Passwörter, strenge Zugriffskontrolle. Klar erklärt, ohne Übertreibungen."
+    "description": ""
   },
   "crumbs": {
     "home": "Startseite",
@@ -21,8 +21,8 @@
       "body": "Jede Verbindung zu Vaulto nutzt TLS (HTTPS), sodass deine Daten auf dem Weg zwischen dir und uns verschlüsselt sind."
     },
     {
-      "title": "Im Ruhezustand verschlüsselt.",
-      "body": "Deine Informationen und Dokumente werden auf verschlüsselter Infrastruktur gespeichert — verwaltete Datenbank und Objektspeicher."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Passwörter werden nie im Klartext gespeichert.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Deine Daten gehören dir",
-    "body": "Deine Daten gehören dir — exportiere jederzeit alles (deine Daten + deine Originaldateien). Unter Einstellungen erstellt <b>Alles herunterladen (.zip)</b> eine Datei mit einer vollständigen, maschinenlesbaren Kopie deiner Einträge sowie jedem Originalfoto und Scan, das du hochgeladen hast. Kein Lock-in, kein Warten auf uns. Der maschinenlesbare Export erfüllt außerdem dein Recht auf Datenübertragbarkeit nach GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Klar erklärt, ohne Übertreibungen.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung und im Ruhezustand, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten ausdrücklich <b>nicht</b> „zero-knowledge“, „bank-level“ oder irgendeine Zertifizierung, die wir nicht erworben haben. Datenexport ist live (oben). Wenn wir Verschlüsselung auf Anwendungsebene oder ein formelles Audit durch Dritte hinzufügen, wird diese Seite das sagen.",
+    "body": "",
     "contact": "Bei Fragen zu Datenschutz oder Sicherheit kontaktiere"
   }
 }

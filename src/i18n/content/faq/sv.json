@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Är mina data säkra?",
-      "a": "Ja. Din information krypteras under överföring (TLS) och i vila på hanterad infrastruktur, ditt lösenord lagras aldrig i klartext och åtkomsten är strikt begränsad till ditt konto.",
+      "a": "",
       "onward": "Se hur vi håller det säkert →"
     },
     {

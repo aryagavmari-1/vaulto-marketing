@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funciones",
-    "description": "Lo que Vaulto hace hoy: inventario de activos, una bóveda de documentos cifrada, captura asistida por IA, colecciones y una vista clara de todo lo que posee tu familia."
+    "description": ""
   },
   "crumbs": {
     "home": "Inicio",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Bóveda de documentos",
-      "body": "Mantén escrituras, pólizas, testamentos y extractos a salvo y vinculados a los activos a los que pertenecen. Sube archivos de hasta 20MB, almacenados en infraestructura cifrada."
+      "body": ""
     },
     {
       "title": "Captura asistida por IA",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Exporta cuando quieras — tus datos son tuyos",
-      "body": "Tus datos son tuyos — exporta todo (tus datos + tus archivos originales) en cualquier momento. Una sola descarga te da una copia completa y legible por máquina de tus registros, además de cada foto y escaneo original que subiste. Sin dependencia."
+      "body": ""
     }
   ],
   "foot": "Solo mostramos lo que ya está disponible. Cuando lancemos algo nuevo, aparecerá aquí — no antes.",

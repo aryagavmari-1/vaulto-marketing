@@ -4,11 +4,11 @@
     "description": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — privé, met sterke beveiliging. Begin gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privé & versleuteld van ontwerp af aan",
+    "eyebrow": "",
     "heading": "Eén rustige, veilige plek voor alles wat je gezin bezit.",
     "sub": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — zodat je gezin altijd weet wat er is, en wat de volgende stap is.",
     "trust": [
-      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "",
       "Je gegevens worden nooit verkocht",
       "Gemaakt voor gezinnen"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "📄",
           "label": "Testament- & nalatenschapsdocumenten",
-          "sub": "3 bestanden · versleutelde kluis"
+          "sub": ""
         },
         {
           "icon": "📈",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Beveiligd",
-      "lock": "🔒 Versleuteld in opslag"
+      "lock": ""
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Gemaakt om je meest gevoelige informatie toe te vertrouwen.",
-    "lead": "Je gegevens zijn versleuteld onderweg naar ons en waar ze worden opgeslagen. Toegang is beveiligd, en we verkopen je informatie nooit.",
+    "lead": "",
     "cta": "Bekijk precies hoe we het veilig houden →",
     "proof": [
-      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "",
       "Wachtwoorden gehasht — zelfs wij kunnen ze niet lezen",
       "Kortdurende, door de browser beveiligde sessies",
       "Je kunt alleen je eigen kluis zien",

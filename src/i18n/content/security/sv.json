@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Säkerhet och integritet",
-    "description": "Så skyddar Vaulto din familjs information — kryptering under överföring och lagring, hashade lösenord, strikt åtkomstkontroll. Klarspråk, inga överdrifter."
+    "description": ""
   },
   "crumbs": {
     "home": "Hem",
@@ -21,8 +21,8 @@
       "body": "Varje anslutning till Vaulto använder TLS (HTTPS), så dina data är krypterade när de färdas mellan dig och oss."
     },
     {
-      "title": "Krypterat vid lagring.",
-      "body": "Din information och dina dokument lagras på krypterad infrastruktur — hanterad databas och objektlagring."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Lösenord lagras aldrig i klartext.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Dina data är dina",
-    "body": "Dina data är dina — exportera allt (dina data + dina originalfiler) när som helst. Under Inställningar ger <b>Ladda ner allt (.zip)</b> dig en fil med en fullständig, maskinläsbar kopia av dina uppgifter plus varje originalfoto och skanning du har laddat upp. Ingen inlåsning, inget väntande på oss. Den maskinläsbara exporten uppfyller också din rätt till dataportabilitet enligt GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant i dag: kryptering under överföring och vid lagring, hashade lösenord, strikt åtkomstkontroll. Vi påstår medvetet <b>inte</b> \"zero-knowledge\", \"bank-level\" eller någon certifiering vi inte har fått. Dataexport är redan live (ovan). När vi lägger till kryptering på applikationsnivå eller en formell tredjepartsgranskning kommer den här sidan att säga det.",
+    "body": "",
     "contact": "För frågor om integritet eller säkerhet, kontakta"
   }
 }

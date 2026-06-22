@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sécurité et confidentialité",
-    "description": "Comment Vaulto protège les informations de votre famille — chiffrement en transit et au repos, mots de passe hachés, contrôle d’accès strict. En termes simples, sans exagération."
+    "description": ""
   },
   "crumbs": {
     "home": "Accueil",
@@ -21,8 +21,8 @@
       "body": "Chaque connexion à Vaulto utilise TLS (HTTPS), afin que vos données soient chiffrées pendant leur transfert entre vous et nous."
     },
     {
-      "title": "Chiffré au repos.",
-      "body": "Vos informations et documents sont stockés sur une infrastructure chiffrée — base de données gérée et stockage d’objets."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Les mots de passe ne sont jamais stockés en clair.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Vos données vous appartiennent",
-    "body": "Vos données vous appartiennent — exportez tout (vos données + vos fichiers d’origine) à tout moment. Depuis Paramètres, <b>Tout télécharger (.zip)</b> vous donne un seul fichier avec une copie complète et lisible par machine de vos enregistrements, plus chaque photo et scan d’origine que vous avez téléversé. Aucun enfermement, pas d’attente de notre côté. L’export lisible par machine répond aussi à votre droit à la portabilité des données au titre du GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>En termes simples, sans exagération.</b> Nous décrivons seulement ce qui est vrai aujourd’hui : chiffrement en transit et au repos, mots de passe hachés, contrôle d’accès strict. Nous ne revendiquons délibérément <b>pas</b> le \"zero-knowledge\", le \"bank-level\" ni une quelconque certification que nous n’avons pas obtenue. L’export des données est disponible dès maintenant (ci-dessus). Lorsque nous ajouterons un chiffrement au niveau de l’application ou un audit formel par un tiers, cette page l’indiquera.",
+    "body": "",
     "contact": "Pour toute question sur la confidentialité ou la sécurité, contactez"
   }
 }

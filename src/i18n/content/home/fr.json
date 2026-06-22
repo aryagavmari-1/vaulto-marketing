@@ -4,11 +4,11 @@
     "description": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — en privé, avec une sécurité solide. Commencez gratuitement."
   },
   "hero": {
-    "eyebrow": "🔒 Privé et chiffré par conception",
+    "eyebrow": "",
     "heading": "Un lieu unique, calme et sûr pour tout ce que possède votre famille.",
     "sub": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — pour que votre famille sache toujours ce qui existe et quoi faire ensuite.",
     "trust": [
-      "Chiffré en transit (TLS) et au repos",
+      "",
       "Vos données ne sont jamais vendues",
       "Conçu pour les familles"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "📄",
           "label": "Testament et documents de succession",
-          "sub": "3 fichiers · coffre-fort chiffré"
+          "sub": ""
         },
         {
           "icon": "📈",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Sécurisé",
-      "lock": "🔒 Chiffré au repos"
+      "lock": ""
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Conçu pour mériter votre confiance avec vos informations les plus sensibles.",
-    "lead": "Vos données sont chiffrées pendant leur transmission jusqu’à nous et là où elles sont stockées. L’accès est protégé, et nous ne vendons jamais vos informations.",
+    "lead": "",
     "cta": "Voyez exactement comment nous les gardons en sécurité →",
     "proof": [
-      "Chiffré en transit (TLS) et au repos",
+      "",
       "Mots de passe hachés — même nous ne pouvons pas les lire",
       "Sessions de courte durée, protégées par le navigateur",
       "Vous ne pouvez voir que votre propre coffre-fort",

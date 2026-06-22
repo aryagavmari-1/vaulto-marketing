@@ -24,7 +24,7 @@
     },
     {
       "title": "Partilha &amp; consentimento",
-      "body": "Os teus dados só são partilhados quando dás autorização explícita para isso — por exemplo, quando crias um pacote de referência para um profissional. O consentimento é registado com um âmbito claro e pode ser revogado a qualquer momento, e essa revogação é registada."
+      "body": ""
     },
     {
       "title": "Como é protegido",
@@ -36,7 +36,7 @@
     "items": [
       "Aceder e exportar a informação no teu cofre.",
       "Revogar o acesso de um profissional a uma captura partilhada.",
-      "Pedir a eliminação da tua conta e dos teus dados."
+      ""
     ]
   },
   "contact": {

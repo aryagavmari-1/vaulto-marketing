@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "I miei dati sono al sicuro?",
-      "a": "Sì. Le tue informazioni sono crittografate in transito (TLS) e a riposo su infrastruttura gestita, la tua password non viene mai memorizzata in chiaro e l'accesso è rigidamente controllato sul tuo account.",
+      "a": "",
       "onward": "Scopri come li teniamo al sicuro →"
     },
     {

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sicurezza e privacy",
-    "description": "Come Vaulto protegge le informazioni della tua famiglia — crittografia in transito e a riposo, password con hash, controllo rigoroso degli accessi. Linguaggio semplice, senza esagerazioni."
+    "description": ""
   },
   "crumbs": {
     "home": "Home",
@@ -21,8 +21,8 @@
       "body": "Ogni connessione a Vaulto usa TLS (HTTPS), quindi i tuoi dati sono crittografati mentre viaggiano tra te e noi."
     },
     {
-      "title": "Crittografati a riposo.",
-      "body": "Le tue informazioni e i tuoi documenti sono archiviati su un'infrastruttura crittografata — database gestito e archiviazione di oggetti."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Le password non vengono mai archiviate in chiaro.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "I tuoi dati sono tuoi",
-    "body": "I tuoi dati sono tuoi — esporta tutto (i tuoi dati + i tuoi file originali) in qualsiasi momento. Da Impostazioni, <b>Scarica tutto (.zip)</b> ti dà un unico file con una copia completa e leggibile da macchina dei tuoi dati, più ogni foto e scansione originale che hai caricato. Nessun vincolo, nessuna attesa da parte nostra. L'esportazione leggibile da macchina soddisfa anche il tuo diritto alla portabilità dei dati ai sensi del GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Linguaggio semplice, senza esagerazioni.</b> Descriviamo solo ciò che è vero oggi: crittografia in transito e a riposo, password con hash, controllo rigoroso degli accessi. Deliberatamente <b>non</b> dichiariamo \"zero-knowledge\", \"bank-level\" o qualsiasi certificazione che non abbiamo ottenuto. L'esportazione dei dati è già disponibile (sopra). Quando aggiungeremo la crittografia a livello di applicazione o una verifica formale da parte di terzi, questa pagina lo dirà.",
+    "body": "",
     "contact": "Per domande su privacy o sicurezza, contatta"
   }
 }

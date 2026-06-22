@@ -24,7 +24,7 @@
     },
     {
       "title": "Partage &amp; consentement",
-      "body": "Vos données ne sont partagées que lorsque vous l’autorisez explicitement — par exemple, lorsque vous créez un dossier de transmission pour un professionnel. Le consentement est enregistré avec une portée claire et peut être retiré à tout moment, et ce retrait est consigné."
+      "body": ""
     },
     {
       "title": "Comment c’est protégé",
@@ -36,7 +36,7 @@
     "items": [
       "Accéder aux informations de votre coffre-fort et les exporter.",
       "Retirer l’accès d’un professionnel à un instantané partagé.",
-      "Demander la suppression de votre compte et de vos données."
+      ""
     ]
   },
   "contact": {

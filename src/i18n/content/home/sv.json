@@ -4,11 +4,11 @@
     "description": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — privat, med stark säkerhet. Kom igång gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privat och krypterat från grunden",
+    "eyebrow": "",
     "heading": "En lugn, säker plats för allt din familj äger.",
     "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — så att din familj alltid vet vad som finns och vad ni ska göra härnäst.",
     "trust": [
-      "Krypterat under överföring (TLS) och vid lagring",
+      "",
       "Dina data säljs aldrig",
       "Byggt för familjer"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "📄",
           "label": "Testamente och dödsbodelshandlingar",
-          "sub": "3 filer · krypterat valv"
+          "sub": ""
         },
         {
           "icon": "📈",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Skyddat",
-      "lock": "🔒 Krypterat vid lagring"
+      "lock": ""
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Byggt för att vara betrott med din mest känsliga information.",
-    "lead": "Dina data krypteras på väg till oss och där de lagras. Åtkomst är skyddad, och vi säljer aldrig din information.",
+    "lead": "",
     "cta": "Se exakt hur vi håller det säkert →",
     "proof": [
-      "Krypterat under överföring (TLS) och vid lagring",
+      "",
       "Lösenord hashas — inte ens vi kan läsa dem",
       "Kortlivade, webbläsarskyddade sessioner",
       "Du kan bara någonsin se ditt eget valv",

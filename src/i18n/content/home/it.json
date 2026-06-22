@@ -4,11 +4,11 @@
     "description": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — in privato, con una sicurezza solida. Inizia gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privato e crittografato fin dalla progettazione",
+    "eyebrow": "",
     "heading": "Un unico posto calmo e sicuro per tutto ciò che la tua famiglia possiede.",
     "sub": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — così la tua famiglia saprà sempre cosa c'è e cosa fare dopo.",
     "trust": [
-      "Crittografato in transito (TLS) e a riposo",
+      "",
       "I tuoi dati non vengono mai venduti",
       "Pensato per le famiglie"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "📄",
           "label": "Testamento e documenti successori",
-          "sub": "3 file · cassaforte crittografata"
+          "sub": ""
         },
         {
           "icon": "📈",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Protetto",
-      "lock": "🔒 Crittografato a riposo"
+      "lock": ""
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Pensato per meritare fiducia con le tue informazioni più sensibili.",
-    "lead": "I tuoi dati sono crittografati mentre ci raggiungono e dove vengono conservati. L'accesso è protetto e non vendiamo mai le tue informazioni.",
+    "lead": "",
     "cta": "Scopri esattamente come li teniamo al sicuro →",
     "proof": [
-      "Crittografato in transito (TLS) e a riposo",
+      "",
       "Password sottoposte ad hashing — nemmeno noi possiamo leggerle",
       "Sessioni di breve durata, protette dal browser",
       "Puoi vedere solo la tua cassaforte",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Beveiliging & privacy",
-    "description": "Hoe Vaulto de informatie van je gezin beschermt — versleuteling tijdens verzending en in opslag, gehashte wachtwoorden, strikte toegangscontrole. Heldere taal, zonder overdrijving."
+    "description": ""
   },
   "crumbs": {
     "home": "Home",
@@ -21,8 +21,8 @@
       "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS), zodat je gegevens versleuteld zijn terwijl ze tussen jou en ons worden verzonden."
     },
     {
-      "title": "Versleuteld in opslag.",
-      "body": "Je informatie en documenten worden opgeslagen op versleutelde infrastructuur — beheerde database en objectopslag."
+      "title": "",
+      "body": ""
     },
     {
       "title": "Wachtwoorden worden nooit onversleuteld opgeslagen.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Je gegevens zijn van jou",
-    "body": "Je gegevens zijn van jou — exporteer alles (je gegevens + je originele bestanden) op elk moment. Via Instellingen geeft <b>Alles downloaden (.zip)</b> je één bestand met een volledige, machineleesbare kopie van je gegevens plus elke originele foto en scan die je hebt geüpload. Geen lock-in, niet wachten op ons. De machineleesbare export voldoet ook aan je recht op dataportabiliteit onder GDPR (Article&nbsp;20)."
+    "body": ""
   },
   "honesty": {
-    "body": "<b>Heldere taal, zonder overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending en in opslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>niet</b> \"zero-knowledge\", \"bank-level\" of een certificering die we niet hebben behaald. Gegevensexport is live (hierboven). Als we encryptie op applicatieniveau of een formele audit door een derde partij toevoegen, vermelden we dat op deze pagina.",
+    "body": "",
     "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
   }
 }
