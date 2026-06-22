@@ -41,9 +41,36 @@ signups/mo**; otherwise pause and reallocate. No running channels on faith.
 - **On-site events** — `cta_click`, `waitlist_view`, waitlist submit, `outbound_click`
   are already emitted by the site (cookieless, no PII) and flow to the analytics sink.
 
+## How the numbers refresh (ARY-406)
+
+`scripts/pull-kpis.mjs` pulls live numbers and maps them onto `kpis.json` by `id`:
+
+| KPI id | Source | How it's pulled |
+| --- | --- | --- |
+| `search_impressions`, `search_clicks`, `avg_position` | Search Console | Search Analytics API (service-account JWT) |
+| `organic_sessions` | Cloudflare | RUM GraphQL, visits whose referer host is a search engine |
+| `referral_share_rate` | Cloudflare | RUM GraphQL, non-search external referer share of total visits |
+| `waitlist_signups`, `signup_conversion_rate`, `activated_vaults` | conversion | **Not auto-pulled** — analytics-goal / app data, entered downstream |
+
+**Cadence:** the [`refresh-kpis`](./.github/workflows/refresh-kpis.yml) GitHub Action runs
+weekly (Mon 06:17 UTC) + on demand, runs the puller, and commits the refreshed
+`kpis.json`. Run locally any time with `npm run kpis`.
+
+**Activation (one-time):** set these repo secrets — until then the puller is a safe
+no-op (leaves `kpis.json` unchanged, exits 0), so nothing breaks pre-launch.
+Blocked on the live analytics accounts (**ARY-409**).
+
+- `CF_API_TOKEN`, `CF_ACCOUNT_TAG` — Cloudflare Web Analytics GraphQL
+- `GSC_SERVICE_ACCOUNT_JSON` — Google Search Console service-account key (the
+  service account must be added as a user on the GSC property)
+- `GSC_SITE_URL` *(optional)* — defaults to `https://myvaulto.com/`
+
+`asOf` only advances when a live value is actually pulled, so a stale dashboard is
+never disguised as fresh.
+
 ## The optimisation loop
 
 1. Content/social sub-agent ships content (see [PUBLISHING.md](./PUBLISHING.md)).
-2. `scripts/pull-kpis.mjs` refreshes `kpis.json` on a routine.
+2. The `refresh-kpis` routine refreshes `kpis.json` on its cadence.
 3. The team / sub-agents read `kpis.json` + Search Console to see what's working.
 4. Double down on winning clusters/formats; prune losers. Back to step 1.

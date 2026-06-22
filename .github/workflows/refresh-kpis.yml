@@ -1,0 +1,61 @@
+name: Refresh KPIs
+
+# The measurement loop (ARY-403 / ARY-406). Runs scripts/pull-kpis.mjs on a
+# cadence, pulling live numbers from the $0 analytics sources into kpis.json and
+# committing the refresh back so the team + marketing sub-agents read live KPIs
+# straight from the repo (see KPIS.md → "The optimisation loop").
+#
+# Cadence: weekly (KPIs are "/mo" baselines — daily noise isn't actionable yet)
+# plus manual workflow_dispatch.
+#
+# Required repo secrets (NONE committed; provisioned once the live analytics
+# accounts land — blocked on ARY-409):
+#   CF_API_TOKEN, CF_ACCOUNT_TAG  — Cloudflare Web Analytics GraphQL (traffic)
+#   GSC_SERVICE_ACCOUNT_JSON      — Google Search Console service-account key
+#   GSC_SITE_URL  (optional)      — GSC property, default https://myvaulto.com/
+#
+# Until those secrets exist the puller is a safe no-op (it leaves kpis.json
+# unchanged and exits 0), so this job runs green and commits nothing. It goes
+# live the moment the secrets are set — no code change needed.
+
+on:
+  schedule:
+    - cron: '17 6 * * 1' # 06:17 UTC every Monday
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-kpis
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Pull live KPIs
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_TAG: ${{ secrets.CF_ACCOUNT_TAG }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/pull-kpis.mjs
+      - name: Commit refreshed kpis.json
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- kpis.json; then
+            echo "No KPI changes to commit."
+            exit 0
+          fi
+          git config user.name  "vaulto-kpi-bot"
+          git config user.email "noreply@paperclip.ing"
+          git add kpis.json
+          git commit -m "chore(kpis): refresh live KPI snapshot [skip ci]
+
+          Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+          git push
