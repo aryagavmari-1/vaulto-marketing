@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { BRAND } from '../config/brand';
 import { faqItemsFor } from '../config/structured-data';
 import Eyebrow from '../components/marketing/Eyebrow.astro';
+import FinalCta from '../components/marketing/FinalCta.astro';
 
 const crumbs = [
   { name: 'Home', url: `${BRAND.url}/` },
@@ -10,6 +11,14 @@ const crumbs = [
 ];
 // One source: the page body and the FAQPage JSON-LD both read FAQ_ITEMS.
 const items = faqItemsFor('en');
+
+// Onward links per ARY-404 §4.6 ("each answer links onward where relevant").
+// Visible-only — the JSON-LD answer text stays verbatim from the catalog.
+const onward: Record<string, { href: string; label: string }> = {
+  'Is my data safe?': { href: '/security/', label: 'See how we keep it safe →' },
+  'Do you sell my data?': { href: '/security/', label: 'Read our privacy promises →' },
+  'Do I have to enter everything by hand?': { href: '/how-it-works/', label: 'See how capture works →' },
+};
 ---
 <Base
   title="Frequently asked questions"
@@ -41,13 +50,18 @@ const items = faqItemsFor('en');
               </button>
             </h2>
             <div class="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
-              <p>{it.a}</p>
+              <p>
+                {it.a}
+                {onward[it.q] && <> <a href={onward[it.q].href} data-cta={`faq_link_${i}`}>{onward[it.q].label}</a></>}
+              </p>
             </div>
           </div>
         ))}
       </div>
     </div>
   </section>
+
+  <FinalCta title="Ready when you are." body="Start free and add your first few things in minutes." ctaId="faq_final" />
 
   <script is:inline>
     document.querySelectorAll('.faq-q').forEach((btn) => {
