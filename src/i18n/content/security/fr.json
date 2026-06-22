@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Chiffré en transit.",
-      "body": "Chaque connexion à Vaulto utilise TLS (HTTPS), afin que vos données soient chiffrées pendant leur transfert entre vous et nous."
+      "body": "Chaque connexion à Vaulto utilise TLS (HTTPS) — le même chiffrement à l'icône de cadenas que vous voyez sur les sites bancaires et marchands. Vos données sont brouillées pendant leur trajet entre vous et nous, de sorte que personne entre les deux ne peut les lire."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Chiffré au repos.",
+      "body": "Vos données et vos fichiers téléversés résident sur des serveurs sécurisés et gérés par des professionnels, chiffrés au repos — « au repos » signifie simplement pendant qu'ils sont stockés, pas pendant qu'ils circulent. La base de données qui contient vos enregistrements et le stockage qui contient vos photos et numérisations sont tous deux chiffrés, et vos fichiers ne sont accessibles que par des liens signés de courte durée."
     },
     {
       "title": "Les mots de passe ne sont jamais stockés en clair.",
-      "body": "Nous hachons votre mot de passe avec un algorithme fort et moderne (scrypt) — même nous ne pouvons pas le lire."
+      "body": "Nous « hachons » votre mot de passe avec une méthode solide et moderne appelée scrypt — un hachage est un brouillage à sens unique qui ne peut pas être inversé pour retrouver votre mot de passe. Même nous ne pouvons pas le lire."
     },
     {
       "title": "Sessions de courte durée.",
-      "body": "Les jetons de connexion ont une courte durée de vie et sont conservés en mémoire ; le jeton qui vous garde connecté vit dans un cookie sécurisé, inaccessible aux scripts."
+      "body": "Le « jeton » (token) de connexion qui prouve que c'est bien vous expire rapidement et reste en mémoire. Le jeton qui vous garde connecté réside dans un cookie sécurisé et résistant aux scripts — un petit fichier de navigateur que les scripts malveillants d'une page ne peuvent ni lire ni voler."
     },
     {
       "title": "Protégé contre les abus.",
-      "body": "Nous limitons le nombre de tentatives de connexion et d’autres actions sensibles pour nous défendre contre les attaques automatisées."
+      "body": "Nous limitons le nombre de fois où la connexion et d'autres actions sensibles peuvent être tentées d'affilée — c'est ce qu'on appelle la « limitation de débit » (rate-limiting). Cela bloque les tentatives rapides et répétées sur lesquelles reposent les attaques automatisées."
     },
     {
       "title": "Contrôles d’accès.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Vos données vous appartiennent",
-    "body": ""
+    "body": "Vos données vous appartiennent — exportez une copie complète et lisible par machine de vos enregistrements (JSON, CSV ou PDF) à tout moment, depuis les Paramètres. « Lisible par machine » signifie un fichier standard qu'une autre application ou un tableur peut ouvrir et réutiliser — pas un PDF verrouillé. Aucun verrouillage, aucune attente de notre part. (Le téléchargement groupé de vos fichiers d'origine est sur notre feuille de route.) Cela soutient votre droit à la portabilité des données au titre du GDPR — la loi européenne sur la vie privée (article 20) qui vous permet d'emporter vos données avec vous."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Langage clair, sans surenchère.</b> Nous ne décrivons que ce qui est vrai aujourd'hui : chiffrement en transit, base de données chiffrée, fichiers conservés dans un stockage privé, mots de passe hachés, contrôle d'accès strict. Nous ne prétendons délibérément <b>pas</b> au « zero-knowledge » (où même nous ne pourrions jamais déverrouiller vos données), au « niveau bancaire », ni à aucune certification que nous n'avons pas obtenue. L'export de données est actif (ci-dessus). Lorsque nous ajouterons le chiffrement au niveau de l'application — un verrou supplémentaire appliqué à l'intérieur de l'application elle-même, par-dessus le chiffrement ci-dessus — ou un audit formel par un tiers, où une entreprise de sécurité indépendante nous examine, cette page le mentionnera.",
     "contact": "Pour toute question sur la confidentialité ou la sécurité, contactez"
   }
 }

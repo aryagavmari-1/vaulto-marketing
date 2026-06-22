@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Bei der Übertragung verschlüsselt.",
-      "body": "Jede Verbindung zu Vaulto nutzt TLS (HTTPS), sodass deine Daten auf dem Weg zwischen dir und uns verschlüsselt sind."
+      "body": "Jede Verbindung zu Vaulto verwendet TLS (HTTPS) — dieselbe Verschlüsselung mit dem Schloss-Symbol, die du auf Banking- und Shopping-Seiten siehst. Deine Daten werden verschlüsselt, während sie zwischen dir und uns unterwegs sind, sodass niemand dazwischen sie lesen kann."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Verschlüsselt im Ruhezustand.",
+      "body": "Deine Daten und hochgeladenen Dateien liegen auf professionell verwalteten, gesicherten Servern und sind im Ruhezustand verschlüsselt — „im Ruhezustand“ bedeutet einfach: während sie gespeichert sind, nicht während sie unterwegs sind. Die Datenbank mit deinen Einträgen und der Speicher mit deinen Fotos und Scans sind beide verschlüsselt, und deine Dateien sind nur über kurzlebige, signierte Links erreichbar."
     },
     {
       "title": "Passwörter werden nie im Klartext gespeichert.",
-      "body": "Wir hashen dein Passwort mit einem starken, modernen Algorithmus (scrypt) — selbst wir können es nicht lesen."
+      "body": "Wir „hashen“ dein Passwort mit einer starken, modernen Methode namens scrypt — ein Hash ist eine Einweg-Verwürfelung, die sich nicht wieder in dein Passwort zurückverwandeln lässt. Nicht einmal wir können es lesen."
     },
     {
       "title": "Kurzlebige Sitzungen.",
-      "body": "Anmelde-Tokens sind nur kurz gültig und werden im Arbeitsspeicher gehalten; das Token, das dich angemeldet hält, liegt in einem sicheren, script-sicheren Cookie."
+      "body": "Der Anmelde-„Token“, der beweist, dass du es bist, läuft schnell ab und wird im Arbeitsspeicher gehalten. Der Token, der dich angemeldet hält, liegt in einem sicheren, skriptgeschützten Cookie — einer kleinen Browser-Datei, die schädliche Skripte auf einer Seite weder lesen noch stehlen können."
     },
     {
       "title": "Gegen Missbrauch geschützt.",
-      "body": "Wir begrenzen Anmeldungen und andere sensible Aktionen, um uns gegen automatisierte Angriffe zu schützen."
+      "body": "Wir begrenzen, wie oft Anmeldung und andere sensible Aktionen hintereinander versucht werden können — das nennt man „Rate-Limiting“. Es blockiert das schnelle, wiederholte Raten, auf das automatisierte Angriffe setzen."
     },
     {
       "title": "Zugriffskontrollen.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Deine Daten gehören dir",
-    "body": ""
+    "body": "Deine Daten gehören dir — exportiere jederzeit eine vollständige, maschinenlesbare Kopie deiner Einträge (JSON, CSV oder PDF) aus den Einstellungen. „Maschinenlesbar“ bedeutet eine Standarddatei, die eine andere App oder Tabellenkalkulation öffnen und weiterverwenden kann — kein gesperrtes PDF. Keine Bindung, kein Warten auf uns. (Der Sammel-Download deiner Originaldateien ist auf unserer Roadmap.) Das unterstützt dein Recht auf Datenübertragbarkeit nach der GDPR — dem EU-Datenschutzgesetz (Artikel 20), das es dir erlaubt, deine Daten mitzunehmen."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Klare Sprache, keine Übertreibung.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung, eine verschlüsselte Datenbank, Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten bewusst <b>nicht</b> „Zero-Knowledge“ (wobei nicht einmal wir deine Daten jemals entsperren könnten), „Bank-Niveau“ oder irgendeine Zertifizierung, die wir nicht erworben haben. Der Datenexport ist aktiv (oben). Wenn wir Verschlüsselung auf App-Ebene hinzufügen — ein zusätzliches Schloss, das innerhalb der App selbst angewendet wird, zusätzlich zur obigen Verschlüsselung — oder eine formelle Prüfung durch Dritte, bei der eine unabhängige Sicherheitsfirma uns überprüft, wird diese Seite das angeben.",
     "contact": "Bei Fragen zu Datenschutz oder Sicherheit kontaktiere"
   }
 }

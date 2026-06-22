@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Mes données sont-elles en sécurité ?",
-      "a": "",
+      "a": "Oui. Votre connexion est chiffrée en transit avec TLS — le chiffrement à l'icône de cadenas (HTTPS) que vous voyez sur les sites bancaires et marchands — de sorte que vos données sont brouillées pendant leur trajet et que personne entre les deux ne peut les lire. La base de données de votre compte est chiffrée au repos (pendant qu'elle est stockée) sur des serveurs sécurisés et gérés par des professionnels, et les fichiers téléversés sont conservés dans un stockage privé accessible uniquement par des liens signés de courte durée. Votre mot de passe n'est jamais stocké en clair, et l'accès est strictement limité à votre compte.",
       "onward": "Voir comment nous les protégeons →"
     },
     {

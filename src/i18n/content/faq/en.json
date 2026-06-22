@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Is my data safe?",
-      "a": "Yes. Your connection is encrypted in transit (TLS), your account database is encrypted at rest, and uploaded files are kept in private storage reachable only through short-lived, signed links. Your password is never stored in plain text, and access is strictly scoped to your account.",
+      "a": "Yes. Your connection is encrypted in transit with TLS — the padlock-icon encryption (HTTPS) you see on banking and shopping sites — so your data is scrambled while it travels and no one in between can read it. Your account database is encrypted at rest (while it's stored) on professionally managed, secured servers, and uploaded files are kept in private storage reachable only through short-lived, signed links. Your password is never stored in plain text, and access is strictly scoped to your account.",
       "onward": "See how we keep it safe →"
     },
     {

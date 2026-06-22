@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Versleuteld tijdens verzending.",
-      "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS), zodat je gegevens versleuteld zijn terwijl ze tussen jou en ons worden verzonden."
+      "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS) — dezelfde versleuteling met het hangslot-pictogram die je op bank- en winkelsites ziet. Je gegevens worden versleuteld terwijl ze tussen jou en ons onderweg zijn, zodat niemand ertussen ze kan lezen."
     },
     {
-      "title": "",
-      "body": ""
+      "title": "Versleuteld in rust.",
+      "body": "Je gegevens en geüploade bestanden staan op professioneel beheerde, beveiligde servers en zijn versleuteld in rust — \"in rust\" betekent simpelweg terwijl ze zijn opgeslagen, niet terwijl ze onderweg zijn. De database met je records en de opslag met je foto's en scans zijn beide versleuteld, en je bestanden zijn alleen bereikbaar via kortlevende, ondertekende links."
     },
     {
       "title": "Wachtwoorden worden nooit onversleuteld opgeslagen.",
-      "body": "We hashen je wachtwoord met een sterk, modern algoritme (scrypt) — zelfs wij kunnen het niet lezen."
+      "body": "We \"hashen\" je wachtwoord met een sterke, moderne methode genaamd scrypt — een hash is een eenrichtingsversleuteling die niet kan worden teruggedraaid naar je wachtwoord. Zelfs wij kunnen het niet lezen."
     },
     {
       "title": "Kortdurende sessies.",
-      "body": "Inlogtokens zijn kort geldig en worden in het geheugen bewaard; het token dat je ingelogd houdt staat in een veilige, scriptbestendige cookie."
+      "body": "Het aanmeld-\"token\" dat bewijst dat jij het bent, verloopt snel en wordt in het geheugen bewaard. Het token dat je aangemeld houdt, zit in een veilige, scriptbestendige cookie — een klein browserbestand dat schadelijke scripts op een pagina niet kunnen lezen of stelen."
     },
     {
       "title": "Beschermd tegen misbruik.",
-      "body": "We beperken inlogpogingen en andere gevoelige acties om te beschermen tegen geautomatiseerde aanvallen."
+      "body": "We beperken hoe vaak achter elkaar aanmelden en andere gevoelige acties kunnen worden geprobeerd — dit heet \"rate-limiting\". Het blokkeert het snelle, herhaalde gokken waar geautomatiseerde aanvallen op steunen."
     },
     {
       "title": "Toegangscontrole.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Je gegevens zijn van jou",
-    "body": ""
+    "body": "Je gegevens zijn van jou — exporteer wanneer je wilt een volledige, machineleesbare kopie van je records (JSON, CSV of PDF) vanuit Instellingen. \"Machineleesbaar\" betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — geen vergrendelde PDF. Geen lock-in, geen wachten op ons. (Het in bulk downloaden van je originele bestanden staat op onze roadmap.) Dit ondersteunt je recht op gegevensoverdraagbaarheid onder de GDPR — de EU-privacywet (artikel 20) waarmee je je gegevens kunt meenemen."
   },
   "honesty": {
-    "body": "",
+    "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, een versleutelde database, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"zero-knowledge\" (waarbij zelfs wij je gegevens nooit zouden kunnen ontgrendelen), \"bankniveau\" of enige certificering die we niet hebben verdiend. Gegevensexport is actief (hierboven). Wanneer we versleuteling op app-niveau toevoegen — een extra slot dat binnen de app zelf wordt toegepast, bovenop de bovenstaande versleuteling — of een formele audit door derden, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
     "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
   }
 }

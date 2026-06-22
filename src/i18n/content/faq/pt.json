@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Os meus dados estão seguros?",
-      "a": "",
+      "a": "Sim. Sua conexão é criptografada em trânsito com TLS — a criptografia do ícone de cadeado (HTTPS) que você vê em sites de bancos e de compras — de modo que seus dados são embaralhados enquanto viajam e ninguém no meio do caminho consegue lê-los. O banco de dados da sua conta é criptografado em repouso (enquanto está armazenado) em servidores gerenciados profissionalmente e protegidos, e os arquivos enviados são guardados em armazenamento privado acessível apenas por links assinados de curta duração. Sua senha nunca é armazenada em texto simples, e o acesso é estritamente restrito à sua conta.",
       "onward": "Vê como os mantemos seguros →"
     },
     {

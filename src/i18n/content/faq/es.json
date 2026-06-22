@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "¿Mis datos están seguros?",
-      "a": "",
+      "a": "Sí. Tu conexión se cifra en tránsito con TLS —el cifrado del icono del candado (HTTPS) que ves en sitios de banca y compras—, de modo que tus datos se cifran mientras viajan y nadie por el camino puede leerlos. La base de datos de tu cuenta se cifra en reposo (mientras está almacenada) en servidores gestionados profesionalmente y protegidos, y los archivos subidos se guardan en almacenamiento privado accesible solo mediante enlaces firmados de corta duración. Tu contraseña nunca se guarda en texto plano y el acceso está estrictamente limitado a tu cuenta.",
       "onward": "Ver cómo lo mantenemos seguro →"
     },
     {
