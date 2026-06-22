@@ -65,5 +65,9 @@
   "honesty": {
     "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit, an encrypted database, files kept in private storage, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge,\" \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption or a formal third-party audit, this page will say so.",
     "contact": "For privacy or security questions, contact"
+  },
+  "finalCta": {
+    "title": "Private from the first thing you add.",
+    "body": "Start free — your vault is yours alone, and you can export or delete it whenever you want."
   }
 }

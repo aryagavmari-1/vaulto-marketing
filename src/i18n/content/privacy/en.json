@@ -42,5 +42,9 @@
   "contact": {
     "title": "Contact",
     "lead": "Questions about privacy? Email"
+  },
+  "finalCta": {
+    "title": "Your data, your control.",
+    "body": "Start free — export or delete everything whenever you want. No lock-in."
   }
 }

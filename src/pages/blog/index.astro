@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import FinalCta from '../../components/marketing/FinalCta.astro';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -28,4 +29,10 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month:
       </div>
     </div>
   </section>
+
+  <FinalCta
+    title="Put it into practice."
+    body="Start your family's vault free — add your first few things in minutes."
+    ctaId="blog_index_final"
+  />
 </Base>

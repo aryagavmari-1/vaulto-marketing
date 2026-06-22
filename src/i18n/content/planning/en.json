@@ -22,5 +22,9 @@
     "heading": "More areas you can explore"
   },
   "moreAreas": ["Inheritance tax", "Family-business succession", "Insurance", "Tax efficiency", "Asset financing"],
-  "cta": { "label": "Try a free overview" }
+  "cta": { "label": "Try a free overview" },
+  "finalCta": {
+    "title": "Plan when you're ready.",
+    "body": "Start with a free overview — no pressure, no urgency, no card required."
+  }
 }
