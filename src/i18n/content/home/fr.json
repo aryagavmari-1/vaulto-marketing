@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Maison familiale",
           "sub": "Bien immobilier · acte et assurance joints"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament et documents de succession",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investissements et retraites",
           "sub": "Collection · 5 éléments"
         }
@@ -39,17 +39,17 @@
     "sub": "Pas de tableurs. Pas de tiroirs éparpillés. Juste de la clarté.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Sachez ce que vous possédez.",
         "body": "Biens immobiliers, comptes, investissements, objets de valeur, retraites — réunis dans un seul espace organisé, pas dispersés entre tiroirs et tableurs."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Gardez tout en sécurité.",
         "body": "Stockez les documents importants — actes, contrats, relevés — en privé, derrière une sécurité solide."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planifiez en toute confiance.",
         "body": "Voyez l’ensemble de votre situation et obtenez une vue d’ensemble claire et gratuite quand vous êtes prêt à réfléchir à l’héritage, aux testaments ou à la suite."
       }

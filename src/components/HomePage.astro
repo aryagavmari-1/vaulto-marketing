@@ -21,6 +21,9 @@ import StepCard from './marketing/StepCard.astro';
 import CalloutBand from './marketing/CalloutBand.astro';
 import ProofList from './marketing/ProofList.astro';
 import FinalCta from './marketing/FinalCta.astro';
+import Icon from './marketing/Icon.astro';
+import ProductShot from './marketing/ProductShot.astro';
+import WarmIllustration from './marketing/WarmIllustration.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -30,10 +33,11 @@ const c = useHomeContent(locale);
 <Base title={c.meta.title} description={c.meta.description} path="/" locale={locale}>
   <!-- 1. Hero -->
   <section class="hero">
+    <div class="hero-warm" aria-hidden="true"><WarmIllustration /></div>
     <div class="wrap">
       <div class="grid">
         <div>
-          <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
+          <Eyebrow tone="success"><Icon name="lock" size={14} />{c.hero.eyebrow}</Eyebrow>
           <h1 class="t-display">{c.hero.heading}</h1>
           <p class="sub t-bodyL">{c.hero.sub}</p>
           <div class="cta-row">
@@ -45,12 +49,12 @@ const c = useHomeContent(locale);
         <div class="hero-art" aria-hidden="true">
           {c.hero.art.cards.map((card) => (
             <div class="mini-card">
-              <div class="ico">{card.icon}</div>
+              <div class="ico"><Icon name={card.icon} size={20} /></div>
               <div class="meta"><b>{card.label}</b><span>{card.sub}</span></div>
               <span class="secured">{c.hero.art.secured}</span>
             </div>
           ))}
-          <span class="lock-pill">{c.hero.art.lock}</span>
+          <span class="lock-pill"><Icon name="lock" size={14} />{c.hero.art.lock}</span>
         </div>
       </div>
     </div>
@@ -67,6 +71,13 @@ const c = useHomeContent(locale);
         {c.value.cards.map((card) => (
           <ValueCard icon={card.icon} title={card.title}>{card.body}</ValueCard>
         ))}
+      </div>
+      <div class="product-preview">
+        <ProductShot
+          scene="overview"
+          frame="browser"
+          label="The Vaulto overview screen: total net worth, asset categories, and a value-trend chart in one calm dashboard."
+        />
       </div>
     </div>
   </section>

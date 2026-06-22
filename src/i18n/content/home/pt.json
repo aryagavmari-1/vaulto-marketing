@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Casa de família",
           "sub": "Imóvel · escritura e seguro anexados"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamento e documentos da herança",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investimentos e pensões",
           "sub": "Coleção · 5 itens"
         }
@@ -39,17 +39,17 @@
     "sub": "Sem folhas de cálculo. Sem gavetas desorganizadas. Apenas clareza.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Saiba o que possui.",
         "body": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo reunido num só lugar organizado, e não espalhado por gavetas e folhas de cálculo."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Mantenha tudo seguro.",
         "body": "Guarde os documentos importantes — escrituras, apólices, extratos — em privado, protegidos por segurança robusta."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planeie com confiança.",
         "body": "Veja o panorama completo e tenha uma visão geral clara e gratuita quando estiver pronto para pensar em herança, testamentos ou no que acontece a seguir."
       }

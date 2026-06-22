@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Familienhaus",
           "sub": "Immobilie · Grundbuch & Versicherung angehängt"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament & Nachlassdokumente",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Anlagen & Renten",
           "sub": "Sammlung · 5 Einträge"
         }
@@ -39,17 +39,17 @@
     "sub": "Keine Tabellen. Keine verstreuten Schubladen. Nur Klarheit.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Wisse, was du besitzt.",
         "body": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles an einem organisierten Ort erfasst, nicht verteilt auf Schubladen und Tabellen."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Bewahre es sicher auf.",
         "body": "Speichere die wichtigen Dokumente — Urkunden, Policen, Kontoauszüge — privat und hinter starker Sicherheit."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Plane mit Zuversicht.",
         "body": "Behalte den Überblick und erhalte eine klare, kostenlose Übersicht, wenn du bereit bist, über Erbschaft, Testamente oder die nächsten Schritte nachzudenken."
       }

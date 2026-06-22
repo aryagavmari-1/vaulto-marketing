@@ -1,13 +1,15 @@
 ---
 /**
  * §3.5 ProofItem — success check + single line. Composed as a list (the Security
- * grid and the Home trust band). Color-independent (✓ glyph + text).
+ * grid and the Home trust band). Color-independent (check glyph + text). The
+ * check is the custom Icon set's SVG (ARY-451).
  */
+import Icon from './Icon.astro';
 interface Props { items: string[]; }
 const { items } = Astro.props;
 ---
 <ul class="proof-list">
   {items.map((item) => (
-    <li><span class="chk" aria-hidden="true">✓</span><span>{item}</span></li>
+    <li><span class="chk" aria-hidden="true"><Icon name="check" size={17} strokeWidth={2.2} /></span><span>{item}</span></li>
   ))}
 </ul>

@@ -1,0 +1,148 @@
+---
+/**
+ * Device-framed product scenes (ARY-451).
+ *
+ * High-fidelity, on-brand renders of the actual Vaulto app screens, drawn as
+ * inline SVG so they are retina-crisp at any DPR, add ~0 layout shift (the frame
+ * reserves a fixed aspect ratio) and ship a few KB of gzip instead of a raster
+ * payload — no Lighthouse-perf cost. Palette is the literal olive-Calm token
+ * set so the scenes match the live product UI.
+ *
+ * The whole frame is composed as an SVG string and injected with `set:html`,
+ * keeping the heavy vector markup out of Astro's JSX parser. `label` is the
+ * accessible description and acts as the screenshot's alt text.
+ */
+interface Props {
+  scene: 'overview' | 'inventory' | 'documents' | 'capture';
+  frame?: 'browser' | 'phone';
+  label: string;
+  class?: string;
+}
+const { scene, frame = 'browser', label, class: cls = '' } = Astro.props;
+
+// olive-Calm tokens (literal — SVG fills can't read CSS vars reliably)
+const C = {
+  primary: '#4F6230', accent: '#B4542F', surface: '#FAF6EF', card: '#FFFFFF',
+  muted: '#F0EADD', hair: '#E4DCCB', ink: '#272C20', ink2: '#5C6150', success: '#2F6D4E',
+};
+const bar = (x, y, w, h = 7, fill = C.muted, r = 3.5) =>
+  `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${r}" fill="${fill}"/>`;
+
+// — Screen content per scene (own 320×320 coordinate space) —
+const SCENES = {
+  overview: `
+    ${bar(20, 22, 90, 8, C.hair)}
+    <text x="20" y="62" font-family="Inter,sans-serif" font-size="30" font-weight="700" fill="${C.ink}">$2.84M</text>
+    ${bar(20, 78, 120, 7, C.muted)}
+    <rect x="20" y="104" width="84" height="58" rx="10" fill="${C.card}" stroke="${C.hair}"/>
+    <circle cx="36" cy="122" r="9" fill="${C.muted}"/><path d="M31 122l4 4 6-7" stroke="${C.primary}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    ${bar(28, 138, 50, 6, C.hair)}${bar(28, 150, 34, 6, C.muted)}
+    <rect x="118" y="104" width="84" height="58" rx="10" fill="${C.card}" stroke="${C.hair}"/>
+    <circle cx="134" cy="122" r="9" fill="${C.muted}"/><path d="M129 122h10M134 117v10" stroke="${C.primary}" stroke-width="2" stroke-linecap="round"/>
+    ${bar(126, 138, 50, 6, C.hair)}${bar(126, 150, 34, 6, C.muted)}
+    <rect x="216" y="104" width="84" height="58" rx="10" fill="${C.card}" stroke="${C.hair}"/>
+    <circle cx="232" cy="122" r="9" fill="${C.muted}"/><path d="M227 124l4-5 3 3 4-6" stroke="${C.accent}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    ${bar(224, 138, 50, 6, C.hair)}${bar(224, 150, 34, 6, C.muted)}
+    <rect x="20" y="182" width="280" height="118" rx="12" fill="${C.card}" stroke="${C.hair}"/>
+    <polygon points="36,272 78,250 116,258 156,224 198,236 240,200 284,210 284,292 36,292" fill="${C.primary}" opacity="0.08"/>
+    <polyline points="36,272 78,250 116,258 156,224 198,236 240,200 284,210" fill="none" stroke="${C.primary}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    ${bar(36, 198, 70, 6, C.hair)}
+  `,
+  inventory: `
+    ${bar(20, 22, 110, 8, C.hair)}
+    <rect x="208" y="16" width="92" height="22" rx="11" fill="${C.primary}"/>
+    <path d="M223 27h12M229 21v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    ${bar(240, 24, 44, 6, '#DCE4CC')}
+    ${[0, 1, 2, 3].map((i) => {
+      const y = 56 + i * 60;
+      const accentRow = i === 1;
+      return `<rect x="20" y="${y}" width="280" height="50" rx="10" fill="${C.card}" stroke="${accentRow ? C.primary : C.hair}" stroke-width="${accentRow ? 1.4 : 1}"/>
+        <rect x="32" y="${y + 11}" width="28" height="28" rx="8" fill="${C.muted}"/>
+        <circle cx="46" cy="${y + 25}" r="6.5" fill="none" stroke="${C.primary}" stroke-width="1.8"/>
+        ${bar(74, y + 13, 120 - i * 14, 7, C.hair)}${bar(74, y + 28, 80, 6, C.muted)}
+        <rect x="232" y="${y + 16}" width="56" height="18" rx="9" fill="${C.success}" opacity="0.12"/>
+        <path d="M243 ${y + 25}l3 3 6-6" stroke="${C.success}" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }).join('')}
+  `,
+  documents: `
+    ${bar(20, 22, 96, 8, C.hair)}
+    ${[0, 1, 2, 3, 4, 5].map((i) => {
+      const x = 20 + (i % 3) * 96;
+      const y = 50 + Math.floor(i / 3) * 124;
+      return `<rect x="${x}" y="${y}" width="84" height="108" rx="10" fill="${C.card}" stroke="${C.hair}"/>
+        <rect x="${x + 16}" y="${y + 14}" width="52" height="40" rx="6" fill="${C.surface}" stroke="${C.hair}"/>
+        <path d="M${x + 56} ${y + 14}v10h10" fill="none" stroke="${C.hair}"/>
+        ${bar(x + 24, y + 26, 30, 4, C.muted)}${bar(x + 24, y + 34, 36, 4, C.muted)}${bar(x + 24, y + 42, 22, 4, C.muted)}
+        ${bar(x + 16, y + 66, 52, 6, C.hair)}${bar(x + 16, y + 80, 34, 5, C.muted)}
+        <circle cx="${x + 68}" cy="${y + 92}" r="9" fill="${C.success}" opacity="0.12"/>
+        <path d="M${x + 64} ${y + 92}l3 3 5-5" stroke="${C.success}" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }).join('')}
+  `,
+  capture: `
+    <rect x="44" y="20" width="232" height="200" rx="14" fill="${C.surface}" stroke="${C.hair}"/>
+    <rect x="70" y="44" width="180" height="150" rx="8" fill="${C.card}" stroke="${C.hair}"/>
+    ${bar(86, 60, 90, 8, C.hair)}${bar(86, 78, 148, 6, C.muted)}${bar(86, 92, 130, 6, C.muted)}${bar(86, 106, 140, 6, C.muted)}
+    <path d="M60 40v-8a6 6 0 0 1 6-6h6M254 40v-8a6 6 0 0 0-6-6h-6M60 200v8a6 6 0 0 0 6 6h6M254 200v8a6 6 0 0 1-6 6h-6" stroke="${C.primary}" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <rect x="40" y="244" width="240" height="48" rx="12" fill="${C.card}" stroke="${C.primary}" stroke-width="1.3"/>
+    <circle cx="66" cy="268" r="12" fill="${C.primary}" opacity="0.12"/>
+    <path d="M61 268l3.5 3.5L72 264" stroke="${C.primary}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    ${bar(88, 258, 120, 7, C.hair)}${bar(88, 272, 90, 6, C.muted)}
+    <rect x="232" y="256" width="34" height="24" rx="8" fill="${C.primary}"/>
+    <text x="249" y="272" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">AI</text>
+  `,
+};
+const screen = SCENES[scene] ?? SCENES.overview;
+
+// Sidebar nav rows for the browser shell
+const navRows = [0, 1, 2, 3].map((i) => {
+  const active = i === 0;
+  return `<rect x="20" y="${112 + i * 40}" width="132" height="26" rx="8" fill="${active ? C.muted : 'transparent'}"/>
+    <circle cx="36" cy="${125 + i * 40}" r="5" fill="none" stroke="${active ? C.primary : C.ink2}" stroke-width="1.6"/>
+    <rect x="50" y="${120 + i * 40}" width="${76 - i * 8}" height="9" rx="4.5" fill="${active ? C.primary : C.hair}" opacity="${active ? 0.5 : 1}"/>`;
+}).join('');
+
+const browserSvg = `
+  <svg viewBox="0 0 760 520" width="760" height="520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="758" height="518" rx="16" fill="${C.card}" stroke="${C.hair}"/>
+    <path d="M1 17a16 16 0 0 1 16-16h726a16 16 0 0 1 16 16v30H1Z" fill="${C.surface}"/>
+    <circle cx="28" cy="24" r="5" fill="#D9C7B8"/><circle cx="46" cy="24" r="5" fill="#E4DCCB"/><circle cx="64" cy="24" r="5" fill="#CBD3B6"/>
+    <rect x="92" y="14" width="576" height="20" rx="10" fill="${C.card}" stroke="${C.hair}"/>
+    <text x="108" y="28" font-family="Inter,sans-serif" font-size="11" fill="${C.ink2}">app.myvaulto.com</text>
+    <line x1="1" y1="47" x2="759" y2="47" stroke="${C.hair}"/>
+    <rect x="1" y="47" width="170" height="472" fill="${C.surface}"/>
+    <rect x="20" y="68" width="22" height="22" rx="6" fill="${C.primary}"/>
+    <rect x="52" y="73" width="74" height="11" rx="5.5" fill="${C.hair}"/>
+    ${navRows}
+    <svg x="171" y="48" width="589" height="471" viewBox="0 0 320 320" preserveAspectRatio="xMidYMin meet">${screen}</svg>
+  </svg>`;
+
+const phoneSvg = `
+  <svg viewBox="0 0 300 600" width="300" height="600" preserveAspectRatio="xMidYMid meet" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <rect x="6" y="6" width="288" height="588" rx="44" fill="${C.ink}"/>
+    <rect x="14" y="14" width="272" height="572" rx="38" fill="${C.surface}"/>
+    <rect x="112" y="26" width="76" height="18" rx="9" fill="${C.ink}"/>
+    <svg x="22" y="56" width="256" height="488" viewBox="0 0 320 320" preserveAspectRatio="xMidYMin meet">${screen}</svg>
+    <rect x="120" y="566" width="60" height="5" rx="2.5" fill="${C.hair}"/>
+  </svg>`;
+
+const frameSvg = frame === 'browser' ? browserSvg : phoneSvg;
+---
+<figure
+  class={`pshot pshot-${frame} ${cls}`}
+  role="img"
+  aria-label={label}
+  set:html={frameSvg}
+/>
+
+<style>
+  .pshot { margin: 0; width: 100%; }
+  .pshot :global(svg) { width: 100%; height: auto; display: block; }
+  .pshot-browser :global(svg) {
+    border-radius: 16px;
+    box-shadow: 0 18px 48px rgba(28, 42, 46, 0.16), 0 2px 8px rgba(28, 42, 46, 0.06);
+  }
+  .pshot-phone { max-width: 280px; margin-inline: auto; }
+  .pshot-phone :global(svg) {
+    filter: drop-shadow(0 18px 40px rgba(28, 42, 46, 0.22));
+  }
+</style>
