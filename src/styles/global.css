@@ -344,8 +344,11 @@ section { padding-block: 56px; }
   .t-display { font-size: 32px; }
   .t-title { font-size: 24px; }
 
-  /* Nav collapses to brand + CTA; rest behind the drawer */
-  .nav .nav-link { display: none; }
+  /* Nav collapses to brand + hamburger; links AND the inline CTA move into the
+     drawer (which carries its own "Get started free"), so the bar can't overflow
+     and the toggle stays on-screen (ARY-420). */
+  .nav .nav-link,
+  .nav .btn-nav { display: none; }
   .nav-toggle {
     display: inline-flex; align-items: center; justify-content: center;
     width: 44px; height: 44px; background: transparent; border: 1px solid var(--hairline);
