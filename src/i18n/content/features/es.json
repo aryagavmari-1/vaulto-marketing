@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funciones",
-    "description": ""
+    "description": "Lo que Vaulto hace hoy: inventario de bienes, una bóveda privada de documentos, captura asistida por IA, colecciones y una vista clara de todo lo que posee tu familia."
   },
   "crumbs": {
     "home": "Inicio",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Bóveda de documentos",
-      "body": ""
+      "body": "Guarda escrituras, pólizas, testamentos y extractos de forma segura, vinculados a los bienes a los que pertenecen. Sube archivos de hasta 20MB, que se conservan en almacenamiento privado y solo son accesibles mediante enlaces firmados y de corta duración."
     },
     {
       "title": "Captura asistida por IA",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Exporta cuando quieras — tus datos son tuyos",
-      "body": ""
+      "body": "Tus datos son tuyos: exporta en cualquier momento una copia completa y legible por máquina de tus registros (JSON, CSV o PDF). Sin ataduras. (La descarga masiva de tus archivos originales está en nuestra hoja de ruta.)"
     }
   ],
   "foot": "Solo mostramos lo que ya está disponible. Cuando lancemos algo nuevo, aparecerá aquí — no antes.",

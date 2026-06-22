@@ -17,5 +17,5 @@
   "footer.signIn": "Se connecter →",
   "lang.switch": "Langue",
   "a11y.skip": "Aller au contenu",
-  "trust.strip": ""
+  "trust.strip": "Chiffré en transit (TLS) · Vos données ne sont jamais vendues · Conçu pour les familles"
 }

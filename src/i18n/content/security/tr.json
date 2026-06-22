@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Güvenlik ve Gizlilik",
-    "description": ""
+    "description": "Vaulto ailenizin bilgilerini nasıl korur: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamadaki dosyalar, hash'lenmiş parolalar ve sıkı erişim denetimi. Sade bir dille, abartısız."
   },
   "crumbs": {
     "home": "Ana Sayfa",

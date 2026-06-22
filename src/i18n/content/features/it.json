@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funzionalità",
-    "description": ""
+    "description": "Cosa fa Vaulto oggi: inventario dei beni, una cassaforte privata per i documenti, acquisizione assistita dall'IA, raccolte e una visione chiara di tutto ciò che possiede la tua famiglia."
   },
   "crumbs": {
     "home": "Home",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Cassaforte documentale",
-      "body": ""
+      "body": "Conserva atti, polizze, testamenti ed estratti in modo sicuro, collegati ai beni a cui appartengono. Carica file fino a 20MB, conservati in uno spazio di archiviazione privato e raggiungibili solo tramite link firmati e di breve durata."
     },
     {
       "title": "Acquisizione assistita dall'AI",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Esporta in qualsiasi momento — i tuoi dati sono tuoi",
-      "body": ""
+      "body": "I tuoi dati sono tuoi: esporta in qualsiasi momento una copia completa e leggibile dalla macchina dei tuoi dati (JSON, CSV o PDF). Nessun vincolo. (Il download in blocco dei tuoi file originali è nella nostra roadmap.)"
     }
   ],
   "foot": "Elenchiamo solo ciò che è già disponibile. Quando rilasciamo qualcosa di nuovo, appare qui — non prima.",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Functies",
-    "description": ""
+    "description": "Wat Vaulto vandaag doet: inventaris van bezittingen, een privékluis voor documenten, AI-ondersteunde vastlegging, collecties en één helder overzicht van alles wat je gezin bezit."
   },
   "crumbs": {
     "home": "Home",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Documentkluis",
-      "body": ""
+      "body": "Bewaar akten, polissen, testamenten en afschriften veilig en gekoppeld aan de bezittingen waar ze bij horen. Upload bestanden tot 20MB, bewaard in privéopslag en alleen bereikbaar via kortlevende, ondertekende links."
     },
     {
       "title": "AI-ondersteunde vastlegging",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Altijd exporteren — je gegevens zijn van jou",
-      "body": ""
+      "body": "Je gegevens zijn van jou — exporteer op elk moment een volledige, machineleesbare kopie van je gegevens (JSON, CSV of PDF). Geen lock-in. (Bulkdownload van je oorspronkelijk geüploade bestanden staat op onze roadmap.)"
     }
   ],
   "foot": "We vermelden alleen wat live staat. Als we iets nieuws uitbrengen, verschijnt het hier — niet eerder.",

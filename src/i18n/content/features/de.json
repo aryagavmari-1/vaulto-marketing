@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funktionen",
-    "description": ""
+    "description": "Was Vaulto heute kann: Vermögensinventar, ein privater Dokumententresor, KI-gestützte Erfassung, Sammlungen und ein klarer Überblick über alles, was deine Familie besitzt."
   },
   "crumbs": {
     "home": "Startseite",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Dokumententresor",
-      "body": ""
+      "body": "Bewahre Urkunden, Policen, Testamente und Auszüge sicher auf – verknüpft mit den Vermögenswerten, zu denen sie gehören. Lade Dateien bis 20MB hoch, die in privatem Speicher liegen und nur über kurzlebige, signierte Links erreichbar sind."
     },
     {
       "title": "KI-gestützte Erfassung",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Jederzeit exportieren — deine Daten gehören dir",
-      "body": ""
+      "body": "Deine Daten gehören dir – exportiere jederzeit eine vollständige, maschinenlesbare Kopie deiner Einträge (JSON, CSV oder PDF). Keine Bindung. (Der Massen-Download deiner ursprünglich hochgeladenen Dateien steht auf unserer Roadmap.)"
     }
   ],
   "foot": "Wir listen nur auf, was live ist. Wenn wir etwas Neues veröffentlichen, erscheint es hier — nicht vorher.",

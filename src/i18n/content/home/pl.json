@@ -4,11 +4,11 @@
     "description": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — prywatnie, z silnymi zabezpieczeniami. Zacznij za darmo."
   },
   "hero": {
-    "eyebrow": "",
+    "eyebrow": "Prywatne i bezpieczne u podstaw",
     "heading": "Jedno spokojne, bezpieczne miejsce na wszystko, co posiada Twoja rodzina.",
     "sub": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — żeby Twoja rodzina zawsze wiedziała, co jest na miejscu i co zrobić dalej.",
     "trust": [
-      "",
+      "Szyfrowane podczas przesyłania (TLS)",
       "Twoje dane nigdy nie są sprzedawane",
       "Stworzone dla rodzin"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "document",
           "label": "Testament i dokumenty spadkowe",
-          "sub": ""
+          "sub": "3 pliki · prywatna przestrzeń"
         },
         {
           "icon": "chart",
@@ -31,7 +31,7 @@
         }
       ],
       "secured": "Zabezpieczone",
-      "lock": ""
+      "lock": "Prywatna przestrzeń"
     }
   },
   "value": {
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Stworzone po to, by można było powierzyć mu Twoje najbardziej wrażliwe informacje.",
-    "lead": "",
+    "lead": "Twoje dane są szyfrowane w drodze do nas, Twoja baza danych jest szyfrowana w spoczynku, a Twoje pliki są przechowywane w prywatnej przestrzeni. Dostęp jest chroniony i nigdy nie sprzedajemy Twoich informacji.",
     "cta": "Zobacz dokładnie, jak dbamy o ich bezpieczeństwo →",
     "proof": [
-      "",
+      "Szyfrowane podczas przesyłania (TLS); pliki w prywatnej przestrzeni",
       "Hasła są haszowane — nawet my nie możemy ich odczytać",
       "Krótkotrwałe sesje chronione przez przeglądarkę",
       "Możesz zobaczyć tylko swój własny sejf",

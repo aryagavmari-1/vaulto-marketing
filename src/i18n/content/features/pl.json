@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funkcje",
-    "description": ""
+    "description": "Co Vaulto potrafi dziś: inwentarz majątku, prywatny sejf na dokumenty, wprowadzanie wspomagane przez SI, kolekcje i jeden przejrzysty widok wszystkiego, co posiada Twoja rodzina."
   },
   "crumbs": {
     "home": "Strona główna",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Sejf na dokumenty",
-      "body": ""
+      "body": "Przechowuj akty, polisy, testamenty i wyciągi bezpiecznie, powiązane z majątkiem, do którego należą. Przesyłaj pliki do 20MB, przechowywane w prywatnej przestrzeni i dostępne tylko przez krótkotrwałe, podpisane łącza."
     },
     {
       "title": "Przechwytywanie wspomagane przez AI",
@@ -35,7 +35,7 @@
     },
     {
       "title": "Eksport w każdej chwili — Twoje dane należą do Ciebie",
-      "body": ""
+      "body": "Twoje dane należą do Ciebie — w każdej chwili wyeksportuj pełną, czytelną maszynowo kopię swoich danych (JSON, CSV lub PDF). Bez uzależnienia. (Masowe pobieranie oryginalnie przesłanych plików jest w naszych planach.)"
     }
   ],
   "foot": "Wymieniamy tylko to, co jest już dostępne. Gdy udostępnimy coś nowego, pojawi się to tutaj — nie wcześniej.",
