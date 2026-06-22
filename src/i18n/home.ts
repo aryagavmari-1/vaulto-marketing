@@ -134,7 +134,80 @@ type DeepPartial<T> = T extends (infer U)[]
  */
 const overlays: Record<Locale, DeepPartial<HomeContent>> = {
   en: {},
-  es: {},
+  // ES Home (ARY-407, Path A / $0 — CEO-approved 2026-06-22). Vaulto Calm voice,
+  // warm "tú", brand "Vaulto" + "bóveda" (vault) locked per glossary.
+  // INTENTIONALLY OMITTED → English fallback until ARY-419 reconciles the English
+  // "encrypted … at rest" claim (trust strip vs Security page): `hero.trust`,
+  // `hero.art.lock`, `trustBand.lead`, `trustBand.proof`. Once the corrected
+  // English lands I translate those + `ui.ts` `trust.strip`, then flip
+  // PAGE_LOCALES '/' → ['en','es'] to publish (do NOT publish before then —
+  // the hero must not assert a claim under active correction in a 2nd language).
+  es: {
+    meta: {
+      title: 'Un hogar tranquilo y seguro para todo lo que tu familia posee',
+      description:
+        'Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — de forma privada y con seguridad sólida. Empieza gratis.',
+    },
+    hero: {
+      eyebrow: '🔒 Privado y cifrado desde el diseño',
+      heading: 'Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.',
+      sub: 'Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.',
+      art: {
+        cards: [
+          { icon: '🏡', label: 'Vivienda familiar', sub: 'Propiedad · escritura y seguro adjuntos' },
+          { icon: '📄', label: 'Testamento y documentos del patrimonio', sub: '3 archivos · bóveda cifrada' },
+          { icon: '📈', label: 'Inversiones y pensiones', sub: 'Colección · 5 elementos' },
+        ],
+        secured: 'Protegido',
+      },
+    },
+    value: {
+      heading: 'Todo en un único lugar de confianza',
+      sub: 'Sin hojas de cálculo. Sin cajones desordenados. Solo claridad.',
+      cards: [
+        {
+          icon: '🗂️',
+          title: 'Conoce lo que posees.',
+          body: 'Propiedades, cuentas, inversiones, objetos de valor, pensiones — reunido en un solo lugar organizado, no disperso entre cajones y hojas de cálculo.',
+        },
+        {
+          icon: '🛡️',
+          title: 'Mantenlo a salvo.',
+          body: 'Guarda los documentos que importan — escrituras, pólizas, extractos — de forma privada y con seguridad sólida.',
+        },
+        {
+          icon: '🧭',
+          title: 'Planifica con confianza.',
+          body: 'Ve el panorama completo y obtén una visión clara y gratuita cuando quieras pensar en la herencia, el testamento o lo que viene después.',
+        },
+      ],
+    },
+    steps: {
+      heading: 'Listo en tres pasos',
+      items: [
+        {
+          title: 'Añade lo que posees.',
+          body: 'Haz una foto o sube un documento — Vaulto puede leerlo y sugerir los datos, para que no tengas que escribirlo todo a mano.',
+        },
+        {
+          title: 'Deja que Vaulto lo organice.',
+          body: 'Agrupa los bienes en colecciones, añade los datos clave y mantén los documentos adjuntos donde corresponde.',
+        },
+        {
+          title: 'Ve el panorama completo.',
+          body: 'Los bienes de tu familia en una sola vista — listos para compartir con las personas que importan y para planificar el futuro.',
+        },
+      ],
+    },
+    trustBand: {
+      heading: 'Diseñado para merecer la confianza de tu información más sensible.',
+      cta: 'Mira exactamente cómo lo mantenemos a salvo →',
+    },
+    finalCta: {
+      title: 'Crea hoy la bóveda de tu familia.',
+      body: 'Gratis para empezar. Sin hojas de cálculo.',
+    },
+  },
   fr: {},
   de: {},
 };

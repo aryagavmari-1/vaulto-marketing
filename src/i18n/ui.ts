@@ -45,7 +45,29 @@ export type UIKey = keyof typeof en;
  */
 const overlays: Record<Locale, Partial<Record<UIKey, string>>> = {
   en: {},
-  es: {},
+  // ES chrome (ARY-407, Path A / $0 — CEO-approved 2026-06-22). `trust.strip` is
+  // intentionally left to English fallback: it carries the "encrypted … at rest"
+  // claim under reconciliation in ARY-419; it gets translated once the corrected
+  // English source lands, alongside the Home trust-band strings.
+  es: {
+    'nav.home': 'Inicio',
+    'nav.howItWorks': 'Cómo funciona',
+    'nav.features': 'Funciones',
+    'nav.planning': 'Planificación',
+    'nav.security': 'Seguridad',
+    'nav.faq': 'Preguntas frecuentes',
+    'nav.blog': 'Blog',
+    'cta.getStarted': 'Empieza gratis',
+    'cta.seeHow': 'Ver cómo funciona',
+    'cta.startVault': 'Crea tu bóveda — gratis',
+    'cta.explorePlanning': 'Explora la planificación',
+    'footer.tagline': 'Un lugar tranquilo y seguro para todo lo que tu familia posee.',
+    'footer.security': 'Seguridad y privacidad',
+    'footer.privacy': 'Privacidad',
+    'footer.rights': 'Todos los derechos reservados.',
+    'footer.signIn': 'Iniciar sesión →',
+    'lang.switch': 'Idioma',
+  },
   fr: {},
   de: {},
 };
