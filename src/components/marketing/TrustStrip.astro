@@ -1,0 +1,16 @@
+---
+/**
+ * §3.2 TrustStrip — inline row of ✓-prefixed proof phrases, olive-dot separated.
+ * Color-independent: every state carries a ✓ glyph + text, never color alone.
+ */
+interface Props { items: string[]; under?: boolean; }
+const { items, under = false } = Astro.props;
+---
+<div class={`trust-strip${under ? ' under' : ''}`}>
+  {items.map((item, i) => (
+    <>
+      {i > 0 && <span class="dot" aria-hidden="true"></span>}
+      <span class="item"><span class="chk" aria-hidden="true">✓</span>{item}</span>
+    </>
+  ))}
+</div>

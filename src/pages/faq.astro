@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro';
+import { BRAND } from '../config/brand';
+import { faqItemsFor } from '../config/structured-data';
+import Eyebrow from '../components/marketing/Eyebrow.astro';
+
+const crumbs = [
+  { name: 'Home', url: `${BRAND.url}/` },
+  { name: 'FAQ', url: `${BRAND.url}/faq/` },
+];
+// One source: the page body and the FAQPage JSON-LD both read FAQ_ITEMS.
+const items = faqItemsFor('en');
+---
+<Base
+  title="Frequently asked questions"
+  description="Answers about Vaulto — is my data safe, what it costs, what you can store, and how AI-assisted capture saves you the typing."
+  path="/faq/"
+  faq={items}
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">FAQ</Eyebrow>
+      <h1 class="t-display">Questions, answered plainly.</h1>
+      <p class="intro t-bodyL">
+        Straight answers about your data, what it costs, and how Vaulto works. Still curious?
+        Read <a href="/security/">how we keep it safe</a> or <a href="/how-it-works/">how it works</a>.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="faq-list">
+        {items.map((it, i) => (
+          <div class="faq-item">
+            <h2>
+              <button class="faq-q" type="button" aria-expanded={i === 0 ? 'true' : 'false'} aria-controls={`faq-a-${i}`} id={`faq-q-${i}`}>
+                <span>{it.q}</span>
+                <span class="caret" aria-hidden="true">⌄</span>
+              </button>
+            </h2>
+            <div class="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
+              <p>{it.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    document.querySelectorAll('.faq-q').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+    });
+  </script>
+</Base>

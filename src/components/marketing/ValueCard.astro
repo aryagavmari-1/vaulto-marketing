@@ -1,0 +1,12 @@
+---
+/**
+ * §3.4 ValueCard — white card, muted icon chip, heading + body.
+ */
+interface Props { icon: string; title: string; }
+const { icon, title } = Astro.props;
+---
+<div class="vcard card">
+  <div class="ico" aria-hidden="true">{icon}</div>
+  <h3 class="t-heading">{title}</h3>
+  <p class="t-body"><slot /></p>
+</div>

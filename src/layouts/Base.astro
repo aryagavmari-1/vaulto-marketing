@@ -49,8 +49,9 @@ const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
     />
   </head>
   <body>
-    <Header />
-    <main>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header path={path} />
+    <main id="main">
       <slot />
     </main>
     <Footer />

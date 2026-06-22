@@ -1,0 +1,20 @@
+---
+/**
+ * §3.8 FinalCta — olive-filled rounded panel, white text, inverted button.
+ */
+import MarketingButton from './MarketingButton.astro';
+import { BRAND } from '../../config/brand';
+interface Props { title: string; body: string; cta?: string; href?: string; ctaId?: string; }
+const {
+  title, body, cta = 'Get started free', href = BRAND.app, ctaId = 'final_cta',
+} = Astro.props;
+---
+<section>
+  <div class="wrap">
+    <div class="final">
+      <h2 class="t-title">{title}</h2>
+      <p class="t-bodyL">{body}</p>
+      <MarketingButton variant="inverted" href={href} cta={ctaId} outbound="app">{cta}</MarketingButton>
+    </div>
+  </div>
+</section>

@@ -1,23 +1,63 @@
 ---
+/**
+ * Global header (ARY-404 §2). Sticky, translucent surface, olive logo lockup.
+ * Security sits in the PRIMARY nav — trust is never buried. Mobile collapses to
+ * brand + CTA with a hamburger drawer.
+ */
 import { BRAND } from '../config/brand';
+import MarketingButton from './marketing/MarketingButton.astro';
+
+interface Props { path?: string; }
+const { path = '/' } = Astro.props;
+
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/security/', label: 'Security' },
+  { href: '/how-it-works/', label: 'How it works' },
+  { href: '/features/', label: 'Features' },
+  { href: '/planning/', label: 'Planning' },
+  { href: '/faq/', label: 'FAQ' },
+];
+const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
+const isActive = (href: string) => norm(href) === norm(path);
 ---
-{BRAND.provisional && (
-  <div class="badge-provisional">
-    Provisional brand &amp; domain — pending board approval. Name/domain swap in one file (<code>src/config/brand.ts</code>).
-  </div>
-)}
-<header class:list={["site-header", BRAND.provisional && "with-banner"]}>
-  <div class="container nav">
-    <a class="brandmark" href="/">
-      <span class="brand-dot" aria-hidden="true"></span>
-      {BRAND.name}
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label={`${BRAND.name} home`}>
+      <span class="logo" aria-hidden="true"></span>{BRAND.name}
     </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="/#how">How it works</a>
-      <a href="/#advisory">Advisory</a>
-      <a href="/security/">Security</a>
-      <a href="/blog/">Blog</a>
-      <a class="btn btn-primary" href="/#waitlist" data-cta="nav_waitlist" style="padding:9px 18px;">Join waitlist</a>
+    <nav class="nav" aria-label="Primary">
+      {links.map((l) => (
+        <a class:list={['nav-link', isActive(l.href) && 'active']}
+           href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+      ))}
+      <MarketingButton href={BRAND.app} nav cta="nav_get_started" outbound="app">Get started free</MarketingButton>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer" data-drawer-toggle>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
+<div class="drawer" id="mobile-drawer" hidden>
+  <nav aria-label="Mobile">
+    {links.map((l) => (
+      <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+    ))}
+    <MarketingButton href={BRAND.app} cta="drawer_get_started" outbound="app">Get started free</MarketingButton>
+  </nav>
+</div>
+<script is:inline>
+  (() => {
+    const toggle = document.querySelector('[data-drawer-toggle]');
+    const drawer = document.getElementById('mobile-drawer');
+    if (!toggle || !drawer) return;
+    toggle.addEventListener('click', () => {
+      const open = drawer.hasAttribute('open');
+      if (open) { drawer.removeAttribute('open'); drawer.setAttribute('hidden', ''); }
+      else { drawer.setAttribute('open', ''); drawer.removeAttribute('hidden'); }
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+  })();
+</script>

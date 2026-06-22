@@ -1,17 +1,131 @@
 ---
 import Base from '../layouts/Base.astro';
-import Hero from '../components/Hero.astro';
-import Pillars from '../components/Pillars.astro';
-import CaptureDemo from '../components/CaptureDemo.astro';
-import Advisory from '../components/Advisory.astro';
-import Trust from '../components/Trust.astro';
-import Waitlist from '../components/Waitlist.astro';
+import { BRAND } from '../config/brand';
+import Eyebrow from '../components/marketing/Eyebrow.astro';
+import MarketingButton from '../components/marketing/MarketingButton.astro';
+import TrustStrip from '../components/marketing/TrustStrip.astro';
+import ValueCard from '../components/marketing/ValueCard.astro';
+import StepCard from '../components/marketing/StepCard.astro';
+import CalloutBand from '../components/marketing/CalloutBand.astro';
+import ProofList from '../components/marketing/ProofList.astro';
+import ReservedSlot from '../components/marketing/ReservedSlot.astro';
+import FinalCta from '../components/marketing/FinalCta.astro';
+
+const trust = ['Encrypted in transit & at rest', 'Your data is never sold', 'Built for families'];
+const proof = [
+  'Encrypted in transit (TLS) and at rest',
+  "Passwords hashed — even we can't read them",
+  'Short-lived, browser-protected sessions',
+  'You can only ever see your own vault',
+  'We never sell or share your data',
+];
 ---
-<Base path="/">
-  <Hero />
-  <Pillars />
-  <CaptureDemo />
-  <Advisory />
-  <Trust />
-  <Waitlist />
+<Base
+  title="A calm, secure home for everything your family owns"
+  description="Inventory your assets, keep important documents safe, and see your whole picture — privately, with strong security. Get started free."
+  path="/"
+>
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <Eyebrow tone="success">🔒 Private &amp; encrypted by design</Eyebrow>
+          <h1 class="t-display">One calm, secure place for everything your family owns.</h1>
+          <p class="sub t-bodyL">
+            Inventory your assets, keep important documents safe, and see your whole picture —
+            so your family always knows what's there, and what to do next.
+          </p>
+          <div class="cta-row">
+            <MarketingButton href={BRAND.app} cta="hero_get_started" outbound="app">Get started free</MarketingButton>
+            <MarketingButton variant="ghost" href="/how-it-works/" cta="hero_how">See how it works</MarketingButton>
+          </div>
+          <TrustStrip items={trust} under />
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="mini-card">
+            <div class="ico">🏡</div>
+            <div class="meta"><b>Family home</b><span>Property · deed &amp; insurance attached</span></div>
+            <span class="secured">Secured</span>
+          </div>
+          <div class="mini-card">
+            <div class="ico">📄</div>
+            <div class="meta"><b>Will &amp; estate documents</b><span>3 files · encrypted vault</span></div>
+            <span class="secured">Secured</span>
+          </div>
+          <div class="mini-card">
+            <div class="ico">📈</div>
+            <div class="meta"><b>Investments &amp; pensions</b><span>Collection · 5 items</span></div>
+            <span class="secured">Secured</span>
+          </div>
+          <span class="lock-pill">🔒 Encrypted at rest</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Value cards -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="t-title">Everything in one trusted place</h2>
+        <p class="t-bodyL">No spreadsheets. No scattered drawers. Just clarity.</p>
+      </div>
+      <div class="grid-3">
+        <ValueCard icon="🗂️" title="Know what you own.">
+          Property, accounts, investments, valuables, pensions — captured in one organised place,
+          not scattered across drawers and spreadsheets.
+        </ValueCard>
+        <ValueCard icon="🛡️" title="Keep it safe.">
+          Store the documents that matter — deeds, policies, statements — privately, behind strong security.
+        </ValueCard>
+        <ValueCard icon="🧭" title="Plan with confidence.">
+          See the whole picture and get a clear, free overview when you're ready to think about
+          inheritance, wills, or what happens next.
+        </ValueCard>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Steps teaser -->
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="t-title">Up and running in three steps</h2></div>
+      <div class="grid-3">
+        <StepCard n={1} title="Add what you own.">
+          Snap a photo or upload a document — Vaulto can read it and suggest the details, so you're
+          not typing everything by hand.
+        </StepCard>
+        <StepCard n={2} title="Let Vaulto organise it.">
+          Group assets into collections, add the key facts, and keep documents attached where they belong.
+        </StepCard>
+        <StepCard n={3} title="See the whole picture.">
+          Your family's assets in one view — ready to share with the people who matter and to plan ahead.
+        </StepCard>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Trust callout -->
+  <CalloutBand>
+    <div slot="left">
+      <h2 class="t-title">Built to be trusted with your most sensitive information.</h2>
+      <p class="t-bodyL lead">
+        Your data is encrypted on the way to us and where it's stored. Access is protected, and we
+        never sell your information.
+      </p>
+      <MarketingButton variant="ghost" href="/security/" cta="home_security">See exactly how we keep it safe →</MarketingButton>
+    </div>
+    <div slot="right">
+      <ProofList items={proof} />
+    </div>
+  </CalloutBand>
+
+  <!-- 5. Reserved testimonials -->
+  <section>
+    <div class="wrap"><ReservedSlot /></div>
+  </section>
+
+  <!-- 6. Final CTA -->
+  <FinalCta title="Start your family's vault today." body="Free to begin. No spreadsheets required." ctaId="home_final" />
 </Base>

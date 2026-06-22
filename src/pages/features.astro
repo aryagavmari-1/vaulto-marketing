@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import { BRAND } from '../config/brand';
+import Eyebrow from '../components/marketing/Eyebrow.astro';
+import FinalCta from '../components/marketing/FinalCta.astro';
+
+const crumbs = [
+  { name: 'Home', url: `${BRAND.url}/` },
+  { name: 'Features', url: `${BRAND.url}/features/` },
+];
+
+// Honest, shipped-only (ARY-399 §4.4). Not-yet-shipped items are simply absent —
+// never shown as "coming soon" bait.
+const features = [
+  { ico: '🗂️', title: 'Asset inventory', body: 'Record everything you own — property, accounts, investments, valuables, pensions — with the details that matter: value or value-range, location, condition, and the people it concerns.' },
+  { ico: '📄', title: 'Document vault', body: 'Keep deeds, policies, wills, and statements safe and attached to the assets they belong to. Upload files up to 20MB, stored on encrypted infrastructure.' },
+  { ico: '📸', title: 'AI-assisted capture', body: 'Photograph an item or a document and Vaulto reads it, drafting the record for you to confirm or edit. The data entry does itself.' },
+  { ico: '🧺', title: 'Collections', body: 'Group related assets and documents the way your family actually thinks about them — a property and its paperwork, an estate, a person.' },
+  { ico: '🧭', title: 'The whole picture', body: "See everything in one organised view, and get a free overview when you're ready to plan ahead — inheritance, a will, or what happens next." },
+];
+---
+<Base
+  title="Features"
+  description="What Vaulto does today: asset inventory, an encrypted document vault, AI-assisted capture, collections, and one clear view of everything your family owns."
+  path="/features/"
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="success">Features</Eyebrow>
+      <h1 class="t-display">Everything you need to know what you own.</h1>
+      <p class="intro t-bodyL">
+        A focused set of tools that do real work today. Here's what's shipped — no roadmap promises,
+        no "coming soon" bait.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="feature-list">
+        {features.map((f) => (
+          <div class="feature-row card">
+            <div class="ico" aria-hidden="true">{f.ico}</div>
+            <div>
+              <h3 class="t-heading">{f.title}</h3>
+              <p class="t-body">{f.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="feature-foot">
+        We only list what's live. When we ship something new, it shows up here — not before.
+      </p>
+    </div>
+  </section>
+
+  <FinalCta title="See it with your own things." body="Get started free and add your first few assets in minutes." ctaId="features_final" />
+</Base>

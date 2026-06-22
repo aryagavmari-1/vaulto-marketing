@@ -16,6 +16,10 @@ export const BRAND = {
   // `url` is the canonical origin used by Astro/sitemap/OG.
   domain: 'myvaulto.com',
   url: 'https://myvaulto.com',
+  // The live product the marketing CTAs hand off to. "Get started free" and
+  // the footer "Sign in →" link point here (ARY-404 §2). Single source so a
+  // domain change is one edit.
+  app: 'https://app.myvaulto.com',
 
   // Master tagline (ARY-23 §4 #1) — clearest JTBD, also the hero headline.
   tagline: 'Everything your family owns, in one private place.',

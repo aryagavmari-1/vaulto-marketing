@@ -1,69 +1,83 @@
 ---
 import Base from '../layouts/Base.astro';
 import { BRAND } from '../config/brand';
+import Eyebrow from '../components/marketing/Eyebrow.astro';
+
+const crumbs = [
+  { name: 'Home', url: `${BRAND.url}/` },
+  { name: 'Security & Privacy', url: `${BRAND.url}/security/` },
+];
+
+const protections = [
+  { ico: '🔒', title: 'Encrypted in transit.', body: 'Every connection to Vaulto uses TLS (HTTPS), so your data is encrypted as it travels between you and us.' },
+  { ico: '🗄️', title: 'Encrypted at rest.', body: 'Your information and documents are stored on encrypted infrastructure — managed database and object storage.' },
+  { ico: '🔑', title: 'Passwords never stored plainly.', body: "We hash your password with a strong, modern algorithm (scrypt) — even we can't read it." },
+  { ico: '⏳', title: 'Short-lived sessions.', body: 'Sign-in tokens are short-lived and kept in memory; the token that keeps you signed in lives in a secure, script-proof cookie.' },
+  { ico: '🚦', title: 'Protected against abuse.', body: 'We rate-limit sign-in and other sensitive actions to defend against automated attacks.' },
+  { ico: '👤', title: 'Access controls.', body: 'You can only see and edit your own vault. Our systems enforce this on every request.' },
+];
+
+const promises = [
+  { big: '🚫', title: 'We never sell your data.', body: 'Full stop.' },
+  { big: '🤝', title: "We don't share to advertise.", body: "Your information isn't handed to third parties to market to you." },
+  { big: '🎛️', title: "You're in control.", body: 'You decide what you add — and what you remove.' },
+];
 ---
-<Base title="Security" path="/security/" description={`How ${BRAND.name} protects your family's data.`}>
-  <section class="section">
-    <div class="container prose">
-      <span class="eyebrow">Trust</span>
-      <h1>Private by design.</h1>
-      <p class="lead">
-        Your family's financial life is some of the most sensitive information you have.
-        Here's plainly how {BRAND.name} protects it — and what we don't yet claim.
+<Base
+  title="Security & Privacy"
+  description="How Vaulto protects your family's information — encryption in transit and at rest, hashed passwords, strict access control. Plain language, no overclaim."
+  path="/security/"
+  breadcrumbs={crumbs}
+>
+  <section class="s-hero">
+    <div class="wrap">
+      <Eyebrow tone="info">🛡️ Security &amp; privacy</Eyebrow>
+      <h1 class="t-display">Your family's information, protected.</h1>
+      <p class="intro t-bodyL">
+        Vaulto holds sensitive details — what you own, where it is, the documents that prove it.
+        We treat that responsibility seriously. Here's exactly how we protect it, in plain language.
       </p>
-      <p class="updated">Last updated June 2026</p>
+    </div>
+  </section>
 
-      <h2>What we do today</h2>
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><h2 class="t-title">How we protect your data</h2></div>
+      <div class="grid-3">
+        {protections.map((p) => (
+          <div class="pcard card">
+            <div class="ico" aria-hidden="true">{p.ico}</div>
+            <h3 class="t-heading">{p.title}</h3>
+            <p class="t-body">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
-      <h3>Your vault is isolated to you</h3>
-      <p>
-        Every request is checked against your account. Your records are scoped to your vault and
-        verified for ownership before anything is returned — one user's data is never served to
-        another.
-      </p>
+  <div class="promise callout">
+    <div class="wrap" style="display:block;">
+      <h2 class="t-title">Our privacy promises</h2>
+      <div class="promise-grid">
+        {promises.map((p) => (
+          <div class="promise-item">
+            <div class="big" aria-hidden="true">{p.big}</div>
+            <h3 class="t-heading">{p.title}</h3>
+            <p class="t-body">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
 
-      <h3>You control every share, and you can revoke it</h3>
-      <p>
-        Nothing is shared unless you grant it. When you create a referral package or share with a
-        professional, you choose what's included, and consent is recorded with a clear scope. You
-        can revoke access at any time, and the revocation is tracked.
-      </p>
-
-      <h3>We keep an audit trail</h3>
-      <p>
-        Key actions on your vault are recorded — what happened, when, and on which vault — so
-        there's an accountable history of access and changes.
-      </p>
-
-      <h3>Your sign-in is protected</h3>
-      <p>
-        Passwords are hashed with scrypt and verified using a timing-safe comparison. We never
-        store your password in plain text.
-      </p>
-
-      <h3>Document links are time-limited</h3>
-      <p>
-        When you open or share a stored document, access runs through a short-lived signed link
-        that expires — links don't live forever.
-      </p>
-
-      <h3>We don't sell your data</h3>
-      <p>
-        Your vault exists to serve you and the people you choose to share it with. We do not sell
-        your personal or financial data.
-      </p>
-
-      <h2>What we don't claim (yet)</h2>
-      <p>
-        We'd rather be honest than impressive. Today we do <strong>not</strong> claim
-        application-level encryption-at-rest, "bank-grade" or "military-grade" encryption, or any
-        third-party security certification (such as SOC 2 or ISO). As we add and independently
-        validate further protections, we'll update this page — and we'll only say what's true.
-      </p>
-
-      <h2>Questions</h2>
-      <p>
-        For privacy or security questions, contact us at
+  <section>
+    <div class="wrap">
+      <p class="honesty">
+        <b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in
+        transit and at rest, hashed passwords, strict access control. We deliberately do
+        <b>not</b> claim "zero-knowledge," "bank-level," or any certification we haven't earned.
+        When we add app-layer encryption, an audit, or one-tap data export, this page will say so.
+        For privacy or security questions, contact
         <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
       </p>
     </div>

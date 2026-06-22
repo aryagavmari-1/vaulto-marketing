@@ -1,0 +1,27 @@
+---
+/**
+ * §3.1 MarketingButton — primary (olive fill) / ghost / inverted (on olive bg).
+ * Renders an <a> for links (default) or <button>. Min target 44×44 (a11y §5).
+ */
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'ghost' | 'inverted';
+  nav?: boolean;          // 44px nav height instead of 52px
+  cta?: string;           // data-cta analytics id
+  outbound?: string;      // data-outbound id for the app hand-off
+  class?: string;
+  [key: string]: unknown;
+}
+const { href, variant = 'primary', nav = false, cta, outbound, class: cls = '', ...rest } = Astro.props;
+const classes = ['btn', `btn-${variant}`, nav && 'btn-nav', cls].filter(Boolean).join(' ');
+const Tag = href ? 'a' : 'button';
+---
+<Tag
+  class={classes}
+  {...(href ? { href } : { type: 'button' })}
+  {...(cta ? { 'data-cta': cta } : {})}
+  {...(outbound ? { 'data-outbound': outbound } : {})}
+  {...rest}
+>
+  <slot />
+</Tag>

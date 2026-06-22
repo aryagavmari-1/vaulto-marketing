@@ -1,0 +1,9 @@
+---
+/**
+ * §3.3 Eyebrow — small functional-tint pill that sets section intent.
+ * tone "success" (default) or "info" (security). Never raw color-on-white.
+ */
+interface Props { tone?: 'success' | 'info'; }
+const { tone = 'success' } = Astro.props;
+---
+<span class={`eyebrow eyebrow-${tone}`}><slot /></span>

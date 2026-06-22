@@ -1,0 +1,12 @@
+---
+/**
+ * §3.4 StepCard — white card with a 34px olive numeral circle, heading + body.
+ */
+interface Props { n: number; title: string; }
+const { n, title } = Astro.props;
+---
+<div class="scard card">
+  <div class="num" aria-hidden="true">{n}</div>
+  <h3 class="t-heading">{title}</h3>
+  <p class="t-body"><slot /></p>
+</div>

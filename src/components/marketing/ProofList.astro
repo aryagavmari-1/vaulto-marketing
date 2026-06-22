@@ -1,0 +1,13 @@
+---
+/**
+ * §3.5 ProofItem — success check + single line. Composed as a list (the Security
+ * grid and the Home trust band). Color-independent (✓ glyph + text).
+ */
+interface Props { items: string[]; }
+const { items } = Astro.props;
+---
+<ul class="proof-list">
+  {items.map((item) => (
+    <li><span class="chk" aria-hidden="true">✓</span><span>{item}</span></li>
+  ))}
+</ul>
