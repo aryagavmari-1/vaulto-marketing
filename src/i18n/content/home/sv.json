@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Familjens hem",
           "sub": "Fastighet · lagfart och försäkring bifogade"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamente och dödsbodelshandlingar",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investeringar och pensioner",
           "sub": "Samling · 5 poster"
         }
@@ -39,17 +39,17 @@
     "sub": "Inga kalkylblad. Inga utspridda lådor. Bara tydlighet.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Vet vad du äger.",
         "body": "Fastigheter, konton, investeringar, värdesaker, pensioner — samlat på ett organiserat ställe, inte utspritt i lådor och kalkylblad."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Håll det säkert.",
         "body": "Förvara dokumenten som betyder mest — lagfarter, försäkringar, kontoutdrag — privat, bakom stark säkerhet."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planera med trygghet.",
         "body": "Se hela bilden och få en tydlig, kostnadsfri överblick när du är redo att tänka på arv, testamente eller vad som händer härnäst."
       }

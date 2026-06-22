@@ -331,9 +331,53 @@ section { padding-block: 56px; }
 .post-item .excerpt { color: var(--ink2); margin: 6px 0 0; }
 
 /* ============================================================================
+ * ARY-451 — custom icon set, product screenshots, warm imagery
+ * ==========================================================================*/
+/* Line icons inherit their chip's intent colour (olive by default, success on
+   the Security/trust surfaces). Replaces the old emoji glyphs entirely. */
+.vico { flex: none; display: block; }
+.vcard .ico,
+.scard .ico,
+.mini-card .ico,
+.feature-row .ico { color: var(--primary); }
+.promise-item .big {
+  display: flex; align-items: center; justify-content: center;
+  color: var(--success); min-height: 30px;
+}
+.eyebrow .vico { margin-right: -1px; }
+.caret, .trust-strip .chk, .proof-list .chk { display: inline-flex; align-items: center; }
+
+/* Device-framed product screenshots (inline SVG → retina, ~0 CLS, few KB). */
+/* The frame SVG is injected via set:html, so it never receives Astro's scoped
+   class — constrain it here in global scope so its intrinsic width can't blow
+   out the mobile layout. */
+.pshot { max-width: 100%; }
+.pshot > svg { width: 100%; height: auto; display: block; max-width: 100%; }
+.product-preview { margin-top: 44px; }
+.product-preview .pshot { max-width: 880px; margin-inline: auto; }
+.feature-shot { max-width: 760px; margin: 0 auto 30px; }
+.step-visual--shot {
+  background: transparent; border: 0; box-shadow: none; padding: 0; min-height: 0;
+}
+.step-visual--shot .pshot-phone { max-width: 232px; }
+
+/* Restrained warm imagery */
+.hero { position: relative; overflow: hidden; }
+.hero-warm {
+  position: absolute; right: -7%; bottom: -16%; width: 56%; max-width: 540px;
+  opacity: 0.5; pointer-events: none; z-index: 0;
+  -webkit-mask-image: radial-gradient(78% 78% at 62% 42%, #000 52%, transparent 100%);
+  mask-image: radial-gradient(78% 78% at 62% 42%, #000 52%, transparent 100%);
+}
+.hero .wrap { position: relative; z-index: 1; }
+.plan-illustration { max-width: 460px; margin: 30px auto 0; }
+
+/* ============================================================================
  * Responsive — content-driven breakpoint at 760px
  * ==========================================================================*/
 @media (max-width: 760px) {
+  .hero-warm { display: none; }
+  .feature-shot, .product-preview { margin-inline: -4px; }
   .wrap { padding-inline: var(--s-xl); }
   .t-display { font-size: 32px; }
   .t-title { font-size: 24px; }

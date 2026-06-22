@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Gezinswoning",
           "sub": "Vastgoed · eigendomsakte & verzekering toegevoegd"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament- & nalatenschapsdocumenten",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Beleggingen & pensioenen",
           "sub": "Collectie · 5 items"
         }
@@ -39,17 +39,17 @@
     "sub": "Geen spreadsheets. Geen verspreide laden. Gewoon overzicht.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Weet wat je bezit.",
         "body": "Vastgoed, rekeningen, beleggingen, kostbaarheden, pensioenen — vastgelegd op één overzichtelijke plek, niet verspreid over laden en spreadsheets."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Bewaar het veilig.",
         "body": "Sla de documenten op die ertoe doen — aktes, polissen, overzichten — privé, achter sterke beveiliging."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Plan met vertrouwen.",
         "body": "Zie het complete overzicht en krijg een helder, vrijblijvend overzicht wanneer je klaar bent om na te denken over erfenis, testamenten of wat er hierna gebeurt."
       }

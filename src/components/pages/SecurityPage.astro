@@ -12,6 +12,7 @@ import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
 import Eyebrow from '../marketing/Eyebrow.astro';
 import FinalCta from '../marketing/FinalCta.astro';
+import Icon from '../marketing/Icon.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -21,8 +22,9 @@ const crumbs = [
   { name: c.crumbs.home, url: `${BRAND.url}/` },
   { name: c.crumbs.security, url: `${BRAND.url}/security/` },
 ];
-const protectIcons = ['🔒', '🗄️', '🔑', '⏳', '🚦', '👤'];
-const promiseIcons = ['🚫', '🤝', '🎛️'];
+// Custom icon-set names (ARY-451), positional to the protections/promises lists.
+const protectIcons = ['globe', 'database', 'key', 'clock', 'shieldCheck', 'user'];
+const promiseIcons = ['ban', 'eyeOff', 'sliders'];
 ---
 <Base
   title={c.meta.title}
@@ -33,7 +35,7 @@ const promiseIcons = ['🚫', '🤝', '🎛️'];
 >
   <section class="s-hero">
     <div class="wrap">
-      <Eyebrow tone="info">🛡️ {c.hero.eyebrow}</Eyebrow>
+      <Eyebrow tone="info"><Icon name="shield" size={14} />{c.hero.eyebrow}</Eyebrow>
       <h1 class="t-display">{c.hero.heading}</h1>
       <p class="intro t-bodyL">{c.hero.intro}</p>
     </div>
@@ -45,7 +47,7 @@ const promiseIcons = ['🚫', '🤝', '🎛️'];
       <div class="grid-3">
         {c.protections.map((p: any, i: number) => (
           <div class="pcard card">
-            <div class="ico" aria-hidden="true">{protectIcons[i]}</div>
+            <div class="ico" aria-hidden="true"><Icon name={protectIcons[i]} size={22} /></div>
             <h3 class="t-heading">{p.title}</h3>
             <p class="t-body">{p.body}</p>
           </div>
@@ -60,7 +62,7 @@ const promiseIcons = ['🚫', '🤝', '🎛️'];
       <div class="promise-grid">
         {c.promises.map((p: any, i: number) => (
           <div class="promise-item">
-            <div class="big" aria-hidden="true">{promiseIcons[i]}</div>
+            <div class="big" aria-hidden="true"><Icon name={promiseIcons[i]} size={28} /></div>
             <h3 class="t-heading">{p.title}</h3>
             <p class="t-body">{p.body}</p>
           </div>

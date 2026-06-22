@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Casa di famiglia",
           "sub": "Immobile · atto e assicurazione allegati"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamento e documenti successori",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investimenti e pensioni",
           "sub": "Raccolta · 5 elementi"
         }
@@ -39,17 +39,17 @@
     "sub": "Niente fogli di calcolo. Niente cassetti sparsi. Solo chiarezza.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Sapere cosa possiedi.",
         "body": "Immobili, conti, investimenti, oggetti di valore, pensioni — raccolti in un unico posto organizzato, non sparsi tra cassetti e fogli di calcolo."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Tieni tutto al sicuro.",
         "body": "Conserva i documenti che contano — atti, polizze, estratti conto — in privato, protetti da una sicurezza solida."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Pianifica con fiducia.",
         "body": "Vedi il quadro completo e ottieni una panoramica chiara e gratuita quando sei pronto a pensare a successione, testamento o a cosa succede dopo."
       }

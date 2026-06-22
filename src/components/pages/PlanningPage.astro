@@ -11,6 +11,7 @@ import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
 import Eyebrow from '../marketing/Eyebrow.astro';
 import FinalCta from '../marketing/FinalCta.astro';
+import WarmIllustration from '../marketing/WarmIllustration.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -38,6 +39,9 @@ const areaSensitive = [false, true, false, false, true, true];
       <Eyebrow tone="success">{c.hero.eyebrow}</Eyebrow>
       <h1 class="t-display">{c.hero.heading}</h1>
       <p class="intro t-bodyL">{c.hero.intro}</p>
+      <div class="plan-illustration">
+        <WarmIllustration label="A calm illustration of a family home sheltered under a protective shield — the reassurance of being prepared." />
+      </div>
     </div>
   </section>
 

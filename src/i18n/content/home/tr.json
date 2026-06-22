@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Aile evi",
           "sub": "Gayrimenkul · tapu ve sigorta eklendi"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Vasiyetname ve miras belgeleri",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Yatırımlar ve emeklilikler",
           "sub": "Koleksiyon · 5 öğe"
         }
@@ -39,17 +39,17 @@
     "sub": "Ne hesap tabloları. Ne dağınık çekmeceler. Sadece netlik.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Neye sahip olduğunu bil.",
         "body": "Gayrimenkuller, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — çekmecelere ve hesap tablolarına dağılmak yerine tek bir düzenli yerde toplanır."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Güvende tut.",
         "body": "Önemli belgeleri — tapular, poliçeler, hesap özetleri — güçlü güvenlik arkasında, özel olarak sakla."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Güvenle plan yap.",
         "body": "Tüm tabloyu gör ve miras, vasiyetname veya sonrasında ne olacağı hakkında düşünmeye hazır olduğunda net, ücretsiz bir genel bakış elde et."
       }

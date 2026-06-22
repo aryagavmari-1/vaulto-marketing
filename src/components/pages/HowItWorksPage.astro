@@ -11,6 +11,7 @@ import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
 import Eyebrow from '../marketing/Eyebrow.astro';
 import FinalCta from '../marketing/FinalCta.astro';
+import ProductShot from '../marketing/ProductShot.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -20,7 +21,12 @@ const crumbs = [
   { name: c.crumbs.home, url: `${BRAND.url}/` },
   { name: c.crumbs.howItWorks, url: `${BRAND.url}/how-it-works/` },
 ];
-const stepGlyphs = ['📸', '🗂️', '🧭'];
+// Device-framed app scene per step (ARY-451). Labels double as screenshot alt.
+const stepShots: { scene: 'capture' | 'inventory' | 'overview'; label: string }[] = [
+  { scene: 'capture', label: 'Vaulto capture screen: photograph a document and the app reads it and suggests the details to confirm.' },
+  { scene: 'inventory', label: 'Vaulto inventory screen: assets organised into a clean, scannable list with a secured badge on each.' },
+  { scene: 'overview', label: 'Vaulto overview screen: the whole picture of what your family owns, with total value and a trend chart.' },
+];
 ---
 <Base
   title={c.meta.title}
@@ -49,7 +55,9 @@ const stepGlyphs = ['📸', '🗂️', '🧭'];
                 <p class="t-bodyL">{s.body}</p>
                 <p class="detail">{s.detail}</p>
               </div>
-              <div class="step-visual" aria-hidden="true"><span class="glyph">{stepGlyphs[i]}</span></div>
+              <div class="step-visual step-visual--shot">
+                <ProductShot frame="phone" scene={stepShots[i].scene} label={stepShots[i].label} />
+              </div>
             </div>
             {i < c.steps.length - 1 && <div class="connector" aria-hidden="true"></div>}
           </>

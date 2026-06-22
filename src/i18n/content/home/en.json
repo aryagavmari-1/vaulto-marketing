@@ -4,7 +4,7 @@
     "description": "Inventory your assets, keep documents safe, and see your whole net worth — privately and securely. Snap a photo; Vaulto does the data entry. Start free."
   },
   "hero": {
-    "eyebrow": "🔒 Private & secure by design",
+    "eyebrow": "Private & secure by design",
     "heading": "Everything your family owns, in one private place.",
     "sub": "Inventory your assets, keep important documents safe, and see your whole picture — and you don't type it all in: snap a photo and Vaulto reads it for you.",
     "trust": [
@@ -15,23 +15,23 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Family home",
           "sub": "Property · deed & insurance attached"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Will & estate documents",
           "sub": "3 files · private storage"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investments & pensions",
           "sub": "Collection · 5 items"
         }
       ],
       "secured": "Secured",
-      "lock": "🔒 Private storage"
+      "lock": "Private storage"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "No spreadsheets. No scattered drawers. Just clarity.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Know what you own.",
         "body": "Property, accounts, investments, valuables, pensions — captured in one organised place, not scattered across drawers and spreadsheets."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Keep it safe.",
         "body": "Store the documents that matter — deeds, policies, statements — privately, behind strong security."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Plan with confidence.",
         "body": "See the whole picture and get a clear, free overview when you're ready to think about inheritance, wills, or what happens next."
       }

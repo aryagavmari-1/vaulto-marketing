@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Dom rodzinny",
           "sub": "Nieruchomość · akt własności i polisa w załączniku"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament i dokumenty spadkowe",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Inwestycje i emerytury",
           "sub": "Kolekcja · 5 pozycji"
         }
@@ -39,17 +39,17 @@
     "sub": "Bez arkuszy. Bez porozrzucanych szuflad. Po prostu przejrzystość.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Wiedz, co posiadasz.",
         "body": "Nieruchomości, konta, inwestycje, kosztowności, emerytury — zebrane w jednym uporządkowanym miejscu, a nie rozproszone po szufladach i arkuszach."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Trzymaj to bezpiecznie.",
         "body": "Przechowuj ważne dokumenty — akty własności, polisy, wyciągi — prywatnie, za silnymi zabezpieczeniami."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planuj ze spokojem.",
         "body": "Zobacz pełny obraz i uzyskaj jasny, bezpłatny przegląd, gdy będziesz gotów pomyśleć o spadku, testamencie lub o tym, co dalej."
       }

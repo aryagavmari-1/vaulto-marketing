@@ -15,17 +15,17 @@
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Vivienda familiar",
           "sub": "Propiedad · escritura y seguro adjuntos"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamento y documentos del patrimonio",
           "sub": ""
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Inversiones y pensiones",
           "sub": "Colección · 5 elementos"
         }
@@ -39,17 +39,17 @@
     "sub": "Sin hojas de cálculo. Sin cajones desordenados. Solo claridad.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Conoce lo que posees.",
         "body": "Propiedades, cuentas, inversiones, objetos de valor, pensiones — reunido en un solo lugar organizado, no disperso entre cajones y hojas de cálculo."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Mantenlo a salvo.",
         "body": "Guarda los documentos que importan — escrituras, pólizas, extractos — de forma privada y con seguridad sólida."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planifica con confianza.",
         "body": "Ve el panorama completo y obtén una visión clara y gratuita cuando quieras pensar en la herencia, el testamento o lo que viene después."
       }

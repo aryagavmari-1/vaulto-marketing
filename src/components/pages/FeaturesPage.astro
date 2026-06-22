@@ -10,6 +10,8 @@ import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
 import Eyebrow from '../marketing/Eyebrow.astro';
 import FinalCta from '../marketing/FinalCta.astro';
+import Icon from '../marketing/Icon.astro';
+import ProductShot from '../marketing/ProductShot.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -19,7 +21,8 @@ const crumbs = [
   { name: c.crumbs.home, url: `${BRAND.url}/` },
   { name: c.crumbs.features, url: `${BRAND.url}/features/` },
 ];
-const featureIcons = ['🗂️', '📄', '📸', '🧺', '🧭', '⬇️'];
+// Custom icon-set names (ARY-451), positional to the features list.
+const featureIcons = ['folders', 'document', 'camera', 'layers', 'chart', 'download'];
 ---
 <Base
   title={c.meta.title}
@@ -38,10 +41,17 @@ const featureIcons = ['🗂️', '📄', '📸', '🧺', '🧭', '⬇️'];
 
   <section style="padding-top:8px">
     <div class="wrap">
+      <div class="feature-shot">
+        <ProductShot
+          scene="documents"
+          frame="browser"
+          label="The Vaulto document vault: deeds, policies and statements stored as encrypted cards, each with a secured badge."
+        />
+      </div>
       <div class="feature-list">
         {c.features.map((f: any, i: number) => (
           <div class="feature-row card">
-            <div class="ico" aria-hidden="true">{featureIcons[i]}</div>
+            <div class="ico" aria-hidden="true"><Icon name={featureIcons[i]} size={22} /></div>
             <div>
               <h3 class="t-heading">{f.title}</h3>
               <p class="t-body">{f.body}</p>
