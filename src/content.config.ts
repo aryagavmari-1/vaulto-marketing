@@ -12,6 +12,12 @@ const blog = defineCollection({
     draft: z.boolean().default(false),
     // Marks template/seed content not yet supplied by CMO C2.
     placeholder: z.boolean().default(false),
+    // Optional FAQ Q&A pairs (ARY-470). When present, the post emits FAQPage
+    // JSON-LD (in addition to BlogPosting) so its "Frequently asked questions"
+    // block is eligible for the FAQ rich result. Mirror the on-page Q&As here.
+    faqs: z
+      .array(z.object({ question: z.string(), answer: z.string() }))
+      .optional(),
   }),
 });
 

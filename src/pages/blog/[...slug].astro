@@ -11,6 +11,9 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+// FAQ-bearing posts (ARY-470): map frontmatter Q&As to FaqItem so Base/Seo emit
+// FAQPage JSON-LD alongside BlogPosting. Undefined when no `faqs` declared.
+const faq = post.data.faqs?.map((f) => ({ q: f.question, a: f.answer }));
 ---
 <Base
   title={post.data.title}
@@ -18,6 +21,7 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month:
   description={post.data.description}
   type="article"
   publishedTime={post.data.pubDate.toISOString()}
+  faq={faq}
 >
   <article class="section">
     <div class="container prose">
