@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "How it works — inventory your assets in 3 steps",
-    "description": "Add what you own, let Vaulto organise it, and see your whole picture in three simple steps. AI-assisted capture does the data entry for you."
+    "description": "Add what you own, let Vaulto organise it, and see your whole picture. Then use Plans to think through wills, inheritance, insurance and more."
   },
   "crumbs": { "home": "Home", "howItWorks": "How it works" },
   "hero": {
@@ -26,6 +26,29 @@
       "detail": "A clean snapshot you can hand to a solicitor or advisor."
     }
   ],
+  "plans": {
+    "eyebrow": "Plans",
+    "heading": "When you're ready, plan what's next.",
+    "intro": "Your vault shows what you own. Plans help you think through what to do about it — from a will or inheritance to insurance, a prenup, or assets in more than one country. Start when it suits you, and go at your own pace.",
+    "beats": [
+      {
+        "title": "Pick a focus area.",
+        "body": "Choose the area on your mind — wills and inheritance, insurance, a prenup, cross-border assets, and more. Each one is a calm, guided space, not a long form to fill in.",
+        "detail": "Areas covering the moments that tend to need a plan."
+      },
+      {
+        "title": "Talk it through.",
+        "body": "Answer a few questions in a short, plain-language conversation. Type your answers or say them out loud — whichever feels easier.",
+        "detail": "No jargon and no long forms. Vaulto asks; you answer in your own words."
+      },
+      {
+        "title": "Get a plan made for your situation.",
+        "body": "Vaulto turns the conversation into a clear, personal overview of where you stand and the steps worth considering next. Start with a free overview, and go further when you're ready.",
+        "detail": "Use your plan to feel prepared — and to guide a conversation with a qualified professional."
+      }
+    ],
+    "honesty": "Plans give you general information to help you prepare and ask better questions. They are not legal, tax or financial advice."
+  },
   "securityLink": "How we keep it safe →",
   "finalCta": {
     "title": "Start your vault — free",

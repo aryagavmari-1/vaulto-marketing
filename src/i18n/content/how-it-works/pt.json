@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Como funciona",
-    "description": "Adicione o que tem, deixe o Vaulto organizar e veja o panorama completo em três passos simples. A captura assistida por IA faz a introdução de dados por si."
+    "title": "Como funciona — inventarie os seus bens em 3 passos",
+    "description": "Adicione o que tem, deixe o Vaulto organizar, e veja a visão completa. Depois, use os Planos para pensar em testamentos, heranças, seguros e muito mais."
   },
   "crumbs": {
     "home": "Início",
@@ -9,8 +9,8 @@
   },
   "hero": {
     "eyebrow": "Como funciona",
-    "heading": "Do disperso ao organizado, em três passos.",
-    "intro": "Não tem de escrever tudo à mão. O Vaulto lê as suas fotos e documentos e trata do trabalho pesado — para começar em minutos, não em fins de semana."
+    "heading": "De disperso a organizado, em três passos.",
+    "intro": "Não tem de escrever tudo à mão. O Vaulto lê as suas fotos e documentos e trata do trabalho pesado — para que começar leve minutos, não fins de semana."
   },
   "steps": [
     {
@@ -20,16 +20,39 @@
     },
     {
       "title": "Deixe o Vaulto organizar.",
-      "body": "Agrupe bens em coleções, adicione os factos principais que importam e mantenha os documentos que os comprovam anexados exatamente onde pertencem.",
+      "body": "Agrupe os bens em coleções, adicione os factos principais que importam e mantenha os documentos que os comprovam anexados exatamente onde pertencem.",
       "detail": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo numa só estrutura."
     },
     {
-      "title": "Veja o panorama completo.",
-      "body": "Os bens e documentos da sua família numa vista clara — prontos para partilhar com as pessoas importantes e para planear o futuro com uma visão geral gratuita quando estiver pronto.",
-      "detail": "Uma imagem clara que pode entregar a um solicitador ou consultor."
+      "title": "Veja a visão completa.",
+      "body": "Os bens e documentos da sua família numa visão clara — prontos para partilhar com as pessoas importantes e para planear o futuro com uma visão geral gratuita quando estiver pronto.",
+      "detail": "Uma visão simples que pode entregar a um advogado ou consultor."
     }
   ],
-  "securityLink": "Como o mantemos seguro →",
+  "plans": {
+    "eyebrow": "Planos",
+    "heading": "Quando estiver pronto, planeie o que vem a seguir.",
+    "intro": "O seu cofre mostra o que tem. Os Planos ajudam-no a pensar no que fazer com isso — desde um testamento ou herança até seguros, um acordo pré-nupcial ou bens em mais do que um país. Comece quando lhe fizer sentido e avance ao seu ritmo.",
+    "beats": [
+      {
+        "title": "Escolha uma área de foco.",
+        "body": "Escolha a área em que está a pensar — testamentos e heranças, seguros, um acordo pré-nupcial, bens em vários países e mais. Cada uma é um espaço calmo e guiado, não um formulário longo para preencher.",
+        "detail": "Áreas que cobrem os momentos que tendem a precisar de um plano."
+      },
+      {
+        "title": "Converse sobre isso.",
+        "body": "Responda a algumas perguntas numa conversa curta e em linguagem simples. Escreva as suas respostas ou diga-as em voz alta — o que lhe for mais fácil.",
+        "detail": "Sem jargão e sem formulários longos. O Vaulto pergunta; você responde com as suas próprias palavras."
+      },
+      {
+        "title": "Receba um plano feito para a sua situação.",
+        "body": "O Vaulto transforma a conversa numa visão geral clara e pessoal da sua situação e dos passos que vale a pena considerar a seguir. Comece com uma visão geral gratuita e avance mais quando estiver pronto.",
+        "detail": "Use o seu plano para se sentir preparado — e para orientar uma conversa com um profissional qualificado."
+      }
+    ],
+    "honesty": "Os Planos dão-lhe informação geral para o ajudar a preparar-se e a fazer melhores perguntas. Não constituem aconselhamento jurídico, fiscal ou financeiro."
+  },
+  "securityLink": "Como mantemos tudo seguro →",
   "finalCta": {
     "title": "Comece o seu cofre — grátis",
     "body": "Adicione as suas primeiras coisas em minutos. Sem folhas de cálculo."

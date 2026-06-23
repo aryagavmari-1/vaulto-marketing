@@ -27,6 +27,9 @@ const stepShots: { scene: 'capture' | 'inventory' | 'overview'; label: string }[
   { scene: 'inventory', label: 'Vaulto inventory screen: assets organised into a clean, scannable list with a secured badge on each.' },
   { scene: 'overview', label: 'Vaulto overview screen: the whole picture of what your family owns, with total value and a trend chart.' },
 ];
+// Plans beats (ARY-507). A glyph per beat — Plans cover sensitive areas, so no
+// app screenshots here; calm signpost/conversation/plan icons instead.
+const planGlyphs = ['🧭', '💬', '📋'];
 ---
 <Base
   title={c.meta.title}
@@ -63,6 +66,32 @@ const stepShots: { scene: 'capture' | 'inventory' | 'overview'; label: string }[
           </>
         ))}
       </div>
+    </div>
+  </section>
+
+  <section class="s-plans">
+    <div class="wrap">
+      <div class="plans-intro">
+        <Eyebrow tone="info">{c.plans.eyebrow}</Eyebrow>
+        <h2 class="t-title">{c.plans.heading}</h2>
+        <p class="intro t-bodyL">{c.plans.intro}</p>
+      </div>
+      <div class="steps-rows">
+        {c.plans.beats.map((b: any, i: number) => (
+          <>
+            <div class:list={['step-row', i % 2 === 1 && 'reverse']}>
+              <div class="step-body">
+                <h2 class="t-title">{b.title}</h2>
+                <p class="t-bodyL">{b.body}</p>
+                <p class="detail">{b.detail}</p>
+              </div>
+              <div class="step-visual" aria-hidden="true"><span class="glyph">{planGlyphs[i]}</span></div>
+            </div>
+            {i < c.plans.beats.length - 1 && <div class="connector" aria-hidden="true"></div>}
+          </>
+        ))}
+      </div>
+      <p class="plans-honesty t-body">{c.plans.honesty}</p>
       <p class="center" style="margin-top:32px;">
         <a href="/security/" data-cta="how_security">{c.securityLink}</a>
       </p>

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Comment ça marche",
-    "description": "Ajoutez ce que vous possédez, laissez Vaulto l’organiser et obtenez une vue d’ensemble en trois étapes simples. La capture assistée par IA s’occupe de la saisie pour vous."
+    "title": "Comment ça marche — inventorie tes biens en 3 étapes",
+    "description": "Ajoute ce que tu possèdes, laisse Vaulto l’organiser, et vois l’ensemble de ta situation. Puis utilise Plans pour réfléchir aux testaments, à l’héritage, à l’assurance et plus encore."
   },
   "crumbs": {
     "home": "Accueil",
@@ -9,29 +9,52 @@
   },
   "hero": {
     "eyebrow": "Comment ça marche",
-    "heading": "Du dispersé à l’organisé, en trois étapes.",
-    "intro": "Vous n’avez pas besoin de tout saisir à la main. Vaulto lit vos photos et documents et fait le plus gros du travail — pour démarrer en quelques minutes, pas en plusieurs week-ends."
+    "heading": "Du désordre à l’organisation, en trois étapes.",
+    "intro": "Tu n’as pas besoin de tout saisir à la main. Vaulto lit tes photos et tes documents et fait le plus gros du travail — pour démarrer en quelques minutes, pas en quelques week-ends."
   },
   "steps": [
     {
-      "title": "Ajoutez ce que vous possédez.",
-      "body": "Prenez une photo ou importez un document, et Vaulto le lit pour vous — en préparant les informations pour que vous n’ayez pas à tout saisir à la main. Ajoutez une pièce, un reçu ou un dossier de documents en une seule fois.",
-      "detail": "La capture assistée par IA transforme une tâche écrasante en quelques courtes sessions."
+      "title": "Ajoute ce que tu possèdes.",
+      "body": "Prends une photo ou téléverse un document et Vaulto le lit pour toi — en préparant les détails pour que tu n’aies pas à tout saisir à la main. Ajoute une pièce, un reçu ou un dossier de papiers en une seule fois.",
+      "detail": "La saisie assistée par l’IA transforme une tâche écrasante en quelques courtes sessions."
     },
     {
-      "title": "Laissez Vaulto l’organiser.",
-      "body": "Regroupez vos actifs en collections, ajoutez les informations clés qui comptent et gardez les documents qui les justifient attachés exactement là où ils doivent être.",
-      "detail": "Biens, comptes, investissements, objets de valeur, retraites — tout dans une seule structure."
+      "title": "Laisse Vaulto l’organiser.",
+      "body": "Regroupe les biens en collections, ajoute les informations clés qui comptent, et garde les documents justificatifs attachés là où ils doivent être.",
+      "detail": "Biens immobiliers, comptes, placements, objets de valeur, retraites — tout dans une seule structure."
     },
     {
-      "title": "Voyez l’ensemble clairement.",
-      "body": "Les actifs et documents de votre famille dans une vue claire — prêts à être partagés avec les personnes qui comptent, et à vous aider à planifier avec un aperçu gratuit quand vous serez prêt.",
-      "detail": "Un aperçu clair que vous pouvez remettre à un notaire ou à un conseiller."
+      "title": "Vois l’ensemble de la situation.",
+      "body": "Les biens et documents de ta famille dans une vue claire — prêts à être partagés avec les personnes qui comptent, et à préparer la suite avec un aperçu gratuit quand tu seras prêt.",
+      "detail": "Un aperçu clair que tu peux remettre à un notaire ou à un conseiller."
     }
   ],
+  "plans": {
+    "eyebrow": "Plans",
+    "heading": "Quand tu es prêt, prépare la suite.",
+    "intro": "Ton coffre-fort montre ce que tu possèdes. Plans t’aide à réfléchir à ce qu’il faut en faire — d’un testament ou d’un héritage à l’assurance, un contrat prénuptial, ou des biens dans plusieurs pays. Commence quand ça te convient, et avance à ton rythme.",
+    "beats": [
+      {
+        "title": "Choisis un sujet.",
+        "body": "Choisis le sujet qui t’occupe l’esprit — testaments et héritage, assurance, contrat prénuptial, biens transfrontaliers, et plus encore. Chacun est un espace calme et guidé, pas un long formulaire à remplir.",
+        "detail": "Des sujets qui couvrent les moments où un plan est souvent utile."
+      },
+      {
+        "title": "Parles-en.",
+        "body": "Réponds à quelques questions dans une courte conversation en langage simple. Écris tes réponses ou dis-les à voix haute — selon ce qui te semble le plus facile.",
+        "detail": "Pas de jargon ni de longs formulaires. Vaulto pose les questions ; tu réponds avec tes propres mots."
+      },
+      {
+        "title": "Obtiens un plan adapté à ta situation.",
+        "body": "Vaulto transforme la conversation en un aperçu clair et personnel de ta situation et des étapes à envisager ensuite. Commence par un aperçu gratuit, et va plus loin quand tu seras prêt.",
+        "detail": "Utilise ton plan pour te sentir prêt — et pour guider une discussion avec un professionnel qualifié."
+      }
+    ],
+    "honesty": "Plans te donnent des informations générales pour t’aider à te préparer et à poser de meilleures questions. Ils ne constituent pas un conseil juridique, fiscal ou financier."
+  },
   "securityLink": "Comment nous le gardons en sécurité →",
   "finalCta": {
-    "title": "Commencez votre coffre-fort — gratuit",
-    "body": "Ajoutez vos premiers éléments en quelques minutes. Aucun tableur nécessaire."
+    "title": "Commence ton coffre-fort — gratuit",
+    "body": "Ajoute tes premiers éléments en quelques minutes. Aucun tableur nécessaire."
   }
 }

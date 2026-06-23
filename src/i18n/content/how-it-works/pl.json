@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Jak to działa",
-    "description": "Dodaj to, co posiadasz, pozwól Vaulto to uporządkować i zobacz całość w trzech prostych krokach. Wspomagane przez AI przechwytywanie wprowadza dane za Ciebie."
+    "title": "Jak to działa — zinwentaryzuj swój majątek w 3 krokach",
+    "description": "Dodaj to, co posiadasz, pozwól Vaulto to uporządkować i zobacz pełny obraz. Potem użyj Planów, aby przemyśleć testament, spadek, ubezpieczenie i nie tylko."
   },
   "crumbs": {
     "home": "Strona główna",
@@ -9,29 +9,52 @@
   },
   "hero": {
     "eyebrow": "Jak to działa",
-    "heading": "Od rozproszenia do porządku, w trzech krokach.",
-    "intro": "Nie musisz wpisywać wszystkiego ręcznie. Vaulto odczytuje Twoje zdjęcia i dokumenty i wykonuje większość pracy — dzięki temu zaczniesz w kilka minut, a nie przez całe weekendy."
+    "heading": "Od chaosu do porządku, w trzech krokach.",
+    "intro": "Nie musisz wpisywać wszystkiego ręcznie. Vaulto odczytuje Twoje zdjęcia i dokumenty i wykonuje większość pracy — więc zaczniesz w kilka minut, a nie przez całe weekendy."
   },
   "steps": [
     {
       "title": "Dodaj to, co posiadasz.",
-      "body": "Zrób zdjęcie lub prześlij dokument, a Vaulto odczyta go za Ciebie — przygotowując szczegóły, żebyś nie musiał wpisywać wszystkiego ręcznie. Dodaj pokój, rachunek lub folder dokumentów za jednym razem.",
-      "detail": "Przechwytywanie wspomagane przez AI zamienia przytłaczające zadanie w kilka krótkich sesji."
+      "body": "Zrób zdjęcie albo prześlij dokument, a Vaulto odczyta go za Ciebie — przygotowując szczegóły, żeby nie trzeba było wpisywać wszystkiego ręcznie. Dodaj pokój, paragon albo folder z dokumentami za jednym razem.",
+      "detail": "Wspomagane przez AI przechwytywanie zmienia przytłaczające zadanie w kilka krótkich sesji."
     },
     {
       "title": "Pozwól Vaulto to uporządkować.",
-      "body": "Grupuj aktywa w kolekcje, dodawaj najważniejsze informacje i trzymaj dokumenty, które je potwierdzają, dokładnie tam, gdzie ich miejsce.",
+      "body": "Grupuj składniki majątku w kolekcje, dodawaj najważniejsze informacje i przechowuj dokumenty, które je potwierdzają, dokładnie tam, gdzie ich miejsce.",
       "detail": "Nieruchomości, konta, inwestycje, kosztowności, emerytury — wszystko w jednej strukturze."
     },
     {
       "title": "Zobacz pełny obraz.",
-      "body": "Aktywa i dokumenty Twojej rodziny w jednym przejrzystym widoku — gotowe do udostępnienia ważnym osobom i do planowania z wyprzedzeniem dzięki bezpłatnemu przeglądowi, kiedy będziesz gotowy.",
+      "body": "Majątek i dokumenty Twojej rodziny w jednym przejrzystym widoku — gotowe do udostępnienia ważnym osobom i do planowania z wyprzedzeniem dzięki bezpłatnemu podsumowaniu, kiedy będziesz gotów.",
       "detail": "Przejrzyste zestawienie, które możesz przekazać prawnikowi lub doradcy."
     }
   ],
+  "plans": {
+    "eyebrow": "Plany",
+    "heading": "Gdy będziesz gotów, zaplanuj, co dalej.",
+    "intro": "Twój skarbiec pokazuje, co posiadasz. Plany pomagają przemyśleć, co z tym zrobić — od testamentu lub spadku po ubezpieczenie, intercyzę czy majątek w więcej niż jednym kraju. Zacznij, kiedy Ci pasuje, i idź we własnym tempie.",
+    "beats": [
+      {
+        "title": "Wybierz obszar, na którym chcesz się skupić.",
+        "body": "Wybierz temat, o którym myślisz — testamenty i spadki, ubezpieczenie, intercyza, majątek za granicą i nie tylko. Każdy z nich to spokojna, prowadzona przestrzeń, a nie długi formularz do wypełnienia.",
+        "detail": "Obszary obejmujące sytuacje, które zwykle wymagają planu."
+      },
+      {
+        "title": "Omów to krok po kroku.",
+        "body": "Odpowiedz na kilka pytań w krótkiej rozmowie prostym językiem. Wpisz odpowiedzi albo powiedz je na głos — jak Ci wygodniej.",
+        "detail": "Bez żargonu i bez długich formularzy. Vaulto pyta, Ty odpowiadasz własnymi słowami."
+      },
+      {
+        "title": "Otrzymaj plan dopasowany do Twojej sytuacji.",
+        "body": "Vaulto zamienia rozmowę w jasny, osobisty przegląd Twojej sytuacji i kroków, które warto rozważyć dalej. Zacznij od bezpłatnego podsumowania i idź dalej, kiedy będziesz gotów.",
+        "detail": "Korzystaj ze swojego planu, by czuć się przygotowanym — i by poprowadzić rozmowę z wykwalifikowanym specjalistą."
+      }
+    ],
+    "honesty": "Plany dostarczają ogólnych informacji, które pomagają Ci się przygotować i zadawać lepsze pytania. Nie stanowią porady prawnej, podatkowej ani finansowej."
+  },
   "securityLink": "Jak dbamy o bezpieczeństwo →",
   "finalCta": {
     "title": "Załóż swój skarbiec — za darmo",
-    "body": "Dodaj kilka pierwszych rzeczy w kilka minut. Bez arkuszy kalkulacyjnych."
+    "body": "Dodaj pierwsze rzeczy w kilka minut. Bez arkuszy kalkulacyjnych."
   }
 }

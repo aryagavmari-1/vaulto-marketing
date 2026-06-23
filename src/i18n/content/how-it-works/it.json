@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Come funziona",
-    "description": "Aggiungi ciò che possiedi, lascia che Vaulto lo organizzi e vedi il quadro completo in tre semplici passaggi. L'acquisizione assistita dall'AI inserisce i dati per te."
+    "title": "Come funziona — fai l'inventario dei tuoi beni in 3 passaggi",
+    "description": "Aggiungi ciò che possiedi, lascia che Vaulto lo organizzi e vedi il quadro completo. Poi usa Plans per riflettere su testamento, eredità, assicurazione e altro."
   },
   "crumbs": {
     "home": "Home",
@@ -10,28 +10,51 @@
   "hero": {
     "eyebrow": "Come funziona",
     "heading": "Da sparso a organizzato, in tre passaggi.",
-    "intro": "Non devi digitare tutto a mano. Vaulto legge le tue foto e i tuoi documenti e fa il grosso del lavoro — così per iniziare bastano pochi minuti, non interi weekend."
+    "intro": "Non devi scrivere tutto a mano. Vaulto legge le tue foto e i tuoi documenti e fa il grosso del lavoro — così per iniziare bastano minuti, non interi weekend."
   },
   "steps": [
     {
       "title": "Aggiungi ciò che possiedi.",
-      "body": "Scatta una foto o carica un documento e Vaulto lo legge per te — preparando i dettagli così non devi digitare tutto a mano. Aggiungi una stanza, una ricevuta o una cartella di documenti in una volta sola.",
-      "detail": "L'acquisizione assistita dall'AI trasforma un compito impegnativo in poche brevi sessioni."
+      "body": "Scatta una foto o carica un documento e Vaulto lo legge per te — preparando una bozza dei dettagli così non devi digitare tutto a mano. Aggiungi una stanza, una ricevuta o una cartella di documenti in una volta sola.",
+      "detail": "L'acquisizione assistita dall'AI trasforma un compito opprimente in poche brevi sessioni."
     },
     {
       "title": "Lascia che Vaulto lo organizzi.",
-      "body": "Raggruppa i beni in raccolte, aggiungi i fatti chiave che contano e tieni allegati i documenti che li dimostrano, proprio dove devono stare.",
+      "body": "Raggruppa i beni in raccolte, aggiungi i fatti chiave che contano e tieni allegati, proprio dove devono stare, i documenti che li dimostrano.",
       "detail": "Immobili, conti, investimenti, oggetti di valore, pensioni — tutto in un'unica struttura."
     },
     {
       "title": "Vedi il quadro completo.",
-      "body": "I beni e i documenti della tua famiglia in una vista chiara e unica — pronti da condividere con le persone che contano e per pianificare il futuro con una panoramica gratuita quando sei pronto.",
-      "detail": "Un quadro chiaro che puoi consegnare a un notaio o a un consulente."
+      "body": "I beni e i documenti della tua famiglia in una vista chiara e unica — pronti da condividere con le persone che contano e per pianificare il futuro con una panoramica gratuita quando vuoi.",
+      "detail": "Un riepilogo chiaro che puoi consegnare a un avvocato o a un consulente."
     }
   ],
+  "plans": {
+    "eyebrow": "Plans",
+    "heading": "Quando vuoi, pianifica il prossimo passo.",
+    "intro": "La tua cassaforte mostra ciò che possiedi. Plans ti aiuta a riflettere su cosa farne — da un testamento o un'eredità all'assicurazione, un accordo prematrimoniale o beni in più di un paese. Inizia quando ti è più comodo e vai con i tuoi tempi.",
+    "beats": [
+      {
+        "title": "Scegli un'area su cui concentrarti.",
+        "body": "Scegli l'area che hai in mente — testamenti ed eredità, assicurazione, accordo prematrimoniale, beni transfrontalieri e altro. Ognuna è uno spazio sereno e guidato, non un lungo modulo da compilare.",
+        "detail": "Aree che coprono i momenti in cui di solito serve un piano."
+      },
+      {
+        "title": "Parlane passo dopo passo.",
+        "body": "Rispondi a qualche domanda in una conversazione breve e in linguaggio semplice. Scrivi le tue risposte o dille ad alta voce — come ti viene più facile.",
+        "detail": "Niente gergo e niente moduli lunghi. Vaulto chiede; tu rispondi con le tue parole."
+      },
+      {
+        "title": "Ottieni un piano fatto per la tua situazione.",
+        "body": "Vaulto trasforma la conversazione in una panoramica personale e chiara di dove ti trovi e dei passi che vale la pena considerare dopo. Inizia con una panoramica gratuita e approfondisci quando vuoi.",
+        "detail": "Usa il tuo piano per sentirti preparato — e per guidare una conversazione con un professionista qualificato."
+      }
+    ],
+    "honesty": "Plans ti offre informazioni generali per aiutarti a prepararti e a fare domande migliori. Non costituisce consulenza legale, fiscale o finanziaria."
+  },
   "securityLink": "Come lo teniamo al sicuro →",
   "finalCta": {
-    "title": "Inizia il tuo caveau — gratis",
+    "title": "Inizia la tua cassaforte — gratis",
     "body": "Aggiungi le tue prime cose in pochi minuti. Nessun foglio di calcolo necessario."
   }
 }
