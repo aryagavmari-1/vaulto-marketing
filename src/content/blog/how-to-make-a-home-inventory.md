@@ -2,6 +2,15 @@
 title: "How to Make a Home Inventory for Insurance or a Will"
 description: "A home inventory is a simple record of what you own, with photos and proof. Here's how to make one for an insurance claim or a will — room by room, step by step."
 pubDate: 2026-06-23
+faqs:
+  - question: "What should a home inventory include?"
+    answer: "For each valuable item: a plain description, its location, an approximate value, its condition, any serial or model number, and proof such as a photo or receipt. Note whether it's already insured and under which policy. Focus on things that would be expensive or difficult to replace rather than cataloguing everything you own."
+  - question: "How do I value items for a home inventory?"
+    answer: "Use replacement cost — what it would cost to buy new today — for insurance, and market value — what it would sell for now — for an estate. A quick price check is fine for everyday items; get a written valuation for genuinely valuable pieces like jewellery, art, or antiques, and keep it with the record."
+  - question: "Do I need photos in my home inventory?"
+    answer: "Photos aren't strictly required, but they're the fastest, most convincing proof you can have. Take a wide shot of each room plus close-ups of valuable items and their serial numbers. They make an insurance claim far easier to evidence and leave no doubt about what you owned."
+  - question: "Where should I store my home inventory?"
+    answer: "Somewhere private, separate from the valuables themselves, and reachable by the person who'd need it — usually your executor or partner. Avoid a single paper copy that can be lost or stolen, and if you store it online, choose a tool that keeps your files behind access that you control rather than on a public link."
 ---
 
 A **home inventory** is a written record of the things you own — what they are, what they're worth, and where the proof lives. Most people never make one until they need it: after a flood, a burglary, or a death in the family. By then it's hard to remember what was in the spare room, let alone find the receipts.
