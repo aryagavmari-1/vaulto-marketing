@@ -1,0 +1,174 @@
+[
+  { "id": "pin-p1", "format": "pin", "theme": "neutral", "block": "steps", "tag": "Net worth",
+    "headline": "How to calculate your family's net worth",
+    "subhead": "Step by step — no finance degree needed.",
+    "items": ["List what you own", "List what you owe", "Subtract one from the other", "Keep the number current", "Revisit on a rhythm"] },
+
+  { "id": "pin-p2", "format": "pin", "theme": "neutral", "block": "stat", "tag": "Net worth",
+    "headline": "Net worth = what you own − what you owe",
+    "stat": "OWN − OWE = NET WORTH",
+    "subhead": "The whole formula fits on one line." },
+
+  { "id": "pin-p3", "format": "pin", "theme": "neutral", "block": "split", "tag": "Net worth",
+    "headline": "Why your net-worth spreadsheet keeps going stale",
+    "panels": [
+      { "label": "A spreadsheet", "text": "Out of date in weeks, stuck on one laptop, out of reach for everyone else." },
+      { "label": "One live view", "text": "Current, in one place, reachable by the people who'd need it." }
+    ] },
+
+  { "id": "pin-p4", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Net worth",
+    "headline": "5 steps to know what your family is worth",
+    "items": ["List what you own", "List what you owe", "Subtract", "Keep it current", "Revisit on a rhythm"] },
+
+  { "id": "pin-p5", "format": "pin", "theme": "neutral", "block": "title", "tag": "Net worth",
+    "headline": "The one honest number every household should know",
+    "subhead": "Not a credit score, not a budget — a snapshot of where you actually stand." },
+
+  { "id": "pin-p6", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Digital estate-planning checklist",
+    "subhead": "Plain-English — work through it at your own pace.",
+    "items": ["The accounts", "The documents", "The proof behind each", "The what-to-do-next details", "A way for the right people to reach it"] },
+
+  { "id": "pin-p7", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Five things your family needs in one place",
+    "subhead": "A plain-English checklist — work through it at your own pace.",
+    "items": ["The assets", "What you owe", "The proof documents", "The “what to do next” details", "A way for the right people to reach it"] },
+
+  { "id": "pin-p8", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Estate planning: assets, debts, proof, people",
+    "subhead": "A clear plan has four parts.",
+    "items": ["The assets", "What you owe", "The proof documents", "The right people to reach it"] },
+
+  { "id": "pin-p9", "format": "pin", "theme": "calm", "block": "split", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Replace the estate “scavenger hunt” with one clear picture",
+    "panels": [
+      { "label": "The scavenger hunt", "text": "Which bank? Which pension? Where's the deed?" },
+      { "label": "One clear picture", "text": "Everything in one place, answered calmly." }
+    ] },
+
+  { "id": "pin-p10", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "What to gather before life's big moments",
+    "subhead": "Buying a home, writing a will, helping ageing parents.",
+    "items": ["What you own", "What you owe", "Where the proof lives", "The details that matter", "Who can reach it"] },
+
+  { "id": "pin-p11", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
+    "headline": "What is a family asset inventory?",
+    "subhead": "One clear list of everything your household owns and owes — plus the proof behind each item." },
+
+  { "id": "pin-p12", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Getting organised",
+    "headline": "5 things to include in a family asset inventory",
+    "items": ["Property & big items", "Accounts & savings", "Documents", "What you owe", "The people & details"] },
+
+  { "id": "pin-p13", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
+    "headline": "One list of everything your household owns and owes",
+    "subhead": "No more “I think the policy is with the bank.” One source of truth instead." },
+
+  { "id": "pin-p14", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Getting organised",
+    "headline": "Keep the proof, not just the number",
+    "subhead": "For each item, note where the proof lives.",
+    "items": ["A document", "A photo", "A serial number"] },
+
+  { "id": "pin-p15", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
+    "headline": "Start your family asset inventory this week",
+    "subhead": "Begin with one room or one category. Captured beats perfect." },
+
+  { "id": "pin-p16", "format": "pin", "theme": "calm", "block": "steps", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "How to make a home inventory",
+    "subhead": "For insurance or a will — room by room.",
+    "items": ["Pick one room", "Photograph each item", "Note value & condition", "Record the serial number", "Save where the proof lives"] },
+
+  { "id": "pin-p17", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "Details to record for each item",
+    "subhead": "Your home-inventory checklist.",
+    "items": ["What it is", "Where it is", "What it's worth", "Condition", "Serial number", "Proof & insurance status"] },
+
+  { "id": "pin-p18", "format": "pin", "theme": "calm", "block": "steps", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "A room-by-room home inventory in one afternoon",
+    "items": ["Pick one room", "Finish it fully", "Move to the next", "Small wins beat a spreadsheet"] },
+
+  { "id": "pin-p19", "format": "pin", "theme": "calm", "block": "title", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "What to photograph for your home inventory",
+    "subhead": "A wide shot of each room, then close-ups of valuables and their serial numbers." },
+
+  { "id": "pin-p20", "format": "pin", "theme": "calm", "block": "title", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "Build it before you need it",
+    "subhead": "A list made before anything goes wrong turns a claim into a paperwork exercise." },
+
+  { "id": "li-l1", "format": "liCard", "theme": "neutral", "tag": "Net worth",
+    "headline": "Most families have never sat down and added it up." },
+
+  { "id": "li-l2", "format": "liCard", "theme": "neutral", "tag": "Net worth",
+    "headline": "Your family's net worth, in five steps." },
+
+  { "id": "li-l3", "format": "liCard", "theme": "neutral", "tag": "Net worth",
+    "headline": "“Net worth is a rich-person thing.”" },
+
+  { "id": "li-l4", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "The hardest part for a grieving family often isn't the grief." },
+
+  { "id": "li-l5", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "A digital estate plan, in five parts." },
+
+  { "id": "li-l6", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "“We have a will, so we're sorted.”" },
+
+  { "id": "li-l7", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
+    "headline": "What do we own — and where's the proof?" },
+
+  { "id": "li-l8", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
+    "headline": "A family asset inventory, in five areas." },
+
+  { "id": "li-l9", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
+    "headline": "“An asset inventory is for rich households.”" },
+
+  { "id": "li-l10", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "Most people never make a home inventory until they need one." },
+
+  { "id": "li-l11", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "A home inventory that's actually useful, in six steps." },
+
+  { "id": "li-l12", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "“I'd remember what I owned if I had to claim.”" },
+
+  { "id": "video-v1", "format": "video", "theme": "neutral", "tag": "Net worth",
+    "headline": "You don't need a finance degree to know what your family's worth.",
+    "onscreen": "OWN − OWE = NET WORTH" },
+
+  { "id": "video-v2", "format": "video", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "If something happened, could your family find everything?",
+    "onscreen": "Assets · Debts · Proof · Next steps · Access" },
+
+  { "id": "video-v3", "format": "video", "theme": "neutral", "tag": "Getting organised",
+    "headline": "What do we own — and where's the proof?",
+    "onscreen": "Own · Owe · Proof" },
+
+  { "id": "video-v4", "format": "video", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "Most people make a home inventory the day after they needed it.",
+    "onscreen": "Build it BEFORE you need it" },
+
+  { "id": "video-v5", "format": "video", "theme": "neutral", "tag": "Getting organised",
+    "headline": "Give me ten minutes and your family will thank you.",
+    "onscreen": "10-MIN ASSET CHECK" },
+
+  { "id": "video-v6", "format": "video", "theme": "calm", "tag": "Planning ahead", "warn": true, "disclaimer": true,
+    "headline": "If you weren't here tomorrow, what would your family have to go looking for?",
+    "onscreen": "Accounts · Pension · Deed · Policies" },
+
+  { "id": "video-v1-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Net worth",
+    "headline": "One honest number, kept current.", "cta": "Read the step-by-step" },
+
+  { "id": "video-v2-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Put it where they can reach it.", "cta": "Get the checklist" },
+
+  { "id": "video-v3-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
+    "headline": "Start with one drawer.", "cta": "See how to start" },
+
+  { "id": "video-v4-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
+    "headline": "Build it before you need it.", "cta": "Room-by-room guide" },
+
+  { "id": "video-v5-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
+    "headline": "Ten minutes. One real start.", "cta": "Keep it current" },
+
+  { "id": "video-v6-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Planning ahead", "warn": true, "disclaimer": true,
+    "headline": "Out of your head, into one place.", "cta": "Start at your own pace" }
+]
