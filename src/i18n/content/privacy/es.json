@@ -23,6 +23,10 @@
       "body": "Para ofrecer el producto: guardar tu inventario y documentos, calcular tu patrimonio neto, generar los resúmenes de IA que solicites y crear las capturas que elijas compartir. No vendemos tus datos."
     },
     {
+      "title": "Procesamiento de IA &amp; terceros",
+      "body": "Para ofrecer nuestras funciones de IA — el escaneo y autocompletado de fotos de activos, las valoraciones automatizadas, la guía por voz y el resumen, informe y chat de asesoramiento — enviamos a <strong>OpenAI, L.L.C.</strong> la información que esas funciones necesitan, y esta entidad opera los modelos de IA en nuestro nombre como nuestro encargado del tratamiento de datos. Según la función, esto puede incluir las fotos que captures (que pueden mostrar datos de documentos, como números de cuenta o póliza y direcciones), los nombres de los activos, las categorías, monedas y valores de tu vault, las respuestas y notas de texto libre que proporciones en el flujo de asesoramiento (que pueden incluir circunstancias personales o familiares sensibles), tu país y el texto leído en voz alta por la guía de voz. OpenAI procesa esto únicamente para devolvernos resultados y does not use it to train its models. Indicamos a OpenAI que no conserve nuestras solicitudes ni respuestas (store=false); si no existe un acuerdo de retención cero, OpenAI puede conservar los datos durante hasta 30 days únicamente para la supervisión de abusos antes de eliminarlos. No vendemos esta información ni la compartimos con ningún otro tercero para el procesamiento de IA."
+    },
+    {
       "title": "Compartición &amp; consentimiento",
       "body": "Tus datos solo se comparten cuando lo autorizas explícitamente, por ejemplo, cuando preparas un paquete de derivación para un profesional. Tú eliges qué se incluye y puedes dejar de compartir en cualquier momento."
     },

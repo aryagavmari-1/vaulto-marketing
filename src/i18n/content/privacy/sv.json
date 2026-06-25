@@ -23,6 +23,10 @@
       "body": "För att tillhandahålla produkten: lagra din inventering och dina dokument, beräkna ditt nettoförmögenhet, skapa de AI-översikter du begär och skapa de ögonblicksbilder du väljer att dela. Vi säljer inte dina data."
     },
     {
+      "title": "AI-behandling &amp; tredje parter",
+      "body": "För att driva våra AI-funktioner — skanna och fyll i från tillgångsfoto, automatiserade värderingar, den talade genomgången samt rådgivningsöversikten, rapporten och chatten — skickar vi den information som dessa funktioner behöver till <strong>OpenAI, L.L.C.</strong>, som kör AI-modellerna för vår räkning som vårt personuppgiftsbiträde. Beroende på funktion kan detta omfatta de foton du tar (som kan visa dokumentuppgifter såsom konto- eller försäkringsnummer och adresser), tillgångsnamnen, kategorierna, valutorna och värdena i ditt vault, svaren och fritextanteckningarna du lämnar i rådgivningsflödet (som kan innehålla känsliga personliga eller familjära omständigheter), ditt land och den text som läses upp av den röststyrda genomgången. OpenAI behandlar detta endast för att skicka tillbaka resultat till oss och does not use it to train its models. Vi instruerar OpenAI att inte lagra våra förfrågningar och svar (store=false); utan en överenskommelse om nollagring kan OpenAI behålla uppgifterna i upp till 30 days enbart för övervakning av missbruk innan de raderas. Vi säljer inte denna information och delar den inte med någon annan tredje part för AI-behandling."
+    },
+    {
       "title": "Delning &amp; samtycke",
       "body": "Dina uppgifter delas bara när du uttryckligen tillåter det — till exempel när du sätter ihop ett underlag att skicka till en yrkesperson. Du väljer vad som ingår och kan när som helst sluta dela."
     },

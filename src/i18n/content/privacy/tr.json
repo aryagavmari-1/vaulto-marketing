@@ -23,6 +23,10 @@
       "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net varlığınızı hesaplamak, talep ettiğiniz AI özetlerini oluşturmak ve paylaşmayı seçtiğiniz anlık görüntüleri hazırlamak. Verilerinizi satmıyoruz."
     },
     {
+      "title": "Yapay zekâ işleme &amp; üçüncü taraflar",
+      "body": "Yapay zekâ özelliklerimizi — varlık fotoğrafı tarama ve doldurma, otomatik değerlemeler, sesli adım adım rehber ve danışmanlık özeti, raporu ve sohbeti — desteklemek için, bu özelliklerin ihtiyaç duyduğu bilgileri, yapay zekâ modellerini bizim adımıza veri işleyenimiz olarak çalıştıran <strong>OpenAI, L.L.C.</strong> ile paylaşıyoruz. Özelliğe bağlı olarak bu, çektiğiniz fotoğrafları (hesap veya poliçe numaraları ve adresler gibi belge ayrıntılarını gösterebilir), kasanızdaki varlık adlarını, kategorileri, para birimlerini ve değerleri, danışmanlık akışında verdiğiniz yanıtları ve serbest metin notlarını (hassas kişisel veya ailevi durumları içerebilir), ülkenizi ve sesli rehber tarafından yüksek sesle okunan metni içerebilir. OpenAI bunları yalnızca bize sonuçları geri döndürmek için işler ve bunları modellerini eğitmek için kullanmaz. OpenAI'ye isteklerimizi ve yanıtlarını saklamamasını söylüyoruz (store=false); sıfır saklama düzenlemesi yoksa, OpenAI verileri silmeden önce yalnızca kötüye kullanımı izlemek amacıyla en fazla 30 gün boyunca saklayabilir. Bu bilgileri satmıyoruz veya yapay zekâ işleme için başka herhangi bir üçüncü tarafla paylaşmıyoruz."
+    },
+    {
       "title": "Paylaşım &amp; onay",
       "body": "Verileriniz yalnızca açıkça izin verdiğinizde paylaşılır — örneğin bir uzman için yönlendirme paketi hazırladığınızda. Neyin dâhil edileceğini siz seçersiniz ve paylaşımı istediğiniz zaman durdurabilirsiniz."
     },

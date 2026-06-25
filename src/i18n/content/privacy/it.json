@@ -23,6 +23,10 @@
       "body": "Per fornire il prodotto: archiviare il tuo inventario e i tuoi documenti, calcolare il tuo patrimonio netto, generare le panoramiche AI che richiedi e creare le istantanee che scegli di condividere. Non vendiamo i tuoi dati."
     },
     {
+      "title": "Elaborazione AI &amp; terze parti",
+      "body": "Per alimentare le nostre funzionalità AI — la scansione e compilazione tramite foto degli asset, le valutazioni automatizzate, la guida vocale e la panoramica, il report e la chat di consulenza — inviamo a <strong>OpenAI, L.L.C.</strong> le informazioni necessarie a tali funzionalità, che esegue i modelli di AI per nostro conto in qualità di responsabile del trattamento dei dati. A seconda della funzionalità, ciò può includere le foto che acquisisci (che possono mostrare dettagli di documenti come numeri di conto o di polizza e indirizzi), i nomi degli asset, le categorie, le valute e i valori nel tuo vault, le risposte e le note in testo libero che fornisci nel flusso di consulenza (che possono includere circostanze personali o familiari sensibili), il tuo Paese e il testo letto ad alta voce dalla guida vocale. OpenAI tratta questi dati solo per restituirci i risultati e non li usa per addestrare i propri modelli. Istruiamo OpenAI a non conservare le nostre richieste e risposte (store=false); in assenza di un accordo di conservazione zero, OpenAI può conservare i dati fino a 30 days esclusivamente per il monitoraggio degli abusi prima di eliminarli. Non vendiamo queste informazioni né le condividiamo con altre terze parti per l'elaborazione AI."
+    },
+    {
       "title": "Condivisione &amp; consenso",
       "body": "I tuoi dati vengono condivisi solo quando lo autorizzi esplicitamente — ad esempio, quando prepari un pacchetto da inviare a un professionista. Sei tu a scegliere cosa includere e puoi smettere di condividere in qualsiasi momento."
     },

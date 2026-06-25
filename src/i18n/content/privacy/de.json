@@ -23,6 +23,10 @@
       "body": "Um das Produkt bereitzustellen: dein Inventar und deine Dokumente zu speichern, dein Nettovermögen zu berechnen, die von dir angeforderten KI-Übersichten zu erstellen und die Momentaufnahmen zu erzeugen, die du teilen möchtest. Wir verkaufen deine Daten nicht."
     },
     {
+      "title": "KI-Verarbeitung &amp; Dritte",
+      "body": "Um unsere KI-Funktionen bereitzustellen — den Foto-Scan mit automatischem Ausfüllen von Vermögenswerten, automatisierte Bewertungen, die gesprochene Schritt-für-Schritt-Anleitung sowie die Beratungsübersicht, den Bericht und den Chat — senden wir die Informationen, die diese Funktionen benötigen, an <strong>OpenAI, L.L.C.</strong>, das die KI-Modelle in unserem Auftrag als unser Auftragsverarbeiter betreibt. Je nach Funktion kann dies die von Ihnen aufgenommenen Fotos umfassen (die Dokumentdetails wie Konto- oder Policennummern und Adressen zeigen können), die Namen, Kategorien, Währungen und Werte der Vermögenswerte in Ihrem Vault, die Antworten und Freitextnotizen, die Sie im Beratungsablauf angeben (die sensible persönliche oder familiäre Umstände enthalten können), Ihr Land sowie den Text, der von der sprachgeführten Anleitung vorgelesen wird. OpenAI verarbeitet dies nur, um uns Ergebnisse zurückzugeben, und verwendet es nicht zum Trainieren seiner Modelle. Wir weisen OpenAI an, unsere Anfragen und Antworten nicht zu speichern (store=false); ohne eine Vereinbarung zur Speicherung von null Daten kann OpenAI die Daten bis zu 30 Tage ausschließlich zur Missbrauchsüberwachung aufbewahren, bevor sie gelöscht werden. Wir verkaufen diese Informationen nicht und geben sie auch nicht zur KI-Verarbeitung an andere Dritte weiter."
+    },
+    {
       "title": "Teilen &amp; Einwilligung",
       "body": "Deine Daten werden nur geteilt, wenn du es ausdrücklich erlaubst – zum Beispiel, wenn du ein Übergabepaket für eine Fachperson zusammenstellst. Du entscheidest, was enthalten ist, und kannst das Teilen jederzeit beenden."
     },

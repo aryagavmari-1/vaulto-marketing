@@ -23,6 +23,10 @@
       "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten maken die je opvraagt en de snapshots maken die je kiest om te delen. We verkopen je gegevens niet."
     },
     {
+      "title": "AI-verwerking &amp; derden",
+      "body": "Om onze AI-functies mogelijk te maken — de scan-en-invulfunctie voor activafoto’s, geautomatiseerde waarderingen, de gesproken rondleiding en het adviserende overzicht, rapport en chat — sturen we de informatie die die functies nodig hebben naar <strong>OpenAI, L.L.C.</strong>, dat de AI-modellen namens ons uitvoert als onze gegevensverwerker. Afhankelijk van de functie kan dit de foto’s omvatten die u maakt (waarop documentgegevens kunnen staan, zoals rekening- of polisnummers en adressen), de activanamen, categorieën, valuta en waarden in uw kluis, de antwoorden en vrije tekstnotities die u in de adviesstroom geeft (die gevoelige persoonlijke of familieomstandigheden kunnen bevatten), uw land en de tekst die hardop wordt voorgelezen door de gesproken rondleiding. OpenAI verwerkt dit uitsluitend om resultaten aan ons terug te sturen en gebruikt het niet om zijn modellen te trainen. We instrueren OpenAI om onze verzoeken en antwoorden niet te bewaren (store=false); zonder een regeling voor nulretentie kan OpenAI de gegevens maximaal 30 days bewaren, uitsluitend voor misbruikmonitoring, voordat deze worden verwijderd. We verkopen deze informatie niet en delen die ook niet met enige andere derde partij voor AI-verwerking."
+    },
+    {
       "title": "Delen &amp; toestemming",
       "body": "Je gegevens worden alleen gedeeld als je daar uitdrukkelijk toestemming voor geeft — bijvoorbeeld wanneer je een doorverwijspakket voor een professional samenstelt. Jij bepaalt wat erin zit en je kunt het delen op elk moment stoppen."
     },

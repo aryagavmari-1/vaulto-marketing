@@ -23,6 +23,10 @@
       "body": "Aby świadczyć usługę: przechowywać Twój spis majątku i dokumenty, obliczać Twoją wartość netto, tworzyć zamówione przez Ciebie podsumowania AI oraz przygotowywać migawki, które zdecydujesz się udostępnić. Nie sprzedajemy Twoich danych."
     },
     {
+      "title": "Przetwarzanie AI &amp; strony trzecie",
+      "body": "Aby zapewnić działanie naszych funkcji AI — skanowania i uzupełniania danych ze zdjęć aktywów, zautomatyzowanych wycen, głosowego przewodnika oraz przeglądu doradczego, raportu i czatu — przekazujemy informacje potrzebne tym funkcjom do <strong>OpenAI, L.L.C.</strong>, które obsługuje modele AI w naszym imieniu jako nasz podmiot przetwarzający dane. W zależności od funkcji może to obejmować wykonane przez Ciebie zdjęcia (które mogą pokazywać szczegóły dokumentów, takie jak numery kont lub polis oraz adresy), nazwy aktywów, kategorie, waluty i wartości w Twoim sejfie, odpowiedzi i notatki w wolnym tekście, które podajesz w procesie doradczym (mogące obejmować wrażliwe okoliczności osobiste lub rodzinne), Twój kraj oraz tekst odczytywany na głos przez przewodnik głosowy. OpenAI przetwarza te dane wyłącznie po to, aby zwrócić nam wyniki, i does not use it to train its models. Polecamy OpenAI nie przechowywać naszych żądań i odpowiedzi (store=false); w przypadku braku uzgodnienia o zerowym przechowywaniu OpenAI może zachować dane przez okres do 30 days wyłącznie w celu monitorowania nadużyć, a następnie je usunąć. Nie sprzedajemy tych informacji ani nie udostępniamy ich żadnej innej stronie trzeciej do przetwarzania przez AI."
+    },
+    {
       "title": "Udostępnianie &amp; zgoda",
       "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to zezwolisz — na przykład gdy przygotowujesz pakiet przekazania dla specjalisty. To Ty decydujesz, co zostanie uwzględnione, i możesz przerwać udostępnianie w dowolnym momencie."
     },

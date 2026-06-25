@@ -23,6 +23,10 @@
       "body": "Para fornecer o produto: guardar o teu inventário e documentos, calcular o teu património líquido, gerar os resumos de IA que pedes e criar as capturas que escolhes partilhar. Não vendemos os teus dados."
     },
     {
+      "title": "Processamento de IA &amp; terceiros",
+      "body": "Para disponibilizar os nossos recursos de IA — a digitalização e o preenchimento a partir de fotos de ativos, as avaliações automatizadas, o guia falado e a visão geral, o relatório e o chat de aconselhamento — enviamos as informações de que esses recursos precisam para a <strong>OpenAI, L.L.C.</strong>, que executa os modelos de IA em nosso nome como nosso subcontratante de tratamento de dados. Dependendo do recurso, isso pode incluir as fotos que você captura (que podem mostrar detalhes de documentos, como números de conta ou de apólice e endereços), os nomes dos ativos, categorias, moedas e valores no seu cofre, as respostas e notas de texto livre que você fornece no fluxo de aconselhamento (que podem incluir circunstâncias pessoais ou familiares sensíveis), o seu país e o texto lido em voz alta pelo guia por voz. A OpenAI processa isso apenas para nos devolver resultados e não o usa para treinar os seus modelos. Instruímos a OpenAI a não reter os nossos pedidos e respostas (store=false); na ausência de um acordo de retenção zero, a OpenAI poderá manter os dados por até 30 days exclusivamente para monitorização de abusos antes de os eliminar. Não vendemos estas informações nem as partilhamos com qualquer outro terceiro para processamento de IA."
+    },
+    {
       "title": "Partilha &amp; consentimento",
       "body": "Os seus dados só são partilhados quando o autoriza explicitamente — por exemplo, quando prepara um pacote de encaminhamento para um profissional. É você que escolhe o que é incluído e pode deixar de partilhar a qualquer momento."
     },

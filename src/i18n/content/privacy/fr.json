@@ -23,6 +23,10 @@
       "body": "Pour fournir le produit : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les synthèses IA que vous demandez et créer les instantanés que vous choisissez de partager. Nous ne vendons pas vos données."
     },
     {
+      "title": "Traitement par l’IA &amp; tiers",
+      "body": "Pour alimenter nos fonctionnalités d’IA — le scan et remplissage automatiques à partir de photos d’actifs, les valorisations automatisées, la visite guidée vocale, ainsi que la vue d’ensemble, le rapport et le chat de conseil — nous envoyons à <strong>OpenAI, L.L.C.</strong> les informations dont ces fonctionnalités ont besoin. OpenAI, L.L.C. exécute les modèles d’IA pour notre compte en tant que sous-traitant de nos données. Selon la fonctionnalité, cela peut inclure les photos que vous prenez (qui peuvent montrer des détails de documents tels que des numéros de compte ou de police et des adresses), les noms des actifs, les catégories, les devises et les valeurs dans votre coffre, les réponses et notes en texte libre que vous fournissez dans le parcours de conseil (qui peuvent inclure des situations personnelles ou familiales sensibles), votre pays, ainsi que le texte lu à voix haute par la visite guidée vocale. OpenAI traite ces données uniquement pour nous renvoyer des résultats et does not use it to train its models. Nous demandons à OpenAI de ne pas conserver nos requêtes ni les réponses (store=false) ; en l’absence d’un accord de conservation nulle, OpenAI peut conserver les données jusqu’à 30 days uniquement à des fins de surveillance des abus avant de les supprimer. Nous ne vendons pas ces informations et ne les partageons avec aucun autre tiers pour un traitement par l’IA."
+    },
+    {
       "title": "Partage &amp; consentement",
       "body": "Vos données ne sont partagées que lorsque vous l'autorisez explicitement — par exemple, lorsque vous préparez un dossier de transmission pour un professionnel. Vous choisissez ce qui est inclus et vous pouvez arrêter le partage à tout moment."
     },

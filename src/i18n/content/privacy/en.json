@@ -23,6 +23,10 @@
       "body": "To provide the product: store your inventory and documents, calculate your net worth, generate the AI overviews you request, and create the snapshots you choose to share. We do not sell your data."
     },
     {
+      "title": "AI processing &amp; third parties",
+      "body": "To power our AI features — the asset photo scan-and-fill, automated valuations, the spoken walkthrough, and the advisory overview, report and chat — we send the information those features need to <strong>OpenAI, L.L.C.</strong>, which runs the AI models on our behalf as our data processor. Depending on the feature this can include the photos you capture (which may show document details such as account or policy numbers and addresses), the asset names, categories, currencies and values in your vault, the answers and free-text notes you provide in the advisory flow (which may include sensitive personal or family circumstances), your country, and the text read aloud by the voice walkthrough. OpenAI processes this only to return results to us and does not use it to train its models. We instruct OpenAI not to retain our requests and responses (store=false); absent a zero-retention arrangement, OpenAI may keep the data for up to 30 days solely for abuse monitoring before deleting it. We do not sell this information or share it with any other third party for AI processing."
+    },
+    {
       "title": "Sharing &amp; consent",
       "body": "Your data is only shared when you explicitly grant it — for example, when you build a referral package for a professional. You choose what's included, and you can stop sharing at any time."
     },
