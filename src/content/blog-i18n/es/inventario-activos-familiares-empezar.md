@@ -77,10 +77,10 @@ Todo lo que añadas seguirá siendo privado en tu cuenta, protegido con una segu
 
 ## Una breve nota sobre la privacidad
 
-Un inventario de activos familiares contiene información sensible, así que importa dónde lo guardas. Con Vaulto, cada conexión está cifrada en tránsito (TLS/HTTPS), tus registros se guardan en una base de datos gestionada con cifrado en reposo, y solo tú puedes ver y editar tu propio vault. Nunca vendemos tus datos. También somos deliberadamente honestos sobre lo que no afirmamos — nada de palabras de moda como «bank-level» o «zero-knowledge», solo las protecciones específicas que realmente ofrecemos. Puedes leer exactamente cómo lo mantenemos seguro en nuestra [página de seguridad](/es/security/).
+Un inventario de activos familiares contiene información sensible, así que importa dónde lo guardas. Con Vaulto, cada conexión está cifrada en tránsito (TLS/HTTPS), tus registros se guardan en una base de datos gestionada con cifrado en reposo, y solo tú puedes ver y editar tu propia bóveda. Nunca vendemos tus datos. También somos deliberadamente honestos sobre lo que no afirmamos — nada de palabras de moda como «bank-level» o «zero-knowledge», solo las protecciones específicas que realmente ofrecemos. Puedes leer exactamente cómo lo mantenemos seguro en nuestra [página de seguridad](/es/security/).
 
 ## Empieza poco a poco, empieza hoy
 
 Un inventario de activos familiares no es un proyecto de fin de semana que tengas que terminar de una sentada. Es un registro vivo que gana valor cada vez que le añades algo. Empieza hoy con una categoría y deja que crezca.
 
-**[Empieza tu vault — gratis](https://app.myvaulto.com)** y registra tus primeros elementos en minutos.
+**[Empieza tu bóveda — gratis](https://app.myvaulto.com)** y registra tus primeros elementos en minutos.
