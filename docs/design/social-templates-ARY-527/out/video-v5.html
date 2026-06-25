@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../social.css">
+<style>html,body{margin:0}.canvas{width:1080px;height:1920px}</style>
+</head><body>
+<div class="canvas" data-theme="neutral" data-format="video" data-block="">
+  
+  <div class="content" style="padding:230px 96px 330px">
+      <div class="tag" style="font-size:30px;padding:15px 27px">Getting organised</div>
+      <h1 class="headline" data-fit style="font-size:96px;margin-top:34px;line-height:1.04">Give me ten minutes and your family will thank you.</h1>
+      <div class="spacer"></div>
+      <div class="onscreen" style="font-size:72px;margin-bottom:34px">10-MIN ASSET CHECK</div>
+      </div>
+</div>
+<script>
+(async () => {
+  await document.fonts.ready;
+  const content = document.querySelector('.content');
+  const h = document.querySelector('[data-fit]');
+  const MIN = 72;
+  let overflow = 0;
+  if (h) {
+    let fs = parseFloat(getComputedStyle(h).fontSize);
+    const fits = () => content.scrollHeight <= content.clientHeight + 1;
+    while (!fits() && fs > MIN) { fs -= 2; h.style.fontSize = fs + 'px'; }
+    document.documentElement.setAttribute('data-fit-size', String(Math.round(fs)));
+    overflow = fits() ? 0 : 1;
+  }
+  document.documentElement.setAttribute('data-overflow', String(overflow));
+})();
+</script>
+</body></html>
