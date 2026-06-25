@@ -33,18 +33,22 @@ interface Props {
   noindex?: boolean;
   faq?: FaqItem[];        // emits FAQPage JSON-LD (ARY-399 §2d)
   breadcrumbs?: Crumb[];  // emits BreadcrumbList JSON-LD (ARY-399 §2d)
+  // Explicit hreflang alternates (ARY-523). Blog articles use translated slugs
+  // that don't share a path across locales, so they pass their own set rather
+  // than letting `alternatesFor(path)` derive them by locale prefix.
+  alternates?: { hreflang: string; href: string }[];
 }
 const {
   title, description, canonical, path, locale = DEFAULT_LOCALE,
   type = 'website', image, publishedTime, noindex = false,
-  faq, breadcrumbs,
+  faq, breadcrumbs, alternates: alternatesProp,
 } = Astro.props;
 
 // Default share card MUST be a PNG: Facebook/Twitter/LinkedIn/iMessage do not
 // render SVG OG images (ARY-449 P0 #1). `public/og.png` is baked from og.svg by
 // scripts/build-og.mjs (wired into prebuild). og.svg stays the editable source.
 const ogImage = new URL(image ?? '/og.png', BRAND.url).href;
-const alternates = alternatesFor(path, BRAND.url);
+const alternates = alternatesProp ?? alternatesFor(path, BRAND.url);
 // Twitter @handle for card attribution (ARY-449 P1 #7). Empty until the profile
 // exists (ARY-27) — when populated, twitter:site lights up automatically.
 const twitterSite = BRAND.social.xHandle || '';

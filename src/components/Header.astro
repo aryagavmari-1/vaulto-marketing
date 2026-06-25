@@ -9,8 +9,14 @@ import MarketingButton from './marketing/MarketingButton.astro';
 import { DEFAULT_LOCALE, LOCALES, LOCALE_NAMES, localizedPath, type Locale } from '../config/i18n';
 import { useTranslations, type UIKey } from '../i18n/ui';
 
-interface Props { path?: string; locale?: Locale; }
-const { path = '/', locale = DEFAULT_LOCALE } = Astro.props;
+interface Props {
+  path?: string;
+  locale?: Locale;
+  // Explicit language-switcher options (ARY-523). Blog articles use translated
+  // slugs, so each locale's target URL is supplied rather than derived by prefix.
+  switcher?: { value: string; label: string; selected: boolean }[];
+}
+const { path = '/', locale = DEFAULT_LOCALE, switcher } = Astro.props;
 const t = useTranslations(locale);
 
 // Nav hrefs are localized to the current locale (ARY-427: every page is now
@@ -28,7 +34,9 @@ const links: { href: string; key: UIKey }[] = [
 const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const isActive = (href: string) => norm(href) === norm(path);
 // Language switcher: each option navigates to this same page in that locale.
-const langOptions = LOCALES.map((l) => ({
+// Blog pages pass an explicit `switcher` (translated-slug URLs); other pages
+// derive it by prefixing the current path.
+const langOptions = switcher ?? LOCALES.map((l) => ({
   value: localizedPath(path, l),
   label: LOCALE_NAMES[l],
   selected: l === locale,

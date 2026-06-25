@@ -1,0 +1,68 @@
+---
+/**
+ * Localized cornerstone article route (ARY-523).
+ *
+ * Serves each translated article at a locale-prefixed, IN-LANGUAGE-slug URL —
+ * e.g. `/pt/blog/calcular-patrimonio-liquido-familia/`. Paths come from the
+ * `blogI18n` collection (one Markdown overlay per locale, `id = <locale>/<slug>`).
+ * hreflang alternates + the language switcher are derived from the shared
+ * `blog-slugs.json` manifest via `post.data.ref` (the English canonical id), so
+ * every locale variant cross-links correctly and the English `/blog/<slug>/`
+ * URLs are never touched.
+ */
+import Base from '../../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+import FinalCta from '../../../components/marketing/FinalCta.astro';
+import { BRAND } from '../../../config/brand';
+import { blogAlternates, blogSwitcher, localizedPath, type Locale } from '../../../config/i18n';
+import { getContent } from '../../../i18n/content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blogI18n', ({ data }) => !data.draft);
+  // Drive the URL from the frontmatter `locale`/`slug` fields (the source of
+  // truth) rather than the collection `id` — the glob loader derives `id` from
+  // the `slug` frontmatter, which drops the locale directory.
+  return posts.map((post) => ({
+    params: { locale: post.data.locale, slug: post.data.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const locale = post.data.locale as Locale;
+const { Content } = await render(post);
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+const faq = post.data.faqs?.map((f) => ({ q: f.question, a: f.answer }));
+const alternates = blogAlternates(post.data.ref, BRAND.url);
+const switcher = blogSwitcher(post.data.ref, locale);
+const blogHome = localizedPath('/blog/', locale);
+const canonicalPath = `/${locale}/blog/${post.data.slug}/`;
+const chrome = getContent<{ allGuides: string }>('blog-chrome', locale);
+---
+<Base
+  title={post.data.title}
+  path={`/blog/${post.data.ref}/`}
+  canonicalPath={canonicalPath}
+  locale={locale}
+  description={post.data.description}
+  type="article"
+  publishedTime={post.data.pubDate.toISOString()}
+  faq={faq}
+  alternates={alternates}
+  switcher={switcher}
+>
+  <article class="section">
+    <div class="container prose">
+      <p class="updated"><a href={blogHome}>← {chrome.allGuides}</a></p>
+      <h1>{post.data.title}</h1>
+      <p class="updated">{fmt(post.data.pubDate)}</p>
+      <Content />
+    </div>
+  </article>
+
+  <FinalCta
+    title="Ready to start your own?"
+    body="Vaulto turns this into action. Start free — no spreadsheets required."
+    ctaId="blog_post_final"
+  />
+</Base>
