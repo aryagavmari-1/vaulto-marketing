@@ -1,0 +1,73 @@
+---
+/**
+ * Account-deletion page body, locale-aware (ARY-560). Created for Google Play
+ * Data-safety "Delete account URL" compliance: it must name the app/developer,
+ * give the explicit steps to request deletion, and state what is deleted vs
+ * kept and the retention window. All copy comes from
+ * `content/delete-account/<locale>.json` via `getContent`; the contact email
+ * link stays here (never machine-translated). English is the source + fallback.
+ * Inline prose (links, <strong>) is preserved inside the JSON and rendered via
+ * `set:html`. Mirrors the PrivacyPage pattern.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('delete-account', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.delete, url: `${BRAND.url}/delete-account/` },
+];
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/delete-account/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">{c.hero.eyebrow}</span>
+      <h1>{c.hero.heading}</h1>
+      <p class="lead" set:html={c.hero.lead} />
+      <p class="updated">
+        {c.hero.updated}{' '}
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
+      </p>
+
+      <h2 set:html={c.steps.title} />
+      <p set:html={c.steps.intro} />
+      <ol>
+        {c.steps.items.map((s: any) => (
+          <li>
+            <strong set:html={s.title} /> — <span set:html={s.body} />
+          </li>
+        ))}
+      </ol>
+
+      <h2 set:html={c.deleted.title} />
+      <p set:html={c.deleted.intro} />
+      <ul>
+        {c.deleted.items.map((item: string) => (
+          <li set:html={item} />
+        ))}
+      </ul>
+      <p set:html={c.deleted.permanent} />
+
+      <h2 set:html={c.retained.title} />
+      <p set:html={c.retained.body} />
+      <p set:html={c.retained.note} />
+
+      <h2 set:html={c.contact.title} />
+      <p>
+        {c.contact.lead}{' '}
+        <a href={`mailto:${BRAND.email.privacy}`}>{BRAND.email.privacy}</a>.
+      </p>
+    </div>
+  </section>
+</Base>

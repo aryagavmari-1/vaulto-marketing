@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "Delete your account",
+    "description": "How to delete your Vaulto (Family Asset Vault) account and data, what is removed, and what we may keep."
+  },
+  "crumbs": { "home": "Home", "delete": "Delete your account" },
+  "hero": {
+    "eyebrow": "Your data, your control",
+    "heading": "Delete your Vaulto account",
+    "lead": "Vaulto — the Family Asset Vault — gives you a way to delete the data you put in and to remove your account entirely. This page explains the exact steps, what gets deleted, and what we may keep.",
+    "updated": "Last updated June 2026 · Questions? Email"
+  },
+  "steps": {
+    "title": "How to request deletion",
+    "intro": "There are two ways to remove your data, depending on whether you want to delete specific vaults or your whole account.",
+    "items": [
+      {
+        "title": "Delete a vault yourself, in the app",
+        "body": "Open <strong>Settings → Danger Zone</strong>, choose the vault you want to remove, and confirm by typing its name. This permanently deletes that vault and everything inside it — assets, liabilities, valuations, uploaded documents, and supporting files. You can repeat this for each vault you own."
+      },
+      {
+        "title": "Delete your entire account, by email",
+        "body": "To remove your full account — including your sign-in record — email <strong>privacy@myvaulto.com</strong> from the email address on your account with the subject \"Delete my account\". We confirm the request comes from you, then permanently delete your account and all associated vault data. We action verified requests within 30 days and confirm by email when it's done."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "What gets deleted",
+    "intro": "When we process an account-deletion request, we permanently remove:",
+    "items": [
+      "Your vault contents — assets, liabilities, valuations, and the net-worth picture built from them.",
+      "Your uploaded documents and supporting files (evidence).",
+      "Any AI overviews, drafts, and shareable snapshots generated from your data.",
+      "Your account record — name, email address, and sign-in credentials."
+    ],
+    "permanent": "Deletion is permanent and cannot be undone. Export anything you want to keep first — you can download your vault data at any time before you delete."
+  },
+  "retained": {
+    "title": "What we may keep, and for how long",
+    "body": "We do not keep your vault contents or documents after deletion. Where the law requires us to retain a minimal record (for example, to meet tax or anti-fraud obligations), we keep only that record, only for as long as the law requires, and delete it afterwards. Residual copies in encrypted backups are overwritten on our normal backup-rotation cycle.",
+    "note": "We never sell your data, and deletion does not change that."
+  },
+  "contact": {
+    "title": "Questions about deletion",
+    "lead": "Email"
+  }
+}

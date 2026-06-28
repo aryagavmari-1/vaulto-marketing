@@ -100,6 +100,7 @@ const PAGE_LOCALES: Record<string, readonly Locale[]> = {
   '/planning/': ALL,
   '/security/': ALL,
   '/privacy/': ALL,
+  '/delete-account/': ALL,
   '/faq/': ALL,
 };
 
