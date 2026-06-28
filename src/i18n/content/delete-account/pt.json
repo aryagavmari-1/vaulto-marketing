@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Eliminar a sua conta",
+    "description": "Como eliminar a sua conta e os seus dados Vaulto (Family Asset Vault) na aplicação, o que é removido e o que conservamos."
+  },
+  "crumbs": { "home": "Início", "delete": "Eliminar a sua conta" },
+  "hero": {
+    "eyebrow": "Os seus dados, sob o seu controlo",
+    "heading": "Eliminar a sua conta Vaulto",
+    "lead": "O Vaulto — o Family Asset Vault — permite eliminar a sua conta, ou qualquer cofre individual, diretamente na aplicação. A eliminação é imediata e permanente. Esta página explica os passos exatos, o que é eliminado e o que conservamos.",
+    "updated": "Última atualização: junho de 2026 · Tem dúvidas? Escreva para"
+  },
+  "steps": {
+    "title": "Como eliminar a sua conta",
+    "intro": "Pode eliminar tudo por si próprio a partir da aplicação — sem necessidade de e-mail nem de espera.",
+    "items": [
+      {
+        "title": "Eliminar toda a sua conta, na aplicação",
+        "body": "Abra <strong>Definições → Conta → Eliminar conta</strong>. O ecrã indica exatamente o que será apagado. Confirme escrevendo <strong>DELETE</strong> e a sua palavra-passe. A sua conta e todos os seus dados são eliminados de imediato, a sessão é terminada e a cache local da aplicação é limpa. Disponível em iOS e Android."
+      },
+      {
+        "title": "Eliminar um único cofre, na aplicação",
+        "body": "Pretende remover um cofre mas manter a sua conta? Abra <strong>Definições → Zona de perigo</strong>, escolha o cofre e confirme escrevendo o respetivo nome. Esse cofre e tudo o que contém — ativos, passivos, avaliações, documentos e ficheiros de apoio — é eliminado de forma permanente."
+      },
+      {
+        "title": "Precisa de ajuda?",
+        "body": "Se não conseguir aceder à aplicação ou tiver alguma dúvida sobre a eliminação, escreva para <strong>privacy@myvaulto.com</strong> a partir do endereço de e-mail associado à sua conta e iremos ajudá-lo."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "O que é eliminado",
+    "intro": "Eliminar a sua conta remove de forma permanente:",
+    "items": [
+      "O registo da sua conta — nome, endereço de e-mail e credenciais de início de sessão.",
+      "Cada cofre e todo o seu conteúdo — ativos, passivos, avaliações e o panorama de património líquido construído a partir deles.",
+      "Os documentos e ficheiros comprovativos que carregou, juntamente com a chave de encriptação que os protege — de modo que os ficheiros armazenados se tornam permanentemente ilegíveis.",
+      "As sínteses geradas por IA, os rascunhos e os instantâneos partilháveis; o histórico de aconselhamento, as sequências e as preferências; e os tokens de início de sessão e de notificação dos seus dispositivos."
+    ],
+    "permanent": "A eliminação é imediata, permanente e irreversível — não existe qualquer período de tolerância nem janela de recuperação. Exporte primeiro tudo o que pretende conservar; pode transferir os dados do seu cofre a qualquer momento antes de eliminar."
+  },
+  "retained": {
+    "title": "O que conservamos, e durante quanto tempo",
+    "body": "Quando elimina a sua conta por si próprio, não existe período de retenção: os seus dados são apagados no momento em que confirma. As cópias de segurança encriptadas da base de dados são mantidas num ciclo rotativo curto, e os registos eliminados desaparecem em cerca de 7 dias; uma vez que a chave de encriptação é destruída no momento da eliminação, essas cópias de segurança já são ilegíveis. Quando a lei nos obriga a manter um registo mínimo (por exemplo, para cumprir obrigações fiscais ou de combate à fraude), conservamos apenas esse registo, somente durante o tempo exigido pela lei, e eliminamo-lo depois.",
+    "note": "Nunca vendemos os seus dados, e a eliminação não altera isso."
+  },
+  "contact": {
+    "title": "Questões sobre a eliminação",
+    "lead": "Escreva para"
+  }
+}

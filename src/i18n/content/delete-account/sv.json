@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Radera ditt konto",
+    "description": "Så här raderar du ditt Vaulto-konto (Family Asset Vault) och dina data i appen, vad som tas bort och vad vi behåller."
+  },
+  "crumbs": { "home": "Hem", "delete": "Radera ditt konto" },
+  "hero": {
+    "eyebrow": "Dina data, din kontroll",
+    "heading": "Radera ditt Vaulto-konto",
+    "lead": "Vaulto — Family Asset Vault — låter dig radera ditt konto, eller ett enskilt valv, direkt i appen. Raderingen sker omedelbart och är permanent. Den här sidan förklarar exakt vilka steg som gäller, vad som raderas och vad vi behåller.",
+    "updated": "Senast uppdaterad juni 2026 · Har du frågor? Mejla"
+  },
+  "steps": {
+    "title": "Så här raderar du ditt konto",
+    "intro": "Du kan radera allt själv inifrån appen — ingen e-post eller väntetid krävs.",
+    "items": [
+      {
+        "title": "Radera hela ditt konto i appen",
+        "body": "Öppna <strong>Inställningar → Konto → Radera konto</strong>. Skärmen visar exakt vad som kommer att raderas. Bekräfta genom att skriva <strong>DELETE</strong> och ditt lösenord. Ditt konto och alla dess data raderas omedelbart, du loggas ut och appens lokala cache rensas. Tillgängligt på iOS och Android."
+      },
+      {
+        "title": "Radera ett enskilt valv i appen",
+        "body": "Vill du ta bort ett valv men behålla ditt konto? Öppna <strong>Inställningar → Riskzon</strong>, välj valvet och bekräfta genom att skriva dess namn. Det valvet och allt i det — tillgångar, skulder, värderingar, dokument och underlagsfiler — raderas permanent."
+      },
+      {
+        "title": "Behöver du hjälp?",
+        "body": "Om du inte kan komma åt appen, eller har en fråga om radering, mejla <strong>privacy@myvaulto.com</strong> från den e-postadress som är kopplad till ditt konto, så hjälper vi dig."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Vad som raderas",
+    "intro": "Att radera ditt konto tar permanent bort:",
+    "items": [
+      "Din kontopost — namn, e-postadress och inloggningsuppgifter.",
+      "Varje valv och allt dess innehåll — tillgångar, skulder, värderingar och den nettoförmögenhetsbild som byggts upp av dem.",
+      "Dina uppladdade dokument och bevisfiler, tillsammans med krypteringsnyckeln som skyddar dem — så att de lagrade filerna blir permanent oläsbara.",
+      "AI-översikter, utkast och delbara ögonblicksbilder; rådgivningshistorik, serier och inställningar; samt dina enheters inloggnings- och aviseringstoken."
+    ],
+    "permanent": "Raderingen sker omedelbart, är permanent och kan inte ångras — det finns ingen frist eller återställningsperiod. Exportera allt du vill behålla först; du kan ladda ner dina valvdata när som helst innan du raderar."
+  },
+  "retained": {
+    "title": "Vad vi behåller, och hur länge",
+    "body": "När du raderar ditt konto själv finns det ingen lagringsperiod — dina data raderas i samma stund som du bekräftar. Krypterade databassäkerhetskopior bevaras i en kort rullande cykel, och raderade poster fasas ut inom cirka 7 dagar; eftersom krypteringsnyckeln förstörs vid raderingen är dessa säkerhetskopierade kopior redan oläsbara. Där lagen kräver att vi behåller en minimal uppgift (till exempel för att uppfylla skatte- eller bedrägeribekämpningsskyldigheter) behåller vi endast den uppgiften, endast så länge lagen kräver, och raderar den därefter.",
+    "note": "Vi säljer aldrig dina data, och radering ändrar inte på det."
+  },
+  "contact": {
+    "title": "Frågor om radering",
+    "lead": "Mejla"
+  }
+}

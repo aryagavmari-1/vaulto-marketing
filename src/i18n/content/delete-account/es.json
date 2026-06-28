@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Elimina tu cuenta",
+    "description": "Cómo eliminar tu cuenta y tus datos de Vaulto (Family Asset Vault) en la aplicación, qué se elimina y qué conservamos."
+  },
+  "crumbs": { "home": "Inicio", "delete": "Elimina tu cuenta" },
+  "hero": {
+    "eyebrow": "Tus datos, bajo tu control",
+    "heading": "Elimina tu cuenta de Vaulto",
+    "lead": "Vaulto —el Family Asset Vault— te permite eliminar tu cuenta, o cualquier bóveda individual, directamente desde la aplicación. La eliminación es inmediata y permanente. Esta página explica los pasos exactos, qué se elimina y qué conservamos.",
+    "updated": "Última actualización: junio de 2026 · ¿Tienes preguntas? Escríbenos a"
+  },
+  "steps": {
+    "title": "Cómo eliminar tu cuenta",
+    "intro": "Puedes eliminarlo todo tú mismo desde dentro de la aplicación, sin necesidad de enviar correos ni esperar.",
+    "items": [
+      {
+        "title": "Elimina toda tu cuenta, desde la aplicación",
+        "body": "Abre <strong>Ajustes → Cuenta → Eliminar cuenta</strong>. La pantalla muestra exactamente lo que se borrará. Confirma escribiendo <strong>DELETE</strong> y tu contraseña. Tu cuenta y todos sus datos se eliminan de inmediato, se cierra tu sesión y se vacía la caché local de la aplicación. Disponible en iOS y Android."
+      },
+      {
+        "title": "Elimina una sola bóveda, desde la aplicación",
+        "body": "¿Quieres eliminar una bóveda pero conservar tu cuenta? Abre <strong>Ajustes → Zona de peligro</strong>, elige la bóveda y confirma escribiendo su nombre. Esa bóveda y todo lo que contiene —activos, pasivos, valoraciones, documentos y archivos de respaldo— se elimina de forma permanente."
+      },
+      {
+        "title": "¿Necesitas ayuda?",
+        "body": "Si no puedes acceder a la aplicación o tienes alguna pregunta sobre la eliminación, escríbenos a <strong>privacy@myvaulto.com</strong> desde la dirección de correo asociada a tu cuenta y te ayudaremos."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Qué se elimina",
+    "intro": "Eliminar tu cuenta borra de forma permanente:",
+    "items": [
+      "El registro de tu cuenta: nombre, dirección de correo electrónico y credenciales de inicio de sesión.",
+      "Cada bóveda y todo su contenido: activos, pasivos, valoraciones y el panorama de patrimonio neto construido a partir de ellos.",
+      "Los documentos y archivos de prueba que has subido, junto con la clave de cifrado que los protege, de modo que los archivos almacenados quedan permanentemente ilegibles.",
+      "Los resúmenes generados por IA, borradores e instantáneas que se pueden compartir; el historial de asesoramiento, las rachas y las preferencias; y los tokens de inicio de sesión y de notificaciones de tus dispositivos."
+    ],
+    "permanent": "La eliminación es inmediata, permanente e irreversible: no existe ningún periodo de gracia ni ventana de recuperación. Exporta primero todo lo que quieras conservar; puedes descargar los datos de tu bóveda en cualquier momento antes de eliminarla."
+  },
+  "retained": {
+    "title": "Qué conservamos, y durante cuánto tiempo",
+    "body": "Cuando eliminas tu cuenta por tu cuenta, no hay periodo de retención: tus datos se borran en el momento en que confirmas. Las copias de seguridad cifradas de la base de datos se mantienen en un ciclo rotativo breve, y los registros eliminados desaparecen en unos 7 días; como la clave de cifrado se destruye en el momento de la eliminación, esas copias de respaldo ya son ilegibles. Cuando la ley nos obliga a conservar un registro mínimo (por ejemplo, para cumplir obligaciones fiscales o de prevención del fraude), conservamos únicamente ese registro, solo durante el tiempo que exige la ley, y lo eliminamos después.",
+    "note": "Nunca vendemos tus datos, y la eliminación no cambia eso."
+  },
+  "contact": {
+    "title": "Preguntas sobre la eliminación",
+    "lead": "Escríbenos a"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Hesabınızı silin",
+    "description": "Vaulto (Family Asset Vault) hesabınızı ve verilerinizi uygulamada nasıl sileceğiniz, nelerin kaldırıldığı ve nelerin saklandığı."
+  },
+  "crumbs": { "home": "Ana sayfa", "delete": "Hesabınızı silin" },
+  "hero": {
+    "eyebrow": "Verileriniz, sizin kontrolünüzde",
+    "heading": "Vaulto hesabınızı silin",
+    "lead": "Vaulto — Family Asset Vault — hesabınızı veya herhangi bir kasanızı doğrudan uygulama içinden silmenize olanak tanır. Silme işlemi anında gerçekleşir ve kalıcıdır. Bu sayfa, izlenecek tam adımları, nelerin silindiğini ve nelerin saklandığını açıklar.",
+    "updated": "Son güncelleme: Haziran 2026 · Sorularınız mı var? E-posta gönderin:"
+  },
+  "steps": {
+    "title": "Hesabınızı nasıl silersiniz",
+    "intro": "Her şeyi uygulama içinden kendiniz silebilirsiniz — e-posta göndermenize veya beklemenize gerek yok.",
+    "items": [
+      {
+        "title": "Tüm hesabınızı uygulamada silin",
+        "body": "<strong>Ayarlar → Hesap → Hesabı sil</strong> bölümünü açın. Ekran, tam olarak nelerin silineceğini listeler. <strong>DELETE</strong> yazıp şifrenizi girerek onaylayın. Hesabınız ve tüm verileri anında silinir, oturumunuz kapatılır ve uygulamanın yerel önbelleği temizlenir. iOS ve Android'de kullanılabilir."
+      },
+      {
+        "title": "Tek bir kasayı uygulamada silin",
+        "body": "Bir kasayı kaldırmak ama hesabınızı korumak mı istiyorsunuz? <strong>Ayarlar → Tehlikeli Bölge</strong> bölümünü açın, kasayı seçin ve adını yazarak onaylayın. O kasa ve içindeki her şey — varlıklar, yükümlülükler, değerlemeler, belgeler ve destekleyici dosyalar — kalıcı olarak silinir."
+      },
+      {
+        "title": "Yardıma mı ihtiyacınız var?",
+        "body": "Uygulamaya erişemiyorsanız veya silme işlemiyle ilgili bir sorunuz varsa, hesabınızdaki e-posta adresinden <strong>privacy@myvaulto.com</strong> adresine yazın; size yardımcı olalım."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Neler silinir",
+    "intro": "Hesabınızı silmek aşağıdakileri kalıcı olarak kaldırır:",
+    "items": [
+      "Hesap kaydınız — adınız, e-posta adresiniz ve oturum açma kimlik bilgileriniz.",
+      "Her kasa ve tüm içeriği — varlıklar, yükümlülükler, değerlemeler ve bunlardan oluşturulan net değer tablosu.",
+      "Yüklediğiniz belgeler ve kanıt dosyaları ile bunları koruyan şifreleme anahtarı — böylece saklanan dosyalar kalıcı olarak okunamaz hale gelir.",
+      "AI özetleri, taslaklar ve paylaşılabilir görünümler; danışmanlık geçmişi, seriler ve tercihler; ayrıca cihazlarınızın oturum açma ve bildirim belirteçleri."
+    ],
+    "permanent": "Silme işlemi anında gerçekleşir, kalıcıdır ve geri alınamaz — ek süre veya kurtarma penceresi yoktur. Saklamak istediğiniz her şeyi önce dışa aktarın; kasa verilerinizi silmeden önce istediğiniz zaman indirebilirsiniz."
+  },
+  "retained": {
+    "title": "Neyi, ne kadar süreyle saklarız",
+    "body": "Hesabınızı kendiniz sildiğinizde herhangi bir saklama süresi yoktur — verileriniz onayladığınız anda silinir. Şifrelenmiş veritabanı yedekleri kısa, döngüsel bir çevrimde tutulur ve silinen kayıtlar yaklaşık 7 gün içinde devre dışı kalır; şifreleme anahtarı silme sırasında yok edildiği için bu yedeklenmiş kopyalar zaten okunamaz durumdadır. Yasaların asgari bir kayıt tutmamızı gerektirdiği durumlarda (örneğin vergi veya dolandırıcılık önleme yükümlülüklerini yerine getirmek için), yalnızca o kaydı, yalnızca yasanın gerektirdiği süre boyunca saklarız ve ardından sileriz.",
+    "note": "Verilerinizi asla satmayız ve hesabınızı silmeniz bunu değiştirmez."
+  },
+  "contact": {
+    "title": "Silme hakkında sorular",
+    "lead": "E-posta gönderin:"
+  }
+}

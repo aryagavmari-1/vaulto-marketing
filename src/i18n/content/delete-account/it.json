@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Elimina il tuo account",
+    "description": "Come eliminare il tuo account Vaulto (Family Asset Vault) e i tuoi dati nell'app, cosa viene rimosso e cosa conserviamo."
+  },
+  "crumbs": { "home": "Home", "delete": "Elimina il tuo account" },
+  "hero": {
+    "eyebrow": "I tuoi dati, sotto il tuo controllo",
+    "heading": "Elimina il tuo account Vaulto",
+    "lead": "Vaulto — il Family Asset Vault — ti permette di eliminare il tuo account, o un singolo vault, direttamente nell'app. L'eliminazione è immediata e permanente. Questa pagina illustra i passaggi precisi, cosa viene eliminato e cosa conserviamo.",
+    "updated": "Ultimo aggiornamento giugno 2026 · Domande? Scrivi a"
+  },
+  "steps": {
+    "title": "Come eliminare il tuo account",
+    "intro": "Puoi eliminare tutto autonomamente dall'interno dell'app — senza e-mail né attese.",
+    "items": [
+      {
+        "title": "Elimina l'intero account, nell'app",
+        "body": "Apri <strong>Impostazioni → Account → Elimina account</strong>. La schermata elenca con precisione ciò che verrà cancellato. Conferma digitando <strong>DELETE</strong> e la tua password. Il tuo account e tutti i suoi dati vengono eliminati immediatamente, viene effettuata la disconnessione e la cache locale dell'app viene svuotata. Disponibile su iOS e Android."
+      },
+      {
+        "title": "Elimina un singolo vault, nell'app",
+        "body": "Vuoi rimuovere un vault ma mantenere il tuo account? Apri <strong>Impostazioni → Zona pericolosa</strong>, scegli il vault e conferma digitandone il nome. Quel vault e tutto ciò che contiene — attività, passività, valutazioni, documenti e file di supporto — viene eliminato in modo permanente."
+      },
+      {
+        "title": "Hai bisogno di aiuto?",
+        "body": "Se non riesci ad accedere all'app o hai una domanda sull'eliminazione, scrivi a <strong>privacy@myvaulto.com</strong> dall'indirizzo e-mail associato al tuo account e ti aiuteremo."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Cosa viene eliminato",
+    "intro": "L'eliminazione del tuo account rimuove in modo permanente:",
+    "items": [
+      "Il record del tuo account — nome, indirizzo e-mail e credenziali di accesso.",
+      "Ogni vault e tutto il suo contenuto — attività, passività, valutazioni e il quadro del patrimonio netto costruito a partire da essi.",
+      "I documenti e i file di prova che hai caricato, insieme alla chiave di crittografia che li protegge — così i file archiviati diventano permanentemente illeggibili.",
+      "Panoramiche, bozze e istantanee condivisibili generate dall'AI; cronologia della consulenza, sequenze e preferenze; e i token di accesso e notifica dei tuoi dispositivi."
+    ],
+    "permanent": "L'eliminazione è immediata, permanente e irreversibile — non esiste alcun periodo di tolleranza né finestra di recupero. Esporta prima tutto ciò che desideri conservare; puoi scaricare i dati del tuo vault in qualsiasi momento prima dell'eliminazione."
+  },
+  "retained": {
+    "title": "Cosa conserviamo e per quanto tempo",
+    "body": "Quando elimini il tuo account autonomamente, non esiste alcun periodo di conservazione — i tuoi dati vengono cancellati nel momento in cui confermi. I backup crittografati del database sono conservati con un ciclo rotativo breve e i record eliminati scadono entro circa 7 giorni; poiché la chiave di crittografia viene distrutta al momento dell'eliminazione, quelle copie di backup sono già illeggibili. Laddove la legge ci imponga di conservare un record minimo (ad esempio, per adempiere a obblighi fiscali o antifrode), conserviamo soltanto quel record, solo per il tempo richiesto dalla legge, e lo eliminiamo successivamente.",
+    "note": "Non vendiamo mai i tuoi dati, e l'eliminazione non cambia questo principio."
+  },
+  "contact": {
+    "title": "Domande sull'eliminazione",
+    "lead": "Scrivi a"
+  }
+}

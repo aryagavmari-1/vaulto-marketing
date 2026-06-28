@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Usuń swoje konto",
+    "description": "Jak usunąć konto Vaulto (Family Asset Vault) i swoje dane w aplikacji, co jest usuwane, a co zachowujemy."
+  },
+  "crumbs": { "home": "Strona główna", "delete": "Usuń swoje konto" },
+  "hero": {
+    "eyebrow": "Twoje dane, Twoja kontrola",
+    "heading": "Usuń swoje konto Vaulto",
+    "lead": "Vaulto — Family Asset Vault — umożliwia usunięcie konta lub dowolnego pojedynczego sejfu bezpośrednio w aplikacji. Usunięcie następuje natychmiast i jest nieodwracalne. Ta strona wyjaśnia dokładne kroki, co zostaje usunięte oraz co zachowujemy.",
+    "updated": "Ostatnia aktualizacja: czerwiec 2026 · Masz pytania? Napisz na"
+  },
+  "steps": {
+    "title": "Jak usunąć swoje konto",
+    "intro": "Wszystko możesz usunąć samodzielnie z poziomu aplikacji — bez wysyłania wiadomości e-mail i bez oczekiwania.",
+    "items": [
+      {
+        "title": "Usuń całe konto w aplikacji",
+        "body": "Otwórz <strong>Ustawienia → Konto → Usuń konto</strong>. Ekran wyświetli dokładnie to, co zostanie usunięte. Potwierdź, wpisując <strong>DELETE</strong> oraz swoje hasło. Twoje konto i wszystkie jego dane zostaną usunięte natychmiast, nastąpi wylogowanie, a lokalna pamięć podręczna aplikacji zostanie wyczyszczona. Dostępne na iOS i Android."
+      },
+      {
+        "title": "Usuń pojedynczy sejf w aplikacji",
+        "body": "Chcesz usunąć jeden sejf, ale zachować konto? Otwórz <strong>Ustawienia → Strefa zagrożenia</strong>, wybierz sejf i potwierdź, wpisując jego nazwę. Ten sejf i wszystko, co się w nim znajduje — aktywa, zobowiązania, wyceny, dokumenty oraz pliki uzupełniające — zostanie trwale usunięte."
+      },
+      {
+        "title": "Potrzebujesz pomocy?",
+        "body": "Jeśli nie masz dostępu do aplikacji lub masz pytanie dotyczące usuwania danych, napisz na <strong>privacy@myvaulto.com</strong> z adresu e-mail przypisanego do Twojego konta, a my pomożemy."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Co zostaje usunięte",
+    "intro": "Usunięcie konta trwale usuwa:",
+    "items": [
+      "Rekord Twojego konta — imię i nazwisko, adres e-mail oraz dane logowania.",
+      "Każdy sejf i całą jego zawartość — aktywa, zobowiązania, wyceny oraz obraz wartości netto utworzony na ich podstawie.",
+      "Przesłane przez Ciebie dokumenty i pliki dowodowe, wraz z kluczem szyfrującym, który je chroni — dzięki czemu przechowywane pliki stają się trwale nieczytelne.",
+      "Przeglądy AI, wersje robocze i udostępniane podsumowania; historię doradczą, serie i preferencje; a także tokeny logowania i powiadomień Twoich urządzeń."
+    ],
+    "permanent": "Usunięcie następuje natychmiast, jest trwałe i nie można go cofnąć — nie ma okresu karencji ani możliwości odzyskania danych. Najpierw wyeksportuj wszystko, co chcesz zachować; dane swojego sejfu możesz pobrać w dowolnym momencie przed usunięciem."
+  },
+  "retained": {
+    "title": "Co zachowujemy i jak długo",
+    "body": "Gdy samodzielnie usuwasz swoje konto, nie obowiązuje żaden okres przechowywania — Twoje dane są usuwane w momencie potwierdzenia. Zaszyfrowane kopie zapasowe bazy danych są przechowywane w krótkim, rotacyjnym cyklu, a usunięte rekordy wygasają w ciągu około 7 dni; ponieważ klucz szyfrujący jest niszczony w chwili usunięcia, te kopie zapasowe są już nieczytelne. Tam, gdzie prawo wymaga od nas zachowania minimalnego zapisu (na przykład w celu spełnienia obowiązków podatkowych lub przeciwdziałania oszustwom), zachowujemy wyłącznie ten zapis, jedynie przez okres wymagany przez prawo, a następnie go usuwamy.",
+    "note": "Nigdy nie sprzedajemy Twoich danych, a usunięcie konta tego nie zmienia."
+  },
+  "contact": {
+    "title": "Pytania dotyczące usuwania",
+    "lead": "Napisz na"
+  }
+}

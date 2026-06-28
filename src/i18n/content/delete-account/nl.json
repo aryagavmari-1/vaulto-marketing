@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Uw account verwijderen",
+    "description": "Hoe u uw Vaulto-account (Family Asset Vault) en gegevens in de app verwijdert, wat er wordt verwijderd en wat wij bewaren."
+  },
+  "crumbs": { "home": "Home", "delete": "Uw account verwijderen" },
+  "hero": {
+    "eyebrow": "Uw gegevens, uw controle",
+    "heading": "Verwijder uw Vaulto-account",
+    "lead": "Met Vaulto — de Family Asset Vault — kunt u uw account, of een afzonderlijke vault, rechtstreeks in de app verwijderen. Verwijdering is onmiddellijk en permanent. Op deze pagina leest u de precieze stappen, wat er wordt verwijderd en wat wij bewaren.",
+    "updated": "Laatst bijgewerkt in juni 2026 · Vragen? Mail naar"
+  },
+  "steps": {
+    "title": "Hoe u uw account verwijdert",
+    "intro": "U kunt alles zelf vanuit de app verwijderen — er is geen e-mail of wachttijd nodig.",
+    "items": [
+      {
+        "title": "Verwijder uw volledige account in de app",
+        "body": "Open <strong>Instellingen → Account → Account verwijderen</strong>. Het scherm toont precies wat er wordt gewist. Bevestig door <strong>DELETE</strong> en uw wachtwoord in te typen. Uw account en alle bijbehorende gegevens worden onmiddellijk verwijderd, u wordt afgemeld en de lokale cache van de app wordt gewist. Beschikbaar op iOS en Android."
+      },
+      {
+        "title": "Verwijder één afzonderlijke vault in de app",
+        "body": "Wilt u één vault verwijderen maar uw account behouden? Open <strong>Instellingen → Gevarenzone</strong>, kies de vault en bevestig door de naam ervan in te typen. Die vault en alles wat erin zit — bezittingen, schulden, waarderingen, documenten en ondersteunende bestanden — wordt permanent verwijderd."
+      },
+      {
+        "title": "Hulp nodig?",
+        "body": "Als u geen toegang tot de app heeft of een vraag heeft over verwijdering, mail dan naar <strong>privacy@myvaulto.com</strong> vanaf het e-mailadres dat aan uw account is gekoppeld, en wij helpen u verder."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Wat er wordt verwijderd",
+    "intro": "Het verwijderen van uw account verwijdert permanent:",
+    "items": [
+      "Uw accountgegevens — naam, e-mailadres en aanmeldgegevens.",
+      "Elke vault en de volledige inhoud ervan — bezittingen, schulden, waarderingen en het daaruit opgebouwde overzicht van uw netto vermogen.",
+      "Uw geüploade documenten en bewijsbestanden, samen met de encryptiesleutel die ze beschermt — zodat de opgeslagen bestanden permanent onleesbaar worden.",
+      "AI-overzichten, concepten en deelbare momentopnames; adviesgeschiedenis, reeksen en voorkeuren; en de aanmeld- en notificatietokens van uw apparaten."
+    ],
+    "permanent": "Verwijdering is onmiddellijk, permanent en kan niet ongedaan worden gemaakt — er is geen respijtperiode of hersteltermijn. Exporteer eerst alles wat u wilt bewaren; u kunt uw vaultgegevens op elk moment vóór verwijdering downloaden."
+  },
+  "retained": {
+    "title": "Wat wij bewaren, en hoe lang",
+    "body": "Wanneer u uw account zelf verwijdert, is er geen bewaartermijn — uw gegevens worden gewist op het moment dat u bevestigt. Versleutelde databaseback-ups worden in een korte, doorlopende cyclus bewaard, en verwijderde gegevens verlopen binnen ongeveer 7 dagen; omdat de encryptiesleutel bij verwijdering wordt vernietigd, zijn die back-upkopieën al onleesbaar. Waar de wet ons verplicht een minimale registratie te bewaren (bijvoorbeeld om te voldoen aan fiscale of fraudebestrijdingsverplichtingen), bewaren wij uitsluitend die registratie, alleen zolang de wet dit vereist, en verwijderen wij deze daarna.",
+    "note": "Wij verkopen uw gegevens nooit, en verwijdering verandert daar niets aan."
+  },
+  "contact": {
+    "title": "Vragen over verwijdering",
+    "lead": "Mail naar"
+  }
+}

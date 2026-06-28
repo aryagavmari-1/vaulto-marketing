@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Supprimer votre compte",
+    "description": "Comment supprimer votre compte et vos données Vaulto (Family Asset Vault) dans l'application, ce qui est supprimé et ce que nous conservons."
+  },
+  "crumbs": { "home": "Accueil", "delete": "Supprimer votre compte" },
+  "hero": {
+    "eyebrow": "Vos données, sous votre contrôle",
+    "heading": "Supprimer votre compte Vaulto",
+    "lead": "Vaulto — le Family Asset Vault — vous permet de supprimer votre compte, ou n'importe quel coffre individuel, directement dans l'application. La suppression est immédiate et définitive. Cette page explique les étapes exactes, ce qui est supprimé et ce que nous conservons.",
+    "updated": "Dernière mise à jour : juin 2026 · Des questions ? Écrivez à"
+  },
+  "steps": {
+    "title": "Comment supprimer votre compte",
+    "intro": "Vous pouvez tout supprimer vous-même depuis l'application, sans courriel ni délai d'attente.",
+    "items": [
+      {
+        "title": "Supprimer l'intégralité de votre compte, dans l'application",
+        "body": "Ouvrez <strong>Réglages → Compte → Supprimer le compte</strong>. L'écran indique exactement ce qui sera effacé. Confirmez en saisissant <strong>DELETE</strong> et votre mot de passe. Votre compte et toutes ses données sont supprimés immédiatement, vous êtes déconnecté et le cache local de l'application est vidé. Disponible sur iOS et Android."
+      },
+      {
+        "title": "Supprimer un seul coffre, dans l'application",
+        "body": "Vous souhaitez supprimer un coffre tout en conservant votre compte ? Ouvrez <strong>Réglages → Zone de danger</strong>, sélectionnez le coffre et confirmez en saisissant son nom. Ce coffre et tout ce qu'il contient — actifs, passifs, évaluations, documents et fichiers justificatifs — est définitivement supprimé."
+      },
+      {
+        "title": "Besoin d'aide ?",
+        "body": "Si vous ne pouvez pas accéder à l'application ou si vous avez une question concernant la suppression, écrivez à <strong>privacy@myvaulto.com</strong> depuis l'adresse e-mail associée à votre compte et nous vous aiderons."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Ce qui est supprimé",
+    "intro": "La suppression de votre compte efface définitivement :",
+    "items": [
+      "L'enregistrement de votre compte — nom, adresse e-mail et identifiants de connexion.",
+      "Chaque coffre et l'ensemble de son contenu — actifs, passifs, évaluations et le bilan patrimonial qui en découle.",
+      "Vos documents et fichiers justificatifs téléversés, ainsi que la clé de chiffrement qui les protège — de sorte que les fichiers stockés deviennent définitivement illisibles.",
+      "Les aperçus, brouillons et instantanés partageables générés par l'IA ; l'historique de conseil, les séries et les préférences ; ainsi que les jetons de connexion et de notification de vos appareils."
+    ],
+    "permanent": "La suppression est immédiate, définitive et irréversible — il n'existe aucun délai de grâce ni fenêtre de récupération. Exportez d'abord tout ce que vous souhaitez conserver ; vous pouvez télécharger les données de votre coffre à tout moment avant la suppression."
+  },
+  "retained": {
+    "title": "Ce que nous conservons, et pour combien de temps",
+    "body": "Lorsque vous supprimez vous-même votre compte, il n'y a aucune période de conservation : vos données sont effacées au moment où vous confirmez. Les sauvegardes chiffrées de la base de données sont conservées selon un cycle de rotation court, et les enregistrements supprimés disparaissent en environ 7 jours ; comme la clé de chiffrement est détruite lors de la suppression, ces copies de sauvegarde sont déjà illisibles. Lorsque la loi nous oblige à conserver un enregistrement minimal (par exemple, pour répondre à des obligations fiscales ou de lutte contre la fraude), nous ne conservons que cet enregistrement, uniquement pour la durée exigée par la loi, et nous le supprimons ensuite.",
+    "note": "Nous ne vendons jamais vos données, et la suppression n'y change rien."
+  },
+  "contact": {
+    "title": "Questions sur la suppression",
+    "lead": "Écrivez à"
+  }
+}

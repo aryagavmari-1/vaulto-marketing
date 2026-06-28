@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "Ihr Konto löschen",
+    "description": "So löschen Sie Ihr Vaulto-Konto (Family Asset Vault) und Ihre Daten in der App, was entfernt wird und was wir aufbewahren."
+  },
+  "crumbs": { "home": "Startseite", "delete": "Ihr Konto löschen" },
+  "hero": {
+    "eyebrow": "Ihre Daten, Ihre Kontrolle",
+    "heading": "Löschen Sie Ihr Vaulto-Konto",
+    "lead": "Mit Vaulto – dem Family Asset Vault – können Sie Ihr Konto oder einen einzelnen Vault direkt in der App löschen. Die Löschung erfolgt sofort und ist endgültig. Auf dieser Seite erfahren Sie die genauen Schritte, was gelöscht wird und was wir aufbewahren.",
+    "updated": "Zuletzt aktualisiert im Juni 2026 · Fragen? Schreiben Sie an"
+  },
+  "steps": {
+    "title": "So löschen Sie Ihr Konto",
+    "intro": "Sie können alles selbst direkt in der App löschen – ohne E-Mail und ohne Wartezeit.",
+    "items": [
+      {
+        "title": "Löschen Sie Ihr gesamtes Konto in der App",
+        "body": "Öffnen Sie <strong>Einstellungen → Konto → Konto löschen</strong>. Auf dem Bildschirm wird genau aufgeführt, was gelöscht wird. Bestätigen Sie, indem Sie <strong>DELETE</strong> und Ihr Passwort eingeben. Ihr Konto und alle zugehörigen Daten werden sofort gelöscht, Sie werden abgemeldet und der lokale Cache der App wird geleert. Verfügbar für iOS und Android."
+      },
+      {
+        "title": "Löschen Sie einen einzelnen Vault in der App",
+        "body": "Möchten Sie einen Vault entfernen, Ihr Konto aber behalten? Öffnen Sie <strong>Einstellungen → Gefahrenzone</strong>, wählen Sie den Vault aus und bestätigen Sie, indem Sie dessen Namen eingeben. Dieser Vault und alles, was er enthält – Vermögenswerte, Verbindlichkeiten, Bewertungen, Dokumente und zugehörige Dateien – wird endgültig gelöscht."
+      },
+      {
+        "title": "Benötigen Sie Hilfe?",
+        "body": "Wenn Sie keinen Zugriff auf die App haben oder eine Frage zur Löschung haben, schreiben Sie von der in Ihrem Konto hinterlegten E-Mail-Adresse an <strong>privacy@myvaulto.com</strong>, und wir helfen Ihnen weiter."
+      }
+    ]
+  },
+  "deleted": {
+    "title": "Was gelöscht wird",
+    "intro": "Beim Löschen Ihres Kontos werden dauerhaft entfernt:",
+    "items": [
+      "Ihr Kontodatensatz – Name, E-Mail-Adresse und Anmeldedaten.",
+      "Jeder Vault und sein gesamter Inhalt – Vermögenswerte, Verbindlichkeiten, Bewertungen und das daraus erstellte Gesamtvermögensbild.",
+      "Ihre hochgeladenen Dokumente und Nachweisdateien zusammen mit dem Verschlüsselungsschlüssel, der sie schützt – sodass die gespeicherten Dateien dauerhaft unlesbar werden.",
+      "KI-Übersichten, Entwürfe und teilbare Momentaufnahmen; Beratungsverlauf, Serien und Einstellungen; sowie die Anmelde- und Benachrichtigungstoken Ihrer Geräte."
+    ],
+    "permanent": "Die Löschung erfolgt sofort, ist endgültig und kann nicht rückgängig gemacht werden – es gibt keine Schonfrist und keinen Wiederherstellungszeitraum. Exportieren Sie zuvor alles, was Sie behalten möchten; Sie können Ihre Vault-Daten jederzeit vor dem Löschen herunterladen."
+  },
+  "retained": {
+    "title": "Was wir aufbewahren und wie lange",
+    "body": "Wenn Sie Ihr Konto selbst löschen, gibt es keine Aufbewahrungsfrist – Ihre Daten werden in dem Moment gelöscht, in dem Sie bestätigen. Verschlüsselte Datenbank-Backups werden in einem kurzen rollierenden Zyklus aufbewahrt, und gelöschte Datensätze laufen innerhalb von etwa 7 Tagen aus; da der Verschlüsselungsschlüssel bei der Löschung vernichtet wird, sind diese gesicherten Kopien bereits unlesbar. Wo das Gesetz uns verpflichtet, einen minimalen Datensatz aufzubewahren (zum Beispiel zur Erfüllung steuerlicher Pflichten oder zur Betrugsbekämpfung), bewahren wir nur diesen Datensatz auf, nur so lange, wie es das Gesetz vorschreibt, und löschen ihn anschließend.",
+    "note": "Wir verkaufen Ihre Daten niemals, und die Löschung ändert daran nichts."
+  },
+  "contact": {
+    "title": "Fragen zur Löschung",
+    "lead": "Schreiben Sie an"
+  }
+}
