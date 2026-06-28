@@ -3,7 +3,10 @@
     "title": "Delete your account",
     "description": "How to delete your Vaulto (Family Asset Vault) account and data in the app, what is removed, and what we keep."
   },
-  "crumbs": { "home": "Home", "delete": "Delete your account" },
+  "crumbs": {
+    "home": "Home",
+    "delete": "Delete your account"
+  },
   "hero": {
     "eyebrow": "Your data, your control",
     "heading": "Delete your Vaulto account",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Need help?",
-        "body": "If you can't access the app, or have a question about deletion, email <strong>privacy@myvaulto.com</strong> from the email address on your account and we'll help."
+        "body": "If you can't access the app, or have a question about deletion, email <strong>privacy@myvaulto.com</strong> from the email address on your account and we'll help. We action verified email deletion requests within 30 days — in practice much sooner."
       }
     ]
   },

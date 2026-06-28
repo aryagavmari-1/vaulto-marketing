@@ -3,7 +3,10 @@
     "title": "Hesabınızı silin",
     "description": "Vaulto (Family Asset Vault) hesabınızı ve verilerinizi uygulamada nasıl sileceğiniz, nelerin kaldırıldığı ve nelerin saklandığı."
   },
-  "crumbs": { "home": "Ana sayfa", "delete": "Hesabınızı silin" },
+  "crumbs": {
+    "home": "Ana sayfa",
+    "delete": "Hesabınızı silin"
+  },
   "hero": {
     "eyebrow": "Verileriniz, sizin kontrolünüzde",
     "heading": "Vaulto hesabınızı silin",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Yardıma mı ihtiyacınız var?",
-        "body": "Uygulamaya erişemiyorsanız veya silme işlemiyle ilgili bir sorunuz varsa, hesabınızdaki e-posta adresinden <strong>privacy@myvaulto.com</strong> adresine yazın; size yardımcı olalım."
+        "body": "Uygulamaya erişemiyorsanız veya silme işlemiyle ilgili bir sorunuz varsa, hesabınızdaki e-posta adresinden <strong>privacy@myvaulto.com</strong> adresine yazın; size yardımcı olalım. E-posta ile gelen doğrulanmış silme taleplerini 30 gün içinde işleme alırız — uygulamada çok daha kısa sürede."
       }
     ]
   },

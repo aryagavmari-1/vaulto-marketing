@@ -3,7 +3,10 @@
     "title": "Radera ditt konto",
     "description": "Så här raderar du ditt Vaulto-konto (Family Asset Vault) och dina data i appen, vad som tas bort och vad vi behåller."
   },
-  "crumbs": { "home": "Hem", "delete": "Radera ditt konto" },
+  "crumbs": {
+    "home": "Hem",
+    "delete": "Radera ditt konto"
+  },
   "hero": {
     "eyebrow": "Dina data, din kontroll",
     "heading": "Radera ditt Vaulto-konto",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Behöver du hjälp?",
-        "body": "Om du inte kan komma åt appen, eller har en fråga om radering, mejla <strong>privacy@myvaulto.com</strong> från den e-postadress som är kopplad till ditt konto, så hjälper vi dig."
+        "body": "Om du inte kan komma åt appen, eller har en fråga om radering, mejla <strong>privacy@myvaulto.com</strong> från den e-postadress som är kopplad till ditt konto, så hjälper vi dig. Verifierade raderingsförfrågningar via e-post hanterar vi inom 30 dagar – i praktiken mycket snabbare."
       }
     ]
   },

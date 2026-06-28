@@ -3,7 +3,10 @@
     "title": "계정 삭제",
     "description": "앱에서 Vaulto(Family Asset Vault) 계정과 데이터를 삭제하는 방법, 삭제되는 항목, 그리고 저희가 보관하는 항목을 안내합니다."
   },
-  "crumbs": { "home": "홈", "delete": "계정 삭제" },
+  "crumbs": {
+    "home": "홈",
+    "delete": "계정 삭제"
+  },
   "hero": {
     "eyebrow": "당신의 데이터, 당신의 통제권",
     "heading": "Vaulto 계정 삭제하기",
@@ -24,7 +27,7 @@
       },
       {
         "title": "도움이 필요하신가요?",
-        "body": "앱에 접근할 수 없거나 삭제에 관해 궁금한 점이 있으시면, 계정에 등록된 이메일 주소로 <strong>privacy@myvaulto.com</strong>에 이메일을 보내주세요. 저희가 도와드리겠습니다."
+        "body": "앱에 접근할 수 없거나 삭제에 관해 궁금한 점이 있으시면, 계정에 등록된 이메일 주소로 <strong>privacy@myvaulto.com</strong>에 이메일을 보내주세요. 저희가 도와드리겠습니다. 이메일로 접수된 본인 확인이 완료된 삭제 요청은 30일 이내에 처리하며, 실제로는 훨씬 더 빠르게 처리합니다."
       }
     ]
   },

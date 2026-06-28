@@ -3,7 +3,10 @@
     "title": "删除您的账户",
     "description": "如何在应用内删除您的 Vaulto（Family Asset Vault）账户和数据、哪些内容会被删除，以及我们会保留哪些内容。"
   },
-  "crumbs": { "home": "首页", "delete": "删除您的账户" },
+  "crumbs": {
+    "home": "首页",
+    "delete": "删除您的账户"
+  },
   "hero": {
     "eyebrow": "您的数据，由您掌控",
     "heading": "删除您的 Vaulto 账户",
@@ -24,7 +27,7 @@
       },
       {
         "title": "需要帮助？",
-        "body": "如果您无法访问应用，或对删除有任何疑问，请使用您账户绑定的邮箱地址发送邮件至 <strong>privacy@myvaulto.com</strong>，我们将为您提供帮助。"
+        "body": "如果您无法访问应用，或对删除有任何疑问，请使用您账户绑定的邮箱地址发送邮件至 <strong>privacy@myvaulto.com</strong>，我们将为您提供帮助。通过电子邮件提交并经过验证的删除请求，我们会在 30 天内处理，实际通常会快得多。"
       }
     ]
   },

@@ -3,7 +3,10 @@
     "title": "Uw account verwijderen",
     "description": "Hoe u uw Vaulto-account (Family Asset Vault) en gegevens in de app verwijdert, wat er wordt verwijderd en wat wij bewaren."
   },
-  "crumbs": { "home": "Home", "delete": "Uw account verwijderen" },
+  "crumbs": {
+    "home": "Home",
+    "delete": "Uw account verwijderen"
+  },
   "hero": {
     "eyebrow": "Uw gegevens, uw controle",
     "heading": "Verwijder uw Vaulto-account",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Hulp nodig?",
-        "body": "Als u geen toegang tot de app heeft of een vraag heeft over verwijdering, mail dan naar <strong>privacy@myvaulto.com</strong> vanaf het e-mailadres dat aan uw account is gekoppeld, en wij helpen u verder."
+        "body": "Als u geen toegang tot de app heeft of een vraag heeft over verwijdering, mail dan naar <strong>privacy@myvaulto.com</strong> vanaf het e-mailadres dat aan uw account is gekoppeld, en wij helpen u verder. Geverifieerde verwijderingsverzoeken per e-mail verwerken we binnen 30 dagen — in de praktijk veel sneller."
       }
     ]
   },

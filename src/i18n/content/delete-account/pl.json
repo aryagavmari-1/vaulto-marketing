@@ -3,7 +3,10 @@
     "title": "Usuń swoje konto",
     "description": "Jak usunąć konto Vaulto (Family Asset Vault) i swoje dane w aplikacji, co jest usuwane, a co zachowujemy."
   },
-  "crumbs": { "home": "Strona główna", "delete": "Usuń swoje konto" },
+  "crumbs": {
+    "home": "Strona główna",
+    "delete": "Usuń swoje konto"
+  },
   "hero": {
     "eyebrow": "Twoje dane, Twoja kontrola",
     "heading": "Usuń swoje konto Vaulto",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Potrzebujesz pomocy?",
-        "body": "Jeśli nie masz dostępu do aplikacji lub masz pytanie dotyczące usuwania danych, napisz na <strong>privacy@myvaulto.com</strong> z adresu e-mail przypisanego do Twojego konta, a my pomożemy."
+        "body": "Jeśli nie masz dostępu do aplikacji lub masz pytanie dotyczące usuwania danych, napisz na <strong>privacy@myvaulto.com</strong> z adresu e-mail przypisanego do Twojego konta, a my pomożemy. Zweryfikowane wnioski o usunięcie przesłane e-mailem realizujemy w ciągu 30 dni — w praktyce znacznie szybciej."
       }
     ]
   },

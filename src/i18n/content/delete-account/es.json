@@ -3,7 +3,10 @@
     "title": "Elimina tu cuenta",
     "description": "Cómo eliminar tu cuenta y tus datos de Vaulto (Family Asset Vault) en la aplicación, qué se elimina y qué conservamos."
   },
-  "crumbs": { "home": "Inicio", "delete": "Elimina tu cuenta" },
+  "crumbs": {
+    "home": "Inicio",
+    "delete": "Elimina tu cuenta"
+  },
   "hero": {
     "eyebrow": "Tus datos, bajo tu control",
     "heading": "Elimina tu cuenta de Vaulto",
@@ -24,7 +27,7 @@
       },
       {
         "title": "¿Necesitas ayuda?",
-        "body": "Si no puedes acceder a la aplicación o tienes alguna pregunta sobre la eliminación, escríbenos a <strong>privacy@myvaulto.com</strong> desde la dirección de correo asociada a tu cuenta y te ayudaremos."
+        "body": "Si no puedes acceder a la aplicación o tienes alguna pregunta sobre la eliminación, escríbenos a <strong>privacy@myvaulto.com</strong> desde la dirección de correo asociada a tu cuenta y te ayudaremos. Atendemos las solicitudes de eliminación verificadas por correo en un plazo de 30 días y, en la práctica, mucho antes."
       }
     ]
   },

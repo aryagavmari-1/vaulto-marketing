@@ -3,7 +3,10 @@
     "title": "Ihr Konto löschen",
     "description": "So löschen Sie Ihr Vaulto-Konto (Family Asset Vault) und Ihre Daten in der App, was entfernt wird und was wir aufbewahren."
   },
-  "crumbs": { "home": "Startseite", "delete": "Ihr Konto löschen" },
+  "crumbs": {
+    "home": "Startseite",
+    "delete": "Ihr Konto löschen"
+  },
   "hero": {
     "eyebrow": "Ihre Daten, Ihre Kontrolle",
     "heading": "Löschen Sie Ihr Vaulto-Konto",
@@ -24,7 +27,7 @@
       },
       {
         "title": "Benötigen Sie Hilfe?",
-        "body": "Wenn Sie keinen Zugriff auf die App haben oder eine Frage zur Löschung haben, schreiben Sie von der in Ihrem Konto hinterlegten E-Mail-Adresse an <strong>privacy@myvaulto.com</strong>, und wir helfen Ihnen weiter."
+        "body": "Wenn Sie keinen Zugriff auf die App haben oder eine Frage zur Löschung haben, schreiben Sie von der in Ihrem Konto hinterlegten E-Mail-Adresse an <strong>privacy@myvaulto.com</strong>, und wir helfen Ihnen weiter. Verifizierte Löschanfragen per E-Mail bearbeiten wir innerhalb von 30 Tagen – in der Praxis deutlich schneller."
       }
     ]
   },
