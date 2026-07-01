@@ -4,22 +4,11 @@
 </head><body>
 <div class="canvas" data-theme="calm" data-format="video" data-block="">
   
-  <div class="content center" style="padding:230px 96px 330px">
-      <div class="wordmark" style="gap:31px;justify-content:center">
-    <span class="mark" style="width:96px;height:96px;border-radius:27px"><svg width="86" height="86" viewBox="0 0 48 48" fill="none">
-  <circle cx="24" cy="20" r="6.4" fill="#FBFAF6"/>
-  <path d="M20.7 24.5h6.6l1.8 9.2a1.6 1.6 0 0 1-1.57 1.9h-7.04a1.6 1.6 0 0 1-1.57-1.9z" fill="#FBFAF6"/>
-</svg></span>
-    <span class="words" style="gap:5px">
-      <span class="name" style="font-size:44px">Vaulto</span>
-      <span class="domain" style="font-size:28px">myvaulto.com</span>
-    </span>
-  </div>
-      <div class="spacer" style="max-height:51px"></div>
-      <div class="tag" style="font-size:30px;padding:15px 27px">Estate planning</div>
-      <h1 class="headline" data-fit style="font-size:64px;margin-top:34px">Put it where they can reach it.</h1>
-      <div class="cta" style="font-size:40px;padding:24px 56px;margin-top:48px">Get the checklist</div>
+  <div class="content" style="padding:230px 96px 330px">
+      <div class="tag" style="font-size:30px;padding:15px 27px">Will planning</div>
+      <h1 class="headline" data-fit style="font-size:96px;margin-top:34px;line-height:1.04">Making a will feels huge — until you turn up prepared.</h1>
       <div class="spacer"></div>
+      <div class="onscreen" style="font-size:72px;margin-bottom:34px">6 things to gather · not legal advice</div>
       <div class="disclaimer" style="font-size:24px;gap:13px;margin-bottom:34px">
     <span class="i" style="width:36px;height:36px;font-size:22px">i</span>
     <span>Rules vary by country; general information, not legal or financial advice.</span>
@@ -30,7 +19,7 @@
   await document.fonts.ready;
   const content = document.querySelector('.content');
   const h = document.querySelector('[data-fit]');
-  const MIN = 51;
+  const MIN = 72;
   let overflow = 0;
   if (h) {
     let fs = parseFloat(getComputedStyle(h).fontSize);

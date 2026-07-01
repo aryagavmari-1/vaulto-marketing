@@ -94,6 +94,32 @@
     "headline": "Build it before you need it",
     "subhead": "A list made before anything goes wrong turns a claim into a paperwork exercise." },
 
+  { "id": "pin-p21", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "Will planning checklist: what to gather first",
+    "subhead": "Turn up prepared, so it reflects what you actually own.",
+    "items": ["What you own & owe", "The proof documents", "The people", "Power-of-attorney wishes", "Your digital accounts", "Personal wishes"] },
+
+  { "id": "pin-p22", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "6 things to gather before you write a will",
+    "subhead": "Bring the list, not a vague memory.",
+    "items": ["What you own & owe", "The proof documents", "The people", "Power-of-attorney wishes", "Digital accounts", "Personal wishes"] },
+
+  { "id": "pin-p23", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "The documents you need to make a will",
+    "subhead": "And, crucially, where each original is kept.",
+    "items": ["Bank & pension statements", "Property deeds", "Vehicle papers", "Insurance details", "ID", "Where each original lives"] },
+
+  { "id": "pin-p24", "format": "pin", "theme": "calm", "block": "split", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "Executors, guardians, beneficiaries: decide before the meeting",
+    "panels": [
+      { "label": "Decide the people", "text": "Who'd carry it out, who'd raise your children, who inherits." },
+      { "label": "Record your wishes", "text": "Vaulto notes your wishes; the will assigns the roles." }
+    ] },
+
+  { "id": "pin-p25", "format": "pin", "theme": "calm", "block": "title", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "See if your wishes would hold up today",
+    "subhead": "A free overview of the gaps — with an optional paid report for the full plan." },
+
   { "id": "li-l1", "format": "liCard", "theme": "neutral", "tag": "Net worth",
     "headline": "Most families have never sat down and added it up." },
 
@@ -130,6 +156,15 @@
   { "id": "li-l12", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
     "headline": "“I'd remember what I owned if I had to claim.”" },
 
+  { "id": "li-l13", "format": "liCard", "theme": "calm", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "The hardest part of making a will is rarely the will." },
+
+  { "id": "li-l14", "format": "liCard", "theme": "calm", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "Six things to gather before you write a will." },
+
+  { "id": "li-l15", "format": "liCard", "theme": "calm", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "Myth: a will-planning tool writes your will. It doesn't." },
+
   { "id": "video-v1", "format": "video", "theme": "neutral", "tag": "Net worth",
     "headline": "You don't need a finance degree to know what your family's worth.",
     "onscreen": "OWN − OWE = NET WORTH" },
@@ -154,21 +189,7 @@
     "headline": "If you weren't here tomorrow, what would your family have to go looking for?",
     "onscreen": "Accounts · Pension · Deed · Policies" },
 
-  { "id": "video-v1-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Net worth",
-    "headline": "One honest number, kept current.", "cta": "Read the step-by-step" },
-
-  { "id": "video-v2-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Put it where they can reach it.", "cta": "Get the checklist" },
-
-  { "id": "video-v3-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
-    "headline": "Start with one drawer.", "cta": "See how to start" },
-
-  { "id": "video-v4-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Build it before you need it.", "cta": "Room-by-room guide" },
-
-  { "id": "video-v5-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
-    "headline": "Ten minutes. One real start.", "cta": "Keep it current" },
-
-  { "id": "video-v6-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Planning ahead", "warn": true, "disclaimer": true,
-    "headline": "Out of your head, into one place.", "cta": "Start at your own pace" }
+  { "id": "video-v7", "format": "video", "theme": "calm", "tag": "Will planning", "warn": true, "disclaimer": true,
+    "headline": "Making a will feels huge — until you turn up prepared.",
+    "onscreen": "6 things to gather · not legal advice" }
 ]
