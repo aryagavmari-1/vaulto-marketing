@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Nasıl çalışır",
-    "description": "Sahip olduklarını ekle, Vaulto onları düzenlesin ve tüm tabloyu üç basit adımda gör. Yapay zekâ destekli yakalama, veri girişini senin yerine yapar."
+    "title": "Nasıl çalışır — varlıklarını 3 adımda envantere ekle",
+    "description": "Sahip olduklarını ekle, Vaulto düzenlesin ve tüm tabloyu gör. Sonra Plans ile vasiyet, miras, sigorta ve daha fazlasını düşün."
   },
   "crumbs": {
     "home": "Ana sayfa",
@@ -9,27 +9,50 @@
   },
   "hero": {
     "eyebrow": "Nasıl çalışır",
-    "heading": "Dağınıktan düzenliye, üç adımda.",
-    "intro": "Her şeyi tek tek elle yazmana gerek yok. Vaulto fotoğraflarını ve belgelerini okur, ağır işi üstlenir — böylece başlamak hafta sonlarını değil, dakikaları alır."
+    "heading": "Dağınıklıktan düzene, üç adımda.",
+    "intro": "Her şeyi tek tek elle yazman gerekmez. Vaulto fotoğraflarını ve belgelerini okur, yükün büyük kısmını üstlenir — böylece başlamak hafta sonlarını değil, dakikaları alır."
   },
   "steps": [
     {
       "title": "Sahip olduklarını ekle.",
-      "body": "Bir fotoğraf çek ya da bir belge yükle, Vaulto onu senin için okusun — böylece tüm ayrıntıları tek tek yazman gerekmeden taslağını hazırlasın. Bir odayı, bir fişi ya da bir belge klasörünü tek seferde ekle.",
-      "detail": "Yapay zekâ destekli yakalama, gözünde büyüyen bir işi birkaç kısa oturuma indirir."
+      "body": "Bir fotoğraf çek veya bir belge yükle; Vaulto senin için okur — böylece her şeyi elle yazman gerekmesin diye ayrıntıların taslağını çıkarır. Bir odayı, bir makbuzu veya bir evrak klasörünü tek seferde ekle.",
+      "detail": "Yapay zekâ destekli ekleme, göz korkutan bir işi birkaç kısa oturuma dönüştürür."
     },
     {
-      "title": "Bırak Vaulto düzenlesin.",
-      "body": "Varlıkları koleksiyonlarda grupla, önemli temel bilgileri ekle ve bunları kanıtlayan belgeleri ait oldukları yerde bağlı tut.",
-      "detail": "Gayrimenkul, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — hepsi tek bir düzende."
+      "title": "Bırak, Vaulto düzenlesin.",
+      "body": "Varlıkları koleksiyonlar halinde grupla, önemli temel bilgileri ekle ve bunları kanıtlayan belgeleri ait oldukları yerde bağlı tut.",
+      "detail": "Gayrimenkul, hesaplar, yatırımlar, değerli eşyalar, emeklilik birikimleri — hepsi tek bir yapıda."
     },
     {
       "title": "Bütün tabloyu gör.",
-      "body": "Ailenin varlıkları ve belgeleri tek bir net görünümde — önemli kişilerle paylaşmaya hazır ve hazır olduğunda ücretsiz bir genel bakışla önceden plan yapman için elinin altında.",
-      "detail": "Bir avukata veya danışmana verebileceğin sade bir özet."
+      "body": "Ailene ait varlıklar ve belgeler tek, net bir görünümde — önemli kişilerle paylaşmaya hazır ve hazır olduğunda ücretsiz bir genel bakışla ileriyi planlamak için uygun.",
+      "detail": "Bir avukata veya danışmana verebileceğin temiz bir özet."
     }
   ],
-  "securityLink": "Onu nasıl güvende tutuyoruz →",
+  "plans": {
+    "eyebrow": "Plans",
+    "heading": "Hazır olduğunda, sonrasını planla.",
+    "intro": "Kasan, sahip olduklarını gösterir. Plans ise bununla ilgili ne yapacağını düşünmene yardımcı olur — vasiyet veya mirastan sigortaya, evlilik sözleşmesine ya da birden fazla ülkedeki varlıklara kadar. Sana ne zaman uygunsa başla ve kendi hızında ilerle.",
+    "beats": [
+      {
+        "title": "Bir odak alanı seç.",
+        "body": "Aklındaki alanı seç — vasiyet ve miras, sigorta, evlilik sözleşmesi, sınır ötesi varlıklar ve daha fazlası. Her biri, doldurulacak uzun bir form değil, sakin ve yönlendirmeli bir alandır.",
+        "detail": "Genellikle plan gerektiren anları kapsayan alanlar."
+      },
+      {
+        "title": "Üzerinden konuş.",
+        "body": "Kısa ve sade bir dille ilerleyen konuşmada birkaç soruyu yanıtla. Cevaplarını yazabilir ya da sesli söyleyebilirsin — hangisi daha kolaysa.",
+        "detail": "Jargon yok, uzun formlar yok. Vaulto sorar; sen kendi sözlerinle yanıtlarsın."
+      },
+      {
+        "title": "Durumuna uygun bir plan edin.",
+        "body": "Vaulto bu konuşmayı, bulunduğun durumu ve sonrasında değerlendirilmeye değer adımları gösteren net, kişisel bir genel bakışa dönüştürür. Ücretsiz bir genel bakışla başla, hazır olduğunda daha ileri git.",
+        "detail": "Planını kendini hazırlıklı hissetmek ve yetkin bir uzmanla yapacağın konuşmaya yön vermek için kullan."
+      }
+    ],
+    "honesty": "Plans, hazırlanmanıza ve daha iyi sorular sormanıza yardımcı olmak için genel bilgiler sunar. Hukuki, vergisel veya finansal tavsiye değildir."
+  },
+  "securityLink": "Onu nasıl güvende tuttuğumuzu gör →",
   "finalCta": {
     "title": "Kasanı başlat — ücretsiz",
     "body": "İlk birkaç şeyini dakikalar içinde ekle. Hesap tabloları gerekmez."

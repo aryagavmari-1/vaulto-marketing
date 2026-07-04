@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Planning",
-    "description": "A free overview of what's at stake — inheritance, wills, cross-border, and more — then go deeper at your own pace. Informational guidance, never a replacement for your professional."
+    "title": "Estate, will & inheritance planning",
+    "description": "A free overview of what's at stake — inheritance, wills, cross-border and more — then go deeper at your own pace. Informational guidance only."
   },
   "crumbs": { "home": "Home", "planning": "Planning" },
   "hero": {
@@ -22,5 +22,9 @@
     "heading": "More areas you can explore"
   },
   "moreAreas": ["Inheritance tax", "Family-business succession", "Insurance", "Tax efficiency", "Asset financing"],
-  "cta": { "label": "Try a free overview" }
+  "cta": { "label": "Try a free overview" },
+  "finalCta": {
+    "title": "Plan when you're ready.",
+    "body": "Start with a free overview — no pressure, no urgency, no card required."
+  }
 }

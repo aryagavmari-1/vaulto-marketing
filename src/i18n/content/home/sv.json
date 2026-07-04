@@ -4,34 +4,34 @@
     "description": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — privat, med stark säkerhet. Kom igång gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privat och krypterat från grunden",
+    "eyebrow": "Privat och säker från grunden",
     "heading": "En lugn, säker plats för allt din familj äger.",
     "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — så att din familj alltid vet vad som finns och vad ni ska göra härnäst.",
     "trust": [
-      "Krypterat under överföring (TLS) och vid lagring",
+      "Krypterad under överföring (TLS)",
       "Dina data säljs aldrig",
       "Byggt för familjer"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Familjens hem",
           "sub": "Fastighet · lagfart och försäkring bifogade"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamente och dödsbodelshandlingar",
-          "sub": "3 filer · krypterat valv"
+          "sub": "3 filer · privat lagring"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investeringar och pensioner",
           "sub": "Samling · 5 poster"
         }
       ],
       "secured": "Skyddat",
-      "lock": "🔒 Krypterat vid lagring"
+      "lock": "Privat lagring"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Inga kalkylblad. Inga utspridda lådor. Bara tydlighet.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Vet vad du äger.",
         "body": "Fastigheter, konton, investeringar, värdesaker, pensioner — samlat på ett organiserat ställe, inte utspritt i lådor och kalkylblad."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Håll det säkert.",
         "body": "Förvara dokumenten som betyder mest — lagfarter, försäkringar, kontoutdrag — privat, bakom stark säkerhet."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planera med trygghet.",
         "body": "Se hela bilden och få en tydlig, kostnadsfri överblick när du är redo att tänka på arv, testamente eller vad som händer härnäst."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Byggt för att vara betrott med din mest känsliga information.",
-    "lead": "Dina data krypteras på väg till oss och där de lagras. Åtkomst är skyddad, och vi säljer aldrig din information.",
+    "lead": "Dina uppgifter krypteras på vägen till oss, din databas är krypterad i vila och dina filer förvaras i privat lagring. Åtkomsten är skyddad och vi säljer aldrig din information.",
     "cta": "Se exakt hur vi håller det säkert →",
     "proof": [
-      "Krypterat under överföring (TLS) och vid lagring",
+      "Krypterad under överföring (TLS); filer i privat lagring",
       "Lösenord hashas — inte ens vi kan läsa dem",
       "Kortlivade, webbläsarskyddade sessioner",
       "Du kan bara någonsin se ditt eget valv",

@@ -1,6 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import FinalCta from '../../components/marketing/FinalCta.astro';
+import { BRAND } from '../../config/brand';
+import { blogAlternates, blogSwitcher } from '../../config/i18n';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -10,6 +13,14 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+// FAQ-bearing posts (ARY-470): map frontmatter Q&As to FaqItem so Base/Seo emit
+// FAQPage JSON-LD alongside BlogPosting. Undefined when no `faqs` declared.
+const faq = post.data.faqs?.map((f) => ({ q: f.question, a: f.answer }));
+// Advertise the localized variants (ARY-523): hreflang alternates + the language
+// switcher point at each locale's translated-slug URL. `post.id` is the English
+// canonical id (the manifest key).
+const alternates = blogAlternates(post.id, BRAND.url);
+const switcher = blogSwitcher(post.id, 'en');
 ---
 <Base
   title={post.data.title}
@@ -17,6 +28,9 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month:
   description={post.data.description}
   type="article"
   publishedTime={post.data.pubDate.toISOString()}
+  faq={faq}
+  alternates={alternates}
+  switcher={switcher}
 >
   <article class="section">
     <div class="container prose">
@@ -29,4 +43,10 @@ const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month:
       <Content />
     </div>
   </article>
+
+  <FinalCta
+    title="Ready to start your own?"
+    body="Vaulto turns this into action. Start free — no spreadsheets required."
+    ctaId="blog_post_final"
+  />
 </Base>

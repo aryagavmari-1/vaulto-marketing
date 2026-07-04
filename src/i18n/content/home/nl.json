@@ -4,34 +4,34 @@
     "description": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — privé, met sterke beveiliging. Begin gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privé & versleuteld van ontwerp af aan",
+    "eyebrow": "Privé en veilig, vanaf de basis",
     "heading": "Eén rustige, veilige plek voor alles wat je gezin bezit.",
     "sub": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — zodat je gezin altijd weet wat er is, en wat de volgende stap is.",
     "trust": [
-      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "Versleuteld tijdens verzending (TLS)",
       "Je gegevens worden nooit verkocht",
       "Gemaakt voor gezinnen"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Gezinswoning",
           "sub": "Vastgoed · eigendomsakte & verzekering toegevoegd"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament- & nalatenschapsdocumenten",
-          "sub": "3 bestanden · versleutelde kluis"
+          "sub": "3 bestanden · privéopslag"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Beleggingen & pensioenen",
           "sub": "Collectie · 5 items"
         }
       ],
       "secured": "Beveiligd",
-      "lock": "🔒 Versleuteld in opslag"
+      "lock": "Privéopslag"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Geen spreadsheets. Geen verspreide laden. Gewoon overzicht.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Weet wat je bezit.",
         "body": "Vastgoed, rekeningen, beleggingen, kostbaarheden, pensioenen — vastgelegd op één overzichtelijke plek, niet verspreid over laden en spreadsheets."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Bewaar het veilig.",
         "body": "Sla de documenten op die ertoe doen — aktes, polissen, overzichten — privé, achter sterke beveiliging."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Plan met vertrouwen.",
         "body": "Zie het complete overzicht en krijg een helder, vrijblijvend overzicht wanneer je klaar bent om na te denken over erfenis, testamenten of wat er hierna gebeurt."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Gemaakt om je meest gevoelige informatie toe te vertrouwen.",
-    "lead": "Je gegevens zijn versleuteld onderweg naar ons en waar ze worden opgeslagen. Toegang is beveiligd, en we verkopen je informatie nooit.",
+    "lead": "Je gegevens worden onderweg naar ons versleuteld, je database is versleuteld in rust en je bestanden worden in privéopslag bewaard. De toegang is beveiligd en we verkopen je informatie nooit.",
     "cta": "Bekijk precies hoe we het veilig houden →",
     "proof": [
-      "Versleuteld tijdens verzending (TLS) en in opslag",
+      "Versleuteld tijdens verzending (TLS); bestanden in privéopslag",
       "Wachtwoorden gehasht — zelfs wij kunnen ze niet lezen",
       "Kortdurende, door de browser beveiligde sessies",
       "Je kunt alleen je eigen kluis zien",

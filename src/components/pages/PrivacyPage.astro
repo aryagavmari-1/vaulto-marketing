@@ -10,6 +10,7 @@ import Base from '../../layouts/Base.astro';
 import { BRAND } from '../../config/brand';
 import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
+import FinalCta from '../marketing/FinalCta.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -55,4 +56,6 @@ const crumbs = [
       </p>
     </div>
   </section>
+
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="privacy_final" />
 </Base>

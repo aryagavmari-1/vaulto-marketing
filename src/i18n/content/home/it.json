@@ -4,34 +4,34 @@
     "description": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — in privato, con una sicurezza solida. Inizia gratis."
   },
   "hero": {
-    "eyebrow": "🔒 Privato e crittografato fin dalla progettazione",
+    "eyebrow": "Privato e sicuro per progettazione",
     "heading": "Un unico posto calmo e sicuro per tutto ciò che la tua famiglia possiede.",
     "sub": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — così la tua famiglia saprà sempre cosa c'è e cosa fare dopo.",
     "trust": [
-      "Crittografato in transito (TLS) e a riposo",
+      "Crittografato in transito (TLS)",
       "I tuoi dati non vengono mai venduti",
       "Pensato per le famiglie"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Casa di famiglia",
           "sub": "Immobile · atto e assicurazione allegati"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamento e documenti successori",
-          "sub": "3 file · cassaforte crittografata"
+          "sub": "3 file · archiviazione privata"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investimenti e pensioni",
           "sub": "Raccolta · 5 elementi"
         }
       ],
       "secured": "Protetto",
-      "lock": "🔒 Crittografato a riposo"
+      "lock": "Archiviazione privata"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Niente fogli di calcolo. Niente cassetti sparsi. Solo chiarezza.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Sapere cosa possiedi.",
         "body": "Immobili, conti, investimenti, oggetti di valore, pensioni — raccolti in un unico posto organizzato, non sparsi tra cassetti e fogli di calcolo."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Tieni tutto al sicuro.",
         "body": "Conserva i documenti che contano — atti, polizze, estratti conto — in privato, protetti da una sicurezza solida."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Pianifica con fiducia.",
         "body": "Vedi il quadro completo e ottieni una panoramica chiara e gratuita quando sei pronto a pensare a successione, testamento o a cosa succede dopo."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Pensato per meritare fiducia con le tue informazioni più sensibili.",
-    "lead": "I tuoi dati sono crittografati mentre ci raggiungono e dove vengono conservati. L'accesso è protetto e non vendiamo mai le tue informazioni.",
+    "lead": "I tuoi dati vengono crittografati mentre arrivano a noi, il tuo database è crittografato a riposo e i tuoi file sono conservati in uno spazio di archiviazione privato. L'accesso è protetto e non vendiamo mai le tue informazioni.",
     "cta": "Scopri esattamente come li teniamo al sicuro →",
     "proof": [
-      "Crittografato in transito (TLS) e a riposo",
+      "Crittografato in transito (TLS); file in archiviazione privata",
       "Password sottoposte ad hashing — nemmeno noi possiamo leggerle",
       "Sessioni di breve durata, protette dal browser",
       "Puoi vedere solo la tua cassaforte",

@@ -18,6 +18,7 @@ import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
 import { getContent } from '../../i18n/content';
 import Eyebrow from '../marketing/Eyebrow.astro';
 import FinalCta from '../marketing/FinalCta.astro';
+import Icon from '../marketing/Icon.astro';
 
 interface Props { locale?: Locale; }
 const { locale = DEFAULT_LOCALE } = Astro.props;
@@ -67,7 +68,7 @@ const onwardHref: Record<number, string> = {
             <h2>
               <button class="faq-q" type="button" aria-expanded={i === 0 ? 'true' : 'false'} aria-controls={`faq-a-${i}`} id={`faq-q-${i}`}>
                 <span>{it.q}</span>
-                <span class="caret" aria-hidden="true">⌄</span>
+                <span class="caret" aria-hidden="true"><Icon name="chevron" size={18} strokeWidth={2} /></span>
               </button>
             </h2>
             <div class="faq-a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>

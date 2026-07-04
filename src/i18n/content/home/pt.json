@@ -4,34 +4,34 @@
     "description": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — em privado, com segurança robusta. Comece grátis."
   },
   "hero": {
-    "eyebrow": "🔒 Privado e encriptado desde a origem",
+    "eyebrow": "Privado e seguro por design",
     "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
     "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
     "trust": [
-      "Encriptado em trânsito (TLS) e em repouso",
+      "Criptografado em trânsito (TLS)",
       "Os seus dados nunca são vendidos",
       "Feito para famílias"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Casa de família",
           "sub": "Imóvel · escritura e seguro anexados"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testamento e documentos da herança",
-          "sub": "3 ficheiros · cofre encriptado"
+          "sub": "3 ficheiros · armazenamento privado"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Investimentos e pensões",
           "sub": "Coleção · 5 itens"
         }
       ],
       "secured": "Protegido",
-      "lock": "🔒 Encriptado em repouso"
+      "lock": "Armazenamento privado"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Sem folhas de cálculo. Sem gavetas desorganizadas. Apenas clareza.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Saiba o que possui.",
         "body": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo reunido num só lugar organizado, e não espalhado por gavetas e folhas de cálculo."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Mantenha tudo seguro.",
         "body": "Guarde os documentos importantes — escrituras, apólices, extratos — em privado, protegidos por segurança robusta."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Planeie com confiança.",
         "body": "Veja o panorama completo e tenha uma visão geral clara e gratuita quando estiver pronto para pensar em herança, testamentos ou no que acontece a seguir."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
-    "lead": "Os seus dados são encriptados no caminho até nós e onde ficam armazenados. O acesso é protegido e nunca vendemos a sua informação.",
+    "lead": "Os seus dados são criptografados a caminho de nós, a sua base de dados é criptografada em repouso e os seus ficheiros são mantidos em armazenamento privado. O acesso é protegido e nunca vendemos as suas informações.",
     "cta": "Veja exatamente como mantemos tudo seguro →",
     "proof": [
-      "Encriptado em trânsito (TLS) e em repouso",
+      "Criptografado em trânsito (TLS); ficheiros em armazenamento privado",
       "Palavras-passe com hash — nem nós as conseguimos ler",
       "Sessões de curta duração, protegidas pelo navegador",
       "Só pode ver o seu próprio cofre",

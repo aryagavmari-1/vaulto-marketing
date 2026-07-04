@@ -1,35 +1,73 @@
 {
   "meta": {
     "title": "Security & Privacy",
-    "description": "How Vaulto protects your family's information — encryption in transit and at rest, hashed passwords, strict access control. Plain language, no overclaim."
+    "description": "How Vaulto protects your family's information — encryption in transit, an encrypted database, files in private storage, hashed passwords, strict access control. Plain language, no overclaim."
   },
-  "crumbs": { "home": "Home", "security": "Security & Privacy" },
+  "crumbs": {
+    "home": "Home",
+    "security": "Security & Privacy"
+  },
   "hero": {
     "eyebrow": "Security & privacy",
     "heading": "Your family's information, protected.",
     "intro": "Vaulto holds sensitive details — what you own, where it is, the documents that prove it. We treat that responsibility seriously. Here's exactly how we protect it, in plain language."
   },
-  "protect": { "heading": "How we protect your data" },
+  "protect": {
+    "heading": "How we protect your data"
+  },
   "protections": [
-    { "title": "Encrypted in transit.", "body": "Every connection to Vaulto uses TLS (HTTPS), so your data is encrypted as it travels between you and us." },
-    { "title": "Encrypted at rest.", "body": "Your information and documents are stored on encrypted infrastructure — managed database and object storage." },
-    { "title": "Passwords never stored plainly.", "body": "We hash your password with a strong, modern algorithm (scrypt) — even we can't read it." },
-    { "title": "Short-lived sessions.", "body": "Sign-in tokens are short-lived and kept in memory; the token that keeps you signed in lives in a secure, script-proof cookie." },
-    { "title": "Protected against abuse.", "body": "We rate-limit sign-in and other sensitive actions to defend against automated attacks." },
-    { "title": "Access controls.", "body": "You can only see and edit your own vault. Our systems enforce this on every request." }
+    {
+      "title": "Encrypted in transit.",
+      "body": "Every connection to Vaulto uses TLS (HTTPS) — the same padlock-icon encryption you see on banking and shopping sites. Your data is scrambled while it travels between you and us, so no one in between can read it."
+    },
+    {
+      "title": "Encrypted at rest.",
+      "body": "Your records and uploaded files sit on professionally managed, secured servers, encrypted at rest — \"at rest\" simply means while they're stored, not while they're moving. The database that holds your records and the storage that holds your photos and scans are both encrypted, and your files are reachable only through short-lived, signed links."
+    },
+    {
+      "title": "Passwords never stored plainly.",
+      "body": "We \"hash\" your password with a strong, modern method called scrypt — a hash is a one-way scramble that can't be turned back into your password. Even we can't read it."
+    },
+    {
+      "title": "Short-lived sessions.",
+      "body": "The sign-in \"token\" that proves it's you expires quickly and is kept in memory. The token that keeps you signed in lives in a secure, script-proof cookie — a small browser file that harmful scripts on a page can't read or steal."
+    },
+    {
+      "title": "Protected against abuse.",
+      "body": "We limit how many times sign-in and other sensitive actions can be tried in a row — this is called \"rate-limiting.\" It blocks the fast, repeated guessing that automated attacks rely on."
+    },
+    {
+      "title": "Access controls.",
+      "body": "You can only see and edit your own vault. Our systems enforce this on every request."
+    }
   ],
-  "promise": { "heading": "Our privacy promises" },
+  "promise": {
+    "heading": "Our privacy promises"
+  },
   "promises": [
-    { "title": "We never sell your data.", "body": "Full stop." },
-    { "title": "We don't share to advertise.", "body": "Your information isn't handed to third parties to market to you." },
-    { "title": "You're in control.", "body": "You decide what you add — and what you remove." }
+    {
+      "title": "We never sell your data.",
+      "body": "Full stop."
+    },
+    {
+      "title": "We don't share to advertise.",
+      "body": "Your information isn't handed to third parties to market to you."
+    },
+    {
+      "title": "You're in control.",
+      "body": "You decide what you add — and what you remove."
+    }
   ],
   "yours": {
     "heading": "Your data is yours",
-    "body": "Your data is yours — export everything (your data + your original files) at any time. From Settings, <b>Download everything (.zip)</b> gives you one file with a complete, machine-readable copy of your records plus every original photo and scan you uploaded. No lock-in, no waiting on us. The machine-readable export also satisfies your right to data portability under GDPR (Article&nbsp;20)."
+    "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) anytime, from Settings. Machine-readable means a standard file another app or spreadsheet can open and re-use — not a locked PDF. No lock-in, no waiting on us. (Bulk download of your original uploaded files is on our roadmap.) This supports your right to data portability under GDPR — the EU privacy law (Article 20) that lets you take your data with you."
   },
   "honesty": {
-    "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit and at rest, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge,\" \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption or a formal third-party audit, this page will say so.",
+    "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit, an encrypted database, files kept in private storage, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge\" (where not even we could ever unlock your data), \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption — an extra lock applied inside the app itself, on top of the encryption above — or a formal third-party audit, where an independent security firm reviews us, this page will say so.",
     "contact": "For privacy or security questions, contact"
+  },
+  "finalCta": {
+    "title": "Private from the first thing you add.",
+    "body": "Start free — your vault is yours alone, and you can export or delete it whenever you want."
   }
 }

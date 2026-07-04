@@ -1,8 +1,10 @@
 ---
 /**
- * §3.2 TrustStrip — inline row of ✓-prefixed proof phrases, olive-dot separated.
- * Color-independent: every state carries a ✓ glyph + text, never color alone.
+ * §3.2 TrustStrip — inline row of check-prefixed proof phrases, olive-dot
+ * separated. Color-independent: every state carries a check glyph + text, never
+ * colour alone. The check is the custom Icon set's SVG (ARY-451), not a glyph.
  */
+import Icon from './Icon.astro';
 interface Props { items: string[]; under?: boolean; }
 const { items, under = false } = Astro.props;
 ---
@@ -10,7 +12,7 @@ const { items, under = false } = Astro.props;
   {items.map((item, i) => (
     <>
       {i > 0 && <span class="dot" aria-hidden="true"></span>}
-      <span class="item"><span class="chk" aria-hidden="true">✓</span>{item}</span>
+      <span class="item"><span class="chk" aria-hidden="true"><Icon name="check" size={15} strokeWidth={2.2} /></span>{item}</span>
     </>
   ))}
 </div>

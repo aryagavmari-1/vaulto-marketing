@@ -4,34 +4,34 @@
     "description": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — privat, mit starker Sicherheit. Starte kostenlos."
   },
   "hero": {
-    "eyebrow": "🔒 Privat & von Grund auf verschlüsselt",
+    "eyebrow": "Privat und sicher von Grund auf",
     "heading": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt.",
     "sub": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — damit deine Familie immer weiß, was da ist und was als Nächstes zu tun ist.",
     "trust": [
-      "Verschlüsselt bei der Übertragung (TLS) und im Ruhezustand",
+      "Verschlüsselt bei der Übertragung (TLS)",
       "Deine Daten werden niemals verkauft",
       "Für Familien entwickelt"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Familienhaus",
           "sub": "Immobilie · Grundbuch & Versicherung angehängt"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Testament & Nachlassdokumente",
-          "sub": "3 Dateien · verschlüsselter Tresor"
+          "sub": "3 Dateien · privater Speicher"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Anlagen & Renten",
           "sub": "Sammlung · 5 Einträge"
         }
       ],
       "secured": "Gesichert",
-      "lock": "🔒 Im Ruhezustand verschlüsselt"
+      "lock": "Privater Speicher"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Keine Tabellen. Keine verstreuten Schubladen. Nur Klarheit.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Wisse, was du besitzt.",
         "body": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles an einem organisierten Ort erfasst, nicht verteilt auf Schubladen und Tabellen."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Bewahre es sicher auf.",
         "body": "Speichere die wichtigen Dokumente — Urkunden, Policen, Kontoauszüge — privat und hinter starker Sicherheit."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Plane mit Zuversicht.",
         "body": "Behalte den Überblick und erhalte eine klare, kostenlose Übersicht, wenn du bereit bist, über Erbschaft, Testamente oder die nächsten Schritte nachzudenken."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Entwickelt, damit du ihm deine sensibelsten Informationen anvertrauen kannst.",
-    "lead": "Deine Daten sind auf dem Weg zu uns und dort, wo sie gespeichert werden, verschlüsselt. Der Zugriff ist geschützt, und wir verkaufen deine Informationen niemals.",
+    "lead": "Deine Daten werden auf dem Weg zu uns verschlüsselt, deine Datenbank ist im Ruhezustand verschlüsselt und deine Dateien liegen in privatem Speicher. Der Zugriff ist geschützt, und wir verkaufen deine Informationen niemals.",
     "cta": "Sieh dir genau an, wie wir alles sicher halten →",
     "proof": [
-      "Verschlüsselt bei der Übertragung (TLS) und im Ruhezustand",
+      "Verschlüsselt bei der Übertragung (TLS); Dateien in privatem Speicher",
       "Passwörter gehasht — selbst wir können sie nicht lesen",
       "Kurzlebige, browsergeschützte Sitzungen",
       "Du kannst immer nur deinen eigenen Tresor sehen",

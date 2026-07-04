@@ -1,0 +1,59 @@
+---
+/**
+ * Localized blog index (ARY-523). One listing per non-English locale at
+ * `/<locale>/blog/`, linking to that locale's translated-slug articles. hreflang
+ * pairs each localized index with the English `/blog/` and its siblings.
+ */
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import FinalCta from '../../../components/marketing/FinalCta.astro';
+import { NON_DEFAULT_LOCALES, alternatesFor, blogUrl, type Locale } from '../../../config/i18n';
+import { BRAND } from '../../../config/brand';
+import { getContent } from '../../../i18n/content';
+
+export async function getStaticPaths() {
+  return NON_DEFAULT_LOCALES.map((locale) => ({ params: { locale } }));
+}
+
+const locale = Astro.params.locale as Locale;
+const posts = (await getCollection('blogI18n', ({ data }) => !data.draft && data.locale === locale))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+const t = getContent<{ eyebrow: string; title: string; lead: string }>('blog-chrome', locale);
+// The `/blog/` index exists in every locale, so the generic prefix-based
+// alternates are correct here (unlike the translated-slug article pages).
+const alternates = alternatesFor('/blog/', BRAND.url);
+---
+<Base
+  title={t.title}
+  path="/blog/"
+  canonicalPath={`/${locale}/blog/`}
+  locale={locale}
+  description={t.lead}
+  alternates={alternates}
+>
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:36px;">
+        <span class="eyebrow">{t.eyebrow}</span>
+        <h1>{t.title}</h1>
+        <p class="lead">{t.lead}</p>
+      </div>
+      <div class="post-list">
+        {posts.map((post) => (
+          <a class="post-item" href={blogUrl(post.data.ref, locale)}>
+            <div class="meta">{fmt(post.data.pubDate)}</div>
+            <h3>{post.data.title}</h3>
+            <p class="excerpt">{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FinalCta
+    title="Put it into practice."
+    body="Start your family's vault free — add your first few things in minutes."
+    ctaId="blog_index_final"
+  />
+</Base>

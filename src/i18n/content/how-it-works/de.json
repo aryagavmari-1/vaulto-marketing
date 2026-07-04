@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "So funktioniert's",
-    "description": "Füge hinzu, was du besitzt, lass Vaulto es ordnen und sieh dein Gesamtbild in drei einfachen Schritten. KI-gestützte Erfassung übernimmt die Dateneingabe für dich."
+    "title": "So funktioniert's — inventarisiere dein Vermögen in 3 Schritten",
+    "description": "Füge hinzu, was dir gehört, lass Vaulto es ordnen und sieh das Gesamtbild. Dann nutze Pläne, um Testament, Erbe, Versicherungen und mehr zu durchdenken."
   },
   "crumbs": {
     "home": "Startseite",
@@ -9,29 +9,52 @@
   },
   "hero": {
     "eyebrow": "So funktioniert's",
-    "heading": "Von verstreut zu geordnet — in drei Schritten.",
-    "intro": "Du musst nicht alles von Hand eintippen. Vaulto liest deine Fotos und Dokumente und übernimmt die Hauptarbeit — damit der Einstieg Minuten statt Wochenenden dauert."
+    "heading": "Von verstreut zu geordnet, in drei Schritten.",
+    "intro": "Du musst nicht alles von Hand eintippen. Vaulto liest deine Fotos und Dokumente und übernimmt die Hauptarbeit — so dauert der Einstieg Minuten, nicht Wochenenden."
   },
   "steps": [
     {
-      "title": "Füge hinzu, was du besitzt.",
-      "body": "Mach ein Foto oder lade ein Dokument hoch, und Vaulto liest es für dich — und erstellt die Details vor, damit du nicht alles von Hand eintippen musst. Füge einen Raum, einen Beleg oder einen ganzen Unterlagen-Ordner auf einmal hinzu.",
+      "title": "Füge hinzu, was dir gehört.",
+      "body": "Mach ein Foto oder lade ein Dokument hoch, und Vaulto liest es für dich — und entwirft die Details, damit du nicht alles von Hand eintippen musst. Füge einen Raum, einen Beleg oder einen ganzen Ordner mit Unterlagen auf einmal hinzu.",
       "detail": "KI-gestützte Erfassung macht aus einer überwältigenden Aufgabe ein paar kurze Sitzungen."
     },
     {
       "title": "Lass Vaulto es ordnen.",
-      "body": "Gruppiere Vermögenswerte in Sammlungen, ergänze die wichtigen Eckdaten und halte die Nachweisdokumente direkt dort angehängt, wo sie hingehören.",
-      "detail": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles in einer Struktur."
+      "body": "Gruppiere Vermögenswerte in Sammlungen, ergänze die wichtigen Eckdaten und halte die Nachweise direkt dort fest, wo sie hingehören.",
+      "detail": "Immobilien, Konten, Anlagen, Wertgegenstände, Renten — alles in einer Struktur."
     },
     {
-      "title": "Sieh das Gesamtbild.",
-      "body": "Die Vermögenswerte und Dokumente deiner Familie in einer klaren Übersicht — bereit zum Teilen mit den Menschen, die wichtig sind, und zum Vorausplanen mit einer kostenlosen Übersicht, wenn du so weit bist.",
+      "title": "Sieh das ganze Bild.",
+      "body": "Die Vermögenswerte und Dokumente deiner Familie in einer klaren Ansicht — bereit zum Teilen mit den Menschen, die wichtig sind, und zum Vorausplanen mit einer kostenlosen Übersicht, wenn du so weit bist.",
       "detail": "Eine klare Übersicht, die du einem Anwalt oder Berater geben kannst."
     }
   ],
-  "securityLink": "Wie wir es sicher aufbewahren →",
+  "plans": {
+    "eyebrow": "Pläne",
+    "heading": "Wenn du so weit bist, plane den nächsten Schritt.",
+    "intro": "Dein Tresor zeigt, was dir gehört. Pläne helfen dir dabei, zu durchdenken, was du damit tun solltest — vom Testament oder Erbe bis zu Versicherungen, einem Ehevertrag oder Vermögenswerten in mehr als einem Land. Fang an, wenn es für dich passt, und geh in deinem eigenen Tempo vor.",
+    "beats": [
+      {
+        "title": "Wähle einen Schwerpunkt.",
+        "body": "Wähle den Bereich, der dich beschäftigt — Testamente und Erbe, Versicherungen, ein Ehevertrag, grenzüberschreitende Vermögenswerte und mehr. Jeder davon ist ein ruhiger, geführter Bereich, kein langes Formular zum Ausfüllen.",
+        "detail": "Bereiche für die Situationen, in denen man oft einen Plan braucht."
+      },
+      {
+        "title": "Sprich es durch.",
+        "body": "Beantworte ein paar Fragen in einem kurzen Gespräch in klarer Sprache. Tippe deine Antworten ein oder sprich sie laut aus — je nachdem, was sich leichter anfühlt.",
+        "detail": "Kein Fachjargon und keine langen Formulare. Vaulto fragt; du antwortest in deinen eigenen Worten."
+      },
+      {
+        "title": "Erhalte einen Plan für deine Situation.",
+        "body": "Vaulto macht aus dem Gespräch eine klare, persönliche Übersicht darüber, wo du stehst und welche nächsten Schritte sich lohnen könnten. Starte mit einer kostenlosen Übersicht und geh weiter, wenn du so weit bist.",
+        "detail": "Nutze deinen Plan, um dich vorbereitet zu fühlen — und um ein Gespräch mit einer qualifizierten Fachperson zu führen."
+      }
+    ],
+    "honesty": "Pläne geben dir allgemeine Informationen, damit du dich vorbereiten und bessere Fragen stellen kannst. Sie sind keine Rechts-, Steuer- oder Finanzberatung."
+  },
+  "securityLink": "Wie wir alles sicher aufbewahren →",
   "finalCta": {
     "title": "Starte deinen Tresor — kostenlos",
-    "body": "Füge deine ersten Dinge in wenigen Minuten hinzu. Keine Tabellen nötig."
+    "body": "Füge in wenigen Minuten deine ersten Dinge hinzu. Keine Tabellen nötig."
   }
 }

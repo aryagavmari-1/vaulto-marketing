@@ -7,6 +7,8 @@ import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+type Alternate = { hreflang: string; href: string };
+type SwitcherOption = { value: string; label: string; selected: boolean };
 interface Props {
   title?: string;
   description?: string;
@@ -18,15 +20,23 @@ interface Props {
   noindex?: boolean;
   faq?: FaqItem[];        // emits FAQPage structured data (ARY-399 §2d)
   breadcrumbs?: Crumb[];  // emits BreadcrumbList structured data (ARY-399 §2d)
+  // Blog i18n (ARY-523): translated-slug articles don't share a path across
+  // locales, so the page supplies its own canonical URL, hreflang alternates,
+  // and language-switcher targets rather than deriving them by prefix.
+  canonicalPath?: string; // explicit (already-localized) path for <link canonical>
+  alternates?: Alternate[];
+  switcher?: SwitcherOption[];
 }
 const {
   title, description = BRAND.description, path = '/', locale = DEFAULT_LOCALE,
   type = 'website', image, publishedTime, noindex = false, faq, breadcrumbs,
+  canonicalPath, alternates, switcher,
 } = Astro.props;
 const fullTitle = title ? `${title} · ${BRAND.name}` : `${BRAND.name} — ${BRAND.tagline}`;
 // Canonical is the locale-prefixed URL (English un-prefixed) so each localized
-// page is self-canonical and hreflang pairs resolve correctly.
-const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
+// page is self-canonical and hreflang pairs resolve correctly. Blog pages pass
+// `canonicalPath` (already localized) since their slug varies per locale.
+const canonical = new URL(canonicalPath ?? localizedPath(path, locale), BRAND.url).href;
 ---
 <!doctype html>
 <html lang={HREFLANG[locale]} dir={dirFor(locale)}>
@@ -46,11 +56,12 @@ const canonical = new URL(localizedPath(path, locale), BRAND.url).href;
       noindex={noindex}
       faq={faq}
       breadcrumbs={breadcrumbs}
+      alternates={alternates}
     />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header path={path} locale={locale} />
+    <Header path={path} locale={locale} switcher={switcher} />
     <main id="main">
       <slot />
     </main>

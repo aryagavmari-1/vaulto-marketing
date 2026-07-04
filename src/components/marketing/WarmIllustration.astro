@@ -1,0 +1,62 @@
+---
+/**
+ * Restrained warm illustration (ARY-451).
+ *
+ * Soft, abstract olive-Calm artwork that carries the emotional reassurance the
+ * copy promises — a sheltered home under a protective arc. Inline SVG (retina,
+ * ~0 CLS, a couple of KB), tones drawn only from the brand palette so it reads
+ * as calm and trustworthy, never decorative noise. Decorative by default;
+ * give it a `label` to expose an accessible name.
+ */
+interface Props { label?: string; class?: string; }
+const { label, class: cls = '' } = Astro.props;
+const decorative = !label;
+---
+<svg
+  class={`warm-ill ${cls}`}
+  viewBox="0 0 480 360"
+  width="480"
+  height="360"
+  fill="none"
+  role={decorative ? undefined : 'img'}
+  aria-hidden={decorative ? 'true' : undefined}
+  aria-label={label}
+>
+  <defs>
+    <linearGradient id="warmSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF8F2" />
+      <stop offset="1" stop-color="#F0EADD" />
+    </linearGradient>
+    <linearGradient id="warmHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5C7038" />
+      <stop offset="1" stop-color="#4F6230" />
+    </linearGradient>
+    <clipPath id="warmClip"><rect width="480" height="360" rx="20" /></clipPath>
+  </defs>
+  <g clip-path="url(#warmClip)">
+    <rect width="480" height="360" fill="url(#warmSky)" />
+    <!-- soft protective arc / horizon glow -->
+    <circle cx="240" cy="262" r="150" fill="#B4542F" opacity="0.07" />
+    <circle cx="240" cy="120" r="62" fill="#E8B79A" opacity="0.30" />
+    <!-- distant rolling hills -->
+    <path d="M0 246c70-34 150-34 230 0s170 30 250-6v126H0Z" fill="#CBD3B6" opacity="0.55" />
+    <path d="M0 280c90-30 160-26 250 2s150 18 230-10v92H0Z" fill="url(#warmHill)" />
+    <!-- sheltered home -->
+    <g>
+      <rect x="196" y="206" width="88" height="74" rx="6" fill="#FFFFFF" stroke="#E4DCCB" stroke-width="2" />
+      <path d="M188 210l52-40 52 40" stroke="#B4542F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="#F7E6DC" />
+      <rect x="228" y="238" width="24" height="42" rx="3" fill="#4F6230" />
+      <rect x="206" y="222" width="16" height="16" rx="2.5" fill="#F0EADD" stroke="#E4DCCB" />
+      <rect x="258" y="222" width="16" height="16" rx="2.5" fill="#F0EADD" stroke="#E4DCCB" />
+    </g>
+    <!-- protective shield mark resting over the home -->
+    <path d="M240 150l-9 5v11c0 7 4 11.5 9 13.5 5-2 9-6.5 9-13.5v-11Z" fill="none" stroke="#4F6230" stroke-width="2.4" stroke-linejoin="round" />
+    <path d="M236 166l2.6 2.6 5-5.2" stroke="#2F6D4E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- gentle birds -->
+    <path d="M96 110q8-7 16 0M120 122q7-6 14 0" stroke="#5C6150" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+  </g>
+</svg>
+
+<style>
+  .warm-ill { width: 100%; height: auto; display: block; border-radius: 20px; }
+</style>

@@ -4,34 +4,34 @@
     "description": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — özel olarak, güçlü güvenlikle. Ücretsiz başlayın."
   },
   "hero": {
-    "eyebrow": "🔒 Tasarım gereği özel ve şifreli",
+    "eyebrow": "Tasarımı gereği özel ve güvenli",
     "heading": "Ailenizin sahip olduğu her şey için tek bir sakin, güvenli yer.",
     "sub": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — böylece aileniz her zaman neyin nerede olduğunu ve sonra ne yapacağını bilir.",
     "trust": [
-      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "Aktarım sırasında şifrelenir (TLS)",
       "Verileriniz asla satılmaz",
       "Aileler için tasarlandı"
     ],
     "art": {
       "cards": [
         {
-          "icon": "🏡",
+          "icon": "home",
           "label": "Aile evi",
           "sub": "Gayrimenkul · tapu ve sigorta eklendi"
         },
         {
-          "icon": "📄",
+          "icon": "document",
           "label": "Vasiyetname ve miras belgeleri",
-          "sub": "3 dosya · şifrelenmiş kasa"
+          "sub": "3 dosya · özel depolama"
         },
         {
-          "icon": "📈",
+          "icon": "chart",
           "label": "Yatırımlar ve emeklilikler",
           "sub": "Koleksiyon · 5 öğe"
         }
       ],
       "secured": "Güvence altında",
-      "lock": "🔒 Depoda şifreli"
+      "lock": "Özel depolama"
     }
   },
   "value": {
@@ -39,17 +39,17 @@
     "sub": "Ne hesap tabloları. Ne dağınık çekmeceler. Sadece netlik.",
     "cards": [
       {
-        "icon": "🗂️",
+        "icon": "folders",
         "title": "Neye sahip olduğunu bil.",
         "body": "Gayrimenkuller, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — çekmecelere ve hesap tablolarına dağılmak yerine tek bir düzenli yerde toplanır."
       },
       {
-        "icon": "🛡️",
+        "icon": "shield",
         "title": "Güvende tut.",
         "body": "Önemli belgeleri — tapular, poliçeler, hesap özetleri — güçlü güvenlik arkasında, özel olarak sakla."
       },
       {
-        "icon": "🧭",
+        "icon": "compass",
         "title": "Güvenle plan yap.",
         "body": "Tüm tabloyu gör ve miras, vasiyetname veya sonrasında ne olacağı hakkında düşünmeye hazır olduğunda net, ücretsiz bir genel bakış elde et."
       }
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "En hassas bilgilerine emanet edilebilecek şekilde tasarlandı.",
-    "lead": "Verilerin bize gelirken ve saklandığı yerde şifrelenir. Erişim korunur ve bilgilerini asla satmayız.",
+    "lead": "Verileriniz bize ulaşırken şifrelenir, veritabanınız beklemedeyken şifrelidir ve dosyalarınız özel depolamada tutulur. Erişim korunur ve bilgilerinizi asla satmayız.",
     "cta": "Onu tam olarak nasıl güvende tuttuğumuzu gör →",
     "proof": [
-      "Aktarım sırasında (TLS) ve depoda şifrelenir",
+      "Aktarım sırasında şifrelenir (TLS); dosyalar özel depolamada",
       "Parolalar hashlenir — biz bile onları okuyamayız",
       "Kısa ömürlü, tarayıcı tarafından korunan oturumlar",
       "Yalnızca kendi kasanı görebilirsin",

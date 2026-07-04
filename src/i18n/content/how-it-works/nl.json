@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Hoe het werkt",
-    "description": "Voeg toe wat je bezit, laat Vaulto het organiseren en zie het complete overzicht in drie eenvoudige stappen. AI-ondersteunde vastlegging doet de gegevensinvoer voor je."
+    "title": "Hoe het werkt — inventariseer je bezittingen in 3 stappen",
+    "description": "Voeg toe wat je bezit, laat Vaulto het ordenen en krijg het complete overzicht. Gebruik daarna Plannen om na te denken over testamenten, erfenis, verzekeringen en meer."
   },
   "crumbs": {
     "home": "Home",
@@ -9,29 +9,52 @@
   },
   "hero": {
     "eyebrow": "Hoe het werkt",
-    "heading": "Van verspreid naar georganiseerd, in drie stappen.",
-    "intro": "Je hoeft niet alles met de hand te typen. Vaulto leest je foto's en documenten en doet het zware werk — zodat je in minuten kunt beginnen, niet pas na een heel weekend."
+    "heading": "Van verspreid naar geordend, in drie stappen.",
+    "intro": "Je hoeft niet alles met de hand in te typen. Vaulto leest je foto's en documenten en doet het zware werk — zodat beginnen minuten kost, geen weekenden."
   },
   "steps": [
     {
       "title": "Voeg toe wat je bezit.",
-      "body": "Maak een foto of upload een document en Vaulto leest het voor je — en stelt de details op, zodat je niet alles met de hand hoeft te typen. Voeg een kamer, een bon of een map met papierwerk in één keer toe.",
-      "detail": "AI-ondersteunde vastlegging maakt van een overweldigende klus een paar korte sessies."
+      "body": "Maak een foto of upload een document en Vaulto leest het voor je — en zet de details alvast klaar, zodat je niet alles met de hand hoeft in te typen. Voeg in één keer een kamer, een bon of een map met papierwerk toe.",
+      "detail": "Met AI-ondersteunde vastlegging wordt een overweldigende klus een paar korte sessies."
     },
     {
-      "title": "Laat Vaulto het organiseren.",
-      "body": "Groepeer bezittingen in verzamelingen, voeg de belangrijke kerngegevens toe en houd de documenten die ze bewijzen precies daar gekoppeld waar ze horen.",
-      "detail": "Vastgoed, rekeningen, beleggingen, waardevolle spullen, pensioenen — alles in één structuur."
+      "title": "Laat Vaulto het ordenen.",
+      "body": "Groepeer bezittingen in verzamelingen, voeg de belangrijkste gegevens toe en houd de documenten die ze bewijzen precies daar waar ze horen gekoppeld.",
+      "detail": "Woning, rekeningen, beleggingen, waardevolle spullen, pensioenen — alles in één structuur."
     },
     {
-      "title": "Zie het complete overzicht.",
+      "title": "Zie het complete plaatje.",
       "body": "De bezittingen en documenten van je gezin in één helder overzicht — klaar om te delen met de mensen die belangrijk zijn, en om vooruit te plannen met een gratis overzicht wanneer jij er klaar voor bent.",
       "detail": "Een helder overzicht dat je aan een notaris of adviseur kunt geven."
     }
   ],
+  "plans": {
+    "eyebrow": "Plannen",
+    "heading": "Als je er klaar voor bent, plan dan wat hierna komt.",
+    "intro": "Je kluis laat zien wat je bezit. Plannen helpen je nadenken over wat je ermee wilt doen — van een testament of erfenis tot verzekeringen, huwelijkse voorwaarden of bezittingen in meer dan één land. Begin wanneer het jou uitkomt en ga in je eigen tempo.",
+    "beats": [
+      {
+        "title": "Kies een aandachtsgebied.",
+        "body": "Kies het onderwerp waar je mee bezig bent — testamenten en erfenis, verzekeringen, huwelijkse voorwaarden, bezittingen over de grens en meer. Elk onderwerp is een rustige, begeleide ruimte, geen lang formulier om in te vullen.",
+        "detail": "Onderwerpen voor de momenten waarop vaak een plan nodig is."
+      },
+      {
+        "title": "Praat het door.",
+        "body": "Beantwoord een paar vragen in een kort gesprek in gewone taal. Typ je antwoorden of spreek ze hardop uit — wat voor jou het makkelijkst voelt.",
+        "detail": "Geen jargon en geen lange formulieren. Vaulto vraagt; jij antwoordt in je eigen woorden."
+      },
+      {
+        "title": "Krijg een plan dat past bij jouw situatie.",
+        "body": "Vaulto zet het gesprek om in een helder, persoonlijk overzicht van waar je staat en welke volgende stappen het waard zijn om te overwegen. Begin met een gratis overzicht en ga verder wanneer jij er klaar voor bent.",
+        "detail": "Gebruik je plan om je voorbereid te voelen — en als leidraad voor een gesprek met een gekwalificeerde professional."
+      }
+    ],
+    "honesty": "Plannen geven je algemene informatie om je te helpen voorbereiden en betere vragen te stellen. Het is geen juridisch, fiscaal of financieel advies."
+  },
   "securityLink": "Hoe we het veilig houden →",
   "finalCta": {
-    "title": "Start je kluis — gratis",
-    "body": "Voeg je eerste spullen in enkele minuten toe. Geen spreadsheets nodig."
+    "title": "Begin met je kluis — gratis",
+    "body": "Voeg je eerste paar spullen in enkele minuten toe. Geen spreadsheets nodig."
   }
 }

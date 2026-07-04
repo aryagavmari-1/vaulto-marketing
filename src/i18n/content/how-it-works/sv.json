@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Så fungerar det",
-    "description": "Lägg till det du äger, låt Vaulto organisera det och se hela bilden i tre enkla steg. AI-assisterad inläsning sköter registreringen åt dig."
+    "title": "Så fungerar det — inventera dina tillgångar i 3 steg",
+    "description": "Lägg till det du äger, låt Vaulto organisera det och se helheten. Använd sedan Planer för att tänka igenom testamente, arv, försäkring och mer."
   },
   "crumbs": {
     "home": "Hem",
@@ -10,28 +10,51 @@
   "hero": {
     "eyebrow": "Så fungerar det",
     "heading": "Från utspritt till organiserat, i tre steg.",
-    "intro": "Du behöver inte skriva in allt för hand. Vaulto läser dina foton och dokument och gör grovjobbet — så du kommer igång på minuter, inte helger."
+    "intro": "Du behöver inte skriva in allt för hand. Vaulto läser dina foton och dokument och gör grovjobbet — så det tar minuter att komma igång, inte hela helger."
   },
   "steps": [
     {
       "title": "Lägg till det du äger.",
-      "body": "Ta en bild eller ladda upp ett dokument så läser Vaulto det åt dig — och utkastar uppgifterna så att du slipper skriva in allt för hand. Lägg till ett rum, ett kvitto eller en mapp med papper på en gång.",
-      "detail": "AI-assisterad inläsning gör ett överväldigande jobb till några korta stunder."
+      "body": "Ta en bild eller ladda upp ett dokument så läser Vaulto det åt dig — och utkastar detaljerna så att du slipper skriva in allt för hand. Lägg till ett rum, ett kvitto eller en mapp med papper på en gång.",
+      "detail": "AI-stödd insamling gör ett överväldigande jobb till några korta stunder."
     },
     {
       "title": "Låt Vaulto organisera det.",
-      "body": "Gruppera tillgångar i samlingar, lägg till de viktigaste uppgifterna och behåll dokumenten som styrker dem precis där de hör hemma.",
+      "body": "Gruppera tillgångar i samlingar, lägg till de viktiga fakta som behövs och håll dokumenten som styrker dem kopplade precis där de hör hemma.",
       "detail": "Fastigheter, konton, investeringar, värdesaker, pensioner — allt i en struktur."
     },
     {
       "title": "Se hela bilden.",
-      "body": "Din familjs tillgångar och dokument i en tydlig vy — redo att delas med personerna som betyder mest, och att planera framåt med en kostnadsfri översikt när du är redo.",
+      "body": "Din familjs tillgångar och dokument i en tydlig överblick — redo att delas med personerna som betyder mest, och att planera framåt med en gratis översikt när du är redo.",
       "detail": "En ren ögonblicksbild som du kan ge till en jurist eller rådgivare."
     }
   ],
+  "plans": {
+    "eyebrow": "Planer",
+    "heading": "När du är redo, planera nästa steg.",
+    "intro": "Ditt valv visar vad du äger. Planer hjälper dig att tänka igenom vad du ska göra med det — från testamente eller arv till försäkring, äktenskapsförord eller tillgångar i mer än ett land. Börja när det passar dig och ta det i din egen takt.",
+    "beats": [
+      {
+        "title": "Välj ett fokusområde.",
+        "body": "Välj det område du tänker på — testamenten och arv, försäkring, äktenskapsförord, gränsöverskridande tillgångar med mera. Varje område är ett lugnt, guidat utrymme, inte ett långt formulär att fylla i.",
+        "detail": "Områden som täcker de situationer som ofta behöver en plan."
+      },
+      {
+        "title": "Prata igenom det.",
+        "body": "Svara på några frågor i ett kort samtal på vanlig svenska. Skriv dina svar eller säg dem högt — det som känns enklast.",
+        "detail": "Ingen jargong och inga långa formulär. Vaulto frågar; du svarar med dina egna ord."
+      },
+      {
+        "title": "Få en plan för din situation.",
+        "body": "Vaulto omvandlar samtalet till en tydlig, personlig översikt över var du står och vilka steg som kan vara värda att överväga härnäst. Börja med en gratis översikt och gå vidare när du är redo.",
+        "detail": "Använd din plan för att känna dig förberedd — och för att vägleda ett samtal med en kvalificerad specialist."
+      }
+    ],
+    "honesty": "Planer ger dig allmän information som hjälper dig att förbereda dig och ställa bättre frågor. De är inte juridisk rådgivning, skatterådgivning eller finansiell rådgivning."
+  },
   "securityLink": "Så håller vi det säkert →",
   "finalCta": {
-    "title": "Börja med ditt valv — gratis",
+    "title": "Starta ditt valv — gratis",
     "body": "Lägg till dina första saker på några minuter. Inga kalkylblad behövs."
   }
 }
