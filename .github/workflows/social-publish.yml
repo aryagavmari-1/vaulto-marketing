@@ -1,0 +1,80 @@
+name: Social Publish (Pinterest auto-post)
+
+# The FREE social publishing path (ARY-654). Runs the direct-API publisher once a
+# day: reads every board-approved publish-manifest, works out which atoms are due
+# on the Day-0..5 stagger, auto-posts the Pinterest ones via Pinterest API v5, and
+# flags LinkedIn / short-form for manual posting. Idempotent publish-log is
+# committed back each run (auditable history + no double-posts).
+#
+# $0 by design: no paid SaaS, no new infra — this is the same scheduled-GitHub-
+# Actions pattern the KPI puller already uses (see refresh-kpis.yml). GitHub
+# Actions cron is free at this cadence. (A Render cron job can run the identical
+# `node run.mjs` command if we ever prefer Render — the worker is portable.)
+#
+# Required repo secrets (NONE committed). Until they exist the worker runs as a
+# safe dry-run (green, no live calls) and commits only the projected publish-log,
+# so this job is a no-op until Pinterest access is provisioned — no code change to
+# go live. Provision only AFTER the founder-OAuth + CEO checkpoint (see README):
+#   PINTEREST_ACCESS_TOKEN   — ~30-day access token (pins:write, boards:read)
+#   PINTEREST_REFRESH_TOKEN  — refresh token (worker self-heals on 401)
+#   PINTEREST_APP_ID         — our Pinterest dev-app id (for token refresh)
+#   PINTEREST_APP_SECRET     — our Pinterest dev-app secret
+#   PINTEREST_BOARD_ID       — target board id
+
+on:
+  schedule:
+    - cron: '13 9 * * *' # 09:13 UTC daily
+  workflow_dispatch:
+    inputs:
+      today:
+        description: 'Override run date (YYYY-MM-DD) — testing only'
+        required: false
+      dry_run:
+        description: 'Force dry-run (no live posts)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: social-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site/social-publisher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run unit tests
+        run: node --test test/publisher.test.mjs
+      - name: Publish due atoms
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+          PINTEREST_APP_ID: ${{ secrets.PINTEREST_APP_ID }}
+          PINTEREST_APP_SECRET: ${{ secrets.PINTEREST_APP_SECRET }}
+          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
+          RUN_DATE: ${{ github.event.inputs.today }}
+        run: |
+          node run.mjs --all manifests ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+      - name: Commit publish-log write-back
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- publish-log; then
+            echo "No publish-log changes to commit."
+            exit 0
+          fi
+          git config user.name  "vaulto-social-bot"
+          git config user.email "noreply@paperclip.ing"
+          git add publish-log
+          git commit -m "chore(social): publish-log write-back [skip ci]
+
+          Co-Authored-By: Paperclip <noreply@paperclip.ing>"
+          git push

@@ -1,0 +1,99 @@
+{
+  "manifestId": "2026-07-02-s3-inheritance-tax",
+  "cycle": "2026-07-02",
+  "source": "S3 Inheritance Tax Planning",
+  "goLiveDate": "2026-07-02",
+  "approval": "d4208992",
+  "mediaBaseUrl": "https://myvaulto.com",
+  "notes": "Machine-readable form of the board-approved publish manifest (ARY-622 #document-publish-manifest-2026-07-02). Copy is final/as-approved — do not edit claim language. Graphic PNGs are served from ${mediaBaseUrl}/social/<graphicKey>.png (see README).",
+  "atoms": [
+    {
+      "id": "P1",
+      "platform": "pinterest",
+      "scheduleDay": 0,
+      "graphicKey": "pin-p1",
+      "title": "Inheritance Tax Planning UK: What to Gather Before You Plan",
+      "body": "Inheritance tax planning starts with what you own — not a clever scheme. This UK-first guide walks the six things to gather first: your estate value, your home, gifts, business assets, existing plans and life cover. Rules vary by country; this is general information, not legal or financial advice. Full checklist →",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=pinterest&utm_campaign=s3-inheritance-tax-planning",
+      "altText": "Checklist card titled \"6 things to gather before inheritance tax planning\" with six labelled rows on a calm olive background."
+    },
+    {
+      "id": "L2",
+      "platform": "linkedin",
+      "scheduleDay": 0,
+      "graphicKey": "li-l2",
+      "body": "You don't need to be a tax expert to start inheritance tax planning.\nYou need a list. Here are the six things to gather before you plan.\n\n1. The estate value — everything you own and owe. The starting number most people guess at.\n2. Your home, and who inherits it — value, how it's owned, and whether it passes to direct descendants.\n3. Gifts in the last seven years — amounts, dates, recipients. A simple record now saves guesswork later.\n4. Business or agricultural assets — these can qualify for specific reliefs, but only with the right evidence.\n5. Existing planning — trusts, prior gifts, pensions with nominated beneficiaries.\n6. Life cover — its value, and whether it's written in trust.\n\nGather these six and you've turned a vague worry into something you can actually plan around — and made any conversation with a solicitor or adviser about strategy, not fact-finding. Rules vary by country; this is general information, not legal or financial advice.\n\nThe full checklist → https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "hashtags": ["#EstatePlanning", "#InheritanceTax", "#FinancialPlanning", "#UKTax", "#Caregivers"]
+    },
+    {
+      "id": "P3",
+      "platform": "pinterest",
+      "scheduleDay": 1,
+      "graphicKey": "pin-p3",
+      "title": "How Is an Estate Valued for Inheritance Tax? Start Here",
+      "body": "You can't estimate an inheritance tax bill until you know what's in the estate. An estate is broadly everything you own minus what you owe — the same assets-minus-liabilities view behind your household net worth. See how it comes together. Rules vary by country; general information, not legal or financial advice. →",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=pinterest&utm_campaign=s3-inheritance-tax-planning",
+      "altText": "Stat card reading \"estate value = everything you own minus what you owe\" on a calm olive background with disclaimer ribbon."
+    },
+    {
+      "id": "L1",
+      "platform": "linkedin",
+      "scheduleDay": 2,
+      "graphicKey": "li-l1",
+      "body": "When my mum died, we didn't have a tax problem first.\nWe had a \"where is everything?\" problem.\n\nThe solicitor's first question wasn't clever. It was simple: what did she own, and what did she owe? We spent weeks finding out — an old pension here, a policy nobody knew was written in trust, a house we weren't sure how she held. The tax part was almost easy once we had the list. That's the thing about inheritance tax planning: you can't estimate a bill, or use a single allowance, until you know what's in the estate. So the honest first step isn't a scheme — it's a complete picture of what you own and owe, your home and who inherits it, and any gifts made in the last seven years. Do that once, calmly, and you hand your family clarity instead of a scramble. Rules vary by country; this is general information, not legal or financial advice.\n\nWhat we wish we'd gathered first → https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "hashtags": ["#InheritanceTax", "#EstatePlanning", "#FamilyFinance", "#SandwichGeneration", "#FinancialWellbeing"]
+    },
+    {
+      "id": "P4",
+      "platform": "pinterest",
+      "scheduleDay": 2,
+      "graphicKey": "pin-p4",
+      "title": "The 7-Year Rule on Gifts, Explained Simply",
+      "body": "Gifts you make are generally free of inheritance tax if you live seven years afterwards — die within that window and some can be pulled back into the estate. A simple record of amounts and dates saves your family guesswork later. This is general information, not legal or financial advice; rules vary by country. →",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=pinterest&utm_campaign=s3-inheritance-tax-planning",
+      "altText": "Timeline graphic explaining the seven-year gift rule for inheritance tax, calm olive design with disclaimer ribbon."
+    },
+    {
+      "id": "V1",
+      "platform": "shortform",
+      "scheduleDay": 3,
+      "graphicKey": "video-v1",
+      "body": "The 6 things to gather before you think about inheritance tax planning 👇 It's not a scheme — it's a list. General information, not legal or financial advice; rules vary by country. Full checklist in bio/link. #InheritanceTax #EstatePlanning #FamilyFinance #UKTax",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=shortform&utm_campaign=s3-inheritance-tax-planning",
+      "hashtags": ["#InheritanceTax", "#EstatePlanning", "#FamilyFinance", "#UKTax"]
+    },
+    {
+      "id": "P2",
+      "platform": "pinterest",
+      "scheduleDay": 4,
+      "graphicKey": "pin-p2",
+      "title": "Estate Paperwork Checklist: 6 Things to Pull Together First",
+      "body": "Before you can plan — or have a useful talk with a solicitor — pull the paperwork together. The estate paperwork checklist: estate value, your home and who inherits it, gifts in the last 7 years, business/agricultural assets, existing plans, and life cover. General information, not legal or financial advice; rules vary by country. See the full list →",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=pinterest&utm_campaign=s3-inheritance-tax-planning",
+      "altText": "Six-row checklist graphic listing estate paperwork to gather, calm olive design with a general-information disclaimer ribbon."
+    },
+    {
+      "id": "L3",
+      "platform": "linkedin",
+      "scheduleDay": 5,
+      "graphicKey": "li-l3",
+      "body": "The costliest inheritance-tax mistake I see isn't a bad scheme.\nIt's not knowing what's actually in the estate.\n\nThere's a myth that inheritance tax planning starts with a clever structure — a trust, a gift, a product. It doesn't. Two estates of the same size can owe very different amounts depending on who inherits, when gifts were made, and which reliefs apply — and you can't judge any of that until you know what you own and owe. The families who find it hardest aren't the ones without a scheme; they're the ones who never wrote the list down. So before the strategy, the spreadsheet: estate value, the home and how it's held, seven years of gifts, business assets, existing plans, life cover. Boring? Yes. But it's the step that makes every clever thing afterwards possible — and it's the one thing a professional can't do for you. Rules vary by country; this is general information, not legal or financial advice.\n\nStart with what to gather → https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=linkedin&utm_campaign=s3-inheritance-tax-planning",
+      "hashtags": ["#InheritanceTax", "#EstatePlanning", "#WealthPlanning", "#FinancialAdvice", "#FamilyFinance"]
+    },
+    {
+      "id": "P5",
+      "platform": "pinterest",
+      "scheduleDay": 7,
+      "graphicKey": "pin-p5",
+      "held": true,
+      "heldReason": "Single product-leaning pin held opt-in/manual per CMO QA. Post only on explicit manual sign-off, blog-linked (not app).",
+      "title": "One Calm Home for Your Estate Paperwork",
+      "body": "Held opt-in/manual — not part of the automated go-live.",
+      "link": "https://myvaulto.com/blog/inheritance-tax-planning/?utm_source=pinterest&utm_campaign=s3-inheritance-tax-planning",
+      "altText": "Product pin held for manual sign-off."
+    }
+  ]
+}

@@ -49,11 +49,22 @@ writing content.
 
 ## Social posting
 
-Social is **off-repo** (LinkedIn/X don't accept a git push). The repeatable path:
-the social sub-agent drafts from the same article, a human/CEO approves per the
-CMO's operating system (ARY-402), then it posts. Track outbound social → site via
-UTM links (`?utm_source=...`) so the conversion shows up in the KPIs. Wire an
-auto-poster later only if a $0 path (e.g. a scheduled webhook) is approved.
+The repeatable path: the social sub-agent drafts from the same article, a
+human/CEO approves per the CMO's operating system (ARY-402), the approved batch is
+packaged as a **publish-manifest**, then it posts. Track outbound social → site via
+UTM links (`?utm_source=...`) so the conversion shows up in the KPIs.
+
+**The $0 auto-poster is built** (ARY-654) — see [`social-publisher/`](social-publisher/README.md).
+It reads a board-approved publish-manifest and, on the Day-0..5 stagger:
+
+- **Pinterest** → auto-posts via Pinterest API v5 (`node run.mjs --all manifests`,
+  scheduled daily by `.github/workflows/social-publish.yml`, $0).
+- **LinkedIn / short-form** → flagged `manual-required` with the approved copy
+  (Track 1 manual, unchanged) — graceful degradation, no loss.
+
+No paid SaaS aggregator (board directive 2026-07-04). Pinterest goes live once its
+secrets are provisioned after the founder-OAuth + CEO checkpoint; until then the
+worker safely dry-runs and everything stays manual.
 
 ## Cost
 
