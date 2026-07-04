@@ -101,6 +101,7 @@ const PAGE_LOCALES: Record<string, readonly Locale[]> = {
   '/planning/': ALL,
   '/security/': ALL,
   '/privacy/': ALL,
+  '/delete-account/': ALL,
   '/faq/': ALL,
   // The blog INDEX exists in every locale at `/<locale>/blog/` (ARY-523). Note:
   // individual ARTICLES use translated slugs and derive their own hreflang via
