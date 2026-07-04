@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Gizlilik",
-    "description": "Vaulto'nun kişisel verilerinizi nasıl işlediği."
+    "description": "Vaulto’nun neleri topladığını, verilerinizin nasıl kullanılıp korunduğunu ve üzerindeki kontrolün sizde nasıl kaldığını — henüz iddia etmediklerimiz dahil — sade bir dille özetler."
   },
   "crumbs": {
     "home": "Ana Sayfa",
@@ -9,42 +9,46 @@
   },
   "hero": {
     "eyebrow": "Güven",
-    "heading": "Gizlilik",
-    "lead": "Vaulto'nun neleri topladığı, bunları nasıl kullandığı ve kontrolün sizde nasıl kaldığına dair sade bir özet. <a href=\"/security/\">güvenliğe genel bakışımızla</a> birlikte okunmalıdır.",
-    "updated": "Son güncelleme Haziran 2026 · Tam yasal politika, halka açık lansmandan önce yayımlanacaktır."
+    "heading": "Gizliliğiniz, sade bir dille.",
+    "lead": "Vaulto’nun neleri topladığını, bunları nasıl kullandığımızı ve kontrolün sizde nasıl kaldığını sade bir dille özetler. <a href=\"/security/\">güvenlik genel bakışımızla</a> birlikte okunur.",
+    "updated": "Son güncelleme Haziran 2026 · Kamuya açık lansmandan önce tam yasal politika yayımlanacaktır."
   },
   "sections": [
     {
-      "title": "Neleri topluyoruz",
-      "body": "Kasanıza koymayı seçtiğiniz bilgiler (varlıklar, borçlar, belgeler ve ilgili ayrıntılar), oturum açmanız için gereken hesap bilgileri ve hizmeti işletmek ve iyileştirmek için gereken temel kullanım verileri."
+      "title": "Neler topluyoruz",
+      "body": "Kasanıza koymayı seçtiğiniz bilgiler (varlıklar, borçlar, belgeler ve ilgili ayrıntılar), oturum açmanız için gereken hesap bilgileri ve hizmeti çalıştırmak ve iyileştirmek için gereken temel kullanım verileri."
     },
     {
-      "title": "Bunu nasıl kullanıyoruz",
-      "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net varlığınızı hesaplamak, talep ettiğiniz AI özetlerini oluşturmak ve paylaşmayı seçtiğiniz anlık görüntüleri hazırlamak. Verilerinizi satmıyoruz."
+      "title": "Bunları nasıl kullanıyoruz",
+      "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net servetinizi hesaplamak, talep ettiğiniz AI özetlerini oluşturmak ve paylaşmayı seçtiğiniz anlık görüntüleri hazırlamak. Verilerinizi satmayız."
     },
     {
-      "title": "Yapay zekâ işleme &amp; üçüncü taraflar",
-      "body": "Yapay zekâ özelliklerimizi — varlık fotoğrafı tarama ve doldurma, otomatik değerlemeler, sesli adım adım rehber ve danışmanlık özeti, raporu ve sohbeti — desteklemek için, bu özelliklerin ihtiyaç duyduğu bilgileri, yapay zekâ modellerini bizim adımıza veri işleyenimiz olarak çalıştıran <strong>OpenAI, L.L.C.</strong> ile paylaşıyoruz. Özelliğe bağlı olarak bu, çektiğiniz fotoğrafları (hesap veya poliçe numaraları ve adresler gibi belge ayrıntılarını gösterebilir), kasanızdaki varlık adlarını, kategorileri, para birimlerini ve değerleri, danışmanlık akışında verdiğiniz yanıtları ve serbest metin notlarını (hassas kişisel veya ailevi durumları içerebilir), ülkenizi ve sesli rehber tarafından yüksek sesle okunan metni içerebilir. OpenAI bunları yalnızca bize sonuçları geri döndürmek için işler ve bunları modellerini eğitmek için kullanmaz. OpenAI'ye isteklerimizi ve yanıtlarını saklamamasını söylüyoruz (store=false); sıfır saklama düzenlemesi yoksa, OpenAI verileri silmeden önce yalnızca kötüye kullanımı izlemek amacıyla en fazla 30 gün boyunca saklayabilir. Bu bilgileri satmıyoruz veya yapay zekâ işleme için başka herhangi bir üçüncü tarafla paylaşmıyoruz."
+      "title": "AI işleme &amp; üçüncü taraflar",
+      "body": "AI özelliklerimizi çalıştırmak için — varlık fotoğrafı tara-ve-doldur, otomatik değerlemeler, sesli adım adım anlatım ve danışmanlık özeti, raporu ve sohbeti — bu özelliklerin ihtiyaç duyduğu bilgileri, yürürlüğe konmuş bir Veri İşleme Ek Sözleşmesi (DPA) kapsamında bizim adımıza veri işleyen olarak AI modellerini işleten <strong>OpenAI, L.L.C.</strong> ile paylaşırız. Özelliğe bağlı olarak buna çektiğiniz fotoğraflar (hesap veya poliçe numaraları ve adresler gibi belge ayrıntılarını gösterebilir), kasanızdaki varlık adları, kategoriler, para birimleri ve değerler, danışmanlık akışında verdiğiniz yanıtlar ve serbest metin notları (hassas kişisel veya ailevi durumları içerebilir), ülkeniz ve sesli anlatımda yüksek sesle okunan metin dahil olabilir. OpenAI bunları yalnızca bize sonuç döndürmek için işler ve modellerini eğitmek için kullanmaz. OpenAI’ye isteklerimizi ve yanıtlarını saklamamasını söylüyoruz (store=false); sıfır saklama düzenlemesi olmadıkça, OpenAI verileri silmeden önce yalnızca kötüye kullanım izleme amacıyla en fazla 30 gün tutabilir. Bu bilgileri satmayız ve AI işleme için başka herhangi bir üçüncü tarafla paylaşmayız."
     },
     {
       "title": "Paylaşım &amp; onay",
-      "body": "Verileriniz yalnızca açıkça izin verdiğinizde paylaşılır — örneğin bir uzman için yönlendirme paketi hazırladığınızda. Neyin dâhil edileceğini siz seçersiniz ve paylaşımı istediğiniz zaman durdurabilirsiniz."
+      "body": "Verileriniz yalnızca açıkça izin verdiğinizde paylaşılır — örneğin bir uzman için yönlendirme paketi hazırladığınızda. Nelerin dahil olacağını siz seçersiniz ve paylaşımı istediğiniz zaman durdurabilirsiniz."
     },
     {
       "title": "Nasıl korunuyor",
-      "body": "Kasanız her istekte hesabınıza özel olarak yalıtılır, parolalar scrypt ile hash'lenir ve belgelere erişimde kısa ömürlü imzalı bağlantılar kullanılır. Ayrıntılar için <a href=\"/security/\">güvenliğe genel bakışa</a> bakın — henüz neyi iddia etmediğimiz dahil."
+      "body": "Kasanız her istekte hesabınıza yalıtılır, parolalar scrypt ile hash’lenir ve belge erişimi kısa ömürlü imzalı bağlantılar kullanır. Ayrıntılar için <a href=\"/security/\">güvenlik genel bakışına</a> bakın — henüz neyi iddia etmediğimiz dahil."
     }
   ],
   "choices": {
     "title": "Seçimleriniz",
     "items": [
-      "Kasanızdaki bilgilere erişin ve bunları dışa aktarın.",
+      "Kasanızdaki bilgilere erişin ve dışa aktarın.",
       "Paylaşılan bir anlık görüntüye bir uzmanın erişimini iptal edin.",
-      "Hesabınızın ve verilerinizin silinmesini isteyin — <a href=\"/delete-account/\">hesabınızı nasıl sileceğinizi</a> öğrenin."
+      "Hesabınızın ve verilerinizin silinmesini talep edin — <a href=\"/delete-account/\">hesabınızı nasıl sileceğinize</a> bakın."
     ]
   },
   "contact": {
     "title": "İletişim",
     "lead": "Gizlilikle ilgili sorularınız mı var? E-posta"
+  },
+  "finalCta": {
+    "title": "Veriniz, kontrolünüz.",
+    "body": "Ücretsiz başlayın — istediğiniz zaman her şeyi dışa aktarın veya silin. Kilitlenme yok."
   }
 }

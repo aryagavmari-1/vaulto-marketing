@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Prywatność",
-    "description": "Jak Vaulto przetwarza Twoje dane osobowe."
+    "description": "Proste podsumowanie tego, co Vaulto zbiera, jak Twoje dane są używane i chronione oraz jaką kontrolę nad nimi zachowujesz — w tym czego jeszcze nie deklarujemy."
   },
   "crumbs": {
     "home": "Strona główna",
@@ -9,42 +9,46 @@
   },
   "hero": {
     "eyebrow": "Zaufanie",
-    "heading": "Prywatność",
-    "lead": "Proste podsumowanie tego, co Vaulto zbiera, jak to wykorzystujemy i jaką kontrolę zachowujesz. Uzupełnia nasz <a href=\"/security/\">przegląd zabezpieczeń</a>.",
+    "heading": "Twoja prywatność, prostym językiem.",
+    "lead": "Proste podsumowanie tego, co Vaulto zbiera, jak z tego korzystamy i jaką kontrolę zachowujesz. Uzupełnia nasz <a href=\"/security/\">przegląd bezpieczeństwa</a>.",
     "updated": "Ostatnia aktualizacja: czerwiec 2026 · Pełna polityka prawna zostanie opublikowana przed publicznym uruchomieniem."
   },
   "sections": [
     {
       "title": "Co zbieramy",
-      "body": "Informacje, które zdecydujesz się umieścić w swoim sejfie (aktywa, zobowiązania, dokumenty i powiązane szczegóły), dane konta potrzebne do zalogowania oraz podstawowe dane o korzystaniu potrzebne do działania i ulepszania usługi."
+      "body": "Informacje, które zdecydujesz się umieścić w swoim sejfie (aktywa, zobowiązania, dokumenty i powiązane szczegóły), dane konta potrzebne do logowania oraz podstawowe dane o korzystaniu potrzebne do działania i ulepszania usługi."
     },
     {
-      "title": "Jak to wykorzystujemy",
-      "body": "Aby świadczyć usługę: przechowywać Twój spis majątku i dokumenty, obliczać Twoją wartość netto, tworzyć zamówione przez Ciebie podsumowania AI oraz przygotowywać migawki, które zdecydujesz się udostępnić. Nie sprzedajemy Twoich danych."
+      "title": "Jak tego używamy",
+      "body": "Aby zapewniać działanie produktu: przechowywać Twój spis i dokumenty, obliczać wartość netto majątku, generować zamówione przez Ciebie podsumowania AI oraz tworzyć migawki, które chcesz udostępniać. Nie sprzedajemy Twoich danych."
     },
     {
-      "title": "Przetwarzanie AI &amp; strony trzecie",
-      "body": "Aby zapewnić działanie naszych funkcji AI — skanowania i uzupełniania danych ze zdjęć aktywów, zautomatyzowanych wycen, głosowego przewodnika oraz przeglądu doradczego, raportu i czatu — przekazujemy informacje potrzebne tym funkcjom do <strong>OpenAI, L.L.C.</strong>, które obsługuje modele AI w naszym imieniu jako nasz podmiot przetwarzający dane. W zależności od funkcji może to obejmować wykonane przez Ciebie zdjęcia (które mogą pokazywać szczegóły dokumentów, takie jak numery kont lub polis oraz adresy), nazwy aktywów, kategorie, waluty i wartości w Twoim sejfie, odpowiedzi i notatki w wolnym tekście, które podajesz w procesie doradczym (mogące obejmować wrażliwe okoliczności osobiste lub rodzinne), Twój kraj oraz tekst odczytywany na głos przez przewodnik głosowy. OpenAI przetwarza te dane wyłącznie po to, aby zwrócić nam wyniki, i does not use it to train its models. Polecamy OpenAI nie przechowywać naszych żądań i odpowiedzi (store=false); w przypadku braku uzgodnienia o zerowym przechowywaniu OpenAI może zachować dane przez okres do 30 days wyłącznie w celu monitorowania nadużyć, a następnie je usunąć. Nie sprzedajemy tych informacji ani nie udostępniamy ich żadnej innej stronie trzeciej do przetwarzania przez AI."
+      "title": "Przetwarzanie AI &amp; podmioty trzecie",
+      "body": "Aby zasilać nasze funkcje AI — skanowanie i uzupełnianie zdjęć aktywów, automatyczne wyceny, przewodnik głosowy oraz przegląd doradczy, raport i czat — wysyłamy informacje potrzebne tym funkcjom do <strong>OpenAI, L.L.C.</strong>, które obsługuje modele AI w naszym imieniu jako podmiot przetwarzający dane na podstawie zawartego aneksu Data Processing Addendum (DPA). W zależności od funkcji może to obejmować wykonane przez Ciebie zdjęcia (które mogą pokazywać szczegóły dokumentów, takie jak numery kont, polis i adresy), nazwy aktywów, kategorie, waluty i wartości w Twoim sejfie, odpowiedzi i notatki w wolnym tekście podane przez Ciebie w procesie doradczym (które mogą zawierać wrażliwe okoliczności osobiste lub rodzinne), Twój kraj oraz tekst odczytywany na głos przez przewodnik głosowy. OpenAI przetwarza te dane wyłącznie po to, by zwrócić nam wyniki, i nie używa ich do trenowania swoich modeli. Polecamy OpenAI, aby nie przechowywało naszych żądań i odpowiedzi (store=false); przy braku ustaleń o zerowym przechowywaniu OpenAI może zachować dane do 30 dni wyłącznie w celu monitorowania nadużyć, a następnie je usunąć. Nie sprzedajemy tych informacji ani nie udostępniamy ich żadnej innej stronie trzeciej do przetwarzania AI."
     },
     {
       "title": "Udostępnianie &amp; zgoda",
-      "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to zezwolisz — na przykład gdy przygotowujesz pakiet przekazania dla specjalisty. To Ty decydujesz, co zostanie uwzględnione, i możesz przerwać udostępnianie w dowolnym momencie."
+      "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to pozwolisz — na przykład gdy tworzysz pakiet polecający dla specjalisty. Ty wybierasz, co się w nim znajdzie, i możesz w każdej chwili przerwać udostępnianie."
     },
     {
       "title": "Jak są chronione",
-      "body": "Twój sejf jest odseparowany w ramach Twojego konta przy każdym żądaniu, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótko ważne podpisane linki. Szczegóły znajdziesz w <a href=\"/security/\">przeglądzie zabezpieczeń</a> — w tym także to, czego jeszcze nie deklarujemy."
+      "body": "Twój sejf jest odizolowany do Twojego konta przy każdym żądaniu, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótkotrwałe podpisane linki. Zobacz <a href=\"/security/\">przegląd bezpieczeństwa</a>, aby poznać szczegóły — w tym czego jeszcze nie deklarujemy."
     }
   ],
   "choices": {
     "title": "Twoje wybory",
     "items": [
-      "Uzyskaj dostęp do informacji w swoim sejfie i je wyeksportuj.",
-      "Cofnij specjaliście dostęp do udostępnionej migawki.",
-      "Poproś o usunięcie swojego konta i danych — zobacz <a href=\"/delete-account/\">jak usunąć swoje konto</a>."
+      "Dostęp do informacji w Twoim sejfie i ich eksport.",
+      "Cofnięcie dostępu specjalisty do udostępnionej migawki.",
+      "Poproś o usunięcie swojego konta i danych — zobacz <a href=\"/delete-account/\">jak usunąć konto</a>."
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "lead": "Masz pytania o prywatność? Napisz na adres"
+    "lead": "Masz pytania o prywatność? Napisz na"
+  },
+  "finalCta": {
+    "title": "Twoje dane, Twoja kontrola.",
+    "body": "Zacznij za darmo — eksportuj lub usuwaj wszystko, kiedy chcesz. Bez uzależnienia."
   }
 }

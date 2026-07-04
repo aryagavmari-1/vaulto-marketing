@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Confidentialité",
-    "description": "Comment Vaulto traite vos données personnelles."
+    "description": "Un résumé clair de ce que Vaulto collecte, de la façon dont vos données sont utilisées et protégées, et du contrôle que vous gardez sur elles — y compris ce que nous n'affirmons pas encore."
   },
   "crumbs": {
     "home": "Accueil",
@@ -9,42 +9,46 @@
   },
   "hero": {
     "eyebrow": "Confiance",
-    "heading": "Confidentialité",
-    "lead": "Résumé en langage clair de ce que Vaulto collecte, de la façon dont nous l’utilisons et du contrôle que vous gardez. À lire avec notre <a href=\"/security/\">aperçu de la sécurité</a>.",
+    "heading": "Votre vie privée, en termes simples.",
+    "lead": "Résumé clair de ce que Vaulto collecte, de la façon dont nous l'utilisons et du contrôle que vous gardez. À lire avec notre <a href=\"/security/\">aperçu de la sécurité</a>.",
     "updated": "Dernière mise à jour : juin 2026 · Une politique juridique complète sera publiée avant le lancement public."
   },
   "sections": [
     {
       "title": "Ce que nous collectons",
-      "body": "Les informations que vous choisissez de placer dans votre coffre-fort (actifs, passifs, documents et détails associés), les informations de compte nécessaires pour vous connecter, ainsi que des données d’usage de base nécessaires au fonctionnement et à l’amélioration du service."
+      "body": "Les informations que vous choisissez de mettre dans votre coffre-fort (actifs, passifs, documents et détails associés), les informations de compte nécessaires pour vous connecter, ainsi que des données d'usage de base nécessaires au fonctionnement et à l'amélioration du service."
     },
     {
       "title": "Comment nous les utilisons",
-      "body": "Pour fournir le produit : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les synthèses IA que vous demandez et créer les instantanés que vous choisissez de partager. Nous ne vendons pas vos données."
+      "body": "Pour fournir le produit : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les aperçus IA que vous demandez et créer les instantanés que vous choisissez de partager. Nous ne vendons pas vos données."
     },
     {
-      "title": "Traitement par l’IA &amp; tiers",
-      "body": "Pour alimenter nos fonctionnalités d’IA — le scan et remplissage automatiques à partir de photos d’actifs, les valorisations automatisées, la visite guidée vocale, ainsi que la vue d’ensemble, le rapport et le chat de conseil — nous envoyons à <strong>OpenAI, L.L.C.</strong> les informations dont ces fonctionnalités ont besoin. OpenAI, L.L.C. exécute les modèles d’IA pour notre compte en tant que sous-traitant de nos données. Selon la fonctionnalité, cela peut inclure les photos que vous prenez (qui peuvent montrer des détails de documents tels que des numéros de compte ou de police et des adresses), les noms des actifs, les catégories, les devises et les valeurs dans votre coffre, les réponses et notes en texte libre que vous fournissez dans le parcours de conseil (qui peuvent inclure des situations personnelles ou familiales sensibles), votre pays, ainsi que le texte lu à voix haute par la visite guidée vocale. OpenAI traite ces données uniquement pour nous renvoyer des résultats et does not use it to train its models. Nous demandons à OpenAI de ne pas conserver nos requêtes ni les réponses (store=false) ; en l’absence d’un accord de conservation nulle, OpenAI peut conserver les données jusqu’à 30 days uniquement à des fins de surveillance des abus avant de les supprimer. Nous ne vendons pas ces informations et ne les partageons avec aucun autre tiers pour un traitement par l’IA."
+      "title": "Traitement par l'IA &amp; tiers",
+      "body": "Pour faire fonctionner nos fonctionnalités d'IA — le scan et préremplissage de photos d'actifs, les valorisations automatisées, le guide vocal, ainsi que l'aperçu, le rapport et le chat de conseil — nous envoyons les informations nécessaires à ces fonctionnalités à <strong>OpenAI, L.L.C.</strong>, qui exécute les modèles d'IA pour notre compte en tant que sous-traitant, dans le cadre d'un Data Processing Addendum (DPA) signé. Selon la fonctionnalité, cela peut inclure les photos que vous prenez (qui peuvent montrer des détails de documents tels que des numéros de compte ou de police et des adresses), les noms des actifs, catégories, devises et valeurs dans votre coffre-fort, les réponses et notes en texte libre que vous fournissez dans le parcours de conseil (qui peuvent inclure des situations personnelles ou familiales sensibles), votre pays, et le texte lu à voix haute par le guide vocal. OpenAI traite ces données uniquement pour nous renvoyer des résultats et ne les utilise pas pour entraîner ses modèles. Nous demandons à OpenAI de ne pas conserver nos requêtes ni nos réponses (store=false) ; en l'absence d'un accord de conservation nulle, OpenAI peut conserver les données jusqu'à 30 jours uniquement pour la surveillance des abus avant de les supprimer. Nous ne vendons pas ces informations et ne les partageons avec aucun autre tiers pour un traitement par IA."
     },
     {
       "title": "Partage &amp; consentement",
-      "body": "Vos données ne sont partagées que lorsque vous l'autorisez explicitement — par exemple, lorsque vous préparez un dossier de transmission pour un professionnel. Vous choisissez ce qui est inclus et vous pouvez arrêter le partage à tout moment."
+      "body": "Vos données ne sont partagées que lorsque vous l'autorisez explicitement — par exemple, lorsque vous créez un dossier de transmission pour un professionnel. Vous choisissez ce qui est inclus, et vous pouvez arrêter le partage à tout moment."
     },
     {
-      "title": "Comment c’est protégé",
-      "body": "Votre coffre-fort est isolé à votre compte à chaque requête, les mots de passe sont hachés avec scrypt, et l’accès aux documents utilise des liens signés de courte durée. Consultez l’<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous ne revendiquons pas encore."
+      "title": "Comment elles sont protégées",
+      "body": "Votre coffre-fort est isolé à votre compte à chaque requête, les mots de passe sont hachés avec scrypt, et l'accès aux documents utilise des liens signés de courte durée. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous n'affirmons pas encore."
     }
   ],
   "choices": {
     "title": "Vos choix",
     "items": [
-      "Accéder aux informations de votre coffre-fort et les exporter.",
-      "Retirer l’accès d’un professionnel à un instantané partagé.",
+      "Accéder aux informations dans votre coffre-fort et les exporter.",
+      "Révoquer l'accès d'un professionnel à un instantané partagé.",
       "Demander la suppression de votre compte et de vos données — voir <a href=\"/delete-account/\">comment supprimer votre compte</a>."
     ]
   },
   "contact": {
     "title": "Contact",
     "lead": "Des questions sur la confidentialité ? Écrivez à"
+  },
+  "finalCta": {
+    "title": "Vos données, votre contrôle.",
+    "body": "Commencez gratuitement — exportez ou supprimez tout quand vous voulez. Sans engagement."
   }
 }

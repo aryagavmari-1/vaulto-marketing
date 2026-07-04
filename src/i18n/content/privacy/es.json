@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacidad",
-    "description": "Cómo gestiona Vaulto tus datos personales."
+    "description": "Un resumen claro de lo que recopila Vaulto, cómo se usan y protegen tus datos, y el control que mantienes sobre ellos — incluido lo que aún no afirmamos."
   },
   "crumbs": {
     "home": "Inicio",
@@ -9,30 +9,30 @@
   },
   "hero": {
     "eyebrow": "Confianza",
-    "heading": "Privacidad",
-    "lead": "Resumen en lenguaje claro de lo que Vaulto recopila, cómo lo usamos y el control que mantienes. Complementa nuestro <a href=\"/security/\">resumen de seguridad</a>.",
+    "heading": "Tu privacidad, en palabras sencillas.",
+    "lead": "Resumen claro de lo que recopila Vaulto, cómo lo usamos y el control que mantienes. Va junto con nuestro <a href=\"/security/\">resumen de seguridad</a>.",
     "updated": "Última actualización: junio de 2026 · Se publicará una política legal completa antes del lanzamiento público."
   },
   "sections": [
     {
       "title": "Qué recopilamos",
-      "body": "La información que eliges guardar en tu bóveda (activos, pasivos, documentos y detalles relacionados), los datos de la cuenta necesarios para iniciar sesión y los datos básicos de uso necesarios para operar y mejorar el servicio."
+      "body": "La información que eliges poner en tu bóveda (activos, pasivos, documentos y detalles relacionados), los datos de la cuenta necesarios para iniciar sesión y los datos básicos de uso necesarios para prestar y mejorar el servicio."
     },
     {
       "title": "Cómo lo usamos",
-      "body": "Para ofrecer el producto: guardar tu inventario y documentos, calcular tu patrimonio neto, generar los resúmenes de IA que solicites y crear las capturas que elijas compartir. No vendemos tus datos."
+      "body": "Para ofrecer el producto: guardar tu inventario y documentos, calcular tu patrimonio neto, generar los resúmenes con IA que solicites y crear las capturas que elijas compartir. No vendemos tus datos."
     },
     {
-      "title": "Procesamiento de IA &amp; terceros",
-      "body": "Para ofrecer nuestras funciones de IA — el escaneo y autocompletado de fotos de activos, las valoraciones automatizadas, la guía por voz y el resumen, informe y chat de asesoramiento — enviamos a <strong>OpenAI, L.L.C.</strong> la información que esas funciones necesitan, y esta entidad opera los modelos de IA en nuestro nombre como nuestro encargado del tratamiento de datos. Según la función, esto puede incluir las fotos que captures (que pueden mostrar datos de documentos, como números de cuenta o póliza y direcciones), los nombres de los activos, las categorías, monedas y valores de tu vault, las respuestas y notas de texto libre que proporciones en el flujo de asesoramiento (que pueden incluir circunstancias personales o familiares sensibles), tu país y el texto leído en voz alta por la guía de voz. OpenAI procesa esto únicamente para devolvernos resultados y does not use it to train its models. Indicamos a OpenAI que no conserve nuestras solicitudes ni respuestas (store=false); si no existe un acuerdo de retención cero, OpenAI puede conservar los datos durante hasta 30 days únicamente para la supervisión de abusos antes de eliminarlos. No vendemos esta información ni la compartimos con ningún otro tercero para el procesamiento de IA."
+      "title": "Procesamiento con IA y terceros",
+      "body": "Para ofrecer nuestras funciones de IA — el escaneo y autocompletado de fotos de activos, las valoraciones automatizadas, la guía por voz y el resumen, informe y chat de asesoramiento — enviamos a <strong>OpenAI, L.L.C.</strong> la información que esas funciones necesitan, y esta empresa ejecuta los modelos de IA en nuestro nombre como nuestro encargado del tratamiento de datos en virtud de un Anexo de Tratamiento de Datos (DPA) formalizado. Según la función, esto puede incluir las fotos que captures (que pueden mostrar datos de documentos como números de cuenta o de póliza y direcciones), los nombres de los activos, las categorías, las divisas y los valores de tu bóveda, las respuestas y notas de texto libre que proporciones en el flujo de asesoramiento (que pueden incluir circunstancias personales o familiares sensibles), tu país y el texto leído en voz alta por la guía de voz. OpenAI procesa esto únicamente para devolvernos resultados y no lo usa para entrenar sus modelos. Indicamos a OpenAI que no conserve nuestras solicitudes ni respuestas (store=false); si no existe un acuerdo de conservación cero, OpenAI puede conservar los datos hasta 30 días únicamente para supervisión de abusos antes de eliminarlos. No vendemos esta información ni la compartimos con ningún otro tercero para procesamiento con IA."
     },
     {
-      "title": "Compartición &amp; consentimiento",
-      "body": "Tus datos solo se comparten cuando lo autorizas explícitamente, por ejemplo, cuando preparas un paquete de derivación para un profesional. Tú eliges qué se incluye y puedes dejar de compartir en cualquier momento."
+      "title": "Compartir y consentimiento",
+      "body": "Tus datos solo se comparten cuando lo autorizas explícitamente — por ejemplo, cuando preparas un paquete de derivación para un profesional. Tú eliges qué se incluye y puedes dejar de compartirlo en cualquier momento."
     },
     {
       "title": "Cómo se protege",
-      "body": "Tu bóveda está aislada en tu cuenta en cada solicitud, las contraseñas se almacenan con hash scrypt y el acceso a documentos utiliza enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
+      "body": "Tu bóveda está aislada en tu cuenta en cada solicitud, las contraseñas están protegidas con hash scrypt y el acceso a los documentos usa enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
     }
   ],
   "choices": {
@@ -46,5 +46,9 @@
   "contact": {
     "title": "Contacto",
     "lead": "¿Tienes preguntas sobre privacidad? Escribe a"
+  },
+  "finalCta": {
+    "title": "Tus datos, tu control.",
+    "body": "Empieza gratis — exporta o elimina todo cuando quieras. Sin permanencia."
   }
 }

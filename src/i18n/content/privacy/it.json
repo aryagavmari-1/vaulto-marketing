@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacy",
-    "description": "Come Vaulto gestisce i tuoi dati personali."
+    "description": "Un riepilogo in parole semplici di ciò che Vaulto raccoglie, di come i tuoi dati vengono usati e protetti, e del controllo che mantieni su di essi — incluso ciò che non dichiariamo ancora."
   },
   "crumbs": {
     "home": "Home",
@@ -9,30 +9,30 @@
   },
   "hero": {
     "eyebrow": "Fiducia",
-    "heading": "Privacy",
-    "lead": "Riepilogo in linguaggio semplice di ciò che Vaulto raccoglie, come lo usiamo e del controllo che mantieni. Si abbina alla nostra <a href=\"/security/\">panoramica sulla sicurezza</a>.",
-    "updated": "Ultimo aggiornamento giugno 2026 · Una policy legale completa sarà pubblicata prima del lancio pubblico."
+    "heading": "La tua privacy, in parole semplici.",
+    "lead": "Un riepilogo in parole semplici di ciò che Vaulto raccoglie, di come lo usiamo e del controllo che mantieni. Si abbina alla nostra <a href=\"/security/\">panoramica sulla sicurezza</a>.",
+    "updated": "Ultimo aggiornamento: giugno 2026 · Una policy legale completa sarà pubblicata prima del lancio pubblico."
   },
   "sections": [
     {
       "title": "Cosa raccogliamo",
-      "body": "Le informazioni che scegli di inserire nella tua cassaforte (beni, passività, documenti e dettagli correlati), i dati dell'account necessari per accedere e i dati di utilizzo di base necessari per gestire e migliorare il servizio."
+      "body": "Le informazioni che scegli di inserire nella tua cassaforte (beni, debiti, documenti e dettagli correlati), i dati dell'account necessari per accedere e i dati di utilizzo di base necessari per gestire e migliorare il servizio."
     },
     {
-      "title": "Come lo usiamo",
+      "title": "Come le usiamo",
       "body": "Per fornire il prodotto: archiviare il tuo inventario e i tuoi documenti, calcolare il tuo patrimonio netto, generare le panoramiche AI che richiedi e creare le istantanee che scegli di condividere. Non vendiamo i tuoi dati."
     },
     {
       "title": "Elaborazione AI &amp; terze parti",
-      "body": "Per alimentare le nostre funzionalità AI — la scansione e compilazione tramite foto degli asset, le valutazioni automatizzate, la guida vocale e la panoramica, il report e la chat di consulenza — inviamo a <strong>OpenAI, L.L.C.</strong> le informazioni necessarie a tali funzionalità, che esegue i modelli di AI per nostro conto in qualità di responsabile del trattamento dei dati. A seconda della funzionalità, ciò può includere le foto che acquisisci (che possono mostrare dettagli di documenti come numeri di conto o di polizza e indirizzi), i nomi degli asset, le categorie, le valute e i valori nel tuo vault, le risposte e le note in testo libero che fornisci nel flusso di consulenza (che possono includere circostanze personali o familiari sensibili), il tuo Paese e il testo letto ad alta voce dalla guida vocale. OpenAI tratta questi dati solo per restituirci i risultati e non li usa per addestrare i propri modelli. Istruiamo OpenAI a non conservare le nostre richieste e risposte (store=false); in assenza di un accordo di conservazione zero, OpenAI può conservare i dati fino a 30 days esclusivamente per il monitoraggio degli abusi prima di eliminarli. Non vendiamo queste informazioni né le condividiamo con altre terze parti per l'elaborazione AI."
+      "body": "Per offrire le nostre funzionalità AI — la scansione e compilazione delle foto dei beni, le valutazioni automatiche, la guida vocale e la panoramica, il report e la chat di consulenza — inviamo a <strong>OpenAI, L.L.C.</strong> le informazioni necessarie a tali funzionalità. OpenAI esegue i modelli AI per nostro conto come responsabile del trattamento dei dati in base a un Data Processing Addendum (DPA) sottoscritto. A seconda della funzionalità, ciò può includere le foto che acquisisci (che possono mostrare dettagli dei documenti come numeri di conto o di polizza e indirizzi), i nomi dei beni, le categorie, le valute e i valori nella tua cassaforte, le risposte e le note in testo libero che fornisci nel flusso di consulenza (che possono includere circostanze personali o familiari sensibili), il tuo paese e il testo letto ad alta voce dalla guida vocale. OpenAI elabora questi dati solo per restituirci i risultati e non li usa per addestrare i propri modelli. Istruiamo OpenAI a non conservare le nostre richieste e risposte (store=false); in assenza di un accordo di zero-retention, OpenAI può conservare i dati fino a 30 giorni esclusivamente per il monitoraggio degli abusi prima di eliminarli. Non vendiamo queste informazioni né le condividiamo con altre terze parti per l'elaborazione AI."
     },
     {
       "title": "Condivisione &amp; consenso",
-      "body": "I tuoi dati vengono condivisi solo quando lo autorizzi esplicitamente — ad esempio, quando prepari un pacchetto da inviare a un professionista. Sei tu a scegliere cosa includere e puoi smettere di condividere in qualsiasi momento."
+      "body": "I tuoi dati vengono condivisi solo quando concedi esplicitamente l'autorizzazione — per esempio, quando crei un pacchetto di referral per un professionista. Scegli tu cosa includere e puoi interrompere la condivisione in qualsiasi momento."
     },
     {
-      "title": "Come viene protetto",
-      "body": "La tua cassaforte è isolata al tuo account a ogni richiesta, le password sono sottoposte ad hashing con scrypt e l'accesso ai documenti usa link firmati a breve durata. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli specifici — incluso ciò che non dichiariamo ancora."
+      "title": "Come vengono protetti",
+      "body": "La tua cassaforte è isolata al tuo account a ogni richiesta, le password sono sottoposte ad hash con scrypt e l'accesso ai documenti usa link firmati a breve durata. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — incluso ciò che non dichiariamo ancora."
     }
   ],
   "choices": {
@@ -40,11 +40,15 @@
     "items": [
       "Accedi alle informazioni nella tua cassaforte ed esportale.",
       "Revoca l'accesso di un professionista a un'istantanea condivisa.",
-      "Richiedi l'eliminazione del tuo account e dei tuoi dati — scopri <a href=\"/delete-account/\">come eliminare il tuo account</a>."
+      "Richiedi la cancellazione del tuo account e dei tuoi dati — vedi <a href=\"/delete-account/\">come eliminare il tuo account</a>."
     ]
   },
   "contact": {
-    "title": "Contatto",
+    "title": "Contatti",
     "lead": "Hai domande sulla privacy? Scrivi a"
+  },
+  "finalCta": {
+    "title": "I tuoi dati, il tuo controllo.",
+    "body": "Inizia gratis — esporta o elimina tutto quando vuoi. Nessun vincolo."
   }
 }

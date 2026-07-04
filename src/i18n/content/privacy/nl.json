@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacy",
-    "description": "Hoe Vaulto met je persoonsgegevens omgaat."
+    "description": "Een duidelijke samenvatting van wat Vaulto verzamelt, hoe je gegevens worden gebruikt en beschermd, en welke controle jij erover houdt — inclusief wat we nog niet claimen."
   },
   "crumbs": {
     "home": "Home",
@@ -9,42 +9,46 @@
   },
   "hero": {
     "eyebrow": "Vertrouwen",
-    "heading": "Privacy",
-    "lead": "Duidelijke samenvatting van wat Vaulto verzamelt, hoe we het gebruiken en welke controle jij houdt. Hoort bij ons <a href=\"/security/\">beveiligingsoverzicht</a>.",
-    "updated": "Laatst bijgewerkt in juni 2026 · Een volledig juridisch beleid wordt gepubliceerd vóór de publieke lancering."
+    "heading": "Je privacy, in gewone taal.",
+    "lead": "Een duidelijke samenvatting van wat Vaulto verzamelt, hoe we het gebruiken en welke controle jij houdt. Past bij ons <a href=\"/security/\">beveiligingsoverzicht</a>.",
+    "updated": "Laatst bijgewerkt in juni 2026 · Een volledig juridisch beleid wordt gepubliceerd vóór de openbare lancering."
   },
   "sections": [
     {
       "title": "Wat we verzamelen",
-      "body": "De informatie die je zelf in je kluis zet (bezittingen, schulden, documenten en gerelateerde gegevens), de accountgegevens die nodig zijn om je aan te melden, en basisgebruiksgegevens die nodig zijn om de dienst te laten werken en te verbeteren."
+      "body": "De informatie die je zelf in je kluis zet (bezittingen, schulden, documenten en gerelateerde details), de accountgegevens die nodig zijn om je aan te melden, en basisgebruiksgegevens die nodig zijn om de dienst te laten werken en te verbeteren."
     },
     {
       "title": "Hoe we het gebruiken",
-      "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten maken die je opvraagt en de snapshots maken die je kiest om te delen. We verkopen je gegevens niet."
+      "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten maken die je aanvraagt, en de momentopnamen maken die je kiest om te delen. We verkopen je gegevens niet."
     },
     {
       "title": "AI-verwerking &amp; derden",
-      "body": "Om onze AI-functies mogelijk te maken — de scan-en-invulfunctie voor activafoto’s, geautomatiseerde waarderingen, de gesproken rondleiding en het adviserende overzicht, rapport en chat — sturen we de informatie die die functies nodig hebben naar <strong>OpenAI, L.L.C.</strong>, dat de AI-modellen namens ons uitvoert als onze gegevensverwerker. Afhankelijk van de functie kan dit de foto’s omvatten die u maakt (waarop documentgegevens kunnen staan, zoals rekening- of polisnummers en adressen), de activanamen, categorieën, valuta en waarden in uw kluis, de antwoorden en vrije tekstnotities die u in de adviesstroom geeft (die gevoelige persoonlijke of familieomstandigheden kunnen bevatten), uw land en de tekst die hardop wordt voorgelezen door de gesproken rondleiding. OpenAI verwerkt dit uitsluitend om resultaten aan ons terug te sturen en gebruikt het niet om zijn modellen te trainen. We instrueren OpenAI om onze verzoeken en antwoorden niet te bewaren (store=false); zonder een regeling voor nulretentie kan OpenAI de gegevens maximaal 30 days bewaren, uitsluitend voor misbruikmonitoring, voordat deze worden verwijderd. We verkopen deze informatie niet en delen die ook niet met enige andere derde partij voor AI-verwerking."
+      "body": "Om onze AI-functies mogelijk te maken — de scan-en-vulfunctie voor actiefoto's, geautomatiseerde waarderingen, de gesproken rondleiding en het adviserend overzicht, rapport en chat — sturen we de informatie die die functies nodig hebben naar <strong>OpenAI, L.L.C.</strong>, dat de AI-modellen namens ons uitvoert als onze gegevensverwerker onder een ondertekende Data Processing Addendum (DPA). Afhankelijk van de functie kan dit de foto's omvatten die je maakt (waarop documentdetails kunnen staan zoals rekening- of polisnummers en adressen), de namen, categorieën, valuta en waarden van bezittingen in je kluis, de antwoorden en vrije tekstnotities die je geeft in de adviesstroom (die gevoelige persoonlijke of gezinssituaties kunnen bevatten), je land, en de tekst die hardop wordt voorgelezen door de gesproken rondleiding. OpenAI verwerkt dit alleen om resultaten naar ons terug te sturen en gebruikt het niet om zijn modellen te trainen. We instrueren OpenAI om onze verzoeken en antwoorden niet te bewaren (store=false); zonder een zero-retention-regeling kan OpenAI de gegevens maximaal 30 dagen bewaren, uitsluitend voor controle op misbruik, voordat ze worden verwijderd. We verkopen deze informatie niet en delen die ook niet met enige andere derde partij voor AI-verwerking."
     },
     {
       "title": "Delen &amp; toestemming",
-      "body": "Je gegevens worden alleen gedeeld als je daar uitdrukkelijk toestemming voor geeft — bijvoorbeeld wanneer je een doorverwijspakket voor een professional samenstelt. Jij bepaalt wat erin zit en je kunt het delen op elk moment stoppen."
+      "body": "Je gegevens worden alleen gedeeld wanneer je daar expliciet toestemming voor geeft — bijvoorbeeld wanneer je een verwijspakket voor een professional samenstelt. Jij kiest wat erin zit, en je kunt het delen op elk moment stoppen."
     },
     {
       "title": "Hoe het wordt beschermd",
-      "body": "Je kluis is bij elk verzoek geïsoleerd tot je account, wachtwoorden worden met scrypt gehasht en toegang tot documenten gebruikt kort geldige ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor details — inclusief wat we nog niet claimen."
+      "body": "Je kluis is bij elk verzoek geïsoleerd tot je account, wachtwoorden worden gehasht met scrypt, en toegang tot documenten verloopt via kortdurende ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
     }
   ],
   "choices": {
     "title": "Jouw keuzes",
     "items": [
-      "Krijg toegang tot de informatie in je kluis en exporteer die.",
-      "Trek de toegang van een professional tot een gedeelde snapshot in.",
-      "Vraag om verwijdering van je account en gegevens — zie <a href=\"/delete-account/\">hoe je je account verwijdert</a>."
+      "De informatie in je kluis inzien en exporteren.",
+      "De toegang van een professional tot een gedeelde momentopname intrekken.",
+      "Verwijdering van je account en gegevens aanvragen — zie <a href=\"/delete-account/\">hoe je je account verwijdert</a>."
     ]
   },
   "contact": {
     "title": "Contact",
     "lead": "Vragen over privacy? Mail"
+  },
+  "finalCta": {
+    "title": "Jouw gegevens, jouw controle.",
+    "body": "Begin gratis — exporteer of verwijder alles wanneer je maar wilt. Geen lock-in."
   }
 }
