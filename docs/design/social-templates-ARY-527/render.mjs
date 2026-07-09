@@ -78,8 +78,9 @@ function renderBlock(a, f) {
       return `<div class="block" style="gap:${f.listGap}px;margin-top:${f.gap}px">${rows}</div>`;
     }
     case 'steps': {
+      const src = a.items || a.panels || [];   // steps may carry rows as `items` or `panels`
       const d = Math.round(f.item * 1.35);
-      const rows = a.items.map((t, i) => `
+      const rows = src.map((t, i) => `
         <div class="row" style="gap:${Math.round(f.item*0.5)}px">
           <span class="step-num" style="width:${d}px;height:${d}px;font-size:${Math.round(f.item*0.82)}px">${i + 1}</span>
           <span class="row-text" style="font-size:${f.item}px">${esc(t)}</span>
@@ -92,16 +93,34 @@ function renderBlock(a, f) {
       return `<div class="block" style="margin-top:${f.gap}px"><div class="stat" style="font-size:${statSize}px">${html}</div></div>`;
     }
     case 'split': {
-      const panels = a.panels.map((p) => `
+      // Panels may be {label,text} objects or bare strings (text-only contrast panels).
+      const panels = a.panels.map((p) => {
+        const isObj = p && typeof p === 'object';
+        const label = isObj ? p.label : null;
+        const text  = isObj ? p.text  : p;
+        return `
         <div class="panel" style="padding:${Math.round(f.item*0.7)}px ${Math.round(f.item*0.8)}px">
-          <div class="panel-label" style="font-size:${Math.round(f.item*0.6)}px;margin-bottom:${Math.round(f.item*0.25)}px">${esc(p.label)}</div>
-          <div class="panel-text" style="font-size:${f.item}px">${esc(p.text)}</div>
-        </div>`).join('');
+          ${label ? `<div class="panel-label" style="font-size:${Math.round(f.item*0.6)}px;margin-bottom:${Math.round(f.item*0.25)}px">${esc(label)}</div>` : ''}
+          <div class="panel-text" style="font-size:${f.item}px">${esc(text)}</div>
+        </div>`;
+      }).join('');
       return `<div class="block" style="gap:${f.listGap}px;margin-top:${f.gap}px">${panels}</div>`;
     }
     default:
       return '';
   }
+}
+
+// Video on-screen beats: a string renders as one bold stat line; an array renders
+// as a stacked list of text beats sized to sit clear of the bottom safe zone.
+function renderOnscreen(onscreen, f) {
+  if (Array.isArray(onscreen)) {
+    const size = Math.round(f.onscreen * 0.6);
+    const lines = onscreen.map((t) =>
+      `<div style="font-size:${size}px;line-height:1.25">${esc(t)}</div>`).join('');
+    return `<div class="onscreen" style="display:flex;flex-direction:column;gap:${Math.round(f.listGap*0.7)}px;margin-bottom:${f.gap}px">${lines}</div>`;
+  }
+  return `<div class="onscreen" style="font-size:${f.onscreen}px;margin-bottom:${f.gap}px">${esc(onscreen)}</div>`;
 }
 
 function wordmark(f, centered = false) {
@@ -129,7 +148,8 @@ function buildHTML(a) {
   if (!f) throw new Error(`[${a.id}] unknown format "${a.format}"`);
 
   // Guardrails (spec §5/§6) — fail in code, not by convention.
-  if (a.items && a.items.length > 6) throw new Error(`[${a.id}] items=${a.items.length} exceeds cap of 6 (spec §5).`);
+  const rowCount = (a.block === 'checklist' || a.block === 'steps') ? (a.items || a.panels || []).length : 0;
+  if (rowCount > 6) throw new Error(`[${a.id}] rows=${rowCount} exceeds cap of 6 (spec §5).`);
   if (a.warn && a.disclaimer !== true) throw new Error(`[${a.id}] ⚠-flagged asset must set disclaimer:true (spec §5).`);
 
   const theme = a.theme === 'calm' ? 'calm' : 'neutral';
@@ -139,7 +159,10 @@ function buildHTML(a) {
 
   let inner, contentStyle, contentClass = 'content';
 
-  if (a.format === 'video' && a.variant === 'end') {
+  // End / CTA card: explicit variant, or an id suffixed `-end`.
+  const isEnd = a.format === 'video' && (a.variant === 'end' || /-end$/.test(a.id));
+
+  if (isEnd) {
     // Centered end / CTA card
     contentClass = 'content center';
     contentStyle = `padding:${f.padTop}px ${f.padX}px ${f.padBottom}px`;
@@ -158,7 +181,8 @@ function buildHTML(a) {
       ${tag}
       <h1 class="headline" data-fit style="font-size:${f.hMax}px;margin-top:${f.gap}px;line-height:1.04">${esc(a.headline)}</h1>
       <div class="spacer"></div>
-      ${a.onscreen ? `<div class="onscreen" style="font-size:${f.onscreen}px;margin-bottom:${f.gap}px">${esc(a.onscreen)}</div>` : ''}
+      ${a.onscreen ? renderOnscreen(a.onscreen, f) : ''}
+      ${a.cta ? `<div class="cta" style="font-size:${f.cta}px;padding:${Math.round(f.cta*0.6)}px ${Math.round(f.cta*1.4)}px;margin-bottom:${f.gap}px">${esc(a.cta)}</div>` : ''}
       ${disc}`;
   } else if (f.headlineOnly) {
     // LinkedIn link / OG card — headline + wordmark only (short canvas).
@@ -183,7 +207,7 @@ function buildHTML(a) {
   }
 
   const frame = f.keyline ? '<div class="frame"></div>' : '';
-  const hMin = (a.format === 'video' && a.variant === 'end') ? Math.round(f.payoff * 0.8) : f.hMin;
+  const hMin = isEnd ? Math.round(f.payoff * 0.8) : f.hMin;
 
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="../social.css">
@@ -267,7 +291,8 @@ function writeGallery(results) {
 function main() {
   const args = process.argv.slice(2);
   const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : null;
-  const assets = JSON.parse(readFileSync(join(HERE, 'assets.json'), 'utf8'));
+  const parsed = JSON.parse(readFileSync(join(HERE, 'assets.json'), 'utf8'));
+  const assets = Array.isArray(parsed) ? parsed : parsed.assets;   // bare array or {batch,…,assets:[…]}
 
   if (args.includes('--list')) {
     for (const a of assets) console.log(`${a.id}\t${a.format}\t${a.block || a.variant || ''}\t${a.theme || 'neutral'}`);
@@ -292,7 +317,7 @@ function main() {
       console.error(`  ✗ ${a.id}: ${e.message}`);
     }
   }
-  if (results.length) writeGallery(only ? JSON.parse(readFileSync(join(HERE, 'assets.json'), 'utf8')).map((a) => results.find((r) => r.id === a.id)).filter(Boolean) : results);
+  if (results.length) writeGallery(only ? assets.map((a) => results.find((r) => r.id === a.id)).filter(Boolean) : results);
   console.log(`\nDone: ${results.length} rendered → out/  ${failures.length ? `| ${failures.length} FAILED: ${failures.join(', ')}` : ''}`);
   if (failures.length) process.exitCode = 1;
 }

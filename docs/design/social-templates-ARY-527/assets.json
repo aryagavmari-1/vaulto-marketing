@@ -1,174 +1,51 @@
-[
-  { "id": "pin-p1", "format": "pin", "theme": "neutral", "block": "steps", "tag": "Net worth",
-    "headline": "How to calculate your family's net worth",
-    "subhead": "Step by step — no finance degree needed.",
-    "items": ["List what you own", "List what you owe", "Subtract one from the other", "Keep the number current", "Revisit on a rhythm"] },
+{
+  "batch": "2026-07-09",
+  "renderer": "docs/design/social-templates-ARY-527/render.mjs",
+  "note": "Render on QA PASS (ARY-798 §5). Baked text held to §2/§3 exactly like captions. No security/product claim baked into any image.",
+  "assets": [
+    { "id": "pin-A-p1", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Where to look for a deceased person's assets", "subhead": "A step-by-step search checklist", "items": ["Paperwork, post & tax letters", "Property & vehicles", "Bank & building-society accounts", "Pensions & life insurance", "Investments, bonds & shares", "Digital, business & debts"] },
+    { "id": "pin-A-p2", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Find their bank accounts & pensions", "subhead": "Start with the paper trail", "items": ["Bank & building-society statements", "Tax letters (HMRC / your authority)", "Payslips & P60s for pension schemes", "Old employment records", "Annual pension statements", "Insurance & renewal notices"] },
+    { "id": "pin-A-p3", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Free UK tracing services", "subhead": "For accounts & pensions gone quiet", "items": ["My Lost Account — dormant bank & NS&I", "Pension Tracing Service — lost pensions", "Share registrars (Computershare/Equiniti)", "Unclaimed Assets Register (paid)"] },
+    { "id": "pin-A-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Executor search checklist", "subhead": "What to trace after someone dies", "items": ["Property & vehicles", "Accounts & investments", "Pensions & life insurance", "Digital accounts & wallets", "Business interests (Companies House)", "Debts & liabilities"] },
+    { "id": "pin-A-p5", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "No app can “find” a deceased person’s accounts", "subhead": "Finding is a manual search — a vault records what it turns up" },
+    { "id": "pin-A-p6", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Keep the whole estate picture in one place", "panels": ["A dozen envelopes & notes apps", "One record: value, where the original lives, evidence attached"] },
+    { "id": "pin-A-p7", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "stat", "tag": "prepare", "headline": "An estate is what’s owned − what’s owed", "stat": "Assets − Liabilities", "subhead": "Don’t skip the debts" },
 
-  { "id": "pin-p2", "format": "pin", "theme": "neutral", "block": "stat", "tag": "Net worth",
-    "headline": "Net worth = what you own − what you owe",
-    "stat": "OWN − OWE = NET WORTH",
-    "subhead": "The whole formula fits on one line." },
+    { "id": "pin-B-p1", "format": "pin", "theme": "neutral", "block": "steps", "tag": "organise", "headline": "Organize your family’s finances in one place", "subhead": "A 5-step system", "panels": ["List what you own & owe", "Gather the records", "Choose where it lives", "Make it shared & living", "Keep it current"] },
+    { "id": "pin-B-p2", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "The 5-step family finance system", "subhead": "Set up in an afternoon", "items": ["List what you own & owe", "Gather the records that back it up", "Choose where it lives", "Make it shared & living", "Keep it current (quarterly)"] },
+    { "id": "pin-B-p3", "format": "pin", "theme": "neutral", "block": "split", "tag": "organise", "headline": "Spreadsheet vs binder vs vault", "panels": ["Spreadsheet: free to start, easy to abandon", "Binder: tangible, hard to share", "Vault: structured, quick photo updates"] },
+    { "id": "pin-B-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "A 15-minute quarterly money routine", "subhead": "Four times a year", "items": ["Add what’s new", "Remove what’s gone", "Refresh a few values", "Check the proof", "Confirm access"] },
+    { "id": "pin-B-p5", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "What to include in a family finance record", "subhead": "What you own & owe, plus the proof", "items": ["Accounts", "Property", "Vehicles", "Insurance policies", "Documents that prove ownership/value"] },
+    { "id": "pin-B-p6", "format": "pin", "theme": "neutral", "block": "split", "tag": "organise", "headline": "One place for every account, policy & document", "panels": ["Scattered paperwork", "One private vault: where each original lives, evidence attached"] },
+    { "id": "pin-B-p7", "format": "pin", "theme": "neutral", "block": "title", "tag": "prepare", "headline": "Don’t leave your family guessing “where is everything?”", "subhead": "The ordinary relief of one clear answer" },
 
-  { "id": "pin-p3", "format": "pin", "theme": "neutral", "block": "split", "tag": "Net worth",
-    "headline": "Why your net-worth spreadsheet keeps going stale",
-    "panels": [
-      { "label": "A spreadsheet", "text": "Out of date in weeks, stuck on one laptop, out of reach for everyone else." },
-      { "label": "One live view", "text": "Current, in one place, reachable by the people who'd need it." }
-    ] },
+    { "id": "pin-C-p1", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Track your net worth without linking your bank", "subhead": "The private, no-login method" },
+    { "id": "pin-C-p2", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "stat", "tag": "organise", "headline": "Net worth = what you own − what you owe", "stat": "Own − Owe", "subhead": "A snapshot, not a live feed" },
+    { "id": "pin-C-p3", "format": "pin", "theme": "neutral", "block": "title", "tag": "protect", "headline": "No bank login. No account linking.", "subhead": "You enter or photograph what you own — no credentials, ever" },
+    { "id": "pin-C-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Manual vs bank-linking trackers", "panels": ["Manual: no credentials shared, a private snapshot", "Bank-linking: auto-refresh, best for daily spend"] },
+    { "id": "pin-C-p5", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "Keep a manual tracker current in 3 habits", "subhead": "Five-minute quarterly pass", "items": ["Don’t retype what you can photograph", "Set a quarterly rhythm", "Keep it all in one place"] },
+    { "id": "pin-C-p6", "format": "pin", "theme": "neutral", "block": "split", "tag": "protect", "headline": "Know your number without your bank logins", "panels": ["Bank login — not required", "One private net-worth picture you control"] },
 
-  { "id": "pin-p4", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Net worth",
-    "headline": "5 steps to know what your family is worth",
-    "items": ["List what you own", "List what you owe", "Subtract", "Keep it current", "Revisit on a rhythm"] },
+    { "id": "liCard-A-l1", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "There is no master list of what someone owned", "subhead": "Finding is manual — record what your search turns up" },
+    { "id": "liCard-A-l2", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "A room-by-room search checklist", "items": ["Paperwork & post", "Property & vehicles", "Accounts & pensions", "Investments", "Digital & business", "Debts"] },
+    { "id": "liCard-A-l3", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "No app will find the accounts for you", "subhead": "The finding is manual; the organizing shouldn’t be a second job" },
+    { "id": "liCard-A-l4", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "For advisers: there is no single lookup", "subhead": "Set the expectation; keep one running inventory from day one" },
 
-  { "id": "pin-p5", "format": "pin", "theme": "neutral", "block": "title", "tag": "Net worth",
-    "headline": "The one honest number every household should know",
-    "subhead": "Not a credit score, not a budget — a snapshot of where you actually stand." },
+    { "id": "liCard-B-l1", "format": "liCard", "theme": "neutral", "block": "title", "tag": "organise", "headline": "One person shouldn’t be the family’s finance memory", "subhead": "Get the picture out of one head and into one place" },
+    { "id": "liCard-B-l2", "format": "liCard", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "Five steps to one organized place", "items": ["List what you own & owe", "Gather the records", "Choose where it lives", "Make it shared & living", "Keep it current"] },
+    { "id": "liCard-B-l3", "format": "liCard", "theme": "neutral", "block": "title", "tag": "organise", "headline": "The mistake isn’t the tool — it’s never sharing it", "subhead": "A record only one person can see is a single point of failure" },
+    { "id": "liCard-B-l4", "format": "liCard", "theme": "neutral", "block": "split", "tag": "organise", "headline": "Spreadsheet or app? Ask two questions", "panels": ["Who else can see it?", "Will you keep it current?"] },
 
-  { "id": "pin-p6", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Digital estate-planning checklist",
-    "subhead": "Plain-English — work through it at your own pace.",
-    "items": ["The accounts", "The documents", "The proof behind each", "The what-to-do-next details", "A way for the right people to reach it"] },
+    { "id": "liCard-C-l1", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "One honest number, no bank logins handed over", "subhead": "Net worth is a snapshot, not a live feed" },
+    { "id": "liCard-C-l2", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "Track net worth without linking a bank", "items": ["List both sides", "Estimate where you must", "Photograph, don’t retype", "Quarterly rhythm", "Keep it in one place"] },
+    { "id": "liCard-C-l3", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "protect", "headline": "Myth: you must link your bank to track net worth", "subhead": "Linking is a choice, never a requirement" },
+    { "id": "liCard-C-l4", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Private snapshot vs live spend tracking", "panels": ["Manual: no credentials, update on a rhythm", "Bank-linking: auto-refresh, daily spend"] },
 
-  { "id": "pin-p7", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Five things your family needs in one place",
-    "subhead": "A plain-English checklist — work through it at your own pace.",
-    "items": ["The assets", "What you owe", "The proof documents", "The “what to do next” details", "A way for the right people to reach it"] },
-
-  { "id": "pin-p8", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Estate planning: assets, debts, proof, people",
-    "subhead": "A clear plan has four parts.",
-    "items": ["The assets", "What you owe", "The proof documents", "The right people to reach it"] },
-
-  { "id": "pin-p9", "format": "pin", "theme": "calm", "block": "split", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Replace the estate “scavenger hunt” with one clear picture",
-    "panels": [
-      { "label": "The scavenger hunt", "text": "Which bank? Which pension? Where's the deed?" },
-      { "label": "One clear picture", "text": "Everything in one place, answered calmly." }
-    ] },
-
-  { "id": "pin-p10", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "What to gather before life's big moments",
-    "subhead": "Buying a home, writing a will, helping ageing parents.",
-    "items": ["What you own", "What you owe", "Where the proof lives", "The details that matter", "Who can reach it"] },
-
-  { "id": "pin-p11", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
-    "headline": "What is a family asset inventory?",
-    "subhead": "One clear list of everything your household owns and owes — plus the proof behind each item." },
-
-  { "id": "pin-p12", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Getting organised",
-    "headline": "5 things to include in a family asset inventory",
-    "items": ["Property & big items", "Accounts & savings", "Documents", "What you owe", "The people & details"] },
-
-  { "id": "pin-p13", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
-    "headline": "One list of everything your household owns and owes",
-    "subhead": "No more “I think the policy is with the bank.” One source of truth instead." },
-
-  { "id": "pin-p14", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Getting organised",
-    "headline": "Keep the proof, not just the number",
-    "subhead": "For each item, note where the proof lives.",
-    "items": ["A document", "A photo", "A serial number"] },
-
-  { "id": "pin-p15", "format": "pin", "theme": "neutral", "block": "title", "tag": "Getting organised",
-    "headline": "Start your family asset inventory this week",
-    "subhead": "Begin with one room or one category. Captured beats perfect." },
-
-  { "id": "pin-p16", "format": "pin", "theme": "calm", "block": "steps", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "How to make a home inventory",
-    "subhead": "For insurance or a will — room by room.",
-    "items": ["Pick one room", "Photograph each item", "Note value & condition", "Record the serial number", "Save where the proof lives"] },
-
-  { "id": "pin-p17", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Details to record for each item",
-    "subhead": "Your home-inventory checklist.",
-    "items": ["What it is", "Where it is", "What it's worth", "Condition", "Serial number", "Proof & insurance status"] },
-
-  { "id": "pin-p18", "format": "pin", "theme": "calm", "block": "steps", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "A room-by-room home inventory in one afternoon",
-    "items": ["Pick one room", "Finish it fully", "Move to the next", "Small wins beat a spreadsheet"] },
-
-  { "id": "pin-p19", "format": "pin", "theme": "calm", "block": "title", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "What to photograph for your home inventory",
-    "subhead": "A wide shot of each room, then close-ups of valuables and their serial numbers." },
-
-  { "id": "pin-p20", "format": "pin", "theme": "calm", "block": "title", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Build it before you need it",
-    "subhead": "A list made before anything goes wrong turns a claim into a paperwork exercise." },
-
-  { "id": "li-l1", "format": "liCard", "theme": "neutral", "tag": "Net worth",
-    "headline": "Most families have never sat down and added it up." },
-
-  { "id": "li-l2", "format": "liCard", "theme": "neutral", "tag": "Net worth",
-    "headline": "Your family's net worth, in five steps." },
-
-  { "id": "li-l3", "format": "liCard", "theme": "neutral", "tag": "Net worth",
-    "headline": "“Net worth is a rich-person thing.”" },
-
-  { "id": "li-l4", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "The hardest part for a grieving family often isn't the grief." },
-
-  { "id": "li-l5", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "A digital estate plan, in five parts." },
-
-  { "id": "li-l6", "format": "liCard", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "“We have a will, so we're sorted.”" },
-
-  { "id": "li-l7", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
-    "headline": "What do we own — and where's the proof?" },
-
-  { "id": "li-l8", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
-    "headline": "A family asset inventory, in five areas." },
-
-  { "id": "li-l9", "format": "liCard", "theme": "neutral", "tag": "Getting organised",
-    "headline": "“An asset inventory is for rich households.”" },
-
-  { "id": "li-l10", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Most people never make a home inventory until they need one." },
-
-  { "id": "li-l11", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "A home inventory that's actually useful, in six steps." },
-
-  { "id": "li-l12", "format": "liCard", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "“I'd remember what I owned if I had to claim.”" },
-
-  { "id": "video-v1", "format": "video", "theme": "neutral", "tag": "Net worth",
-    "headline": "You don't need a finance degree to know what your family's worth.",
-    "onscreen": "OWN − OWE = NET WORTH" },
-
-  { "id": "video-v2", "format": "video", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "If something happened, could your family find everything?",
-    "onscreen": "Assets · Debts · Proof · Next steps · Access" },
-
-  { "id": "video-v3", "format": "video", "theme": "neutral", "tag": "Getting organised",
-    "headline": "What do we own — and where's the proof?",
-    "onscreen": "Own · Owe · Proof" },
-
-  { "id": "video-v4", "format": "video", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Most people make a home inventory the day after they needed it.",
-    "onscreen": "Build it BEFORE you need it" },
-
-  { "id": "video-v5", "format": "video", "theme": "neutral", "tag": "Getting organised",
-    "headline": "Give me ten minutes and your family will thank you.",
-    "onscreen": "10-MIN ASSET CHECK" },
-
-  { "id": "video-v6", "format": "video", "theme": "calm", "tag": "Planning ahead", "warn": true, "disclaimer": true,
-    "headline": "If you weren't here tomorrow, what would your family have to go looking for?",
-    "onscreen": "Accounts · Pension · Deed · Policies" },
-
-  { "id": "video-v1-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Net worth",
-    "headline": "One honest number, kept current.", "cta": "Read the step-by-step" },
-
-  { "id": "video-v2-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Estate planning", "warn": true, "disclaimer": true,
-    "headline": "Put it where they can reach it.", "cta": "Get the checklist" },
-
-  { "id": "video-v3-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
-    "headline": "Start with one drawer.", "cta": "See how to start" },
-
-  { "id": "video-v4-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Home inventory", "warn": true, "disclaimer": true,
-    "headline": "Build it before you need it.", "cta": "Room-by-room guide" },
-
-  { "id": "video-v5-end", "format": "video", "variant": "end", "theme": "neutral", "tag": "Getting organised",
-    "headline": "Ten minutes. One real start.", "cta": "Keep it current" },
-
-  { "id": "video-v6-end", "format": "video", "variant": "end", "theme": "calm", "tag": "Planning ahead", "warn": true, "disclaimer": true,
-    "headline": "Out of your head, into one place.", "cta": "Start at your own pace" }
-]
+    { "id": "video-A-v1", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "Could your family find everything you own?", "onscreen": ["Where is everything?", "No one-click lookup", "The paper trail", "One running record"], "cta": "Start the list before they need it" },
+    { "id": "video-A-v1-end", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "Record what your search turns up — in one place", "cta": "myvaulto.com/blog — free to start" },
+    { "id": "video-B-v1", "format": "video", "theme": "neutral", "block": "title", "tag": "organise", "headline": "The 10-minute family asset check", "onscreen": ["Can you name them all?", "Own − owe", "Keep the proof", "Shared · living"], "cta": "One clear answer to “where is everything?”" },
+    { "id": "video-B-v1-end", "format": "video", "theme": "neutral", "block": "title", "tag": "organise", "headline": "Get it out of your head and into one place", "cta": "myvaulto.com/blog — free to start" },
+    { "id": "video-C-v1", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Know your net worth — no bank login", "onscreen": ["No bank login", "Own − owe", "No account linking", "One private place"], "cta": "Know your number, on your terms" },
+    { "id": "video-C-v1-end", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Net-worth visibility without linking a thing", "cta": "myvaulto.com/blog — free to start" }
+  ]
+}
