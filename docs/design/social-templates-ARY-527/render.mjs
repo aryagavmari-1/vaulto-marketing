@@ -66,6 +66,19 @@ const CHECK = (s) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 // ---- Block renderers (spec §2) ---------------------------------------------
+// Panel card used by `split` and by object-form `steps`. Accepts {label|title,text}
+// objects or bare strings (text-only contrast panels). Additive: title aliases label.
+function panelCard(p, f) {
+  const isObj = p && typeof p === 'object';
+  const label = isObj ? (p.label ?? p.title ?? null) : null;
+  const text  = isObj ? p.text : p;
+  return `
+        <div class="panel" style="padding:${Math.round(f.item*0.7)}px ${Math.round(f.item*0.8)}px">
+          ${label ? `<div class="panel-label" style="font-size:${Math.round(f.item*0.6)}px;margin-bottom:${Math.round(f.item*0.25)}px">${esc(label)}</div>` : ''}
+          <div class="panel-text" style="font-size:${f.item}px">${esc(text)}</div>
+        </div>`;
+}
+
 function renderBlock(a, f) {
   switch (a.block) {
     case 'checklist': {
@@ -79,6 +92,12 @@ function renderBlock(a, f) {
     }
     case 'steps': {
       const src = a.items || a.panels || [];   // steps may carry rows as `items` or `panels`
+      // Object-form steps ({title,text}) render as title+text cards — the titles already
+      // carry their own ordinal ("1. Snap"), so we don't stack a second numbered circle.
+      if (src.length && typeof src[0] === 'object') {
+        const cards = src.map((p) => panelCard(p, f)).join('');
+        return `<div class="block" style="gap:${f.listGap}px;margin-top:${f.gap}px">${cards}</div>`;
+      }
       const d = Math.round(f.item * 1.35);
       const rows = src.map((t, i) => `
         <div class="row" style="gap:${Math.round(f.item*0.5)}px">
@@ -93,17 +112,8 @@ function renderBlock(a, f) {
       return `<div class="block" style="margin-top:${f.gap}px"><div class="stat" style="font-size:${statSize}px">${html}</div></div>`;
     }
     case 'split': {
-      // Panels may be {label,text} objects or bare strings (text-only contrast panels).
-      const panels = a.panels.map((p) => {
-        const isObj = p && typeof p === 'object';
-        const label = isObj ? p.label : null;
-        const text  = isObj ? p.text  : p;
-        return `
-        <div class="panel" style="padding:${Math.round(f.item*0.7)}px ${Math.round(f.item*0.8)}px">
-          ${label ? `<div class="panel-label" style="font-size:${Math.round(f.item*0.6)}px;margin-bottom:${Math.round(f.item*0.25)}px">${esc(label)}</div>` : ''}
-          <div class="panel-text" style="font-size:${f.item}px">${esc(text)}</div>
-        </div>`;
-      }).join('');
+      // Panels may be {label|title,text} objects or bare strings (text-only contrast panels).
+      const panels = a.panels.map((p) => panelCard(p, f)).join('');
       return `<div class="block" style="gap:${f.listGap}px;margin-top:${f.gap}px">${panels}</div>`;
     }
     default:

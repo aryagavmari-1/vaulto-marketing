@@ -1,51 +1,209 @@
-{
-  "batch": "2026-07-09",
-  "renderer": "docs/design/social-templates-ARY-527/render.mjs",
-  "note": "Render on QA PASS (ARY-798 §5). Baked text held to §2/§3 exactly like captions. No security/product claim baked into any image.",
-  "assets": [
-    { "id": "pin-A-p1", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Where to look for a deceased person's assets", "subhead": "A step-by-step search checklist", "items": ["Paperwork, post & tax letters", "Property & vehicles", "Bank & building-society accounts", "Pensions & life insurance", "Investments, bonds & shares", "Digital, business & debts"] },
-    { "id": "pin-A-p2", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Find their bank accounts & pensions", "subhead": "Start with the paper trail", "items": ["Bank & building-society statements", "Tax letters (HMRC / your authority)", "Payslips & P60s for pension schemes", "Old employment records", "Annual pension statements", "Insurance & renewal notices"] },
-    { "id": "pin-A-p3", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Free UK tracing services", "subhead": "For accounts & pensions gone quiet", "items": ["My Lost Account — dormant bank & NS&I", "Pension Tracing Service — lost pensions", "Share registrars (Computershare/Equiniti)", "Unclaimed Assets Register (paid)"] },
-    { "id": "pin-A-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "Executor search checklist", "subhead": "What to trace after someone dies", "items": ["Property & vehicles", "Accounts & investments", "Pensions & life insurance", "Digital accounts & wallets", "Business interests (Companies House)", "Debts & liabilities"] },
-    { "id": "pin-A-p5", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "No app can “find” a deceased person’s accounts", "subhead": "Finding is a manual search — a vault records what it turns up" },
-    { "id": "pin-A-p6", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Keep the whole estate picture in one place", "panels": ["A dozen envelopes & notes apps", "One record: value, where the original lives, evidence attached"] },
-    { "id": "pin-A-p7", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "stat", "tag": "prepare", "headline": "An estate is what’s owned − what’s owed", "stat": "Assets − Liabilities", "subhead": "Don’t skip the debts" },
-
-    { "id": "pin-B-p1", "format": "pin", "theme": "neutral", "block": "steps", "tag": "organise", "headline": "Organize your family’s finances in one place", "subhead": "A 5-step system", "panels": ["List what you own & owe", "Gather the records", "Choose where it lives", "Make it shared & living", "Keep it current"] },
-    { "id": "pin-B-p2", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "The 5-step family finance system", "subhead": "Set up in an afternoon", "items": ["List what you own & owe", "Gather the records that back it up", "Choose where it lives", "Make it shared & living", "Keep it current (quarterly)"] },
-    { "id": "pin-B-p3", "format": "pin", "theme": "neutral", "block": "split", "tag": "organise", "headline": "Spreadsheet vs binder vs vault", "panels": ["Spreadsheet: free to start, easy to abandon", "Binder: tangible, hard to share", "Vault: structured, quick photo updates"] },
-    { "id": "pin-B-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "A 15-minute quarterly money routine", "subhead": "Four times a year", "items": ["Add what’s new", "Remove what’s gone", "Refresh a few values", "Check the proof", "Confirm access"] },
-    { "id": "pin-B-p5", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "What to include in a family finance record", "subhead": "What you own & owe, plus the proof", "items": ["Accounts", "Property", "Vehicles", "Insurance policies", "Documents that prove ownership/value"] },
-    { "id": "pin-B-p6", "format": "pin", "theme": "neutral", "block": "split", "tag": "organise", "headline": "One place for every account, policy & document", "panels": ["Scattered paperwork", "One private vault: where each original lives, evidence attached"] },
-    { "id": "pin-B-p7", "format": "pin", "theme": "neutral", "block": "title", "tag": "prepare", "headline": "Don’t leave your family guessing “where is everything?”", "subhead": "The ordinary relief of one clear answer" },
-
-    { "id": "pin-C-p1", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Track your net worth without linking your bank", "subhead": "The private, no-login method" },
-    { "id": "pin-C-p2", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "stat", "tag": "organise", "headline": "Net worth = what you own − what you owe", "stat": "Own − Owe", "subhead": "A snapshot, not a live feed" },
-    { "id": "pin-C-p3", "format": "pin", "theme": "neutral", "block": "title", "tag": "protect", "headline": "No bank login. No account linking.", "subhead": "You enter or photograph what you own — no credentials, ever" },
-    { "id": "pin-C-p4", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Manual vs bank-linking trackers", "panels": ["Manual: no credentials shared, a private snapshot", "Bank-linking: auto-refresh, best for daily spend"] },
-    { "id": "pin-C-p5", "format": "pin", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "Keep a manual tracker current in 3 habits", "subhead": "Five-minute quarterly pass", "items": ["Don’t retype what you can photograph", "Set a quarterly rhythm", "Keep it all in one place"] },
-    { "id": "pin-C-p6", "format": "pin", "theme": "neutral", "block": "split", "tag": "protect", "headline": "Know your number without your bank logins", "panels": ["Bank login — not required", "One private net-worth picture you control"] },
-
-    { "id": "liCard-A-l1", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "There is no master list of what someone owned", "subhead": "Finding is manual — record what your search turns up" },
-    { "id": "liCard-A-l2", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "prepare", "headline": "A room-by-room search checklist", "items": ["Paperwork & post", "Property & vehicles", "Accounts & pensions", "Investments", "Digital & business", "Debts"] },
-    { "id": "liCard-A-l3", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "No app will find the accounts for you", "subhead": "The finding is manual; the organizing shouldn’t be a second job" },
-    { "id": "liCard-A-l4", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "For advisers: there is no single lookup", "subhead": "Set the expectation; keep one running inventory from day one" },
-
-    { "id": "liCard-B-l1", "format": "liCard", "theme": "neutral", "block": "title", "tag": "organise", "headline": "One person shouldn’t be the family’s finance memory", "subhead": "Get the picture out of one head and into one place" },
-    { "id": "liCard-B-l2", "format": "liCard", "theme": "neutral", "block": "checklist", "tag": "organise", "headline": "Five steps to one organized place", "items": ["List what you own & owe", "Gather the records", "Choose where it lives", "Make it shared & living", "Keep it current"] },
-    { "id": "liCard-B-l3", "format": "liCard", "theme": "neutral", "block": "title", "tag": "organise", "headline": "The mistake isn’t the tool — it’s never sharing it", "subhead": "A record only one person can see is a single point of failure" },
-    { "id": "liCard-B-l4", "format": "liCard", "theme": "neutral", "block": "split", "tag": "organise", "headline": "Spreadsheet or app? Ask two questions", "panels": ["Who else can see it?", "Will you keep it current?"] },
-
-    { "id": "liCard-C-l1", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "One honest number, no bank logins handed over", "subhead": "Net worth is a snapshot, not a live feed" },
-    { "id": "liCard-C-l2", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "checklist", "tag": "organise", "headline": "Track net worth without linking a bank", "items": ["List both sides", "Estimate where you must", "Photograph, don’t retype", "Quarterly rhythm", "Keep it in one place"] },
-    { "id": "liCard-C-l3", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "protect", "headline": "Myth: you must link your bank to track net worth", "subhead": "Linking is a choice, never a requirement" },
-    { "id": "liCard-C-l4", "format": "liCard", "theme": "calm", "warn": true, "disclaimer": true, "block": "split", "tag": "organise", "headline": "Private snapshot vs live spend tracking", "panels": ["Manual: no credentials, update on a rhythm", "Bank-linking: auto-refresh, daily spend"] },
-
-    { "id": "video-A-v1", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "Could your family find everything you own?", "onscreen": ["Where is everything?", "No one-click lookup", "The paper trail", "One running record"], "cta": "Start the list before they need it" },
-    { "id": "video-A-v1-end", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "prepare", "headline": "Record what your search turns up — in one place", "cta": "myvaulto.com/blog — free to start" },
-    { "id": "video-B-v1", "format": "video", "theme": "neutral", "block": "title", "tag": "organise", "headline": "The 10-minute family asset check", "onscreen": ["Can you name them all?", "Own − owe", "Keep the proof", "Shared · living"], "cta": "One clear answer to “where is everything?”" },
-    { "id": "video-B-v1-end", "format": "video", "theme": "neutral", "block": "title", "tag": "organise", "headline": "Get it out of your head and into one place", "cta": "myvaulto.com/blog — free to start" },
-    { "id": "video-C-v1", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Know your net worth — no bank login", "onscreen": ["No bank login", "Own − owe", "No account linking", "One private place"], "cta": "Know your number, on your terms" },
-    { "id": "video-C-v1-end", "format": "video", "theme": "calm", "warn": true, "disclaimer": true, "block": "title", "tag": "organise", "headline": "Net-worth visibility without linking a thing", "cta": "myvaulto.com/blog — free to start" }
-  ]
-}
+[
+  {
+    "id": "pin-p1",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "checklist",
+    "tag": "Prepare",
+    "headline": "6 details to capture per item",
+    "subhead": "So an insurance claim holds up",
+    "items": [
+      "Description \u2014 make & model",
+      "Purchase date & price",
+      "Replacement value (or range)",
+      "Serial numbers",
+      "Evidence \u2014 receipt or photo",
+      "Insurance status"
+    ]
+  },
+  {
+    "id": "pin-p2",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Protect",
+    "headline": "Could you prove what you owned after a fire?",
+    "subhead": "Keep the evidence off the premises \u2014 so it survives even when the contents don't"
+  },
+  {
+    "id": "pin-p3",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "split",
+    "tag": "Prepare",
+    "headline": "Sum insured vs under-insurance",
+    "panels": [
+      {
+        "title": "Sum insured",
+        "text": "The total value of everything your contents policy covers"
+      },
+      {
+        "title": "Under-insured",
+        "text": "Set it too low and a settlement can be scaled down to match"
+      }
+    ]
+  },
+  {
+    "id": "pin-p4",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "split",
+    "tag": "Prepare",
+    "headline": "What your payout depends on",
+    "panels": [
+      {
+        "title": "Replacement value",
+        "text": "New-for-old \u2014 what it costs to buy new today"
+      },
+      {
+        "title": "Actual cash value",
+        "text": "Minus wear & depreciation \u2014 pays less on older items"
+      }
+    ]
+  },
+  {
+    "id": "pin-p5",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "steps",
+    "tag": "Organise",
+    "headline": "Build it without a spreadsheet marathon",
+    "panels": [
+      {
+        "title": "1. Snap",
+        "text": "Photograph an item or its receipt"
+      },
+      {
+        "title": "2. The app drafts",
+        "text": "Item, value or range, serial numbers where visible"
+      },
+      {
+        "title": "3. You confirm",
+        "text": "Confirm, edit, or reject \u2014 nothing saved until you check it"
+      }
+    ]
+  },
+  {
+    "id": "pin-p6",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "checklist",
+    "tag": "Prepare",
+    "headline": "Items your cover may cap unless you list them",
+    "subhead": "May need specifying separately",
+    "items": [
+      "Jewellery & watches",
+      "Bicycles",
+      "Cameras & tech",
+      "Art & collectibles",
+      "Designer handbags",
+      "Musical instruments"
+    ]
+  },
+  {
+    "id": "pin-p7",
+    "format": "pin",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "split",
+    "tag": "Prepare",
+    "headline": "The free AI insurance overview",
+    "panels": [
+      {
+        "title": "What it does",
+        "text": "Estimates value ranges, asks a few questions, surfaces likely gaps"
+      },
+      {
+        "title": "What it's not",
+        "text": "Not a cover decision \u2014 take it to your broker or insurer"
+      }
+    ]
+  },
+  {
+    "id": "li-l1",
+    "format": "liCard",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Prepare",
+    "headline": "Insured for a number you picked from memory?",
+    "subhead": "That's usually where under-insurance begins \u2014 check your sum insured against a real total"
+  },
+  {
+    "id": "li-l2",
+    "format": "liCard",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Prepare",
+    "headline": "\"We'll remember what we lost.\" No one does.",
+    "subhead": "A documented, valued inventory turns \"convince me\" into \"here it is\""
+  },
+  {
+    "id": "li-l3",
+    "format": "liCard",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Protect",
+    "headline": "A fire can take your belongings and your proof \u2014 the same night",
+    "subhead": "Keep the valued inventory off the premises, in an app you can open from anywhere"
+  },
+  {
+    "id": "li-l4",
+    "format": "liCard",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Prepare",
+    "headline": "Technically covered, practically not",
+    "subhead": "Record an insurance status per item so single-item caps show up before a loss"
+  },
+  {
+    "id": "video-v1",
+    "format": "video",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Protect",
+    "headline": "Could you prove what you owned after a fire?",
+    "onscreen": [
+      "Could you prove it?",
+      "Settled item by item",
+      "Snap \u2192 the app drafts \u2192 you confirm",
+      "Stored off the premises",
+      "Easier to make. Harder to dispute."
+    ],
+    "cta": "Build it before you need it \u2014 link in bio"
+  },
+  {
+    "id": "video-v1-end",
+    "format": "video",
+    "theme": "calm",
+    "warn": true,
+    "disclaimer": true,
+    "block": "title",
+    "tag": "Protect",
+    "headline": "Make your contents claim-ready",
+    "subhead": "myvaulto.com/blog",
+    "cta": "Start your home inventory"
+  }
+]
