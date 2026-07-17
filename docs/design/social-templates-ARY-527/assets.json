@@ -6,16 +6,16 @@
     "warn": true,
     "disclaimer": true,
     "block": "checklist",
-    "tag": "Prepare",
-    "headline": "6 details to capture per item",
-    "subhead": "So an insurance claim holds up",
+    "tag": "Organise",
+    "headline": "Signs your net-worth spreadsheet is breaking",
+    "subhead": "Check the ones that sound like you",
     "items": [
-      "Description \u2014 make & model",
-      "Purchase date & price",
-      "Replacement value (or range)",
-      "Serial numbers",
-      "Evidence \u2014 receipt or photo",
-      "Insurance status"
+      "A broken formula cost you an afternoon",
+      "The file lives on one laptop",
+      "It holds numbers, not the proof",
+      "Out of date — typing it up is a chore",
+      "No history unless you build the charts",
+      "Only you could ever use it"
     ]
   },
   {
@@ -25,9 +25,9 @@
     "warn": true,
     "disclaimer": true,
     "block": "title",
-    "tag": "Protect",
-    "headline": "Could you prove what you owned after a fire?",
-    "subhead": "Keep the evidence off the premises \u2014 so it survives even when the contents don't"
+    "tag": "Organise",
+    "headline": "A spreadsheet is fine to start",
+    "subhead": "It's when the number has to live — trusted for years, useful to your family — that a vault earns the switch"
   },
   {
     "id": "pin-p3",
@@ -37,15 +37,15 @@
     "disclaimer": true,
     "block": "split",
     "tag": "Prepare",
-    "headline": "Sum insured vs under-insurance",
+    "headline": "Spreadsheet vs vault: the honest trade-off",
     "panels": [
       {
-        "title": "Sum insured",
-        "text": "The total value of everything your contents policy covers"
+        "title": "Spreadsheet",
+        "text": "Free and flexible — perfect for a quick figure, and yours alone to maintain"
       },
       {
-        "title": "Under-insured",
-        "text": "Set it too low and a settlement can be scaled down to match"
+        "title": "Vault",
+        "text": "Structure, evidence and history around the numbers — free to start"
       }
     ]
   },
@@ -56,16 +56,16 @@
     "warn": true,
     "disclaimer": true,
     "block": "split",
-    "tag": "Prepare",
-    "headline": "What your payout depends on",
+    "tag": "Protect",
+    "headline": "No, it won't auto-update your balances",
     "panels": [
       {
-        "title": "Replacement value",
-        "text": "New-for-old \u2014 what it costs to buy new today"
+        "title": "What it won't do",
+        "text": "Link, aggregate or sync your accounts — there are no live balances"
       },
       {
-        "title": "Actual cash value",
-        "text": "Minus wear & depreciation \u2014 pays less on older items"
+        "title": "What you do",
+        "text": "Enter the values by hand, exactly like a spreadsheet"
       }
     ]
   },
@@ -76,20 +76,20 @@
     "warn": true,
     "disclaimer": true,
     "block": "steps",
-    "tag": "Organise",
-    "headline": "Build it without a spreadsheet marathon",
+    "tag": "Proof",
+    "headline": "Add an asset without opening a spreadsheet",
     "panels": [
       {
         "title": "1. Snap",
-        "text": "Photograph an item or its receipt"
+        "text": "Photograph an item or a document"
       },
       {
         "title": "2. The app drafts",
-        "text": "Item, value or range, serial numbers where visible"
+        "text": "The item, a value or range, the details it can read"
       },
       {
         "title": "3. You confirm",
-        "text": "Confirm, edit, or reject \u2014 nothing saved until you check it"
+        "text": "Confirm, edit or reject — nothing saved until you check it"
       }
     ]
   },
@@ -101,15 +101,14 @@
     "disclaimer": true,
     "block": "checklist",
     "tag": "Prepare",
-    "headline": "Items your cover may cap unless you list them",
-    "subhead": "May need specifying separately",
+    "headline": "What a vault adds that a spreadsheet can't",
     "items": [
-      "Jewellery & watches",
-      "Bicycles",
-      "Cameras & tech",
-      "Art & collectibles",
-      "Designer handbags",
-      "Musical instruments"
+      "Typed fields for 35+ asset & liability types",
+      "Monthly net-worth snapshots + dashboard",
+      "A registry for deeds, policies & statements",
+      "Per-asset evidence files",
+      "Photo → an AI-drafted record you confirm",
+      "One source of truth your family could use"
     ]
   },
   {
@@ -118,19 +117,10 @@
     "theme": "calm",
     "warn": true,
     "disclaimer": true,
-    "block": "split",
+    "block": "title",
     "tag": "Prepare",
-    "headline": "The free AI insurance overview",
-    "panels": [
-      {
-        "title": "What it does",
-        "text": "Estimates value ranges, asks a few questions, surfaces likely gaps"
-      },
-      {
-        "title": "What it's not",
-        "text": "Not a cover decision \u2014 take it to your broker or insurer"
-      }
-    ]
+    "headline": "If something happened, would your family know what you own?",
+    "subhead": "A spreadsheet on one laptop can't answer that — one organised place can"
   },
   {
     "id": "li-l1",
@@ -140,8 +130,8 @@
     "disclaimer": true,
     "block": "title",
     "tag": "Prepare",
-    "headline": "Insured for a number you picked from memory?",
-    "subhead": "That's usually where under-insurance begins \u2014 check your sum insured against a real total"
+    "headline": "A net-worth app, or just another subscription?",
+    "subhead": "The honest answer: a spreadsheet is fine to start — a vault wins once you want durability, evidence and readiness"
   },
   {
     "id": "li-l2",
@@ -150,9 +140,9 @@
     "warn": true,
     "disclaimer": true,
     "block": "title",
-    "tag": "Prepare",
-    "headline": "\"We'll remember what we lost.\" No one does.",
-    "subhead": "A documented, valued inventory turns \"convince me\" into \"here it is\""
+    "tag": "Protect",
+    "headline": "A good net-worth tool won't secretly update your balances",
+    "subhead": "Values are entered by hand, like a spreadsheet — the upgrade is the structure and proof around them"
   },
   {
     "id": "li-l3",
@@ -161,9 +151,9 @@
     "warn": true,
     "disclaimer": true,
     "block": "title",
-    "tag": "Protect",
-    "headline": "A fire can take your belongings and your proof \u2014 the same night",
-    "subhead": "Keep the valued inventory off the premises, in an app you can open from anywhere"
+    "tag": "Organise",
+    "headline": "Your family ledger is one file on one laptop",
+    "subhead": "One deleted row, or one dead laptop, and the whole picture can go with it"
   },
   {
     "id": "li-l4",
@@ -173,8 +163,8 @@
     "disclaimer": true,
     "block": "title",
     "tag": "Prepare",
-    "headline": "Technically covered, practically not",
-    "subhead": "Record an insurance status per item so single-item caps show up before a loss"
+    "headline": "Would your family find everything if something happened?",
+    "subhead": "That's the question a private spreadsheet can't answer — and the real reason to switch"
   },
   {
     "id": "video-v1",
@@ -183,16 +173,16 @@
     "warn": true,
     "disclaimer": true,
     "block": "title",
-    "tag": "Protect",
-    "headline": "Could you prove what you owned after a fire?",
+    "tag": "Organise",
+    "headline": "Why my net-worth spreadsheet keeps breaking",
     "onscreen": [
-      "Could you prove it?",
-      "Settled item by item",
-      "Snap \u2192 the app drafts \u2192 you confirm",
-      "Stored off the premises",
-      "Easier to make. Harder to dispute."
+      "One formula, one wrong total",
+      "One laptop, one point of failure",
+      "Numbers — but none of the proof",
+      "Snap → the app drafts → you confirm",
+      "Structure, not auto-magic balances"
     ],
-    "cta": "Build it before you need it \u2014 link in bio"
+    "cta": "Keep it or switch — link in bio"
   },
   {
     "id": "video-v1-end",
@@ -201,9 +191,9 @@
     "warn": true,
     "disclaimer": true,
     "block": "title",
-    "tag": "Protect",
-    "headline": "Make your contents claim-ready",
+    "tag": "Prepare",
+    "headline": "Fine to start. A vault when it needs to last.",
     "subhead": "myvaulto.com/blog",
-    "cta": "Start your home inventory"
+    "cta": "Track it in one place — free to start"
   }
 ]
