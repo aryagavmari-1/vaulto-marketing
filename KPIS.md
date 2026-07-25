@@ -60,10 +60,17 @@ weekly (Mon 06:17 UTC) + on demand, runs the puller, and commits the refreshed
 no-op (leaves `kpis.json` unchanged, exits 0), so nothing breaks pre-launch.
 Blocked on the live analytics accounts (**ARY-409**).
 
-- `CF_API_TOKEN`, `CF_ACCOUNT_TAG` — Cloudflare Web Analytics GraphQL
+- `CF_API_TOKEN` — Cloudflare API token with **Account → Account Analytics → Read**
+  (not the Web Analytics *beacon* token, which is a site id and is rejected by the API)
+- `CF_ACCOUNT_TAG` *(optional)* — read back from the token when the token sees exactly
+  one account; only needed to disambiguate a multi-account token
 - `GSC_SERVICE_ACCOUNT_JSON` — Google Search Console service-account key (the
-  service account must be added as a user on the GSC property)
-- `GSC_SITE_URL` *(optional)* — defaults to `https://myvaulto.com/`
+  service account must be added as a user on the **verified** GSC property)
+- `GSC_SITE_URL` *(optional)* — defaults to `https://myvaulto.com/`; use
+  `sc-domain:myvaulto.com` for a Domain (DNS-verified) property
+
+Run `npm run kpis:check` to preflight whichever credentials are set: it checks each
+one in isolation and prints the exact remedy for a failure, without writing `kpis.json`.
 
 `asOf` only advances when a live value is actually pulled, so a stale dashboard is
 never disguised as fresh.

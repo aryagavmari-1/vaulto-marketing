@@ -9,7 +9,8 @@
  * a dashboard. (See KPIS.md → "The optimisation loop".)
  *
  * Sources (credentials set as env / GitHub Actions secrets — NONE committed):
- *   CF_API_TOKEN, CF_ACCOUNT_TAG   → Cloudflare Web Analytics GraphQL (traffic)
+ *   CF_API_TOKEN                   → Cloudflare Web Analytics GraphQL (traffic)
+ *   CF_ACCOUNT_TAG (optional)      → account id; read back from the token if unset
  *   GSC_SERVICE_ACCOUNT_JSON       → Google Search Console Search Analytics
  *   GSC_SITE_URL  (optional)       → GSC property, default https://myvaulto.com/
  *   KPI_WINDOW_DAYS (optional)     → rolling window, default 30 (KPIs are "/mo")
@@ -40,7 +41,7 @@ const WINDOW_DAYS = Number(process.env.KPI_WINDOW_DAYS || 30);
 const SEARCH_ENGINE_HOSTS = /(^|\.)(google|bing|duckduckgo|ecosia|yahoo|yandex|baidu|brave)\./i;
 
 const have = {
-  traffic: Boolean(process.env.CF_API_TOKEN && process.env.CF_ACCOUNT_TAG),
+  traffic: Boolean(process.env.CF_API_TOKEN),
   search: Boolean(process.env.GSC_SERVICE_ACCOUNT_JSON),
 };
 
@@ -64,9 +65,30 @@ function setKpi(updates, id, value) {
 // Pulls total visits over the window and the per-referer breakdown so we can
 // split organic-search traffic (organic_sessions) and the referral share
 // (referral_share_rate) without any extra dependency.
+/**
+ * The account tag is only an *identifier*, not a credential — the API token
+ * already carries the account scope. So when CF_ACCOUNT_TAG is absent we read it
+ * back from the token rather than making a human copy it out of a dashboard URL
+ * (ARY-556). Only unambiguous when the token sees exactly one account.
+ */
+async function resolveAccountTag(token) {
+  if (process.env.CF_ACCOUNT_TAG) return process.env.CF_ACCOUNT_TAG;
+  const res = await fetch('https://api.cloudflare.com/client/v4/accounts', {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  const body = await res.json().catch(() => ({}));
+  const accounts = body.success ? body.result ?? [] : [];
+  if (accounts.length === 1) return accounts[0].id;
+  throw new Error(
+    accounts.length
+      ? `token sees ${accounts.length} accounts — set CF_ACCOUNT_TAG explicitly`
+      : 'CF_ACCOUNT_TAG unset and the token cannot list accounts',
+  );
+}
+
 async function pullCloudflare(updates) {
   const token = process.env.CF_API_TOKEN;
-  const accountTag = process.env.CF_ACCOUNT_TAG;
+  const accountTag = await resolveAccountTag(token);
   const query = `
     query Rum($accountTag: String!, $start: String!, $end: String!) {
       viewer {
@@ -212,7 +234,7 @@ if (have.traffic) {
   try { await pullCloudflare(updates); }
   catch (e) { errors.push(`Cloudflare: ${e.message}`); }
 } else {
-  console.warn('[pull-kpis] Unconfigured: Cloudflare Web Analytics (CF_API_TOKEN, CF_ACCOUNT_TAG)');
+  console.warn('[pull-kpis] Unconfigured: Cloudflare Web Analytics (CF_API_TOKEN)');
 }
 
 if (have.search) {
