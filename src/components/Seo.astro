@@ -10,6 +10,7 @@
  * <Base/>). hreflang + the localized sitemap are driven from config/i18n.ts.
  */
 import { BRAND, ANALYTICS } from '../config/brand';
+import { GSC_VERIFICATION } from '../config/verification';
 import { alternatesFor, DEFAULT_LOCALE, HREFLANG, type Locale } from '../config/i18n';
 import {
   softwareApplication,
@@ -59,7 +60,9 @@ const lang = HREFLANG[locale];
 // hook from ARY-25 is kept as a drop-in alternative. Both are env-gated, so the
 // site builds and previews with neither configured.
 const cfToken = import.meta.env.PUBLIC_CF_BEACON_TOKEN ?? '';
-const gscVerify = import.meta.env.PUBLIC_GSC_VERIFICATION ?? '';
+// Env wins (lets the host override without a deploy); otherwise the committed
+// value, so verification doesn't depend on Render dashboard access (ARY-556).
+const gscVerify = import.meta.env.PUBLIC_GSC_VERIFICATION || GSC_VERIFICATION;
 
 // schema.org graph. Organization + WebSite are site-wide; SoftwareApplication is
 // the home page; BlogPosting on articles; FAQPage/BreadcrumbList are opt-in.
