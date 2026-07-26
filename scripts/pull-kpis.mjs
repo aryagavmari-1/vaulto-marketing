@@ -66,33 +66,30 @@ function setKpi(updates, id, value) {
 // split organic-search traffic (organic_sessions) and the referral share
 // (referral_share_rate) without any extra dependency.
 /**
- * The account tag is only an *identifier*, not a credential — the API token
- * already carries the account scope. So when CF_ACCOUNT_TAG is absent we read it
- * back from the token rather than making a human copy it out of a dashboard URL
- * (ARY-556). Only unambiguous when the token sees exactly one account.
+ * The account tag is an *identifier*, not a credential — the token already
+ * carries the account scope — so we never make a human copy it out of a
+ * dashboard URL (ARY-556).
+ *
+ * An `Account Analytics: Read` token cannot call the REST `/accounts` list
+ * (that needs an account-settings scope), so instead of discovering the tag we
+ * simply omit the filter: `viewer { accounts { … } }` returns every account the
+ * token can see, which for a scoped token is exactly the one we want. Setting
+ * CF_ACCOUNT_TAG still works and pins the query to a single account.
  */
-async function resolveAccountTag(token) {
-  if (process.env.CF_ACCOUNT_TAG) return process.env.CF_ACCOUNT_TAG;
-  const res = await fetch('https://api.cloudflare.com/client/v4/accounts', {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  const body = await res.json().catch(() => ({}));
-  const accounts = body.success ? body.result ?? [] : [];
-  if (accounts.length === 1) return accounts[0].id;
-  throw new Error(
-    accounts.length
-      ? `token sees ${accounts.length} accounts — set CF_ACCOUNT_TAG explicitly`
-      : 'CF_ACCOUNT_TAG unset and the token cannot list accounts',
-  );
+function accountSelector() {
+  return process.env.CF_ACCOUNT_TAG
+    ? { args: '($accountTag: String!, $start: String!, $end: String!)', filter: '(filter: { accountTag: $accountTag })' }
+    : { args: '($start: String!, $end: String!)', filter: '' };
 }
 
 async function pullCloudflare(updates) {
   const token = process.env.CF_API_TOKEN;
-  const accountTag = await resolveAccountTag(token);
+  const accountTag = process.env.CF_ACCOUNT_TAG;
+  const sel = accountSelector();
   const query = `
-    query Rum($accountTag: String!, $start: String!, $end: String!) {
+    query Rum${sel.args} {
       viewer {
-        accounts(filter: { accountTag: $accountTag }) {
+        accounts${sel.filter} {
           total: rumPageloadEventsAdaptiveGroups(
             filter: { date_geq: $start, date_leq: $end }
             limit: 1
@@ -118,27 +115,42 @@ async function pullCloudflare(updates) {
     },
     body: JSON.stringify({
       query,
-      variables: { accountTag, start: isoDate(WINDOW_DAYS), end: isoDate(0) },
+      variables: {
+        ...(accountTag ? { accountTag } : {}),
+        start: isoDate(WINDOW_DAYS),
+        end: isoDate(0),
+      },
     }),
   });
   if (!res.ok) throw new Error(`Cloudflare HTTP ${res.status}: ${await res.text()}`);
   const body = await res.json();
   if (body.errors?.length) throw new Error(`Cloudflare GraphQL: ${JSON.stringify(body.errors)}`);
 
-  const account = body.data?.viewer?.accounts?.[0];
-  if (!account) throw new Error('Cloudflare returned no account (check CF_ACCOUNT_TAG)');
+  const accounts = body.data?.viewer?.accounts ?? [];
+  if (!accounts.length) {
+    throw new Error(
+      accountTag
+        ? `Cloudflare returned no account for CF_ACCOUNT_TAG=${accountTag}`
+        : 'Cloudflare returned no accounts for this token',
+    );
+  }
 
-  const totalVisits = account.total?.[0]?.sum?.visits ?? 0;
+  // Unfiltered, the token may see more than one account; sum across all of them
+  // so the KPI is "our traffic", not "traffic in whichever account sorted first".
+  let totalVisits = 0;
   let organicVisits = 0;
   let referralVisits = 0;
-  for (const row of account.byReferer ?? []) {
-    const host = row.dimensions?.refererHost || '';
-    const visits = row.sum?.visits ?? 0;
-    if (!host || host === '(none)' || host === 'myvaulto.com' || host === 'marketing.myvaulto.com') {
-      continue; // direct / self-referral
+  for (const account of accounts) {
+    totalVisits += account.total?.[0]?.sum?.visits ?? 0;
+    for (const row of account.byReferer ?? []) {
+      const host = row.dimensions?.refererHost || '';
+      const visits = row.sum?.visits ?? 0;
+      if (!host || host === '(none)' || host === 'myvaulto.com' || host === 'marketing.myvaulto.com') {
+        continue; // direct / self-referral
+      }
+      if (SEARCH_ENGINE_HOSTS.test(host)) organicVisits += visits;
+      else referralVisits += visits;
     }
-    if (SEARCH_ENGINE_HOSTS.test(host)) organicVisits += visits;
-    else referralVisits += visits;
   }
 
   setKpi(updates, 'organic_sessions', organicVisits);
