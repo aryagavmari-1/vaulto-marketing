@@ -18,6 +18,7 @@
  * Usage: npm run kpis:check
  */
 import { createSign } from 'node:crypto';
+import { resolveAccountTag } from './cf-account.mjs';
 
 const CF_API = 'https://api.cloudflare.com/client/v4';
 let failures = 0;
@@ -61,22 +62,22 @@ async function checkCloudflare() {
   }
   pass(`CF_API_TOKEN is a valid API token (status: ${verify.result?.status ?? 'active'}).`);
 
-  // 2. Scope. An Account Analytics token can't call the REST /accounts list, so
-  //    we don't try to discover the tag — we just omit the GraphQL filter and let
-  //    the token's own scope select the account. CF_ACCOUNT_TAG pins it if set.
-  const accountTag = process.env.CF_ACCOUNT_TAG;
-  console.log(accountTag
-    ? `  ..    CF_ACCOUNT_TAG set (${accountTag}) — query pinned to that account.`
-    : '  ..    CF_ACCOUNT_TAG unset — querying every account the token can see.');
+  // 2. Account tag — required by the RUM datasets. Discovered from the token
+  //    where possible so nobody has to copy it out of a dashboard URL.
+  let accountTag;
+  try {
+    const resolved = await resolveAccountTag(token);
+    accountTag = resolved.tag;
+    pass(`Account id ${accountTag} (via ${resolved.via}).`);
+  } catch (e) {
+    fail(`Account id unavailable: ${e.message}`);
+    return;
+  }
 
   // 3. The real query the puller runs — proves the token's *scope* is right.
-  const args = accountTag
-    ? '($accountTag: String!, $start: String!, $end: String!)'
-    : '($start: String!, $end: String!)';
-  const filter = accountTag ? '(filter: { accountTag: $accountTag })' : '';
   const query = `
-    query Rum${args} {
-      viewer { accounts${filter} {
+    query Rum($accountTag: String!, $start: String!, $end: String!) {
+      viewer { accounts(filter: { accountTag: $accountTag }) {
         total: rumPageloadEventsAdaptiveGroups(
           filter: { date_geq: $start, date_leq: $end } limit: 1
         ) { sum { visits } }
@@ -87,7 +88,7 @@ async function checkCloudflare() {
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       query,
-      variables: { ...(accountTag ? { accountTag } : {}), start: isoDate(30), end: isoDate(0) },
+      variables: { accountTag, start: isoDate(30), end: isoDate(0) },
     }),
   });
   const body = await res.json().catch(() => ({}));
@@ -101,15 +102,13 @@ async function checkCloudflare() {
   const accounts = body.data?.viewer?.accounts ?? [];
   if (!accounts.length) {
     fail(
-      'Query succeeded but the token can see no accounts.',
-      accountTag
-        ? `CF_ACCOUNT_TAG=${accountTag} is not an account this token covers — clear it to use the token's own scope.`
-        : 'The token appears to be scoped to zero accounts — recreate it with Account Resources → Include → your account.',
+      `Query succeeded but returned no rows for account ${accountTag}.`,
+      'That account is not the one running the Web Analytics beacon.',
     );
     return;
   }
-  const visits = accounts.reduce((n, a) => n + (a.total?.[0]?.sum?.visits ?? 0), 0);
-  pass(`Analytics readable across ${accounts.length} account(s): ${visits} visits in the last 30 days. Traffic KPIs will go live.`);
+  const visits = accounts[0].total?.[0]?.sum?.visits ?? 0;
+  pass(`Analytics readable: ${visits} visits in the last 30 days. Traffic KPIs will go live.`);
 }
 
 // ── Google Search Console ────────────────────────────────────────────────────

@@ -10,7 +10,7 @@
  *
  * Sources (credentials set as env / GitHub Actions secrets — NONE committed):
  *   CF_API_TOKEN                   → Cloudflare Web Analytics GraphQL (traffic)
- *   CF_ACCOUNT_TAG (optional)      → account id; read back from the token if unset
+ *   CF_ACCOUNT_TAG (optional)      → account id; discovered from the token if unset
  *   GSC_SERVICE_ACCOUNT_JSON       → Google Search Console Search Analytics
  *   GSC_SITE_URL  (optional)       → GSC property, default https://myvaulto.com/
  *   KPI_WINDOW_DAYS (optional)     → rolling window, default 30 (KPIs are "/mo")
@@ -32,6 +32,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createSign } from 'node:crypto';
+import { resolveAccountTag } from './cf-account.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const path = join(root, 'kpis.json');
@@ -65,31 +66,13 @@ function setKpi(updates, id, value) {
 // Pulls total visits over the window and the per-referer breakdown so we can
 // split organic-search traffic (organic_sessions) and the referral share
 // (referral_share_rate) without any extra dependency.
-/**
- * The account tag is an *identifier*, not a credential — the token already
- * carries the account scope — so we never make a human copy it out of a
- * dashboard URL (ARY-556).
- *
- * An `Account Analytics: Read` token cannot call the REST `/accounts` list
- * (that needs an account-settings scope), so instead of discovering the tag we
- * simply omit the filter: `viewer { accounts { … } }` returns every account the
- * token can see, which for a scoped token is exactly the one we want. Setting
- * CF_ACCOUNT_TAG still works and pins the query to a single account.
- */
-function accountSelector() {
-  return process.env.CF_ACCOUNT_TAG
-    ? { args: '($accountTag: String!, $start: String!, $end: String!)', filter: '(filter: { accountTag: $accountTag })' }
-    : { args: '($start: String!, $end: String!)', filter: '' };
-}
-
 async function pullCloudflare(updates) {
   const token = process.env.CF_API_TOKEN;
-  const accountTag = process.env.CF_ACCOUNT_TAG;
-  const sel = accountSelector();
+  const { tag: accountTag } = await resolveAccountTag(token);
   const query = `
-    query Rum${sel.args} {
+    query Rum($accountTag: String!, $start: String!, $end: String!) {
       viewer {
-        accounts${sel.filter} {
+        accounts(filter: { accountTag: $accountTag }) {
           total: rumPageloadEventsAdaptiveGroups(
             filter: { date_geq: $start, date_leq: $end }
             limit: 1
@@ -115,11 +98,7 @@ async function pullCloudflare(updates) {
     },
     body: JSON.stringify({
       query,
-      variables: {
-        ...(accountTag ? { accountTag } : {}),
-        start: isoDate(WINDOW_DAYS),
-        end: isoDate(0),
-      },
+      variables: { accountTag, start: isoDate(WINDOW_DAYS), end: isoDate(0) },
     }),
   });
   if (!res.ok) throw new Error(`Cloudflare HTTP ${res.status}: ${await res.text()}`);
@@ -128,15 +107,9 @@ async function pullCloudflare(updates) {
 
   const accounts = body.data?.viewer?.accounts ?? [];
   if (!accounts.length) {
-    throw new Error(
-      accountTag
-        ? `Cloudflare returned no account for CF_ACCOUNT_TAG=${accountTag}`
-        : 'Cloudflare returned no accounts for this token',
-    );
+    throw new Error(`Cloudflare returned no data for account ${accountTag}`);
   }
 
-  // Unfiltered, the token may see more than one account; sum across all of them
-  // so the KPI is "our traffic", not "traffic in whichever account sorted first".
   let totalVisits = 0;
   let organicVisits = 0;
   let referralVisits = 0;
