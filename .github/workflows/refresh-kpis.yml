@@ -10,9 +10,14 @@ name: Refresh KPIs
 #
 # Required repo secrets (NONE committed; provisioned once the live analytics
 # accounts land — blocked on ARY-409):
-#   CF_API_TOKEN, CF_ACCOUNT_TAG  — Cloudflare Web Analytics GraphQL (traffic)
+#   CF_API_TOKEN                  — Cloudflare Web Analytics GraphQL (traffic)
+#   CF_ACCOUNT_TAG  (optional)    — read back from the token when it sees one account
 #   GSC_SERVICE_ACCOUNT_JSON      — Google Search Console service-account key
 #   GSC_SITE_URL  (optional)      — GSC property, default https://myvaulto.com/
+#
+# These can be set without anyone sharing a credential value: whoever holds it
+# runs `gh secret set <NAME> --repo aryagavmari-1/vaulto-marketing` and pastes at
+# the prompt, then triggers this workflow. The value never enters an issue thread.
 #
 # Until those secrets exist the puller is a safe no-op (it leaves kpis.json
 # unchanged and exits 0), so this job runs green and commits nothing. It goes
@@ -38,6 +43,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      # Preflight first so the log says *which* credential is wrong and how to fix
+      # it. The puller itself is deliberately quiet (a bad credential just leaves
+      # kpis.json untouched), which is unreadable from CI. Never fails the job —
+      # it is diagnostics, and it prints no secret values (ARY-556).
+      - name: Preflight credentials
+        continue-on-error: true
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_TAG: ${{ secrets.CF_ACCOUNT_TAG }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+        run: node scripts/check-kpi-creds.mjs
       - name: Pull live KPIs
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
