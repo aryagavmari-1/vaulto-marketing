@@ -11,4 +11,4 @@
  */
 
 /** Google Search Console HTML-tag verification: the `content="…"` value. */
-export const GSC_VERIFICATION = '';
+export const GSC_VERIFICATION = 'l2GvHwMqhrwTx_Ocfq3mMKHsJrxU2lOKS1Rm38a0XtQ';
