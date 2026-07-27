@@ -18,7 +18,7 @@
  * Usage: npm run kpis:check
  */
 import { createSign } from 'node:crypto';
-import { resolveAccountTag } from './cf-account.mjs';
+import { resolveAccountTag, classifyReferers } from './cf-account.mjs';
 
 const CF_API = 'https://api.cloudflare.com/client/v4';
 let failures = 0;
@@ -75,12 +75,22 @@ async function checkCloudflare() {
   }
 
   // 3. The real query the puller runs — proves the token's *scope* is right.
+  //    Includes the referer breakdown, because `organic_sessions: 0` is
+  //    ambiguous on its own: it reads the same whether every visit really is
+  //    direct or whether Cloudflare stopped returning the refererHost dimension
+  //    (in which case the puller silently classifies everything as direct). The
+  //    split below makes those two cases distinguishable from the CI log.
   const query = `
     query Rum($accountTag: String!, $start: String!, $end: String!) {
       viewer { accounts(filter: { accountTag: $accountTag }) {
         total: rumPageloadEventsAdaptiveGroups(
           filter: { date_geq: $start, date_leq: $end } limit: 1
         ) { sum { visits } }
+        byReferer: rumPageloadEventsAdaptiveGroups(
+          filter: { date_geq: $start, date_leq: $end }
+          limit: 500
+          orderBy: [sum_visits_DESC]
+        ) { sum { visits } dimensions { refererHost } }
       } }
     }`;
   const res = await fetch(`${CF_API}/graphql`, {
@@ -109,6 +119,22 @@ async function checkCloudflare() {
   }
   const visits = accounts[0].total?.[0]?.sum?.visits ?? 0;
   pass(`Analytics readable: ${visits} visits in the last 30 days. Traffic KPIs will go live.`);
+
+  // Show the split behind organic_sessions / referral_share_rate, so a `0` in
+  // kpis.json can be read as a fact rather than taken on trust.
+  const split = classifyReferers(accounts[0].byReferer ?? []);
+  const top = split.hosts.slice(0, 5).map((h) => `${h.host} (${h.visits})`).join(', ');
+  pass(
+    `Referer split: ${split.direct} direct/self, ${split.organic} organic-search, ` +
+      `${split.referral} referral` + (top ? ` — top external: ${top}.` : '.'),
+  );
+  if (visits > 0 && !split.hosts.length) {
+    console.log(
+      '        note → every visit is direct/self-referred, so organic_sessions ' +
+        'and referral_share_rate are legitimately 0. They stay 0 until an ' +
+        'external site or a search engine sends a visit.',
+    );
+  }
 }
 
 // ── Google Search Console ────────────────────────────────────────────────────

@@ -32,14 +32,13 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createSign } from 'node:crypto';
-import { resolveAccountTag } from './cf-account.mjs';
+import { resolveAccountTag, classifyReferers } from './cf-account.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const path = join(root, 'kpis.json');
 const doc = JSON.parse(readFileSync(path, 'utf8'));
 
 const WINDOW_DAYS = Number(process.env.KPI_WINDOW_DAYS || 30);
-const SEARCH_ENGINE_HOSTS = /(^|\.)(google|bing|duckduckgo|ecosia|yahoo|yandex|baidu|brave)\./i;
 
 const have = {
   traffic: Boolean(process.env.CF_API_TOKEN),
@@ -115,15 +114,9 @@ async function pullCloudflare(updates) {
   let referralVisits = 0;
   for (const account of accounts) {
     totalVisits += account.total?.[0]?.sum?.visits ?? 0;
-    for (const row of account.byReferer ?? []) {
-      const host = row.dimensions?.refererHost || '';
-      const visits = row.sum?.visits ?? 0;
-      if (!host || host === '(none)' || host === 'myvaulto.com' || host === 'marketing.myvaulto.com') {
-        continue; // direct / self-referral
-      }
-      if (SEARCH_ENGINE_HOSTS.test(host)) organicVisits += visits;
-      else referralVisits += visits;
-    }
+    const split = classifyReferers(account.byReferer ?? []);
+    organicVisits += split.organic;
+    referralVisits += split.referral;
   }
 
   setKpi(updates, 'organic_sessions', organicVisits);

@@ -1,6 +1,7 @@
 /**
- * Cloudflare account-tag resolution, shared by pull-kpis.mjs and
- * check-kpi-creds.mjs (ARY-556).
+ * Cloudflare RUM helpers shared by pull-kpis.mjs and check-kpi-creds.mjs
+ * (ARY-556): account-tag resolution and the referer classification both scripts
+ * report on.
  *
  * The GraphQL RUM datasets require an explicit accountTag filter — omitting it
  * makes Cloudflare enumerate every account on the user and fail with "not
@@ -14,6 +15,35 @@
  */
 
 const CF_API = 'https://api.cloudflare.com/client/v4';
+
+const SEARCH_ENGINE_HOSTS = /(^|\.)(google|bing|duckduckgo|ecosia|yahoo|yandex|baidu|brave)\./i;
+
+/**
+ * Split a rumPageloadEventsAdaptiveGroups referer breakdown into direct /
+ * organic-search / referral visits, keeping the named external hosts.
+ *
+ * Shared so the puller and the preflight can never disagree about what a `0`
+ * means: `organic: 0` with a populated `hosts` list is genuinely direct traffic,
+ * whereas `organic: 0` with everything in `direct` and no hosts at all is the
+ * signature of Cloudflare not returning the refererHost dimension.
+ *
+ * @returns {{direct: number, organic: number, referral: number, hosts: {host: string, visits: number}[]}}
+ */
+export function classifyReferers(rows = []) {
+  const split = { direct: 0, organic: 0, referral: 0, hosts: [] };
+  for (const row of rows) {
+    const host = row.dimensions?.refererHost || '';
+    const visits = row.sum?.visits ?? 0;
+    if (!host || host === '(none)' || host === 'myvaulto.com' || host === 'marketing.myvaulto.com') {
+      split.direct += visits; // direct / self-referral
+      continue;
+    }
+    if (SEARCH_ENGINE_HOSTS.test(host)) split.organic += visits;
+    else split.referral += visits;
+    split.hosts.push({ host, visits });
+  }
+  return split;
+}
 
 /** @returns {Promise<{tag: string, via: string}>} */
 export async function resolveAccountTag(token) {
