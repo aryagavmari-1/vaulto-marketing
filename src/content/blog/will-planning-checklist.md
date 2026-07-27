@@ -75,7 +75,7 @@ These are uncomfortable questions, which is exactly why they're easier to answer
 
 ### 5. Your digital life
 
-Online banking, investment apps, photos, subscriptions, email, loyalty points — much of what we own now lives behind a login. None of it is obvious to an executor unless you make it so. Note the accounts that matter and how someone would responsibly find them (not a list of passwords in plain sight). Our [digital estate-planning checklist](/blog/digital-estate-planning-checklist/) walks through this part in full; for the will, the key is simply that your digital assets appear on the list at all.
+Online banking, investment apps, photos, subscriptions, email, loyalty points — much of what we own now lives behind a login. None of it is obvious to an executor unless you make it so. Note the accounts that matter and how someone would responsibly find them (not a list of passwords in plain sight — and [not in the will itself](/blog/should-you-put-passwords-in-your-will/), which can become a public document once probate is granted). Our [digital estate-planning checklist](/blog/digital-estate-planning-checklist/) walks through this part in full; for the will, the key is simply that your digital assets appear on the list at all.
 
 ### 6. Funeral wishes and the personal things
 
