@@ -128,6 +128,16 @@ async function pullCloudflare(updates) {
 // ── Google Search Console (Search Analytics) ─────────────────────────────────
 // Service-account JWT → OAuth token → searchAnalytics.query. Returns aggregated
 // clicks / impressions / position over the window.
+//
+// Host note: we call searchconsole.googleapis.com rather than the legacy
+// www.googleapis.com alias. Both serve `webmasters/v3/...`, but only the former
+// matches the service name shown in the Cloud console API Library, so "enable
+// the Google Search Console API" is unambiguous for whoever provisions the
+// project — the legacy host can attribute the call to a different (disabled)
+// service and fail with "API has not been used in project…". Verified against
+// the published discovery doc: rootUrl https://searchconsole.googleapis.com/,
+// flatPath webmasters/v3/sites/{siteUrl}/searchAnalytics/query, and the
+// webmasters.readonly scope we request below.
 function base64url(input) {
   return Buffer.from(input).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
@@ -177,7 +187,7 @@ async function pullSearchConsole(updates) {
 
   // GSC data lags ~2-3 days; end the window a few days back to avoid a partial tail.
   const res = await fetch(
-    `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+    `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
     {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },

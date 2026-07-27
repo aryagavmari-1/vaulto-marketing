@@ -209,7 +209,7 @@ async function checkSearchConsole() {
 
   // Does the SA actually have the property? This is the step people miss.
   const siteUrl = process.env.GSC_SITE_URL || 'https://myvaulto.com/';
-  const list = await fetch('https://www.googleapis.com/webmasters/v3/sites', {
+  const list = await fetch('https://searchconsole.googleapis.com/webmasters/v3/sites', {
     headers: { Authorization: `Bearer ${token}` },
   });
   if (list.status === 403) {
@@ -240,7 +240,7 @@ async function checkSearchConsole() {
   pass(`Property ${siteUrl} readable (permission: ${match.permissionLevel}).`);
 
   const res = await fetch(
-    `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+    `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
     {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
