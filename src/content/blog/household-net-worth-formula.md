@@ -85,7 +85,7 @@ This is where a spreadsheet quietly lets you down. It's accurate the day you bui
 
 Keeping the number live is the job [Vaulto](https://app.myvaulto.com) is built for. As you record what your household owns and owes — across **35+ asset and liability types**, each with a value or value-range, its location, insurance status, tags, and any evidence files — your dashboard shows **"Net Worth — what you own minus what you owe"** without you re-doing the subtraction by hand. Values are the ones you enter (or a range when you're not sure), so the number reflects what you actually know — there's no automatic bank connection quietly guessing for you.
 
-And because Vaulto keeps **monthly net-worth-history snapshots**, you don't just see today's figure — you can watch it change over time, so a paydown here and a new saving there add up to a trend you can feel. It's a private vault you control: a Vaulto vault has a single owner, and support cannot view your records.
+Each asset also keeps its own **valuation history**, so when you revalue the house or mark down the car, you can see how that item has moved rather than only where it stands today — and because the total is recomputed from your current entries, a paydown here and a new saving there show up in the figure the next time you look. It's a private vault you control: a Vaulto vault has a single owner, and support cannot view your records.
 
 If you're building the asset side of the ledger for the first time, it's worth pairing this with [a room-by-room home inventory](/blog/how-to-make-a-home-inventory/) — the two lists feed each other.
 

@@ -32,7 +32,7 @@ Spreadsheets are wonderful for a quick number. Where they get painful is when th
 - **They live on one device.** The real family ledger is usually a single file on one laptop. If that laptop dies — or if you're not the one who built it — the whole picture can go with it.
 - **They hold numbers, not evidence.** A cell can say "House — £420,000," but it can't hold the deed, the last valuation, or the insurance policy. When it matters, you're hunting through drawers and inboxes anyway.
 - **They can't capture anything.** Adding a new asset means stopping, opening the file, and typing. Most people never get around to it, so the sheet drifts out of date.
-- **They don't keep history unless you build it.** Want to see how your net worth moved over the last year? That's a second sheet, a chart, and the discipline to snapshot it every month by hand.
+- **They don't keep history unless you build it.** Want to see how the house valuation, or the car, or the pension has moved since you last checked? That's a second sheet, a chart, and the discipline to log every revaluation by hand.
 - **They aren't readiness.** A personal spreadsheet is organised for *you*. If something happened tomorrow, it wouldn't tell your family what you own or where the records are.
 
 None of this makes spreadsheets bad. It makes them a *starting* tool that stops scaling once your finances — and the people who depend on them — get more serious.
@@ -42,7 +42,7 @@ None of this makes spreadsheets bad. It makes them a *starting* tool that stops 
 A vault like Vaulto is built for the job a spreadsheet is stretched into. Here's what it genuinely does better — and, just as importantly, what it doesn't pretend to do.
 
 - **Typed structure instead of freeform cells.** Rather than a blank grid, you get dozens of specific asset and liability types (35+), each with the right fields — a value or a value range, location, insurance status, condition, serial numbers, purchase details, tags. Structure is what stops the record rotting.
-- **Net-worth history, kept for you.** The vault records monthly net-worth snapshots and shows a dashboard breakdown, so you can see how your position moves over time without building a single chart yourself.
+- **The total is kept for you, and each asset keeps its own history.** Vaulto totals your household net worth — what you own minus what you owe — from your current entries, and breaks it down by category on the dashboard, so the subtraction is never yours to redo. Each asset also keeps a **valuation history**, so when you revalue the house or the car you can see how that item has moved, without building a single chart yourself.
 - **Evidence in one place.** Alongside the numbers, there's a document registry for things like wills, deeds, and statements, plus per-asset evidence files. It's not just "what it's worth" — it's the proof and the *where is it*.
 - **Capture from your phone.** Snap a photo of an item or a document and the AI drafts a record for you to confirm or edit. A spreadsheet simply can't do that, and it's the difference between staying current and giving up.
 - **A free life-event overview.** An AI overview flags estimate ranges and risk areas across the different areas of your financial life, tied to what you've actually logged — a prompt to look where you haven't, not financial advice.
@@ -56,7 +56,7 @@ A vault like Vaulto is built for the job a spreadsheet is stretched into. Here's
 |---|---|---|
 | **Cost** | Free | Free to start |
 | **Structure** | Freeform cells you design (and maintain) | Typed fields for 35+ asset & liability types |
-| **Net-worth history** | Only if you build and update charts yourself | Monthly snapshots + dashboard breakdown, automatic |
+| **Totals & history** | Totals only if your formulas hold; history only if you build and update charts yourself | Total recalculated from your current entries, with a category breakdown; valuation history on each asset |
 | **Evidence & documents** | Numbers only; files live elsewhere | Document registry + per-asset evidence files |
 | **Mobile capture** | Manual typing only | Photo an item or document → AI drafts a record you confirm |
 | **Account auto-sync** | Manual entry | Manual entry (no account linking, by design) |
@@ -74,7 +74,7 @@ Notice the auto-sync row: **both are manual.** That's deliberate — the vault's
 - Your spreadsheet has broken on you, or you don't fully trust the total any more.
 - The file lives on one device and no one else could pick it up.
 - You want the *documents and photos* — deeds, policies, valuations — sitting next to the numbers.
-- You want net-worth history without hand-building charts.
+- You want the total recalculated for you, and a valuation history on the assets that actually move — without hand-building charts.
 - You want your family to be able to find everything if something happened.
 
 If that last point is the one that lands, you're not really comparing tools any more — you're deciding whether your family's picture should live somewhere more durable than a single file.
