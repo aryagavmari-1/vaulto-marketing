@@ -22,7 +22,7 @@
     },
     {
       "title": "Cifrado en reposo.",
-      "body": "Tus registros y archivos subidos residen en servidores gestionados profesionalmente y protegidos, cifrados en reposo: «en reposo» simplemente significa mientras están almacenados, no mientras se mueven. La base de datos que guarda tus registros y el almacenamiento que guarda tus fotos y escaneos están ambos cifrados, y tus archivos solo son accesibles mediante enlaces firmados de corta duración."
+      "body": "Tus registros y archivos subidos están cifrados en reposo: «en reposo» simplemente significa mientras están almacenados, no mientras se mueven. Residen en servidores gestionados profesionalmente y protegidos, y Vaulto los cifra además dentro de la propia app antes de escribirlos: tus registros, y las fotos y escaneos que subes, se cifran con claves gestionadas en Google Cloud KMS en lugar de guardarse junto a los datos."
     },
     {
       "title": "Las contraseñas nunca se guardan en texto plano.",
@@ -63,7 +63,7 @@
     "body": "Tus datos son tuyos: exporta una copia completa y legible por máquina de tus registros (JSON, CSV o PDF) cuando quieras, desde Ajustes. «Legible por máquina» significa un archivo estándar que otra app o una hoja de cálculo pueden abrir y reutilizar, no un PDF bloqueado. Sin ataduras, sin esperar a que te lo demos. (También puedes exportar un archivo ZIP que incluye tus fotos y escaneos originales junto con el registro estructurado.) Esto respalda tu derecho a la portabilidad de datos del GDPR, la ley de privacidad de la UE (artículo 20) que te permite llevarte tus datos contigo."
   },
   "honesty": {
-    "body": "<b>Lenguaje claro, sin exagerar.</b> Describimos solo lo que es cierto hoy: cifrado en tránsito, una base de datos cifrada, archivos guardados en almacenamiento privado, contraseñas hasheadas y control de acceso estricto. Deliberadamente <b>no</b> afirmamos «conocimiento cero» (donde ni siquiera nosotros podríamos desbloquear nunca tus datos), «nivel bancario» ni ninguna certificación que no hayamos obtenido. La exportación de datos ya está disponible (arriba). Cuando añadamos cifrado a nivel de aplicación —un candado extra aplicado dentro de la propia app, encima del cifrado anterior— o una auditoría formal de terceros, en la que una empresa de seguridad independiente nos revisa, esta página lo dirá.",
+    "body": "<b>Lenguaje claro, sin exagerar.</b> Describimos solo lo que es cierto hoy: cifrado en tránsito, cifrado en reposo aplicado por la propia app con claves gestionadas en Google Cloud KMS, archivos guardados en almacenamiento privado, contraseñas hasheadas y control de acceso estricto. Deliberadamente <b>no</b> afirmamos que el cifrado sea «de extremo a extremo» ni «de conocimiento cero»: nosotros tenemos las claves, así que podemos descifrar tus registros para prestar el servicio y las funciones de IA que nos pidas. Tampoco afirmamos «nivel bancario» ni ninguna certificación que no hayamos obtenido. Una excepción deliberada al cifrado anterior: los rangos de valor aproximados se mantienen legibles, para que tu bóveda pueda seguir ordenándose y sumándose. La exportación de datos ya está disponible (arriba). Cuando añadamos una auditoría formal de terceros, en la que una empresa de seguridad independiente nos revise, esta página lo dirá.",
     "contact": "Para preguntas sobre privacidad o seguridad, contacta con"
   }
 }

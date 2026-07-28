@@ -22,7 +22,7 @@
     },
     {
       "title": "Criptografado em repouso.",
-      "body": "Seus registros e arquivos enviados ficam em servidores gerenciados profissionalmente e protegidos, criptografados em repouso — \"em repouso\" significa simplesmente enquanto estão armazenados, não enquanto estão em movimento. O banco de dados que guarda seus registros e o armazenamento que guarda suas fotos e digitalizações estão ambos criptografados, e seus arquivos só são acessíveis por meio de links assinados de curta duração."
+      "body": "Seus registros e arquivos enviados são criptografados em repouso — \"em repouso\" significa simplesmente enquanto estão armazenados, não enquanto estão em movimento. Eles ficam em servidores gerenciados profissionalmente e protegidos, e o Vaulto os criptografa de novo dentro do próprio aplicativo antes de gravá-los: seus registros, e as fotos e digitalizações que você envia, são criptografados com chaves gerenciadas no Google Cloud KMS, em vez de guardadas ao lado dos dados."
     },
     {
       "title": "As palavras-passe nunca são guardadas em texto simples.",
@@ -63,7 +63,7 @@
     "body": "Seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF) quando quiser, nas Configurações. \"Legível por máquina\" significa um arquivo padrão que outro aplicativo ou planilha pode abrir e reutilizar — não um PDF bloqueado. Sem aprisionamento, sem esperar por nós. (Você também pode exportar um arquivo ZIP que inclui suas fotos e digitalizações originais junto com o registro estruturado.) Isso apoia o seu direito à portabilidade de dados sob a GDPR — a lei de privacidade da UE (artigo 20) que permite que você leve seus dados com você."
   },
   "honesty": {
-    "body": "<b>Linguagem clara, sem exagero.</b> Descrevemos apenas o que é verdade hoje: criptografia em trânsito, um banco de dados criptografado, arquivos guardados em armazenamento privado, senhas com hash e controle de acesso rigoroso. Deliberadamente <b>não</b> afirmamos \"conhecimento zero\" (em que nem mesmo nós poderíamos desbloquear seus dados), \"nível bancário\" nem qualquer certificação que não tenhamos conquistado. A exportação de dados está ativa (acima). Quando adicionarmos criptografia na camada do aplicativo — uma trava extra aplicada dentro do próprio aplicativo, sobre a criptografia acima — ou uma auditoria formal de terceiros, em que uma empresa de segurança independente nos avalia, esta página dirá isso.",
+    "body": "<b>Linguagem clara, sem exagero.</b> Descrevemos apenas o que é verdade hoje: criptografia em trânsito, criptografia em repouso aplicada pelo próprio aplicativo com chaves gerenciadas no Google Cloud KMS, arquivos guardados em armazenamento privado, senhas com hash e controle de acesso rigoroso. Deliberadamente <b>não</b> afirmamos criptografia \"de ponta a ponta\" nem \"de conhecimento zero\": as chaves são nossas, então podemos descriptografar seus registros para prestar o serviço e as funções de IA que você pedir. Também não afirmamos \"nível bancário\" nem qualquer certificação que não tenhamos conquistado. Uma exceção deliberada à criptografia acima: as faixas de valor aproximadas permanecem legíveis, para que seu cofre continue podendo ser ordenado e somado. A exportação de dados está ativa (acima). Quando adicionarmos uma auditoria formal de terceiros, em que uma empresa de segurança independente nos avalia, esta página dirá isso.",
     "contact": "Para questões de privacidade ou segurança, contacte"
   }
 }

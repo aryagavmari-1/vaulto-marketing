@@ -32,7 +32,7 @@
     },
     {
       "title": "Hoe het wordt beschermd",
-      "body": "De kluis van elke persoon is geïsoleerd van andere gebruikers, wachtwoorden worden gehasht met scrypt, en toegang tot documenten verloopt via kortdurende ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
+      "body": "Je gegevens en geüploade bestanden zijn versleuteld in rust, met de versleutelingssleutels beheerd in Google Cloud KMS. De kluis van elke persoon is geïsoleerd van andere gebruikers en wachtwoorden worden gehasht met scrypt. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
     }
   ],
   "choices": {

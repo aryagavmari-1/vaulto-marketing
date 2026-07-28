@@ -32,7 +32,7 @@
     },
     {
       "title": "How it's protected",
-      "body": "Each person's vault is isolated from other users, passwords are scrypt-hashed, and document access uses short-lived signed links. See the <a href=\"/security/\">security overview</a> for specifics — including what we don't yet claim."
+      "body": "Your records and uploaded files are encrypted at rest, with encryption keys managed in Google Cloud KMS. Each person's vault is isolated from other users, and passwords are scrypt-hashed. See the <a href=\"/security/\">security overview</a> for specifics — including what we don't yet claim."
     }
   ],
   "choices": {
