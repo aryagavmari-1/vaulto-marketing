@@ -507,12 +507,25 @@ const HEAD_FINAL_LOCALES = new Set(["ja", "ko", "tr"]);
  *
  * Head-final attribution is a modifier and its head inside ONE clause, so the
  * paid noun is always in the same sentence as the capability. Stopping there is
- * what keeps the widened window from laundering the real defect — "the free
- * overview shows the steps worth considering. Separately, the detailed report
- * …" still fails, in ja/ko/tr as everywhere else.
+ * what keeps the widened window from laundering the real defect ACROSS
+ * sentences — "the free overview shows the steps worth considering. Separately,
+ * the detailed report …" still fails, in ja/ko/tr as everywhere else.
  *
- * `[.!?]` only counts as a terminator before whitespace or end-of-string, so a
- * Turkish ordinal ("3. adım") or a decimal does not truncate the window; CJK
+ * What it does NOT buy (ARY-1521, measured). Inside one sentence this cannot
+ * tell a modifier from a coordination, so in ja/ko/tr a coordinated over-claim
+ * now passes: "the free overview shows the steps worth considering, and a
+ * detailed report is also available" attributes, though the free tier is still
+ * being credited with recommendedActions. That is the accepted residual of
+ * widening the window at all — separating the two needs a parser, not a
+ * regex — and it is why these three locales stay a reviewed exception rather
+ * than a default. The editorial read, not the guard, is the gate on that shape.
+ *
+ * `.!?` only terminate before whitespace or end-of-string, so a decimal ("3.5")
+ * does not truncate the window. A Turkish ordinal DOES ("3. adım" is a period
+ * followed by a space), which shortens the after-window and can cost a legit
+ * attribution a pass. That direction is fail-closed — a spurious finding a
+ * reviewer resolves, never a silent clear — and shipped ordinals are markdown
+ * list markers at line start, already bounded by the `\n` terminator. CJK
  * `。！？` need no such guard because they are not used mid-token.
  */
 const SENTENCE_END = /[。．！？\n]|[.!?](\s|$)/u;
