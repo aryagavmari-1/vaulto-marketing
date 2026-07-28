@@ -108,6 +108,17 @@ const FREE_MARKERS_EN = [
  * an over-claim. Kept tight so "free ... [200 chars] ... paid" cannot launder a
  * genuine attribution. RTL copy (ar) is stored in logical order, so "before"
  * means the same thing there as everywhere else.
+ *
+ * ARY-1506: the paid tier has TWO names in live copy. The app catalog calls it
+ * the *detailed* report (advisory.yourDetailedReport), and every locale table
+ * below was seeded from that key alone — but marketing copy reaches just as
+ * readily for the *full / complete* report, and English has always carried
+ * `/\bfull report/i` here. English markers are unioned into every locale, so
+ * `full report` was exempt in English and nowhere else: 11 locales wrote the
+ * upsell correctly ("informe completo", "vollständiger Bericht", "完整报告")
+ * and were flagged anyway. A guard that only knows one of the product's two
+ * names for the same artifact reports correct copy as an over-claim, which
+ * costs it the same credibility as missing a real one.
  */
 const PAID_MARKERS_EN = [
   /\bpaid\b/i,
@@ -156,7 +167,7 @@ const LOCALE_PATTERNS = {
   es: {
     free: [/\bgratis\b/i, /\bgratuit/i, /\bsin coste\b/i, /\bsin pagar\b/i],
     paid: [
-      /informes? (detallado|más avanzado|de planificación)/i,
+      /informes? (detallado|completo|más avanzado|de planificación)/i,
       /desbloque/i,
       /\bde pago\b/i,
     ],
@@ -177,7 +188,7 @@ const LOCALE_PATTERNS = {
   fr: {
     free: [/\bgratuit/i, /\bsans payer\b/i, /\bsans frais\b/i],
     paid: [
-      /rapports? (détaillé|plus détaillé|de planification)/i,
+      /rapports? (détaillé|complet|plus détaillé|de planification)/i,
       /déblo(quer|qué)/i,
       /\bpayant/i,
     ],
@@ -198,7 +209,7 @@ const LOCALE_PATTERNS = {
   pt: {
     free: [/\bgratuit/i, /\bgrátis/i, /\bsem custo/i],
     paid: [
-      /relatórios? (detalhado|mais aprofundado|de plane[aj]amento)/i,
+      /relatórios? (detalhado|completo|mais aprofundado|de plane[aj]amento)/i,
       /desbloque/i,
       /\bpago\b/i,
     ],
@@ -219,7 +230,7 @@ const LOCALE_PATTERNS = {
   de: {
     free: [/\bkostenlos/i, /\bkostenfrei/i, /\bgratis\b/i],
     paid: [
-      /(ausführlich|detailliert)\w* bericht/i,
+      /(ausführlich|detailliert|vollständig)\p{L}* bericht/iu,
       /\bplanungsbericht/i,
       /\bfreischalt/i,
       /\bkostenpflichtig/i,
@@ -241,7 +252,7 @@ const LOCALE_PATTERNS = {
   it: {
     free: [/\bgratuit/i, /\bgratis\b/i, /\bsenza costi\b/i],
     paid: [
-      /report (dettagliato|più approfondito|di pianificazione)/i,
+      /report (dettagliato|completo|più approfondito|di pianificazione)/i,
       /\bsblocc/i,
       /\ba pagamento\b/i,
     ],
@@ -283,7 +294,7 @@ const LOCALE_PATTERNS = {
   sv: {
     free: [/\bgratis\b/i, /\bkostnadsfri/i, /\butan kostnad\b/i],
     paid: [
-      /(detaljerad|djupgående)\w* rapport/i,
+      /(detaljerad|djupgående|fullständig)\p{L}* rapport/iu,
       /\bplaneringsrapport/i,
       /lås upp/i,
       /\bbetald\b/i,
@@ -305,7 +316,7 @@ const LOCALE_PATTERNS = {
   pl: {
     free: [/\bbezpłatn/i, /\bdarmow/i, /\bza darmo\b/i],
     paid: [
-      /(szczegółow|pogłębion|planistyczn)\p{L}* raport/iu,
+      /(szczegółow|pogłębion|planistyczn|pełn)\p{L}* raport/iu,
       /raport\p{L}* (szczegółow|planistyczn)/iu,
       /\bodblokuj/i,
       /\bpłatn/i,
@@ -327,7 +338,7 @@ const LOCALE_PATTERNS = {
   tr: {
     free: [/ücretsiz/i, /\bbedava\b/i],
     paid: [
-      /(ayrıntılı|kapsamlı) rapor/i,
+      /(ayrıntılı|kapsamlı|tam) rapor/i,
       /planlama raporu/i,
       /kilidini aç/i,
       /ücretli/i,
@@ -352,7 +363,7 @@ const LOCALE_PATTERNS = {
     // accepts both spellings — a guard that only knows "отчёт" is blind to
     // "отчет", which is the same silent pass one alphabet down.
     paid: [
-      /(подробн|детальн)\p{L}* отч[её]т/iu,
+      /(подробн|детальн|полн)\p{L}* отч[её]т/iu,
       /отч[её]т\p{L}* по планированию/iu,
       /разблокир/i,
       // "бесплатный" CONTAINS "платн", so a bare /платн/ marks every free-tier
@@ -386,6 +397,7 @@ const LOCALE_PATTERNS = {
     // because both spellings are live, the same way hi carries the nukta split.
     paid: [
       /(تقرير|تقارير)\p{L}*\s+\p{L}*مفصّ?ل/u,
+      /(تقرير|تقارير)\p{L}*\s+\p{L}*كامل/u,
       /(تقرير|تقارير)\p{L}*\s+\p{L}*تخطيط/u,
       /مدفوع/,
     ],
@@ -424,7 +436,7 @@ const LOCALE_PATTERNS = {
 
   zh: {
     free: [/免费/, /免費/],
-    paid: [/详细报告/, /規劃報告/, /规划报告/, /解锁/, /付费/],
+    paid: [/详细报告/, /完整报告/, /完整報告/, /規劃報告/, /规划报告/, /解锁/, /付费/],
     caps: {
       riskAreas: [/风险领域/],
       recommendedActions: [/行动计划/, /下一步/, /值得考虑的步骤/, /建议采取的行动/],
@@ -453,7 +465,7 @@ const LOCALE_PATTERNS = {
 
   ko: {
     free: [/무료/],
-    paid: [/상세 보고서/, /계획 보고서/, /잠금 해제/, /유료/],
+    paid: [/상세 보고서/, /전체 보고서/, /계획 보고서/, /잠금 해제/, /유료/],
     caps: {
       riskAreas: [/위험 영역/],
       recommendedActions: [/실행 계획/, /다음 단계/, /고려할 만한 단계/, /권장 조치/],
@@ -471,6 +483,41 @@ const LOCALE_PATTERNS = {
  */
 const ATTRIBUTION_WINDOW = { zh: 40, ja: 40, ko: 40 };
 const ATTRIBUTION_WINDOW_DEFAULT = 90;
+
+/**
+ * Locales whose relative clause PRECEDES the noun it modifies (ARY-1506).
+ *
+ * Attribution is read as "the paid tier is named just before the capability",
+ * which holds in every head-initial language here: "a full report — including
+ * the steps worth considering". Japanese and Korean build the same sentence the
+ * other way round, because the modifier comes first and the head noun last:
+ *
+ *   ja  次に検討する価値のある手順を含む詳細レポートへ進みます
+ *       └── capability ──────────────┘     └ paid ┘
+ *   ko  다음에 고려할 만한 단계를 포함한 전체 보고서로
+ *       └── capability ───────────┘   └── paid ──┘
+ *   tr  …değer adımları da içeren tam rapor ile daha ileri git
+ *       └── capability ──┘            └ paid ┘
+ *
+ * All three hand the capability to the paid report exactly as the English does;
+ * the marker simply lands after the noun instead of before it. A backwards-only
+ * window cannot see that, so it reports correct upsell copy as an over-claim —
+ * and no rewrite satisfies it without making the Japanese ungrammatical.
+ *
+ * The membership test is grammatical, not a list of locales that happened to
+ * fail: these are the left-branching (SOV) languages in the shipped set, where
+ * a relative clause precedes its head noun. Hindi is included on the same
+ * grounds — it builds "…वाली विस्तृत रिपोर्ट" the same way, and is only absent
+ * from the failing set because its current copy happens to name the report
+ * first. Excluding it would leave the identical false positive armed.
+ *
+ * This is a widening, so it is bounded deliberately: the forward window is the
+ * same one used backwards (40 chars for dense scripts, 90 otherwise), and
+ * control 9 in the test file asserts that a paid marker placed BEYOND that
+ * window still fails in every head-final locale. The exemption is "named in the
+ * same breath", not "named anywhere in the file".
+ */
+const HEAD_FINAL = new Set(["ja", "ko", "tr", "hi"]);
 
 /**
  * Reviewed exceptions. Each entry needs an issue id and a reason, so an
@@ -508,6 +555,7 @@ function patternsFor(locale) {
       patterns: [...CAPABILITIES_EN[field], ...(set.caps[field] ?? [])],
     })),
     window: ATTRIBUTION_WINDOW[locale] ?? ATTRIBUTION_WINDOW_DEFAULT,
+    headFinal: HEAD_FINAL.has(locale),
   };
 }
 
@@ -555,10 +603,17 @@ function lineOf(text, offset) {
   return text.slice(0, offset).split("\n").length;
 }
 
-/** True when the noun at `index` is explicitly handed to the paid tier. */
-function attributedToPaid(paragraph, index, paidMarkers, window) {
+/**
+ * True when the capability matched at `index` is explicitly handed to the paid
+ * tier. `headFinal` also reads the window AFTER the noun — see HEAD_FINAL.
+ */
+function attributedToPaid(paragraph, index, length, paidMarkers, window, headFinal) {
   const before = paragraph.slice(Math.max(0, index - window), index);
-  return paidMarkers.some((re) => re.test(before));
+  if (paidMarkers.some((re) => re.test(before))) return true;
+  if (!headFinal) return false;
+  const end = index + length;
+  const after = paragraph.slice(end, end + window);
+  return paidMarkers.some((re) => re.test(after));
 }
 
 const findings = [];
@@ -590,7 +645,17 @@ for (const dir of SCAN_DIRS) {
         for (const re of cap.patterns) {
           const match = new RegExp(re.source, re.flags.replace("g", "")).exec(unit.text);
           if (!match) continue;
-          if (attributedToPaid(unit.text, match.index, set.paid, set.window)) continue;
+          if (
+            attributedToPaid(
+              unit.text,
+              match.index,
+              match[0].length,
+              set.paid,
+              set.window,
+              set.headFinal,
+            )
+          )
+            continue;
           findings.push({
             file: rel,
             locale,
