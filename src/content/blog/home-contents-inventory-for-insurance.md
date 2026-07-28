@@ -63,7 +63,7 @@ Once your contents are in one place, two things become possible that a shoebox o
 
 First, you get a **running total** of what your contents are actually worth, because Vaulto tallies the values you've recorded across the household. That number is your reality check against the sum insured on your policy — the single fastest way to catch under-insurance.
 
-Second, you can run a **free AI insurance overview.** It looks at what you've recorded, estimates value ranges, asks a few questions, and surfaces likely gaps — things that look under-insured, or high-value items that may need specifying separately — along with what a detailed report would add. Think of it as a prompt list for the conversation with your broker or insurer, not a replacement for it. The cover decision is always yours and theirs; the overview just makes sure you walk in knowing where you stand.
+Second, you can run a **free AI insurance overview.** It looks at what you've recorded, estimates value ranges, asks a few questions, and surfaces likely gaps — things that look under-insured, or high-value items that may need specifying separately. Think of it as a prompt list for the conversation with your broker or insurer, not a replacement for it. The cover decision is always yours and theirs; the overview just makes sure you walk in knowing where you stand.
 
 ## Keep it current
 
