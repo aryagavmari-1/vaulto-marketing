@@ -17,6 +17,7 @@
     "kpis": "node scripts/pull-kpis.mjs",
     "kpis:check": "node scripts/check-kpi-creds.mjs",
     "check:claims": "node scripts/check-tier-claims.mjs",
+    "test:claims": "node scripts/check-tier-claims.test.mjs",
     "check:register": "node scripts/check-locale-register.mjs"
   },
   "dependencies": {
