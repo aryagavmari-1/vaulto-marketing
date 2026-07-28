@@ -32,7 +32,7 @@
     },
     {
       "title": "Hur det skyddas",
-      "body": "Dina uppgifter och uppladdade filer är krypterade i vila, och krypteringsnycklarna hanteras i Google Cloud KMS. Varje persons valv är isolerat från andra användare och lösenord är scrypt-hashade. Se <a href=\"/security/\">säkerhetsöversikten</a> för detaljer — inklusive vad vi ännu inte påstår."
+      "body": "Dina uppgifter och uppladdade filer är krypterade i vila. Utöver det krypterar Vaulto de känsliga delarna en gång till i själva appen — namn, beskrivningar, platser och anteckningar, de foton och skanningar du laddar upp och de exakta värderingarna — med nycklar som hanteras i Google Cloud KMS. Varje persons valv är isolerat från andra användare och lösenord är scrypt-hashade. Se <a href=\"/security/\">säkerhetsöversikten</a> för detaljer — inklusive vilka fält som förblir läsbara och vad vi ännu inte påstår."
     }
   ],
   "choices": {

@@ -32,7 +32,7 @@
     },
     {
       "title": "Wie sie geschützt werden",
-      "body": "Deine Daten und hochgeladenen Dateien sind im Ruhezustand verschlüsselt, die Schlüssel werden in Google Cloud KMS verwaltet. Der Tresor jeder Person ist von anderen Nutzern isoliert, und Passwörter werden mit scrypt gehasht. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, was wir noch nicht behaupten."
+      "body": "Deine Daten und hochgeladenen Dateien sind im Ruhezustand verschlüsselt. Zusätzlich verschlüsselt Vaulto die sensiblen Teile noch einmal in der App selbst — Bezeichnungen, Beschreibungen, Orte und Notizen, die Fotos und Scans, die du hochlädst, und die genauen Werte — mit Schlüsseln, die in Google Cloud KMS verwaltet werden. Der Tresor jeder Person ist von anderen Nutzern isoliert, und Passwörter werden mit scrypt gehasht. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, welche Felder lesbar bleiben und was wir noch nicht behaupten."
     }
   ],
   "choices": {

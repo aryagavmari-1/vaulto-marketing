@@ -32,7 +32,7 @@
     },
     {
       "title": "Come vengono protetti",
-      "body": "I tuoi dati e i file caricati sono cifrati a riposo, con le chiavi di cifratura gestite in Google Cloud KMS. La cassaforte di ogni persona è isolata dagli altri utenti e le password sono sottoposte ad hash con scrypt. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — incluso ciò che non dichiariamo ancora."
+      "body": "I tuoi dati e i file caricati sono cifrati a riposo. In più, Vaulto cifra di nuovo le parti sensibili nell'app stessa — nomi, descrizioni, luoghi e note, le foto e le scansioni che carichi e le valutazioni esatte — con chiavi gestite in Google Cloud KMS. La cassaforte di ogni persona è isolata dagli altri utenti e le password sono sottoposte ad hash con scrypt. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — inclusi quali campi restano leggibili e ciò che non dichiariamo ancora."
     }
   ],
   "choices": {

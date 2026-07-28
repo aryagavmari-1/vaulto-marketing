@@ -32,7 +32,7 @@
     },
     {
       "title": "How it's protected",
-      "body": "Your records and uploaded files are encrypted at rest, with encryption keys managed in Google Cloud KMS. Each person's vault is isolated from other users, and passwords are scrypt-hashed. See the <a href=\"/security/\">security overview</a> for specifics — including what we don't yet claim."
+      "body": "Your records and uploaded files are encrypted at rest. On top of that, Vaulto seals the sensitive parts again inside the app itself — item names, descriptions, locations and notes, the photos and scans you upload, and exact valuations — with keys managed in Google Cloud KMS. Each person's vault is isolated from other users, and passwords are scrypt-hashed. See the <a href=\"/security/\">security overview</a> for specifics — including which fields stay readable and what we don't yet claim."
     }
   ],
   "choices": {
