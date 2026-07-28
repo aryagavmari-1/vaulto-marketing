@@ -63,6 +63,31 @@ const PT_BR_LEXICON = [
   ['cadastrar|cadastro', 'registar / registo'],
 ];
 
+/**
+ * Brand agreement (ARY-1432). "Vaulto" is masculine in pt-PT: "o Vaulto",
+ * never "a Vaulto". The ARY-1433 contract in translate.mjs already states this
+ * to the translator, but nothing checked the output, so a blog post shipped
+ * three feminine uses against 26 correct ones elsewhere in the corpus.
+ *
+ * Note the letter lookarounds `word()` adds are load-bearing here: a bare
+ * /a Vaulto/ also matches "cont-a Vaulto" in "a sua conta Vaulto", where the
+ * "a" agrees with "conta" and is perfectly correct. Match the sense, not the
+ * string.
+ *
+ * The second rule catches the knock-on agreement, since fixing only the
+ * article leaves "o Vaulto é gratuita". It lists the forms that actually occur
+ * rather than a generic /\p{L}+a/, which would flag "o Vaulto é uma aplicação".
+ */
+const BRAND_AGREEMENT = [
+  ['a\\s+Vaulto', 'masculine agreement: "o Vaulto"'],
+  [
+    'Vaulto\\s+(?:foi|é|era|será|seria|está|estava)\\s+'
+      + '(?:criada|feita|concebida|desenhada|pensada|construída|projetada|'
+      + 'fundada|lançada|gratuita|segura|privada|nova|própria)',
+    'masculine agreement on the adjective/participle ("o Vaulto foi criado", "é gratuito")',
+  ],
+];
+
 /** `tu`-form address. The house register is formal third person. */
 const TU_FORMS = [
   'teu|tua|teus|tuas|contigo',
@@ -143,6 +168,7 @@ function scan(text, rules) {
 
 const RULES = [
   ...PT_BR_LEXICON,
+  ...BRAND_AGREEMENT,
   ...TU_FORMS.map((t) => [t, 'formal third person ("o seu / a sua", 3rd-person verb)']),
 ];
 

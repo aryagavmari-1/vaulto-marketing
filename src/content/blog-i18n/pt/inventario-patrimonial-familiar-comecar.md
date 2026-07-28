@@ -34,7 +34,7 @@ Um bom inventário dá-lhe:
 - **Preparação para os grandes momentos da vida.** Comprar uma casa, fazer um testamento, ajudar pais idosos ou tratar de uma herança começa sempre por saber o que existe.
 - **Tranquilidade.** A pessoa que guarda os registos da família na cabeça está a um dia mau de ser o único ponto de falha da família. Um inventário elimina esse risco com calma.
 
-Esta é a função principal para a qual a Vaulto foi criada: ajudar a sua família a saber o que possui e a estar preparada, sem a folha de cálculo.
+Esta é a função principal para a qual o Vaulto foi criado: ajudar a sua família a saber o que possui e a estar preparada, sem a folha de cálculo.
 
 ## O que incluir no seu inventário
 
@@ -73,11 +73,11 @@ Aqui está uma forma simples de começar com a **Vaulto**:
 4. **Adicione o que deve.** Introduza o crédito habitação e os empréstimos para que a sua lista mostre património líquido, não apenas um monte de ativos.
 5. **Mantenha-o atualizado.** Reveja-o trimestralmente, ou sempre que algo significativo mudar.
 
-Tudo o que adicionar permanece privado na sua conta, protegido com segurança forte, e a Vaulto é gratuita para começar.
+Tudo o que adicionar permanece privado na sua conta, protegido com segurança forte, e o Vaulto é gratuito para começar.
 
 ## Uma nota rápida sobre privacidade
 
-Um inventário patrimonial familiar contém informação sensível, por isso o local onde o guarda importa. Com a Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, e o cofre de cada pessoa está isolado dos outros utilizadores — um cofre privado sob o seu controlo. Nunca vendemos os seus dados. Também somos deliberadamente honestos sobre o que não afirmamos — nada de chavões como "bank-level" ou "zero-knowledge", apenas as proteções específicas que realmente disponibilizamos. Pode ler exatamente como mantemos tudo seguro na nossa [página de segurança](/pt/security/).
+Um inventário patrimonial familiar contém informação sensível, por isso o local onde o guarda importa. Com o Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, e o cofre de cada pessoa está isolado dos outros utilizadores — um cofre privado sob o seu controlo. Nunca vendemos os seus dados. Também somos deliberadamente honestos sobre o que não afirmamos — nada de chavões como "bank-level" ou "zero-knowledge", apenas as proteções específicas que realmente disponibilizamos. Pode ler exatamente como mantemos tudo seguro na nossa [página de segurança](/pt/security/).
 
 ## Comece pequeno, comece hoje
 
