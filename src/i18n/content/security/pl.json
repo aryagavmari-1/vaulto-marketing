@@ -38,7 +38,7 @@
     },
     {
       "title": "Kontrola dostępu.",
-      "body": "Możesz widzieć i edytować tylko swój własny sejf. Nasze systemy wymuszają to przy każdym żądaniu."
+      "body": "Sejf każdej osoby jest odizolowany od innych użytkowników — możesz widzieć i edytować tylko swój własny."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Twoje dane należą do Ciebie",
-    "body": "Twoje dane należą do Ciebie — w dowolnej chwili wyeksportuj pełną, odczytywalną maszynowo kopię swoich rekordów (JSON, CSV lub PDF) z Ustawień. „Odczytywalny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Masowe pobieranie Twoich oryginalnych plików jest w naszych planach.) Wspiera to Twoje prawo do przenoszenia danych na mocy GDPR — unijnego prawa o ochronie prywatności (artykuł 20), które pozwala zabrać dane ze sobą."
+    "body": "Twoje dane należą do Ciebie — w dowolnej chwili wyeksportuj pełną, odczytywalną maszynowo kopię swoich rekordów (JSON, CSV lub PDF) z Ustawień. „Odczytywalny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Możesz też wyeksportować archiwum ZIP, które oprócz uporządkowanych danych zawiera Twoje oryginalne przesłane zdjęcia i skany.) Wspiera to Twoje prawo do przenoszenia danych na mocy GDPR — unijnego prawa o ochronie prywatności (artykuł 20), które pozwala zabrać dane ze sobą."
   },
   "honesty": {
     "body": "<b>Prosty język, bez przesady.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie w trakcie przesyłania, zaszyfrowaną bazę danych, pliki w prywatnym magazynie, zahaszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że mamy „zero-knowledge” (gdzie nawet my nigdy nie moglibyśmy odblokować Twoich danych), „poziom bankowy” ani żadnej certyfikacji, na którą nie zasłużyliśmy. Eksport danych działa (powyżej). Gdy dodamy szyfrowanie na poziomie aplikacji — dodatkowy zamek stosowany wewnątrz samej aplikacji, na wierzchu powyższego szyfrowania — lub formalny audyt zewnętrzny, w którym niezależna firma zajmująca się bezpieczeństwem nas sprawdza, ta strona to odnotuje.",

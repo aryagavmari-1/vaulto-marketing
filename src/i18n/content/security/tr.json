@@ -38,7 +38,7 @@
     },
     {
       "title": "Erişim kontrolleri.",
-      "body": "Yalnızca kendi kasanı görebilir ve düzenleyebilirsin. Sistemlerimiz bunu her istekte uygular."
+      "body": "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır — yalnızca kendi kasanı görebilir ve düzenleyebilirsin."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Verilerin sana ait",
-    "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makinece okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman Ayarlar'dan dışa aktarın. \"Makinece okunabilir\", başka bir uygulamanın veya hesap tablosunun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Bağımlılık yok, bizi beklemek yok. (Orijinal dosyalarınızın toplu indirilmesi yol haritamızda.) Bu, verilerinizi yanınızda götürmenize olanak tanıyan AB gizlilik yasası (madde 20) olan GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler."
+    "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makinece okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman Ayarlar'dan dışa aktarın. \"Makinece okunabilir\", başka bir uygulamanın veya hesap tablosunun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Bağımlılık yok, bizi beklemek yok. (Ayrıca yapılandırılmış kaydın yanı sıra yüklediğiniz orijinal fotoğraf ve taramaları içeren bir ZIP arşivi de dışa aktarabilirsiniz.) Bu, verilerinizi yanınızda götürmenize olanak tanıyan AB gizlilik yasası (madde 20) olan GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler."
   },
   "honesty": {
     "body": "<b>Sade dil, abartı yok.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamada tutulan dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi. Bilerek \"zero-knowledge\" (verilerinizi bizim bile asla açamayacağımız), \"banka düzeyi\" ya da hak etmediğimiz herhangi bir sertifikayı <b>iddia etmiyoruz</b>. Veri dışa aktarma etkin (yukarıda). Uygulama katmanı şifrelemesi — yukarıdaki şifrelemenin üzerine, uygulamanın kendi içinde uygulanan ek bir kilit — ya da bağımsız bir güvenlik firmasının bizi incelediği resmi bir üçüncü taraf denetimi eklediğimizde, bu sayfa bunu belirtecek.",

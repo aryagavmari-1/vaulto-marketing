@@ -72,7 +72,7 @@ Over a year, those check-ins turn a single snapshot into a trend you can actuall
 
 ## A note on privacy
 
-Your net worth is about as personal as data gets, so keep it somewhere built for sensitive information. With Vaulto, connections are encrypted in transit (TLS/HTTPS), your records sit in a managed database with encryption at rest, and only you can see and edit your own vault. We never sell your data, and we're upfront about what we do and don't claim — see our [security page](/security/) for the specifics.
+Your net worth is about as personal as data gets, so keep it somewhere built for sensitive information. With Vaulto, connections are encrypted in transit (TLS/HTTPS), your records sit in a managed database with encryption at rest, and each person's vault is isolated from other users — a private vault you control. We never sell your data, and we're upfront about what we do and don't claim — see our [security page](/security/) for the specifics.
 
 ## Your number is one snapshot away
 

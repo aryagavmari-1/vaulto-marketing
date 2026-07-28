@@ -38,7 +38,7 @@
     },
     {
       "title": "Controlos de acesso.",
-      "body": "Só pode ver e editar o seu próprio cofre. Os nossos sistemas aplicam isto em todos os pedidos."
+      "body": "O cofre de cada pessoa está isolado dos outros utilizadores — só pode ver e editar o seu."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Os seus dados são seus",
-    "body": "Seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF) quando quiser, nas Configurações. \"Legível por máquina\" significa um arquivo padrão que outro aplicativo ou planilha pode abrir e reutilizar — não um PDF bloqueado. Sem aprisionamento, sem esperar por nós. (O download em massa dos seus arquivos originais está em nosso roteiro.) Isso apoia o seu direito à portabilidade de dados sob a GDPR — a lei de privacidade da UE (artigo 20) que permite que você leve seus dados com você."
+    "body": "Seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF) quando quiser, nas Configurações. \"Legível por máquina\" significa um arquivo padrão que outro aplicativo ou planilha pode abrir e reutilizar — não um PDF bloqueado. Sem aprisionamento, sem esperar por nós. (Você também pode exportar um arquivo ZIP que inclui suas fotos e digitalizações originais junto com o registro estruturado.) Isso apoia o seu direito à portabilidade de dados sob a GDPR — a lei de privacidade da UE (artigo 20) que permite que você leve seus dados com você."
   },
   "honesty": {
     "body": "<b>Linguagem clara, sem exagero.</b> Descrevemos apenas o que é verdade hoje: criptografia em trânsito, um banco de dados criptografado, arquivos guardados em armazenamento privado, senhas com hash e controle de acesso rigoroso. Deliberadamente <b>não</b> afirmamos \"conhecimento zero\" (em que nem mesmo nós poderíamos desbloquear seus dados), \"nível bancário\" nem qualquer certificação que não tenhamos conquistado. A exportação de dados está ativa (acima). Quando adicionarmos criptografia na camada do aplicativo — uma trava extra aplicada dentro do próprio aplicativo, sobre a criptografia acima — ou uma auditoria formal de terceiros, em que uma empresa de segurança independente nos avalia, esta página dirá isso.",

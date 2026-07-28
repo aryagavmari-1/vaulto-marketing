@@ -38,7 +38,7 @@
     },
     {
       "title": "Åtkomstkontroller.",
-      "body": "Du kan bara se och redigera ditt eget valv. Våra system upprätthåller detta vid varje förfrågan."
+      "body": "Varje persons valv är isolerat från andra användare — du kan bara se och redigera ditt eget."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Dina data är dina",
-    "body": "Dina data är dina — exportera en komplett, maskinläsbar kopia av dina poster (JSON, CSV eller PDF) när som helst, från Inställningar. \"Maskinläsbar\" betyder en standardfil som en annan app eller ett kalkylprogram kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Massnedladdning av dina originalfiler finns på vår färdplan.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (artikel 20) som låter dig ta med dig dina data."
+    "body": "Dina data är dina — exportera en komplett, maskinläsbar kopia av dina poster (JSON, CSV eller PDF) när som helst, från Inställningar. \"Maskinläsbar\" betyder en standardfil som en annan app eller ett kalkylprogram kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Du kan även exportera ett ZIP-arkiv som innehåller dina uppladdade originalfoton och skanningar tillsammans med den strukturerade posten.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (artikel 20) som låter dig ta med dig dina data."
   },
   "honesty": {
     "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant idag: kryptering under överföring, en krypterad databas, filer i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi hävdar medvetet <b>inte</b> \"zero-knowledge\" (där inte ens vi någonsin skulle kunna låsa upp dina data), \"banknivå\" eller någon certifiering som vi inte har förtjänat. Dataexport är aktiv (ovan). När vi lägger till kryptering på applagret — ett extra lås som tillämpas inuti själva appen, ovanpå krypteringen ovan — eller en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att ange det.",

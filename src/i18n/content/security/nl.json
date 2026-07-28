@@ -38,7 +38,7 @@
     },
     {
       "title": "Toegangscontrole.",
-      "body": "Je kunt alleen je eigen kluis zien en bewerken. Onze systemen dwingen dit af bij elk verzoek."
+      "body": "De kluis van elke persoon is geïsoleerd van andere gebruikers — je kunt alleen je eigen kluis zien en bewerken."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Je gegevens zijn van jou",
-    "body": "Je gegevens zijn van jou — exporteer wanneer je wilt een volledige, machineleesbare kopie van je records (JSON, CSV of PDF) vanuit Instellingen. \"Machineleesbaar\" betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — geen vergrendelde PDF. Geen lock-in, geen wachten op ons. (Het in bulk downloaden van je originele bestanden staat op onze roadmap.) Dit ondersteunt je recht op gegevensoverdraagbaarheid onder de GDPR — de EU-privacywet (artikel 20) waarmee je je gegevens kunt meenemen."
+    "body": "Je gegevens zijn van jou — exporteer wanneer je wilt een volledige, machineleesbare kopie van je records (JSON, CSV of PDF) vanuit Instellingen. \"Machineleesbaar\" betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — geen vergrendelde PDF. Geen lock-in, geen wachten op ons. (Je kunt ook een ZIP-archief exporteren met je originele geüploade foto's en scans naast het gestructureerde record.) Dit ondersteunt je recht op gegevensoverdraagbaarheid onder de GDPR — de EU-privacywet (artikel 20) waarmee je je gegevens kunt meenemen."
   },
   "honesty": {
     "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, een versleutelde database, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"zero-knowledge\" (waarbij zelfs wij je gegevens nooit zouden kunnen ontgrendelen), \"bankniveau\" of enige certificering die we niet hebben verdiend. Gegevensexport is actief (hierboven). Wanneer we versleuteling op app-niveau toevoegen — een extra slot dat binnen de app zelf wordt toegepast, bovenop de bovenstaande versleuteling — of een formele audit door derden, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",

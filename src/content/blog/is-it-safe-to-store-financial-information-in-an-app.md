@@ -7,7 +7,7 @@ faqs:
   - question: "Is it safe to store financial documents online?"
     answer: "It can be, but safety depends on the specific service, not on \"online\" as a category. The questions that matter are: who can see your data besides you, is it encrypted in transit and at rest, do you have to hand over bank logins, and can you export or delete everything on demand. A service that answers those clearly is usually safer than a paper folder or a file on one laptop. One that's vague about them is the real risk — wherever it's hosted."
   - question: "Can app staff see my financial data?"
-    answer: "That depends entirely on the app, so ask before you trust. With many tools, support staff can view your account contents to help you. With Vaulto, only you can see and edit your own vault — support cannot view your assets, their values, or your files. Look for a plain statement of who can access your data; if a company won't say, treat that as your answer."
+    answer: "That depends entirely on the app, so ask before you trust. With many tools, support staff can view your account contents to help you. With Vaulto, each person's vault is isolated from other users — support cannot view your assets, their values, or your files. Look for a plain statement of who can access your data; if a company won't say, treat that as your answer."
   - question: "Do I have to link my bank account to store financial information?"
     answer: "No. Many finance apps ask you to connect your bank logins so they can pull transactions automatically, but that's a feature choice, not a requirement for keeping records. You can inventory what you own and owe — accounts, property, valuables, documents — by entering or uploading it yourself, without handing any app your banking credentials. If linking accounts makes you uneasy, choose a tool that doesn't require it."
   - question: "Can I delete my financial data later?"
@@ -66,7 +66,7 @@ None of this means spreadsheets are reckless — plenty of families start there.
 
 Vaulto is built for exactly this reader: someone who wants one organized home for what they own and owe, *because* their data is sensitive — not despite it. Here's how it maps to the same five points, using only what we actually do:
 
-- **Who can access it:** only you can see and edit your own vault. Our support team **cannot** view your assets, their values, or your files.
+- **Who can access it:** each person's vault is isolated from other users — it's a private vault you control. Our support team **cannot** view your assets, their values, or your files.
 - **Encryption:** connections are encrypted in transit (TLS/HTTPS), and your records sit in a managed database with encryption at rest.
 - **No bank logins required:** you add what you own and owe yourself — there's no requirement to link live bank credentials to get organized.
 - **Export and delete on your terms:** you can export or permanently delete everything from Settings, at any time. Your data, your exit.
@@ -82,7 +82,7 @@ It can be, but safety depends on the specific service, not on "online" as a cate
 
 ### Can app staff see my financial data?
 
-That depends entirely on the app, so ask before you trust. With many tools, support staff can view your account contents to help you. With Vaulto, only you can see and edit your own vault — support cannot view your assets, their values, or your files. Look for a plain statement of who can access your data; if a company won't say, treat that as your answer.
+That depends entirely on the app, so ask before you trust. With many tools, support staff can view your account contents to help you. With Vaulto, each person's vault is isolated from other users — support cannot view your assets, their values, or your files. Look for a plain statement of who can access your data; if a company won't say, treat that as your answer.
 
 ### Do I have to link my bank account to store financial information?
 

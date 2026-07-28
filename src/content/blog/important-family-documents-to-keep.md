@@ -128,7 +128,7 @@ The safe-and-findable middle has four criteria. Storage should be:
 
 A few originals genuinely must stay paper — wills, some certificates, certain deeds are only valid in original form — so keep those secure and note *where* they live. For everything else, a clear digital record is easier to find and share with the right person.
 
-This is the tension Vaulto was built around. Your records live in a private vault that only you can see and edit — access is enforced on every request — and the files you attach are reached through short-lived, signed links rather than sitting on an open URL. Everything is encrypted in transit and at rest, your password is hashed (we can't read it), and you can export a complete copy of your records or delete anything whenever you want. We don't sell your data. When safe storage means "private, controlled, and reachable by the people who matter," that's the model — and you can read the specifics on our [security page](/security/).
+This is the tension Vaulto was built around. Your records live in a private vault you control — each person's vault is isolated from other users, and support cannot view it — and the files you attach are reached through short-lived, signed links rather than sitting on an open URL. Your records and uploaded files are encrypted in transit and at rest, your password is hashed (we can't read it), and you can export a complete copy of your records or delete anything whenever you want. We don't sell your data. When safe storage means "private, controlled, and reachable by the people who matter," that's the model — and you can read the specifics on our [security page](/security/).
 
 ## Make it a living system, not a one-time sort
 

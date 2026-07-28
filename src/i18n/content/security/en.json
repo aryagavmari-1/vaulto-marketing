@@ -38,7 +38,7 @@
     },
     {
       "title": "Access controls.",
-      "body": "You can only see and edit your own vault. Our systems enforce this on every request."
+      "body": "Each person's vault is isolated from other users — you can only see and edit your own."
     }
   ],
   "promise": {
@@ -60,7 +60,7 @@
   ],
   "yours": {
     "heading": "Your data is yours",
-    "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) anytime, from Settings. Machine-readable means a standard file another app or spreadsheet can open and re-use — not a locked PDF. No lock-in, no waiting on us. (Bulk download of your original uploaded files is on our roadmap.) This supports your right to data portability under GDPR — the EU privacy law (Article 20) that lets you take your data with you."
+    "body": "Your data is yours — export a complete, machine-readable copy of your records (JSON, CSV, or PDF) anytime, from Settings. Machine-readable means a standard file another app or spreadsheet can open and re-use — not a locked PDF. No lock-in, no waiting on us. (You can also export a ZIP archive that includes your original uploaded photos and scans alongside the structured record.) This supports your right to data portability under GDPR — the EU privacy law (Article 20) that lets you take your data with you."
   },
   "honesty": {
     "body": "<b>Plain-language, no overclaim.</b> We describe only what's true today: encryption in transit, an encrypted database, files kept in private storage, hashed passwords, strict access control. We deliberately do <b>not</b> claim \"zero-knowledge\" (where not even we could ever unlock your data), \"bank-level,\" or any certification we haven't earned. Data export is live (above). When we add app-layer encryption — an extra lock applied inside the app itself, on top of the encryption above — or a formal third-party audit, where an independent security firm reviews us, this page will say so.",
