@@ -107,7 +107,8 @@ const FREE_MARKERS_EN = [
  * capability to the paid product, which is legitimate upsell copy rather than
  * an over-claim. Kept tight so "free ... [200 chars] ... paid" cannot launder a
  * genuine attribution. RTL copy (ar) is stored in logical order, so "before"
- * means the same thing there as everywhere else.
+ * means the same thing there as everywhere else. Head-final locales also accept
+ * the marker just AFTER the noun — see HEAD_FINAL_LOCALES.
  */
 const PAID_MARKERS_EN = [
   /\bpaid\b/i,
@@ -473,6 +474,50 @@ const ATTRIBUTION_WINDOW = { zh: 40, ja: 40, ko: 40 };
 const ATTRIBUTION_WINDOW_DEFAULT = 90;
 
 /**
+ * Head-final locales (ARY-1513).
+ *
+ * A before-only window encodes a Latin/analytic word order: "go further with a
+ * full report — including the steps worth considering." Japanese, Korean and
+ * Turkish put the relative clause BEFORE the head noun, so a grammatical
+ * attribution necessarily puts the report AFTER the capability:
+ *
+ *   ja 次に検討する価値のある手順を含む詳細レポートへ進みます。
+ *      └─ capability ─────────────┘   └ 詳細レポート ┘
+ *
+ * `詳細レポート` is the shipped `advisory.yourDetailedReport` string and the
+ * attribution is unambiguous to a reader, but a before-only window scores it as
+ * a free-tier over-claim. The only ways to satisfy that matcher in these
+ * languages are to mangle grammatical Japanese/Korean/Turkish or to allowlist
+ * them, so the window is what gets fixed, not the copy.
+ *
+ * Scoped to these three locales on purpose: everywhere else "free … [gap] …
+ * paid" must keep failing, because in a head-initial language a paid noun that
+ * trails the capability is a later, separate statement rather than the head the
+ * capability was modifying.
+ *
+ * `zh` is deliberately NOT here. It is head-final for relative clauses too, but
+ * its shipped copy does not use that construction and every zh finding to date
+ * has been a genuine over-claim; the window widens when a locale needs it, with
+ * a fixture, not pre-emptively.
+ */
+const HEAD_FINAL_LOCALES = new Set(["ja", "ko", "tr"]);
+
+/**
+ * The after-window never crosses a sentence boundary.
+ *
+ * Head-final attribution is a modifier and its head inside ONE clause, so the
+ * paid noun is always in the same sentence as the capability. Stopping there is
+ * what keeps the widened window from laundering the real defect — "the free
+ * overview shows the steps worth considering. Separately, the detailed report
+ * …" still fails, in ja/ko/tr as everywhere else.
+ *
+ * `[.!?]` only counts as a terminator before whitespace or end-of-string, so a
+ * Turkish ordinal ("3. adım") or a decimal does not truncate the window; CJK
+ * `。！？` need no such guard because they are not used mid-token.
+ */
+const SENTENCE_END = /[。．！？\n]|[.!?](\s|$)/u;
+
+/**
  * Reviewed exceptions. Each entry needs an issue id and a reason, so an
  * allowlist cannot quietly become a way to keep an over-claim.
  * Match is a substring of the offending paragraph.
@@ -508,6 +553,7 @@ function patternsFor(locale) {
       patterns: [...CAPABILITIES_EN[field], ...(set.caps[field] ?? [])],
     })),
     window: ATTRIBUTION_WINDOW[locale] ?? ATTRIBUTION_WINDOW_DEFAULT,
+    headFinal: HEAD_FINAL_LOCALES.has(locale),
   };
 }
 
@@ -555,10 +601,27 @@ function lineOf(text, offset) {
   return text.slice(0, offset).split("\n").length;
 }
 
-/** True when the noun at `index` is explicitly handed to the paid tier. */
-function attributedToPaid(paragraph, index, paidMarkers, window) {
-  const before = paragraph.slice(Math.max(0, index - window), index);
-  return paidMarkers.some((re) => re.test(before));
+/** The run of text up to the first sentence terminator, if there is one. */
+function firstSentence(text) {
+  const m = SENTENCE_END.exec(text);
+  return m ? text.slice(0, m.index) : text;
+}
+
+/**
+ * True when the capability spanning [start, end) is explicitly handed to the
+ * paid tier.
+ *
+ * Everywhere: a paid marker within `window` chars BEFORE it. RTL copy (ar) is
+ * stored in logical order, so "before" means the same thing there.
+ * Head-final locales additionally: a paid marker within `window` chars AFTER
+ * it, in the same sentence — see HEAD_FINAL_LOCALES.
+ */
+function attributedToPaid(paragraph, start, end, paidMarkers, window, headFinal) {
+  const before = paragraph.slice(Math.max(0, start - window), start);
+  if (paidMarkers.some((re) => re.test(before))) return true;
+  if (!headFinal) return false;
+  const after = firstSentence(paragraph.slice(end, end + window));
+  return paidMarkers.some((re) => re.test(after));
 }
 
 const findings = [];
@@ -590,7 +653,12 @@ for (const dir of SCAN_DIRS) {
         for (const re of cap.patterns) {
           const match = new RegExp(re.source, re.flags.replace("g", "")).exec(unit.text);
           if (!match) continue;
-          if (attributedToPaid(unit.text, match.index, set.paid, set.window)) continue;
+          const end = match.index + match[0].length;
+          if (
+            attributedToPaid(unit.text, match.index, end, set.paid, set.window, set.headFinal)
+          ) {
+            continue;
+          }
           findings.push({
             file: rel,
             locale,
