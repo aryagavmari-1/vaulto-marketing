@@ -20,7 +20,7 @@
     },
     {
       "title": "Hoe we het gebruiken",
-      "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten maken die je aanvraagt, en de momentopnamen maken die je kiest om te delen. We verkopen je gegevens niet."
+      "body": "Om het product te leveren: je inventaris en documenten opslaan, je nettovermogen berekenen, de AI-overzichten genereren die je aanvraagt en de exports maken waar je om vraagt. We verkopen je gegevens niet."
     },
     {
       "title": "AI-verwerking &amp; derden",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Delen &amp; toestemming",
-      "body": "Je gegevens worden alleen gedeeld wanneer je daar expliciet toestemming voor geeft — bijvoorbeeld wanneer je een verwijspakket voor een professional samenstelt. Jij kiest wat erin zit, en je kunt het delen op elk moment stoppen."
+      "body": "Vaulto deelt je kluis met niemand namens jou. Wat jij bepaalt is dit: je kunt iemand uitnodigen voor een vastlegsessie om je te helpen items toe te voegen — jij kiest de rol en kunt die persoon verwijderen als je klaar bent. Daarnaast kun je je eigen gegevens en bestanden exporteren en ze zelf aan een professional geven. Een export is een bestand dat je overhandigt, dus zodra je het hebt gedeeld valt het buiten de controle van de kluis."
     },
     {
       "title": "Hoe het wordt beschermd",
@@ -39,7 +39,7 @@
     "title": "Jouw keuzes",
     "items": [
       "De informatie in je kluis inzien en exporteren.",
-      "De toegang van een professional tot een gedeelde momentopname intrekken.",
+      "Iemand verwijderen die je voor een vastlegsessie hebt uitgenodigd.",
       "Verwijdering van je account en gegevens aanvragen — zie <a href=\"/delete-account/\">hoe je je account verwijdert</a>."
     ]
   },

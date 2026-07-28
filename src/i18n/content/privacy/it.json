@@ -20,7 +20,7 @@
     },
     {
       "title": "Come le usiamo",
-      "body": "Per fornire il prodotto: archiviare il tuo inventario e i tuoi documenti, calcolare il tuo patrimonio netto, generare le panoramiche AI che richiedi e creare le istantanee che scegli di condividere. Non vendiamo i tuoi dati."
+      "body": "Per fornire il prodotto: conservare il tuo inventario e i tuoi documenti, calcolare il tuo patrimonio netto, generare le panoramiche IA che richiedi e produrre le esportazioni che chiedi. Non vendiamo i tuoi dati."
     },
     {
       "title": "Elaborazione AI &amp; terze parti",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Condivisione &amp; consenso",
-      "body": "I tuoi dati vengono condivisi solo quando concedi esplicitamente l'autorizzazione — per esempio, quando crei un pacchetto di referral per un professionista. Scegli tu cosa includere e puoi interrompere la condivisione in qualsiasi momento."
+      "body": "Vaulto non condivide il tuo caveau con nessuno per tuo conto. Ciò che controlli è questo: puoi invitare qualcuno a una sessione di acquisizione per aiutarti ad aggiungere elementi — scegli tu il suo ruolo e puoi rimuoverlo quando hai finito. Separatamente, puoi esportare i tuoi dati e file e consegnarli tu stesso a un professionista. Un'esportazione è un file che consegni: una volta condiviso, è fuori dal controllo del caveau."
     },
     {
       "title": "Come vengono protetti",
@@ -39,7 +39,7 @@
     "title": "Le tue scelte",
     "items": [
       "Accedi alle informazioni nella tua cassaforte ed esportale.",
-      "Revoca l'accesso di un professionista a un'istantanea condivisa.",
+      "Rimuovere una persona che hai invitato a una sessione di acquisizione.",
       "Richiedi la cancellazione del tuo account e dei tuoi dati — vedi <a href=\"/delete-account/\">come eliminare il tuo account</a>."
     ]
   },

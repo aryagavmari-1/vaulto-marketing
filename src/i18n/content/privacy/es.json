@@ -20,7 +20,7 @@
     },
     {
       "title": "Cómo lo usamos",
-      "body": "Para ofrecer el producto: guardar tu inventario y documentos, calcular tu patrimonio neto, generar los resúmenes con IA que solicites y crear las capturas que elijas compartir. No vendemos tus datos."
+      "body": "Para prestar el servicio: almacenar tu inventario y tus documentos, calcular tu patrimonio neto, generar los resúmenes de IA que solicites y producir las exportaciones que pidas. No vendemos tus datos."
     },
     {
       "title": "Procesamiento con IA y terceros",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Compartir y consentimiento",
-      "body": "Tus datos solo se comparten cuando lo autorizas explícitamente — por ejemplo, cuando preparas un paquete de derivación para un profesional. Tú eliges qué se incluye y puedes dejar de compartirlo en cualquier momento."
+      "body": "Vaulto no comparte tu caja fuerte con nadie en tu nombre. Lo que tú controlas es esto: puedes invitar a alguien a una sesión de captura para que te ayude a añadir elementos — tú eliges su rol y puedes eliminarlo cuando termines. Aparte de eso, puedes exportar tus propios registros y archivos y entregárselos tú mismo a un profesional. Una exportación es un archivo que tú entregas, así que una vez compartido queda fuera del control de la caja fuerte."
     },
     {
       "title": "Cómo se protege",
@@ -39,7 +39,7 @@
     "title": "Tus opciones",
     "items": [
       "Accede a la información de tu bóveda y expórtala.",
-      "Revoca el acceso de un profesional a una captura compartida.",
+      "Eliminar a alguien a quien invitaste a una sesión de captura.",
       "Solicita la eliminación de tu cuenta y tus datos — consulta <a href=\"/delete-account/\">cómo eliminar tu cuenta</a>."
     ]
   },

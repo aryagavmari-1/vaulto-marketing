@@ -20,7 +20,7 @@
     },
     {
       "title": "How we use it",
-      "body": "To provide the product: store your inventory and documents, calculate your net worth, generate the AI overviews you request, and create the snapshots you choose to share. We do not sell your data."
+      "body": "To provide the product: store your inventory and documents, calculate your net worth, generate the AI overviews you request, and produce the exports you ask for. We do not sell your data."
     },
     {
       "title": "AI processing &amp; third parties",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Sharing &amp; consent",
-      "body": "Your data is only shared when you explicitly grant it — for example, when you build a referral package for a professional. You choose what's included, and you can stop sharing at any time."
+      "body": "Vaulto doesn't share your vault with anyone on your behalf. What you control is this: you can invite someone into a capture session to help you add items — you choose their role, and you can remove them when you're done. Separately, you can export your own records and files and pass them to a professional yourself. An export is a file you hand over, so once you've shared it, it's out of the vault's control."
     },
     {
       "title": "How it's protected",
@@ -39,7 +39,7 @@
     "title": "Your choices",
     "items": [
       "Access and export the information in your vault.",
-      "Revoke a professional's access to a shared snapshot.",
+      "Remove someone you invited to a capture session.",
       "Request deletion of your account and data — see <a href=\"/delete-account/\">how to delete your account</a>."
     ]
   },

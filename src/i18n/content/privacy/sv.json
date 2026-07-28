@@ -20,7 +20,7 @@
     },
     {
       "title": "Hur vi använder den",
-      "body": "För att tillhandahålla produkten: lagra din inventering och dina dokument, beräkna din nettoförmögenhet, skapa de AI-översikter du begär och skapa de ögonblicksbilder du väljer att dela. Vi säljer inte dina uppgifter."
+      "body": "För att tillhandahålla tjänsten: lagra din inventarielista och dina dokument, beräkna din nettoförmögenhet, generera de AI-översikter du begär och skapa de exporter du ber om. Vi säljer inte dina uppgifter."
     },
     {
       "title": "AI-behandling &amp; tredje parter",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Delning &amp; samtycke",
-      "body": "Dina uppgifter delas bara när du uttryckligen godkänner det — till exempel när du skapar ett hänvisningspaket för en professionell rådgivare. Du väljer vad som ska ingå, och du kan när som helst sluta dela."
+      "body": "Vaulto delar inte ditt valv med någon för din räkning. Det du styr över är detta: du kan bjuda in någon till en registreringssession för att hjälpa dig lägga till poster — du väljer rollen och kan ta bort personen när du är klar. Separat kan du exportera dina egna uppgifter och filer och själv lämna dem till en yrkesperson. En export är en fil som du lämnar över, så när du väl har delat den ligger den utanför valvets kontroll."
     },
     {
       "title": "Hur det skyddas",
@@ -39,7 +39,7 @@
     "title": "Dina val",
     "items": [
       "Få åtkomst till och exportera informationen i ditt valv.",
-      "Återkalla en professionell rådgivares åtkomst till en delad ögonblicksbild.",
+      "Ta bort någon du bjudit in till en registreringssession.",
       "Begär radering av ditt konto och dina uppgifter — se <a href=\"/delete-account/\">hur du raderar ditt konto</a>."
     ]
   },

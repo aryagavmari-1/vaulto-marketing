@@ -20,7 +20,7 @@
     },
     {
       "title": "Bunları nasıl kullanıyoruz",
-      "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net servetinizi hesaplamak, talep ettiğiniz AI özetlerini oluşturmak ve paylaşmayı seçtiğiniz anlık görüntüleri hazırlamak. Verilerinizi satmayız."
+      "body": "Ürünü sunmak için: envanterinizi ve belgelerinizi saklamak, net varlığınızı hesaplamak, talep ettiğiniz yapay zekâ özetlerini oluşturmak ve istediğiniz dışa aktarmaları üretmek. Verilerinizi satmıyoruz."
     },
     {
       "title": "AI işleme &amp; üçüncü taraflar",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Paylaşım &amp; onay",
-      "body": "Verileriniz yalnızca açıkça izin verdiğinizde paylaşılır — örneğin bir uzman için yönlendirme paketi hazırladığınızda. Nelerin dahil olacağını siz seçersiniz ve paylaşımı istediğiniz zaman durdurabilirsiniz."
+      "body": "Vaulto, kasanızı sizin adınıza kimseyle paylaşmaz. Sizin denetiminizde olan şudur: öğe eklemenize yardımcı olması için birini bir kayıt oturumuna davet edebilirsiniz — rolünü siz seçersiniz ve işiniz bittiğinde onu çıkarabilirsiniz. Bundan ayrı olarak, kendi kayıtlarınızı ve dosyalarınızı dışa aktarıp bir uzmana kendiniz verebilirsiniz. Dışa aktarma, elden teslim ettiğiniz bir dosyadır; bu nedenle bir kez paylaştığınızda kasanın denetimi dışına çıkar."
     },
     {
       "title": "Nasıl korunuyor",
@@ -39,7 +39,7 @@
     "title": "Seçimleriniz",
     "items": [
       "Kasanızdaki bilgilere erişin ve dışa aktarın.",
-      "Paylaşılan bir anlık görüntüye bir uzmanın erişimini iptal edin.",
+      "Bir kayıt oturumuna davet ettiğiniz kişiyi çıkarın.",
       "Hesabınızın ve verilerinizin silinmesini talep edin — <a href=\"/delete-account/\">hesabınızı nasıl sileceğinize</a> bakın."
     ]
   },

@@ -96,7 +96,7 @@ A few things worth being clear about, because they matter for a job like this:
 
 - **Vaulto doesn't find assets for you.** There's no bank connection, no account aggregation, and no search for hidden or unknown accounts. Finding is the manual work above; Vaulto is the system of record for what your search turns up.
 - **It's a private vault you control.** Support cannot view your vault. You add and edit the records yourself.
-- **You can bring in help without handing over the keys.** If a sibling is helping with the search, you can invite them to add items in a temporary capture session. And when the estate goes to a solicitor or accountant, you can bundle a snapshot to share with them — with your consent, and revocable when you're done.
+- **You can bring in help without handing over the keys.** If a sibling is helping with the search, you can invite them into a capture session to add items — you choose their role, and you can remove them once the job is done. And when the estate goes to a solicitor or accountant, you can export your records and files and hand that over yourself. An export is a file you pass on, not an access grant you can withdraw later, so share it the way you'd share any other estate paperwork.
 - **There's a free AI overview** of will-planning and inheritance considerations if you want a plain-English starting point — general orientation, not legal advice, and never a substitute for a professional.
 
 If you'd like a second opinion on the tax side before you total everything up, our guide to [inheritance tax planning](/blog/inheritance-tax-planning/) covers what to gather.

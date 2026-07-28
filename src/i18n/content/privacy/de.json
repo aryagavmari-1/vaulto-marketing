@@ -20,7 +20,7 @@
     },
     {
       "title": "Wie wir sie verwenden",
-      "body": "Um das Produkt bereitzustellen: dein Inventar und deine Dokumente zu speichern, dein Nettovermögen zu berechnen, die von dir angeforderten KI-Übersichten zu erstellen und die Schnappschüsse zu erzeugen, die du teilen möchtest. Wir verkaufen deine Daten nicht."
+      "body": "Zur Bereitstellung des Produkts: Ihr Inventar und Ihre Dokumente speichern, Ihr Nettovermögen berechnen, die von Ihnen angeforderten KI-Übersichten erstellen und die von Ihnen gewünschten Exporte erzeugen. Wir verkaufen Ihre Daten nicht."
     },
     {
       "title": "KI-Verarbeitung &amp; Dritte",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Teilen &amp; Einwilligung",
-      "body": "Deine Daten werden nur geteilt, wenn du dies ausdrücklich erlaubst — zum Beispiel, wenn du ein Empfehlungspaket für eine Fachperson erstellst. Du entscheidest, was enthalten ist, und du kannst das Teilen jederzeit beenden."
+      "body": "Vaulto teilt Ihren Tresor nicht in Ihrem Namen mit anderen. Unter Ihrer Kontrolle steht Folgendes: Sie können jemanden zu einer Erfassungssitzung einladen, um beim Hinzufügen von Einträgen zu helfen — Sie wählen die Rolle und können die Person wieder entfernen, wenn Sie fertig sind. Unabhängig davon können Sie Ihre eigenen Datensätze und Dateien exportieren und selbst an eine Fachperson weitergeben. Ein Export ist eine Datei, die Sie aushändigen — einmal geteilt, liegt sie außerhalb der Kontrolle des Tresors."
     },
     {
       "title": "Wie sie geschützt werden",
@@ -39,7 +39,7 @@
     "title": "Deine Wahlmöglichkeiten",
     "items": [
       "Auf die Informationen in deinem Tresor zugreifen und sie exportieren.",
-      "Den Zugriff einer Fachperson auf einen geteilten Schnappschuss widerrufen.",
+      "Eine zu einer Erfassungssitzung eingeladene Person wieder entfernen.",
       "Die Löschung deines Kontos und deiner Daten anfordern — siehe <a href=\"/delete-account/\">wie du dein Konto löschst</a>."
     ]
   },

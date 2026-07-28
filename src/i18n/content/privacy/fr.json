@@ -20,7 +20,7 @@
     },
     {
       "title": "Comment nous les utilisons",
-      "body": "Pour fournir le produit : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les aperçus IA que vous demandez et créer les instantanés que vous choisissez de partager. Nous ne vendons pas vos données."
+      "body": "Pour fournir le service : stocker votre inventaire et vos documents, calculer votre patrimoine net, générer les aperçus IA que vous demandez et produire les exports que vous demandez. Nous ne vendons pas vos données."
     },
     {
       "title": "Traitement par l'IA &amp; tiers",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Partage &amp; consentement",
-      "body": "Vos données ne sont partagées que lorsque vous l'autorisez explicitement — par exemple, lorsque vous créez un dossier de transmission pour un professionnel. Vous choisissez ce qui est inclus, et vous pouvez arrêter le partage à tout moment."
+      "body": "Vaulto ne partage votre coffre avec personne en votre nom. Ce que vous contrôlez, c'est ceci : vous pouvez inviter quelqu'un à une session de saisie pour vous aider à ajouter des éléments — vous choisissez son rôle et vous pouvez le retirer quand vous avez terminé. Par ailleurs, vous pouvez exporter vos propres dossiers et fichiers et les remettre vous-même à un professionnel. Un export est un fichier que vous transmettez : une fois partagé, il échappe au contrôle du coffre."
     },
     {
       "title": "Comment elles sont protégées",
@@ -39,7 +39,7 @@
     "title": "Vos choix",
     "items": [
       "Accéder aux informations dans votre coffre-fort et les exporter.",
-      "Révoquer l'accès d'un professionnel à un instantané partagé.",
+      "Retirer une personne que vous avez invitée à une session de saisie.",
       "Demander la suppression de votre compte et de vos données — voir <a href=\"/delete-account/\">comment supprimer votre compte</a>."
     ]
   },

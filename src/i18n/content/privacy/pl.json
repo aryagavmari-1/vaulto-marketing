@@ -20,7 +20,7 @@
     },
     {
       "title": "Jak tego używamy",
-      "body": "Aby zapewniać działanie produktu: przechowywać Twój spis i dokumenty, obliczać wartość netto majątku, generować zamówione przez Ciebie podsumowania AI oraz tworzyć migawki, które chcesz udostępniać. Nie sprzedajemy Twoich danych."
+      "body": "Aby świadczyć usługę: przechowywanie Twojego spisu i dokumentów, obliczanie Twojej wartości netto, generowanie żądanych przez Ciebie podsumowań AI oraz tworzenie eksportów, o które prosisz. Nie sprzedajemy Twoich danych."
     },
     {
       "title": "Przetwarzanie AI &amp; podmioty trzecie",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Udostępnianie &amp; zgoda",
-      "body": "Twoje dane są udostępniane tylko wtedy, gdy wyraźnie na to pozwolisz — na przykład gdy tworzysz pakiet polecający dla specjalisty. Ty wybierasz, co się w nim znajdzie, i możesz w każdej chwili przerwać udostępnianie."
+      "body": "Vaulto nie udostępnia Twojego sejfu nikomu w Twoim imieniu. Kontrolujesz następujące rzeczy: możesz zaprosić kogoś do sesji rejestrowania, aby pomógł Ci dodać pozycje — wybierasz jego rolę i możesz go usunąć, gdy skończysz. Niezależnie od tego możesz wyeksportować własne dane i pliki i samodzielnie przekazać je specjaliście. Eksport to plik, który przekazujesz osobiście, więc po udostępnieniu znajduje się poza kontrolą sejfu."
     },
     {
       "title": "Jak są chronione",
@@ -39,7 +39,7 @@
     "title": "Twoje wybory",
     "items": [
       "Dostęp do informacji w Twoim sejfie i ich eksport.",
-      "Cofnięcie dostępu specjalisty do udostępnionej migawki.",
+      "Usuń osobę zaproszoną do sesji rejestrowania.",
       "Poproś o usunięcie swojego konta i danych — zobacz <a href=\"/delete-account/\">jak usunąć konto</a>."
     ]
   },

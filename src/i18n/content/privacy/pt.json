@@ -20,7 +20,7 @@
     },
     {
       "title": "Como usamos",
-      "body": "Para fornecer o produto: guardar o teu inventário e documentos, calcular o teu património líquido, gerar os resumos de IA que pedes e criar as capturas que escolhes partilhar. Não vendemos os teus dados."
+      "body": "Para fornecer o produto: armazenar o seu inventário e documentos, calcular o seu património líquido, gerar as sínteses de IA que solicitar e produzir as exportações que pedir. Não vendemos os seus dados."
     },
     {
       "title": "Processamento por IA &amp; terceiros",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Partilha &amp; consentimento",
-      "body": "Os teus dados só são partilhados quando dás autorização explícita — por exemplo, quando crias um pacote de referenciação para um profissional. Escolhes o que está incluído e podes deixar de partilhar a qualquer momento."
+      "body": "O Vaulto não partilha o seu cofre com ninguém em seu nome. O que está sob o seu controlo é isto: pode convidar alguém para uma sessão de captura para o ajudar a adicionar itens — escolhe a função dessa pessoa e pode removê-la quando terminar. Separadamente, pode exportar os seus próprios registos e ficheiros e entregá-los você mesmo a um profissional. Uma exportação é um ficheiro que entrega, por isso, depois de partilhado, fica fora do controlo do cofre."
     },
     {
       "title": "Como são protegidos",
@@ -39,7 +39,7 @@
     "title": "As tuas escolhas",
     "items": [
       "Acede e exporta as informações no teu cofre.",
-      "Revoga o acesso de um profissional a uma captura partilhada.",
+      "Remover alguém que convidou para uma sessão de captura.",
       "Pede a eliminação da tua conta e dos teus dados — vê <a href=\"/delete-account/\">como eliminar a tua conta</a>."
     ]
   },
