@@ -61,10 +61,38 @@ let targets = LOCALES.filter((l) => l !== DEFAULT_LOCALE);
 if (onlyLocales) targets = targets.filter((l) => onlyLocales.split(',').includes(l));
 
 // Full language names for the prompt (clearer than ISO codes for the model).
+// `pt` names its VARIANT explicitly: bare "Portuguese" let the model re-roll
+// pt-PT vs pt-BR per group, which is how /privacy ended up European and
+// /security Brazilian on the same site (ARY-1433).
 const LANG_FULL = {
-  es: 'Spanish', fr: 'French', pt: 'Portuguese', de: 'German', it: 'Italian',
+  es: 'Spanish', fr: 'French', pt: 'European Portuguese (pt-PT)', de: 'German', it: 'Italian',
   nl: 'Dutch', zh: 'Simplified Chinese', ja: 'Japanese', ar: 'Arabic',
   hi: 'Hindi', ru: 'Russian', pl: 'Polish', tr: 'Turkish', ko: 'Korean', sv: 'Swedish',
+};
+
+// ---- Per-locale variant + register contract (ARY-1433) ---------------------
+// Appended to the user message for locales where the language has variants or a
+// house register that the generic "natural polite you" rule doesn't pin down.
+// Keep in sync with the brand lexicon in I18N.md ("Locale register & variant").
+const LOCALE_NOTES = {
+  pt: `VARIANT AND REGISTER CONTRACT for Portuguese — this overrides the generic tone rule:
+
+- Write EUROPEAN Portuguese (pt-PT, as written in Portugal). Never Brazilian Portuguese.
+- Address the reader with the FORMAL third person: third-person-singular verbs plus "o seu / a sua"
+  ("Comece grátis", "Saiba o que possui", "os seus dados"). Do NOT use the "tu" forms
+  ("o teu cofre", "podes", "vês", "começa"). Do NOT use "você" as an ordinary subject pronoun —
+  pt-PT omits it ("O que possui", not "O que você possui"). "você"/"si" is fine only where the
+  pronoun is obligatory ("comprova que é você", "além de si").
+- Required lexicon — use the pt-PT term on the left, NEVER the Brazilian term on the right:
+  ficheiro (not arquivo, when it means a computer file), palavra-passe (not senha),
+  utilizador (not usuário), ecrã (not tela), gerir (not gerenciar), registo (not registro),
+  encriptação/encriptado (not criptografia/criptografado), desencriptar (not descriptografar),
+  base de dados (not banco de dados), aplicação (not aplicativo), Definições (not Configurações),
+  folha de cálculo (not planilha), planeamento (not planejamento), contacto (not contato),
+  controlo (not controle), partilhar (not compartilhar), ligação (not conexão),
+  telemóvel (not celular), facto (not fato), equipa (not time), registar (not cadastrar).
+  "arquivo" is allowed ONLY in its pt-PT sense of a physical archive/filing folder.
+- The brand takes masculine agreement: "o Vaulto", never "a Vaulto".`,
 };
 
 // ---- Glossary + guardrails (CEO quality bar, ARY-427) ----------------------
@@ -82,8 +110,9 @@ HARD RULES — follow every one:
 
 async function translateGroupToLocale(group, enObj, locale) {
   const langName = LANG_FULL[locale] || locale;
+  const note = LOCALE_NOTES[locale] ? `\n${LOCALE_NOTES[locale]}\n` : '';
   const user = `Target language: ${langName} (locale code "${locale}", native name "${LOCALE_NAMES[locale] || langName}").
-
+${note}
 Translate the string values of this JSON into ${langName}, obeying every hard rule. Return the JSON object only:
 
 ${JSON.stringify(enObj, null, 2)}`;
@@ -288,8 +317,9 @@ async function translateArticle(en, locale) {
   const langName = LANG_FULL[locale] || locale;
   const payload = { title: en.title, description: en.description, body: en.body };
   if (en.faqs.length) payload.faqs = en.faqs;
+  const note = LOCALE_NOTES[locale] ? `\n${LOCALE_NOTES[locale]}\n` : '';
   const user = `Target language: ${langName} (locale "${locale}", native name "${LOCALE_NAMES[locale] || langName}").
-
+${note}
 Translate this article into ${langName}, obeying every hard rule. Return the JSON object only:
 
 ${JSON.stringify(payload, null, 2)}`;

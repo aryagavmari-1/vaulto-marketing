@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Planeamento",
-    "description": "Uma visão geral gratuita do que está em jogo — heranças, testamentos, questões transfronteiriças e mais — e depois aprofunda ao teu ritmo. Orientação informativa, nunca um substituto do teu profissional."
+    "description": "Uma visão geral gratuita do que está em jogo — heranças, testamentos, questões transfronteiriças e mais — e depois aprofunde ao seu ritmo. Orientação informativa, nunca um substituto do seu profissional."
   },
   "crumbs": {
     "home": "Início",
@@ -10,37 +10,37 @@
   "hero": {
     "eyebrow": "Planeamento e aconselhamento",
     "heading": "Está preparado, antes de a vida o exigir.",
-    "intro": "Começa com uma visão geral gratuita do que está em jogo. Aprofunda quando estiveres pronto, ao teu ritmo — e partilha um resumo claro com o profissional que trata disso. A orientação é informativa; não substitui o teu advogado ou consultor."
+    "intro": "Comece com uma visão geral gratuita do que está em jogo. Aprofunde quando estiver pronto, ao seu ritmo — e partilhe um resumo claro com o profissional que trata disso. A orientação é informativa; não substitui o seu advogado ou consultor."
   },
   "areas": [
     {
       "title": "Planeamento de testamento",
-      "tagline": "Compreende o que um testamento deve abranger e onde podem existir lacunas, antes de te sentares com um advogado."
+      "tagline": "Compreenda o que um testamento deve abranger e onde podem existir lacunas, antes de se sentar com um advogado."
     },
     {
       "title": "Herança",
-      "tagline": "Vê o que passar bens à geração seguinte pode implicar para a tua família — com calma e ao teu ritmo."
+      "tagline": "Veja o que passar bens à geração seguinte pode implicar para a sua família — com calma e ao seu ritmo."
     },
     {
       "title": "Visão financeira geral",
-      "tagline": "Uma leitura clara da tua situação como um todo: o que tens, o que isso significa e o que analisar a seguir."
+      "tagline": "Uma leitura clara da sua situação como um todo: o que tem, o que isso significa e o que analisar a seguir."
     },
     {
       "title": "Transfronteiriço",
-      "tagline": "Tens bens ou família em mais do que um país? Compreende as questões a considerar que isso implica."
+      "tagline": "Tem bens ou família em mais do que um país? Compreenda as questões a considerar que isso implica."
     },
     {
       "title": "Acordo pré-nupcial",
-      "tagline": "Reflete sobre como proteger o que importa a cada um, com clareza e sem pressão."
+      "tagline": "Reflita sobre como proteger o que importa a cada um, com clareza e sem pressão."
     },
     {
       "title": "Divórcio e separação",
       "tagline": "Um ponto de partida discreto e prático para compreender os bens quando as coisas estão a mudar."
     }
   ],
-  "areaCta": "Visão geral gratuita → Planeia quando estiveres pronto",
+  "areaCta": "Visão geral gratuita → Planeie quando estiver pronto",
   "more": {
-    "heading": "Mais áreas que podes explorar"
+    "heading": "Mais áreas que pode explorar"
   },
   "moreAreas": [
     "Imposto sobre heranças",
@@ -50,6 +50,6 @@
     "Financiamento de ativos"
   ],
   "cta": {
-    "label": "Experimenta uma visão geral gratuita"
+    "label": "Experimente uma visão geral gratuita"
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Segurança e Privacidade",
-    "description": "Como o Vaulto protege as informações da sua família: criptografia em trânsito, uma base de dados criptografada, ficheiros em armazenamento privado, palavras-passe com hash e controlo de acesso rigoroso. Em linguagem clara, sem exageros."
+    "description": "Como o Vaulto protege as informações da sua família: encriptação em trânsito, uma base de dados encriptada, ficheiros em armazenamento privado, palavras-passe com hash e controlo de acesso rigoroso. Em linguagem clara, sem exageros."
   },
   "crumbs": {
     "home": "Início",
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Segurança e privacidade",
     "heading": "A informação da sua família, protegida.",
-    "intro": "A Vaulto guarda detalhes sensíveis — o que possui, onde está, os documentos que o comprovam. Levamos essa responsabilidade a sério. Eis exatamente como os protegemos, em linguagem clara."
+    "intro": "O Vaulto guarda detalhes sensíveis — o que possui, onde está, os documentos que o comprovam. Levamos essa responsabilidade a sério. Eis exatamente como os protegemos, em linguagem clara."
   },
   "protect": {
     "heading": "Como protegemos os seus dados"
@@ -18,23 +18,23 @@
   "protections": [
     {
       "title": "Encriptado em trânsito.",
-      "body": "Cada conexão com a Vaulto usa TLS (HTTPS) — a mesma criptografia do ícone de cadeado que você vê em sites de bancos e de compras. Seus dados são embaralhados enquanto viajam entre você e nós, de modo que ninguém no meio do caminho consegue lê-los."
+      "body": "Cada ligação ao Vaulto usa TLS (HTTPS) — a mesma encriptação do ícone de cadeado que vê em sites de bancos e de compras. Os seus dados são cifrados enquanto viajam entre si e nós, para que ninguém pelo caminho os consiga ler."
     },
     {
-      "title": "Criptografado em repouso.",
-      "body": "Seus registros e arquivos enviados são criptografados em repouso — \"em repouso\" significa simplesmente enquanto estão armazenados, não enquanto estão em movimento. Eles ficam em servidores gerenciados profissionalmente e protegidos, e o Vaulto criptografa de novo as partes sensíveis dentro do próprio aplicativo antes de gravá-las: os nomes, as descrições, as localizações e as notas, as fotos e digitalizações que você envia e as avaliações exatas são criptografados com chaves gerenciadas no Google Cloud KMS, em vez de guardadas ao lado dos dados. O bloco abaixo indica quais campos são selados e quais continuam legíveis."
+      "title": "Encriptado em repouso.",
+      "body": "Os seus registos e os ficheiros que carrega são encriptados em repouso — \"em repouso\" significa simplesmente enquanto estão armazenados, não enquanto estão em movimento. Ficam em servidores geridos profissionalmente e protegidos, e o Vaulto volta a encriptar as partes sensíveis dentro da própria aplicação antes de as gravar: os nomes, as descrições, as localizações e as notas, as fotografias e digitalizações que carrega e as avaliações exatas são encriptados com chaves geridas no Google Cloud KMS, em vez de guardados ao lado dos dados. O bloco abaixo indica que campos são selados e quais continuam legíveis."
     },
     {
       "title": "As palavras-passe nunca são guardadas em texto simples.",
-      "body": "Nós aplicamos um \"hash\" à sua senha com um método forte e moderno chamado scrypt — um hash é um embaralhamento de mão única que não pode ser revertido para a sua senha. Nem nós conseguimos lê-la."
+      "body": "Aplicamos um \"hash\" à sua palavra-passe com um método forte e moderno chamado scrypt — um hash é uma transformação de sentido único que não pode ser revertida para a sua palavra-passe. Nem nós a conseguimos ler."
     },
     {
       "title": "Sessões de curta duração.",
-      "body": "O \"token\" de login que comprova que é você expira rápido e é mantido na memória. O token que mantém você conectado fica em um cookie seguro e protegido contra scripts — um pequeno arquivo do navegador que scripts maliciosos em uma página não conseguem ler nem roubar."
+      "body": "O \"token\" de início de sessão que comprova que é você expira rapidamente e é mantido em memória. O token que o mantém com sessão iniciada fica num cookie seguro e protegido contra scripts — um pequeno ficheiro do navegador que scripts maliciosos numa página não conseguem ler nem roubar."
     },
     {
       "title": "Protegido contra abusos.",
-      "body": "Limitamos quantas vezes seguidas o login e outras ações sensíveis podem ser tentados — isso se chama \"limitação de taxa\" (rate-limiting). Bloqueia as tentativas rápidas e repetidas em que os ataques automatizados se baseiam."
+      "body": "Limitamos quantas vezes seguidas o início de sessão e outras ações sensíveis podem ser tentados — isto chama-se \"limitação de taxa\" (rate-limiting). Bloqueia as tentativas rápidas e repetidas em que os ataques automatizados se baseiam."
     },
     {
       "title": "Controlos de acesso.",
@@ -60,10 +60,10 @@
   ],
   "yours": {
     "heading": "Os seus dados são seus",
-    "body": "Seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF) quando quiser, nas Configurações. \"Legível por máquina\" significa um arquivo padrão que outro aplicativo ou planilha pode abrir e reutilizar — não um PDF bloqueado. Sem aprisionamento, sem esperar por nós. (Você também pode exportar um arquivo ZIP que inclui suas fotos e digitalizações originais junto com o registro estruturado.) Isso apoia o seu direito à portabilidade de dados sob a GDPR — a lei de privacidade da UE (artigo 20) que permite que você leve seus dados com você."
+    "body": "Os seus dados são seus — exporte uma cópia completa e legível por máquina dos seus registos (JSON, CSV ou PDF) quando quiser, nas Definições. \"Legível por máquina\" significa um ficheiro padrão que outra aplicação ou folha de cálculo consegue abrir e reutilizar — não um PDF bloqueado. Sem dependência de nós, sem esperas. (Também pode exportar um ficheiro ZIP que inclui as suas fotografias e digitalizações originais, juntamente com o registo estruturado.) Isto apoia o seu direito à portabilidade de dados ao abrigo do RGPD — a lei de privacidade da UE (artigo 20) que lhe permite levar os seus dados consigo."
   },
   "honesty": {
-    "body": "<b>Linguagem clara, sem exagero.</b> Descrevemos apenas o que é verdade hoje: criptografia em trânsito, criptografia em repouso aplicada pelo próprio aplicativo com chaves gerenciadas no Google Cloud KMS, arquivos guardados em armazenamento privado, senhas com hash e controle de acesso rigoroso. Deliberadamente <b>não</b> afirmamos criptografia \"de ponta a ponta\" nem \"de conhecimento zero\": as chaves são nossas, então podemos descriptografar seus registros para prestar o serviço e as funções de IA que você pedir. Também não afirmamos \"nível bancário\" nem qualquer certificação que não tenhamos conquistado. Veja o que é selado e o que não é. Criptografados: os nomes, as descrições, as localizações e as notas que você escreve, as avaliações exatas e os arquivos que você envia. Legíveis para nossos servidores: os campos estruturados ao redor, para que seu cofre continue podendo ser ordenado sem abrir as partes seladas — coisas como a categoria, as datas e as etiquetas, a moeda, o país, uma instituição ou número de série, o preço de compra, a quem um item pertence e uma faixa de valor aproximada. A exportação de dados está ativa (acima). Quando adicionarmos uma auditoria formal de terceiros, em que uma empresa de segurança independente nos avalia, esta página dirá isso.",
+    "body": "<b>Linguagem clara, sem exageros.</b> Descrevemos apenas o que é verdade hoje: encriptação em trânsito, encriptação em repouso aplicada pela própria aplicação com chaves geridas no Google Cloud KMS, ficheiros guardados em armazenamento privado, palavras-passe com hash e controlo de acesso rigoroso. Deliberadamente <b>não</b> afirmamos encriptação \"de ponta a ponta\" nem \"de conhecimento zero\": as chaves são nossas, por isso podemos desencriptar os seus registos para prestar o serviço e as funcionalidades de IA que pedir. Também não afirmamos \"nível bancário\" nem qualquer certificação que não tenhamos obtido. Veja o que é selado e o que não é. Encriptados: os nomes, as descrições, as localizações e as notas que escreve, as avaliações exatas e os ficheiros que carrega. Legíveis para os nossos servidores: os campos estruturados em redor, para que o seu cofre continue a poder ser ordenado sem abrir as partes seladas — coisas como a categoria, as datas e as etiquetas, a moeda, o país, uma instituição ou número de série, o preço de compra, a quem pertence um item e um intervalo de valor aproximado. A exportação de dados está ativa (acima). Quando acrescentarmos uma auditoria formal independente, em que uma empresa de segurança externa nos avalia, esta página passará a dizê-lo.",
     "contact": "Para questões de privacidade ou segurança, contacte"
   }
 }

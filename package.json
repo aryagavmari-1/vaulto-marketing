@@ -9,14 +9,15 @@
     "og": "node scripts/build-og.mjs",
     "claims:check": "node scripts/check-claims.mjs",
     "claims:sync": "node scripts/claims/sync-proof-table.mjs",
-    "prebuild": "node scripts/check-claims.mjs && node scripts/build-og.mjs",
+    "prebuild": "node scripts/check-claims.mjs && node scripts/check-locale-register.mjs && node scripts/build-og.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
     "new:post": "node scripts/new-post.mjs",
     "kpis": "node scripts/pull-kpis.mjs",
     "kpis:check": "node scripts/check-kpi-creds.mjs",
-    "check:claims": "node scripts/check-tier-claims.mjs"
+    "check:claims": "node scripts/check-tier-claims.mjs",
+    "check:register": "node scripts/check-locale-register.mjs"
   },
   "dependencies": {
     "astro": "^5.6.1",

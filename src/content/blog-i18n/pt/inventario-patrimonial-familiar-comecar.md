@@ -6,7 +6,7 @@ ref: "what-is-a-family-asset-inventory"
 locale: "pt"
 slug: "inventario-patrimonial-familiar-comecar"
 ---
-Se algo mudasse amanhã — uma doença, uma mudança de casa, uma morte na família — as pessoas de quem você gosta conseguiriam responder a uma pergunta simples: *o que temos, e onde está a prova?*
+Se algo mudasse amanhã — uma doença, uma mudança de casa, uma morte na família — as pessoas de quem gosta conseguiriam responder a uma pergunta simples: *o que temos, e onde está a prova?*
 
 Para a maioria das famílias, a resposta honesta é "não facilmente." Os detalhes ficam espalhados por bancos, gavetas, caixas de email e pela memória de um dos pais. Um inventário patrimonial familiar resolve isso. Ele transforma um quadro disperso numa lista clara em que todos podem confiar.
 
@@ -18,11 +18,11 @@ Um inventário patrimonial familiar é um registo único e organizado de tudo o 
 
 Pense nele como uma imagem clara composta por três partes:
 
-- **O que você possui** — imóveis, contas, investimentos, veículos e bens de valor.
-- **O que você deve** — o crédito habitação e quaisquer empréstimos, para que a lista mostre a sua posição *líquida*.
+- **O que possui** — imóveis, contas, investimentos, veículos e bens de valor.
+- **O que deve** — o crédito habitação e quaisquer empréstimos, para que a lista mostre a sua posição *líquida*.
 - **A prova** — escrituras, apólices, extratos e fotografias que sustentam cada item.
 
-Não é um orçamento nem uma app bancária. Um orçamento acompanha o que você gasta todos os meses. Um inventário responde a uma pergunta mais profunda: *o que é que a nossa família realmente tem, e outra pessoa conseguiria encontrar isso se precisasse?*
+Não é um orçamento nem uma app bancária. Um orçamento acompanha o que gasta todos os meses. Um inventário responde a uma pergunta mais profunda: *o que é que a nossa família realmente tem, e outra pessoa conseguiria encontrar isso se precisasse?*
 
 ## Porque é que todas as famílias precisam de um
 
@@ -50,10 +50,10 @@ Contas bancárias, poupanças, pensões e investimentos. Não precisa de saldos 
 Testamentos, escrituras, apólices de seguro, certificados e extratos. Estes são os comprovativos que transformam um número em algo sobre o qual a sua família pode agir.
 
 ### 4. Obrigações
-O crédito habitação e quaisquer empréstimos. Listar o que você deve é o que transforma um monte de ativos numa imagem honesta do património líquido.
+O crédito habitação e quaisquer empréstimos. Listar o que deve é o que transforma um monte de ativos numa imagem honesta do património líquido.
 
 ### 5. As pessoas e os detalhes
-Onde está cada item, quem mais sabe sobre ele e quaisquer números de conta ou de referência. Este é o contexto que torna a lista utilizável por alguém além de você.
+Onde está cada item, quem mais sabe sobre ele e quaisquer números de conta ou de referência. Este é o contexto que torna a lista utilizável por alguém além de si.
 
 ## Guarde a prova, não apenas o número
 
@@ -68,9 +68,9 @@ Pode começar com papel ou com uma folha de cálculo. O problema é que ambos fi
 Aqui está uma forma simples de começar com a **Vaulto**:
 
 1. **Comece com uma divisão ou uma categoria.** A cozinha, o arquivo, ou apenas as suas contas bancárias. Pequeno está ótimo.
-2. **Salte a parte de escrever.** Tire uma fotografia a um documento ou a uma divisão e a Vaulto lê-o — você não precisa de escrever tudo. Depois confirma, edita ou rejeita o que ela sugere.
+2. **Salte a parte de escrever.** Tire uma fotografia a um documento ou a uma divisão e o Vaulto lê-o — não precisa de escrever tudo. Depois confirma, edita ou rejeita o que ele sugere.
 3. **Anexe os comprovativos.** Guarde apólices, escrituras e extratos com os itens a que pertencem, para que a evidência e o registo fiquem juntos.
-4. **Adicione o que você deve.** Introduza o crédito habitação e os empréstimos para que a sua lista mostre património líquido, não apenas um monte de ativos.
+4. **Adicione o que deve.** Introduza o crédito habitação e os empréstimos para que a sua lista mostre património líquido, não apenas um monte de ativos.
 5. **Mantenha-o atualizado.** Reveja-o trimestralmente, ou sempre que algo significativo mudar.
 
 Tudo o que adicionar permanece privado na sua conta, protegido com segurança forte, e a Vaulto é gratuita para começar.
@@ -81,6 +81,6 @@ Um inventário patrimonial familiar contém informação sensível, por isso o l
 
 ## Comece pequeno, comece hoje
 
-Um inventário patrimonial familiar não é um projeto de fim de semana que tem de terminar de uma só vez. É um registo vivo que se torna mais valioso cada vez que você lhe acrescenta algo. Comece hoje com uma categoria e deixe-o crescer.
+Um inventário patrimonial familiar não é um projeto de fim de semana que tem de terminar de uma só vez. É um registo vivo que se torna mais valioso cada vez que lhe acrescenta algo. Comece hoje com uma categoria e deixe-o crescer.
 
 **[Comece o seu cofre — grátis](https://app.myvaulto.com)** e registe os seus primeiros itens em poucos minutos.
