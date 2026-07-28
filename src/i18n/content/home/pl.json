@@ -80,7 +80,7 @@
       "Szyfrowane podczas przesyłania (TLS); pliki w prywatnej przestrzeni",
       "Hasła są haszowane — nawet my nie możemy ich odczytać",
       "Krótkotrwałe sesje chronione przez przeglądarkę",
-      "Możesz zobaczyć tylko swój własny sejf",
+      "Sejf każdej osoby jest odizolowany od innych użytkowników",
       "Nigdy nie sprzedajemy ani nie udostępniamy Twoich danych"
     ]
   },

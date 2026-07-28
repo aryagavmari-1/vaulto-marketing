@@ -80,7 +80,7 @@
       "Chiffré en transit (TLS) ; fichiers dans un stockage privé",
       "Mots de passe hachés — même nous ne pouvons pas les lire",
       "Sessions de courte durée, protégées par le navigateur",
-      "Vous ne pouvez voir que votre propre coffre-fort",
+      "Le coffre-fort de chaque personne est isolé des autres utilisateurs",
       "Nous ne vendons ni ne partageons jamais vos données"
     ]
   },

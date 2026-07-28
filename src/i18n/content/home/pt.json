@@ -80,7 +80,7 @@
       "Encriptado em trânsito (TLS); ficheiros em armazenamento privado",
       "Palavras-passe com hash — nem nós as conseguimos ler",
       "Sessões de curta duração, protegidas pelo navegador",
-      "Só pode ver o seu próprio cofre",
+      "O cofre de cada pessoa está isolado dos outros utilizadores",
       "Nunca vendemos nem partilhamos os seus dados"
     ]
   },

@@ -80,7 +80,7 @@
       "Encrypted in transit (TLS); files in private storage",
       "Passwords hashed — even we can't read them",
       "Short-lived, browser-protected sessions",
-      "You can only ever see your own vault",
+      "Each person's vault is isolated from other users",
       "We never sell or share your data"
     ]
   },
