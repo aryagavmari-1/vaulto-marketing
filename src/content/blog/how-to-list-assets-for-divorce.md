@@ -84,7 +84,7 @@ That's the practical job a purpose-built vault does well. In **Vaulto**, you can
 
 *Build your asset list privately in [Vaulto](/) — free to start.*
 
-Before that meeting, it can also help to get oriented. Vaulto includes a **free AI overview for divorce and separation** that flags the risk areas worth thinking about and gives rough estimate ranges — a plain-English starting point to take *to* your solicitor. It's general orientation, not advice, and never a substitute for a professional.
+Before that meeting, it can also help to get oriented. Vaulto includes a **free AI overview for divorce and separation** that flags where your protection has gaps and gives rough estimate ranges — a plain-English starting point to take *to* your solicitor. It's general orientation, not advice, and never a substitute for a professional.
 
 ### How Vaulto fits (and what it doesn't do)
 

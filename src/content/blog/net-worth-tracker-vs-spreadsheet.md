@@ -45,7 +45,7 @@ A vault like Vaulto is built for the job a spreadsheet is stretched into. Here's
 - **The total is kept for you, and each asset keeps its own history.** Vaulto totals your household net worth — what you own minus what you owe — from your current entries, and breaks it down by category on the dashboard, so the subtraction is never yours to redo. Each asset also keeps a **valuation history**, so when you revalue the house or the car you can see how that item has moved, without building a single chart yourself.
 - **Evidence in one place.** Alongside the numbers, there's a document registry for things like wills, deeds, and statements, plus per-asset evidence files. It's not just "what it's worth" — it's the proof and the *where is it*.
 - **Capture from your phone.** Snap a photo of an item or a document and the AI drafts a record for you to confirm or edit. A spreadsheet simply can't do that, and it's the difference between staying current and giving up.
-- **A free life-event overview.** An AI overview flags estimate ranges and risk areas across the different areas of your financial life, tied to what you've actually logged — a prompt to look where you haven't, not financial advice.
+- **A free life-event overview.** An AI overview flags estimate ranges and where your protection has gaps across the different areas of your financial life, tied to what you've actually logged — a prompt to look where you haven't, not financial advice.
 - **Readiness for your family.** Because it's one organised source of truth rather than a private file, it answers the question a spreadsheet can't: *if something happened, would my family know what we own and where to look?*
 
 **The honest caveat — no auto-sync.** Vaulto does **not** link, aggregate, or sync your bank and investment accounts, and it doesn't show live balances. Values are entered and updated by you, by hand — exactly like a spreadsheet. The upgrade is in *structure, evidence, capture, and readiness*, not in numbers that update themselves. If a tool promises to log into your accounts and keep balances live, that's a different trade-off — and not the one Vaulto makes.
@@ -61,7 +61,7 @@ A vault like Vaulto is built for the job a spreadsheet is stretched into. Here's
 | **Mobile capture** | Manual typing only | Photo an item or document → AI drafts a record you confirm |
 | **Account auto-sync** | Manual entry | Manual entry (no account linking, by design) |
 | **Family-readiness** | Personal file on one device | One organised source of truth your family could use |
-| **Advisory** | None | Free AI overview: estimate ranges + risk areas |
+| **Advisory** | None | Free AI overview: estimate ranges + gaps in protection |
 
 Notice the auto-sync row: **both are manual.** That's deliberate — the vault's advantage isn't automation, it's everything *around* the numbers.
 

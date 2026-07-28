@@ -76,7 +76,7 @@ Two things Vaulto deliberately doesn't do. It doesn't connect to your bank or an
 
 **[Leave your family the map, not your passwords — build the record in a private vault you control. Vaulto is free to start.](https://app.myvaulto.com)**
 
-If you'd like a rough sense of where the gaps are before you start, the free AI overview gives estimate ranges, risk areas, and the cost of leaving things as they are.
+If you'd like a rough sense of where the gaps are before you start, the free AI overview gives estimate ranges, gaps in your protection, and the cost of leaving things as they are.
 
 ## A short list of what not to do
 

@@ -119,7 +119,7 @@ Because the mechanics matter more than adjectives on a topic like this, here is 
 - **There is no executor role and no access granted on death.** Vaulto doesn't hold a list of your executors and won't release anything to anyone automatically. Legacy readiness here means **export and findability**: you export everything as a ZIP archive — your records *and* the original photos and scans, with JSON, CSV, and PDF record exports available too — and you tell a trusted person where that pack is.
 - **Collaboration is capture-session scoped.** You can invite someone into a shared capture session as a capturer, reviewer, or viewer to help you add items. That is not joint access to your vault.
 - **It's a private vault you control.** Each person's vault is isolated from other users, and our support team cannot view your vault.
-- **There's a free AI estate and inheritance overview** giving estimate ranges, risk areas, and the cost of leaving things as they are — general orientation, not legal or tax advice, and never a substitute for a professional.
+- **There's a free AI estate and inheritance overview** giving estimate ranges, where your protection has gaps, and the cost of leaving things as they are — general orientation, not legal or tax advice, and never a substitute for a professional.
 
 None of that is a will, a probate service, or legal advice. It's the thing that makes someone else's ten-step list survivable. If you want the rest of the picture, our [will planning checklist](/blog/will-planning-checklist/) covers the legal side, and [what your family needs to know if something happens to you](/blog/what-your-family-needs-to-know/) covers the information beyond the money.
 

@@ -64,7 +64,7 @@ The genuinely hard part isn't the rate — it's the *valuation*. Working out wha
 
 You can't estimate inheritance tax until you know the estate value — so the practical first step is simply getting everything you own and owe into one place. That's the job [Vaulto](https://app.myvaulto.com) is built for.
 
-An inventory of your assets and liabilities in one private place gives you a **single-household net-worth figure** — the number every inheritance-tax estimate is drawn from. From there, the **free AI inheritance-tax overview** gives you an **estimate range** plus the **risk areas that matter** — so you can see roughly where you stand, using the thresholds and rules for where you live. A document registry keeps the deeds, policies, and valuations noted alongside the records they belong to, so the paperwork isn't a scramble later.
+An inventory of your assets and liabilities in one private place gives you a **single-household net-worth figure** — the number every inheritance-tax estimate is drawn from. From there, the **free AI inheritance-tax overview** gives you an **estimate range** plus **where your protection has gaps** — so you can see roughly where you stand, using the thresholds and rules for where you live. A document registry keeps the deeds, policies, and valuations noted alongside the records they belong to, so the paperwork isn't a scramble later.
 
 To be clear about what this is: it's an **estimate to help you get organized, not a tax calculation, a filing, or regulated advice** — we're not tax advisers. It's the "am I anywhere near the threshold, and roughly how much?" picture, so you can walk into any conversation with a solicitor or accountant already prepared rather than starting from scratch.
 
