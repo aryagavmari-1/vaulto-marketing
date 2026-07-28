@@ -54,6 +54,7 @@ const FIXTURES = {
   en: {
     free: "Your free overview",
     paid: "Your detailed report",
+    paidFull: "A full report",
     caps: {
       riskAreas: "Risk areas",
       recommendedActions: "Your action plan",
@@ -64,6 +65,7 @@ const FIXTURES = {
   es: {
     free: "Tu resumen gratuito",
     paid: "Tu informe detallado",
+    paidFull: "Un informe completo",
     caps: {
       riskAreas: "Áreas de riesgo",
       recommendedActions: "Tu plan de acción",
@@ -74,6 +76,7 @@ const FIXTURES = {
   fr: {
     free: "Votre aperçu gratuit",
     paid: "Votre rapport détaillé",
+    paidFull: "Un rapport complet",
     caps: {
       riskAreas: "Zones de risque",
       recommendedActions: "Votre plan d'action",
@@ -84,6 +87,7 @@ const FIXTURES = {
   pt: {
     free: "A sua visão geral gratuita",
     paid: "O seu relatório detalhado",
+    paidFull: "Um relatório completo",
     caps: {
       riskAreas: "Áreas de risco",
       recommendedActions: "O seu plano de ação",
@@ -94,6 +98,7 @@ const FIXTURES = {
   de: {
     free: "Ihre kostenlose Übersicht",
     paid: "Ihr ausführlicher Bericht",
+    paidFull: "Ein vollständiger Bericht",
     caps: {
       riskAreas: "Risikobereiche",
       recommendedActions: "Ihr Aktionsplan",
@@ -104,6 +109,7 @@ const FIXTURES = {
   it: {
     free: "La tua panoramica gratuita",
     paid: "Il tuo report dettagliato",
+    paidFull: "Un report completo",
     caps: {
       riskAreas: "Aree di rischio",
       recommendedActions: "Il tuo piano d'azione",
@@ -124,6 +130,7 @@ const FIXTURES = {
   zh: {
     free: "您的免费概览",
     paid: "您的详细报告",
+    paidFull: "完整报告",
     caps: {
       riskAreas: "风险领域",
       recommendedActions: "您的行动计划",
@@ -144,6 +151,7 @@ const FIXTURES = {
   ar: {
     free: "نظرتك العامة المجانية",
     paid: "تقريرك المفصّل",
+    paidFull: "تقرير كامل",
     caps: {
       riskAreas: "مجالات الخطر",
       recommendedActions: "خطة عملك",
@@ -164,6 +172,7 @@ const FIXTURES = {
   ru: {
     free: "Ваш бесплатный обзор",
     paid: "Ваш подробный отчёт",
+    paidFull: "Полный отчёт",
     caps: {
       riskAreas: "Зоны риска",
       recommendedActions: "Ваш план действий",
@@ -174,6 +183,7 @@ const FIXTURES = {
   pl: {
     free: "Twój bezpłatny przegląd",
     paid: "Twój szczegółowy raport",
+    paidFull: "Pełny raport",
     caps: {
       riskAreas: "Obszary ryzyka",
       recommendedActions: "Twój plan działania",
@@ -184,6 +194,7 @@ const FIXTURES = {
   tr: {
     free: "Ücretsiz genel bakışınız",
     paid: "Ayrıntılı raporunuz",
+    paidFull: "Tam rapor",
     caps: {
       riskAreas: "Risk alanları",
       recommendedActions: "Eylem planınız",
@@ -194,6 +205,7 @@ const FIXTURES = {
   ko: {
     free: "무료 개요",
     paid: "상세 보고서",
+    paidFull: "전체 보고서",
     caps: {
       riskAreas: "위험 영역",
       recommendedActions: "나의 실행 계획",
@@ -204,6 +216,7 @@ const FIXTURES = {
   sv: {
     free: "Din kostnadsfria översikt",
     paid: "Din detaljerade rapport",
+    paidFull: "En fullständig rapport",
     caps: {
       riskAreas: "Riskområden",
       recommendedActions: "Din handlingsplan",
@@ -430,6 +443,83 @@ for (const [locale, fx] of Object.entries(FIXTURES)) {
     status === 1,
     `exit ${status} — a paid marker probably matches inside "${fx.free}"`,
   );
+}
+
+// ---------------------------------------------------------------------------
+// 9. ARY-1506: the paid tier's SECOND name suppresses, and is not inert.
+//
+//    The guard was seeded from advisory.yourDetailedReport only, so it knew the
+//    "detailed" report and not the "full/complete" one. English carried
+//    /\bfull report/i and English markers union into every locale, so the same
+//    upsell was exempt in English and flagged in eleven translations. Each new
+//    marker is asserted to (a) suppress a real attribution and (b) be the thing
+//    doing the suppressing — a pattern that matches nothing would pass (a)
+//    vacuously if the noun alone were already clean, which is what shipped
+//    inert in ARY-1381 twice.
+// ---------------------------------------------------------------------------
+console.log("9. The 'full report' paid marker suppresses, per locale");
+for (const [locale, fx] of Object.entries(FIXTURES)) {
+  if (!fx.paidFull) continue;
+  const noun = fx.caps.riskAreas;
+  const suppressed = run({
+    [fixturePath(locale, "neg-paidfull")]: `${fx.free}. ${fx.paidFull}: ${noun}.\n`,
+  });
+  check(
+    `${locale} "full report" attribution is allowed`,
+    suppressed.status === 0,
+    `exit ${suppressed.status}`,
+  );
+  // Non-vacuity: the identical sentence WITHOUT the marker must still fire.
+  const bare = run({ [fixturePath(locale, "pos-nofull")]: `${fx.free}. ${noun}.\n` });
+  check(
+    `${locale} "full report" marker is what suppressed it`,
+    bare.status === 1,
+    `exit ${bare.status} — the noun alone is already clean, so step 9 proved nothing`,
+  );
+}
+
+// ---------------------------------------------------------------------------
+// 10. ARY-1506: head-final attribution, bounded.
+//
+//     ja/ko/tr/hi put the relative clause before its head noun, so the paid
+//     marker lands AFTER the capability. Three paired assertions keep that from
+//     becoming a blanket exemption:
+//       a) head-final locales accept a marker immediately after the noun;
+//       b) they still FAIL when it sits beyond the attribution window;
+//       c) head-initial locales do NOT accept a trailing marker at all.
+// ---------------------------------------------------------------------------
+console.log("10. Head-final attribution is directional and bounded");
+{
+  const HEAD_FINAL = ["ja", "ko", "tr", "hi"];
+  const filler = ` ${"situation ".repeat(20)}`; // >90 chars, no markers
+  for (const [locale, fx] of Object.entries(FIXTURES)) {
+    const noun = fx.caps.riskAreas;
+    const trailing = run({
+      [fixturePath(locale, "trailing")]: `${fx.free}. ${noun} ${fx.paid}.\n`,
+    });
+    if (HEAD_FINAL.includes(locale)) {
+      check(
+        `${locale} (head-final) accepts a trailing paid marker`,
+        trailing.status === 0,
+        `exit ${trailing.status}`,
+      );
+      const far = run({
+        [fixturePath(locale, "trailing-far")]:
+          `${fx.free}. ${noun}${filler}${fx.paid}.\n`,
+      });
+      check(
+        `${locale} still fails when the marker is beyond the window`,
+        far.status === 1,
+        `exit ${far.status} — the forward window is not bounded`,
+      );
+    } else {
+      check(
+        `${locale} (head-initial) rejects a trailing paid marker`,
+        trailing.status === 1,
+        `exit ${trailing.status} — forward attribution leaked into a head-initial locale`,
+      );
+    }
+  }
 }
 
 console.log(
