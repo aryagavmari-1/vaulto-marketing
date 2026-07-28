@@ -26,6 +26,22 @@ const ISSUE_ID = '6011fd4e-1802-4d4e-b9cb-e114abed6aab' // ARY-23
 const DOC_KEY = 'positioning-deck'
 const OUT = join(dirname(fileURLToPath(import.meta.url)), 'banned-claims.json')
 
+// --emit-block prints the ```claims-guard block for the CURRENT rule set, ready to
+// paste into ARY-23 §0. Used to bootstrap the block the first time (and to repair it
+// if it is ever lost); after that ARY-23 is the source and this script reads from it.
+if (process.argv.includes('--emit-block')) {
+  const current = JSON.parse(readFileSync(OUT, 'utf8'))
+  const block = { rules: current.rules, notPatterned: current.notPatterned }
+  console.log(
+    'Paste into ARY-23 `positioning-deck`, immediately after the "The 13 advisory\n' +
+      'channels (use real names — do not invent):" line at the end of §0.\n',
+  )
+  console.log('```claims-guard')
+  console.log(JSON.stringify(block, null, 2))
+  console.log('```')
+  process.exit(0)
+}
+
 // CLAIMS_DECK_FILE lets you dry-run a §0 edit against a local copy of the deck
 // before committing it to ARY-23. The API path is the real one.
 let body, revisionId
