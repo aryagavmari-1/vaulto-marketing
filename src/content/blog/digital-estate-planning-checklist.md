@@ -74,7 +74,7 @@ Estate planning touches law and money, so two things are worth saying plainly:
 
 ## Privacy, because this is as sensitive as it gets
 
-An estate plan holds your family's most personal details, so where it lives matters. With Vaulto, every connection is encrypted in transit (TLS/HTTPS), your records are stored in a managed database with encryption at rest, documents are reachable only through short-lived, signed links, and you can only ever see and edit your own vault. We never sell your data — and we're deliberately honest about what we do and don't claim. See exactly how we keep it safe on our [security page](/security/).
+An estate plan holds your family's most personal details, so where it lives matters. With Vaulto, every connection is encrypted in transit (TLS/HTTPS), your records are stored in a managed database with encryption at rest, documents are reachable only through short-lived, signed links, and each person's vault is isolated from other users — a private vault you control. We never sell your data — and we're deliberately honest about what we do and don't claim. See exactly how we keep it safe on our [security page](/security/).
 
 ## Start with one line on the list
 

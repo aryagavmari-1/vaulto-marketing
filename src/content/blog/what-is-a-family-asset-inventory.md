@@ -75,7 +75,7 @@ Everything you add stays private to your account, protected with strong security
 
 ## A quick word on privacy
 
-A family asset inventory holds sensitive information, so where you keep it matters. With Vaulto, every connection is encrypted in transit (TLS/HTTPS), your records are stored in a managed database with encryption at rest, and you can only ever see and edit your own vault. We never sell your data. We're also deliberately honest about what we don't claim — no "bank-level" or "zero-knowledge" buzzwords, just the specific protections we actually ship. You can read exactly how we keep it safe on our [security page](/security/).
+A family asset inventory holds sensitive information, so where you keep it matters. With Vaulto, every connection is encrypted in transit (TLS/HTTPS), your records are stored in a managed database with encryption at rest, and each person's vault is isolated from other users — a private vault you control. We never sell your data. We're also deliberately honest about what we don't claim — no "bank-level" or "zero-knowledge" buzzwords, just the specific protections we actually ship. You can read exactly how we keep it safe on our [security page](/security/).
 
 ## Start small, start today
 
