@@ -66,6 +66,38 @@ No paid SaaS aggregator (board directive 2026-07-04). Pinterest goes live once i
 secrets are provisioned after the founder-OAuth + CEO checkpoint; until then the
 worker safely dry-runs and everything stays manual.
 
+## Claim check: free tier vs paid report
+
+Run `npm run check:claims` before publishing anything that mentions the AI
+overview. It fails the moment copy promises a **paid** advisory deliverable
+while calling it **free**.
+
+This exists because a string grep is not enough. ARY-1364 cleared six lines by
+grepping `"risk area"`; a seventh survived saying `"recommended actions"`
+(ARY-1369), and an eighth said `"the risks that matter"` — same claim, no
+matching substring. The script greps the **capability** (every known phrasing of
+a paid-only field), scoped to the paragraph, since the word "free" and the
+over-claimed noun are usually in different sentences.
+
+What each tier actually ships (source of truth:
+`artifacts/api-server/src/lib/advisoryPipeline.ts`):
+
+| | Free `AdvisoryOverview` | Paid `AdvisoryReport` |
+|---|---|---|
+| Sections | what happens today · likely costs & taxes · gaps in your current protection · what a detailed report would add | + risk areas · recommended actions · key considerations · asset breakdown · risk projection |
+| Figures | estimate ranges, line items, cost of inaction, assumptions | as free, plus the above |
+
+So: describe the free tier with **"estimate ranges"**, **"gaps in your
+protection"**, **"the cost of leaving things as they are"**, and **"what a
+detailed report would add"**. Never with "risk areas", "recommended actions",
+"next steps", or "key considerations" — those are the paid report, and naming
+them as free is the one claim this site cannot make. Referring to them is fine
+when handed to the paid tier explicitly ("the detailed report adds recommended
+actions"); the script allows that and only that.
+
+When you add a new phrasing, add it to `PAID_CAPABILITIES` in the script rather
+than fixing the one line — the synonym is the bug, not the sentence.
+
 ## Cost
 
 $0: Cloudflare Pages (free static hosting + CI), Cloudflare Web Analytics (free),

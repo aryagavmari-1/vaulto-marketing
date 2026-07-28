@@ -88,6 +88,6 @@ The residence nil-rate band is an extra allowance that applies when your main ho
 
 ---
 
-**See roughly where you stand.** [Start a vault and get a free AI inheritance-tax overview](https://app.myvaulto.com) — gather what you own, see an estimate range and the risks that matter, and walk into any professional conversation already prepared.
+**See roughly where you stand.** [Start a vault and get a free AI inheritance-tax overview](https://app.myvaulto.com) — gather what you own, see an estimate range and where your protection has gaps, and walk into any professional conversation already prepared.
 
 *This is general information to help you get organized, not legal, tax, or financial advice. Rules vary by country and change over time — confirm specifics with a qualified solicitor, accountant, or adviser.*
