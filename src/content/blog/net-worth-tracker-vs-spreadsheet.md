@@ -9,7 +9,7 @@ faqs:
   - question: "Is a net worth tracker free?"
     answer: "Vaulto is free to start — you can build your inventory, record what you own and owe, and see your net worth without paying. Some deeper features may be paid later, but the core of getting organised and seeing your position costs nothing up front. A spreadsheet is also free, of course; the question isn't really price, it's whether you want the extra structure, evidence, and family-readiness a purpose-built tool adds."
   - question: "Is my data private in a net worth app?"
-    answer: "It should be, and you should judge any app on specifics rather than slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control, with an audit trail of activity. It's a private vault you control — support cannot browse your records. Whatever tool you pick, ask who else can see your data, how it's protected, and whether you can export it."
+    answer: "It should be, and you should judge any app on specifics rather than slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control. It's a private vault you control — support cannot browse your records. Whatever tool you pick, ask who else can see your data, how it's protected, and whether you can export it."
   - question: "Can my partner use the same net worth tracker?"
     answer: "In Vaulto, a vault has a single owner, but you can invite someone into a temporary capture session — for example, to help photograph and log belongings — with a defined role, then close it. It isn't shared, co-owned, always-on access to the whole vault, and it isn't a way to run a live joint net-worth figure across household members. Think of it as inviting help for a specific task, not handing over a second key."
   - question: "Should I switch from a spreadsheet to a net worth app?"
@@ -90,7 +90,7 @@ Not always — and Vaulto deliberately doesn't. Some trackers link to your bank 
 Vaulto is free to start — you can build your inventory, record what you own and owe, and see your net worth without paying up front. A spreadsheet is free too; the real question is whether the added structure, evidence, and family-readiness are worth it to you.
 
 **Is my data private in a net worth app?**
-Judge any app on specifics, not slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control, with an audit trail. It's a private vault you control, and support cannot browse your records.
+Judge any app on specifics, not slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control. It's a private vault you control, and support cannot browse your records.
 
 **Can my partner use the same tracker?**
 A vault has a single owner, but you can invite someone into a temporary capture session — say, to help photograph and log belongings — with a defined role, then close it. It isn't shared co-ownership of the whole vault, and it isn't a live joint net-worth figure across household members.
