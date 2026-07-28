@@ -3,6 +3,7 @@ title: "Is It Safe to Link Your Bank Accounts to an App? What to Know First"
 description: "Linking your bank to a finance app can be reasonable — but here's what you're actually agreeing to, the real risks to weigh, and how to track what you own without connecting any account."
 pubDate: 2026-07-20
 draft: false
+# claims-allow: revocable-sharing — this post discusses revoking open-banking access at OTHER providers (banks, aggregators), never Vaulto sharing. Vaulto has no revocable sharing (C-003) and this post makes no such claim about us.
 faqs:
   - question: "Is it safe to link your bank account to a third-party app?"
     answer: "It can be, if the app is reputable and you understand the trade-off. Linking means a third party — usually an aggregator acting on the app's behalf — gets ongoing read access to your account through your login or a bank-issued token. Established providers invest heavily in protecting that access, and regulated open-banking connections are designed to be revocable. The honest point isn't that linking is dangerous; it's that it's a real decision. You're widening the set of places your financial data lives, and you may not fully control how long it's kept. If that trade-off doesn't sit right, you don't have to make it — you can track what you own by entering it yourself."
