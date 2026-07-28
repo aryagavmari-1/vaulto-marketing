@@ -74,12 +74,12 @@ In de loop van een jaar veranderen die controlemomenten één losse momentopname
 
 ## Een opmerking over privacy
 
-Je nettovermogen is ongeveer zo persoonlijk als gegevens maar kunnen zijn, dus bewaar het ergens dat gebouwd is voor gevoelige informatie. Met Vaulto zijn verbindingen versleuteld tijdens transport (TLS/HTTPS), staan je gegevens in een beheerde database met encryptie at rest, en is de vault van elke persoon geïsoleerd van andere gebruikers — een privévault die jij beheert. We verkopen je gegevens nooit, en we zijn duidelijk over wat we wel en niet claimen — bekijk onze [beveiligingspagina](/nl/security/) voor de details.
+Je nettovermogen is ongeveer zo persoonlijk als gegevens maar kunnen zijn, dus bewaar het ergens dat gebouwd is voor gevoelige informatie. Met Vaulto zijn verbindingen versleuteld tijdens transport (TLS/HTTPS), staan je gegevens in een beheerde database met encryptie at rest, en is de kluis van elke persoon geïsoleerd van andere gebruikers — een privékluis die jij beheert. We verkopen je gegevens nooit, en we zijn duidelijk over wat we wel en niet claimen — bekijk onze [beveiligingspagina](/nl/security/) voor de details.
 
 ## Je getal is nog maar één momentopname van je verwijderd
 
 Je hoeft geen accountant te zijn, en je hebt geen afgewerkte spreadsheet nodig. Je hebt een eerlijke lijst nodig van wat je bezit en wat je verschuldigd bent — en een plek om die actueel te houden.
 
-**[Begin je vault — gratis](https://app.myvaulto.com)** en bouw het beeld van het nettovermogen van je gezin op, één item tegelijk.
+**[Begin je kluis — gratis](https://app.myvaulto.com)** en bouw het beeld van het nettovermogen van je gezin op, één item tegelijk.
 
 *Alleen ter informatie — geen financieel advies. Bespreek beslissingen over je specifieke situatie met een gekwalificeerde professional.*

@@ -77,10 +77,10 @@ Alles wat je toevoegt blijft privé binnen je account, beschermd met sterke beve
 
 ## Een kort woord over privacy
 
-Een gezinsinventaris van bezittingen bevat gevoelige informatie, dus waar je die bewaart is belangrijk. Met Vaulto wordt elke verbinding versleuteld tijdens transport (TLS/HTTPS), worden je gegevens opgeslagen in een beheerde database met encryptie at rest, en is de vault van elke persoon geïsoleerd van andere gebruikers — een privévault die jij beheert. We verkopen je gegevens nooit. We zijn ook bewust eerlijk over wat we niet claimen — geen "bank-level" of "zero-knowledge" modewoorden, alleen de specifieke bescherming die we daadwerkelijk bieden. Je kunt precies lezen hoe we het veilig houden op onze [beveiligingspagina](/nl/security/).
+Een gezinsinventaris van bezittingen bevat gevoelige informatie, dus waar je die bewaart is belangrijk. Met Vaulto wordt elke verbinding versleuteld tijdens transport (TLS/HTTPS), worden je gegevens opgeslagen in een beheerde database met encryptie at rest, en is de kluis van elke persoon geïsoleerd van andere gebruikers — een privékluis die jij beheert. We verkopen je gegevens nooit. We zijn ook bewust eerlijk over wat we niet claimen — geen "bank-level" of "zero-knowledge" modewoorden, alleen de specifieke bescherming die we daadwerkelijk bieden. Je kunt precies lezen hoe we het veilig houden op onze [beveiligingspagina](/nl/security/).
 
 ## Begin klein, begin vandaag
 
 Een gezinsinventaris van bezittingen is geen weekendproject dat je in één keer moet afmaken. Het is een levend overzicht dat waardevoller wordt telkens als je iets toevoegt. Begin vandaag met één categorie en laat het groeien.
 
-**[Start je vault — gratis](https://app.myvaulto.com)** en leg je eerste paar onderdelen binnen enkele minuten vast.
+**[Start je kluis — gratis](https://app.myvaulto.com)** en leg je eerste paar onderdelen binnen enkele minuten vast.

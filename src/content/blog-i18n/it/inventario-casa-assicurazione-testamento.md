@@ -104,7 +104,7 @@ Un inventario di casa è sensibile: è un elenco dei tuoi oggetti di valore e di
 2. **Assicurati che qualcuno possa raggiungerlo.** Un inventario che il tuo esecutore testamentario non riesce a trovare non è affatto un inventario. Decidi ora chi dovrebbe poterlo vedere, e come.
 3. **Controlla chi può aprire le prove.** Se conservi foto e documenti online, preferisci uno strumento che non lasci i file a un indirizzo pubblico.
 
-Questo è uno dei motivi per cui abbiamo costruito Vaulto in questo modo. Il tuo inventario vive in un archivio privato che controlli tu, e i file che alleghi — ricevute, valutazioni, scansioni — si raggiungono tramite link che scadono invece di restare su un URL aperto. È una casa più tranquilla per documenti che preferisci non inviare in giro via email.
+Questo è uno dei motivi per cui abbiamo costruito Vaulto in questo modo. Il tuo inventario vive in una cassaforte privata che controlli tu, e i file che alleghi — ricevute, valutazioni, scansioni — si raggiungono tramite link che scadono invece di restare su un URL aperto. È una casa più tranquilla per documenti che preferisci non inviare in giro via email.
 
 Quando sei pronto, puoi [iniziare il tuo inventario in Vaulto](https://app.myvaulto.com): aggiungi un oggetto o scansiona un documento, conferma i dettagli che prepara e costruisci il quadro una registrazione alla volta.
 
