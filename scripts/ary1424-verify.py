@@ -74,6 +74,8 @@ def load(kind, loc, rev=None):
 
 
 REV = os.environ.get("ARY1424_REV") or None
+# base ref the drift control (A5) diffs against
+BASE_DRIFT = os.environ.get("ARY1424_BASE", "1d6cbe4")
 
 for loc in LOCALES:
     P = load("privacy", loc, REV)
@@ -110,6 +112,35 @@ for loc in LOCALES:
 
     # --- keep-verbatim control: the we-hold-the-keys reason survives
     check(len(hb) > 400, f"{loc}/honesty: body suspiciously short")
+
+    # --- A5: NO UNINTENDED DRIFT. Language-free, and the only control here that
+    # can fail on a field nobody thought to tokenise. A 32-file copy pass is
+    # exactly where an unrelated string gets nudged in transit, and the reviewer
+    # would have to re-read 32 files to notice. Every field outside the three in
+    # scope must be byte-identical to BASE. Skipped when checking BASE itself.
+    if REV != BASE_DRIFT:
+        for kind, doc, allowed in (("privacy", P, {("sections", 4, "body")}),
+                                   ("security", S, {("honesty", "body"), ("protections", 1, "body")})):
+            old = load(kind, loc, BASE_DRIFT)
+            def walk(a, b, path):
+                if tuple(path) in allowed:
+                    return
+                if isinstance(a, dict):
+                    for k in a:
+                        walk(a[k], (b or {}).get(k), path + [k])
+                elif isinstance(a, list):
+                    for i, v in enumerate(a):
+                        walk(v, (b or [None] * (i + 1))[i] if b and i < len(b) else None, path + [i])
+                elif a != b:
+                    fail.append(f"{loc}/{kind}: {'.'.join(map(str, path))} drifted but is "
+                                f"not in scope for this pass")
+            walk(old, doc, [])
+        # the ARY-1264 isolation + scrypt clause must survive VERBATIM, not merely
+        # leave the token "scrypt" somewhere in a rewritten sentence
+        old_pb = load("privacy", loc, BASE_DRIFT)["sections"][4]["body"]
+        clause = next((s.strip() for s in TERM.split(old_pb) if "scrypt" in s), None)
+        check(clause and clause in pb,
+              f"{loc}/privacy: ARY-1264 isolation + scrypt clause not preserved verbatim")
 
 print(f"locales checked: {len(LOCALES)} (rev={REV or 'working tree'})")
 if fail:
