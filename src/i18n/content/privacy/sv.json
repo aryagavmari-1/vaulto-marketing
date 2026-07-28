@@ -32,7 +32,7 @@
     },
     {
       "title": "Hur det skyddas",
-      "body": "Ditt valv är isolerat till ditt konto vid varje förfrågan, lösenord är scrypt-hashade och dokumentåtkomst använder kortlivade signerade länkar. Se <a href=\"/security/\">säkerhetsöversikten</a> för detaljer — inklusive vad vi ännu inte påstår."
+      "body": "Varje persons valv är isolerat från andra användare, lösenord är scrypt-hashade och dokumentåtkomst använder kortlivade signerade länkar. Se <a href=\"/security/\">säkerhetsöversikten</a> för detaljer — inklusive vad vi ännu inte påstår."
     }
   ],
   "choices": {

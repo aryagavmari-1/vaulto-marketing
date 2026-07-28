@@ -32,7 +32,7 @@
     },
     {
       "title": "Hoe het wordt beschermd",
-      "body": "Je kluis is bij elk verzoek geïsoleerd tot je account, wachtwoorden worden gehasht met scrypt, en toegang tot documenten verloopt via kortdurende ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
+      "body": "De kluis van elke persoon is geïsoleerd van andere gebruikers, wachtwoorden worden gehasht met scrypt, en toegang tot documenten verloopt via kortdurende ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
     }
   ],
   "choices": {

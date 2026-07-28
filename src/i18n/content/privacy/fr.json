@@ -32,7 +32,7 @@
     },
     {
       "title": "Comment elles sont protégées",
-      "body": "Votre coffre-fort est isolé à votre compte à chaque requête, les mots de passe sont hachés avec scrypt, et l'accès aux documents utilise des liens signés de courte durée. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous n'affirmons pas encore."
+      "body": "Le coffre-fort de chaque personne est isolé des autres utilisateurs, les mots de passe sont hachés avec scrypt, et l'accès aux documents utilise des liens signés de courte durée. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous n'affirmons pas encore."
     }
   ],
   "choices": {

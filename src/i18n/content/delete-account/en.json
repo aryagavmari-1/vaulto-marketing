@@ -38,7 +38,7 @@
       "Your account record — name, email address, and sign-in credentials.",
       "Every vault and all its contents — assets, liabilities, valuations, and the net-worth picture built from them.",
       "Your uploaded documents and evidence files, together with the encryption key that protects them — so the stored files become permanently unreadable.",
-      "AI overviews, drafts, and shareable snapshots; advisory history, streaks, and preferences; and your devices' sign-in and notification tokens."
+      "AI overviews and drafts; advisory history, streaks, and preferences; and your devices' sign-in and notification tokens."
     ],
     "permanent": "Deletion is immediate, permanent, and cannot be undone — there is no grace period or recovery window. Export anything you want to keep first; you can download your vault data at any time before you delete."
   },

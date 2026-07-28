@@ -32,7 +32,7 @@
     },
     {
       "title": "Jak są chronione",
-      "body": "Twój sejf jest odizolowany do Twojego konta przy każdym żądaniu, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótkotrwałe podpisane linki. Zobacz <a href=\"/security/\">przegląd bezpieczeństwa</a>, aby poznać szczegóły — w tym czego jeszcze nie deklarujemy."
+      "body": "Sejf każdej osoby jest odizolowany od innych użytkowników, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótkotrwałe podpisane linki. Zobacz <a href=\"/security/\">przegląd bezpieczeństwa</a>, aby poznać szczegóły — w tym czego jeszcze nie deklarujemy."
     }
   ],
   "choices": {

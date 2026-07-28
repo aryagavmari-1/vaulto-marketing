@@ -32,7 +32,7 @@
     },
     {
       "title": "Como são protegidos",
-      "body": "O teu cofre é isolado à tua conta em cada pedido, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa ligações assinadas de curta duração. Vê a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo aquilo que ainda não afirmamos."
+      "body": "O cofre de cada pessoa é isolado dos restantes utilizadores, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa ligações assinadas de curta duração. Vê a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo aquilo que ainda não afirmamos."
     }
   ],
   "choices": {

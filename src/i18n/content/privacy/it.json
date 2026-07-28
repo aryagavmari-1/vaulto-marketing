@@ -32,7 +32,7 @@
     },
     {
       "title": "Come vengono protetti",
-      "body": "La tua cassaforte è isolata al tuo account a ogni richiesta, le password sono sottoposte ad hash con scrypt e l'accesso ai documenti usa link firmati a breve durata. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — incluso ciò che non dichiariamo ancora."
+      "body": "La cassaforte di ogni persona è isolata dagli altri utenti, le password sono sottoposte ad hash con scrypt e l'accesso ai documenti usa link firmati a breve durata. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — incluso ciò che non dichiariamo ancora."
     }
   ],
   "choices": {

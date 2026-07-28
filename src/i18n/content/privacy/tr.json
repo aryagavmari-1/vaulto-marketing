@@ -32,7 +32,7 @@
     },
     {
       "title": "Nasıl korunuyor",
-      "body": "Kasanız her istekte hesabınıza yalıtılır, parolalar scrypt ile hash’lenir ve belge erişimi kısa ömürlü imzalı bağlantılar kullanır. Ayrıntılar için <a href=\"/security/\">güvenlik genel bakışına</a> bakın — henüz neyi iddia etmediğimiz dahil."
+      "body": "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır, parolalar scrypt ile hash’lenir ve belge erişimi kısa ömürlü imzalı bağlantılar kullanır. Ayrıntılar için <a href=\"/security/\">güvenlik genel bakışına</a> bakın — henüz neyi iddia etmediğimiz dahil."
     }
   ],
   "choices": {

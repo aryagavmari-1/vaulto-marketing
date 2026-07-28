@@ -38,7 +38,7 @@
       "Ihr Kontodatensatz – Name, E-Mail-Adresse und Anmeldedaten.",
       "Jeder Vault und sein gesamter Inhalt – Vermögenswerte, Verbindlichkeiten, Bewertungen und das daraus erstellte Gesamtvermögensbild.",
       "Ihre hochgeladenen Dokumente und Nachweisdateien zusammen mit dem Verschlüsselungsschlüssel, der sie schützt – sodass die gespeicherten Dateien dauerhaft unlesbar werden.",
-      "KI-Übersichten, Entwürfe und teilbare Momentaufnahmen; Beratungsverlauf, Serien und Einstellungen; sowie die Anmelde- und Benachrichtigungstoken Ihrer Geräte."
+      "KI-Übersichten und Entwürfe; Beratungsverlauf, Serien und Einstellungen; sowie die Anmelde- und Benachrichtigungstoken Ihrer Geräte."
     ],
     "permanent": "Die Löschung erfolgt sofort, ist endgültig und kann nicht rückgängig gemacht werden – es gibt keine Schonfrist und keinen Wiederherstellungszeitraum. Exportieren Sie zuvor alles, was Sie behalten möchten; Sie können Ihre Vault-Daten jederzeit vor dem Löschen herunterladen."
   },

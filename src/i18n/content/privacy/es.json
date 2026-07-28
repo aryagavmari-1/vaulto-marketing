@@ -32,7 +32,7 @@
     },
     {
       "title": "Cómo se protege",
-      "body": "Tu bóveda está aislada en tu cuenta en cada solicitud, las contraseñas están protegidas con hash scrypt y el acceso a los documentos usa enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
+      "body": "La bóveda de cada persona está aislada de los demás usuarios, las contraseñas están protegidas con hash scrypt y el acceso a los documentos usa enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
     }
   ],
   "choices": {
