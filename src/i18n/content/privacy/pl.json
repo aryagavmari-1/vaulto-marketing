@@ -32,7 +32,7 @@
     },
     {
       "title": "Jak są chronione",
-      "body": "Sejf każdej osoby jest odizolowany od innych użytkowników, hasła są haszowane za pomocą scrypt, a dostęp do dokumentów wykorzystuje krótkotrwałe podpisane linki. Zobacz <a href=\"/security/\">przegląd bezpieczeństwa</a>, aby poznać szczegóły — w tym czego jeszcze nie deklarujemy."
+      "body": "Twoje dane i przesłane pliki są szyfrowane w spoczynku, a klucze szyfrujące są zarządzane w Google Cloud KMS. Sejf każdej osoby jest odizolowany od innych użytkowników, a hasła są haszowane za pomocą scrypt. Zobacz <a href=\"/security/\">przegląd bezpieczeństwa</a>, aby poznać szczegóły — w tym czego jeszcze nie deklarujemy."
     }
   ],
   "choices": {

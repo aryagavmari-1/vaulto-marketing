@@ -32,7 +32,7 @@
     },
     {
       "title": "Wie sie geschützt werden",
-      "body": "Der Tresor jeder Person ist von anderen Nutzern isoliert, Passwörter werden mit scrypt gehasht, und der Dokumentenzugriff erfolgt über kurzlebige signierte Links. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, was wir noch nicht behaupten."
+      "body": "Deine Daten und hochgeladenen Dateien sind im Ruhezustand verschlüsselt, die Schlüssel werden in Google Cloud KMS verwaltet. Der Tresor jeder Person ist von anderen Nutzern isoliert, und Passwörter werden mit scrypt gehasht. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, was wir noch nicht behaupten."
     }
   ],
   "choices": {

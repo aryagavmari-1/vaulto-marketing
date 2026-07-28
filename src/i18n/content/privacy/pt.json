@@ -32,7 +32,7 @@
     },
     {
       "title": "Como são protegidos",
-      "body": "O cofre de cada pessoa é isolado dos restantes utilizadores, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa ligações assinadas de curta duração. Vê a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo aquilo que ainda não afirmamos."
+      "body": "Os teus registos e ficheiros carregados são encriptados em repouso, com as chaves de encriptação geridas no Google Cloud KMS. O cofre de cada pessoa é isolado dos restantes utilizadores e as palavras-passe são protegidas com hash scrypt. Vê a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo aquilo que ainda não afirmamos."
     }
   ],
   "choices": {

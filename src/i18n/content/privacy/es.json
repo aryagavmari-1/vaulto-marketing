@@ -32,7 +32,7 @@
     },
     {
       "title": "Cómo se protege",
-      "body": "La bóveda de cada persona está aislada de los demás usuarios, las contraseñas están protegidas con hash scrypt y el acceso a los documentos usa enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
+      "body": "Tus registros y archivos subidos están cifrados en reposo, con las claves de cifrado gestionadas en Google Cloud KMS. La bóveda de cada persona está aislada de los demás usuarios y las contraseñas están protegidas con hash scrypt. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
     }
   ],
   "choices": {

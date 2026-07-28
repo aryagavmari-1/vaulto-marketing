@@ -22,7 +22,7 @@
     },
     {
       "title": "Beklemede şifreli.",
-      "body": "Kayıtlarınız ve yüklediğiniz dosyalar profesyonelce yönetilen, güvenli sunucularda durur ve beklemede şifrelidir — \"beklemede\" yalnızca depolanırken demektir, hareket halindeyken değil. Kayıtlarınızı tutan veritabanı ile fotoğraf ve taramalarınızı tutan depolama alanının her ikisi de şifrelidir ve dosyalarınıza yalnızca kısa ömürlü, imzalı bağlantılar aracılığıyla erişilebilir."
+      "body": "Kayıtlarınız ve yüklediğiniz dosyalar beklemede şifrelidir — \"beklemede\" yalnızca depolanırken demektir, hareket halindeyken değil. Profesyonelce yönetilen, güvenli sunucularda dururlar ve Vaulto bunları yazmadan önce uygulamanın kendi içinde bir kez daha şifreler: kayıtlarınız ile yüklediğiniz fotoğraf ve taramalar, verinin yanında tutulan değil, Google Cloud KMS'te yönetilen anahtarlarla şifrelenir."
     },
     {
       "title": "Parolalar asla düz metin olarak saklanmaz.",
@@ -63,7 +63,7 @@
     "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makinece okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman Ayarlar'dan dışa aktarın. \"Makinece okunabilir\", başka bir uygulamanın veya hesap tablosunun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Bağımlılık yok, bizi beklemek yok. (Orijinal dosyalarınızın toplu indirilmesi yol haritamızda.) Bu, verilerinizi yanınızda götürmenize olanak tanıyan AB gizlilik yasası (madde 20) olan GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler."
   },
   "honesty": {
-    "body": "<b>Sade dil, abartı yok.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamada tutulan dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi. Bilerek \"zero-knowledge\" (verilerinizi bizim bile asla açamayacağımız), \"banka düzeyi\" ya da hak etmediğimiz herhangi bir sertifikayı <b>iddia etmiyoruz</b>. Veri dışa aktarma etkin (yukarıda). Uygulama katmanı şifrelemesi — yukarıdaki şifrelemenin üzerine, uygulamanın kendi içinde uygulanan ek bir kilit — ya da bağımsız bir güvenlik firmasının bizi incelediği resmi bir üçüncü taraf denetimi eklediğimizde, bu sayfa bunu belirtecek.",
+    "body": "<b>Sade dil, abartı yok.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında şifreleme, uygulamanın kendisinin uyguladığı ve anahtarları Google Cloud KMS'te yönetilen beklemede şifreleme, özel depolamada tutulan dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi. Bilerek \"uçtan uca\" ya da \"zero-knowledge\" şifreleme <b>iddia etmiyoruz</b>: anahtarlar bizde, dolayısıyla hizmeti ve istediğiniz yapay zekâ özelliklerini sunmak için kayıtlarınızın şifresini çözebiliriz. \"Banka düzeyi\" ya da hak etmediğimiz herhangi bir sertifikayı da iddia etmiyoruz. Yukarıdaki şifrelemenin bilinçli bir istisnası var: kabaca değer aralıkları okunabilir kalır; böylece kasanız yine sıralanabilir ve toplanabilir. Veri dışa aktarma etkin (yukarıda). Bağımsız bir güvenlik firmasının bizi incelediği resmi bir üçüncü taraf denetimi eklediğimizde, bu sayfa bunu belirtecek.",
     "contact": "Gizlilik veya güvenlik soruları için iletişime geç:"
   }
 }

@@ -22,7 +22,7 @@
     },
     {
       "title": "Szyfrowane w spoczynku.",
-      "body": "Twoje dane i przesłane pliki znajdują się na profesjonalnie zarządzanych, zabezpieczonych serwerach i są szyfrowane w spoczynku — „w spoczynku” oznacza po prostu, gdy są przechowywane, a nie gdy są w ruchu. Baza danych przechowująca Twoje rekordy oraz magazyn przechowujący Twoje zdjęcia i skany są oba zaszyfrowane, a Twoje pliki są dostępne wyłącznie poprzez krótkotrwałe, podpisane linki."
+      "body": "Twoje dane i przesłane pliki są szyfrowane w spoczynku — „w spoczynku” oznacza po prostu, gdy są przechowywane, a nie gdy są w ruchu. Znajdują się na profesjonalnie zarządzanych, zabezpieczonych serwerach, a Vaulto szyfruje je dodatkowo w samej aplikacji, zanim zostaną zapisane: Twoje rekordy oraz zdjęcia i skany, które przesyłasz, są szyfrowane kluczami zarządzanymi w Google Cloud KMS, a nie przechowywanymi obok danych."
     },
     {
       "title": "Hasła nigdy nie są przechowywane w postaci jawnej.",
@@ -63,7 +63,7 @@
     "body": "Twoje dane należą do Ciebie — w dowolnej chwili wyeksportuj pełną, odczytywalną maszynowo kopię swoich rekordów (JSON, CSV lub PDF) z Ustawień. „Odczytywalny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Masowe pobieranie Twoich oryginalnych plików jest w naszych planach.) Wspiera to Twoje prawo do przenoszenia danych na mocy GDPR — unijnego prawa o ochronie prywatności (artykuł 20), które pozwala zabrać dane ze sobą."
   },
   "honesty": {
-    "body": "<b>Prosty język, bez przesady.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie w trakcie przesyłania, zaszyfrowaną bazę danych, pliki w prywatnym magazynie, zahaszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że mamy „zero-knowledge” (gdzie nawet my nigdy nie moglibyśmy odblokować Twoich danych), „poziom bankowy” ani żadnej certyfikacji, na którą nie zasłużyliśmy. Eksport danych działa (powyżej). Gdy dodamy szyfrowanie na poziomie aplikacji — dodatkowy zamek stosowany wewnątrz samej aplikacji, na wierzchu powyższego szyfrowania — lub formalny audyt zewnętrzny, w którym niezależna firma zajmująca się bezpieczeństwem nas sprawdza, ta strona to odnotuje.",
+    "body": "<b>Prosty język, bez przesady.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie w trakcie przesyłania, szyfrowanie w spoczynku wykonywane przez samą aplikację z kluczami zarządzanymi w Google Cloud KMS, pliki w prywatnym magazynie, zahaszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że szyfrowanie jest „end-to-end” ani „zero-knowledge”: klucze są w naszych rękach, więc możemy odszyfrować Twoje dane, aby świadczyć usługę i funkcje AI, o które prosisz. Nie twierdzimy też, że mamy „poziom bankowy” ani żadną certyfikację, na którą nie zasłużyliśmy. Jeden celowy wyjątek od powyższego szyfrowania: przybliżone przedziały wartości pozostają czytelne, aby Twój sejf nadal można było sortować i sumować. Eksport danych działa (powyżej). Gdy dodamy formalny audyt zewnętrzny, w którym niezależna firma zajmująca się bezpieczeństwem nas sprawdza, ta strona to odnotuje.",
     "contact": "W sprawach prywatności lub bezpieczeństwa skontaktuj się z"
   }
 }
