@@ -1,9 +1,8 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Produced by scripts/claims/sync-proof-table.mjs from the ARY-23 §0 proof table (the single source of truth for product claims). To retire a claim: update the §0 row and its claims-guard entry in ARY-23, then run `npm run claims:sync`.",
   "source": "ARY-23 #document-positioning-deck §0",
-  "sourceRevisionId": null,
-  "sourceNote": "Seeded from ARY-23 §0 at deck revision a6b7f9af (claims C-001..C-023). The machine-readable claims-guard block is not in ARY-23 yet — until the CMO adds it, `npm run claims:sync` will fail by design rather than regenerate from a source that does not exist. Verified by dry run (CLAIMS_DECK_FILE) against the live deck: all 12 retired claims accounted for.",
-  "generatedAt": "2026-07-28T00:00:00Z",
+  "sourceRevisionId": "9713a93b-2b99-4015-b995-e03273be45bb",
+  "generatedAt": "2026-07-28T21:37:06.977Z",
   "retiredClaimsInTable": [
     "C-002",
     "C-003",
@@ -26,10 +25,37 @@
       "patterns": [
         "\\bon every (request|endpoint)\\b",
         "\\bevery (endpoint|api endpoint)\\b",
-        "\\b(isolat|enforc|check|verif|authenticat)\\w*[^.\\n]{0,60}\\bevery (request|endpoint)\\b"
+        "\\b(isolat|enforc|check|verif|authenticat)\\w*[^.\n]{0,60}\\bevery (request|endpoint)\\b"
       ],
       "guidance": "assertVaultOwnership() covers the vault routes, but routes/objects.ts serves stored photos and scans via an HMAC-signed capability URL with no per-user check. The quantifier is what is false, not the isolation.",
       "instead": "each person's vault is isolated from other users"
+    },
+    {
+      "id": "visibility-absolute",
+      "claim": "C-002",
+      "label": "Vault visibility stated as an absolute (\"only you can/ever see it\")",
+      "patterns": [
+        "\\bonly\\s+(you|ever)\\b[^.\n]{0,30}\\b(see|view)\\b[^.\n]{0,30}\\bvault\\b",
+        "\\bvault\\b[^.\n]{0,40}\\bonly\\s+you\\b[^.\n]{0,20}\\b(can\\s+)?(see|view|access)\\b",
+        "\\bonly\\b[^.\n]{0,15}\\b(see|view)\\b[^.\n]{0,25}\\b(your|their)\\s+own\\b",
+        "\\bno\\s+one\\s+else\\b[^.\n]{0,30}\\b(can\\s+)?(see|view|access)\\b"
+      ],
+      "guidance": "Sibling of isolation-quantifier: that rule catches the *enforcement* absolute (\"on every request\"); this one catches the *visibility* absolute. The visibility absolute is undercut by the opt-in AI processing path — we hold the keys and can decrypt to run features the user asks for. The isolation frame is what makes the approved wording true, so these patterns fire on the unframed absolute only. Note \"only **ever** see\" is why the standing `only you can see` grep returned clean while two instances were live in production (ARY-1368): a retired claim needs a phrase-family pattern, not a fixed string. The `only … see … your own` ordering is included deliberately: Brand & Trust passed that string in ARY-1277 and retracted the approval in ARY-1373 — \"C-002's approved phrasing ends at the isolation clause\". Approved wording is a moving target, so a control asserting a string stays green has to be re-checked against the current ruling, not the one it was written under.",
+      "instead": "each person's vault is isolated from other users — a private vault you control",
+      "controls": {
+        "mustFire": [
+          "you can only ever see and edit your own vault. We never sell your data",
+          "a private vault that only you can see and edit",
+          "You can only ever see your own vault",
+          "Your vault is private — no one else can see it",
+          "Each person's vault is isolated from other users — you can only see and edit your own."
+        ],
+        "mustStayGreen": [
+          "each person's vault is isolated from other users — a private vault you control",
+          "Each person's vault is isolated from other users."
+        ]
+      },
+      "knownGap": "These patterns are English-only and DO NOT cover the other 15 locales. The same claim is live in Spanish as \"solo puedes ver y editar la tuya\" and in Japanese as \"表示や編集ができるのは、あなた自身の金庫だけです\", and no English regex reaches either. A keyword grep is worse than useless here — es (aislada), ja (分離), nl (geïsoleerd), pl (odizolowany) and tr (yalıtılmıştır) share no root with `isolat`, so a grep reports 15 false gaps or 15 false passes depending on which way you point it. Localised copy is verified today by parsing the field per locale by hand. The durable fix is a field-level check (protections[-1], trustBand.proof[3] and friends each have one approved value per locale) rather than more regexes; tracked on ARY-1377."
     },
     {
       "id": "revocable-sharing",
@@ -37,7 +63,7 @@
       "label": "Consent-based, revocable sharing",
       "patterns": [
         "\\brevocab\\w*",
-        "\\brevok\\w+\\b[^.\\n]{0,60}\\baccess\\b",
+        "\\brevok\\w+\\b[^.\n]{0,60}\\baccess\\b",
         "\\bconsent[- ]based\\s+sharing\\b",
         "\\bwithdraw\\w*\\s+(consent|access)\\b"
       ],
@@ -52,7 +78,7 @@
         "\\baudit\\s+(trail|log)s?\\b",
         "\\bactivity\\s+log\\b",
         "\\baccess\\s+log\\b",
-        "\\bwho\\s+(viewed|accessed)\\b[^.\\n]{0,30}\\bwhen\\b"
+        "\\bwho\\s+(viewed|accessed)\\b[^.\n]{0,30}\\bwhen\\b"
       ],
       "guidance": "logAudit() in api-server/src/lib/audit.ts has zero callers, so audit_events is always empty. A table is not a feature.",
       "instead": "nothing — there is no user-visible history of access"
@@ -62,11 +88,11 @@
       "claim": "C-007",
       "label": "Monthly / stored net-worth snapshots",
       "patterns": [
-        "\\bnet[\\s-]?worth\\b[^.\\n]{0,25}\\bsnapshots\\b",
+        "\\bnet[\\s-]?worth\\b[^.\n]{0,25}\\bsnapshots\\b",
         "\\bnet[\\s-]?worth\\s+(history|histories)\\b",
         "\\b(monthly|automatic(?:ally)?|scheduled)\\s+net[\\s-]?worth\\s+(snapshot|history)",
-        "\\bmonthly\\b[^.\\n]{0,40}\\bnet[\\s-]?worth\\b[^.\\n]{0,40}\\b(snapshot|history)\\b",
-        "\\bnet[\\s-]?worth\\b[^.\\n]{0,40}\\b(snapshot|history)\\b[^.\\n]{0,40}\\b(monthly|each month|every month)\\b"
+        "\\bmonthly\\b[^.\n]{0,40}\\bnet[\\s-]?worth\\b[^.\n]{0,40}\\b(snapshot|history)\\b",
+        "\\bnet[\\s-]?worth\\b[^.\n]{0,40}\\b(snapshot|history)\\b[^.\n]{0,40}\\b(monthly|each month|every month)\\b"
       ],
       "guidance": "netWorthSnapshots.ts does not exist and there is no monthly cadence anywhere. The total is computed live by aggregateAssetValues(); only per-asset valuation history is stored.",
       "instead": "your net worth, recalculated as you update what you own — and valuation history per asset"
@@ -91,7 +117,7 @@
       "patterns": [
         "\\breferral\\s+(package|packet|bundle)s?\\b",
         "\\breferral\\s+recipients?\\b",
-        "\\b(send|deliver|share)\\w*\\b[^.\\n]{0,40}\\bto\\s+(your|a)\\s+(solicitor|advisor|adviser|accountant)\\b[^.\\n]{0,30}\\bdirectly\\b"
+        "\\b(send|deliver|share)\\w*\\b[^.\n]{0,40}\\bto\\s+(your|a)\\s+(solicitor|advisor|adviser|accountant)\\b[^.\n]{0,30}\\bdirectly\\b"
       ],
       "guidance": "referral_packages and referral_recipients have zero source hits. The only residue is an analytics event name; lead_profiles is real but internal, with no delivery path to a professional.",
       "instead": "export a clean copy you can hand to your solicitor or advisor (C-017)"
@@ -101,8 +127,8 @@
       "claim": "C-017",
       "label": "Bulk file download described as unbuilt",
       "patterns": [
-        "\\bbulk\\s+(download|export)\\b[^.\\n]{0,60}\\b(roadmap|coming soon|not yet|planned)\\b",
-        "\\b(download|export)\\w*\\b[^.\\n]{0,60}\\b(original|uploaded)\\s+files?\\b[^.\\n]{0,40}\\b(roadmap|coming soon|not yet)\\b"
+        "\\bbulk\\s+(download|export)\\b[^.\n]{0,60}\\b(roadmap|coming soon|not yet|planned)\\b",
+        "\\b(download|export)\\w*\\b[^.\n]{0,60}\\b(original|uploaded)\\s+files?\\b[^.\n]{0,40}\\b(roadmap|coming soon|not yet)\\b"
       ],
       "guidance": "Stale under-claim, not an over-claim. routes/dataExport.ts streams a ZIP containing data.json plus the actual uploaded files — it shipped, and saying otherwise undersells us on the trust page.",
       "instead": "export a ZIP archive that includes your original uploaded photos and scans alongside the structured record"
@@ -113,7 +139,7 @@
       "label": "Capture sprints undercounted as four",
       "patterns": [
         "\\b(four|4)\\s+(capture\\s+)?sprints?\\b",
-        "\\bcapture\\s+sprints?\\b[^.\\n]{0,30}\\b(four|4)\\b"
+        "\\bcapture\\s+sprints?\\b[^.\n]{0,30}\\b(four|4)\\b"
       ],
       "guidance": "There are FIVE capture sprint types, not four — room / category / 20 things / documents / partner session. The partner-session sprint has a full UI card (ARY-1359); saying four undersells a shipped feature.",
       "instead": "five capture sprints — room, category, 20 things, documents, and a partner session"
@@ -128,11 +154,62 @@
         "\\bactions?\\s+to\\s+take\\b",
         "\\basset\\s+breakdown\\b",
         "\\brisk\\s+projections?\\b",
-        "\\bfree\\b[^.\\n]{0,60}\\b(overview|estimate|advisory)\\b[^.\\n]{0,80}\\b(considerations|next steps)\\b",
-        "\\b(considerations|next steps)\\b[^.\\n]{0,60}\\b(free|no cost)\\b[^.\\n]{0,40}\\b(overview|estimate)\\b"
+        "\\bfree\\b[^.\n]{0,60}\\b(overview|estimate|advisory)\\b[^.\n]{0,80}\\b(considerations|next steps)\\b",
+        "\\b(considerations|next steps)\\b[^.\n]{0,60}\\b(free|no cost)\\b[^.\n]{0,40}\\b(overview|estimate)\\b"
       ],
       "guidance": "These are fields of the PAID AdvisoryReport (advisoryPipeline.ts:133-145). The free AdvisoryEstimate carries only ranges, lineItems, costOfInaction and gapsInProtection — it has no riskAreas and no recommendedActions. This is a tier boundary, not a capability denial: the feature exists, it just is not free. Bare \"considerations\" and \"next steps\" are ordinary English and are only matched next to free-tier wording; the rest are literal field names and are matched anywhere. ARY-1369: sweep the phrase FAMILY over the CORPUS — a one-term grep closed ARY-1364 green while \"recommended actions to take\" was still live.",
       "instead": "free tier: \"estimate ranges\", \"where your protection has gaps\", \"the cost of leaving things as they are\", \"what a detailed report would add\". Deeper tier: \"the full report\" — never a price."
+    },
+    {
+      "id": "encryption-exhaustiveness",
+      "claim": "C-021",
+      "label": "Encryption claimed over the record as a whole (\"everything is encrypted\")",
+      "patterns": [
+        "\\b(everything|all (of )?your (data|information|records)|every field|all fields)\\b[^.\n]{0,40}\\bencrypted\\b",
+        "\\bencrypt\\w*\\b[^.\n]{0,30}\\b(everything|all (of )?your (data|records|fields|information))\\b"
+      ],
+      "guidance": "The app-layer seal is column-scoped (ARY-1322): value_band, institution, serialNumber, purchasePrice, tags and belongsTo are stored in plaintext. Transport (TLS) and the provider's at-rest disk encryption do cover everything, but a sentence that applies encryption to the record as a whole reads as an app-layer exhaustiveness claim, which is false. Name what is sealed.",
+      "instead": "your records and uploaded files are encrypted in transit and at rest",
+      "controls": {
+        "mustFire": [
+          "Everything is encrypted in transit and at rest, your password is hashed",
+          "all your data is encrypted"
+        ],
+        "mustStayGreen": [
+          "Your records and uploaded files are encrypted in transit and at rest",
+          "every connection is encrypted in transit (TLS/HTTPS), your records are stored in a managed database with encryption at rest",
+          "we deliberately do not claim zero-knowledge or end-to-end encryption",
+          "We protect everything we hold. Your password is encrypted."
+        ]
+      }
+    },
+    {
+      "id": "no-internal-tooling",
+      "claim": "C-025",
+      "label": "Support-access claim overstated as \"no admin/support surface or internal tooling exists\"",
+      "patterns": [
+        "\\bno\\s+(admin|administrator|support|internal|back[- ]?office)\\w*\\b[^.\n]{0,40}\\b(view|tool|tools|tooling|surface|surfaces|panel|dashboard|dashboards|console|portal|interface)\\b",
+        "\\b(we|vaulto)\\s+(have|has)\\s+(built\\s+)?no\\s+(admin|administrator|internal|support|back[- ]?office)\\w*\\b",
+        "\\b(there\\s+is|there's)\\s+no\\s+(admin|administrator|support|internal|back[- ]?office)\\w*\\b[^.\n]{0,30}\\b(view|tool|tooling|panel|dashboard|console|portal|interface)\\b",
+        "\\bno\\s+(admin|administrator|support)\\s+(view|panel|portal|console|dashboard|tooling)\\s+exists\\b"
+      ],
+      "guidance": "C-025's claim survives; its first basis sentence does not. Three staff-authenticated read surfaces are LIVE in production — GET /api/analytics/{funnel,dashboard}, GET /api/feedback/{metrics,dashboard}, GET /api/client-errors/recent — gated by a shared bearer/Basic token (ANALYTICS_DASHBOARD_TOKEN, FEEDBACK_DASHBOARD_TOKEN, CLIENT_ERROR_READ_TOKEN), all three keys provisioned on the live prod API. So \"no admin or support view exists\" is false, and falsifiable in about two minutes by the exact sceptical reader /security is written for. The CTO countersign (ARY-1444) declines that sentence in EVERY locale. What is true is narrower and is what the row licenses: support cannot browse your vault, and no staff account type exists that could be given access — mobile_users has no role column, and none of the three dashboards queries the asset, document, evidence, valuation, draft or vault tables. NOTE the patterns deliberately exclude \"account type\" and bare \"staff\": \"no staff account type exists\" is the APPROVED half and must stay green. This rule is the copy-side twin of ARY-1473, which gates the code side (a future staff dashboard joining vault tables).",
+      "instead": "our support team cannot browse your vault, and no staff account type exists that could be given access (C-025)",
+      "controls": {
+        "mustFire": [
+          "Vaulto has no admin or support view, and no staff account type that could open one.",
+          "no admin or support view exists in the product",
+          "There is no admin panel and no internal dashboard.",
+          "We have built no internal tools that can read your vault.",
+          "no support dashboard exists"
+        ],
+        "mustStayGreen": [
+          "Our support team cannot browse your vault.",
+          "Our support team cannot browse your vault, and there is no staff account type that could be given access.",
+          "no staff account type exists"
+        ]
+      },
+      "knownGap": "English-only, like every rule here — the same over-claim in the other 15 locales is invisible to it (de \"kein Administrationsbereich\", fr \"aucun espace d'administration\" share no root with \"admin\"). C-025 is not live in any locale yet (ARY-1393 blocked, ARY-1445 FAILed), so there is nothing translated to miss today; when it does ship, verify it per-locale by field (security/*.json protections[-1]) rather than by regex — see ARY-1377."
     }
   ],
   "notPatterned": [
@@ -143,10 +220,6 @@
     {
       "reason": "\"zero-knowledge\" and \"end-to-end encrypted\" appear legitimately and frequently as DENIALS in our honesty copy — /security says we deliberately do not claim them, in all 16 locales, and 15 blog posts repeat the disclaimer. A phrase-level regex would fire on the honest disclaimer far more often than on a real over-claim, which is the 'worse than nothing' failure mode this guard was built to avoid. Enforced by Brand & Trust review.",
       "claim": "C-020"
-    },
-    {
-      "reason": "Quantifier row (\"everything is encrypted\"). Expressible as a regex, but there is a known live hit at src/content/blog/important-family-documents-to-keep.md that must be corrected first — promoting this to a rule before that fix would land a red build. Tracked as follow-up to ARY-1340; promote in the same edit as the copy fix.",
-      "claim": "C-021"
     },
     {
       "claim": "C-018",
