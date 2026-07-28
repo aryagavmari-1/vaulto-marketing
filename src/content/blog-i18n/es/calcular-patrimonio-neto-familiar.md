@@ -74,7 +74,7 @@ A lo largo de un año, esas revisiones convierten una sola fotografía en una te
 
 ## Una nota sobre la privacidad
 
-Tu patrimonio neto es un dato de lo más personal, así que guárdalo en un lugar pensado para información sensible. Con Vaulto, las conexiones se cifran en tránsito (TLS/HTTPS), tus registros se almacenan en una base de datos gestionada con cifrado en reposo, y solo tú puedes ver y editar tu propio vault. Nunca vendemos tus datos, y somos claros sobre lo que afirmamos y lo que no — consulta nuestra [página de seguridad](/es/security/) para ver los detalles.
+Tu patrimonio neto es un dato de lo más personal, así que guárdalo en un lugar pensado para información sensible. Con Vaulto, las conexiones se cifran en tránsito (TLS/HTTPS), tus registros se almacenan en una base de datos gestionada con cifrado en reposo, y el vault de cada persona está aislado de los demás usuarios: un vault privado que tú controlas. Nunca vendemos tus datos, y somos claros sobre lo que afirmamos y lo que no — consulta nuestra [página de seguridad](/es/security/) para ver los detalles.
 
 ## Tu cifra está a una sola fotografía de distancia
 

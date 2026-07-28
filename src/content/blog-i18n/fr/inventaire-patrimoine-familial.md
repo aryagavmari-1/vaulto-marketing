@@ -77,7 +77,7 @@ Tout ce que vous ajoutez reste privé dans votre compte, protégé par une sécu
 
 ## Un mot rapide sur la confidentialité
 
-Un inventaire du patrimoine familial contient des informations sensibles, donc l'endroit où vous le conservez compte. Avec Vaulto, chaque connexion est chiffrée en transit (TLS/HTTPS), vos données sont stockées dans une base de données gérée avec chiffrement au repos, et vous seul pouvez voir et modifier votre propre coffre. Nous ne vendons jamais vos données. Nous faisons aussi délibérément preuve d'honnêteté sur ce que nous ne prétendons pas offrir — pas de mots à la mode comme « bank-level » ou « zero-knowledge », seulement les protections précises que nous mettons réellement en place. Vous pouvez lire exactement comment nous les protégeons sur notre [page sécurité](/fr/security/).
+Un inventaire du patrimoine familial contient des informations sensibles, donc l'endroit où vous le conservez compte. Avec Vaulto, chaque connexion est chiffrée en transit (TLS/HTTPS), vos données sont stockées dans une base de données gérée avec chiffrement au repos, et le coffre de chaque personne est isolé des autres utilisateurs — un coffre privé que vous contrôlez. Nous ne vendons jamais vos données. Nous faisons aussi délibérément preuve d'honnêteté sur ce que nous ne prétendons pas offrir — pas de mots à la mode comme « bank-level » ou « zero-knowledge », seulement les protections précises que nous mettons réellement en place. Vous pouvez lire exactement comment nous les protégeons sur notre [page sécurité](/fr/security/).
 
 ## Commencez petit, commencez aujourd'hui
 

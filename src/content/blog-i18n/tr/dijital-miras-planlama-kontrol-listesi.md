@@ -76,7 +76,7 @@ Miras planlaması hukuk ve para ile ilgilidir, bu yüzden iki şeyi açıkça s�
 
 ## Gizlilik, çünkü konu bundan daha hassas olamaz
 
-Bir miras planı ailenizin en kişisel ayrıntılarını içerir, bu yüzden nerede tutulduğu önemlidir. Vaulto ile her bağlantı aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız bekleme durumunda şifrelemeye sahip yönetilen bir veritabanında saklanır, belgelere yalnızca kısa süreli, imzalı bağlantılar üzerinden erişilebilir ve yalnızca kendi kasanızı görebilir ve düzenleyebilirsiniz. Verilerinizi asla satmayız — ayrıca ne yaptığımız ve ne iddia etmediğimiz konusunda özellikle dürüst davranırız. Verilerinizi nasıl güvende tuttuğumuzu tam olarak [güvenlik sayfamızda](/tr/security/) görebilirsiniz.
+Bir miras planı ailenizin en kişisel ayrıntılarını içerir, bu yüzden nerede tutulduğu önemlidir. Vaulto ile her bağlantı aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız bekleme durumunda şifrelemeye sahip yönetilen bir veritabanında saklanır, belgelere yalnızca kısa süreli, imzalı bağlantılar üzerinden erişilebilir ve her kişinin kasası diğer kullanıcılardan yalıtılmıştır — kontrolü sizde olan özel bir kasa. Verilerinizi asla satmayız — ayrıca ne yaptığımız ve ne iddia etmediğimiz konusunda özellikle dürüst davranırız. Verilerinizi nasıl güvende tuttuğumuzu tam olarak [güvenlik sayfamızda](/tr/security/) görebilirsiniz.
 
 ## Listedeki tek bir satırla başlayın
 

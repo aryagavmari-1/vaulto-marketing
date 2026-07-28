@@ -77,7 +77,7 @@ Tutto ciò che aggiungi resta privato nel tuo account, protetto da solide misure
 
 ## Una breve nota sulla privacy
 
-Un inventario patrimoniale familiare contiene informazioni sensibili, quindi conta dove lo conservi. Con Vaulto, ogni connessione è crittografata durante il transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con crittografia at rest, e puoi vedere e modificare solo il tuo vault. Non vendiamo mai i tuoi dati. Siamo anche deliberatamente onesti su ciò che non dichiariamo — niente parole d'effetto come "bank-level" o "zero-knowledge", solo le protezioni specifiche che offriamo davvero. Puoi leggere esattamente come lo manteniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
+Un inventario patrimoniale familiare contiene informazioni sensibili, quindi conta dove lo conservi. Con Vaulto, ogni connessione è crittografata durante il transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con crittografia at rest, e il vault di ogni persona è isolato dagli altri utenti: un vault privato che controlli tu. Non vendiamo mai i tuoi dati. Siamo anche deliberatamente onesti su ciò che non dichiariamo — niente parole d'effetto come "bank-level" o "zero-knowledge", solo le protezioni specifiche che offriamo davvero. Puoi leggere esattamente come lo manteniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
 
 ## Inizia in piccolo, inizia oggi
 

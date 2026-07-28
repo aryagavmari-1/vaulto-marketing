@@ -74,7 +74,7 @@ Du musst nicht täglich nachsehen. Ein einfacher Rhythmus hält die Zahl ehrlich
 
 ## Ein Hinweis zum Datenschutz
 
-Dein Nettovermögen ist ungefähr so persönlich, wie Daten nur sein können, also bewahre es an einem Ort auf, der für sensible Informationen gemacht ist. Mit Vaulto werden Verbindungen bei der Übertragung verschlüsselt (TLS/HTTPS), deine Unterlagen liegen in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand, und nur du kannst deinen eigenen Tresor sehen und bearbeiten. Wir verkaufen deine Daten niemals, und wir sagen klar, was wir tun und was wir nicht behaupten — die genauen Details findest du auf unserer [Sicherheitsseite](/de/security/).
+Dein Nettovermögen ist ungefähr so persönlich, wie Daten nur sein können, also bewahre es an einem Ort auf, der für sensible Informationen gemacht ist. Mit Vaulto werden Verbindungen bei der Übertragung verschlüsselt (TLS/HTTPS), deine Unterlagen liegen in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand, und der Tresor jeder Person ist von anderen Nutzern isoliert — ein privater Tresor, den du kontrollierst. Wir verkaufen deine Daten niemals, und wir sagen klar, was wir tun und was wir nicht behaupten — die genauen Details findest du auf unserer [Sicherheitsseite](/de/security/).
 
 ## Deine Zahl ist nur eine Momentaufnahme entfernt
 

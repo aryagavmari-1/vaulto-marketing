@@ -74,7 +74,7 @@ Under ett år förvandlar de här avstämningarna en enskild ögonblicksbild til
 
 ## En kommentar om integritet
 
-Din nettoförmögenhet är ungefär så personlig data kan bli, så förvara den någonstans som är byggt för känslig information. Med Vaulto är anslutningar krypterade under överföring (TLS/HTTPS), dina uppgifter ligger i en hanterad databas med kryptering i vila, och bara du kan se och redigera ditt eget vault. Vi säljer aldrig dina data, och vi är tydliga med vad vi gör och inte påstår — se vår [säkerhetssida](/sv/security/) för detaljerna.
+Din nettoförmögenhet är ungefär så personlig data kan bli, så förvara den någonstans som är byggt för känslig information. Med Vaulto är anslutningar krypterade under överföring (TLS/HTTPS), dina uppgifter ligger i en hanterad databas med kryptering i vila, och varje persons vault är isolerat från andra användare — ett privat vault som du styr över. Vi säljer aldrig dina data, och vi är tydliga med vad vi gör och inte påstår — se vår [säkerhetssida](/sv/security/) för detaljerna.
 
 ## Din siffra är bara en ögonblicksbild bort
 

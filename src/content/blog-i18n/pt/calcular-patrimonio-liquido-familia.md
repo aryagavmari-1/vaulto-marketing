@@ -74,7 +74,7 @@ Ao longo de um ano, essas revisões transformam uma única fotografia numa tend�
 
 ## Uma nota sobre privacidade
 
-O seu património líquido é dos dados mais pessoais que existem, por isso mantenha-o num lugar criado para informação sensível. Com o Vaulto, as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos ficam numa base de dados gerida com encriptação em repouso, e só você pode ver e editar o seu próprio cofre. Nunca vendemos os seus dados e somos claros sobre o que afirmamos e o que não afirmamos — veja a nossa [página de segurança](/pt/security/) para os detalhes.
+O seu património líquido é dos dados mais pessoais que existem, por isso mantenha-o num lugar criado para informação sensível. Com o Vaulto, as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos ficam numa base de dados gerida com encriptação em repouso, e o cofre de cada pessoa está isolado dos outros utilizadores — um cofre privado sob o seu controlo. Nunca vendemos os seus dados e somos claros sobre o que afirmamos e o que não afirmamos — veja a nossa [página de segurança](/pt/security/) para os detalhes.
 
 ## O seu número está a uma única fotografia de distância
 

@@ -77,7 +77,7 @@ Allt du lägger till förblir privat på ditt konto, skyddat med stark säkerhet
 
 ## Några snabba ord om integritet
 
-En familjeinventering av tillgångar innehåller känslig information, så var du förvarar den spelar roll. Med Vaulto är varje anslutning krypterad under överföring (TLS/HTTPS), dina uppgifter lagras i en hanterad databas med kryptering i vila, och du kan bara se och redigera ditt eget valv. Vi säljer aldrig dina uppgifter. Vi är också medvetet ärliga om vad vi inte påstår — inga modeord som "bank-level" eller "zero-knowledge", bara de specifika skydd vi faktiskt levererar. Du kan läsa exakt hur vi håller det säkert på vår [säkerhetssida](/sv/security/).
+En familjeinventering av tillgångar innehåller känslig information, så var du förvarar den spelar roll. Med Vaulto är varje anslutning krypterad under överföring (TLS/HTTPS), dina uppgifter lagras i en hanterad databas med kryptering i vila, och varje persons valv är isolerat från andra användare — ett privat valv som du styr över. Vi säljer aldrig dina uppgifter. Vi är också medvetet ärliga om vad vi inte påstår — inga modeord som "bank-level" eller "zero-knowledge", bara de specifika skydd vi faktiskt levererar. Du kan läsa exakt hur vi håller det säkert på vår [säkerhetssida](/sv/security/).
 
 ## Börja smått, börja i dag
 

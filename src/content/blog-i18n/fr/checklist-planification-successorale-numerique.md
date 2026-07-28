@@ -76,7 +76,7 @@ La planification successorale touche au droit et à l’argent, donc deux points
 
 ## La confidentialité, parce qu’il s’agit de ce qu’il y a de plus sensible
 
-Un plan successoral contient les détails les plus personnels de votre famille, donc l’endroit où il est conservé compte. Avec Vaulto, chaque connexion est chiffrée en transit (TLS/HTTPS), vos enregistrements sont stockés dans une base de données gérée avec chiffrement au repos, les documents ne sont accessibles qu’au moyen de liens signés à courte durée de vie, et vous seul pouvez consulter et modifier votre propre coffre. Nous ne vendons jamais vos données — et nous faisons délibérément preuve d’honnêteté sur ce que nous affirmons et n’affirmons pas. Voyez exactement comment nous les protégeons sur notre [page de sécurité](/fr/security/).
+Un plan successoral contient les détails les plus personnels de votre famille, donc l’endroit où il est conservé compte. Avec Vaulto, chaque connexion est chiffrée en transit (TLS/HTTPS), vos enregistrements sont stockés dans une base de données gérée avec chiffrement au repos, les documents ne sont accessibles qu’au moyen de liens signés à courte durée de vie, et le coffre de chaque personne est isolé des autres utilisateurs — un coffre privé que vous contrôlez. Nous ne vendons jamais vos données — et nous faisons délibérément preuve d’honnêteté sur ce que nous affirmons et n’affirmons pas. Voyez exactement comment nous les protégeons sur notre [page de sécurité](/fr/security/).
 
 ## Commencez par une seule ligne du checklist
 

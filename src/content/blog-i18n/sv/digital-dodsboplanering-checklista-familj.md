@@ -76,7 +76,7 @@ Dödsboplanering berör juridik och pengar, så det finns två saker som är vä
 
 ## Integritet, eftersom det här är så känsligt som det blir
 
-En dödsboplanering innehåller din familjs mest personliga uppgifter, så var den finns spelar roll. Med Vaulto är varje anslutning krypterad under överföring (TLS/HTTPS), dina uppgifter lagras i en hanterad databas med kryptering i vila, dokument kan bara nås via kortlivade, signerade länkar, och du kan bara se och redigera ditt eget valv. Vi säljer aldrig dina uppgifter — och vi är medvetet ärliga om vad vi gör och inte påstår. Se exakt hur vi håller det säkert på vår [säkerhetssida](/sv/security/).
+En dödsboplanering innehåller din familjs mest personliga uppgifter, så var den finns spelar roll. Med Vaulto är varje anslutning krypterad under överföring (TLS/HTTPS), dina uppgifter lagras i en hanterad databas med kryptering i vila, dokument kan bara nås via kortlivade, signerade länkar, och varje persons valv är isolerat från andra användare — ett privat valv som du styr över. Vi säljer aldrig dina uppgifter — och vi är medvetet ärliga om vad vi gör och inte påstår. Se exakt hur vi håller det säkert på vår [säkerhetssida](/sv/security/).
 
 ## Börja med en rad i listan
 

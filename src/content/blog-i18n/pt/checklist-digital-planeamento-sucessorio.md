@@ -76,7 +76,7 @@ O planeamento sucessório envolve lei e dinheiro, por isso há duas coisas que v
 
 ## Privacidade, porque isto é tão sensível quanto possível
 
-Um plano sucessório contém os detalhes mais pessoais da sua família, por isso o lugar onde fica guardado importa. Com o Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, os documentos só podem ser acedidos através de ligações assinadas de curta duração, e só pode ver e editar o seu próprio cofre. Nunca vendemos os seus dados — e somos deliberadamente honestos sobre o que afirmamos e o que não afirmamos. Veja exatamente como os mantemos seguros na nossa [página de segurança](/pt/security/).
+Um plano sucessório contém os detalhes mais pessoais da sua família, por isso o lugar onde fica guardado importa. Com o Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, os documentos só podem ser acedidos através de ligações assinadas de curta duração, e o cofre de cada pessoa está isolado dos outros utilizadores — um cofre privado sob o seu controlo. Nunca vendemos os seus dados — e somos deliberadamente honestos sobre o que afirmamos e o que não afirmamos. Veja exatamente como os mantemos seguros na nossa [página de segurança](/pt/security/).
 
 ## Comece com uma linha da lista
 

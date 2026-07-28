@@ -76,7 +76,7 @@ Nachlassplanung berührt Recht und Geld, deshalb sind zwei Dinge wichtig, klar z
 
 ## Privatsphäre, denn sensibler geht es kaum
 
-Ein Nachlassplan enthält die persönlichsten Details Ihrer Familie, deshalb ist wichtig, wo er aufbewahrt wird. Bei Vaulto wird jede Verbindung bei der Übertragung verschlüsselt (TLS/HTTPS), Ihre Einträge werden in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand gespeichert, Dokumente sind nur über kurzlebige signierte Links erreichbar, und Sie können immer nur Ihren eigenen Vault sehen und bearbeiten. Wir verkaufen Ihre Daten niemals — und wir sind bewusst ehrlich darin, was wir behaupten und was nicht. Auf unserer [Sicherheitsseite](/de/security/) sehen Sie genau, wie wir alles schützen.
+Ein Nachlassplan enthält die persönlichsten Details Ihrer Familie, deshalb ist wichtig, wo er aufbewahrt wird. Bei Vaulto wird jede Verbindung bei der Übertragung verschlüsselt (TLS/HTTPS), Ihre Einträge werden in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand gespeichert, Dokumente sind nur über kurzlebige signierte Links erreichbar, und der Vault jeder Person ist von anderen Nutzern isoliert — ein privater Vault, den Sie kontrollieren. Wir verkaufen Ihre Daten niemals — und wir sind bewusst ehrlich darin, was wir behaupten und was nicht. Auf unserer [Sicherheitsseite](/de/security/) sehen Sie genau, wie wir alles schützen.
 
 ## Beginnen Sie mit einer Zeile auf der Liste
 

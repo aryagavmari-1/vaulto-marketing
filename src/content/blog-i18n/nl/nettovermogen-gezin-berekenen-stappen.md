@@ -74,7 +74,7 @@ In de loop van een jaar veranderen die controlemomenten één losse momentopname
 
 ## Een opmerking over privacy
 
-Je nettovermogen is ongeveer zo persoonlijk als gegevens maar kunnen zijn, dus bewaar het ergens dat gebouwd is voor gevoelige informatie. Met Vaulto zijn verbindingen versleuteld tijdens transport (TLS/HTTPS), staan je gegevens in een beheerde database met encryptie at rest, en alleen jij kunt je eigen vault bekijken en bewerken. We verkopen je gegevens nooit, en we zijn duidelijk over wat we wel en niet claimen — bekijk onze [beveiligingspagina](/nl/security/) voor de details.
+Je nettovermogen is ongeveer zo persoonlijk als gegevens maar kunnen zijn, dus bewaar het ergens dat gebouwd is voor gevoelige informatie. Met Vaulto zijn verbindingen versleuteld tijdens transport (TLS/HTTPS), staan je gegevens in een beheerde database met encryptie at rest, en is de vault van elke persoon geïsoleerd van andere gebruikers — een privévault die jij beheert. We verkopen je gegevens nooit, en we zijn duidelijk over wat we wel en niet claimen — bekijk onze [beveiligingspagina](/nl/security/) voor de details.
 
 ## Je getal is nog maar één momentopname van je verwijderd
 

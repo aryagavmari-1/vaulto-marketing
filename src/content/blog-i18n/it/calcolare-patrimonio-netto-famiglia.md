@@ -74,7 +74,7 @@ Nel corso di un anno, questi controlli trasformano una singola istantanea in una
 
 ## Una nota sulla privacy
 
-Il tuo patrimonio netto è tra i dati più personali che esistano, quindi conservalo in un posto progettato per informazioni sensibili. Con Vaulto, le connessioni sono crittografate durante il transito (TLS/HTTPS), i tuoi dati si trovano in un database gestito con crittografia a riposo, e solo tu puoi vedere e modificare il tuo vault. Non vendiamo mai i tuoi dati e siamo chiari su ciò che dichiariamo e ciò che non dichiariamo — consulta la nostra [pagina sulla sicurezza](/it/security/) per i dettagli.
+Il tuo patrimonio netto è tra i dati più personali che esistano, quindi conservalo in un posto progettato per informazioni sensibili. Con Vaulto, le connessioni sono crittografate durante il transito (TLS/HTTPS), i tuoi dati si trovano in un database gestito con crittografia a riposo, e il vault di ogni persona è isolato dagli altri utenti: un vault privato che controlli tu. Non vendiamo mai i tuoi dati e siamo chiari su ciò che dichiariamo e ciò che non dichiariamo — consulta la nostra [pagina sulla sicurezza](/it/security/) per i dettagli.
 
 ## Il tuo numero è a una sola istantanea di distanza
 

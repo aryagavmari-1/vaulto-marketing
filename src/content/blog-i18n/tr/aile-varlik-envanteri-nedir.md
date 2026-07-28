@@ -77,7 +77,7 @@ Eklediğiniz her şey hesabınıza özel olarak kalır, güçlü güvenlikle kor
 
 ## Gizlilik hakkında kısa bir not
 
-Aile varlık envanteri hassas bilgiler içerir; bu yüzden onu nerede tuttuğunuz önemlidir. Vaulto ile her bağlantı aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız beklemede şifrelemeye sahip yönetilen bir veritabanında saklanır ve kasanızı yalnızca siz görebilir ve düzenleyebilirsiniz. Verilerinizi asla satmayız. Ayrıca neyi iddia etmediğimiz konusunda da bilinçli olarak dürüstüz — "bank-level" veya "zero-knowledge" gibi moda ifadeler yok; yalnızca gerçekten sunduğumuz belirli korumalar var. Bunları tam olarak nasıl güvende tuttuğumuzu [güvenlik sayfamızda](/tr/security/) okuyabilirsiniz.
+Aile varlık envanteri hassas bilgiler içerir; bu yüzden onu nerede tuttuğunuz önemlidir. Vaulto ile her bağlantı aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız beklemede şifrelemeye sahip yönetilen bir veritabanında saklanır ve her kişinin kasası diğer kullanıcılardan yalıtılmıştır — kontrolü sizde olan özel bir kasa. Verilerinizi asla satmayız. Ayrıca neyi iddia etmediğimiz konusunda da bilinçli olarak dürüstüz — "bank-level" veya "zero-knowledge" gibi moda ifadeler yok; yalnızca gerçekten sunduğumuz belirli korumalar var. Bunları tam olarak nasıl güvende tuttuğumuzu [güvenlik sayfamızda](/tr/security/) okuyabilirsiniz.
 
 ## Küçük başlayın, bugün başlayın
 

@@ -76,7 +76,7 @@ La planificación patrimonial toca temas legales y de dinero, así que merece la
 
 ## Privacidad, porque esto es tan delicado como parece
 
-Un plan patrimonial contiene los datos más personales de tu familia, así que el lugar donde se guarda importa. Con Vaulto, cada conexión está cifrada en tránsito (TLS/HTTPS), tus registros se almacenan en una base de datos gestionada con cifrado en reposo, a los documentos solo se puede acceder mediante enlaces firmados de corta duración, y solo tú puedes ver y editar tu propia bóveda. Nunca vendemos tus datos — y somos deliberadamente honestos sobre lo que afirmamos y lo que no. Consulta exactamente cómo lo mantenemos seguro en nuestra [página de seguridad](/es/security/).
+Un plan patrimonial contiene los datos más personales de tu familia, así que el lugar donde se guarda importa. Con Vaulto, cada conexión está cifrada en tránsito (TLS/HTTPS), tus registros se almacenan en una base de datos gestionada con cifrado en reposo, a los documentos solo se puede acceder mediante enlaces firmados de corta duración, y la bóveda de cada persona está aislada de los demás usuarios: una bóveda privada que tú controlas. Nunca vendemos tus datos — y somos deliberadamente honestos sobre lo que afirmamos y lo que no. Consulta exactamente cómo lo mantenemos seguro en nuestra [página de seguridad](/es/security/).
 
 ## Empieza con una sola línea de la lista
 

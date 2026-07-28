@@ -74,7 +74,7 @@ W ciągu roku takie kontrole zamieniają pojedynczą migawkę w trend, który na
 
 ## Uwaga o prywatności
 
-Twój majątek netto to jedna z najbardziej osobistych kategorii danych, więc trzymaj go w miejscu stworzonym do wrażliwych informacji. Z Vaulto połączenia są szyfrowane podczas transmisji (TLS/HTTPS), Twoje dane znajdują się w zarządzanej bazie danych z szyfrowaniem danych w spoczynku, a tylko Ty możesz przeglądać i edytować swój własny sejf. Nigdy nie sprzedajemy Twoich danych i jasno mówimy o tym, co robimy i czego nie deklarujemy — szczegóły znajdziesz na naszej [stronie bezpieczeństwa](/pl/security/).
+Twój majątek netto to jedna z najbardziej osobistych kategorii danych, więc trzymaj go w miejscu stworzonym do wrażliwych informacji. Z Vaulto połączenia są szyfrowane podczas transmisji (TLS/HTTPS), Twoje dane znajdują się w zarządzanej bazie danych z szyfrowaniem danych w spoczynku, a sejf każdej osoby jest odizolowany od innych użytkowników — prywatny sejf, który kontrolujesz Ty. Nigdy nie sprzedajemy Twoich danych i jasno mówimy o tym, co robimy i czego nie deklarujemy — szczegóły znajdziesz na naszej [stronie bezpieczeństwa](/pl/security/).
 
 ## Twoja liczba jest o jedną migawkę stąd
 

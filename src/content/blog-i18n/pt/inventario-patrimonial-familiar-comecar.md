@@ -77,7 +77,7 @@ Tudo o que adicionar permanece privado na sua conta, protegido com segurança fo
 
 ## Uma nota rápida sobre privacidade
 
-Um inventário patrimonial familiar contém informação sensível, por isso o local onde o guarda importa. Com a Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, e você só pode ver e editar o seu próprio cofre. Nunca vendemos os seus dados. Também somos deliberadamente honestos sobre o que não afirmamos — nada de chavões como "bank-level" ou "zero-knowledge", apenas as proteções específicas que realmente disponibilizamos. Pode ler exatamente como mantemos tudo seguro na nossa [página de segurança](/pt/security/).
+Um inventário patrimonial familiar contém informação sensível, por isso o local onde o guarda importa. Com a Vaulto, todas as ligações são encriptadas em trânsito (TLS/HTTPS), os seus registos são armazenados numa base de dados gerida com encriptação em repouso, e o cofre de cada pessoa está isolado dos outros utilizadores — um cofre privado sob o seu controlo. Nunca vendemos os seus dados. Também somos deliberadamente honestos sobre o que não afirmamos — nada de chavões como "bank-level" ou "zero-knowledge", apenas as proteções específicas que realmente disponibilizamos. Pode ler exatamente como mantemos tudo seguro na nossa [página de segurança](/pt/security/).
 
 ## Comece pequeno, comece hoje
 

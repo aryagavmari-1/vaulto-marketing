@@ -76,7 +76,7 @@ Planowanie spadkowe dotyczy prawa i pieniędzy, więc warto powiedzieć wprost o
 
 ## Prywatność, bo to jedne z najbardziej wrażliwych informacji
 
-Plan spadkowy zawiera najbardziej osobiste informacje o Twojej rodzinie, dlatego miejsce jego przechowywania ma znaczenie. W Vaulto każde połączenie jest szyfrowane podczas przesyłania (TLS/HTTPS), Twoje dane są przechowywane w zarządzanej bazie danych z szyfrowaniem at rest, do dokumentów można dotrzeć wyłącznie przez krótkotrwałe, podpisane linki, a Ty możesz widzieć i edytować tylko własny sejf. Nigdy nie sprzedajemy Twoich danych — i celowo uczciwie mówimy o tym, co twierdzimy, a czego nie. Zobacz dokładnie, jak dbamy o bezpieczeństwo, na naszej [stronie bezpieczeństwa](/pl/security/).
+Plan spadkowy zawiera najbardziej osobiste informacje o Twojej rodzinie, dlatego miejsce jego przechowywania ma znaczenie. W Vaulto każde połączenie jest szyfrowane podczas przesyłania (TLS/HTTPS), Twoje dane są przechowywane w zarządzanej bazie danych z szyfrowaniem at rest, do dokumentów można dotrzeć wyłącznie przez krótkotrwałe, podpisane linki, a sejf każdej osoby jest odizolowany od innych użytkowników — prywatny sejf, który kontrolujesz Ty. Nigdy nie sprzedajemy Twoich danych — i celowo uczciwie mówimy o tym, co twierdzimy, a czego nie. Zobacz dokładnie, jak dbamy o bezpieczeństwo, na naszej [stronie bezpieczeństwa](/pl/security/).
 
 ## Zacznij od jednej pozycji z listy
 

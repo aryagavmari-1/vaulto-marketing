@@ -74,7 +74,7 @@ Bir yıl içinde bu kontroller, tek bir anlık görüntüyü gerçekten takip et
 
 ## Gizlilik hakkında bir not
 
-Net varlığınız, olabilecek en kişisel veriler arasındadır; bu yüzden bunu hassas bilgiler için tasarlanmış bir yerde saklayın. Vaulto ile bağlantılar aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız bekleme durumunda şifrelemeye sahip yönetilen bir veritabanında tutulur ve yalnızca siz kendi kasanızı görebilir ve düzenleyebilirsiniz. Verilerinizi asla satmayız; ayrıca ne yaptığımız ve neyi iddia etmediğimiz konusunda açık davranırız — ayrıntılar için [güvenlik sayfamıza](/tr/security/) bakın.
+Net varlığınız, olabilecek en kişisel veriler arasındadır; bu yüzden bunu hassas bilgiler için tasarlanmış bir yerde saklayın. Vaulto ile bağlantılar aktarım sırasında şifrelenir (TLS/HTTPS), kayıtlarınız bekleme durumunda şifrelemeye sahip yönetilen bir veritabanında tutulur ve her kişinin kasası diğer kullanıcılardan yalıtılmıştır — kontrolü sizde olan özel bir kasa. Verilerinizi asla satmayız; ayrıca ne yaptığımız ve neyi iddia etmediğimiz konusunda açık davranırız — ayrıntılar için [güvenlik sayfamıza](/tr/security/) bakın.
 
 ## Sayınıza sadece bir anlık görüntü kadar uzaksınız
 

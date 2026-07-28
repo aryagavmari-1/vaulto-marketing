@@ -77,7 +77,7 @@ Alles, was du hinzufügst, bleibt privat in deinem Konto, ist mit starker Sicher
 
 ## Ein kurzes Wort zum Datenschutz
 
-Ein Familienvermögensverzeichnis enthält sensible Informationen, daher ist wichtig, wo du es aufbewahrst. Mit Vaulto wird jede Verbindung bei der Übertragung verschlüsselt (TLS/HTTPS), deine Unterlagen werden in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand gespeichert, und du kannst immer nur deinen eigenen Tresor sehen und bearbeiten. Wir verkaufen deine Daten nie. Wir sagen auch bewusst ehrlich, was wir nicht behaupten — keine Schlagworte wie „bank-level“ oder „zero-knowledge“, sondern nur die konkreten Schutzmaßnahmen, die wir tatsächlich bereitstellen. Du kannst auf unserer [Sicherheitsseite](/de/security/) genau nachlesen, wie wir alles schützen.
+Ein Familienvermögensverzeichnis enthält sensible Informationen, daher ist wichtig, wo du es aufbewahrst. Mit Vaulto wird jede Verbindung bei der Übertragung verschlüsselt (TLS/HTTPS), deine Unterlagen werden in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand gespeichert, und der Tresor jeder Person ist von anderen Nutzern isoliert — ein privater Tresor, den du kontrollierst. Wir verkaufen deine Daten nie. Wir sagen auch bewusst ehrlich, was wir nicht behaupten — keine Schlagworte wie „bank-level“ oder „zero-knowledge“, sondern nur die konkreten Schutzmaßnahmen, die wir tatsächlich bereitstellen. Du kannst auf unserer [Sicherheitsseite](/de/security/) genau nachlesen, wie wir alles schützen.
 
 ## Fang klein an, fang heute an
 

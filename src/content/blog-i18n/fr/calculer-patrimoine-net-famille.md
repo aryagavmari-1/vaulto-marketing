@@ -74,7 +74,7 @@ Sur un an, ces vérifications transforment un simple instantané en une tendance
 
 ## Un mot sur la confidentialité
 
-Votre patrimoine net fait partie des données les plus personnelles qui soient, alors gardez-le dans un endroit conçu pour les informations sensibles. Avec Vaulto, les connexions sont chiffrées en transit (TLS/HTTPS), vos données sont stockées dans une base de données gérée avec chiffrement au repos, et vous seul pouvez voir et modifier votre propre coffre. Nous ne vendons jamais vos données, et nous expliquons clairement ce que nous affirmons et ce que nous n'affirmons pas — consultez notre [page sécurité](/fr/security/) pour les détails.
+Votre patrimoine net fait partie des données les plus personnelles qui soient, alors gardez-le dans un endroit conçu pour les informations sensibles. Avec Vaulto, les connexions sont chiffrées en transit (TLS/HTTPS), vos données sont stockées dans une base de données gérée avec chiffrement au repos, et le coffre de chaque personne est isolé des autres utilisateurs — un coffre privé que vous contrôlez. Nous ne vendons jamais vos données, et nous expliquons clairement ce que nous affirmons et ce que nous n'affirmons pas — consultez notre [page sécurité](/fr/security/) pour les détails.
 
 ## Votre chiffre n'est plus qu'à un instantané
 

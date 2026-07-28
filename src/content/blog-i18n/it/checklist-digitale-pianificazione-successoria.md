@@ -76,7 +76,7 @@ La pianificazione successoria tocca aspetti legali e finanziari, quindi vale la 
 
 ## Privacy, perché qui si tratta di informazioni estremamente sensibili
 
-Un piano successorio contiene i dettagli più personali della tua famiglia, quindi il luogo in cui è conservato conta. Con Vaulto, ogni connessione è criptata in transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con encryption at rest, i documenti sono raggiungibili solo tramite link firmati a breve durata e puoi vedere e modificare solo il tuo vault. Non vendiamo mai i tuoi dati — e siamo volutamente trasparenti su ciò che dichiariamo e ciò che non dichiariamo. Scopri esattamente come li teniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
+Un piano successorio contiene i dettagli più personali della tua famiglia, quindi il luogo in cui è conservato conta. Con Vaulto, ogni connessione è criptata in transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con encryption at rest, i documenti sono raggiungibili solo tramite link firmati a breve durata e il vault di ogni persona è isolato dagli altri utenti: un vault privato che controlli tu. Non vendiamo mai i tuoi dati — e siamo volutamente trasparenti su ciò che dichiariamo e ciò che non dichiariamo. Scopri esattamente come li teniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
 
 ## Inizia con una sola riga della lista
 

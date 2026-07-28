@@ -77,7 +77,7 @@ Wszystko, co dodajesz, pozostaje prywatne na twoim koncie, chronione silnymi zab
 
 ## Krótkie słowo o prywatności
 
-Rodzinny spis majątku zawiera wrażliwe informacje, więc to, gdzie go przechowujesz, ma znaczenie. Z Vaulto każde połączenie jest szyfrowane podczas przesyłania (TLS/HTTPS), twoje dane są przechowywane w zarządzanej bazie danych z szyfrowaniem danych w spoczynku, a tylko ty możesz przeglądać i edytować własny sejf. Nigdy nie sprzedajemy twoich danych. Celowo też uczciwie mówimy o tym, czego nie twierdzimy — żadnych modnych haseł typu „bank-level” czy „zero-knowledge”, tylko konkretne zabezpieczenia, które rzeczywiście wdrażamy. Możesz przeczytać dokładnie, jak dbamy o bezpieczeństwo, na naszej [stronie o bezpieczeństwie](/pl/security/).
+Rodzinny spis majątku zawiera wrażliwe informacje, więc to, gdzie go przechowujesz, ma znaczenie. Z Vaulto każde połączenie jest szyfrowane podczas przesyłania (TLS/HTTPS), twoje dane są przechowywane w zarządzanej bazie danych z szyfrowaniem danych w spoczynku, a sejf każdej osoby jest odizolowany od innych użytkowników — prywatny sejf, który kontrolujesz ty. Nigdy nie sprzedajemy twoich danych. Celowo też uczciwie mówimy o tym, czego nie twierdzimy — żadnych modnych haseł typu „bank-level” czy „zero-knowledge”, tylko konkretne zabezpieczenia, które rzeczywiście wdrażamy. Możesz przeczytać dokładnie, jak dbamy o bezpieczeństwo, na naszej [stronie o bezpieczeństwie](/pl/security/).
 
 ## Zacznij mało, zacznij dziś
 
