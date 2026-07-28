@@ -9,10 +9,21 @@
 //   npm run claims:check     standalone
 //   npm run build            runs automatically via prebuild
 //
-// Legitimate uses are expressible with an inline allow marker carrying a reason:
+// Legitimate uses are expressible with an inline allow marker carrying a reason.
+// Use the comment syntax of the host file, and never an HTML comment in a page
+// the reader is served — Astro emits `<!-- ... -->` straight into the rendered
+// HTML, so a body marker leaks the retired claim into the public source. In
+// markdown that means the frontmatter, as a YAML `#` comment:
 //
-//   <!-- claims-allow: revocable-sharing — open-banking tokens at other
-//        providers, not Vaulto sharing (ARY-23 row 3) -->
+//   ---
+//   draft: false
+//   # claims-allow: revocable-sharing — open-banking tokens at other providers,
+//   #   not Vaulto sharing (C-003).
+//   ---
+//
+// The same applies to `.astro`: an HTML comment there ships too, so use a `---`
+// fence JS comment, not `<!-- ... -->`. Cite the immutable claim id (C-NNN);
+// the legacy "§0 row N" numbering was retired by ARY-1338 and must not be cited.
 //
 // The marker exempts its rule id for the file it appears in, and every allowed
 // hit is printed in the summary so an exemption stays a visible decision.

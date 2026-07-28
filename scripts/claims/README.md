@@ -64,15 +64,24 @@ inline marker makes that a visible decision rather than a silently weakened rule
 title: "..."
 draft: false
 # claims-allow: revocable-sharing — this post discusses revoking open-banking
-# access at OTHER providers, never Vaulto sharing (ARY-23 §0 C-003).
+# access at OTHER providers, never Vaulto sharing (C-003).
 ---
 ```
+
+Cite the immutable claim id (`C-003`). The legacy `§0 row N` numbering was
+retired by [ARY-1338](/ARY/issues/ARY-1338) and must not be cited.
 
 ⚠️ **Do not use an HTML comment in the post body.** Astro emits `<!-- ... -->`
 straight into the rendered page, so the marker — which quotes the retired claim
 and explains why we can't make it — ends up in the public HTML source. Verified:
 a body marker showed up in `dist/blog/.../index.html`; the frontmatter one does
 not. Frontmatter is stripped at build time, which is what we want.
+
+⚠️ **The same applies to `.astro`.** An HTML comment in an `.astro` template
+ships to the reader just as a markdown-body one does — `src/layouts/Base.astro`
+has one, and it renders into all 226 pages. In `.astro`, put the marker in the
+`---` component-script fence as a `//` comment. Markers in `.ts` and `.json`
+(via a `_comment` key) are safe; nothing in those surfaces reaches the reader.
 
 - The marker exempts **that rule id, in that file only**.
 - The reason is **mandatory** (12+ chars) — a bare suppression is a build error.
