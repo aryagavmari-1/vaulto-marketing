@@ -38,7 +38,7 @@
     },
     {
       "title": "Åtkomstkontroller.",
-      "body": "Varje persons valv är isolerat från andra användare — du kan bara se och redigera ditt eget."
+      "body": "Varje persons valv är isolerat från andra användare."
     }
   ],
   "promise": {

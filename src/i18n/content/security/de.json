@@ -38,7 +38,7 @@
     },
     {
       "title": "Zugriffskontrollen.",
-      "body": "Der Tresor jeder Person ist von anderen Nutzern isoliert — du kannst nur deinen eigenen Tresor sehen und bearbeiten."
+      "body": "Der Tresor jeder Person ist von anderen Nutzern isoliert."
     }
   ],
   "promise": {
