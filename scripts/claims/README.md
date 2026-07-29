@@ -9,9 +9,15 @@ unlikely. It runs in `prebuild`, so it gates both the GitHub Actions deploy
 workflow and Render's own auto-deploy — nothing reaches the site without passing.
 
 ```
-npm run claims:check    # run it now
-npm run build           # runs automatically, before the OG render
+npm run guard:claims    # run the banned-claims guard now
+npm run claims:test     # assert every rule's mustFire / mustStayGreen controls
+npm run build           # runs both automatically, before the OG render
 ```
+
+`guard:claims` scans the site for retired wording. `claims:test` is a separate
+meta-level check: it proves the regexes themselves fire on the real retired text
+and stay green on the approved replacements. Both run in `prebuild` so a bad
+regex edit is caught before deploy. The legacy `claims:check` alias still works.
 
 ## What it scans
 

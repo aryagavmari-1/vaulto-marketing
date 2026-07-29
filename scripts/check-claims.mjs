@@ -6,7 +6,7 @@
 // scripts/claims/sync-proof-table.mjs — and fails the build if any retired
 // phrase appears in i18n JSON (all locales), blog markdown, or page templates.
 //
-//   npm run claims:check     standalone
+//   npm run guard:claims     standalone  (alias: claims:check)
 //   npm run build            runs automatically via prebuild
 //
 // Legitimate uses are expressible with an inline allow marker carrying a reason.
