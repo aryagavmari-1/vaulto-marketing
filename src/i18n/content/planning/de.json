@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Kostenlosen Überblick ausprobieren"
+  },
+  "finalCta": {
+    "title": "Plane, wenn du bereit bist.",
+    "body": "Starte mit einem kostenlosen Überblick — kein Druck, keine Eile, keine Karte nötig."
   }
 }

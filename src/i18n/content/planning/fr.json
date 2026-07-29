@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Essayer un aperçu gratuit"
+  },
+  "finalCta": {
+    "title": "Planifiez quand vous êtes prêt.",
+    "body": "Commencez par un aperçu gratuit — sans pression, sans urgence, sans carte requise."
   }
 }

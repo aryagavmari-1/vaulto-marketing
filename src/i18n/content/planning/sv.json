@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Prova en kostnadsfri översikt"
+  },
+  "finalCta": {
+    "title": "Planera när du är redo.",
+    "body": "Börja med en kostnadsfri översikt — ingen press, ingen brådska, inget kort behövs."
   }
 }
