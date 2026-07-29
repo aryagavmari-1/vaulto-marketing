@@ -1,8 +1,8 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Produced by scripts/claims/sync-proof-table.mjs from the ARY-23 §0 proof table (the single source of truth for product claims). To retire a claim: update the §0 row and its claims-guard entry in ARY-23, then run `npm run claims:sync`.",
   "source": "ARY-23 #document-positioning-deck §0",
-  "sourceRevisionId": "9713a93b-2b99-4015-b995-e03273be45bb",
-  "generatedAt": "2026-07-28T21:37:06.977Z",
+  "sourceRevisionId": "9bf51932-b0a7-425b-8348-43ac1b72531d",
+  "generatedAt": "2026-07-29T00:20:52.082Z",
   "retiredClaimsInTable": [
     "C-002",
     "C-003",
@@ -105,10 +105,38 @@
         "\\btime[- ]limited\\s+(share|sharing)\\s+links?\\b",
         "\\bshare(able)?\\s+links?\\b",
         "\\bsharing\\s+links?\\b",
-        "\\bexpiring\\s+links?\\b"
+        "\\bexpiring\\s+share\\s+links?\\b",
+        "\\bshare\\s+links?\\s+that\\s+expires?\\b"
       ],
-      "guidance": "No shareLink, shareToken, or share route exists. getSignedDownloadUrl() is the internal capability URL that serves images to the app — it is not a user-facing way to send someone a link. Note the guard deliberately does NOT match \"links that expire\": describing how our own storage serves your files is accurate (C-012 says so). What is dead is the noun — a share link you hand to another person.",
+      "guidance": "No shareLink, shareToken, or share route exists. getSignedDownloadUrl() is the internal capability URL that serves images to the app — it is not a user-facing way to send someone a link. Note the guard deliberately does NOT match \"links that expire\": describing how our own storage serves your files is accurate (C-012 says so). What is dead is the noun — a share link you hand to another person. NARROWED 2026-07-28 (ARY-1503): the bare \"expiring links\" pattern was replaced by \"expiring share links\" / \"share links that expire\", because C-026 makes the unshared sense an APPROVED claim and the bare pattern would have fired on approved copy.",
       "instead": "invite someone into a capture session (C-004), or export (C-017)"
+    },
+    {
+      "id": "file-link-control-framing",
+      "claim": "C-026",
+      "label": "Expiring signed file links framed as user-controlled access",
+      "patterns": [
+        "\\byou (can )?control who can open\\b",
+        "\\brevoke (the |that |a )?link\\b",
+        "\\blinks? you can revoke\\b",
+        "\\bchoose who can open (the |that )?(link|file)\\b",
+        "\\bset (the |an )?expir\\w+ (on|for) (the |that )?link\\b"
+      ],
+      "guidance": "C-026 approves DESCRIBING the mechanism (short-lived, signed links serve your own files instead of an open address). It does NOT approve framing that mechanism as access control the user holds. routes/objects.ts:26-40 does no per-user check — the signature IS the capability, and the user cannot set, scope, see or revoke the TTL. So the mechanism buys unguessability plus expiry, not per-recipient authorisation. These patterns fire on the control framing only and deliberately leave the approved descriptive wording green. Sibling of the share-link rule: that one kills the sharing NOUN (C-012), this one kills the CONTROL framing of the same mechanism.",
+      "instead": "the files you attach are reached through short-lived, signed links rather than sitting on an open address (C-026)",
+      "selfTest": {
+        "mustFire": [
+          "You control who can open the link.",
+          "Send a link you can revoke at any time.",
+          "Choose who can open the file."
+        ],
+        "mustStayGreen": [
+          "the files you attach are reached through short-lived, signed links rather than sitting on an open address",
+          "uploaded files are kept in private storage, reachable through short-lived, signed links",
+          "documents are reachable only through short-lived, signed links"
+        ]
+      },
+      "knownGap": "English-only, like every rule here. Verified zero-hit against origin/master @ d722a22 across src/ at issue time, so this rule carries NO copy-fix ordering dependency — it can land ahead of any copy change, unlike visibility-absolute (see ARY-1476)."
     },
     {
       "id": "referral-package",
