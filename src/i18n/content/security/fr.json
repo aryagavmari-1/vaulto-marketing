@@ -38,7 +38,7 @@
     },
     {
       "title": "Contrôles d’accès.",
-      "body": "Le coffre-fort de chaque personne est isolé des autres utilisateurs."
+      "body": "Le coffre de chaque personne est isolé des autres utilisateurs."
     }
   ],
   "promise": {
@@ -63,11 +63,11 @@
     "body": "Vos données vous appartiennent — exportez une copie complète et lisible par machine de vos enregistrements (JSON, CSV ou PDF) à tout moment, depuis les Paramètres. « Lisible par machine » signifie un fichier standard qu'une autre application ou un tableur peut ouvrir et réutiliser — pas un PDF verrouillé. Aucun verrouillage, aucune attente de notre part. (Vous pouvez également exporter une archive ZIP qui contient vos photos et numérisations d'origine en plus de l'enregistrement structuré.) Cela soutient votre droit à la portabilité des données au titre du GDPR — la loi européenne sur la vie privée (article 20) qui vous permet d'emporter vos données avec vous."
   },
   "honesty": {
-    "body": "<b>Langage clair, sans surenchère.</b> Nous ne décrivons que ce qui est vrai aujourd'hui : chiffrement en transit, chiffrement au repos appliqué par l'application elle-même avec des clés gérées dans Google Cloud KMS, fichiers conservés dans un stockage privé, mots de passe hachés, contrôle d'accès strict. Nous ne prétendons délibérément <b>pas</b> à un chiffrement « de bout en bout » ni « zero-knowledge » : nous détenons les clés, nous pouvons donc déchiffrer vos données pour assurer le service et les fonctions d'IA que vous demandez. Nous ne prétendons pas davantage au « niveau bancaire » ni à aucune certification que nous n'avons pas obtenue. Voici ce qui est scellé et ce qui ne l'est pas. Chiffrés : les intitulés, descriptions, emplacements et notes que vous saisissez, les valeurs exactes et les fichiers que vous téléversez. Lisibles par nos serveurs : les champs structurés qui les entourent, afin que votre coffre-fort puisse toujours être trié sans ouvrir les parties scellées — des éléments comme la catégorie, les dates et les étiquettes, la devise, le pays, un établissement ou un numéro de série, le prix d'achat, à qui appartient un objet et une fourchette de valeur approximative. L'export de données est actif (ci-dessus). Lorsque nous ajouterons un audit formel par un tiers, où une entreprise de sécurité indépendante nous examine, cette page le mentionnera.",
+    "body": "<b>Langage clair, sans surenchère.</b> Nous ne décrivons que ce qui est vrai aujourd'hui : chiffrement en transit, chiffrement au repos appliqué par l'application elle-même avec des clés gérées dans Google Cloud KMS, fichiers conservés dans un stockage privé, mots de passe hachés, contrôle d'accès strict. Nous ne prétendons délibérément <b>pas</b> à un chiffrement « de bout en bout » ni « zero-knowledge » : nous détenons les clés, nous pouvons donc déchiffrer vos données pour assurer le service et les fonctions d'IA que vous demandez. Nous ne prétendons pas davantage au « niveau bancaire » ni à aucune certification que nous n'avons pas obtenue. Voici ce qui est scellé et ce qui ne l'est pas. Chiffrés : les intitulés, descriptions, emplacements et notes que vous saisissez, les valeurs exactes et les fichiers que vous téléversez. Lisibles par nos serveurs : les champs structurés qui les entourent, afin que votre coffre puisse toujours être trié sans ouvrir les parties scellées — des éléments comme la catégorie, les dates et les étiquettes, la devise, le pays, un établissement ou un numéro de série, le prix d'achat, à qui appartient un objet et une fourchette de valeur approximative. L'export de données est actif (ci-dessus). Lorsque nous ajouterons un audit formel par un tiers, où une entreprise de sécurité indépendante nous examine, cette page le mentionnera.",
     "contact": "Pour toute question sur la confidentialité ou la sécurité, contactez"
   },
   "finalCta": {
     "title": "Privé dès le premier élément que vous ajoutez.",
-    "body": "Commencez gratuitement — votre coffre-fort n’appartient qu’à vous, et vous pouvez l’exporter ou le supprimer quand vous voulez."
+    "body": "Commencez gratuitement — votre coffre n’appartient qu’à vous, et vous pouvez l’exporter ou le supprimer quand vous voulez."
   }
 }
