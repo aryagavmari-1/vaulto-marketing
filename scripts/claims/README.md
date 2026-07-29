@@ -9,8 +9,9 @@ unlikely. It runs in `prebuild`, so it gates both the GitHub Actions deploy
 workflow and Render's own auto-deploy — nothing reaches the site without passing.
 
 ```
-npm run claims:check    # run it now
-npm run build           # runs automatically, before the OG render
+npm run guard:claims       # run the banned-claims guard now (alias: claims:check)
+npm run guard:claims:test  # assert the rule controls (mustFire / mustStayGreen)
+npm run build              # runs both automatically, before the OG render
 ```
 
 ## What it scans

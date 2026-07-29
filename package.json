@@ -7,18 +7,23 @@
   "scripts": {
     "dev": "astro dev",
     "og": "node scripts/build-og.mjs",
-    "claims:check": "node scripts/check-claims.mjs",
+    "guard:claims": "node scripts/check-claims.mjs",
+    "guard:claims:test": "node scripts/claims/rules.test.mjs",
+    "guard:tier": "node scripts/check-tier-claims.mjs",
+    "guard:tier:test": "node scripts/check-tier-claims.test.mjs",
+    "guard:register": "node scripts/check-locale-register.mjs",
     "claims:sync": "node scripts/claims/sync-proof-table.mjs",
-    "prebuild": "node scripts/check-claims.mjs && node scripts/check-tier-claims.mjs && node scripts/check-locale-register.mjs && node scripts/ary1480-brand-noun-count.mjs && node scripts/build-og.mjs",
+    "prebuild": "node scripts/check-claims.mjs && node scripts/claims/rules.test.mjs && node scripts/check-tier-claims.mjs && node scripts/check-locale-register.mjs && node scripts/ary1480-brand-noun-count.mjs && node scripts/build-og.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
     "new:post": "node scripts/new-post.mjs",
     "kpis": "node scripts/pull-kpis.mjs",
     "kpis:check": "node scripts/check-kpi-creds.mjs",
-    "check:claims": "node scripts/check-tier-claims.mjs",
-    "test:claims": "node scripts/check-tier-claims.test.mjs",
-    "check:register": "node scripts/check-locale-register.mjs"
+    "claims:check": "npm run guard:claims",
+    "check:claims": "npm run guard:tier",
+    "test:claims": "npm run guard:tier:test",
+    "check:register": "npm run guard:register"
   },
   "dependencies": {
     "astro": "^5.6.1",
