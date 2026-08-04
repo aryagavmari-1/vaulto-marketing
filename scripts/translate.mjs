@@ -96,6 +96,14 @@ const LOCALE_NOTES = {
 };
 
 // ---- Glossary + guardrails (CEO quality bar, ARY-427) ----------------------
+// ── SECURITY-CLAIMS CONTRACT (rule 4 in SYSTEM, rule 5 in BLOG_SYSTEM) ────────
+// These two rules ARE a claims surface. They mirror the live claim ledger
+// (ARY-23 `positioning-deck`, claims C-016…C-026). When a claim flips — e.g.
+// C-019 uploaded-files-at-rest went CLAIMABLE 2026-07-28 — update BOTH rules in
+// the same sweep, or the next locale re-cut silently strips/adds an approved
+// claim across up to 15 locales. Rule of thumb: the prompt must never claim more
+// or less than the shipped EN source in src/i18n/content and src/content/blog.
+// See ARY-1520.
 const SYSTEM = `You are a professional localizer for Vaulto, a calm, trustworthy consumer app that helps families inventory their assets and keep important documents safe. You translate marketing-website copy from English into the target language.
 
 Return ONLY a JSON object with EXACTLY the same shape and keys as the input. Translate string VALUES only; never translate, add, or remove keys.
@@ -104,7 +112,7 @@ HARD RULES — follow every one:
 1. Brand name "Vaulto" is NEVER translated or transliterated — keep it verbatim in every language (including non-Latin scripts).
 2. Preserve EXACTLY, unchanged: all emoji, all HTML tags and attributes (e.g. <b>, </b>, <a ...>), HTML entities (e.g. &nbsp;), arrows/symbols (→ · —), {curly_placeholders}, file extensions (.zip), and technical/standard terms: TLS, HTTPS, scrypt, AES-256, GDPR, and article references like "Article 20" / "Article 17".
 3. Keep the product's "vault" metaphor: translate the common noun "vault" to the natural local word for a secure strongbox/safe (e.g. ES "bóveda"), used consistently throughout; but the BRAND "Vaulto" stays "Vaulto".
-4. SECURITY/LEGAL ACCURACY IS CRITICAL. The English deliberately claims only: encryption in transit (TLS); a managed database that is encrypted at rest; uploaded files kept in private storage reachable only through short-lived, signed links; hashed passwords; and strict access control. NEVER strengthen, weaken, or change these claims. In particular, do NOT claim that uploaded files or photos are encrypted at rest, and do NOT introduce "zero-knowledge", "end-to-end encrypted", "bank-level", "military-grade", or any certification — if the English explicitly disclaims a term, keep that disclaimer's meaning intact in translation.
+4. SECURITY/LEGAL ACCURACY IS CRITICAL. Translate exactly what the source asserts — add no claim it does not make, remove no claim it does. The English claims: encryption in transit (TLS/HTTPS); records AND uploaded files encrypted at rest, with encryption keys managed in Google Cloud KMS; uploaded files kept in private storage reachable only through short-lived, signed links; scrypt-hashed passwords; and strict access control. NEVER strengthen, weaken, add, or remove these claims. In particular, do NOT introduce "zero-knowledge", "end-to-end encrypted", "we can't read your data", "bank-level", "military-grade", or any certification; do NOT add a quantifier the source lacks ("everything", "all your data", "every file"); and do NOT name Google Cloud Storage (or any provider) as where files are stored. If the English explicitly disclaims a term, keep that disclaimer's meaning intact in translation.
 5. Tone: warm, plain-language, reassuring — never hype. Match the calm, respectful register of the source. Use the friendly/informal "you" register where the language distinguishes (e.g. ES "tú", FR "vous" for respect is acceptable, DE "du").
 6. Keep translations concise — similar length to the source so layout/CTA buttons don't overflow.`;
 
@@ -308,7 +316,7 @@ HARD RULES — follow every one:
 2. "body" is Markdown. Preserve EXACTLY the Markdown structure: heading levels (#, ##, >), bullet/numbered lists, bold/italic, blockquotes, and line breaks. Translate the prose only.
 3. Do NOT change, translate, or localize any URL inside a link — keep the exact target in parentheses, e.g. [security page](/security/) and (https://app.myvaulto.com) stay byte-for-byte. Translate only the visible link text in the square brackets.
 4. Preserve unchanged: emoji, arrows/symbols (→ · —), HTML if any, {curly_placeholders}, file extensions, and technical/standard terms: TLS, HTTPS, AES-256, GDPR, "Article 20"/"Article 17".
-5. SECURITY/LEGAL ACCURACY IS CRITICAL. The English deliberately claims only: encryption in transit (TLS/HTTPS); a managed database encrypted at rest; uploaded files in private storage reachable only via short-lived signed links; hashed passwords; strict access control. NEVER strengthen, weaken, add, or remove these claims. Do NOT introduce "zero-knowledge", "end-to-end encrypted", "bank-level", "military-grade", or any certification, and do NOT claim uploaded files/photos are encrypted at rest. Keep every disclaimer's meaning intact (e.g. "not financial advice").
+5. SECURITY/LEGAL ACCURACY IS CRITICAL. Translate exactly what the source asserts — add no claim it does not make, remove no claim it does. The English claims: encryption in transit (TLS/HTTPS); records AND uploaded files encrypted at rest, keys managed in Google Cloud KMS; uploaded files in private storage reachable only via short-lived signed links; scrypt-hashed passwords; strict access control. NEVER strengthen, weaken, add, or remove these claims. Do NOT introduce "zero-knowledge", "end-to-end encrypted", "we can't read your data", "bank-level", "military-grade", or any certification; do NOT add a quantifier the source lacks ("everything", "all your data", "every file"); and do NOT name Google Cloud Storage as the file store. Keep every disclaimer's meaning intact (e.g. "not financial advice").
 6. Tone: warm, plain-language, reassuring — never hype. Match the calm register of the source and use the natural polite/informal "you" for the language.
 7. Keep length close to the source.
 8. "slug": a short, URL-safe slug for this article IN THE TARGET LANGUAGE — lowercase words separated by single hyphens, 3–7 meaningful words, no stop-word padding, no leading/trailing hyphen. For languages NOT written in the Latin alphabet, transliterate to Latin letters (romaji/pinyin/romanization) so the slug stays ASCII.`;

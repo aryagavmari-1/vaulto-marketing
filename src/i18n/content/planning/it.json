@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Prova una panoramica gratuita"
+  },
+  "finalCta": {
+    "title": "Pianifica quando sei pronto.",
+    "body": "Inizia con una panoramica gratuita — nessuna pressione, nessuna urgenza, nessuna carta richiesta."
   }
 }

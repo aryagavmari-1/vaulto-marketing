@@ -76,12 +76,12 @@ Nalatenschapsplanning raakt aan wetgeving en geld, dus twee dingen zijn het waar
 
 ## Privacy, want dit is zo gevoelig als het maar kan zijn
 
-Een nalatenschapsplan bevat de meest persoonlijke gegevens van je familie, dus waar het wordt bewaard is belangrijk. Met Vaulto is elke verbinding versleuteld tijdens verzending (TLS/HTTPS), worden je gegevens opgeslagen in een beheerde database met encryptie at rest, zijn documenten alleen bereikbaar via kortdurende, ondertekende links, en is de vault van elke persoon geïsoleerd van andere gebruikers — een privévault die jij beheert. We verkopen je gegevens nooit — en we zijn bewust eerlijk over wat we wel en niet claimen. Bekijk precies hoe we het veilig houden op onze [beveiligingspagina](/nl/security/).
+Een nalatenschapsplan bevat de meest persoonlijke gegevens van je familie, dus waar het wordt bewaard is belangrijk. Met Vaulto is elke verbinding versleuteld tijdens verzending (TLS/HTTPS), worden je gegevens opgeslagen in een beheerde database met encryptie at rest, zijn documenten alleen bereikbaar via kortdurende, ondertekende links, en is de kluis van elke persoon geïsoleerd van andere gebruikers — een privékluis die jij beheert. We verkopen je gegevens nooit — en we zijn bewust eerlijk over wat we wel en niet claimen. Bekijk precies hoe we het veilig houden op onze [beveiligingspagina](/nl/security/).
 
 ## Begin met één regel op de lijst
 
 Je hoeft niet dit weekend je hele nalatenschap te plannen. Kies één onderdeel uit de checklist hierboven — het testament, de eigendomsakte, de lijst met accounts — en leg het vandaag vast. Voeg daarna het volgende toe wanneer het uitkomt.
 
-**[Start je vault — gratis](https://app.myvaulto.com)** en help de mensen van wie je houdt een beetje beter voorbereid te zijn.
+**[Start je kluis — gratis](https://app.myvaulto.com)** en help de mensen van wie je houdt een beetje beter voorbereid te zijn.
 
 *Alleen ter informatie — geen juridisch, financieel of fiscaal advies. Raadpleeg een gekwalificeerde professional over jouw specifieke omstandigheden.*

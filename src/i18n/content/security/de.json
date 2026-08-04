@@ -65,5 +65,9 @@
   "honesty": {
     "body": "<b>Klare Sprache, keine Übertreibung.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung, Verschlüsselung im Ruhezustand, die die App selbst vornimmt, mit in Google Cloud KMS verwalteten Schlüsseln, Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten bewusst <b>keine</b> „Ende-zu-Ende“- oder „Zero-Knowledge“-Verschlüsselung: Wir halten die Schlüssel und können deine Daten daher entschlüsseln, um den Dienst und die KI-Funktionen zu erbringen, die du anforderst. Ebenso wenig behaupten wir „Bank-Niveau“ oder irgendeine Zertifizierung, die wir nicht erworben haben. Hier steht, was versiegelt ist und was nicht. Verschlüsselt: die Bezeichnungen, Beschreibungen, Orte und Notizen, die du schreibst, die genauen Werte und die Dateien, die du hochlädst. Für unsere Server lesbar: die strukturierten Felder darum herum, damit dein Tresor weiterhin sortiert werden kann, ohne die versiegelten Teile zu öffnen — etwa Kategorie, Datumsangaben und Schlagwörter, Währung, Land, ein Institut oder eine Seriennummer, der Kaufpreis, wem ein Gegenstand gehört, und ein grober Wertbereich. Der Datenexport ist aktiv (oben). Wenn wir eine formelle Prüfung durch Dritte hinzufügen, bei der eine unabhängige Sicherheitsfirma uns überprüft, wird diese Seite das angeben.",
     "contact": "Bei Fragen zu Datenschutz oder Sicherheit kontaktiere"
+  },
+  "finalCta": {
+    "title": "Privat ab dem ersten Eintrag, den du hinzufügst.",
+    "body": "Starte kostenlos — dein Tresor gehört dir allein, und du kannst ihn jederzeit exportieren oder löschen."
   }
 }

@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Ücretsiz bir genel bakışı deneyin"
+  },
+  "finalCta": {
+    "title": "Hazır olduğunuzda planlayın.",
+    "body": "Ücretsiz bir genel bakışla başlayın — baskı yok, aceleye gerek yok, kart gerekmez."
   }
 }

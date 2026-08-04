@@ -65,5 +65,9 @@
   "honesty": {
     "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, versleuteling in rust die de app zelf toepast met sleutels beheerd in Google Cloud KMS, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"end-to-end\"- of \"zero-knowledge\"-versleuteling: wij hebben de sleutels, dus we kunnen je gegevens ontsleutelen om de dienst en de AI-functies te leveren waar je om vraagt. We claimen evenmin \"bankniveau\" of enige certificering die we niet hebben verdiend. Dit is wat verzegeld is en wat niet. Versleuteld: de namen, beschrijvingen, locaties en notities die je schrijft, de exacte waarderingen en de bestanden die je uploadt. Leesbaar voor onze servers: de gestructureerde velden eromheen, zodat je kluis nog steeds gesorteerd kan worden zonder de verzegelde delen te openen — dingen als de categorie, de datums en labels, de valuta, het land, een instelling of serienummer, de aankoopprijs, van wie een voorwerp is en een grof waardebereik. Gegevensexport is actief (hierboven). Wanneer we een formele audit door derden toevoegen, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
     "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
+  },
+  "finalCta": {
+    "title": "Privé vanaf het eerste wat je toevoegt.",
+    "body": "Begin gratis — je kluis is alleen van jou, en je kunt hem exporteren of verwijderen wanneer je wilt."
   }
 }

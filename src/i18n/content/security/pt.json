@@ -65,5 +65,9 @@
   "honesty": {
     "body": "<b>Linguagem clara, sem exageros.</b> Descrevemos apenas o que é verdade hoje: encriptação em trânsito, encriptação em repouso aplicada pela própria aplicação com chaves geridas no Google Cloud KMS, ficheiros guardados em armazenamento privado, palavras-passe com hash e controlo de acesso rigoroso. Deliberadamente <b>não</b> afirmamos encriptação \"de ponta a ponta\" nem \"de conhecimento zero\": as chaves são nossas, por isso podemos desencriptar os seus registos para prestar o serviço e as funcionalidades de IA que pedir. Também não afirmamos \"nível bancário\" nem qualquer certificação que não tenhamos obtido. Veja o que é selado e o que não é. Encriptados: os nomes, as descrições, as localizações e as notas que escreve, as avaliações exatas e os ficheiros que carrega. Legíveis para os nossos servidores: os campos estruturados em redor, para que o seu cofre continue a poder ser ordenado sem abrir as partes seladas — coisas como a categoria, as datas e as etiquetas, a moeda, o país, uma instituição ou número de série, o preço de compra, a quem pertence um item e um intervalo de valor aproximado. A exportação de dados está ativa (acima). Quando acrescentarmos uma auditoria formal independente, em que uma empresa de segurança externa nos avalia, esta página passará a dizê-lo.",
     "contact": "Para questões de privacidade ou segurança, contacte"
+  },
+  "finalCta": {
+    "title": "Privado desde a primeira coisa que adiciona.",
+    "body": "Comece gratuitamente — o seu cofre é só seu e pode exportá-lo ou eliminá-lo quando quiser."
   }
 }

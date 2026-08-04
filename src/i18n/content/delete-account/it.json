@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "I tuoi dati, sotto il tuo controllo",
     "heading": "Elimina il tuo account Vaulto",
-    "lead": "Vaulto — il Family Asset Vault — ti permette di eliminare il tuo account, o un singolo vault, direttamente nell'app. L'eliminazione è immediata e permanente. Questa pagina illustra i passaggi precisi, cosa viene eliminato e cosa conserviamo.",
+    "lead": "Vaulto — il Family Asset Vault — ti permette di eliminare il tuo account, o una singola cassaforte, direttamente nell'app. L'eliminazione è immediata e permanente. Questa pagina illustra i passaggi precisi, cosa viene eliminato e cosa conserviamo.",
     "updated": "Ultimo aggiornamento giugno 2026 · Domande? Scrivi a"
   },
   "steps": {
@@ -22,8 +22,8 @@
         "body": "Apri <strong>Impostazioni → Account → Elimina account</strong>. La schermata elenca con precisione ciò che verrà cancellato. Conferma digitando <strong>DELETE</strong> e la tua password. Il tuo account e tutti i suoi dati vengono eliminati immediatamente, viene effettuata la disconnessione e la cache locale dell'app viene svuotata. Disponibile su iOS e Android."
       },
       {
-        "title": "Elimina un singolo vault, nell'app",
-        "body": "Vuoi rimuovere un vault ma mantenere il tuo account? Apri <strong>Impostazioni → Zona pericolosa</strong>, scegli il vault e conferma digitandone il nome. Quel vault e tutto ciò che contiene — attività, passività, valutazioni, documenti e file di supporto — viene eliminato in modo permanente."
+        "title": "Elimina una singola cassaforte, nell'app",
+        "body": "Vuoi rimuovere una cassaforte ma mantenere il tuo account? Apri <strong>Impostazioni → Zona pericolosa</strong>, scegli la cassaforte e conferma digitandone il nome. Quella cassaforte e tutto ciò che contiene — attività, passività, valutazioni, documenti e file di supporto — viene eliminato in modo permanente."
       },
       {
         "title": "Hai bisogno di aiuto?",
@@ -36,11 +36,11 @@
     "intro": "L'eliminazione del tuo account rimuove in modo permanente:",
     "items": [
       "Il record del tuo account — nome, indirizzo e-mail e credenziali di accesso.",
-      "Ogni vault e tutto il suo contenuto — attività, passività, valutazioni e il quadro del patrimonio netto costruito a partire da essi.",
+      "Ogni cassaforte e tutto il suo contenuto — attività, passività, valutazioni e il quadro del patrimonio netto costruito a partire da essi.",
       "I documenti e i file di prova che hai caricato, insieme alla chiave di crittografia che li protegge — così i file archiviati diventano permanentemente illeggibili.",
       "Panoramiche e bozze generate dall'AI; cronologia della consulenza, sequenze e preferenze; e i token di accesso e notifica dei tuoi dispositivi."
     ],
-    "permanent": "L'eliminazione è immediata, permanente e irreversibile — non esiste alcun periodo di tolleranza né finestra di recupero. Esporta prima tutto ciò che desideri conservare; puoi scaricare i dati del tuo vault in qualsiasi momento prima dell'eliminazione."
+    "permanent": "L'eliminazione è immediata, permanente e irreversibile — non esiste alcun periodo di tolleranza né finestra di recupero. Esporta prima tutto ciò che desideri conservare; puoi scaricare i dati della tua cassaforte in qualsiasi momento prima dell'eliminazione."
   },
   "retained": {
     "title": "Cosa conserviamo e per quanto tempo",

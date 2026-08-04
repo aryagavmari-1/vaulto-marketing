@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Wypróbuj bezpłatny przegląd"
+  },
+  "finalCta": {
+    "title": "Planuj, gdy będziesz gotów.",
+    "body": "Zacznij od bezpłatnego przeglądu — bez presji, bez pośpiechu, bez karty."
   }
 }

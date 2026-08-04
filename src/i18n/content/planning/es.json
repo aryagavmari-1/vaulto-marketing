@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Prueba una visión general gratuita"
+  },
+  "finalCta": {
+    "title": "Planifica cuando estés listo.",
+    "body": "Empieza con una visión general gratuita: sin presión, sin urgencia y sin tarjeta."
   }
 }

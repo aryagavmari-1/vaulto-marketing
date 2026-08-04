@@ -432,6 +432,127 @@ for (const [locale, fx] of Object.entries(FIXTURES)) {
   );
 }
 
+// ---------------------------------------------------------------------------
+// 9. Head-final attribution (ARY-1513).
+//
+//    Japanese, Korean and Turkish put the relative clause before the head noun,
+//    so a grammatical hand-off to the paid tier necessarily reads
+//    "…[the steps worth considering]-including DETAILED REPORT proceed-to" —
+//    the paid noun lands AFTER the capability. The before-only window scored
+//    all three shipped strings as free-tier over-claims, and the only ways to
+//    satisfy it were to mangle the grammar or to allowlist the locales.
+//
+//    `shipped` below is the live /how-it-works sentence for each locale with
+//    the ARY-1494 wording, using the app's own `advisory.yourDetailedReport`
+//    noun. The other three cases are what stops the widened window from
+//    becoming a hole: no paid noun at all, a paid noun in the NEXT sentence,
+//    and a paid noun past the window.
+// ---------------------------------------------------------------------------
+console.log("9. Head-final locales attribute rightwards (ARY-1513)");
+const HEAD_FINAL = {
+  ja: {
+    shipped:
+      "Vaultoが対話の内容を、現在の状況がわかる明確で個別の概要にまとめます。まずは無料の概要から始めて、" +
+      "準備ができたら、次に検討する価値のある手順を含む詳細レポートへ進みます。",
+    // Same construction, no paid noun anywhere: a real over-claim.
+    overclaim: "まずは無料の概要から始めましょう。次に検討する価値のある手順もそこに含まれます。",
+    // The paid noun exists, but as a separate statement — not the head of the
+    // clause the capability modifies.
+    laundered: "無料の概要には、次に検討する価値のある手順が含まれます。詳細レポートもご用意しています。",
+    // Same sentence, but far past the 40-char window.
+    far: "無料の概要。次に検討する価値のある手順、" + "その他の項目、".repeat(8) + "詳細レポートへ",
+  },
+  ko: {
+    shipped:
+      "Vaulto가 이 대화를 바탕으로 현재 상황을 명확하고 개인적인 개요로 정리해 줍니다. " +
+      "무료 개요로 시작하고, 준비가 되면 다음에 고려할 만한 단계를 포함한 상세 보고서로 더 깊이 진행하세요.",
+    overclaim: "무료 개요로 시작하세요. 다음에 고려할 만한 단계도 여기에 포함됩니다",
+    laundered: "무료 개요에는 다음에 고려할 만한 단계가 포함됩니다. 상세 보고서도 준비되어 있습니다",
+    far: "무료 개요, 다음에 고려할 만한 단계, " + "그 밖의 항목, ".repeat(8) + "상세 보고서",
+  },
+  tr: {
+    shipped:
+      "Vaulto bu konuşmayı, bulunduğun durumu gösteren net, kişisel bir genel bakışa dönüştürür. " +
+      "Ücretsiz bir genel bakışla başla, hazır olduğunda değerlendirilmeye değer adımları da " +
+      "içeren ayrıntılı rapor ile daha ileri git.",
+    overclaim: "Ücretsiz genel bakışla başla. Değerlendirilmeye değer adımları da burada görürsün",
+    laundered:
+      "Ücretsiz genel bakış, değerlendirilmeye değer adımları içerir. Ayrıntılı rapor da mevcuttur",
+    far:
+      "Ücretsiz genel bakış, değerlendirilmeye değer adımları, " +
+      "diğer maddeler, ".repeat(8) +
+      "ayrıntılı rapor",
+  },
+};
+
+for (const [locale, fx] of Object.entries(HEAD_FINAL)) {
+  {
+    const { status, out } = run({ [fixturePath(locale, "headfinal-shipped")]: `${fx.shipped}\n` });
+    check(
+      `${locale} shipped head-final attribution passes`,
+      status === 0,
+      `exit ${status}; guard said: ${out.replace(/\s+/g, " ").slice(0, 300)}`,
+    );
+  }
+  {
+    const { status, out } = run({ [fixturePath(locale, "headfinal-overclaim")]: `${fx.overclaim}\n` });
+    check(
+      `${locale} head-final over-claim with no paid noun still fails`,
+      status === 1 && out.includes("AdvisoryReport.recommendedActions"),
+      `exit ${status}; guard said: ${out.replace(/\s+/g, " ").slice(0, 300)}`,
+    );
+  }
+  {
+    const { status } = run({ [fixturePath(locale, "headfinal-nextsentence")]: `${fx.laundered}\n` });
+    check(
+      `${locale} paid noun in the next sentence does not attribute`,
+      status === 1,
+      `exit ${status} — the after-window crossed a sentence boundary`,
+    );
+  }
+  {
+    const { status } = run({ [fixturePath(locale, "headfinal-far")]: `${fx.far}\n` });
+    check(
+      `${locale} paid noun beyond the window does not attribute`,
+      status === 1,
+      `exit ${status} — the after-window is not bounded`,
+    );
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 10. …and every other locale keeps the before-only rule.
+//
+//     This is the half that makes step 9 safe. In a head-initial language a
+//     paid noun trailing the capability is a later, separate statement, not the
+//     head the capability was modifying — so "free … capability … paid" has to
+//     go on failing everywhere except ja/ko/tr, `zh` included (head-final for
+//     relative clauses, but its shipped copy does not use the construction).
+// ---------------------------------------------------------------------------
+console.log("10. Non-head-final locales keep the before-only window");
+for (const [locale, fx] of Object.entries(FIXTURES)) {
+  if (locale in HEAD_FINAL) continue;
+  const { status, out } = run({
+    [fixturePath(locale, "trailing-paid")]:
+      `${fx.free}: ${fx.caps.recommendedActions} — ${fx.paid}.\n`,
+  });
+  check(
+    `${locale} trailing paid noun does not attribute`,
+    status === 1,
+    `exit ${status}; guard said: ${out.replace(/\s+/g, " ").slice(0, 200)}`,
+  );
+}
+// The same shape in the head-final locales is exactly what step 9 legitimises,
+// so assert the split explicitly rather than leaving it implied by an omission.
+for (const locale of Object.keys(HEAD_FINAL)) {
+  const fx = FIXTURES[locale];
+  const { status } = run({
+    [fixturePath(locale, "trailing-paid")]:
+      `${fx.free}: ${fx.caps.recommendedActions} — ${fx.paid}.\n`,
+  });
+  check(`${locale} trailing paid noun DOES attribute`, status === 0, `exit ${status}`);
+}
+
 console.log(
   `\n${failures === 0 ? "✓" : "✗"} check-tier-claims: ${checks - failures}/${checks} checks passed`,
 );
