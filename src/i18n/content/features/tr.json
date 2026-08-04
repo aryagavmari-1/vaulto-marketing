@@ -35,7 +35,7 @@
     },
     {
       "title": "İstediğin zaman dışa aktar — verilerin sana ait",
-      "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makine tarafından okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman dışa aktarın. Bağımlılık yok."
+      "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makine tarafından okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman dışa aktarın. Bağımlılık yok. Ayrıca orijinal olarak yüklediğiniz fotoğrafları ve taramaları yapılandırılmış kaydınızla birlikte içeren bir ZIP arşivi de dışa aktarabilirsiniz."
     }
   ],
   "foot": "Yalnızca yayında olanları listeliyoruz. Yeni bir şey yayınladığımızda burada görünür — daha önce değil.",
