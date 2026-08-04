@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../social.css">
+<style>html,body{margin:0}.canvas{width:1000px;height:1500px}</style>
+</head><body>
+<div class="canvas" data-theme="neutral" data-format="pin" data-block="checklist">
+  <div class="frame"></div>
+  <div class="content" style="padding:80px">
+      <div class="tag" style="font-size:28px;padding:14px 25px">Getting organised</div>
+      <h1 class="headline" data-fit style="font-size:80px;margin-top:30px">Keep the proof, not just the number</h1>
+      <p class="subhead" style="font-size:33px;margin-top:21px">For each item, note where the proof lives.</p>
+      <div class="block" style="gap:22px;margin-top:30px">
+        <div class="row" style="gap:19px">
+          <span class="tick" style="width:51px;height:51px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#FBFAF6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="row-text" style="font-size:38px">A document</span>
+        </div>
+        <div class="row" style="gap:19px">
+          <span class="tick" style="width:51px;height:51px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#FBFAF6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="row-text" style="font-size:38px">A photo</span>
+        </div>
+        <div class="row" style="gap:19px">
+          <span class="tick" style="width:51px;height:51px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#FBFAF6" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="row-text" style="font-size:38px">A serial number</span>
+        </div></div>
+      <div class="spacer"></div>
+      
+      <div class="wordmark" style="gap:18px">
+    <span class="mark" style="width:56px;height:56px;border-radius:16px"><svg width="50" height="50" viewBox="0 0 48 48" fill="none">
+  <circle cx="24" cy="20" r="6.4" fill="#FBFAF6"/>
+  <path d="M20.7 24.5h6.6l1.8 9.2a1.6 1.6 0 0 1-1.57 1.9h-7.04a1.6 1.6 0 0 1-1.57-1.9z" fill="#FBFAF6"/>
+</svg></span>
+    <span class="words" style="gap:5px">
+      <span class="name" style="font-size:40px">Vaulto</span>
+      <span class="domain" style="font-size:28px">myvaulto.com</span>
+    </span>
+  </div></div>
+</div>
+<script>
+(async () => {
+  await document.fonts.ready;
+  const content = document.querySelector('.content');
+  const h = document.querySelector('[data-fit]');
+  const MIN = 64;
+  let overflow = 0;
+  if (h) {
+    let fs = parseFloat(getComputedStyle(h).fontSize);
+    const fits = () => content.scrollHeight <= content.clientHeight + 1;
+    while (!fits() && fs > MIN) { fs -= 2; h.style.fontSize = fs + 'px'; }
+    document.documentElement.setAttribute('data-fit-size', String(Math.round(fs)));
+    overflow = fits() ? 0 : 1;
+  }
+  document.documentElement.setAttribute('data-overflow', String(overflow));
+})();
+</script>
+</body></html>

@@ -1,0 +1,193 @@
+/*
+ * Vaulto Calm — social visual design system (ARY-527 → ARY-528)
+ * The token + component contract. Mirrors artifacts/vault-mobile/constants/tokens.ts
+ * (canonical OLIVE tokens per ARY-243 §1; the ARY-527 brief's "pine #1E5B4F" is stale).
+ *
+ * Light theme only. Sensitive assets use [data-theme="calm"] which gates the
+ * terracotta accent back to olive automatically (spec §6).
+ *
+ * Rendered to PNG via headless Chrome element-screenshot (render.mjs). $0, deterministic.
+ */
+
+@font-face { font-family: "Inter"; font-weight: 400; font-style: normal; src: url("./fonts/inter-400.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-style: normal; src: url("./fonts/inter-600.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; font-style: normal; src: url("./fonts/inter-700.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 800; font-style: normal; src: url("./fonts/inter-800.woff2") format("woff2"); }
+
+:root {
+  --primary: #4F6230;       /* olive — action / marks / stat text */
+  --primary-deep: #3F4E26;
+  --accent: #B4542F;        /* terracotta — sparing delight, neutral theme only */
+  --surface: #FAF6EF;       /* neutral canvas */
+  --surface-calm: #F4F1E8;  /* sensitive canvas (a touch quieter) */
+  --card: #FFFFFF;
+  --muted: #F0EADD;         /* step chips / inset fills */
+  --hairline: #E4DCCB;      /* keyline frame */
+  --ink: #272C20;           /* headlines / list text */
+  --ink2: #5C6150;          /* subhead / domain / disclaimer */
+
+  /* Themed slots — the calm theme overrides these to suppress bright accent. */
+  --accent-live: var(--accent);
+  --tag-ink: var(--accent);
+  --tag-fill: #F6E3D9;      /* terracotta @ ~12% */
+  --canvas-bg: var(--surface);
+}
+
+[data-theme="calm"] {
+  --accent-live: var(--primary);   /* terracotta fully suppressed → olive */
+  --tag-ink: var(--primary);
+  --tag-fill: #E7ECDD;             /* olive tint */
+  --canvas-bg: var(--surface-calm);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.canvas {
+  position: relative;
+  background: var(--canvas-bg);
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--ink);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Keyline frame — pins only (quiet vault containment). */
+.frame {
+  position: absolute;
+  inset: 24px;
+  border: 2px solid var(--hairline);
+  border-radius: 28px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---- Tag (topic kicker pill) ---- */
+.tag {
+  align-self: flex-start;
+  font-weight: 600;
+  color: var(--tag-ink);
+  background: var(--tag-fill);
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+/* ---- Headline ---- */
+.headline {
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+/* ---- Subhead ---- */
+.subhead {
+  font-weight: 400;
+  color: var(--ink2);
+  line-height: 1.4;
+}
+
+/* ---- Block container ---- */
+.block { display: flex; flex-direction: column; }
+
+/* Checklist rows: olive tick disc + ink text */
+.row { display: flex; align-items: center; }
+.tick {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--primary);
+  border-radius: 999px;
+  color: #FBFAF6;
+}
+.tick svg { display: block; }
+.row-text { font-weight: 600; color: var(--ink); line-height: 1.2; }
+
+/* Steps: muted chip + olive number + ink text */
+.step-num {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--muted);
+  border-radius: 999px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Stat / formula block */
+.stat {
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+}
+.stat .op { color: var(--accent-live); }
+
+/* Split (before / after) inset panels */
+.panel {
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: 22px;
+}
+.panel-label { font-weight: 700; color: var(--ink2); letter-spacing: 0.04em; text-transform: uppercase; }
+.panel-text { font-weight: 600; color: var(--ink); line-height: 1.25; }
+
+.spacer { flex: 1 1 auto; min-height: 16px; }
+
+/* ---- Disclaimer ribbon ---- */
+.disclaimer {
+  display: flex; align-items: flex-start;
+  color: var(--ink2);
+  font-weight: 400;
+  line-height: 1.35;
+}
+.disclaimer .i {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--ink2);
+  border-radius: 999px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* ---- Wordmark lockup ---- */
+.wordmark { display: flex; align-items: center; }
+.mark {
+  flex: 0 0 auto;
+  background: var(--primary);
+  display: flex; align-items: center; justify-content: center;
+}
+.mark svg { display: block; }
+.wordmark .words { display: flex; flex-direction: column; line-height: 1; }
+.wordmark .name { font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+.wordmark .domain { font-weight: 500; color: var(--ink2); }
+
+/* CTA pill — video end card */
+.cta {
+  align-self: center;
+  background: var(--primary);
+  color: #FBFAF6;
+  font-weight: 700;
+  border-radius: 999px;
+  text-align: center;
+}
+
+/* Video on-screen stat line (above bottom safe zone) */
+.onscreen {
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+}
+
+/* Centered variant — video end card */
+.content.center { align-items: center; text-align: center; }
+.content.center .tag { align-self: center; }
+.content.center .headline { text-align: center; }
