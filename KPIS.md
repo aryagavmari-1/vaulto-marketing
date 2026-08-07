@@ -50,7 +50,9 @@ signups/mo**; otherwise pause and reallocate. No running channels on faith.
 | `search_impressions`, `search_clicks`, `avg_position` | Search Console | Search Analytics API (service-account JWT) |
 | `organic_sessions` | Cloudflare | RUM GraphQL, visits whose referer host is a search engine |
 | `referral_share_rate` | Cloudflare | RUM GraphQL, non-search external referer share of total visits |
-| `waitlist_signups`, `signup_conversion_rate`, `activated_vaults` | conversion | **Not auto-pulled** — analytics-goal / app data, entered downstream |
+| `waitlist_signups` | conversion | **Manual weekly entry** — no on-site waitlist form to count (CTAs hand off to the app, ARY-1864); set `KPI_WAITLIST_SIGNUPS` |
+| `signup_conversion_rate` | conversion | **Derived** — `waitlist_signups / organic_sessions × 100` (1 dp), computed in the same run |
+| `activated_vaults` | conversion | Not populated until the app is GA (app-side data, out of this repo's reach) |
 
 **Cadence:** the [`refresh-kpis`](./.github/workflows/refresh-kpis.yml) GitHub Action runs
 weekly (Mon 06:17 UTC) + on demand, runs the puller, and commits the refreshed
@@ -71,6 +73,19 @@ Blocked on the live analytics accounts (**ARY-409**).
 
 Run `npm run kpis:check` to preflight whichever credentials are set: it checks each
 one in isolation and prints the exact remedy for a failure, without writing `kpis.json`.
+
+**Activation (weekly manual entry):** there is no on-site waitlist form to auto-count —
+the marketing CTAs hand off to `app.myvaulto.com` (ARY-1864), so the app owns any true
+signup number. Until that app-side number is exposed, record the period's count by hand:
+
+- **Via GitHub Actions (no checkout):** Actions → *Refresh KPIs* → **Run workflow** →
+  enter *Waitlist signups this period* → Run. The job pulls the search/traffic KPIs,
+  sets `waitlist_signups`, derives `signup_conversion_rate`, and commits `kpis.json`.
+- **Locally:** `KPI_WAITLIST_SIGNUPS=<count> npm run kpis`.
+
+Leave it blank / unset and the activation fields are left untouched (honest `null`, never a
+fake `0`). `signup_conversion_rate = waitlist_signups / organic_sessions × 100` and is only
+derived when `organic_sessions > 0`.
 
 `asOf` only advances when a live value is actually pulled, so a stale dashboard is
 never disguised as fresh.

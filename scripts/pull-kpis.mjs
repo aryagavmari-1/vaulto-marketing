@@ -24,9 +24,14 @@
  *     pipeline is safe to run end-to-end before the live accounts/tokens land
  *     (blocked on ARY-409); it becomes live the moment the secrets are set.
  *   - Conversion-source KPIs (waitlist_signups, signup_conversion_rate,
- *     activated_vaults) are NOT auto-pulled: they come from on-site analytics
- *     goals / app data with no free read API, so they are left for manual /
- *     downstream entry. This script owns the `search` + `traffic` sources only.
+ *     activated_vaults) are NOT auto-pulled from an ad/goal API: there is no
+ *     on-site waitlist form to count (the marketing CTAs hand off to the app —
+ *     see ARY-1864), so `waitlist_signups` is a manual weekly entry and
+ *     `signup_conversion_rate` is DERIVED from it. Provide the count via the
+ *     KPI_WAITLIST_SIGNUPS env var (a repo secret / workflow_dispatch input);
+ *     the conversion rate is then computed against `organic_sessions`. When no
+ *     count is supplied the fields are left untouched (honest null, not a fake
+ *     zero). `activated_vaults` stays null until the app is GA.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -43,6 +48,9 @@ const WINDOW_DAYS = Number(process.env.KPI_WINDOW_DAYS || 30);
 const have = {
   traffic: Boolean(process.env.CF_API_TOKEN),
   search: Boolean(process.env.GSC_SERVICE_ACCOUNT_JSON),
+  // Activation is a manual weekly entry (no on-site waitlist form to count —
+  // ARY-1864). Present only when a count is supplied for this run.
+  activation: process.env.KPI_WAITLIST_SIGNUPS != null && process.env.KPI_WAITLIST_SIGNUPS !== '',
 };
 
 /** YYYY-MM-DD for `d` days ago (UTC), inclusive window helper. */
@@ -214,6 +222,31 @@ async function pullSearchConsole(updates) {
   if (row.position != null) setKpi(updates, 'avg_position', Math.round(row.position * 10) / 10);
 }
 
+// ── Activation (manual weekly entry) ─────────────────────────────────────────
+// There is no on-site waitlist form to auto-count (the marketing CTAs hand off
+// to the app — ARY-1864), so `waitlist_signups` is entered by a human each week
+// via KPI_WAITLIST_SIGNUPS and `signup_conversion_rate` is derived from it. The
+// denominator is `organic_sessions` (already refreshed above this run, or its
+// existing value in kpis.json), matching KPIS.md's "Visit → signup" definition.
+function pullActivation(updates) {
+  const raw = process.env.KPI_WAITLIST_SIGNUPS;
+  const signups = Math.round(Number(raw));
+  if (!Number.isFinite(signups) || signups < 0) {
+    throw new Error(`KPI_WAITLIST_SIGNUPS is not a non-negative number: "${raw}"`);
+  }
+  setKpi(updates, 'waitlist_signups', signups);
+
+  // Derive conversion % = signups / organic_sessions * 100, one decimal. Only
+  // when we have a positive session base, else the ratio is undefined — leave
+  // it rather than emit a divide-by-zero or a misleading 0/∞.
+  const sessions = doc.kpis.find((k) => k.id === 'organic_sessions')?.latest;
+  if (typeof sessions === 'number' && sessions > 0) {
+    setKpi(updates, 'signup_conversion_rate', Math.round((signups / sessions) * 1000) / 10);
+  } else {
+    console.warn('[pull-kpis] signup_conversion_rate not derived: organic_sessions is 0/unknown');
+  }
+}
+
 // ── Orchestrate ──────────────────────────────────────────────────────────────
 const updates = [];
 const errors = [];
@@ -230,6 +263,15 @@ if (have.search) {
   catch (e) { errors.push(`Search Console: ${e.message}`); }
 } else {
   console.warn('[pull-kpis] Unconfigured: Google Search Console (GSC_SERVICE_ACCOUNT_JSON)');
+}
+
+// Activation runs last so the conversion rate divides by this run's fresh
+// organic_sessions when Cloudflare is configured, or the stored value otherwise.
+if (have.activation) {
+  try { pullActivation(updates); }
+  catch (e) { errors.push(`Activation: ${e.message}`); }
+} else {
+  console.warn('[pull-kpis] No activation entry this run (set KPI_WAITLIST_SIGNUPS to record waitlist signups)');
 }
 
 for (const err of errors) console.error('[pull-kpis] ERROR ' + err);
