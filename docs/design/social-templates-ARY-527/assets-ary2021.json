@@ -1,0 +1,110 @@
+[
+  { "id": "pin-P1-1", "format": "pin", "theme": "neutral", "block": "title", "tag": "Emergency binder",
+    "headline": "The family emergency binder checklist",
+    "subhead": "What to include — all in one place." },
+
+  { "id": "pin-P1-2", "format": "pin", "theme": "neutral", "block": "split", "tag": "Emergency binder",
+    "headline": "Paper binder, meet a vault you control",
+    "panels": [
+      { "label": "The binder", "text": "A great start — one folder of the essentials." },
+      { "label": "A vault you control", "text": "Keeps the same list current; support can't view it." }
+    ] },
+
+  { "id": "pin-P1-3", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Emergency binder",
+    "headline": "6 sections every family binder needs",
+    "items": ["Accounts", "Property", "Key documents", "Who to call", "Wishes", "How to reach it"] },
+
+  { "id": "pin-P1-4", "format": "pin", "theme": "neutral", "block": "title", "tag": "Emergency binder",
+    "headline": "Not a password manager — the map to what you own",
+    "subhead": "Your assets and liabilities, in one place." },
+
+  { "id": "pin-P1-5", "format": "pin", "theme": "neutral", "block": "title", "tag": "Emergency binder",
+    "headline": "Keep the binder current, together",
+    "subhead": "Invite a partner into a capture session — as capturer, reviewer or viewer." },
+
+  { "id": "pin-P2-1", "format": "pin", "theme": "calm", "block": "title", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "How to value an estate for probate",
+    "subhead": "A step-by-step guide, in plain English." },
+
+  { "id": "pin-P2-2", "format": "pin", "theme": "calm", "block": "title", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "You can't value what you can't find",
+    "subhead": "Every probate valuation starts with a complete inventory of assets and liabilities." },
+
+  { "id": "pin-P2-3", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "What goes into an estate valuation",
+    "items": ["Property", "Accounts", "Belongings", "Debts"] },
+
+  { "id": "pin-P2-4", "format": "pin", "theme": "calm", "block": "title", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "Export everything, in one file",
+    "subhead": "Records plus original photos and scans — a single ZIP when it's needed." },
+
+  { "id": "pin-P2-5", "format": "pin", "theme": "calm", "block": "title", "tag": "Estate planning", "warn": true, "disclaimer": true,
+    "headline": "The map to their assets, in one place",
+    "subhead": "Organising what someone owned — the groundwork that makes probate less painful." },
+
+  { "id": "pin-P3-1", "format": "pin", "theme": "neutral", "block": "split", "tag": "Document storage",
+    "headline": "Fireproof box, or the cloud?",
+    "panels": [
+      { "label": "At home", "text": "Private, but it can burn or flood." },
+      { "label": "Online", "text": "Reachable from anywhere — if you control it." }
+    ] },
+
+  { "id": "pin-P3-2", "format": "pin", "theme": "neutral", "block": "title", "tag": "Document storage",
+    "headline": "Keep a copy off the premises",
+    "subhead": "A private vault you control — reachable, and support can't view it." },
+
+  { "id": "pin-P3-3", "format": "pin", "theme": "neutral", "block": "title", "tag": "Document storage",
+    "headline": "The best system is the one your family can use",
+    "subhead": "Open your document list from anywhere, stored off the premises." },
+
+  { "id": "pin-P3-4", "format": "pin", "theme": "neutral", "block": "split", "tag": "Document storage",
+    "headline": "You choose, file by file",
+    "panels": [
+      { "label": "Store only", "text": "Keep the file exactly as-is." },
+      { "label": "Extract key fields", "text": "Let AI pull the details — optional, per file." }
+    ] },
+
+  { "id": "pin-P3-5", "format": "pin", "theme": "neutral", "block": "checklist", "tag": "Document storage",
+    "headline": "Where should each document live?",
+    "items": ["Passport", "Deeds", "Policies", "Wills"] },
+
+  { "id": "pin-P4-1", "format": "pin", "theme": "calm", "block": "title", "tag": "Power of attorney", "warn": true, "disclaimer": true,
+    "headline": "Power of attorney and your finances",
+    "subhead": "The financial list to organise first." },
+
+  { "id": "pin-P4-2", "format": "pin", "theme": "calm", "block": "checklist", "tag": "Power of attorney", "warn": true, "disclaimer": true,
+    "headline": "What your attorney needs to see",
+    "items": ["Accounts", "Property", "Policies", "Regular payments"] },
+
+  { "id": "pin-P4-3", "format": "pin", "theme": "calm", "block": "title", "tag": "Power of attorney", "warn": true, "disclaimer": true,
+    "headline": "Set up the POA. Then build the map.",
+    "subhead": "The legal step, and the practical one: knowing what you own." },
+
+  { "id": "pin-P4-4", "format": "pin", "theme": "calm", "block": "title", "tag": "Power of attorney", "warn": true, "disclaimer": true,
+    "headline": "Give the person you trust a head start",
+    "subhead": "Invite them into a capture session so the picture stays current." },
+
+  { "id": "pin-P4-5", "format": "pin", "theme": "calm", "block": "title", "tag": "Power of attorney", "warn": true, "disclaimer": true,
+    "headline": "Not a password manager — the map to what you own",
+    "subhead": "Assets and liabilities in one place, ready for the person you trust." },
+
+  { "id": "pin-P5-1", "format": "pin", "theme": "calm", "block": "title", "tag": "After a death", "warn": true, "disclaimer": true,
+    "headline": "What happens to a bank account when someone dies",
+    "subhead": "A plain-English walkthrough (UK)." },
+
+  { "id": "pin-P5-2", "format": "pin", "theme": "calm", "block": "steps", "tag": "After a death", "warn": true, "disclaimer": true,
+    "headline": "The steps families face",
+    "items": ["Notify the bank", "The account is frozen", "Funds released through the estate"] },
+
+  { "id": "pin-P5-3", "format": "pin", "theme": "calm", "block": "title", "tag": "After a death", "warn": true, "disclaimer": true,
+    "headline": "The head start: one complete list of accounts",
+    "subhead": "What's held, and where — gathered before it's needed." },
+
+  { "id": "pin-P5-4", "format": "pin", "theme": "calm", "block": "title", "tag": "After a death", "warn": true, "disclaimer": true,
+    "headline": "You can't notify a bank you didn't know about",
+    "subhead": "One source of truth for accounts and providers — support can't view it." },
+
+  { "id": "pin-P5-5", "format": "pin", "theme": "calm", "block": "title", "tag": "After a death", "warn": true, "disclaimer": true,
+    "headline": "Not a password manager — the map to what you own",
+    "subhead": "When the hard day comes, the list is already there." }
+]
