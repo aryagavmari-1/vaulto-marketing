@@ -42,7 +42,7 @@ You can log all of this on the item itself. Photograph the piece or its paperwor
 
 A valuation is the number your cover, and your eventual payout, is built on — so it's worth getting right, and worth being honest about who should produce it.
 
-For anything genuinely valuable — an engagement ring, a family heirloom, a serious watch, a piece of art — get it appraised by a qualified, independent valuer or jeweller, not estimated from memory. **Vaulto doesn't appraise items or set their value for you**; it's a place to record and keep the number a professional gives you, alongside the date they gave it.
+For anything genuinely valuable — an engagement ring, a family heirloom, a serious watch, a piece of art — get it appraised by a qualified, independent valuer or jeweller, not estimated from memory. **Vaulto can suggest a rough value range for items like these, but that's a working estimate, not the independent appraisal your insurer will expect** — treat it as a starting point, and use Vaulto to record and keep the number a professional gives you, alongside the date they gave it.
 
 That date matters. Gold and precious-metal prices shift, watch markets move, and a valuation from five years ago can be meaningfully out of date. As a starting point, plan to have higher-value pieces revalued every two to three years, and sooner for anything tracking a volatile material.
 
@@ -104,4 +104,4 @@ No — that's one of the most common gaps. If a safe or a drawer is lost to a th
 
 **Catalogue your valuables in one place, [free to start](/)** — photos, receipts and valuations attached to each item, ready to export if you ever need to claim.
 
-*This is general information to help you get organized, not legal, tax, financial, or insurance advice. Vaulto doesn't appraise items, provide or replace insurance, or guarantee any claim outcome — confirm cover, valuation, and claims requirements with a qualified valuer, broker, or your insurer.*
+*This is general information to help you get organized, not legal, tax, financial, or insurance advice. Vaulto can suggest estimate ranges but doesn't produce independent appraisals, provide or replace insurance, or guarantee any claim outcome — confirm cover, valuation, and claims requirements with a qualified valuer, broker, or your insurer.*
