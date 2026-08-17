@@ -1,7 +1,7 @@
 {
   "$comment": "Machine-readable KPI surface for the marketing engine (ARY-403). The measurement sub-agent refreshes `latest`/`asOf` via scripts/pull-kpis.mjs by mapping pulled numbers onto kpis[].latest by `id`. The CMO owns the KPI list + targets (finalised in ARY-402, 2026-06-22). Targets are directional 90-day baselines for a DA~0 domain at $0 ads, pre-launch — recalibrate after 30 days of real GSC/Cloudflare data. Humans read KPIS.md.",
   "schemaVersion": 1,
-  "asOf": "2026-08-10T08:05:25.259Z",
+  "asOf": "2026-08-17T07:17:09.414Z",
   "northStar": "activated_vaults",
   "northStarProxy": "waitlist_signups",
   "source": {
@@ -16,7 +16,7 @@
       "stage": "awareness",
       "source": "search",
       "target": 8000,
-      "latest": 40,
+      "latest": 68,
       "unit": "impressions"
     },
     {
@@ -43,7 +43,7 @@
       "stage": "acquisition",
       "source": "search",
       "target": 25,
-      "latest": 20.3,
+      "latest": 23.4,
       "unit": "rank",
       "goal": "lower_is_better"
     },
