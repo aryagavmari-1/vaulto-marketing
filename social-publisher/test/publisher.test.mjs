@@ -143,50 +143,24 @@ test('runCycle dry-run: pinterest→dry-run, linkedin/shortform→manual, held�
   assert.ok(counts['manual-required'] >= 3);
 });
 
-test('runCycle live-mock: pinterest auto-posts, idempotent on re-run', async () => {
+test('runCycle: pinterest is MANUAL in v1 even with creds present (CEO ARY-2281)', async () => {
+  // v1 decision: Pinterest API automation is dropped — Pinterest posts manually
+  // like every other platform, so the worker must NEVER make a live pin call even
+  // if Pinterest secrets happen to be set in the environment.
   const m = parseManifest(sampleRaw());
   const dir = await mkdtemp(join(tmpdir(), 'cyc2-'));
   const logPath = join(dir, 'log.json');
-  let pinPosts = 0;
-  const fetchImpl = async (url, opts) => {
-    if (opts?.method === 'HEAD') return { ok: true, status: 200 };
-    pinPosts++;
-    return { ok: true, status: 201, json: async () => ({ id: `pin_${pinPosts}` }) };
+  const fetchImpl = async () => {
+    throw new Error('no network call may be made — Pinterest is manual in v1');
   };
   const env = { PINTEREST_ACCESS_TOKEN: 't', PINTEREST_BOARD_ID: 'b' };
   const publishers = buildPublishers(env, { fetchImpl });
 
-  let log = await PublishLog.load(logPath);
+  const log = await PublishLog.load(logPath);
   const r1 = await runCycle({ manifest: m, log, publishers, today: '2026-07-02', now: NOW, fetchImpl });
   await log.save(NOW);
-  assert.equal(r1.results.find((r) => r.atomId === 'P1').status, 'posted');
+  // P1 (pinterest, due day 0) and L2 (linkedin) both flagged manual — no live post.
+  assert.equal(r1.results.find((r) => r.atomId === 'P1').status, 'manual-required');
   assert.equal(r1.results.find((r) => r.atomId === 'L2').status, 'manual-required');
-  assert.equal(pinPosts, 1); // only P1 due on day 0
-
-  // Re-run same day: P1 already settled → no new post.
-  log = await PublishLog.load(logPath);
-  const publishers2 = buildPublishers(env, { fetchImpl });
-  const r2 = await runCycle({ manifest: m, log, publishers: publishers2, today: '2026-07-02', now: NOW, fetchImpl });
-  assert.ok(!r2.results.find((r) => r.atomId === 'P1' && r.status === 'posted'));
-  assert.equal(pinPosts, 1); // unchanged — idempotent
-
-  // Advance to day 1: P3 becomes due and posts.
-  log = await PublishLog.load(logPath);
-  const publishers3 = buildPublishers(env, { fetchImpl });
-  await runCycle({ manifest: m, log, publishers: publishers3, today: '2026-07-03', now: NOW, fetchImpl });
-  assert.equal(pinPosts, 2);
-});
-
-test('runCycle: unreachable graphic degrades pinterest atom to manual', async () => {
-  const m = parseManifest(sampleRaw());
-  const dir = await mkdtemp(join(tmpdir(), 'cyc3-'));
-  const log = new PublishLog(join(dir, 'log.json'));
-  const fetchImpl = async (url, opts) => {
-    if (opts?.method === 'HEAD') return { ok: false, status: 404 };
-    throw new Error('should not post when media unreachable');
-  };
-  const env = { PINTEREST_ACCESS_TOKEN: 't', PINTEREST_BOARD_ID: 'b' };
-  const publishers = buildPublishers(env, { fetchImpl });
-  const { results } = await runCycle({ manifest: m, log, publishers, today: '2026-07-02', now: NOW, fetchImpl });
-  assert.equal(results.find((r) => r.atomId === 'P1').status, 'manual-required');
+  assert.equal(r1.counts.posted || 0, 0);
 });
