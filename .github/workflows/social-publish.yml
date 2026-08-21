@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: site/social-publisher
+        working-directory: social-publisher
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
