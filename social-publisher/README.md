@@ -147,8 +147,11 @@ What happens:
    lands on the redirect URI — with the localhost default you'll see a harmless
    "can't reach this page"; the value you need is the `code` in the address bar.
    Paste it back (pasting the whole redirected URL works too).
-3. It exchanges the code, lists your boards so you can confirm the `BOARD_ID`, and
-   prints the five secrets:
+3. It exchanges the code, then lists your boards. The **`BOARD_ID` is the long
+   number in the left column** (e.g. `881016721410161`) — *not* the board name or
+   URL. Paste that number for the board you want to publish to. (No boards yet?
+   Create one at pinterest.com → **+** → **Create board**, then press Enter to
+   re-check — no need to re-run OAuth.) It then prints the five secrets:
 
    ```
    PINTEREST_ACCESS_TOKEN=…
