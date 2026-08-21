@@ -2,5 +2,9 @@
   "allGuides": "Alle Ratgeber",
   "eyebrow": "Ratgeber",
   "title": "Bringe die Angelegenheiten deiner Familie in Ordnung.",
-  "lead": "Praktische Ratgeber in klarer Sprache zu Inventaren, Testamenten, Erbschaft und Vermögen."
+  "lead": "Praktische Ratgeber in klarer Sprache zu Inventaren, Testamenten, Erbschaft und Vermögen.",
+  "crumbs": {
+    "home": "Startseite",
+    "guides": "Ratgeber"
+  }
 }

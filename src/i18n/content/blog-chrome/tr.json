@@ -2,5 +2,9 @@
   "allGuides": "Tüm rehberler",
   "eyebrow": "Rehberler",
   "title": "Ailenizin işlerini düzene koyun.",
-  "lead": "Envanterler, vasiyetler, miras ve net varlıklar hakkında pratik, sade dilli rehberler."
+  "lead": "Envanterler, vasiyetler, miras ve net varlıklar hakkında pratik, sade dilli rehberler.",
+  "crumbs": {
+    "home": "Ana Sayfa",
+    "guides": "Rehberler"
+  }
 }
