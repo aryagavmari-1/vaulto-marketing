@@ -100,3 +100,56 @@ Pinterest, once greenlit:
 
 Until then: Pinterest atoms cleanly degrade to manual alongside LinkedIn/short-form
 — zero loss vs the current all-manual Track 1.
+
+## One-time OAuth: `pinterest-oauth.sh` (founder runs this once)
+
+Step 3 of the OAuth flow — the `POST /v5/oauth/token` exchange — is the part that
+keeps failing when hand-built. **`pinterest-oauth.sh`** does it for you: a single,
+self-contained helper (bash + curl only, no other deps) that walks you through the
+flow and prints the five repo secrets ready to paste. It removes the three
+common step-3 footguns by construction:
+
+- **`redirect_uri` mismatch** — the script uses ONE redirect URI for both the
+  authorize URL and the token POST, so they're byte-identical, and prints the exact
+  string for you to register in the app.
+- **Basic-auth header** — the token POST is `curl -u "$APP_ID:$APP_SECRET"`; curl
+  builds the `Authorization` header, so there's no hand-rolled base64 to get wrong.
+- **Single-use / expired `code`** — it prints the authorize URL, waits for you to
+  paste a **fresh** code, then POSTs immediately.
+
+**Run it (on your own machine, logged into the brand's Pinterest _business_
+account):**
+
+```bash
+cd social-publisher
+./pinterest-oauth.sh
+# You'll be asked for APP_ID and APP_SECRET (from your Pinterest developer app).
+# You can also pass them (and an optional BOARD_ID) up front:
+#   APP_ID=xxxx APP_SECRET=yyyy ./pinterest-oauth.sh
+```
+
+What happens:
+
+1. It prints the **exact redirect URI** to add under your Pinterest app →
+   Configure → **Redirect URIs** (default `http://localhost:8085/`; override with
+   `REDIRECT_URI="https://myvaulto.com/" ./pinterest-oauth.sh` if you prefer).
+2. It prints an **authorize URL**. Open it, click **Give access**. Your browser
+   lands on the redirect URI — with the localhost default you'll see a harmless
+   "can't reach this page"; the value you need is the `code` in the address bar.
+   Paste it back (pasting the whole redirected URL works too).
+3. It exchanges the code, lists your boards so you can confirm the `BOARD_ID`, and
+   prints the five secrets:
+
+   ```
+   PINTEREST_ACCESS_TOKEN=…
+   PINTEREST_REFRESH_TOKEN=…
+   PINTEREST_APP_ID=…
+   PINTEREST_APP_SECRET=…
+   PINTEREST_BOARD_ID=…
+   ```
+
+Paste those five into **vaulto-marketing → Settings → Secrets and variables →
+Actions** (one repository secret per line, names exactly as shown). Least-privilege
+scope only: `pins:write` + `boards:read`. Once they're saved, the daily publisher
+goes live automatically — no code change — and self-refreshes the access token
+using the refresh token, so you never run this again.
