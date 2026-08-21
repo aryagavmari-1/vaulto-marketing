@@ -74,7 +74,7 @@ hands Pinterest a broken image.
 
 ## Credentials (least-privilege, never committed)
 
-Set as repo secrets (or Render env). Scopes: `pins:write` + `boards:read`. The
+Set as repo secrets (or Render env). Scopes: `boards:read` + `boards:write` + `pins:read` + `pins:write` (all four are required by Pinterest's POST /v5/pins). The
 access token is ~30 days; the worker refreshes it on a 401 using the refresh token.
 
 ```
@@ -93,7 +93,7 @@ Pinterest, once greenlit:
 1. Pinterest **business account** for the brand (free).
 2. Create our **Pinterest developer app**; request **standard/production access**
    (posting) — the review is attainable for a legit business.
-3. One founder **OAuth** granting `pins:write` + `boards:read` → capture the
+3. One founder **OAuth** granting `boards:read` + `boards:write` + `pins:read` + `pins:write` → capture the
    access + refresh tokens and target board id.
 4. Store the five values as repo secrets. The daily job auto-goes-live; nothing in
    the code changes.
@@ -163,6 +163,6 @@ What happens:
 
 Paste those five into **vaulto-marketing → Settings → Secrets and variables →
 Actions** (one repository secret per line, names exactly as shown). Least-privilege
-scope only: `pins:write` + `boards:read`. Once they're saved, the daily publisher
+scopes: `boards:read`+`boards:write`+`pins:read`+`pins:write`. Once they're saved, the daily publisher
 goes live automatically — no code change — and self-refreshes the access token
 using the refresh token, so you never run this again.

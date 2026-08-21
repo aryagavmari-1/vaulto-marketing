@@ -24,7 +24,7 @@ set -euo pipefail
 
 API="https://api.pinterest.com/v5"
 AUTHORIZE="https://www.pinterest.com/oauth/"
-SCOPES="pins:write,boards:read"              # least-privilege (ARY-655 greenlight)
+SCOPES="boards:read,boards:write,pins:read,pins:write"              # Pinterest POST /v5/pins requires all four (live 401 proved pins:write+boards:read alone is rejected: Missing boards:write, pins:read)
 # One redirect_uri, reused everywhere. Override with e.g.
 #   REDIRECT_URI="https://myvaulto.com/" ./pinterest-oauth.sh
 REDIRECT_URI="${REDIRECT_URI:-http://localhost:8085/}"
