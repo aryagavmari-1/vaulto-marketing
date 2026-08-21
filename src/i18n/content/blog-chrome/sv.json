@@ -2,5 +2,9 @@
   "allGuides": "Alla guider",
   "eyebrow": "Guider",
   "title": "Få ordning på familjens angelägenheter.",
-  "lead": "Praktiska guider på enkel svenska om inventeringar, testamenten, arv och nettoförmögenhet."
+  "lead": "Praktiska guider på enkel svenska om inventeringar, testamenten, arv och nettoförmögenhet.",
+  "crumbs": {
+    "home": "Hem",
+    "guides": "Guider"
+  }
 }

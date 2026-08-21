@@ -1,4 +1,33 @@
+# Everything is crawlable — a public marketing site with nothing to hide.
 User-agent: *
+Allow: /
+
+# AI answer-engine / LLM crawlers — CEO OPTED IN (ARY-2288) for GEO so our own
+# content is eligible to be cited in AI answers. The wildcard above already
+# allows these, but naming them explicitly documents intent and guards against a
+# future blanket block accidentally excluding them. Add, don't remove, agents here.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 Sitemap: https://myvaulto.com/sitemap-index.xml
