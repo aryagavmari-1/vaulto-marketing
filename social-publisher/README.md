@@ -121,12 +121,22 @@ common step-3 footguns by construction:
 account):**
 
 ```bash
-cd social-publisher
+# 1. Get the repo (skip if you already cloned it):
+git clone https://github.com/aryagavmari-1/vaulto-marketing.git
+# 2. Go into the helper's folder. It lives INSIDE the repo, so cd into the
+#    repo checkout first — running `cd social-publisher` from your home
+#    directory won't find it:
+cd vaulto-marketing/social-publisher
+# 3. Run it:
 ./pinterest-oauth.sh
 # You'll be asked for APP_ID and APP_SECRET (from your Pinterest developer app).
 # You can also pass them (and an optional BOARD_ID) up front:
 #   APP_ID=xxxx APP_SECRET=yyyy ./pinterest-oauth.sh
 ```
+
+> **"no such file or directory"?** You're not in the checkout. From anywhere,
+> run `cd ~/vaulto-marketing/social-publisher` (adjust the path if you cloned
+> elsewhere — `find ~ -name pinterest-oauth.sh` locates it), then `./pinterest-oauth.sh`.
 
 What happens:
 
