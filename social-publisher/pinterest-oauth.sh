@@ -139,18 +139,40 @@ if [[ "$HTTP_CODE" != "200" || -z "$ACCESS_TOKEN" ]]; then
 fi
 
 # --- 4. resolve / confirm the board id -------------------------------------
+# The BOARD_ID is Pinterest's own long numeric id for a board (e.g.
+# 881016721410161). It is NOT the board's name or URL slug. We fetch it for
+# you from the API and print it in the left column below — you just copy it.
 if [[ -z "$BOARD_ID" ]]; then
-  say ""
-  say "${c_bold}Your boards (boards:read):${c_rst}"
-  BOARDS="$(curl -sS -H "Authorization: Bearer ${ACCESS_TOKEN}" "${API}/boards?page_size=50" || true)"
-  # Print each id/name pair best-effort (flat fields inside items[]).
-  printf '%s' "$BOARDS" \
-    | grep -oE '"id"[[:space:]]*:[[:space:]]*"[^"]*"|"name"[[:space:]]*:[[:space:]]*"[^"]*"' \
-    | sed -E 's/.*:[[:space:]]*"([^"]*)"/\1/' \
-    | paste - - 2>/dev/null | awk -F'\t' '{printf "  %-22s  %s\n", $1, $2}' || true
-  say ""
-  read -rp "Paste the BOARD_ID you want to publish to: " BOARD_ID
-  BOARD_ID="$(printf '%s' "$BOARD_ID" | tr -d '[:space:]')"
+  while [[ -z "$BOARD_ID" ]]; do
+    say ""
+    say "${c_bold}Your boards (the BOARD_ID is the long number on the LEFT):${c_rst}"
+    BOARDS="$(curl -sS -H "Authorization: Bearer ${ACCESS_TOKEN}" "${API}/boards?page_size=50" || true)"
+    # Print each id/name pair best-effort (flat fields inside items[]).
+    LISTED="$(printf '%s' "$BOARDS" \
+      | grep -oE '"id"[[:space:]]*:[[:space:]]*"[^"]*"|"name"[[:space:]]*:[[:space:]]*"[^"]*"' \
+      | sed -E 's/.*:[[:space:]]*"([^"]*)"/\1/' \
+      | paste - - 2>/dev/null | awk -F'\t' '{printf "  %-22s  %s\n", $1, $2}' || true)"
+    if [[ -n "$LISTED" ]]; then
+      say "$LISTED"
+      say ""
+      say "  ${c_dim}Copy the long number to the LEFT of the board you want to post to.${c_rst}"
+    else
+      # No boards on this account yet (or none visible to this token).
+      say "  ${c_ylw}(no boards found on this Pinterest account yet)${c_rst}"
+      say ""
+      say "  You have no boards to publish to. In the same browser, go to"
+      say "  ${c_bold}pinterest.com${c_rst} → click ${c_bold}+${c_rst} (top right) → ${c_bold}Create board${c_rst} →"
+      say "  give it any name (e.g. \"Vaulto\") → ${c_bold}Create${c_rst}."
+      say "  Then come back here and press Enter to re-check — its numeric id"
+      say "  will appear above and you can paste it. ${c_dim}(No need to re-run OAuth.)${c_rst}"
+      read -rp $'\nPress Enter to re-check for boards (or paste a BOARD_ID if you have one)… ' BOARD_ID
+      BOARD_ID="$(printf '%s' "$BOARD_ID" | tr -d '[:space:]')"
+      [[ -z "$BOARD_ID" ]] && continue   # empty = re-list the boards
+      break                              # they pasted an id directly
+    fi
+    read -rp "Paste the BOARD_ID (the long number) you want to publish to: " BOARD_ID
+    BOARD_ID="$(printf '%s' "$BOARD_ID" | tr -d '[:space:]')"
+  done
 fi
 [[ -n "$BOARD_ID" ]] || die "BOARD_ID is required to finish."
 
