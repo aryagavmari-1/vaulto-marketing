@@ -28,13 +28,14 @@ on:
     - cron: '17 6 * * 1' # 06:17 UTC every Monday
   workflow_dispatch:
     inputs:
-      # Activation has no on-site waitlist form to auto-count (the CTAs hand off
-      # to the app — ARY-1864), so waitlist_signups is a manual weekly entry:
-      # Actions → Refresh KPIs → Run workflow → paste the current count. Left
-      # blank, the puller leaves the activation fields untouched (honest null).
-      # signup_conversion_rate is derived from it against organic_sessions.
+      # Activation (waitlist_signups) is now AUTO-SOURCED from the app's own
+      # registration count on every scheduled run (ARY-2490): the puller reads
+      # the token-gated backend endpoint KPI_SIGNUPS_URL. This manual input stays
+      # as an override / correction lever only — Actions → Refresh KPIs → Run
+      # workflow → paste a count to force that number for the run. Left blank,
+      # the auto-source (KPI_SIGNUPS_URL secret) is used.
       waitlist_signups:
-        description: 'Waitlist signups this period (manual; blank = leave unchanged)'
+        description: 'Override waitlist signups (manual; blank = auto-source from the app)'
         required: false
         type: string
         default: ''
@@ -72,7 +73,15 @@ jobs:
           CF_ACCOUNT_TAG: ${{ secrets.CF_ACCOUNT_TAG }}
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
-          # Manual activation entry (blank on scheduled runs → puller no-ops it).
+          # Activation auto-source (ARY-2490): the app's registration-count
+          # endpoint + its read token. Set once as repo secrets; scheduled runs
+          # then populate waitlist_signups with no human step. If the URL is set
+          # but the fetch fails, the puller exits non-zero → this job goes RED
+          # (never a silent null).
+          KPI_SIGNUPS_URL: ${{ secrets.KPI_SIGNUPS_URL }}
+          KPI_SIGNUPS_TOKEN: ${{ secrets.KPI_SIGNUPS_TOKEN }}
+          # Optional manual override (workflow_dispatch): forces this number and
+          # skips the auto-source for the run.
           KPI_WAITLIST_SIGNUPS: ${{ inputs.waitlist_signups }}
         run: node scripts/pull-kpis.mjs
       - name: Commit refreshed KPIs + GSC breakdown
