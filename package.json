@@ -16,6 +16,7 @@
     "new:post": "node scripts/new-post.mjs",
     "kpis": "node scripts/pull-kpis.mjs",
     "kpis:check": "node scripts/check-kpi-creds.mjs",
+    "test:kpis": "node scripts/gsc-breakdown.test.mjs",
     "check:claims": "node scripts/check-tier-claims.mjs",
     "test:claims": "node scripts/check-tier-claims.test.mjs",
     "check:register": "node scripts/check-locale-register.mjs",
