@@ -23,15 +23,17 @@
  *     the other, and an unconfigured source leaves its KPIs unchanged. So the
  *     pipeline is safe to run end-to-end before the live accounts/tokens land
  *     (blocked on ARY-409); it becomes live the moment the secrets are set.
- *   - Conversion-source KPIs (waitlist_signups, signup_conversion_rate,
- *     activated_vaults) are NOT auto-pulled from an ad/goal API: there is no
- *     on-site waitlist form to count (the marketing CTAs hand off to the app —
- *     see ARY-1864), so `waitlist_signups` is a manual weekly entry and
- *     `signup_conversion_rate` is DERIVED from it. Provide the count via the
- *     KPI_WAITLIST_SIGNUPS env var (a repo secret / workflow_dispatch input);
- *     the conversion rate is then computed against `organic_sessions`. When no
- *     count is supplied the fields are left untouched (honest null, not a fake
- *     zero). `activated_vaults` stays null until the app is GA.
+ *   - Activation (waitlist_signups) is AUTO-SOURCED from the app's own
+ *     registration count (ARY-2490): there is no on-site waitlist form (the
+ *     marketing CTAs hand off to the app — ARY-1864), so the canonical signup
+ *     number is `mobile_users`, read from the token-gated backend endpoint
+ *     KPI_SIGNUPS_URL (GET /api/metrics/signups) with KPI_SIGNUPS_TOKEN.
+ *     `signup_conversion_rate` is DERIVED from it against `organic_sessions`.
+ *     A manual KPI_WAITLIST_SIGNUPS still overrides the API (correction lever).
+ *     If KPI_SIGNUPS_URL is configured but the fetch fails, that is a HARD error
+ *     (non-zero exit / red build) — never a silent null, which is the exact
+ *     regression this endpoint exists to prevent. `activated_vaults` stays null
+ *     until the app is GA.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -50,12 +52,22 @@ const WINDOW_DAYS = Number(process.env.KPI_WINDOW_DAYS || 30);
 // How many top pages / queries to surface in the breakdown (ARY-2489).
 const BREAKDOWN_TOP = Number(process.env.KPI_BREAKDOWN_TOP || 20);
 
+// Activation source (ARY-2490): the canonical pre-GA signup number is the app's
+// own registration count (`mobile_users`), read from the token-gated backend
+// endpoint GET /api/metrics/signups. Auto-sourcing it removes the human-typed
+// weekly step that kept `waitlist_signups` null for 5+ weeks. A manual
+// KPI_WAITLIST_SIGNUPS still wins when set, as a correction/override lever.
+const SIGNUPS_URL = (process.env.KPI_SIGNUPS_URL || '').trim();
+const MANUAL_SIGNUPS =
+  process.env.KPI_WAITLIST_SIGNUPS != null && process.env.KPI_WAITLIST_SIGNUPS !== '';
+
 const have = {
   traffic: Boolean(process.env.CF_API_TOKEN),
   search: Boolean(process.env.GSC_SERVICE_ACCOUNT_JSON),
-  // Activation is a manual weekly entry (no on-site waitlist form to count —
-  // ARY-1864). Present only when a count is supplied for this run.
-  activation: process.env.KPI_WAITLIST_SIGNUPS != null && process.env.KPI_WAITLIST_SIGNUPS !== '',
+  // Present when either a live API source is configured or a manual override is
+  // supplied for this run. A *configured* API source that then fails is a hard
+  // error (red build) — never a silent null, the failure mode ARY-2490 fixes.
+  activation: Boolean(SIGNUPS_URL) || MANUAL_SIGNUPS,
 };
 
 /** YYYY-MM-DD for `d` days ago (UTC), inclusive window helper. */
@@ -255,17 +267,54 @@ async function pullSearchConsole(updates, sideEffects) {
   updates.push(`gsc_breakdown=${breakdown.pages.length}p/${breakdown.queries.length}q`);
 }
 
-// ── Activation (manual weekly entry) ─────────────────────────────────────────
-// There is no on-site waitlist form to auto-count (the marketing CTAs hand off
-// to the app — ARY-1864), so `waitlist_signups` is entered by a human each week
-// via KPI_WAITLIST_SIGNUPS and `signup_conversion_rate` is derived from it. The
-// denominator is `organic_sessions` (already refreshed above this run, or its
-// existing value in kpis.json), matching KPIS.md's "Visit → signup" definition.
-function pullActivation(updates) {
-  const raw = process.env.KPI_WAITLIST_SIGNUPS;
-  const signups = Math.round(Number(raw));
-  if (!Number.isFinite(signups) || signups < 0) {
-    throw new Error(`KPI_WAITLIST_SIGNUPS is not a non-negative number: "${raw}"`);
+// ── Activation (auto-sourced from the app, ARY-2490) ─────────────────────────
+// `waitlist_signups` is our pre-GA north-star proxy. There is no on-site
+// waitlist form (the marketing CTAs hand off to the app — ARY-1864), so the
+// canonical signup number is the app's own registration count. We read it from
+// the token-gated backend endpoint KPI_SIGNUPS_URL (GET /api/metrics/signups),
+// asking for the same rolling window as organic_sessions so the derived
+// `signup_conversion_rate` is coherent. A manual KPI_WAITLIST_SIGNUPS overrides
+// the API (correction lever). The denominator for conversion is
+// `organic_sessions` (refreshed above this run, or its stored value), matching
+// KPIS.md's "Visit → signup" definition.
+
+/** Fetch the windowed signup count from the app's metrics endpoint. */
+async function fetchSignupCount() {
+  const url = new URL(SIGNUPS_URL);
+  url.searchParams.set('days', String(WINDOW_DAYS));
+  const headers = {};
+  const token = (process.env.KPI_SIGNUPS_TOKEN || '').trim();
+  if (token) headers.Authorization = `Bearer ${token}`;
+  const res = await fetch(url, { headers });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`signups endpoint HTTP ${res.status}: ${body.slice(0, 200)}`);
+  }
+  const data = await res.json();
+  // Prefer the windowed count (aligns with organic_sessions/mo); fall back to
+  // total for a differently-shaped payload.
+  const n = Number(data.windowCount ?? data.total);
+  if (!Number.isFinite(n) || n < 0) {
+    throw new Error(`signups endpoint returned no usable count: ${JSON.stringify(data).slice(0, 200)}`);
+  }
+  return Math.round(n);
+}
+
+async function pullActivation(updates) {
+  let signups;
+  if (MANUAL_SIGNUPS) {
+    const raw = process.env.KPI_WAITLIST_SIGNUPS;
+    signups = Math.round(Number(raw));
+    if (!Number.isFinite(signups) || signups < 0) {
+      throw new Error(`KPI_WAITLIST_SIGNUPS is not a non-negative number: "${raw}"`);
+    }
+    console.log('[pull-kpis] activation: manual override via KPI_WAITLIST_SIGNUPS');
+  } else {
+    // SIGNUPS_URL is set (have.activation gated on it). A failure here is a hard
+    // error — it surfaces as a red weekly build instead of silently reverting to
+    // null, which is exactly the regression ARY-2490 exists to prevent.
+    signups = await fetchSignupCount();
+    console.log(`[pull-kpis] activation: auto-sourced ${signups} signups from ${SIGNUPS_URL}`);
   }
   setKpi(updates, 'waitlist_signups', signups);
 
@@ -304,10 +353,10 @@ if (have.search) {
 // Activation runs last so the conversion rate divides by this run's fresh
 // organic_sessions when Cloudflare is configured, or the stored value otherwise.
 if (have.activation) {
-  try { pullActivation(updates); }
+  try { await pullActivation(updates); }
   catch (e) { errors.push(`Activation: ${e.message}`); }
 } else {
-  console.warn('[pull-kpis] No activation entry this run (set KPI_WAITLIST_SIGNUPS to record waitlist signups)');
+  console.warn('[pull-kpis] No activation source (set KPI_SIGNUPS_URL to auto-source, or KPI_WAITLIST_SIGNUPS to enter manually)');
 }
 
 for (const err of errors) console.error('[pull-kpis] ERROR ' + err);
