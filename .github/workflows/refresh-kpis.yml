@@ -75,17 +75,20 @@ jobs:
           # Manual activation entry (blank on scheduled runs → puller no-ops it).
           KPI_WAITLIST_SIGNUPS: ${{ inputs.waitlist_signups }}
         run: node scripts/pull-kpis.mjs
-      - name: Commit refreshed kpis.json
+      - name: Commit refreshed KPIs + GSC breakdown
         run: |
           set -euo pipefail
-          if git diff --quiet -- kpis.json; then
+          # kpis.json = site aggregates; gsc-breakdown.{json,md} = per-page/query
+          # breakdown (ARY-2489). Commit whichever the puller touched this run.
+          FILES="kpis.json gsc-breakdown.json GSC-BREAKDOWN.md"
+          if git diff --quiet -- $FILES; then
             echo "No KPI changes to commit."
             exit 0
           fi
           git config user.name  "vaulto-kpi-bot"
           git config user.email "noreply@paperclip.ing"
-          git add kpis.json
-          git commit -m "chore(kpis): refresh live KPI snapshot [skip ci]
+          git add $FILES
+          git commit -m "chore(kpis): refresh live KPI snapshot + GSC breakdown [skip ci]
 
           Co-Authored-By: Paperclip <noreply@paperclip.ing>"
           git push

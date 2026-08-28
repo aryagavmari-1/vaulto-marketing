@@ -56,7 +56,25 @@ signups/mo**; otherwise pause and reallocate. No running channels on faith.
 
 **Cadence:** the [`refresh-kpis`](./.github/workflows/refresh-kpis.yml) GitHub Action runs
 weekly (Mon 06:17 UTC) + on demand, runs the puller, and commits the refreshed
-`kpis.json`. Run locally any time with `npm run kpis`.
+`kpis.json` **plus the GSC breakdown** (below). Run locally any time with `npm run kpis`.
+
+### Page & query breakdown (ARY-2489)
+
+`kpis.json` carries only site-level GSC *aggregates*, so it can't tell you *which*
+pages/queries drive an impression surge vs which entered at page 3-5 and dragged the
+average down. The same weekly run now also pulls a per-**page** and per-**query**
+breakdown (top 20 by impressions, each with impr / clicks / CTR / avg pos) and writes:
+
+- **[`GSC-BREAKDOWN.md`](./GSC-BREAKDOWN.md)** — human-readable tables the CMO reads
+  straight from the repo; and
+- **[`gsc-breakdown.json`](./gsc-breakdown.json)** — the machine-readable form.
+
+Both share the search window and property with the aggregates, so the breakdown
+reconciles with the top-line numbers. It uses the **same** `GSC_SERVICE_ACCOUNT_JSON`
+credential and `webmasters.readonly` scope — **no new secret, scope, or cost** — so it
+goes live with the rest of search the moment ARY-409's credential lands. Read winners by
+**clicks / CTR**, not portfolio-average position (a rising position average is often just
+benign new-page dilution — ARY-2487). Tune the depth with `KPI_BREAKDOWN_TOP` (default 20).
 
 **Activation (one-time):** set these repo secrets — until then the puller is a safe
 no-op (leaves `kpis.json` unchanged, exits 0), so nothing breaks pre-launch.

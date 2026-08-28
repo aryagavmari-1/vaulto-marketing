@@ -38,12 +38,17 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createSign } from 'node:crypto';
 import { resolveAccountTag, classifyReferers } from './cf-account.mjs';
+import { buildBreakdown, renderBreakdownMarkdown } from './gsc-breakdown.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const path = join(root, 'kpis.json');
+const breakdownJsonPath = join(root, 'gsc-breakdown.json');
+const breakdownMdPath = join(root, 'GSC-BREAKDOWN.md');
 const doc = JSON.parse(readFileSync(path, 'utf8'));
 
 const WINDOW_DAYS = Number(process.env.KPI_WINDOW_DAYS || 30);
+// How many top pages / queries to surface in the breakdown (ARY-2489).
+const BREAKDOWN_TOP = Number(process.env.KPI_BREAKDOWN_TOP || 20);
 
 const have = {
   traffic: Boolean(process.env.CF_API_TOKEN),
@@ -180,7 +185,26 @@ async function gscAccessToken(sa) {
   return (await res.json()).access_token;
 }
 
-async function pullSearchConsole(updates) {
+// Run one searchAnalytics.query against the property. GSC data lags ~2-3 days,
+// so every window ends a few days back to avoid a partial tail; all three pulls
+// (aggregate + page + query) share the same window so the breakdown reconciles
+// with the site totals.
+const GSC_WINDOW = { startDate: isoDate(WINDOW_DAYS + 3), endDate: isoDate(3) };
+
+async function gscQuery(siteUrl, token, { dimensions, rowLimit }) {
+  const res = await fetch(
+    `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ...GSC_WINDOW, dimensions, rowLimit }),
+    },
+  );
+  if (!res.ok) throw new Error(`GSC query HTTP ${res.status}: ${await res.text()}`);
+  return (await res.json()).rows ?? [];
+}
+
+async function pullSearchConsole(updates, sideEffects) {
   let sa;
   try {
     sa = JSON.parse(process.env.GSC_SERVICE_ACCOUNT_JSON);
@@ -193,33 +217,42 @@ async function pullSearchConsole(updates) {
   const siteUrl = process.env.GSC_SITE_URL || 'https://myvaulto.com/';
   const token = await gscAccessToken(sa);
 
-  // GSC data lags ~2-3 days; end the window a few days back to avoid a partial tail.
-  const res = await fetch(
-    `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
-    {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        startDate: isoDate(WINDOW_DAYS + 3),
-        endDate: isoDate(3),
-        dimensions: [],
-        rowLimit: 1,
-      }),
-    },
-  );
-  if (!res.ok) throw new Error(`GSC query HTTP ${res.status}: ${await res.text()}`);
-  const body = await res.json();
-  const row = body.rows?.[0];
+  // 1. Site aggregate → the three top-line KPIs in kpis.json.
+  const aggRows = await gscQuery(siteUrl, token, { dimensions: [], rowLimit: 1 });
+  const row = aggRows[0];
   if (!row) {
     // Valid response, no data yet (brand-new property). Record zeros for the
     // measurable counters so the dashboard shows "live, but empty" not "stale".
     setKpi(updates, 'search_impressions', 0);
     setKpi(updates, 'search_clicks', 0);
-    return;
+  } else {
+    setKpi(updates, 'search_impressions', Math.round(row.impressions ?? 0));
+    setKpi(updates, 'search_clicks', Math.round(row.clicks ?? 0));
+    if (row.position != null) setKpi(updates, 'avg_position', Math.round(row.position * 10) / 10);
   }
-  setKpi(updates, 'search_impressions', Math.round(row.impressions ?? 0));
-  setKpi(updates, 'search_clicks', Math.round(row.clicks ?? 0));
-  if (row.position != null) setKpi(updates, 'avg_position', Math.round(row.position * 10) / 10);
+
+  // 2. Page + query breakdown → gsc-breakdown.json / GSC-BREAKDOWN.md (ARY-2489).
+  // GSC returns rows sorted by clicks; pull a wide slice and re-rank by
+  // impressions in buildBreakdown so "top by impressions" is exact even when a
+  // high-impression / low-click page would fall outside a clicks-sorted top-N.
+  const fetchLimit = Math.max(BREAKDOWN_TOP * 10, 250);
+  const [pageRows, queryRows] = await Promise.all([
+    gscQuery(siteUrl, token, { dimensions: ['page'], rowLimit: fetchLimit }),
+    gscQuery(siteUrl, token, { dimensions: ['query'], rowLimit: fetchLimit }),
+  ]);
+  const breakdown = buildBreakdown({
+    siteUrl,
+    window: GSC_WINDOW,
+    pageRows,
+    queryRows,
+    asOf: new Date().toISOString(),
+    topN: BREAKDOWN_TOP,
+  });
+  sideEffects.push(() => {
+    writeFileSync(breakdownJsonPath, JSON.stringify(breakdown, null, 2) + '\n');
+    writeFileSync(breakdownMdPath, renderBreakdownMarkdown(breakdown));
+  });
+  updates.push(`gsc_breakdown=${breakdown.pages.length}p/${breakdown.queries.length}q`);
 }
 
 // ── Activation (manual weekly entry) ─────────────────────────────────────────
@@ -250,6 +283,9 @@ function pullActivation(updates) {
 // ── Orchestrate ──────────────────────────────────────────────────────────────
 const updates = [];
 const errors = [];
+// Deferred file writes (e.g. the GSC breakdown docs). Queued during the pull and
+// flushed only on a live run, so an all-errored / no-op run touches nothing.
+const sideEffects = [];
 
 if (have.traffic) {
   try { await pullCloudflare(updates); }
@@ -259,7 +295,7 @@ if (have.traffic) {
 }
 
 if (have.search) {
-  try { await pullSearchConsole(updates); }
+  try { await pullSearchConsole(updates, sideEffects); }
   catch (e) { errors.push(`Search Console: ${e.message}`); }
 } else {
   console.warn('[pull-kpis] Unconfigured: Google Search Console (GSC_SERVICE_ACCOUNT_JSON)');
@@ -281,6 +317,7 @@ for (const err of errors) console.error('[pull-kpis] ERROR ' + err);
 if (updates.length) {
   doc.asOf = new Date().toISOString();
   writeFileSync(path, JSON.stringify(doc, null, 2) + '\n');
+  for (const flush of sideEffects) flush();
   console.log(`[pull-kpis] Updated ${updates.length} KPI(s): ${updates.join(', ')}`);
   console.log(`[pull-kpis] Stamped asOf=${doc.asOf}.`);
 } else {
