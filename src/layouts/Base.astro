@@ -84,5 +84,16 @@ const canonical = new URL(canonicalPath ?? localizedPath(path, locale), BRAND.ur
         });
       })();
     </script>
+
+    <!-- Cross-domain attribution (ARY-1729 / §3D): append aggregate utm_source/medium/
+         campaign + ref=<page> to every marketing→app CTA so the product funnel can credit
+         organic content for a signup. Campaign/source strings + page path only — no PII. -->
+    <script>
+      import { decorateAppLinks } from '../lib/appAttribution.js';
+      const run = () => decorateAppLinks(document, location.pathname);
+      run();
+      // View Transitions (if enabled) swap content without a full reload — re-decorate.
+      document.addEventListener('astro:after-swap', run);
+    </script>
   </body>
 </html>

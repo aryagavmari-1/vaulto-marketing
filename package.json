@@ -20,7 +20,8 @@
     "check:claims": "node scripts/check-tier-claims.mjs",
     "test:claims": "node scripts/check-tier-claims.test.mjs",
     "check:register": "node scripts/check-locale-register.mjs",
-    "check:i18n": "node scripts/check-i18n-coverage.mjs"
+    "check:i18n": "node scripts/check-i18n-coverage.mjs",
+    "attribution:selftest": "node scripts/attribution.selftest.mjs"
   },
   "dependencies": {
     "astro": "^5.6.1",
