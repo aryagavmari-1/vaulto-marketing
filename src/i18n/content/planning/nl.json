@@ -51,5 +51,9 @@
   ],
   "cta": {
     "label": "Probeer een gratis overzicht"
+  },
+  "finalCta": {
+    "title": "Plan wanneer jij er klaar voor bent.",
+    "body": "Begin met een gratis overzicht — geen druk, geen haast, geen kaart nodig."
   }
 }

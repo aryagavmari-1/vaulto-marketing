@@ -22,7 +22,7 @@
     },
     {
       "title": "Versleuteld in rust.",
-      "body": "Je gegevens en geüploade bestanden staan op professioneel beheerde, beveiligde servers en zijn versleuteld in rust — \"in rust\" betekent simpelweg terwijl ze zijn opgeslagen, niet terwijl ze onderweg zijn. De database met je records en de opslag met je foto's en scans zijn beide versleuteld, en je bestanden zijn alleen bereikbaar via kortlevende, ondertekende links."
+      "body": "Je gegevens en geüploade bestanden zijn versleuteld in rust — \"in rust\" betekent simpelweg terwijl ze zijn opgeslagen, niet terwijl ze onderweg zijn. Ze staan op professioneel beheerde, beveiligde servers, en Vaulto versleutelt de gevoelige delen daarbovenop in de app zelf voordat ze worden weggeschreven: de namen, beschrijvingen, locaties en notities, de foto's en scans die je uploadt en de exacte waarderingen worden versleuteld met sleutels die in Google Cloud KMS worden beheerd in plaats van naast de gegevens te worden bewaard. Het blok hieronder zet uiteen welke velden verzegeld zijn en welke leesbaar blijven."
     },
     {
       "title": "Wachtwoorden worden nooit onversleuteld opgeslagen.",
@@ -63,7 +63,11 @@
     "body": "Je gegevens zijn van jou — exporteer wanneer je wilt een volledige, machineleesbare kopie van je records (JSON, CSV of PDF) vanuit Instellingen. \"Machineleesbaar\" betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — geen vergrendelde PDF. Geen lock-in, geen wachten op ons. (Je kunt ook een ZIP-archief exporteren met je originele geüploade foto's en scans naast het gestructureerde record.) Dit ondersteunt je recht op gegevensoverdraagbaarheid onder de GDPR — de EU-privacywet (artikel 20) waarmee je je gegevens kunt meenemen."
   },
   "honesty": {
-    "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, een versleutelde database, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"zero-knowledge\" (waarbij zelfs wij je gegevens nooit zouden kunnen ontgrendelen), \"bankniveau\" of enige certificering die we niet hebben verdiend. Gegevensexport is actief (hierboven). Wanneer we versleuteling op app-niveau toevoegen — een extra slot dat binnen de app zelf wordt toegepast, bovenop de bovenstaande versleuteling — of een formele audit door derden, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
+    "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, versleuteling in rust die de app zelf toepast met sleutels beheerd in Google Cloud KMS, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"end-to-end\"- of \"zero-knowledge\"-versleuteling: wij hebben de sleutels, dus we kunnen je gegevens ontsleutelen om de dienst en de AI-functies te leveren waar je om vraagt. We claimen evenmin \"bankniveau\" of enige certificering die we niet hebben verdiend. Dit is wat verzegeld is en wat niet. Versleuteld: de namen, beschrijvingen, locaties en notities die je schrijft, de exacte waarderingen en de bestanden die je uploadt. Leesbaar voor onze servers: de gestructureerde velden eromheen, zodat je kluis nog steeds gesorteerd kan worden zonder de verzegelde delen te openen — dingen als de categorie, de datums en labels, de valuta, het land, een instelling of serienummer, de aankoopprijs, van wie een voorwerp is en een grof waardebereik. Gegevensexport is actief (hierboven). Wanneer we een formele audit door derden toevoegen, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
     "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
+  },
+  "finalCta": {
+    "title": "Privé vanaf het eerste wat je toevoegt.",
+    "body": "Begin gratis — je kluis is alleen van jou, en je kunt hem exporteren of verwijderen wanneer je wilt."
   }
 }

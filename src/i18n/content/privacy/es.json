@@ -32,7 +32,7 @@
     },
     {
       "title": "Cómo se protege",
-      "body": "La bóveda de cada persona está aislada de los demás usuarios, las contraseñas están protegidas con hash scrypt y el acceso a los documentos usa enlaces firmados de corta duración. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido lo que aún no afirmamos."
+      "body": "Tus registros y archivos subidos están cifrados en reposo. Además, Vaulto cifra de nuevo las partes sensibles dentro de la propia app: los nombres, las descripciones, las ubicaciones y las notas, las fotos y escaneos que subes y las valoraciones exactas se cifran con claves gestionadas en Google Cloud KMS. La bóveda de cada persona está aislada de los demás usuarios y las contraseñas están protegidas con hash scrypt. Consulta el <a href=\"/security/\">resumen de seguridad</a> para ver los detalles, incluido qué campos siguen siendo legibles y lo que aún no afirmamos."
     }
   ],
   "choices": {

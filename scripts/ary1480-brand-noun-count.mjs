@@ -1,0 +1,166 @@
+#!/usr/bin/env node
+/**
+ * ARY-1480 — English common-noun `vault` counter for the localised blog corpus.
+ *
+ * The ARY-1389 ruling: non-English marketing copy uses the app's own vault noun
+ * (`nav.vault` in lib/i18n), never the English word `vault`. The proper name
+ * `Family Asset Vault` and the brand `Vaulto` are English and stay English.
+ *
+ * Masking matters twice over:
+ *   - `Vaulto` contains `Vault`; a naive /Vault/ inflates every locale.
+ *   - `Family Asset Vault` is the product's proper name, not a common noun.
+ * So we mask both before matching, then apply a non-letter-bounded matcher.
+ *
+ * Usage:
+ *   node scripts/ary1480-brand-noun-count.mjs            # count
+ *   node scripts/ary1480-brand-noun-count.mjs --hits     # count + every hit line
+ *   node scripts/ary1480-brand-noun-count.mjs --control  # positive-control self-test
+ *
+ * Exit code 1 if any non-EN file carries an English common-noun `vault`.
+ */
+import { readdirSync, readFileSync, statSync } from 'node:fs';
+import { join } from 'node:path';
+
+const ROOT = new URL('..', import.meta.url).pathname;
+const CORPUS = join(ROOT, 'src/content/blog-i18n');
+
+// Strings that legitimately contain the letters "vault" and must not be counted.
+// Order matters: longest first, so `Family Asset Vault` is masked before `Vaulto`.
+const ALLOWED = [
+  // URL spans first: a `/vault` path segment is a route, not prose. Without
+  // this, a CTA deep link like https://app.myvaulto.com/vault scores a hit and
+  // this gate reds a correct build (ARY-1499). Link *labels* sit outside the
+  // URL span, so a real common-noun hit in link text is still counted.
+  /https?:\/\/[^\s)\]"'<>]+/g,
+  /Family Asset Vault/g, // product proper name (ARY-1480 done-means #2)
+  /Vaulto/g,             // brand (ARY-13)
+  /vaulto\.com/gi,       // domain in links / og tags
+];
+
+// English common noun, not letter-bounded on either side. Deliberately NOT \b:
+// JS \b is ASCII-only, so on a CJK/Devanagari line `\bvault\b` behaves
+// unpredictably next to non-ASCII. An explicit [A-Za-z] guard is locale-safe.
+const NOUN = /(?<![A-Za-z])[Vv]ault(?![A-Za-z])/g;
+
+export function mask(text) {
+  let out = text;
+  for (const re of ALLOWED) out = out.replace(re, (m) => '\0'.repeat(m.length));
+  return out;
+}
+
+export function countFile(text) {
+  const masked = mask(text);
+  const hits = [];
+  const lines = masked.split('\n');
+  const rawLines = text.split('\n');
+  lines.forEach((line, i) => {
+    NOUN.lastIndex = 0;
+    let m;
+    while ((m = NOUN.exec(line)) !== null) {
+      hits.push({ line: i + 1, text: rawLines[i].trim() });
+    }
+  });
+  return hits;
+}
+
+function locales() {
+  return readdirSync(CORPUS)
+    .filter((d) => statSync(join(CORPUS, d)).isDirectory())
+    .sort();
+}
+
+function run() {
+  const showHits = process.argv.includes('--hits');
+  const byLocale = {};
+  let totalFiles = 0;
+  let totalHits = 0;
+  let dirtyFiles = 0;
+
+  for (const loc of locales()) {
+    const dir = join(CORPUS, loc);
+    const files = readdirSync(dir).filter((f) => f.endsWith('.md')).sort();
+    let locHits = 0;
+    let locDirty = 0;
+    for (const f of files) {
+      totalFiles += 1;
+      const hits = countFile(readFileSync(join(dir, f), 'utf8'));
+      if (hits.length) {
+        locDirty += 1;
+        locHits += hits.length;
+        if (showHits) {
+          for (const h of hits) console.log(`${loc}/${f}:${h.line}: ${h.text}`);
+        }
+      }
+    }
+    byLocale[loc] = { hits: locHits, dirtyFiles: locDirty, files: files.length };
+    totalHits += locHits;
+    dirtyFiles += locDirty;
+  }
+
+  console.log('\n| locale | hits | dirty files | files |');
+  console.log('|---|---|---|---|');
+  for (const [loc, v] of Object.entries(byLocale)) {
+    console.log(`| \`${loc}\` | ${v.hits} | ${v.dirtyFiles} | ${v.files} |`);
+  }
+  const nonEnFiles = totalFiles;
+  console.log(
+    `\nTOTAL: ${totalHits} English common-noun \`vault\` hits across ` +
+      `${dirtyFiles} of ${nonEnFiles} files, in ` +
+      `${Object.values(byLocale).filter((v) => v.hits > 0).length} of ${Object.keys(byLocale).length} locales.`
+  );
+  return totalHits === 0 ? 0 : 1;
+}
+
+// Positive control: spike a known string per locale and prove the matcher fires.
+// Without this, a "0 hits" result is indistinguishable from a broken matcher.
+function control() {
+  let pass = 0;
+  let fail = 0;
+  const check = (label, text, expect) => {
+    const got = countFile(text).length;
+    const ok = got === expect;
+    console.log(`${ok ? 'PASS' : 'FAIL'}  ${label}  expected ${expect}, got ${got}`);
+    ok ? (pass += 1) : (fail += 1);
+  };
+
+  // Per-locale spike: the real sentence shape from each locale's corpus, with an
+  // English `vault` injected. Proves the matcher fires inside CJK, Devanagari,
+  // Cyrillic, Arabic and Latin context — not just in ASCII prose.
+  const SPIKES = {
+    de: 'Jeder Tresor ist isoliert — ein privater vault, den du kontrollierst.',
+    es: 'Cada bóveda está aislada: una vault privada que tú controlas.',
+    it: 'Ogni cassaforte è isolata — una vault privata che controlli tu.',
+    nl: 'Elke kluis is geïsoleerd — een privé vault die jij beheert.',
+    sv: 'Varje valv är isolerat – ett privat vault som du kontrollerar.',
+    ja: '各ユーザーの保管庫は分離されています。あなたが管理する vault です。',
+    zh: '每个人的保险库都是隔离的——一个由你掌控的 vault。',
+    ko: '각 사용자의 보관함은 분리되어 있습니다 — 직접 관리하는 vault 입니다.',
+    hi: 'हर व्यक्ति का वॉल्ट अलग रहता है — एक निजी vault जिसे आप नियंत्रित करते हैं।',
+    ru: 'Хранилище каждого изолировано — приватный vault, которым управляете вы.',
+    ar: 'خزنة كل شخص معزولة — vault خاص تتحكم فيه.',
+    fr: 'Chaque coffre est isolé — un vault privé que vous contrôlez.',
+    pt: 'Cada cofre está isolado — um vault privado que controla.',
+    pl: 'Sejf każdej osoby jest odizolowany — prywatny vault, który kontrolujesz.',
+    tr: 'Her kişinin kasası izole edilir — kontrol ettiğiniz özel bir vault.',
+  };
+  for (const [loc, text] of Object.entries(SPIKES)) check(`spike:${loc}`, text, 1);
+
+  // Negative controls: the strings that MUST NOT count.
+  check('brand:Vaulto', 'Vaulto hilft deiner Familie.', 0);
+  check('proper-name', 'Das Family Asset Vault ist ein Produkt.', 0);
+  check('domain', 'Besuche myvaulto.com für mehr.', 0);
+  check('compound-word', 'Der Tresorraum und vaulting sind egal.', 0);
+  // Adjacent-but-distinct: `Vaulto`'s possessive and the proper name in a
+  // sentence that ALSO carries a real common-noun hit — masking must not eat it.
+  check('mixed', 'Family Asset Vault von Vaulto: dein vault bleibt privat.', 1);
+  // URL routes are not prose. Both polarities, because masking whole URLs is
+  // only safe if it still leaves the link label matchable.
+  check('url-route', 'CTA: <https://app.myvaulto.com/vault> jetzt öffnen.', 0);
+  check('md-link-target', '[Starten Sie Ihren Tresor](https://app.myvaulto.com/vault)', 0);
+  check('md-link-label', '[Starten Sie Ihren vault](https://app.myvaulto.com/vault)', 1);
+
+  console.log(`\ncontrol: ${pass} pass, ${fail} fail`);
+  return fail === 0 ? 0 : 1;
+}
+
+process.exit(process.argv.includes('--control') ? control() : run());

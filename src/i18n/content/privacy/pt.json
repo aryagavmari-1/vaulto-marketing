@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Privacidade",
-    "description": "Um resumo em linguagem simples do que a Vaulto recolhe, como os teus dados são usados e protegidos, e o controlo que manténs sobre eles — incluindo aquilo que ainda não afirmamos."
+    "description": "Um resumo em linguagem simples do que o Vaulto recolhe, como os seus dados são usados e protegidos, e o controlo que mantém sobre eles — incluindo aquilo que ainda não afirmamos."
   },
   "crumbs": {
     "home": "Início",
@@ -9,14 +9,14 @@
   },
   "hero": {
     "eyebrow": "Confiança",
-    "heading": "A tua privacidade, em linguagem simples.",
-    "lead": "Resumo em linguagem simples do que a Vaulto recolhe, como o usamos e o controlo que manténs. Complementa a nossa <a href=\"/security/\">visão geral de segurança</a>.",
+    "heading": "A sua privacidade, em linguagem simples.",
+    "lead": "Resumo em linguagem simples do que o Vaulto recolhe, como o usamos e o controlo que mantém. Complementa a nossa <a href=\"/security/\">visão geral de segurança</a>.",
     "updated": "Última atualização em junho de 2026 · Uma política jurídica completa será publicada antes do lançamento público."
   },
   "sections": [
     {
       "title": "O que recolhemos",
-      "body": "As informações que escolhes colocar no teu cofre (ativos, passivos, documentos e detalhes relacionados), os dados da conta necessários para iniciares sessão e os dados básicos de utilização necessários para operar e melhorar o serviço."
+      "body": "As informações que escolhe colocar no seu cofre (ativos, passivos, documentos e detalhes relacionados), os dados da conta necessários para iniciar sessão e os dados básicos de utilização necessários para operar e melhorar o serviço."
     },
     {
       "title": "Como usamos",
@@ -24,7 +24,7 @@
     },
     {
       "title": "Processamento por IA &amp; terceiros",
-      "body": "Para suportar as nossas funcionalidades de IA — a leitura de fotos de ativos com preenchimento automático, avaliações automáticas, o guia falado e a visão geral, relatório e chat de aconselhamento — enviamos as informações de que essas funcionalidades precisam para a <strong>OpenAI, L.L.C.</strong>, que opera os modelos de IA em nosso nome como subcontratante de dados ao abrigo de um Data Processing Addendum (DPA) celebrado. Dependendo da funcionalidade, isto pode incluir as fotos que capturas (que podem mostrar detalhes de documentos, como números de conta ou de apólice e moradas), os nomes dos ativos, categorias, moedas e valores no teu cofre, as respostas e notas em texto livre que forneces no fluxo de aconselhamento (que podem incluir circunstâncias pessoais ou familiares sensíveis), o teu país e o texto lido em voz alta pelo guia por voz. A OpenAI processa isto apenas para nos devolver resultados e não o usa para treinar os seus modelos. Instruímos a OpenAI a não reter os nossos pedidos e respostas (store=false); na ausência de um acordo de retenção zero, a OpenAI pode manter os dados até 30 dias apenas para monitorização de abuso antes de os eliminar. Não vendemos estas informações nem as partilhamos com qualquer outro terceiro para processamento por IA."
+      "body": "Para suportar as nossas funcionalidades de IA — a leitura de fotografias de ativos com preenchimento automático, avaliações automáticas, o guia falado e a visão geral, relatório e chat de aconselhamento — enviamos as informações de que essas funcionalidades precisam para a <strong>OpenAI, L.L.C.</strong>, que opera os modelos de IA em nosso nome como subcontratante de dados ao abrigo de um Data Processing Addendum (DPA) celebrado. Dependendo da funcionalidade, isto pode incluir as fotografias que captura (que podem mostrar detalhes de documentos, como números de conta ou de apólice e moradas), os nomes dos ativos, categorias, moedas e valores no seu cofre, as respostas e notas em texto livre que fornece no fluxo de aconselhamento (que podem incluir circunstâncias pessoais ou familiares sensíveis), o seu país e o texto lido em voz alta pelo guia por voz. A OpenAI processa isto apenas para nos devolver resultados e não o usa para treinar os seus modelos. Instruímos a OpenAI a não reter os nossos pedidos e respostas (store=false); na ausência de um acordo de retenção zero, a OpenAI pode manter os dados até 30 dias apenas para monitorização de abuso antes de os eliminar. Não vendemos estas informações nem as partilhamos com qualquer outro terceiro para processamento por IA."
     },
     {
       "title": "Partilha &amp; consentimento",
@@ -32,23 +32,23 @@
     },
     {
       "title": "Como são protegidos",
-      "body": "O cofre de cada pessoa é isolado dos restantes utilizadores, as palavras-passe são protegidas com hash scrypt e o acesso a documentos usa ligações assinadas de curta duração. Vê a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo aquilo que ainda não afirmamos."
+      "body": "Os seus registos e os ficheiros que carrega são encriptados em repouso. Além disso, o Vaulto volta a encriptar as partes sensíveis dentro da própria aplicação — nomes, descrições, localizações e notas, as fotografias e digitalizações que carrega e as avaliações exatas — com chaves geridas no Google Cloud KMS. O cofre de cada pessoa é isolado dos restantes utilizadores e as palavras-passe são protegidas com hash scrypt. Veja a <a href=\"/security/\">visão geral de segurança</a> para os detalhes — incluindo que campos continuam legíveis e aquilo que ainda não afirmamos."
     }
   ],
   "choices": {
-    "title": "As tuas escolhas",
+    "title": "As suas escolhas",
     "items": [
-      "Acede e exporta as informações no teu cofre.",
+      "Aceda e exporte as informações no seu cofre.",
       "Remover alguém que convidou para uma sessão de captura.",
-      "Pede a eliminação da tua conta e dos teus dados — vê <a href=\"/delete-account/\">como eliminar a tua conta</a>."
+      "Peça a eliminação da sua conta e dos seus dados — veja <a href=\"/delete-account/\">como eliminar a sua conta</a>."
     ]
   },
   "contact": {
     "title": "Contacto",
-    "lead": "Tens perguntas sobre privacidade? Envia um e-mail para"
+    "lead": "Tem perguntas sobre privacidade? Envie um e-mail para"
   },
   "finalCta": {
-    "title": "Os teus dados, o teu controlo.",
-    "body": "Começa grátis — exporta ou elimina tudo quando quiseres. Sem fidelização."
+    "title": "Os seus dados, o seu controlo.",
+    "body": "Comece grátis — exporte ou elimine tudo quando quiser. Sem fidelização."
   }
 }

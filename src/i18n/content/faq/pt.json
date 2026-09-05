@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Perguntas frequentes",
-    "description": "Respostas sobre o Vaulto — se os meus dados estão seguros, quanto custa, o que podes guardar e como a captura assistida por IA te poupa a digitação."
+    "description": "Respostas sobre o Vaulto — se os meus dados estão seguros, quanto custa, o que pode guardar e como a captura assistida por IA lhe poupa a digitação."
   },
   "crumbs": {
     "home": "Início",
@@ -10,27 +10,27 @@
   "hero": {
     "eyebrow": "FAQ",
     "heading": "Perguntas, respondidas de forma simples.",
-    "intro": "Respostas diretas sobre os teus dados, quanto custa e como o Vaulto funciona. Ainda tens curiosidade? Lê <a href=\"/security/\">como os mantemos seguros</a> ou <a href=\"/how-it-works/\">como funciona</a>."
+    "intro": "Respostas diretas sobre os seus dados, quanto custa e como o Vaulto funciona. Ainda tem curiosidade? Leia <a href=\"/security/\">como os mantemos seguros</a> ou <a href=\"/how-it-works/\">como funciona</a>."
   },
   "items": [
     {
       "q": "Os meus dados estão seguros?",
-      "a": "Sim. Sua conexão é criptografada em trânsito com TLS — a criptografia do ícone de cadeado (HTTPS) que você vê em sites de bancos e de compras — de modo que seus dados são embaralhados enquanto viajam e ninguém no meio do caminho consegue lê-los. O banco de dados da sua conta é criptografado em repouso (enquanto está armazenado) em servidores gerenciados profissionalmente e protegidos, e os arquivos enviados são guardados em armazenamento privado acessível apenas por links assinados de curta duração. Sua senha nunca é armazenada em texto simples, e o acesso é estritamente restrito à sua conta.",
-      "onward": "Vê como os mantemos seguros →"
+      "a": "Sim. A sua ligação é encriptada em trânsito com TLS — a encriptação do ícone de cadeado (HTTPS) que vê em sites de bancos e de compras — de modo que os seus dados são cifrados enquanto viajam e ninguém pelo caminho os consegue ler. A base de dados da sua conta é encriptada em repouso (enquanto está armazenada) em servidores geridos profissionalmente e protegidos, e os ficheiros que carrega são guardados em armazenamento privado, acessível apenas através de ligações assinadas de curta duração. A sua palavra-passe nunca é guardada em texto simples, e o acesso é estritamente restrito à sua conta.",
+      "onward": "Veja como os mantemos seguros →"
     },
     {
       "q": "Vocês vendem os meus dados?",
-      "a": "Não — nunca. Não vendemos nem partilhamos as tuas informações para publicidade.",
-      "onward": "Lê as nossas promessas de privacidade →"
+      "a": "Não — nunca. Não vendemos nem partilhamos as suas informações para publicidade.",
+      "onward": "Leia as nossas promessas de privacidade →"
     },
     {
       "q": "Quanto custa?",
-      "a": "Começar a usar o Vaulto é gratuito. Relatórios de planeamento mais aprofundados estão disponíveis quando estiveres pronto; verás sempre o que está incluído antes de qualquer cobrança."
+      "a": "Começar a usar o Vaulto é gratuito. Relatórios de planeamento mais aprofundados estão disponíveis quando estiver pronto; verá sempre o que está incluído antes de qualquer cobrança."
     },
     {
       "q": "Tenho de introduzir tudo à mão?",
-      "a": "Não — carrega uma foto ou documento e o Vaulto pode lê-lo e sugerir-te os detalhes.",
-      "onward": "Vê como funciona a captura →"
+      "a": "Não — carregue uma fotografia ou documento e o Vaulto pode lê-lo e sugerir-lhe os detalhes.",
+      "onward": "Veja como funciona a captura →"
     },
     {
       "q": "Para quem é o Vaulto?",
@@ -46,7 +46,7 @@
     }
   ],
   "finalCta": {
-    "title": "Pronto quando tu estiveres.",
-    "body": "Começa gratuitamente e adiciona as tuas primeiras coisas em minutos."
+    "title": "Pronto quando estiver.",
+    "body": "Comece gratuitamente e adicione as suas primeiras coisas em minutos."
   }
 }

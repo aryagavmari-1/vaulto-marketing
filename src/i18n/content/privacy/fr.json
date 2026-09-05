@@ -32,7 +32,7 @@
     },
     {
       "title": "Comment elles sont protégées",
-      "body": "Le coffre-fort de chaque personne est isolé des autres utilisateurs, les mots de passe sont hachés avec scrypt, et l'accès aux documents utilise des liens signés de courte durée. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris ce que nous n'affirmons pas encore."
+      "body": "Vos données et vos fichiers téléversés sont chiffrés au repos. En plus de cela, Vaulto chiffre une seconde fois les parties sensibles dans l'application elle-même — intitulés, descriptions, emplacements et notes, les photos et numérisations que vous téléversez et les valeurs exactes — avec des clés gérées dans Google Cloud KMS. Le coffre-fort de chaque personne est isolé des autres utilisateurs, et les mots de passe sont hachés avec scrypt. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris quels champs restent lisibles et ce que nous n'affirmons pas encore."
     }
   ],
   "choices": {

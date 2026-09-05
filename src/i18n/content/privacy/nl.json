@@ -32,7 +32,7 @@
     },
     {
       "title": "Hoe het wordt beschermd",
-      "body": "De kluis van elke persoon is geïsoleerd van andere gebruikers, wachtwoorden worden gehasht met scrypt, en toegang tot documenten verloopt via kortdurende ondertekende links. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief wat we nog niet claimen."
+      "body": "Je gegevens en geüploade bestanden zijn versleuteld in rust. Daar bovenop versleutelt Vaulto de gevoelige delen nog een keer in de app zelf — namen, beschrijvingen, locaties en notities, de foto's en scans die je uploadt en de exacte waarderingen — met sleutels die in Google Cloud KMS worden beheerd. De kluis van elke persoon is geïsoleerd van andere gebruikers en wachtwoorden worden gehasht met scrypt. Zie het <a href=\"/security/\">beveiligingsoverzicht</a> voor de details — inclusief welke velden leesbaar blijven en wat we nog niet claimen."
     }
   ],
   "choices": {

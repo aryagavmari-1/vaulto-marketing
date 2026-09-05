@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import FinalCta from '../../components/marketing/FinalCta.astro';
 import { BRAND } from '../../config/brand';
 import { blogAlternates, blogSwitcher } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -21,6 +22,15 @@ const faq = post.data.faqs?.map((f) => ({ q: f.question, a: f.answer }));
 // canonical id (the manifest key).
 const alternates = blogAlternates(post.id, BRAND.url);
 const switcher = blogSwitcher(post.id, 'en');
+// BreadcrumbList (ARY-2288): Home › Guides › <post> so spoke articles are
+// eligible for the breadcrumb rich result and give AI answer engines the page's
+// place in the site hierarchy. Labels come from the localized blog-chrome overlay.
+const chrome = getContent<{ crumbs: { home: string; guides: string } }>('blog-chrome', 'en');
+const breadcrumbs = [
+  { name: chrome.crumbs.home, url: `${BRAND.url}/` },
+  { name: chrome.crumbs.guides, url: `${BRAND.url}/blog/` },
+  { name: post.data.title, url: new URL(`/blog/${post.id}/`, BRAND.url).href },
+];
 ---
 <Base
   title={post.data.title}
@@ -29,6 +39,7 @@ const switcher = blogSwitcher(post.id, 'en');
   type="article"
   publishedTime={post.data.pubDate.toISOString()}
   faq={faq}
+  breadcrumbs={breadcrumbs}
   alternates={alternates}
   switcher={switcher}
 >

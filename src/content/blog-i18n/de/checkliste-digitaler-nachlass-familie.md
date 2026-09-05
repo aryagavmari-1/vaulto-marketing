@@ -51,7 +51,7 @@ Der Kontext, der aus einer Liste einen Plan macht:
 - Wer der Testamentsvollstrecker oder die wichtigste Ansprechperson ist
 - Wo die original unterschriebenen Dokumente aufbewahrt werden
 - Wichtige Berater (Anwalt, Steuerberater, Finanzberater) und wie sie erreichbar sind
-- Wünsche zur Bestattung oder Betreuung, wenn du sie festhalten möchtest
+- Wünsche zur Bestattung oder Betreuung, wenn du diese festhalten möchtest
 
 ### 5. Eine Möglichkeit für die richtigen Personen, darauf zuzugreifen
 Ein perfekter Plan, auf den niemand zugreifen kann, ist überhaupt kein Plan. Entscheide jetzt, wer das Gesamtbild sehen können sollte, und stell sicher, dass es an einem Ort gespeichert ist, zu dem diesen Personen Zugriff gegeben werden kann, wenn der Zeitpunkt gekommen ist.
@@ -63,9 +63,9 @@ Du könntest das in einem Ordner aufbewahren. Viele Familien tun das — bis der
 Ein digitales Zuhause dafür löst drei Probleme auf einmal: Es bleibt aktuell, es bleibt sicher, und die richtigen Personen können darauf zugreifen. Genau hier kommt **Vaulto** ins Spiel.
 
 - **Einmal erfassen, das ganze Bild sehen.** Erfasse Vermögenswerte, Konten, Immobilien und deine Verbindlichkeiten, und Vaulto macht daraus eine klare Gesamtübersicht deines Nettovermögens — bereit, mit den Menschen geteilt zu werden, die wichtig sind.
-- **Bewahre den Nachweis beim jeweiligen Eintrag auf.** Häng Urkunden, Policen und Auszüge an die Vermögenswerte, zu denen sie gehören, damit Nachweis und Eintrag zusammenbleiben.
+- **Bewahre den Nachweis beim jeweiligen Eintrag auf.** Hänge Urkunden, Policen und Auszüge an die Vermögenswerte, zu denen sie gehören, damit Nachweis und Eintrag zusammenbleiben.
 - **Spar dir das Tippen.** Fotografiere ein Dokument, und Vaulto liest es aus — du musst nicht alles von Hand eingeben.
-- **Fang mit dem Nachdenken an, wenn du bereit bist.** Vaulto enthält eine kostenlose Planungsübersicht, die dir hilft, dich bei Testamenten, Erbschaft und dem, was als Nächstes passiert, zu orientieren. Sie dient der Information — ein Ausgangspunkt, kein Ersatz für deinen Berater.
+- **Beginne mit dem Nachdenken, wenn du bereit bist.** Vaulto enthält eine kostenlose Planungsübersicht, die dir hilft, dich bei Testamenten, Erbschaft und dem, was als Nächstes passiert, zu orientieren. Sie dient der Information — ein Ausgangspunkt, kein Ersatz für deinen Berater.
 
 ## Ein paar ehrliche Hinweise
 
@@ -78,9 +78,9 @@ Nachlassplanung berührt Recht und Geld, deshalb sind zwei Dinge wichtig, klar z
 
 Ein Nachlassplan enthält die persönlichsten Details deiner Familie, deshalb ist wichtig, wo er aufbewahrt wird. Bei Vaulto wird jede Verbindung bei der Übertragung verschlüsselt (TLS/HTTPS), deine Einträge werden in einer verwalteten Datenbank mit Verschlüsselung im Ruhezustand gespeichert, Dokumente sind nur über kurzlebige signierte Links erreichbar, und der Tresor jeder Person ist von anderen Nutzern isoliert — ein privater Tresor, den du kontrollierst. Wir verkaufen deine Daten niemals — und wir sind bewusst ehrlich darin, was wir behaupten und was nicht. Auf unserer [Sicherheitsseite](/de/security/) siehst du genau, wie wir alles schützen.
 
-## Fang mit einer Zeile auf der Liste an
+## Beginne mit einer Zeile auf der Liste
 
-Du musst nicht an diesem Wochenende deinen ganzen Nachlass planen. Wähl einen Punkt aus der obigen Checkliste — das Testament, die Urkunde, die Liste der Konten — und erfasse ihn heute. Dann füg den nächsten hinzu, wenn du kannst.
+Du musst nicht an diesem Wochenende deinen ganzen Nachlass planen. Wähle einen Punkt aus der obigen Checkliste — das Testament, die Urkunde, die Liste der Konten — und erfasse ihn heute. Dann füge den nächsten hinzu, wenn du kannst.
 
 **[Starte deinen Tresor — kostenlos](https://app.myvaulto.com)** und gib den Menschen, die du liebst, ein kleines Stück mehr Vorbereitung.
 

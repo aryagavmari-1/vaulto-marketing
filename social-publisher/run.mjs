@@ -2,16 +2,17 @@
 // Social publisher — cycle entrypoint (run once per day by the scheduler).
 //
 // Reads a board-approved publish-manifest, works out which atoms are due on the
-// Day-0..5 stagger, auto-posts the Pinterest ones via the direct API v5 adapter,
-// flags everything else for manual posting, and writes the publish-log back.
+// Day-0..5 stagger, and flags every due atom for manual posting from the already-
+// approved copy + graphic (Track 1), writing the publish-log back.
+//
+// v1 decision (CEO ARY-2281): Pinterest API automation is DROPPED for v1 —
+// Pinterest posts manually like every other platform. No live platform calls are
+// made. The Pinterest v5 adapter is kept dormant (see lib/publishers/index.mjs)
+// for a possible future revisit.
 //
 // $0 by design: no paid SaaS, no new infra. Runs on the repo's existing GitHub
 // Actions scheduled-cron pattern (see .github/workflows/social-publish.yml) or a
 // Render cron job — the worker itself is a portable Node CLI.
-//
-// Safe-by-default: with no Pinterest secrets it runs as an automatic dry-run
-// (green, no live calls) — exactly like the KPI puller — and goes live the moment
-// the secrets are provisioned, with no code change.
 //
 // Usage:
 //   node run.mjs --manifest manifests/<file>.json [--today YYYY-MM-DD] [--dry-run]
@@ -90,17 +91,12 @@ export async function main(argv = process.argv.slice(2), env = process.env) {
   const today = args.today || env.RUN_DATE || todayUTC();
   const now = new Date().toISOString();
 
-  // Auto dry-run when Pinterest secrets are absent (no live account yet).
-  const hasCreds = Boolean(env.PINTEREST_ACCESS_TOKEN && env.PINTEREST_BOARD_ID);
-  const dryRun = args.dryRun || !hasCreds;
+  // v1 has no automated publishers (Pinterest is manual — CEO ARY-2281), so the
+  // worker never makes a live post. `--dry-run` only suppresses the projected
+  // publish-log write-back for local testing.
+  const dryRun = args.dryRun;
 
-  const publishers = buildPublishers(env, {
-    onTokenRefresh: (token) => {
-      // We cannot rotate CI/Render secrets from here; surface it loudly so the
-      // refreshed token can be stored back into the secret store by an operator.
-      console.warn(`[pinterest] access token refreshed (len=${token.length}). Update PINTEREST_ACCESS_TOKEN in the secret store to persist it.`);
-    },
-  });
+  const publishers = buildPublishers(env);
 
   const paths = await resolveManifestPaths(args);
   let totalErrors = 0;

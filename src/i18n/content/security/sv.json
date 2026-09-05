@@ -22,7 +22,7 @@
     },
     {
       "title": "Krypterat i vila.",
-      "body": "Dina uppgifter och uppladdade filer ligger på professionellt hanterade, säkrade servrar och är krypterade i vila — \"i vila\" betyder helt enkelt medan de lagras, inte medan de är i rörelse. Databasen som rymmer dina poster och lagringen som rymmer dina foton och skanningar är båda krypterade, och dina filer är endast åtkomliga via kortlivade, signerade länkar."
+      "body": "Dina uppgifter och uppladdade filer är krypterade i vila — \"i vila\" betyder helt enkelt medan de lagras, inte medan de är i rörelse. De ligger på professionellt hanterade, säkrade servrar, och Vaulto krypterar dessutom de känsliga delarna i själva appen innan de skrivs: namn, beskrivningar, platser och anteckningar, de foton och skanningar du laddar upp och de exakta värderingarna krypteras med nycklar som hanteras i Google Cloud KMS i stället för att förvaras bredvid data. Blocket längre ned anger vilka fält som är förseglade och vilka som förblir läsbara."
     },
     {
       "title": "Lösenord lagras aldrig i klartext.",
@@ -63,7 +63,11 @@
     "body": "Dina data är dina — exportera en komplett, maskinläsbar kopia av dina poster (JSON, CSV eller PDF) när som helst, från Inställningar. \"Maskinläsbar\" betyder en standardfil som en annan app eller ett kalkylprogram kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Du kan även exportera ett ZIP-arkiv som innehåller dina uppladdade originalfoton och skanningar tillsammans med den strukturerade posten.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (artikel 20) som låter dig ta med dig dina data."
   },
   "honesty": {
-    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant idag: kryptering under överföring, en krypterad databas, filer i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi hävdar medvetet <b>inte</b> \"zero-knowledge\" (där inte ens vi någonsin skulle kunna låsa upp dina data), \"banknivå\" eller någon certifiering som vi inte har förtjänat. Dataexport är aktiv (ovan). När vi lägger till kryptering på applagret — ett extra lås som tillämpas inuti själva appen, ovanpå krypteringen ovan — eller en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att ange det.",
+    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant idag: kryptering under överföring, kryptering i vila som appen själv utför med nycklar som hanteras i Google Cloud KMS, filer i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi hävdar medvetet <b>inte</b> \"end-to-end\"- eller \"zero-knowledge\"-kryptering: vi har nycklarna, så vi kan dekryptera dina uppgifter för att leverera tjänsten och de AI-funktioner du ber om. Vi hävdar inte heller \"banknivå\" eller någon certifiering som vi inte har förtjänat. Det här är förseglat och det här är det inte. Krypterat: de namn, beskrivningar, platser och anteckningar du skriver, de exakta värderingarna och de filer du laddar upp. Läsbart för våra servrar: de strukturerade fälten runt omkring, så att ditt valv fortfarande kan sorteras utan att de förseglade delarna öppnas — sådant som kategori, datum och etiketter, valuta, land, ett institut eller serienummer, inköpspris, vem ett föremål tillhör och ett grovt värdeintervall. Dataexport är aktiv (ovan). När vi lägger till en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att ange det.",
     "contact": "För frågor om integritet eller säkerhet, kontakta"
+  },
+  "finalCta": {
+    "title": "Privat från det första du lägger till.",
+    "body": "Kom igång gratis — ditt valv är bara ditt, och du kan när som helst exportera eller radera det."
   }
 }

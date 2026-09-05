@@ -77,10 +77,10 @@ Tutto ciò che aggiungi resta privato nel tuo account, protetto da solide misure
 
 ## Una breve nota sulla privacy
 
-Un inventario patrimoniale familiare contiene informazioni sensibili, quindi conta dove lo conservi. Con Vaulto, ogni connessione è crittografata durante il transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con crittografia at rest, e il caveau di ogni persona è isolato dagli altri utenti: un caveau privato che controlli tu. Non vendiamo mai i tuoi dati. Siamo anche deliberatamente onesti su ciò che non dichiariamo — niente parole d'effetto come "bank-level" o "zero-knowledge", solo le protezioni specifiche che offriamo davvero. Puoi leggere esattamente come lo manteniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
+Un inventario patrimoniale familiare contiene informazioni sensibili, quindi conta dove lo conservi. Con Vaulto, ogni connessione è crittografata durante il transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con crittografia at rest, e la cassaforte di ogni persona è isolata dagli altri utenti: una cassaforte privata che controlli tu. Non vendiamo mai i tuoi dati. Siamo anche deliberatamente onesti su ciò che non dichiariamo — niente parole d'effetto come "bank-level" o "zero-knowledge", solo le protezioni specifiche che offriamo davvero. Puoi leggere esattamente come lo manteniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
 
 ## Inizia in piccolo, inizia oggi
 
 Un inventario patrimoniale familiare non è un progetto da weekend che devi finire tutto in una volta. È un archivio vivo che diventa più prezioso ogni volta che ci aggiungi qualcosa. Inizia oggi con una categoria e lascialo crescere.
 
-**[Inizia il tuo caveau — gratis](https://app.myvaulto.com)** e registra i tuoi primi elementi in pochi minuti.
+**[Inizia la tua cassaforte — gratis](https://app.myvaulto.com)** e registra i tuoi primi elementi in pochi minuti.

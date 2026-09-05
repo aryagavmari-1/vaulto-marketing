@@ -1,7 +1,7 @@
 {
   "$comment": "Machine-readable KPI surface for the marketing engine (ARY-403). The measurement sub-agent refreshes `latest`/`asOf` via scripts/pull-kpis.mjs by mapping pulled numbers onto kpis[].latest by `id`. The CMO owns the KPI list + targets (finalised in ARY-402, 2026-06-22). Targets are directional 90-day baselines for a DA~0 domain at $0 ads, pre-launch — recalibrate after 30 days of real GSC/Cloudflare data. Humans read KPIS.md.",
   "schemaVersion": 1,
-  "asOf": "2026-07-27T21:08:44.867Z",
+  "asOf": "2026-08-31T13:55:46.799Z",
   "northStar": "activated_vaults",
   "northStarProxy": "waitlist_signups",
   "source": {
@@ -16,7 +16,7 @@
       "stage": "awareness",
       "source": "search",
       "target": 8000,
-      "latest": null,
+      "latest": 148,
       "unit": "impressions"
     },
     {
@@ -25,7 +25,7 @@
       "stage": "acquisition",
       "source": "traffic",
       "target": 400,
-      "latest": 0,
+      "latest": 20,
       "unit": "sessions"
     },
     {
@@ -34,7 +34,7 @@
       "stage": "acquisition",
       "source": "search",
       "target": 250,
-      "latest": null,
+      "latest": 6,
       "unit": "clicks"
     },
     {
@@ -43,7 +43,7 @@
       "stage": "acquisition",
       "source": "search",
       "target": 25,
-      "latest": null,
+      "latest": 35.6,
       "unit": "rank",
       "goal": "lower_is_better"
     },
@@ -53,7 +53,7 @@
       "stage": "activation",
       "source": "conversion",
       "target": 50,
-      "latest": null,
+      "latest": 1,
       "unit": "signups"
     },
     {
@@ -62,7 +62,7 @@
       "stage": "activation",
       "source": "conversion",
       "target": 3,
-      "latest": null,
+      "latest": 5,
       "unit": "percent"
     },
     {

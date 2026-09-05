@@ -8,7 +8,8 @@
 // refresh once (via `POST /v5/oauth/token`, Basic client auth) and retry, so the
 // scheduled worker self-heals across the token's expiry without human touch.
 //
-// Least-privilege scopes: pins:write (+ boards:read to resolve the board once).
+// Scopes: boards:read, boards:write, pins:read, pins:write — Pinterest's POST /v5/pins
+// rejects a narrower grant (live 401: Missing ['boards:write','pins:read']).
 // Tokens are provided via env (Render/GitHub secrets) — never committed.
 
 import { PublisherClient } from './base.mjs';

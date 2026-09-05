@@ -76,12 +76,12 @@ La pianificazione successoria tocca aspetti legali e finanziari, quindi vale la 
 
 ## Privacy, perché qui si tratta di informazioni estremamente sensibili
 
-Un piano successorio contiene i dettagli più personali della tua famiglia, quindi il luogo in cui è conservato conta. Con Vaulto, ogni connessione è criptata in transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con encryption at rest, i documenti sono raggiungibili solo tramite link firmati a breve durata e il caveau di ogni persona è isolato dagli altri utenti: un caveau privato che controlli tu. Non vendiamo mai i tuoi dati — e siamo volutamente trasparenti su ciò che dichiariamo e ciò che non dichiariamo. Scopri esattamente come li teniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
+Un piano successorio contiene i dettagli più personali della tua famiglia, quindi il luogo in cui è conservato conta. Con Vaulto, ogni connessione è criptata in transito (TLS/HTTPS), i tuoi dati sono archiviati in un database gestito con encryption at rest, i documenti sono raggiungibili solo tramite link firmati a breve durata e la cassaforte di ogni persona è isolata dagli altri utenti: una cassaforte privata che controlli tu. Non vendiamo mai i tuoi dati — e siamo volutamente trasparenti su ciò che dichiariamo e ciò che non dichiariamo. Scopri esattamente come li teniamo al sicuro nella nostra [pagina sulla sicurezza](/it/security/).
 
 ## Inizia con una sola riga della lista
 
 Non devi pianificare tutto il tuo patrimonio questo fine settimana. Scegli un elemento dalla checklist qui sopra — il testamento, l'atto, l'elenco dei conti — e registralo oggi. Poi aggiungi il successivo quando puoi.
 
-**[Inizia il tuo caveau — gratis](https://app.myvaulto.com)** e aiuta un po' di più le persone che ami a essere pronte.
+**[Inizia la tua cassaforte — gratis](https://app.myvaulto.com)** e aiuta un po' di più le persone che ami a essere pronte.
 
 *Solo a scopo informativo — non costituisce consulenza legale, finanziaria o fiscale. Consulta un professionista qualificato per le tue circostanze specifiche.*

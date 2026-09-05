@@ -80,7 +80,7 @@
       "Aktarım sırasında şifrelenir (TLS); dosyalar özel depolamada",
       "Parolalar hashlenir — biz bile onları okuyamayız",
       "Kısa ömürlü, tarayıcı tarafından korunan oturumlar",
-      "Yalnızca kendi kasanı görebilirsin",
+      "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır",
       "Verilerini asla satmayız veya paylaşmayız"
     ]
   },

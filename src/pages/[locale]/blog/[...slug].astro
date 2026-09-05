@@ -37,7 +37,14 @@ const alternates = blogAlternates(post.data.ref, BRAND.url);
 const switcher = blogSwitcher(post.data.ref, locale);
 const blogHome = localizedPath('/blog/', locale);
 const canonicalPath = `/${locale}/blog/${post.data.slug}/`;
-const chrome = getContent<{ allGuides: string }>('blog-chrome', locale);
+const chrome = getContent<{ allGuides: string; crumbs: { home: string; guides: string } }>('blog-chrome', locale);
+// BreadcrumbList (ARY-2288): Home › Guides › <post>, all locale-prefixed URLs
+// and localized labels so each locale's article ships correct structured data.
+const breadcrumbs = [
+  { name: chrome.crumbs.home, url: new URL(localizedPath('/', locale), BRAND.url).href },
+  { name: chrome.crumbs.guides, url: new URL(blogHome, BRAND.url).href },
+  { name: post.data.title, url: new URL(canonicalPath, BRAND.url).href },
+];
 ---
 <Base
   title={post.data.title}
@@ -48,6 +55,7 @@ const chrome = getContent<{ allGuides: string }>('blog-chrome', locale);
   type="article"
   publishedTime={post.data.pubDate.toISOString()}
   faq={faq}
+  breadcrumbs={breadcrumbs}
   alternates={alternates}
   switcher={switcher}
 >

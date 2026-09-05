@@ -20,7 +20,7 @@
     },
     {
       "title": "Wie wir sie verwenden",
-      "body": "Zur Bereitstellung des Produkts: Ihr Inventar und Ihre Dokumente speichern, Ihr Nettovermögen berechnen, die von Ihnen angeforderten KI-Übersichten erstellen und die von Ihnen gewünschten Exporte erzeugen. Wir verkaufen Ihre Daten nicht."
+      "body": "Zur Bereitstellung des Produkts: dein Inventar und deine Dokumente speichern, dein Nettovermögen berechnen, die von dir angeforderten KI-Übersichten erstellen und die von dir gewünschten Exporte erzeugen. Wir verkaufen deine Daten nicht."
     },
     {
       "title": "KI-Verarbeitung &amp; Dritte",
@@ -28,11 +28,11 @@
     },
     {
       "title": "Teilen &amp; Einwilligung",
-      "body": "Vaulto teilt Ihren Tresor nicht in Ihrem Namen mit anderen. Unter Ihrer Kontrolle steht Folgendes: Sie können jemanden zu einer Erfassungssitzung einladen, um beim Hinzufügen von Einträgen zu helfen — Sie wählen die Rolle und können die Person wieder entfernen, wenn Sie fertig sind. Unabhängig davon können Sie Ihre eigenen Datensätze und Dateien exportieren und selbst an eine Fachperson weitergeben. Ein Export ist eine Datei, die Sie aushändigen — einmal geteilt, liegt sie außerhalb der Kontrolle des Tresors."
+      "body": "Vaulto teilt deinen Tresor nicht in deinem Namen mit anderen. Unter deiner Kontrolle steht Folgendes: Du kannst jemanden zu einer Erfassungssitzung einladen, um beim Hinzufügen von Einträgen zu helfen — du wählst die Rolle und kannst die Person wieder entfernen, wenn du fertig bist. Unabhängig davon kannst du deine eigenen Datensätze und Dateien exportieren und selbst an eine Fachperson weitergeben. Ein Export ist eine Datei, die du aushändigst — einmal geteilt, liegt sie außerhalb der Kontrolle des Tresors."
     },
     {
       "title": "Wie sie geschützt werden",
-      "body": "Der Tresor jeder Person ist von anderen Nutzern isoliert, Passwörter werden mit scrypt gehasht, und der Dokumentenzugriff erfolgt über kurzlebige signierte Links. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, was wir noch nicht behaupten."
+      "body": "Deine Daten und hochgeladenen Dateien sind im Ruhezustand verschlüsselt. Zusätzlich verschlüsselt Vaulto die sensiblen Teile noch einmal in der App selbst — Bezeichnungen, Beschreibungen, Orte und Notizen, die Fotos und Scans, die du hochlädst, und die genauen Werte — mit Schlüsseln, die in Google Cloud KMS verwaltet werden. Der Tresor jeder Person ist von anderen Nutzern isoliert, und Passwörter werden mit scrypt gehasht. Einzelheiten findest du in der <a href=\"/security/\">Sicherheitsübersicht</a> — einschließlich dessen, welche Felder lesbar bleiben und was wir noch nicht behaupten."
     }
   ],
   "choices": {

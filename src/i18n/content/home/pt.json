@@ -8,7 +8,7 @@
     "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
     "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
     "trust": [
-      "Criptografado em trânsito (TLS)",
+      "Encriptado em trânsito (TLS)",
       "Os seus dados nunca são vendidos",
       "Feito para famílias"
     ],
@@ -74,13 +74,13 @@
   },
   "trustBand": {
     "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
-    "lead": "Os seus dados são criptografados a caminho de nós, a sua base de dados é criptografada em repouso e os seus ficheiros são mantidos em armazenamento privado. O acesso é protegido e nunca vendemos as suas informações.",
+    "lead": "Os seus dados são encriptados a caminho de nós, a sua base de dados é encriptada em repouso e os seus ficheiros são mantidos em armazenamento privado. O acesso é protegido e nunca vendemos as suas informações.",
     "cta": "Veja exatamente como mantemos tudo seguro →",
     "proof": [
-      "Criptografado em trânsito (TLS); ficheiros em armazenamento privado",
+      "Encriptado em trânsito (TLS); ficheiros em armazenamento privado",
       "Palavras-passe com hash — nem nós as conseguimos ler",
       "Sessões de curta duração, protegidas pelo navegador",
-      "Só pode ver o seu próprio cofre",
+      "O cofre de cada pessoa está isolado dos outros utilizadores",
       "Nunca vendemos nem partilhamos os seus dados"
     ]
   },

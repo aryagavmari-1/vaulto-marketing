@@ -26,7 +26,19 @@ name: Refresh KPIs
 on:
   schedule:
     - cron: '17 6 * * 1' # 06:17 UTC every Monday
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      # Activation (waitlist_signups) is now AUTO-SOURCED from the app's own
+      # registration count on every scheduled run (ARY-2490): the puller reads
+      # the token-gated backend endpoint KPI_SIGNUPS_URL. This manual input stays
+      # as an override / correction lever only — Actions → Refresh KPIs → Run
+      # workflow → paste a count to force that number for the run. Left blank,
+      # the auto-source (KPI_SIGNUPS_URL secret) is used.
+      waitlist_signups:
+        description: 'Override waitlist signups (manual; blank = auto-source from the app)'
+        required: false
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -61,18 +73,31 @@ jobs:
           CF_ACCOUNT_TAG: ${{ secrets.CF_ACCOUNT_TAG }}
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
+          # Activation auto-source (ARY-2490): the app's registration-count
+          # endpoint + its read token. Set once as repo secrets; scheduled runs
+          # then populate waitlist_signups with no human step. If the URL is set
+          # but the fetch fails, the puller exits non-zero → this job goes RED
+          # (never a silent null).
+          KPI_SIGNUPS_URL: ${{ secrets.KPI_SIGNUPS_URL }}
+          KPI_SIGNUPS_TOKEN: ${{ secrets.KPI_SIGNUPS_TOKEN }}
+          # Optional manual override (workflow_dispatch): forces this number and
+          # skips the auto-source for the run.
+          KPI_WAITLIST_SIGNUPS: ${{ inputs.waitlist_signups }}
         run: node scripts/pull-kpis.mjs
-      - name: Commit refreshed kpis.json
+      - name: Commit refreshed KPIs + GSC breakdown
         run: |
           set -euo pipefail
-          if git diff --quiet -- kpis.json; then
+          # kpis.json = site aggregates; gsc-breakdown.{json,md} = per-page/query
+          # breakdown (ARY-2489). Commit whichever the puller touched this run.
+          FILES="kpis.json gsc-breakdown.json GSC-BREAKDOWN.md"
+          if git diff --quiet -- $FILES; then
             echo "No KPI changes to commit."
             exit 0
           fi
           git config user.name  "vaulto-kpi-bot"
           git config user.email "noreply@paperclip.ing"
-          git add kpis.json
-          git commit -m "chore(kpis): refresh live KPI snapshot [skip ci]
+          git add $FILES
+          git commit -m "chore(kpis): refresh live KPI snapshot + GSC breakdown [skip ci]
 
           Co-Authored-By: Paperclip <noreply@paperclip.ing>"
           git push
