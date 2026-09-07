@@ -7,51 +7,50 @@
 > portfolio average (ARY-2487).
 
 - **Property:** https://myvaulto.com/
-- **Window:** 2026-07-29 → 2026-08-28 (GSC lags ~3 days, so the window ends a few days back)
-- **As of:** 2026-08-31T13:55:46.551Z
+- **Window:** 2026-08-05 → 2026-09-04 (GSC lags ~3 days, so the window ends a few days back)
+- **As of:** 2026-09-07T12:37:49.487Z
 - **Showing:** top 20 by impressions
 
 ## Top pages by impressions
 
 | Page | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| / | 30 | 0 | 0% | 41.5 |
-| /features/ | 24 | 0 | 0% | 60.4 |
-| /privacy/ | 13 | 0 | 0% | 58.3 |
-| /ru/features/ | 12 | 1 | 8.3% | 13.1 |
-| /ru/ | 11 | 1 | 9.1% | 13.2 |
-| /faq/ | 11 | 0 | 0% | 73.5 |
-| /fr/features/ | 9 | 1 | 11.1% | 5.9 |
+| / | 34 | 0 | 0% | 37.4 |
+| /features/ | 23 | 0 | 0% | 63.6 |
+| /privacy/ | 14 | 0 | 0% | 59.8 |
+| /ru/features/ | 13 | 1 | 7.7% | 12.5 |
+| /faq/ | 11 | 0 | 0% | 78.5 |
+| /ru/ | 9 | 1 | 11.1% | 9.9 |
+| /fr/features/ | 9 | 0 | 0% | 6.1 |
 | /security/ | 9 | 0 | 0% | 66.7 |
-| /how-it-works/ | 8 | 0 | 0% | 34 |
-| /fr/ | 6 | 1 | 16.7% | 16.5 |
-| /de/planning/ | 6 | 0 | 0% | 78.7 |
-| /tr/ | 5 | 2 | 40% | 3 |
-| /pl/features/ | 5 | 0 | 0% | 4 |
-| /fr/security/ | 3 | 0 | 0% | 8.7 |
+| /fr/ | 7 | 1 | 14.3% | 14.6 |
+| /de/planning/ | 7 | 0 | 0% | 78.6 |
+| /tr/ | 6 | 2 | 33.3% | 11.5 |
+| /how-it-works/ | 6 | 0 | 0% | 43.2 |
+| /pl/features/ | 6 | 0 | 0% | 4.3 |
+| /ar/ | 4 | 0 | 0% | 5 |
 | /hi/ | 3 | 0 | 0% | 23.7 |
-| /nl/ | 3 | 0 | 0% | 25 |
 | /ru/how-it-works/ | 3 | 0 | 0% | 4.3 |
-| /ar/ | 2 | 0 | 0% | 5 |
-| /de/ | 2 | 0 | 0% | 5 |
-| /delete-account/ | 2 | 0 | 0% | 2 |
+| /fr/security/ | 2 | 0 | 0% | 10 |
+| /it/security/ | 2 | 0 | 0% | 7.5 |
+| /ja/ | 2 | 0 | 0% | 3 |
+| /ja/features/ | 2 | 0 | 0% | 2 |
 
 ## Top queries by impressions
 
 | Query | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| vaulto | 9 | 1 | 11.1% | 9.2 |
-| vaultody | 5 | 0 | 0% | 55 |
+| vaulto | 9 | 0 | 0% | 9.6 |
 | anwalt planung | 3 | 0 | 0% | 75.7 |
-| valout | 3 | 0 | 0% | 82.3 |
 | valutt | 2 | 0 | 0% | 81 |
-| vaulto bank | 2 | 0 | 0% | 41 |
+| apa itu estate planning | 1 | 0 | 0% | 92 |
 | gavult | 1 | 0 | 0% | 100 |
 | modulto | 1 | 0 | 0% | 82 |
 | rechtsanwalt planung | 1 | 0 | 0% | 92 |
+| valout | 1 | 0 | 0% | 95 |
 | vaul | 1 | 0 | 0% | 60 |
+| vaulto bank | 1 | 0 | 0% | 75 |
 | vlut | 1 | 0 | 0% | 98 |
-| wault | 1 | 0 | 0% | 76 |
 
 ---
 
