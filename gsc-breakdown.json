@@ -1,26 +1,33 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-09-07T12:37:49.487Z",
+  "asOf": "2026-09-14T12:52:02.815Z",
   "siteUrl": "https://myvaulto.com/",
   "window": {
-    "startDate": "2026-08-05",
-    "endDate": "2026-09-04"
+    "startDate": "2026-08-12",
+    "endDate": "2026-09-11"
   },
   "topN": 20,
   "pages": [
     {
       "key": "https://myvaulto.com/",
-      "impressions": 34,
+      "impressions": 35,
       "clicks": 0,
       "ctr": 0,
-      "position": 37.4
+      "position": 33.6
     },
     {
       "key": "https://myvaulto.com/features/",
-      "impressions": 23,
+      "impressions": 26,
       "clicks": 0,
       "ctr": 0,
-      "position": 63.6
+      "position": 54.8
+    },
+    {
+      "key": "https://myvaulto.com/ru/features/",
+      "impressions": 14,
+      "clicks": 1,
+      "ctr": 7.1,
+      "position": 12.3
     },
     {
       "key": "https://myvaulto.com/privacy/",
@@ -30,88 +37,102 @@
       "position": 59.8
     },
     {
-      "key": "https://myvaulto.com/ru/features/",
+      "key": "https://myvaulto.com/security/",
       "impressions": 13,
-      "clicks": 1,
-      "ctr": 7.7,
-      "position": 12.5
+      "clicks": 0,
+      "ctr": 0,
+      "position": 48.4
     },
     {
       "key": "https://myvaulto.com/faq/",
-      "impressions": 11,
+      "impressions": 12,
       "clicks": 0,
       "ctr": 0,
-      "position": 78.5
+      "position": 72.5
     },
     {
       "key": "https://myvaulto.com/ru/",
-      "impressions": 9,
+      "impressions": 8,
       "clicks": 1,
-      "ctr": 11.1,
-      "position": 9.9
+      "ctr": 12.5,
+      "position": 10.9
     },
     {
       "key": "https://myvaulto.com/fr/features/",
-      "impressions": 9,
+      "impressions": 8,
       "clicks": 0,
       "ctr": 0,
-      "position": 6.1
+      "position": 5.8
     },
     {
-      "key": "https://myvaulto.com/security/",
-      "impressions": 9,
+      "key": "https://myvaulto.com/how-it-works/",
+      "impressions": 8,
       "clicks": 0,
       "ctr": 0,
-      "position": 66.7
-    },
-    {
-      "key": "https://myvaulto.com/fr/",
-      "impressions": 7,
-      "clicks": 1,
-      "ctr": 14.3,
-      "position": 14.6
-    },
-    {
-      "key": "https://myvaulto.com/de/planning/",
-      "impressions": 7,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 78.6
+      "position": 35.3
     },
     {
       "key": "https://myvaulto.com/tr/",
       "impressions": 6,
       "clicks": 2,
       "ctr": 33.3,
-      "position": 11.5
+      "position": 11.3
     },
     {
-      "key": "https://myvaulto.com/how-it-works/",
+      "key": "https://myvaulto.com/fr/",
       "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 43.2
-    },
-    {
-      "key": "https://myvaulto.com/pl/features/",
-      "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 4.3
+      "clicks": 1,
+      "ctr": 16.7,
+      "position": 3.3
     },
     {
       "key": "https://myvaulto.com/ar/",
-      "impressions": 4,
+      "impressions": 5,
       "clicks": 0,
       "ctr": 0,
-      "position": 5
+      "position": 6
     },
     {
       "key": "https://myvaulto.com/hi/",
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 19.5
+    },
+    {
+      "key": "https://myvaulto.com/pl/features/",
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.5
+    },
+    {
+      "key": "https://myvaulto.com/de/",
       "impressions": 3,
       "clicks": 0,
       "ctr": 0,
-      "position": 23.7
+      "position": 7.3
+    },
+    {
+      "key": "https://myvaulto.com/de/planning/",
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "key": "https://myvaulto.com/fr/security/",
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 8.3
+    },
+    {
+      "key": "https://myvaulto.com/ja/",
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 4.3
     },
     {
       "key": "https://myvaulto.com/ru/how-it-works/",
@@ -121,48 +142,20 @@
       "position": 4.3
     },
     {
-      "key": "https://myvaulto.com/fr/security/",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 10
-    },
-    {
       "key": "https://myvaulto.com/it/security/",
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
       "position": 7.5
-    },
-    {
-      "key": "https://myvaulto.com/ja/",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 3
-    },
-    {
-      "key": "https://myvaulto.com/ja/features/",
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 2
     }
   ],
   "queries": [
     {
       "key": "vaulto",
-      "impressions": 9,
+      "impressions": 12,
       "clicks": 0,
       "ctr": 0,
-      "position": 9.6
-    },
-    {
-      "key": "anwalt planung",
-      "impressions": 3,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 75.7
+      "position": 8.4
     },
     {
       "key": "valutt",
@@ -179,6 +172,13 @@
       "position": 92
     },
     {
+      "key": "estate planner",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr": 0,
+      "position": 77
+    },
+    {
       "key": "gavult",
       "impressions": 1,
       "clicks": 0,
@@ -186,32 +186,11 @@
       "position": 100
     },
     {
-      "key": "modulto",
+      "key": "valtout",
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "position": 82
-    },
-    {
-      "key": "rechtsanwalt planung",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 92
-    },
-    {
-      "key": "valout",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 95
-    },
-    {
-      "key": "vaul",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "position": 60
+      "position": 69
     },
     {
       "key": "vaulto bank",
