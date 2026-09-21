@@ -7,46 +7,45 @@
 > portfolio average (ARY-2487).
 
 - **Property:** https://myvaulto.com/
-- **Window:** 2026-08-12 → 2026-09-11 (GSC lags ~3 days, so the window ends a few days back)
-- **As of:** 2026-09-14T12:52:02.815Z
+- **Window:** 2026-08-19 → 2026-09-18 (GSC lags ~3 days, so the window ends a few days back)
+- **As of:** 2026-09-21T12:52:28.908Z
 - **Showing:** top 20 by impressions
 
 ## Top pages by impressions
 
 | Page | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| / | 35 | 0 | 0% | 33.6 |
-| /features/ | 26 | 0 | 0% | 54.8 |
-| /ru/features/ | 14 | 1 | 7.1% | 12.3 |
-| /privacy/ | 14 | 0 | 0% | 59.8 |
-| /security/ | 13 | 0 | 0% | 48.4 |
-| /faq/ | 12 | 0 | 0% | 72.5 |
-| /ru/ | 8 | 1 | 12.5% | 10.9 |
-| /fr/features/ | 8 | 0 | 0% | 5.8 |
+| / | 30 | 0 | 0% | 33.2 |
+| /features/ | 24 | 0 | 0% | 53.6 |
+| /ru/features/ | 13 | 1 | 7.7% | 12.6 |
+| /privacy/ | 11 | 0 | 0% | 69.7 |
+| /faq/ | 10 | 0 | 0% | 63.9 |
+| /security/ | 9 | 0 | 0% | 39.2 |
 | /how-it-works/ | 8 | 0 | 0% | 35.3 |
+| /fr/features/ | 7 | 0 | 0% | 4.4 |
 | /tr/ | 6 | 2 | 33.3% | 11.3 |
-| /fr/ | 6 | 1 | 16.7% | 3.3 |
+| /ru/ | 6 | 0 | 0% | 3.2 |
 | /ar/ | 5 | 0 | 0% | 6 |
-| /hi/ | 4 | 0 | 0% | 19.5 |
-| /pl/features/ | 4 | 0 | 0% | 4.5 |
-| /de/ | 3 | 0 | 0% | 7.3 |
+| /de/ | 4 | 0 | 0% | 5.8 |
 | /de/planning/ | 3 | 0 | 0% | 77 |
-| /fr/security/ | 3 | 0 | 0% | 8.3 |
+| /fr/ | 3 | 0 | 0% | 4.3 |
+| /fr/security/ | 3 | 0 | 0% | 7.7 |
+| /hi/ | 3 | 0 | 0% | 7.3 |
 | /ja/ | 3 | 0 | 0% | 4.3 |
-| /ru/how-it-works/ | 3 | 0 | 0% | 4.3 |
-| /it/security/ | 2 | 0 | 0% | 7.5 |
+| /ru/how-it-works/ | 3 | 0 | 0% | 5.7 |
+| /tr/security/ | 3 | 0 | 0% | 4 |
+| /es/ | 2 | 0 | 0% | 7 |
 
 ## Top queries by impressions
 
 | Query | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| vaulto | 12 | 0 | 0% | 8.4 |
+| vaulto | 13 | 0 | 0% | 8.2 |
 | valutt | 2 | 0 | 0% | 81 |
 | apa itu estate planning | 1 | 0 | 0% | 92 |
 | estate planner | 1 | 0 | 0% | 77 |
 | gavult | 1 | 0 | 0% | 100 |
 | valtout | 1 | 0 | 0% | 69 |
-| vaulto bank | 1 | 0 | 0% | 75 |
 | vlut | 1 | 0 | 0% | 98 |
 
 ---
