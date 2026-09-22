@@ -161,7 +161,53 @@ for (const rule of guard.rules) {
   }
 }
 
-// --- 4. write the generated rule set ---------------------------------------
+// --- 4. refuse to silently discard reasoning prose --------------------------
+
+// The block in ARY-23 outranks this file — but only for *rules*. Nothing stops
+// someone editing `guidance` here by hand and losing it on the next sync: that
+// is exactly what happened to the ARY-1533 ruling (ARY-4240), a false positive
+// we had investigated and cleared three times, which survived only in this
+// generated artifact. A regeneration that shortens explanatory prose is far
+// more likely to be that accident than a deliberate edit, so it stops here and
+// asks. Patterns are unaffected — only `guidance` / `instead` / `label`.
+const PROSE_FIELDS = ['label', 'guidance', 'instead']
+if (!process.argv.includes('--allow-prose-loss')) {
+  let previous = null
+  try {
+    previous = JSON.parse(readFileSync(OUT, 'utf8'))
+  } catch {
+    previous = null // first run, or the file was deleted on purpose
+  }
+  const losses = []
+  if (previous) {
+    const before = new Map(previous.rules.map((r) => [r.id, r]))
+    for (const rule of guard.rules) {
+      const old = before.get(rule.id)
+      if (!old) continue
+      for (const field of PROSE_FIELDS) {
+        const a = old[field] ?? ''
+        const b = rule[field] ?? ''
+        if (a !== b && b.length < a.length) losses.push({ id: rule.id, field, a, b })
+      }
+    }
+  }
+  if (losses.length) {
+    console.error('\n✖ this sync would DISCARD reasoning prose that only exists in banned-claims.json:\n')
+    for (const l of losses) {
+      console.error(`   ${l.id}.${l.field} — ${l.a.length} chars → ${l.b.length} (-${l.a.length - l.b.length})`)
+      const lost = l.a.startsWith(l.b) ? l.a.slice(l.b.length).trim() : `was: ${l.a}`
+      console.error(`     lost: ${lost.slice(0, 400)}${lost.length > 400 ? '…' : ''}\n`)
+    }
+    console.error(
+      '  That text is the record of a decision someone will otherwise have to make\n' +
+        '  again. Copy it into the ```claims-guard block in ARY-23 §0.1 (the source)\n' +
+        '  and re-run, or pass --allow-prose-loss if the removal is deliberate.\n',
+    )
+    process.exit(1)
+  }
+}
+
+// --- 5. write the generated rule set ---------------------------------------
 
 const out = {
   $comment:

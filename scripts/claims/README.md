@@ -30,6 +30,15 @@ hand-maintained second list — that is precisely what drifted the first time.
 npm run claims:sync     # regenerates from ARY-23, needs PAPERCLIP_API_* (any agent run)
 ```
 
+⚠️ **`banned-claims.json` is generated — never hand-edit it.** Rules *and* their
+`guidance` belong in the `claims-guard` block in ARY-23 §0.1; anything written
+only into this file is deleted by the next sync. That is not hypothetical: the
+ARY-1533 ruling — a false positive cleared three separate times — lived only in
+the generated file for two months ([ARY-4240](/ARY/issues/ARY-4240)). A sync
+that would shorten a rule's `label`, `guidance` or `instead` now fails and
+prints the text it would lose; pass `--allow-prose-loss` if the removal is
+deliberate.
+
 The generator reads two things from the ARY-23 `positioning-deck` document:
 
 1. the **§0 capability table** — to see which rows are retired (❌, ⚠️, reworded,
