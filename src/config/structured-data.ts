@@ -7,9 +7,15 @@
  * Seo.astro. SoftwareApplication is auto-attached to the home page.
  *
  * Accuracy guardrail (ARY-399 §6 Truth Ledger): claims here must stay grounded.
- * The app is free to start with no priced tiers (payments stubbed) → the offer
- * is `price: "0"`. Do NOT add review/aggregateRating (no real customers) or
- * certification claims.
+ * The app is free to start → the offer is `price: "0"`. That is the price of the
+ * app, not of everything in it: payments are ARMED IN PRODUCTION (ARY-4252 —
+ * `PAYMENTS_ENABLED=true`, `PAYMENTS_PROVIDERS=google` on the live API), the
+ * demo checkout route is 410 Gone, and the deeper advisory report is a real
+ * in-app purchase made through Google Play. The old "payments stubbed / the
+ * transaction is not real" justification is RETIRED — do not restore it.
+ * The report's price and currency must never appear on any surface (`C-014`),
+ * so `price: "0"` stays the app-level offer and no second Offer is added here.
+ * Do NOT add review/aggregateRating (no real customers) or certification claims.
  */
 /** Org node id — referenced by other nodes so the graph stays a single entity. */
 export const orgId = (base: string) => `${base}/#org`;
@@ -32,7 +38,9 @@ export function softwareApplication(base: string, name: string, description: str
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
-      // "Start free" — no priced tiers exist in product (payments stubbed).
+      // "Start free" — the app itself costs nothing to begin. The deeper
+      // advisory report is a separate in-app purchase (ARY-4252) and its price
+      // never ships here or anywhere else (`C-014`).
       availability: 'https://schema.org/InStock',
     },
     publisher: { '@id': orgId(base) },
