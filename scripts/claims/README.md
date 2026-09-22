@@ -12,9 +12,16 @@ necessary but **not sufficient** for the other 15 locales — see
 [Locale coverage](#locale-coverage) before citing this guard as coverage.
 
 ```
-npm run claims:check    # run it now
-npm run build           # runs automatically, before the OG render
+npm run guard:claims       # scan the site for retired wording
+npm run guard:claims:test  # assert every rule's mustFire / mustStayGreen controls
+npm run build              # runs both automatically, before the OG render
 ```
+
+`guard:claims` scans the site. `guard:claims:test` is the meta-level check: it
+proves the regexes themselves still fire on the real retired text and stay green
+on the approved replacements. A guard reporting "0 findings" is indistinguishable
+from a guard that stopped matching, so `prebuild` runs the controls **first** —
+a bad regex edit fails the deploy instead of going quiet.
 
 ## What it scans
 
@@ -45,15 +52,35 @@ every language. For the C-002 trust band that gate is `scripts/ary1475-verify.py
 (being pinned + wired into the build on ARY-1516; it is heartbeat-only until
 then). The durable, general per-locale field check is tracked on ARY-1377.
 
-So: **do not cite `claims:check` / `check-claims.mjs` as evidence for non-English
+So: **do not cite `guard:claims` / `check-claims.mjs` as evidence for non-English
 copy.** It is the English backstop. The field gate is the locale-complete
 control.
 
-> Script-name footgun: `claims:check` runs `check-claims.mjs` (this English
-> banned-claims guard); `check:claims` — reversed word order — runs
-> `check-tier-claims.mjs`, a *different* guard (free-vs-paid tier, ARY-1506).
-> This collision has already caused one mis-scoped statement; a rename is tracked
-> on ARY-1523's follow-up.
+> Script names (ARY-1577). `claims:check` and `check:claims` used to be two
+> different guards distinguished only by word order, which had already caused one
+> mis-scoped statement. The unambiguous names are now:
+>
+> | script | runs | what it guards |
+> |---|---|---|
+> | `guard:claims` | `check-claims.mjs` | retired claims in English copy |
+> | `guard:claims:test` | `claims/rules.test.mjs` | the banned-claims rules themselves |
+> | `guard:tier` | `check-tier-claims.mjs` | free-vs-paid tier boundary (ARY-1506) |
+> | `guard:tier:test` | `check-tier-claims.test.mjs` | the tier guard itself |
+>
+> `claims:check`, `check:claims` and `test:claims` still work as aliases for one
+> release. Prefer the `guard:*` names — and note the alias set is why the controls
+> runner is **not** called `claims:test`, which would have collided with the
+> existing `test:claims` in exactly the same reversed-word-order way.
+
+### Rules without controls
+
+`guard:claims:test` names every rule that carries no `controls` block rather than
+skipping it silently — a silent skip reads as coverage. Those rules predate the
+harness; **9 of 13 are still uncovered**, so the controls prove the four rules
+they cover and say nothing about the rest. Writing the missing ones needs the real
+retired and approved wording out of ARY-23 §0, which is a Brand & Trust call, not
+a mechanical one (tracked as a follow-up on ARY-1577). Add `controls` to a rule
+when you next touch it.
 
 ## Where the rules come from
 

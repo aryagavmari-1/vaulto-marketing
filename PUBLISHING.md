@@ -68,7 +68,7 @@ worker safely dry-runs and everything stays manual.
 
 ## Claim check: free tier vs paid report
 
-Run `npm run check:claims` before publishing anything that mentions the AI
+Run `npm run guard:tier` before publishing anything that mentions the AI
 overview. It fails the moment copy promises a **paid** advisory deliverable
 while calling it **free**.
 
