@@ -5,8 +5,11 @@ The build fails if retired product claims appear in site copy.
 Dead capability claims reached `/privacy` in 16 locales this month, and the manual
 sweep that declared it clean still missed three more places (ARY-1260, ARY-1264,
 ARY-1273). This check makes that class of regression impossible rather than
-unlikely. It runs in `prebuild`, so it gates both the GitHub Actions deploy
-workflow and Render's own auto-deploy — nothing reaches the site without passing.
+unlikely **for English copy**. It runs in `prebuild`, so it gates both the
+GitHub Actions deploy workflow and Render's own auto-deploy — nothing reaches
+the site without passing. The rule patterns are English-only, so a green run is
+necessary but **not sufficient** for the other 15 locales — see
+[Locale coverage](#locale-coverage) before citing this guard as coverage.
 
 ```
 npm run claims:check    # run it now
@@ -18,6 +21,39 @@ npm run build           # runs automatically, before the OG render
 `src/i18n` (all 16 locales), `src/content/blog`, `src/content/blog-i18n`,
 `src/pages`, `src/components`, `src/layouts`, `src/config` — every `.json`,
 `.md`, `.astro`, and `.ts` under them.
+
+## Locale coverage
+
+**The scanner reads all 16 locales; the rule patterns only match English.** It
+walks the localised `src/i18n` JSON, but every regex in `banned-claims.json` is
+written against English words, so it can only fire on English strings. A retired
+claim living in a translated field passes green even though the same claim in
+`en` would fail.
+
+Measured, not assumed (ARY-1523, verified at `3977def`): of the 16 retired
+strings the ARY-1394 trust-band delta removed, `visibility-absolute` catches
+**1** — `en`. The `es`/`ja`/`pt`/… paraphrases (`solo puedes ver y editar la
+tuya`, `表示や編集ができるのは、あなた自身の金庫だけです`, …) share no root with the English pattern
+and are invisible to it. Each rule states its own reach in a `knownGap` field;
+read it before treating a rule as multilingual.
+
+**What actually covers the other 15 locales** is a per-locale *field* check, not
+more regexes — each governed field (`trustBand.proof[3]`, `protections[-1]`, …)
+has exactly one approved value per locale, so the gate asserts the live value
+equals the approved one rather than trying to describe every wrong phrasing in
+every language. For the C-002 trust band that gate is `scripts/ary1475-verify.py`
+(being pinned + wired into the build on ARY-1516; it is heartbeat-only until
+then). The durable, general per-locale field check is tracked on ARY-1377.
+
+So: **do not cite `claims:check` / `check-claims.mjs` as evidence for non-English
+copy.** It is the English backstop. The field gate is the locale-complete
+control.
+
+> Script-name footgun: `claims:check` runs `check-claims.mjs` (this English
+> banned-claims guard); `check:claims` — reversed word order — runs
+> `check-tier-claims.mjs`, a *different* guard (free-vs-paid tier, ARY-1506).
+> This collision has already caused one mis-scoped statement; a rename is tracked
+> on ARY-1523's follow-up.
 
 ## Where the rules come from
 
