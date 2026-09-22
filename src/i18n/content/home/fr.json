@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Un lieu calme et sûr pour tout ce que possède votre famille",
-    "description": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — en privé, avec une sécurité solide. Commencez gratuitement."
+    "title": "Inventaire des biens familiaux, coffre-fort de documents et patrimoine net",
+    "description": "Faites l’inventaire de vos biens, gardez vos documents en sécurité et voyez l’ensemble de votre patrimoine net — en privé et en toute sécurité. Prenez une photo ; Vaulto saisit les données pour vous. Commencez gratuitement."
   },
   "hero": {
-    "eyebrow": "Privé et sécurisé par conception",
-    "heading": "Un lieu unique, calme et sûr pour tout ce que possède votre famille.",
-    "sub": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — pour que votre famille sache toujours ce qui existe et quoi faire ensuite.",
+    "eyebrow": "Privé et sécurisé dès la conception",
+    "heading": "Tout ce que possède votre famille, en un seul endroit privé.",
+    "sub": "Faites l’inventaire de vos biens, gardez vos documents importants en sécurité et voyez l’ensemble de votre situation — sans tout saisir vous-même : prenez une photo et Vaulto la lit pour vous.",
     "trust": [
-      "Chiffré en transit (TLS)",
+      "Chiffré en transit et au repos",
       "Vos données ne sont jamais vendues",
       "Conçu pour les familles"
     ],
@@ -41,17 +41,17 @@
       {
         "icon": "folders",
         "title": "Sachez ce que vous possédez.",
-        "body": "Biens immobiliers, comptes, investissements, objets de valeur, retraites — réunis dans un seul espace organisé, pas dispersés entre tiroirs et tableurs."
+        "body": "Biens immobiliers, comptes, investissements, objets de valeur, retraites — réunis en un seul endroit organisé, au lieu d’être dispersés entre tiroirs et tableurs."
       },
       {
         "icon": "shield",
-        "title": "Gardez tout en sécurité.",
-        "body": "Stockez les documents importants — actes, contrats, relevés — en privé, derrière une sécurité solide."
+        "title": "Gardez-le en sécurité.",
+        "body": "Stockez les documents importants — actes, contrats, relevés — de façon privée, derrière une sécurité renforcée."
       },
       {
         "icon": "compass",
-        "title": "Planifiez en toute confiance.",
-        "body": "Voyez l’ensemble de votre situation et obtenez une vue d’ensemble claire et gratuite quand vous êtes prêt à réfléchir à l’héritage, aux testaments ou à la suite."
+        "title": "Planifiez avec confiance.",
+        "body": "Voyez l’ensemble de la situation et obtenez une vue d’ensemble claire et gratuite quand vous êtes prêt à réfléchir à l’héritage, au testament ou à la suite."
       }
     ]
   },
@@ -64,28 +64,28 @@
       },
       {
         "title": "Laissez Vaulto l’organiser.",
-        "body": "Regroupez vos biens en collections, ajoutez les informations clés et gardez les documents joints là où ils doivent être."
+        "body": "Regroupez les biens en collections, ajoutez les informations essentielles et gardez les documents joints là où ils doivent être."
       },
       {
-        "title": "Voyez l’ensemble de la situation.",
-        "body": "Les biens de votre famille en une seule vue — prêts à être partagés avec les personnes qui comptent et à vous aider à planifier la suite."
+        "title": "Voyez l’ensemble.",
+        "body": "Les biens de votre famille en une seule vue — prêts à être partagés avec les personnes qui comptent et à vous aider à préparer la suite."
       }
     ]
   },
   "trustBand": {
     "heading": "Conçu pour mériter votre confiance avec vos informations les plus sensibles.",
-    "lead": "Vos données sont chiffrées lorsqu'elles nous parviennent, votre base de données est chiffrée au repos et vos fichiers sont conservés dans un stockage privé. L'accès est protégé et nous ne vendons jamais vos informations.",
-    "cta": "Voyez exactement comment nous les gardons en sécurité →",
+    "lead": "Vos données sont chiffrées pendant leur transmission vers nous, vos dossiers et fichiers importés sont chiffrés au repos, et Vaulto scelle à nouveau les éléments sensibles dans l’application elle-même — avec des clés gérées dans Google Cloud KMS. Vos fichiers sont conservés dans un stockage privé, l’accès est protégé, et nous ne vendons jamais vos informations.",
+    "cta": "Voir exactement comment nous les protégeons →",
     "proof": [
-      "Chiffré en transit (TLS) ; fichiers dans un stockage privé",
+      "Chiffré en transit (TLS) et au repos ; fichiers en stockage privé",
       "Mots de passe hachés — même nous ne pouvons pas les lire",
-      "Sessions de courte durée, protégées par le navigateur",
+      "Sessions de courte durée protégées dans le navigateur",
       "Le coffre-fort de chaque personne est isolé des autres utilisateurs",
       "Nous ne vendons ni ne partageons jamais vos données"
     ]
   },
   "finalCta": {
-    "title": "Commencez le coffre-fort de votre famille dès aujourd’hui.",
+    "title": "Commencez le coffre-fort de votre famille aujourd’hui.",
     "body": "Gratuit pour commencer. Aucun tableur nécessaire."
   }
 }

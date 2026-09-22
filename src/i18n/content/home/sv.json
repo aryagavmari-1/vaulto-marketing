@@ -1,27 +1,27 @@
 {
   "meta": {
-    "title": "Ett lugnt, säkert hem för allt din familj äger",
-    "description": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — privat, med stark säkerhet. Kom igång gratis."
+    "title": "Familjens tillgångsinventering, dokumentvalv och nettoförmögenhet",
+    "description": "Inventera dina tillgångar, håll dokument säkra och se hela din nettoförmögenhet — privat och säkert. Ta en bild; Vaulto gör datainmatningen. Börja gratis."
   },
   "hero": {
     "eyebrow": "Privat och säker från grunden",
-    "heading": "En lugn, säker plats för allt din familj äger.",
-    "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — så att din familj alltid vet vad som finns och vad ni ska göra härnäst.",
+    "heading": "Allt din familj äger, på ett privat ställe.",
+    "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och se helheten — utan att skriva in allt själv: ta en bild så läser Vaulto det åt dig.",
     "trust": [
-      "Krypterad under överföring (TLS)",
-      "Dina data säljs aldrig",
+      "Krypterat under överföring och i vila",
+      "Dina uppgifter säljs aldrig",
       "Byggt för familjer"
     ],
     "art": {
       "cards": [
         {
           "icon": "home",
-          "label": "Familjens hem",
+          "label": "Familjens bostad",
           "sub": "Fastighet · lagfart och försäkring bifogade"
         },
         {
           "icon": "document",
-          "label": "Testamente och dödsbodelshandlingar",
+          "label": "Testamente och bouppteckningsdokument",
           "sub": "3 filer · privat lagring"
         },
         {
@@ -35,8 +35,8 @@
     }
   },
   "value": {
-    "heading": "Allt på ett pålitligt ställe",
-    "sub": "Inga kalkylblad. Inga utspridda lådor. Bara tydlighet.",
+    "heading": "Allt på ett ställe du kan lita på",
+    "sub": "Inga kalkylblad. Inga utspridda lådor. Bara överblick.",
     "cards": [
       {
         "icon": "folders",
@@ -46,12 +46,12 @@
       {
         "icon": "shield",
         "title": "Håll det säkert.",
-        "body": "Förvara dokumenten som betyder mest — lagfarter, försäkringar, kontoutdrag — privat, bakom stark säkerhet."
+        "body": "Spara dokumenten som betyder mest — lagfarter, försäkringar, kontoutdrag — privat, bakom stark säkerhet."
       },
       {
         "icon": "compass",
         "title": "Planera med trygghet.",
-        "body": "Se hela bilden och få en tydlig, kostnadsfri överblick när du är redo att tänka på arv, testamente eller vad som händer härnäst."
+        "body": "Se helheten och få en tydlig, kostnadsfri överblick när du är redo att tänka på arv, testamenten eller vad som händer härnäst."
       }
     ]
   },
@@ -60,28 +60,28 @@
     "items": [
       {
         "title": "Lägg till det du äger.",
-        "body": "Ta en bild eller ladda upp ett dokument — Vaulto kan läsa det och föreslå detaljerna, så att du slipper skriva in allt för hand."
+        "body": "Ta en bild eller ladda upp ett dokument — Vaulto kan läsa det och föreslå uppgifterna, så att du slipper skriva in allt för hand."
       },
       {
         "title": "Låt Vaulto organisera det.",
-        "body": "Gruppera tillgångar i samlingar, lägg till nyckeluppgifter och behåll dokumenten kopplade där de hör hemma."
+        "body": "Gruppera tillgångar i samlingar, lägg till nyckeluppgifter och håll dokument kopplade där de hör hemma."
       },
       {
-        "title": "Se hela bilden.",
-        "body": "Din familjs tillgångar i en vy — redo att delas med de personer som är viktiga och att planera framåt med."
+        "title": "Se helheten.",
+        "body": "Din familjs tillgångar i en vy — redo att delas med personerna som betyder mest och att planera framåt med."
       }
     ]
   },
   "trustBand": {
-    "heading": "Byggt för att vara betrott med din mest känsliga information.",
-    "lead": "Dina uppgifter krypteras på vägen till oss, din databas är krypterad i vila och dina filer förvaras i privat lagring. Åtkomsten är skyddad och vi säljer aldrig din information.",
+    "heading": "Byggt för att du ska kunna anförtro oss din mest känsliga information.",
+    "lead": "Dina uppgifter krypteras på väg till oss, dina poster och uppladdade filer är krypterade i vila, och Vaulto förseglar de känsliga delarna igen inne i själva appen — med nycklar som hanteras i Google Cloud KMS. Dina filer förvaras i privat lagring, åtkomsten är skyddad, och vi säljer aldrig din information.",
     "cta": "Se exakt hur vi håller det säkert →",
     "proof": [
-      "Krypterad under överföring (TLS); filer i privat lagring",
-      "Lösenord hashas — inte ens vi kan läsa dem",
+      "Krypterat under överföring (TLS) och i vila; filer i privat lagring",
+      "Lösenord hashade — inte ens vi kan läsa dem",
       "Kortlivade, webbläsarskyddade sessioner",
       "Varje persons valv är isolerat från andra användare",
-      "Vi säljer eller delar aldrig dina data"
+      "Vi säljer eller delar aldrig dina uppgifter"
     ]
   },
   "finalCta": {

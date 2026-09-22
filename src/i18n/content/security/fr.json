@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Sécurité et confidentialité",
-    "description": "Comment Vaulto protège les informations de votre famille : chiffrement en transit, une base de données chiffrée, des fichiers dans un stockage privé, des mots de passe hachés et un contrôle d'accès strict. En langage clair, sans promesses exagérées."
+    "title": "Sécurité & confidentialité",
+    "description": "Comment Vaulto protège les informations de votre famille — chiffrement en transit, chiffrement au repos avec une protection au niveau de l’application pour les champs sensibles (Google Cloud KMS), fichiers en stockage privé, mots de passe hachés, contrôle d’accès strict."
   },
   "crumbs": {
     "home": "Accueil",
-    "security": "Sécurité et confidentialité"
+    "security": "Sécurité & confidentialité"
   },
   "hero": {
-    "eyebrow": "Sécurité et confidentialité",
+    "eyebrow": "Sécurité & confidentialité",
     "heading": "Les informations de votre famille, protégées.",
     "intro": "Vaulto contient des informations sensibles — ce que vous possédez, où cela se trouve, les documents qui le prouvent. Nous prenons cette responsabilité au sérieux. Voici exactement comment nous les protégeons, en termes simples."
   },
@@ -18,31 +18,31 @@
   "protections": [
     {
       "title": "Chiffré en transit.",
-      "body": "Chaque connexion à Vaulto utilise TLS (HTTPS) — le même chiffrement à l'icône de cadenas que vous voyez sur les sites bancaires et marchands. Vos données sont brouillées pendant leur trajet entre vous et nous, de sorte que personne entre les deux ne peut les lire."
+      "body": "Chaque connexion à Vaulto utilise TLS (HTTPS) — le même chiffrement avec icône de cadenas que vous voyez sur les sites bancaires et de commerce en ligne. Vos données sont brouillées pendant leur trajet entre vous et nous, afin que personne entre les deux ne puisse les lire."
     },
     {
       "title": "Chiffré au repos.",
-      "body": "Vos données et vos fichiers téléversés sont chiffrés au repos — « au repos » signifie simplement pendant qu'ils sont stockés, pas pendant qu'ils circulent. Ils résident sur des serveurs sécurisés et gérés par des professionnels, et Vaulto chiffre en plus les parties sensibles dans l'application elle-même avant leur écriture : les intitulés, descriptions, emplacements et notes, les photos et numérisations que vous téléversez et les valeurs exactes sont chiffrées avec des clés gérées dans Google Cloud KMS plutôt que conservées à côté des données. Le bloc ci-dessous précise quels champs sont scellés et lesquels restent lisibles."
+      "body": "Vos enregistrements et les fichiers que vous téléversez sont chiffrés au repos — « au repos » signifie simplement lorsqu’ils sont stockés, pas lorsqu’ils sont en mouvement. Ils se trouvent sur des serveurs sécurisés gérés par des professionnels, et Vaulto protège à nouveau les parties sensibles dans l’application elle-même avant leur écriture : les noms des éléments, descriptions, emplacements et notes, les photos et scans que vous téléversez, et les valorisations exactes sont chiffrés avec des clés gérées dans Google Cloud KMS plutôt que conservées à côté des données. Le bloc ci-dessous indique quels champs sont protégés et lesquels restent lisibles."
     },
     {
       "title": "Les mots de passe ne sont jamais stockés en clair.",
-      "body": "Nous « hachons » votre mot de passe avec une méthode solide et moderne appelée scrypt — un hachage est un brouillage à sens unique qui ne peut pas être inversé pour retrouver votre mot de passe. Même nous ne pouvons pas le lire."
+      "body": "Nous « hachons » votre mot de passe avec une méthode moderne et robuste appelée scrypt — un hachage est un brouillage à sens unique qui ne peut pas être reconverti en votre mot de passe. Même nous ne pouvons pas le lire."
     },
     {
       "title": "Sessions de courte durée.",
-      "body": "Le « jeton » (token) de connexion qui prouve que c'est bien vous expire rapidement et reste en mémoire. Le jeton qui vous garde connecté réside dans un cookie sécurisé et résistant aux scripts — un petit fichier de navigateur que les scripts malveillants d'une page ne peuvent ni lire ni voler."
+      "body": "Le « token » de connexion qui prouve qu’il s’agit bien de vous expire rapidement et est conservé en mémoire. Le token qui vous garde connecté vit dans un cookie sécurisé, protégé contre les scripts — un petit fichier du navigateur que les scripts malveillants d’une page ne peuvent ni lire ni voler."
     },
     {
       "title": "Protégé contre les abus.",
-      "body": "Nous limitons le nombre de fois où la connexion et d'autres actions sensibles peuvent être tentées d'affilée — c'est ce qu'on appelle la « limitation de débit » (rate-limiting). Cela bloque les tentatives rapides et répétées sur lesquelles reposent les attaques automatisées."
+      "body": "Nous limitons le nombre de tentatives successives de connexion et d’autres actions sensibles — cela s’appelle le « rate-limiting ». Cela bloque les essais rapides et répétés dont dépendent les attaques automatisées."
     },
     {
       "title": "Contrôles d’accès.",
-      "body": "Le coffre de chaque personne est isolé des autres utilisateurs, et notre équipe d’assistance ne peut pas consulter votre coffre — Vaulto n’a aucun type de compte interne qui permettrait d’en ouvrir un."
+      "body": "La voûte de chaque personne est isolée de celles des autres utilisateurs, et notre équipe d’assistance ne peut pas parcourir votre voûte — Vaulto n’a aucun type de compte employé qui pourrait en ouvrir une."
     }
   ],
   "promise": {
-    "heading": "Nos promesses de confidentialité"
+    "heading": "Nos promesses en matière de confidentialité"
   },
   "promises": [
     {
@@ -50,24 +50,24 @@
       "body": "Point final."
     },
     {
-      "title": "Nous ne les partageons pas à des fins publicitaires.",
+      "title": "Nous ne les partageons pas pour faire de la publicité.",
       "body": "Vos informations ne sont pas transmises à des tiers pour vous faire du marketing."
     },
     {
       "title": "Vous gardez le contrôle.",
-      "body": "Vous décidez de ce que vous ajoutez — et de ce que vous supprimez."
+      "body": "C’est vous qui décidez ce que vous ajoutez — et ce que vous supprimez."
     }
   ],
   "yours": {
     "heading": "Vos données vous appartiennent",
-    "body": "Vos données vous appartiennent — exportez une copie complète et lisible par machine de vos enregistrements (JSON, CSV ou PDF) à tout moment, depuis les Paramètres. « Lisible par machine » signifie un fichier standard qu'une autre application ou un tableur peut ouvrir et réutiliser — pas un PDF verrouillé. Aucun verrouillage, aucune attente de notre part. (Vous pouvez également exporter une archive ZIP qui contient vos photos et numérisations d'origine en plus de l'enregistrement structuré.) Cela soutient votre droit à la portabilité des données au titre du GDPR — la loi européenne sur la vie privée (article 20) qui vous permet d'emporter vos données avec vous."
+    "body": "Vos données vous appartiennent — exportez à tout moment, depuis les Paramètres, une copie complète et lisible par machine de vos enregistrements (JSON, CSV ou PDF). Lisible par machine signifie un fichier standard qu’une autre application ou un tableur peut ouvrir et réutiliser — pas un PDF verrouillé. Pas d’enfermement, pas d’attente de notre part. (Vous pouvez aussi exporter une archive ZIP qui inclut vos photos et scans d’origine téléversés avec l’enregistrement structuré.) Cela soutient votre droit à la portabilité des données au titre du GDPR — la loi européenne sur la confidentialité (Article 20) qui vous permet d’emporter vos données avec vous."
   },
   "honesty": {
-    "body": "<b>Langage clair, sans surenchère.</b> Nous ne décrivons que ce qui est vrai aujourd'hui : chiffrement en transit, chiffrement au repos appliqué par l'application elle-même avec des clés gérées dans Google Cloud KMS, fichiers conservés dans un stockage privé, mots de passe hachés, contrôle d'accès strict. Nous ne prétendons délibérément <b>pas</b> à un chiffrement « de bout en bout » ni « zero-knowledge » : nous détenons les clés, nous pouvons donc déchiffrer vos données pour assurer le service et les fonctions d'IA que vous demandez. Nous ne prétendons pas davantage au « niveau bancaire » ni à aucune certification que nous n'avons pas obtenue. Voici ce qui est scellé et ce qui ne l'est pas. Chiffrés : les intitulés, descriptions, emplacements et notes que vous saisissez, les valeurs exactes et les fichiers que vous téléversez. Lisibles par nos serveurs : les champs structurés qui les entourent, afin que votre coffre puisse toujours être trié sans ouvrir les parties scellées — des éléments comme la catégorie, les dates et les étiquettes, la devise, le pays, un établissement ou un numéro de série, le prix d'achat, à qui appartient un objet et une fourchette de valeur approximative. L'export de données est actif (ci-dessus). Lorsque nous ajouterons un audit formel par un tiers, où une entreprise de sécurité indépendante nous examine, cette page le mentionnera.",
+    "body": "<b>En termes simples, sans exagération.</b> Nous décrivons uniquement ce qui est vrai aujourd’hui : chiffrement en transit, chiffrement au repos appliqué par l’application elle-même avec des clés gérées dans Google Cloud KMS, fichiers conservés en stockage privé, mots de passe hachés, contrôle d’accès strict. Nous affirmons délibérément <b>ne pas</b> utiliser un chiffrement « end-to-end » ou « zero-knowledge » : nous détenons les clés, donc nous pouvons déchiffrer vos enregistrements pour faire fonctionner le service et les fonctions d’IA que vous demandez. Nous ne revendiquons pas non plus un niveau « bank-level » ni une certification que nous n’avons pas obtenue. Voici ce qui est protégé et ce qui ne l’est pas. Chiffrés : les noms des éléments, descriptions, emplacements et notes que vous écrivez, les valorisations exactes, et les fichiers que vous téléversez. Lisibles par nos serveurs : les champs structurés autour, afin que votre voûte puisse toujours être triée sans ouvrir les parties protégées — par exemple la catégorie, les dates et tags, la devise, le pays, un établissement ou un numéro de série, le prix d’achat, à qui appartient un élément, et une fourchette de valeur approximative. L’export des données est déjà disponible (ci-dessus). Lorsque nous ajouterons un audit formel par un tiers, où une société de sécurité indépendante nous examine, cette page l’indiquera.",
     "contact": "Pour toute question sur la confidentialité ou la sécurité, contactez"
   },
   "finalCta": {
-    "title": "Privé dès le premier élément que vous ajoutez.",
-    "body": "Commencez gratuitement — votre coffre n’appartient qu’à vous, et vous pouvez l’exporter ou le supprimer quand vous voulez."
+    "title": "Privé dès la première chose que vous ajoutez.",
+    "body": "Commencez gratuitement — votre voûte n’appartient qu’à vous, et vous pouvez l’exporter ou la supprimer quand vous le souhaitez."
   }
 }

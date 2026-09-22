@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "Ailenizin sahip olduğu her şey için sakin, güvenli bir yuva",
-    "description": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — özel olarak, güçlü güvenlikle. Ücretsiz başlayın."
+    "title": "Aile varlık envanteri, belge kasası ve net değer",
+    "description": "Varlıklarını envantere ekle, belgelerini güvende tut ve toplam net değerini gör — özel ve güvenli şekilde. Fotoğraf çek; veri girişini Vaulto yapsın. Ücretsiz başla."
   },
   "hero": {
     "eyebrow": "Tasarımı gereği özel ve güvenli",
-    "heading": "Ailenizin sahip olduğu her şey için tek bir sakin, güvenli yer.",
-    "sub": "Varlıklarınızın envanterini çıkarın, önemli belgeleri güvende tutun ve tüm tabloyu görün — böylece aileniz her zaman neyin nerede olduğunu ve sonra ne yapacağını bilir.",
+    "heading": "Ailenin sahip olduğu her şey, tek bir özel yerde.",
+    "sub": "Varlıklarını envantere ekle, önemli belgeleri güvende tut ve tüm tabloyu gör — üstelik hepsini tek tek yazmana gerek yok: bir fotoğraf çek, Vaulto senin için okusun.",
     "trust": [
-      "Aktarım sırasında şifrelenir (TLS)",
-      "Verileriniz asla satılmaz",
+      "Aktarımda ve depoda şifrelenir",
+      "Verilerin asla satılmaz",
       "Aileler için tasarlandı"
     ],
     "art": {
@@ -21,7 +21,7 @@
         },
         {
           "icon": "document",
-          "label": "Vasiyetname ve miras belgeleri",
+          "label": "Vasiyet ve miras belgeleri",
           "sub": "3 dosya · özel depolama"
         },
         {
@@ -30,7 +30,7 @@
           "sub": "Koleksiyon · 5 öğe"
         }
       ],
-      "secured": "Güvence altında",
+      "secured": "Güvende",
       "lock": "Özel depolama"
     }
   },
@@ -46,46 +46,46 @@
       {
         "icon": "shield",
         "title": "Güvende tut.",
-        "body": "Önemli belgeleri — tapular, poliçeler, hesap özetleri — güçlü güvenlik arkasında, özel olarak sakla."
+        "body": "Önemli belgeleri — tapular, poliçeler, ekstreler — güçlü güvenliğin arkasında, özel olarak sakla."
       },
       {
         "icon": "compass",
         "title": "Güvenle plan yap.",
-        "body": "Tüm tabloyu gör ve miras, vasiyetname veya sonrasında ne olacağı hakkında düşünmeye hazır olduğunda net, ücretsiz bir genel bakış elde et."
+        "body": "Miras, vasiyet veya sonra ne olacağı üzerine düşünmeye hazır olduğunda tüm tabloyu gör ve net, ücretsiz bir genel bakış elde et."
       }
     ]
   },
   "steps": {
-    "heading": "Üç adımda hazır",
+    "heading": "Üç adımda kullanıma hazır",
     "items": [
       {
         "title": "Sahip olduklarını ekle.",
-        "body": "Bir fotoğraf çek veya belge yükle — Vaulto bunu okuyabilir ve ayrıntıları önerebilir, böylece her şeyi tek tek elle yazman gerekmez."
+        "body": "Fotoğraf çek veya belge yükle — Vaulto bunu okuyup ayrıntıları önerebilir, böylece her şeyi elle yazman gerekmez."
       },
       {
-        "title": "Vaulto düzenlesin.",
-        "body": "Varlıkları koleksiyonlar halinde grupla, temel bilgileri ekle ve belgeleri ait oldukları yere ekli tut."
+        "title": "Bırak, Vaulto düzenlesin.",
+        "body": "Varlıkları koleksiyonlar içinde grupla, temel bilgileri ekle ve belgeleri ait oldukları yere bağlı tut."
       },
       {
         "title": "Tüm tabloyu gör.",
-        "body": "Ailenizin varlıkları tek bir görünümde — önemli kişilerle paylaşmaya ve ileriyi planlamaya hazır."
+        "body": "Ailenin varlıkları tek bir görünümde — önemli kişilerle paylaşmaya ve ileriyi planlamaya hazır."
       }
     ]
   },
   "trustBand": {
     "heading": "En hassas bilgilerine emanet edilebilecek şekilde tasarlandı.",
-    "lead": "Verileriniz bize ulaşırken şifrelenir, veritabanınız beklemedeyken şifrelidir ve dosyalarınız özel depolamada tutulur. Erişim korunur ve bilgilerinizi asla satmayız.",
-    "cta": "Onu tam olarak nasıl güvende tuttuğumuzu gör →",
+    "lead": "Verilerin bize gelirken şifrelenir, kayıtların ve yüklenen dosyaların depoda şifrelenir ve Vaulto uygulamanın içinde hassas kısımları Google Cloud KMS'te yönetilen anahtarlarla yeniden mühürler. Dosyaların özel depolamada tutulur, erişim korunur ve bilgilerini asla satmayız.",
+    "cta": "Nasıl güvende tuttuğumuzu tam olarak gör →",
     "proof": [
-      "Aktarım sırasında şifrelenir (TLS); dosyalar özel depolamada",
-      "Parolalar hashlenir — biz bile onları okuyamayız",
-      "Kısa ömürlü, tarayıcı tarafından korunan oturumlar",
+      "Aktarımda (TLS) ve depoda şifreleme; dosyalar özel depolamada tutulur",
+      "Parolalar hashlenir — biz bile okuyamayız",
+      "Kısa ömürlü, tarayıcı korumalı oturumlar",
       "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır",
       "Verilerini asla satmayız veya paylaşmayız"
     ]
   },
   "finalCta": {
     "title": "Ailenin kasasını bugün başlat.",
-    "body": "Başlamak ücretsiz. Hesap tabloları gerekmez."
+    "body": "Başlamak ücretsiz. Hesap tablosu gerekmez."
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Często zadawane pytania",
-    "description": "Odpowiedzi o Vaulto — czy moje dane są bezpieczne, ile to kosztuje, co możesz przechowywać i jak przechwytywanie wspomagane AI oszczędza Ci pisania."
+    "description": "Odpowiedzi o Vaulto — czy moje dane są bezpieczne, ile to kosztuje, co możesz przechowywać i jak wspomagane przez AI przechwytywanie oszczędza Ci wpisywania."
   },
   "crumbs": {
     "home": "Strona główna",
@@ -9,13 +9,13 @@
   },
   "hero": {
     "eyebrow": "FAQ",
-    "heading": "Proste odpowiedzi na pytania.",
-    "intro": "Konkretne odpowiedzi o Twoich danych, kosztach i działaniu Vaulto. Nadal chcesz wiedzieć więcej? Przeczytaj, <a href=\"/security/\">jak dbamy o bezpieczeństwo</a> lub <a href=\"/how-it-works/\">jak to działa</a>."
+    "heading": "Pytania, z jasnymi odpowiedziami.",
+    "intro": "Proste odpowiedzi o Twoich danych, kosztach i o tym, jak działa Vaulto. Nadal chcesz wiedzieć więcej? Przeczytaj, <a href=\"/security/\">jak dbamy o bezpieczeństwo</a> lub <a href=\"/how-it-works/\">jak to działa</a>."
   },
   "items": [
     {
       "q": "Czy moje dane są bezpieczne?",
-      "a": "Tak. Twoje połączenie jest szyfrowane w trakcie przesyłania za pomocą TLS — szyfrowania z ikoną kłódki (HTTPS), które widzisz na stronach bankowych i sklepowych — więc Twoje dane są szyfrowane podczas podróży i nikt po drodze nie może ich odczytać. Baza danych Twojego konta jest szyfrowana w spoczynku (gdy jest przechowywana) na profesjonalnie zarządzanych, zabezpieczonych serwerach, a przesłane pliki są przechowywane w prywatnym magazynie dostępnym wyłącznie poprzez krótkotrwałe, podpisane linki. Twoje hasło nigdy nie jest przechowywane jako zwykły tekst, a dostęp jest ściśle ograniczony do Twojego konta.",
+      "a": "Tak. Twoje połączenie jest szyfrowane podczas przesyłania za pomocą TLS — szyfrowania z ikoną kłódki (HTTPS), które widzisz na stronach bankowych i zakupowych — więc Twoje dane są zaszyfrowane w trakcie przesyłania i nikt po drodze nie może ich odczytać. Twoje rekordy i przesłane pliki są szyfrowane w spoczynku (gdy są przechowywane) na profesjonalnie zarządzanych, zabezpieczonych serwerach, a Vaulto dodatkowo zabezpiecza wrażliwe części także wewnątrz samej aplikacji — nazwy elementów, opisy, lokalizacje i notatki, przesłane przez Ciebie zdjęcia i skany oraz dokładne wyceny — przy użyciu kluczy zarządzanych w Google Cloud KMS. Przesłane pliki są przechowywane w prywatnej pamięci masowej dostępnej tylko przez krótkotrwałe, podpisane linki. Twoje hasło nigdy nie jest przechowywane w postaci zwykłego tekstu, a dostęp jest ściśle ograniczony do Twojego konta.",
       "onward": "Zobacz, jak dbamy o bezpieczeństwo →"
     },
     {
@@ -25,28 +25,28 @@
     },
     {
       "q": "Ile to kosztuje?",
-      "a": "Z Vaulto możesz zacząć za darmo. Bardziej szczegółowe raporty planistyczne są dostępne, gdy będziesz gotowy(-a); zawsze zobaczysz, co obejmuje usługa, zanim cokolwiek zostanie naliczone."
+      "a": "Z Vaulto możesz zacząć za darmo. Bardziej szczegółowe raporty planistyczne są dostępne, gdy będziesz gotowy; zawsze zobaczysz, co jest wliczone, zanim cokolwiek zostanie naliczone."
     },
     {
       "q": "Czy muszę wszystko wpisywać ręcznie?",
-      "a": "Nie — prześlij zdjęcie lub dokument, a Vaulto odczyta go i zaproponuje odpowiednie szczegóły.",
+      "a": "Nie — prześlij zdjęcie lub dokument, a Vaulto może je odczytać i zaproponować za Ciebie szczegóły.",
       "onward": "Zobacz, jak działa przechwytywanie →"
     },
     {
       "q": "Dla kogo jest Vaulto?",
-      "a": "Dla rodzin i osób, które chcą mieć jedno zaufane miejsce, by wiedzieć, co posiadają, bezpiecznie przechowywać ważne dokumenty i planować z wyprzedzeniem."
+      "a": "Dla rodzin i osób prywatnych, które chcą mieć jedno zaufane miejsce, by wiedzieć, co posiadają, bezpiecznie przechowywać ważne dokumenty i planować z wyprzedzeniem."
     },
     {
       "q": "Co mogę przechowywać?",
-      "a": "Aktywa wszelkiego rodzaju — nieruchomości, konta, inwestycje, kosztowności, emerytury — a także powiązane z nimi dokumenty."
+      "a": "Aktywa wszelkiego rodzaju — nieruchomości, konta, inwestycje, kosztowności, emerytury — oraz dokumenty z nimi związane."
     },
     {
       "q": "Czy mogę używać Vaulto w swoim języku?",
-      "a": "Aplikacja jest dostępna w 16 językach. Dodajemy lokalne treści strony rynek po rynku."
+      "a": "Aplikacja jest dostępna w 16 językach. Dodajemy lokalne treści na stronie rynek po rynku."
     }
   ],
   "finalCta": {
-    "title": "Gdy będziesz gotowy(-a).",
-    "body": "Zacznij za darmo i dodaj pierwsze rzeczy w kilka minut."
+    "title": "Gotowe, kiedy Ty jesteś gotowy.",
+    "body": "Zacznij za darmo i dodaj pierwsze kilka rzeczy w kilka minut."
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Domande frequenti",
-    "description": "Risposte su Vaulto — se i miei dati sono al sicuro, quanto costa, cosa puoi archiviare e come l'acquisizione assistita dall'IA ti fa risparmiare digitazione."
+    "description": "Risposte su Vaulto — se i miei dati sono al sicuro, quanto costa, cosa puoi conservare e come l'acquisizione assistita dall'AI ti fa risparmiare digitazione."
   },
   "crumbs": {
     "home": "Home",
@@ -10,22 +10,22 @@
   "hero": {
     "eyebrow": "FAQ",
     "heading": "Domande, con risposte chiare.",
-    "intro": "Risposte dirette sui tuoi dati, sui costi e su come funziona Vaulto. Hai ancora domande? Leggi <a href=\"/security/\">come li teniamo al sicuro</a> o <a href=\"/how-it-works/\">come funziona</a>."
+    "intro": "Risposte dirette sui tuoi dati, sui costi e su come funziona Vaulto. Hai ancora dubbi? Leggi <a href=\"/security/\">come li teniamo al sicuro</a> o <a href=\"/how-it-works/\">come funziona</a>."
   },
   "items": [
     {
       "q": "I miei dati sono al sicuro?",
-      "a": "Sì. La tua connessione è cifrata in transito con TLS — la crittografia con l'icona del lucchetto (HTTPS) che vedi sui siti bancari e di shopping — così i tuoi dati vengono cifrati mentre viaggiano e nessuno nel mezzo può leggerli. Il database del tuo account è cifrato a riposo (mentre è archiviato) su server gestiti professionalmente e protetti, e i file caricati sono conservati in archivio privato raggiungibile solo tramite link firmati di breve durata. La tua password non è mai memorizzata in chiaro e l'accesso è strettamente limitato al tuo account.",
+      "a": "Sì. La tua connessione è crittografata in transito con TLS — la crittografia con l'icona del lucchetto (HTTPS) che vedi sui siti di banche e negozi online — così i tuoi dati vengono codificati mentre viaggiano e nessuno nel mezzo può leggerli. I tuoi dati e i file che carichi sono crittografati a riposo (mentre sono archiviati) su server protetti e gestiti professionalmente, e Vaulto sigilla di nuovo le parti sensibili anche all'interno dell'app stessa — nomi degli elementi, descrizioni, posizioni e note, le foto e le scansioni che carichi e le valutazioni esatte — con chiavi gestite in Google Cloud KMS. I file caricati sono conservati in uno spazio di archiviazione privato raggiungibile solo tramite link firmati di breve durata. La tua password non viene mai memorizzata in testo semplice e l'accesso è rigorosamente limitato al tuo account.",
       "onward": "Scopri come li teniamo al sicuro →"
     },
     {
       "q": "Vendete i miei dati?",
-      "a": "No — mai. Non vendiamo né condividiamo le tue informazioni per la pubblicità.",
-      "onward": "Leggi le nostre promesse sulla privacy →"
+      "a": "No — mai. Non vendiamo né condividiamo le tue informazioni per pubblicità.",
+      "onward": "Leggi i nostri impegni sulla privacy →"
     },
     {
       "q": "Quanto costa?",
-      "a": "Vaulto è gratuito per iniziare. Report di pianificazione più approfonditi sono disponibili quando vuoi; vedrai sempre cosa è incluso prima di qualsiasi addebito."
+      "a": "Vaulto è gratis per iniziare. I report di pianificazione più approfonditi sono disponibili quando sei pronto; vedrai sempre cosa è incluso prima di qualsiasi addebito."
     },
     {
       "q": "Devo inserire tutto a mano?",
@@ -34,11 +34,11 @@
     },
     {
       "q": "Per chi è Vaulto?",
-      "a": "Per famiglie e singoli che vogliono un unico posto affidabile per sapere cosa possiedono, tenere al sicuro i documenti importanti e pianificare il futuro."
+      "a": "Per famiglie e singole persone che vogliono un unico posto affidabile per sapere cosa possiedono, tenere al sicuro i documenti importanti e pianificare il futuro."
     },
     {
-      "q": "Cosa posso archiviare?",
-      "a": "Beni di ogni tipo — proprietà, conti, investimenti, oggetti di valore, pensioni — più i documenti associati."
+      "q": "Cosa posso conservare?",
+      "a": "Beni di ogni tipo — proprietà, conti, investimenti, oggetti di valore, pensioni — più i documenti collegati."
     },
     {
       "q": "Posso usare Vaulto nella mia lingua?",

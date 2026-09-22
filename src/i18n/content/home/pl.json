@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Spokojny, bezpieczny dom dla wszystkiego, co posiada Twoja rodzina",
-    "description": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — prywatnie, z silnymi zabezpieczeniami. Zacznij za darmo."
+    "title": "Spis rodzinnego majątku, sejf na dokumenty i wartość netto",
+    "description": "Spisz swój majątek, chroń dokumenty i zobacz pełną wartość netto — prywatnie i bezpiecznie. Zrób zdjęcie; Vaulto uzupełni dane. Zacznij za darmo."
   },
   "hero": {
-    "eyebrow": "Prywatne i bezpieczne u podstaw",
-    "heading": "Jedno spokojne, bezpieczne miejsce na wszystko, co posiada Twoja rodzina.",
-    "sub": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — żeby Twoja rodzina zawsze wiedziała, co jest na miejscu i co zrobić dalej.",
+    "eyebrow": "Prywatność i bezpieczeństwo od podstaw",
+    "heading": "Wszystko, co posiada Twoja rodzina, w jednym prywatnym miejscu.",
+    "sub": "Spisz swój majątek, chroń ważne dokumenty i zobacz pełny obraz — bez wpisywania wszystkiego ręcznie: zrób zdjęcie, a Vaulto odczyta je za Ciebie.",
     "trust": [
-      "Szyfrowane podczas przesyłania (TLS)",
+      "Szyfrowane podczas przesyłania i przechowywania",
       "Twoje dane nigdy nie są sprzedawane",
       "Stworzone dla rodzin"
     ],
@@ -17,26 +17,26 @@
         {
           "icon": "home",
           "label": "Dom rodzinny",
-          "sub": "Nieruchomość · akt własności i polisa w załączniku"
+          "sub": "Nieruchomość · dołączony akt własności i ubezpieczenie"
         },
         {
           "icon": "document",
           "label": "Testament i dokumenty spadkowe",
-          "sub": "3 pliki · prywatna przestrzeń"
+          "sub": "3 pliki · prywatne przechowywanie"
         },
         {
           "icon": "chart",
           "label": "Inwestycje i emerytury",
-          "sub": "Kolekcja · 5 pozycji"
+          "sub": "Zbiór · 5 pozycji"
         }
       ],
       "secured": "Zabezpieczone",
-      "lock": "Prywatna przestrzeń"
+      "lock": "Prywatne przechowywanie"
     }
   },
   "value": {
     "heading": "Wszystko w jednym zaufanym miejscu",
-    "sub": "Bez arkuszy. Bez porozrzucanych szuflad. Po prostu przejrzystość.",
+    "sub": "Bez arkuszy. Bez porozrzucanych szuflad. Tylko jasny obraz.",
     "cards": [
       {
         "icon": "folders",
@@ -45,8 +45,8 @@
       },
       {
         "icon": "shield",
-        "title": "Trzymaj to bezpiecznie.",
-        "body": "Przechowuj ważne dokumenty — akty własności, polisy, wyciągi — prywatnie, za silnymi zabezpieczeniami."
+        "title": "Chroń to.",
+        "body": "Przechowuj ważne dokumenty — akty własności, polisy, wyciągi — prywatnie, za solidnymi zabezpieczeniami."
       },
       {
         "icon": "compass",
@@ -64,28 +64,28 @@
       },
       {
         "title": "Pozwól Vaulto to uporządkować.",
-        "body": "Grupuj aktywa w kolekcje, dodawaj kluczowe informacje i trzymaj dokumenty tam, gdzie powinny być."
+        "body": "Grupuj aktywa w zbiory, dodawaj najważniejsze informacje i trzymaj dokumenty tam, gdzie ich miejsce."
       },
       {
         "title": "Zobacz pełny obraz.",
-        "body": "Majątek Twojej rodziny w jednym widoku — gotowy do udostępnienia ważnym osobom i do planowania z wyprzedzeniem."
+        "body": "Majątek Twojej rodziny w jednym widoku — gotowy do udostępnienia ważnym osobom i do planowania na przyszłość."
       }
     ]
   },
   "trustBand": {
-    "heading": "Stworzone po to, by można było powierzyć mu Twoje najbardziej wrażliwe informacje.",
-    "lead": "Twoje dane są szyfrowane w drodze do nas, Twoja baza danych jest szyfrowana w spoczynku, a Twoje pliki są przechowywane w prywatnej przestrzeni. Dostęp jest chroniony i nigdy nie sprzedajemy Twoich informacji.",
-    "cta": "Zobacz dokładnie, jak dbamy o ich bezpieczeństwo →",
+    "heading": "Stworzone, by można było powierzyć mu Twoje najbardziej wrażliwe informacje.",
+    "lead": "Twoje dane są szyfrowane w drodze do nas, Twoje rekordy i przesłane pliki są szyfrowane w spoczynku, a Vaulto dodatkowo zabezpiecza wrażliwe elementy już w samej aplikacji — przy użyciu kluczy zarządzanych w Google Cloud KMS. Twoje pliki są przechowywane prywatnie, dostęp jest chroniony, a my nigdy nie sprzedajemy Twoich informacji.",
+    "cta": "Zobacz dokładnie, jak dbamy o bezpieczeństwo →",
     "proof": [
-      "Szyfrowane podczas przesyłania (TLS); pliki w prywatnej przestrzeni",
-      "Hasła są haszowane — nawet my nie możemy ich odczytać",
-      "Krótkotrwałe sesje chronione przez przeglądarkę",
-      "Sejf każdej osoby jest odizolowany od innych użytkowników",
+      "Szyfrowanie podczas przesyłania (TLS) i w spoczynku; pliki w prywatnym przechowywaniu",
+      "Hasła haszowane — nawet my nie możemy ich odczytać",
+      "Krótkotrwałe sesje chronione w przeglądarce",
+      "Sejf każdej osoby jest odseparowany od innych użytkowników",
       "Nigdy nie sprzedajemy ani nie udostępniamy Twoich danych"
     ]
   },
   "finalCta": {
-    "title": "Załóż sejf swojej rodziny już dziś.",
-    "body": "Na początek za darmo. Bez arkuszy kalkulacyjnych."
+    "title": "Załóż dziś rodzinny sejf.",
+    "body": "Na początek za darmo. Bez potrzeby używania arkuszy."
   }
 }

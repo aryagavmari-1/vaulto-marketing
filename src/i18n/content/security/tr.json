@@ -1,44 +1,44 @@
 {
   "meta": {
     "title": "Güvenlik ve Gizlilik",
-    "description": "Vaulto ailenizin bilgilerini nasıl korur: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamadaki dosyalar, hash'lenmiş parolalar ve sıkı erişim denetimi. Sade bir dille, abartısız."
+    "description": "Vaulto ailenizin bilgilerini nasıl korur — aktarım sırasında şifreleme, hassas alanlar için uygulama katmanında ek korumalı bekleme hâlinde şifreleme (Google Cloud KMS), özel depolamadaki dosyalar, karmalanmış parolalar, sıkı erişim kontrolü."
   },
   "crumbs": {
-    "home": "Ana Sayfa",
+    "home": "Ana sayfa",
     "security": "Güvenlik ve Gizlilik"
   },
   "hero": {
     "eyebrow": "Güvenlik ve gizlilik",
     "heading": "Ailenizin bilgileri, koruma altında.",
-    "intro": "Vaulto hassas ayrıntıları saklar — sahip oldukların, nerede oldukları ve bunu kanıtlayan belgeler. Bu sorumluluğu ciddiye alıyoruz. İşte bunları nasıl koruduğumuz, tam olarak ve sade bir dille."
+    "intro": "Vaulto hassas ayrıntıları tutar — sahip olduklarınız, nerede oldukları ve bunu kanıtlayan belgeler. Bu sorumluluğu ciddiye alıyoruz. İşte bunları nasıl koruduğumuz, açık ve sade bir dille."
   },
   "protect": {
-    "heading": "Verilerini nasıl koruyoruz"
+    "heading": "Verilerinizi nasıl koruyoruz"
   },
   "protections": [
     {
-      "title": "Aktarım sırasında şifreli.",
-      "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır — bankacılık ve alışveriş sitelerinde gördüğünüz aynı asma kilit simgeli şifreleme. Verileriniz sizinle bizim aramızda yol alırken şifrelenir, böylece aradaki hiç kimse onları okuyamaz."
+      "title": "Aktarım sırasında şifrelenir.",
+      "body": "Vaulto'ya yapılan her bağlantı TLS (HTTPS) kullanır — bankacılık ve alışveriş sitelerinde gördüğünüz aynı kilit simgesi şifrelemesi. Verileriniz siz ve biz arasında hareket ederken karıştırılır, böylece aradaki hiç kimse onları okuyamaz."
     },
     {
-      "title": "Beklemede şifreli.",
-      "body": "Kayıtlarınız ve yüklediğiniz dosyalar beklemede şifrelidir — \"beklemede\" yalnızca depolanırken demektir, hareket halindeyken değil. Profesyonelce yönetilen, güvenli sunucularda dururlar ve Vaulto bunları yazmadan önce hassas kısımları uygulamanın kendi içinde bir kez daha şifreler: adlar, açıklamalar, konumlar ve notlar, yüklediğiniz fotoğraf ve taramalar ve tam değerlemeler, verinin yanında tutulan değil, Google Cloud KMS'te yönetilen anahtarlarla şifrelenir. Aşağıdaki bölüm hangi alanların mühürlendiğini ve hangilerinin okunabilir kaldığını belirtir."
+      "title": "Bekleme hâlinde şifrelenir.",
+      "body": "Kayıtlarınız ve yüklediğiniz dosyalar bekleme hâlindeyken şifrelenir — \"bekleme hâlinde\" basitçe, hareket ederken değil depolanırken demektir. Profesyonelce yönetilen, güvenli sunucularda tutulurlar ve Vaulto hassas kısımları yazılmadan önce uygulamanın içinde bir kez daha mühürler: öğe adları, açıklamalar, konumlar ve notlar, yüklediğiniz fotoğraflar ve taramalar ile tam değerlemeler, verinin yanında tutulmak yerine Google Cloud KMS içinde yönetilen anahtarlarla şifrelenir. Aşağıdaki bölüm hangi alanların mühürlü olduğunu, hangilerinin okunabilir kaldığını açıklar."
     },
     {
-      "title": "Parolalar asla düz metin olarak saklanmaz.",
-      "body": "Parolanızı scrypt adlı güçlü, modern bir yöntemle \"hash'leriz\" — hash, parolanıza geri çevrilemeyen tek yönlü bir karıştırmadır. Onu biz bile okuyamayız."
+      "title": "Parolalar asla düz biçimde saklanmaz.",
+      "body": "Parolanızı scrypt adlı güçlü, modern bir yöntemle \"hash\"leriz — hash, tekrar parolanıza dönüştürülemeyen tek yönlü bir karıştırmadır. Biz bile onu okuyamayız."
     },
     {
       "title": "Kısa ömürlü oturumlar.",
-      "body": "Sizin siz olduğunuzu kanıtlayan oturum açma \"token\"ı hızla sona erer ve bellekte tutulur. Oturumunuzu açık tutan token, güvenli, betiğe dayanıklı bir çerezde bulunur — bir sayfadaki zararlı betiklerin okuyamayacağı ya da çalamayacağı küçük bir tarayıcı dosyası."
+      "body": "Gerçekten siz olduğunuzu kanıtlayan oturum açma \"token\"ı kısa sürede sona erer ve bellekte tutulur. Oturumu açık tutan token ise güvenli, komut dosyalarına karşı korumalı bir çerezde yaşar — bu, bir sayfadaki zararlı komut dosyalarının okuyamadığı veya çalamadığı küçük bir tarayıcı dosyasıdır."
     },
     {
-      "title": "Kötüye kullanıma karşı korumalı.",
-      "body": "Oturum açma ve diğer hassas işlemlerin arka arkaya kaç kez denenebileceğini sınırlarız — buna \"hız sınırlama\" (rate-limiting) denir. Otomatik saldırıların dayandığı hızlı, tekrarlı tahminleri engeller."
+      "title": "Kötüye kullanıma karşı korunur.",
+      "body": "Oturum açma ve diğer hassas işlemlerin art arda kaç kez denenebileceğini sınırlarız — buna \"rate-limiting\" denir. Bu, otomatik saldırıların dayandığı hızlı ve tekrarlı tahminleri engeller."
     },
     {
       "title": "Erişim kontrolleri.",
-      "body": "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır ve destek ekibimiz kasanızı görüntüleyemez — Vaulto’da kasanızı açabilecek bir çalışan hesabı türü yoktur."
+      "body": "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır ve destek ekibimiz kasanızı görüntüleyemez — Vaulto'da bunu açabilecek bir personel hesap türü yoktur."
     }
   ],
   "promise": {
@@ -46,28 +46,28 @@
   },
   "promises": [
     {
-      "title": "Verilerini asla satmayız.",
-      "body": "Nokta."
+      "title": "Verilerinizi asla satmayız.",
+      "body": "Bu kadar net."
     },
     {
       "title": "Reklam için paylaşmayız.",
-      "body": "Bilgilerin, sana pazarlama yapmak için üçüncü taraflara verilmez."
+      "body": "Bilgileriniz size pazarlama yapmak için üçüncü taraflara verilmez."
     },
     {
-      "title": "Kontrol sende.",
-      "body": "Ne ekleyeceğine de ne kaldıracağına da sen karar verirsin."
+      "title": "Kontrol sizde.",
+      "body": "Neyi ekleyeceğinize de neyi kaldıracağınıza da siz karar verirsiniz."
     }
   ],
   "yours": {
-    "heading": "Verilerin sana ait",
-    "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makinece okunabilir bir kopyasını (JSON, CSV veya PDF) istediğiniz zaman Ayarlar'dan dışa aktarın. \"Makinece okunabilir\", başka bir uygulamanın veya hesap tablosunun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Bağımlılık yok, bizi beklemek yok. (Ayrıca yapılandırılmış kaydın yanı sıra yüklediğiniz orijinal fotoğraf ve taramaları içeren bir ZIP arşivi de dışa aktarabilirsiniz.) Bu, verilerinizi yanınızda götürmenize olanak tanıyan AB gizlilik yasası (madde 20) olan GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler."
+    "heading": "Verileriniz size aittir",
+    "body": "Verileriniz size aittir — kayıtlarınızın eksiksiz, makine tarafından okunabilir bir kopyasını istediğiniz zaman Ayarlar'dan dışa aktarabilirsiniz (JSON, CSV veya PDF). Makine tarafından okunabilir, başka bir uygulamanın veya e-tablonun açıp yeniden kullanabileceği standart bir dosya demektir — kilitli bir PDF değil. Kilitlenme yok, bizden bekleme yok. (Yapılandırılmış kaydın yanında yüklediğiniz özgün fotoğrafları ve taramaları da içeren bir ZIP arşivi de dışa aktarabilirsiniz.) Bu, GDPR kapsamındaki veri taşınabilirliği hakkınızı destekler — verilerinizi yanınızda götürmenizi sağlayan AB gizlilik yasası (Article 20)."
   },
   "honesty": {
-    "body": "<b>Sade dil, abartı yok.</b> Yalnızca bugün doğru olanı anlatıyoruz: aktarım sırasında şifreleme, uygulamanın kendisinin uyguladığı ve anahtarları Google Cloud KMS'te yönetilen beklemede şifreleme, özel depolamada tutulan dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi. Bilerek \"uçtan uca\" ya da \"zero-knowledge\" şifreleme <b>iddia etmiyoruz</b>: anahtarlar bizde, dolayısıyla hizmeti ve istediğiniz yapay zekâ özelliklerini sunmak için kayıtlarınızın şifresini çözebiliriz. \"Banka düzeyi\" ya da hak etmediğimiz herhangi bir sertifikayı da iddia etmiyoruz. Neyin mühürlendiğini ve neyin mühürlenmediğini burada belirtiyoruz. Şifrelenenler: yazdığınız adlar, açıklamalar, konumlar ve notlar, tam değerlemeler ve yüklediğiniz dosyalar. Sunucularımız için okunabilir olanlar: bunları çevreleyen yapılandırılmış alanlar; böylece kasanız, mühürlü kısımlar açılmadan yine sıralanabilir — kategori, tarihler ve etiketler, para birimi, ülke, bir kurum ya da seri numarası, satın alma fiyatı, bir eşyanın kime ait olduğu ve kabaca bir değer aralığı gibi şeyler. Veri dışa aktarma etkin (yukarıda). Bağımsız bir güvenlik firmasının bizi incelediği resmi bir üçüncü taraf denetimi eklediğimizde, bu sayfa bunu belirtecek.",
-    "contact": "Gizlilik veya güvenlik soruları için iletişime geç:"
+    "body": "<b>Açık dil, abartılı iddia yok.</b> Bugün yalnızca doğru olanı anlatıyoruz: aktarım sırasında şifreleme, uygulamanın kendisi tarafından uygulanan ve anahtarları Google Cloud KMS içinde yönetilen bekleme hâlinde şifreleme, özel depolamada tutulan dosyalar, karmalanmış parolalar, sıkı erişim kontrolü. Bilerek <b>\"uçtan uca\"</b> veya <b>\"zero-knowledge\"</b> şifreleme iddiasında bulunmuyoruz: anahtarlar bizde, bu yüzden hizmeti ve istediğiniz AI özelliklerini çalıştırmak için kayıtlarınızın şifresini çözebiliriz. Ayrıca \"bank-level\" ya da hak etmediğimiz herhangi bir sertifika da iddia etmiyoruz. İşte neyin mühürlü olduğu ve neyin olmadığı. Şifreli olanlar: yazdığınız öğe adları, açıklamalar, konumlar ve notlar, tam değerlemeler ve yüklediğiniz dosyalar. Sunucularımız tarafından okunabilenler: bunların etrafındaki yapılandırılmış alanlar; böylece kasanız mühürlü kısımlar açılmadan yine de sıralanabilir — kategori, tarihler ve etiketler, para birimi, ülke, kurum veya seri numarası, satın alma fiyatı, bir öğenin kime ait olduğu ve yaklaşık değer aralığı gibi şeyler. Veri dışa aktarma kullanılabilir durumda (yukarıda). Bağımsız bir güvenlik firmasının bizi incelediği resmî bir üçüncü taraf denetimi eklediğimizde, bu sayfada bunu belirteceğiz.",
+    "contact": "Gizlilik veya güvenlik soruları için şu adrese ulaşın:"
   },
   "finalCta": {
-    "title": "Eklediğin ilk şeyden itibaren özel.",
-    "body": "Ücretsiz başla — kasan yalnızca sana ait; istediğin zaman dışa aktarabilir veya silebilirsin."
+    "title": "Eklediğiniz ilk şeyden itibaren özel.",
+    "body": "Ücretsiz başlayın — kasanız yalnızca size aittir ve istediğiniz zaman dışa aktarabilir veya silebilirsiniz."
   }
 }

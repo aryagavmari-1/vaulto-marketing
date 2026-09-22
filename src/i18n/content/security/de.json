@@ -1,44 +1,44 @@
 {
   "meta": {
     "title": "Sicherheit & Datenschutz",
-    "description": "Wie Vaulto die Informationen deiner Familie schützt: Verschlüsselung bei der Übertragung, eine verschlüsselte Datenbank, Dateien in privatem Speicher, gehashte Passwörter und strenge Zugriffskontrolle. In klarer Sprache, ohne Übertreibung."
+    "description": "Wie Vaulto die Informationen deiner Familie schützt — Verschlüsselung bei der Übertragung, Verschlüsselung im Ruhezustand mit einer Versiegelung sensibler Felder auf App-Ebene (Google Cloud KMS), Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrollen."
   },
   "crumbs": {
-    "home": "Startseite",
+    "home": "Start",
     "security": "Sicherheit & Datenschutz"
   },
   "hero": {
     "eyebrow": "Sicherheit & Datenschutz",
     "heading": "Die Informationen deiner Familie, geschützt.",
-    "intro": "Vaulto enthält sensible Angaben — was du besitzt, wo es sich befindet und die Dokumente, die es belegen. Wir nehmen diese Verantwortung ernst. Hier erfährst du genau, wie wir sie schützen, in klarer Sprache."
+    "intro": "Vaulto enthält sensible Angaben — was du besitzt, wo es ist und die Dokumente, die es belegen. Wir nehmen diese Verantwortung ernst. Hier erfährst du in klarer Sprache genau, wie wir das schützen."
   },
   "protect": {
-    "heading": "Wie wir deine Daten schützen"
+    "heading": "So schützen wir deine Daten"
   },
   "protections": [
     {
       "title": "Bei der Übertragung verschlüsselt.",
-      "body": "Jede Verbindung zu Vaulto verwendet TLS (HTTPS) — dieselbe Verschlüsselung mit dem Schloss-Symbol, die du auf Banking- und Shopping-Seiten siehst. Deine Daten werden verschlüsselt, während sie zwischen dir und uns unterwegs sind, sodass niemand dazwischen sie lesen kann."
+      "body": "Jede Verbindung zu Vaulto nutzt TLS (HTTPS) — dieselbe Verschlüsselung mit Schloss-Symbol, die du von Bank- und Shopping-Websites kennst. Deine Daten werden auf dem Weg zwischen dir und uns unlesbar gemacht, sodass niemand dazwischen sie lesen kann."
     },
     {
-      "title": "Verschlüsselt im Ruhezustand.",
-      "body": "Deine Daten und hochgeladenen Dateien sind im Ruhezustand verschlüsselt — „im Ruhezustand“ bedeutet einfach: während sie gespeichert sind, nicht während sie unterwegs sind. Sie liegen auf professionell verwalteten, gesicherten Servern, und Vaulto verschlüsselt die sensiblen Teile zusätzlich in der App selbst, bevor sie geschrieben werden: Bezeichnungen, Beschreibungen, Orte und Notizen, die Fotos und Scans, die du hochlädst, und die genauen Werte werden mit Schlüsseln verschlüsselt, die in Google Cloud KMS verwaltet und nicht neben den Daten aufbewahrt werden. Der Block weiter unten führt auf, welche Felder versiegelt sind und welche lesbar bleiben."
+      "title": "Im Ruhezustand verschlüsselt.",
+      "body": "Deine Einträge und hochgeladenen Dateien sind im Ruhezustand verschlüsselt — \"im Ruhezustand\" bedeutet einfach: während sie gespeichert sind, nicht während sie übertragen werden. Sie liegen auf professionell verwalteten, gesicherten Servern, und Vaulto versiegelt die sensiblen Teile zusätzlich in der App selbst, bevor sie geschrieben werden: Namen von Objekten, Beschreibungen, Orte und Notizen, die von dir hochgeladenen Fotos und Scans sowie genaue Bewertungen werden mit Schlüsseln verschlüsselt, die in Google Cloud KMS verwaltet werden, statt neben den Daten gespeichert zu sein. Der Block unten zeigt, welche Felder versiegelt sind und welche lesbar bleiben."
     },
     {
       "title": "Passwörter werden nie im Klartext gespeichert.",
-      "body": "Wir „hashen“ dein Passwort mit einer starken, modernen Methode namens scrypt — ein Hash ist eine Einweg-Verwürfelung, die sich nicht wieder in dein Passwort zurückverwandeln lässt. Nicht einmal wir können es lesen."
+      "body": "Wir \"hashen\" dein Passwort mit einem starken, modernen Verfahren namens scrypt — ein Hash ist eine Einweg-Verschlüsselung, die nicht wieder in dein Passwort zurückverwandelt werden kann. Selbst wir können es nicht lesen."
     },
     {
       "title": "Kurzlebige Sitzungen.",
-      "body": "Der Anmelde-„Token“, der beweist, dass du es bist, läuft schnell ab und wird im Arbeitsspeicher gehalten. Der Token, der dich angemeldet hält, liegt in einem sicheren, skriptgeschützten Cookie — einer kleinen Browser-Datei, die schädliche Skripte auf einer Seite weder lesen noch stehlen können."
+      "body": "Das Anmelde-\"Token\", das bestätigt, dass du es bist, läuft schnell ab und wird im Speicher gehalten. Das Token, das dich angemeldet hält, liegt in einem sicheren, scriptgeschützten Cookie — einer kleinen Browserdatei, die schädliche Skripte auf einer Seite nicht lesen oder stehlen können."
     },
     {
       "title": "Gegen Missbrauch geschützt.",
-      "body": "Wir begrenzen, wie oft Anmeldung und andere sensible Aktionen hintereinander versucht werden können — das nennt man „Rate-Limiting“. Es blockiert das schnelle, wiederholte Raten, auf das automatisierte Angriffe setzen."
+      "body": "Wir begrenzen, wie oft Anmeldungen und andere sensible Aktionen hintereinander versucht werden können — das nennt man \"Rate-Limiting\". So wird das schnelle, wiederholte Raten blockiert, auf das automatisierte Angriffe angewiesen sind."
     },
     {
       "title": "Zugriffskontrollen.",
-      "body": "Der Tresor jeder Person ist von anderen Nutzern isoliert, und unser Support-Team kann deinen Tresor nicht einsehen — Vaulto hat keine Mitarbeiter-Kontoart, die einen solchen öffnen könnte."
+      "body": "Der Tresor jeder Person ist von anderen Nutzerinnen und Nutzern getrennt, und unser Support-Team kann deinen Tresor nicht durchsehen — Vaulto hat keinen Mitarbeitenden-Accounttyp, der einen öffnen könnte."
     }
   ],
   "promise": {
@@ -50,24 +50,24 @@
       "body": "Punkt."
     },
     {
-      "title": "Wir teilen nichts für Werbung.",
-      "body": "Deine Informationen werden nicht an Dritte weitergegeben, damit sie dich mit Werbung ansprechen."
+      "title": "Wir geben nichts für Werbung weiter.",
+      "body": "Deine Informationen werden nicht an Dritte weitergegeben, damit sie dich vermarkten können."
     },
     {
       "title": "Du hast die Kontrolle.",
-      "body": "Du entscheidest, was du hinzufügst — und was du entfernst."
+      "body": "Du entscheidest, was du hinzufügst — und was du wieder entfernst."
     }
   ],
   "yours": {
     "heading": "Deine Daten gehören dir",
-    "body": "Deine Daten gehören dir — exportiere jederzeit eine vollständige, maschinenlesbare Kopie deiner Einträge (JSON, CSV oder PDF) aus den Einstellungen. „Maschinenlesbar“ bedeutet eine Standarddatei, die eine andere App oder Tabellenkalkulation öffnen und weiterverwenden kann — kein gesperrtes PDF. Keine Bindung, kein Warten auf uns. (Du kannst außerdem ein ZIP-Archiv exportieren, das neben den strukturierten Daten auch deine hochgeladenen Originalfotos und -scans enthält.) Das unterstützt dein Recht auf Datenübertragbarkeit nach der GDPR — dem EU-Datenschutzgesetz (Artikel 20), das es dir erlaubt, deine Daten mitzunehmen."
+    "body": "Deine Daten gehören dir — exportiere jederzeit in den Einstellungen eine vollständige, maschinenlesbare Kopie deiner Einträge (JSON, CSV oder PDF). Maschinenlesbar bedeutet eine Standarddatei, die eine andere App oder eine Tabellenkalkulation öffnen und weiterverwenden kann — kein gesperrtes PDF. Kein Lock-in, kein Warten auf uns. (Du kannst auch ein ZIP-Archiv exportieren, das deine ursprünglich hochgeladenen Fotos und Scans zusammen mit dem strukturierten Datensatz enthält.) Das unterstützt dein Recht auf Datenübertragbarkeit nach GDPR — dem EU-Datenschutzgesetz (Article 20), das dir erlaubt, deine Daten mitzunehmen."
   },
   "honesty": {
-    "body": "<b>Klare Sprache, keine Übertreibung.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung, Verschlüsselung im Ruhezustand, die die App selbst vornimmt, mit in Google Cloud KMS verwalteten Schlüsseln, Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten bewusst <b>keine</b> „Ende-zu-Ende“- oder „Zero-Knowledge“-Verschlüsselung: Wir halten die Schlüssel und können deine Daten daher entschlüsseln, um den Dienst und die KI-Funktionen zu erbringen, die du anforderst. Ebenso wenig behaupten wir „Bank-Niveau“ oder irgendeine Zertifizierung, die wir nicht erworben haben. Hier steht, was versiegelt ist und was nicht. Verschlüsselt: die Bezeichnungen, Beschreibungen, Orte und Notizen, die du schreibst, die genauen Werte und die Dateien, die du hochlädst. Für unsere Server lesbar: die strukturierten Felder darum herum, damit dein Tresor weiterhin sortiert werden kann, ohne die versiegelten Teile zu öffnen — etwa Kategorie, Datumsangaben und Schlagwörter, Währung, Land, ein Institut oder eine Seriennummer, der Kaufpreis, wem ein Gegenstand gehört, und ein grober Wertbereich. Der Datenexport ist aktiv (oben). Wenn wir eine formelle Prüfung durch Dritte hinzufügen, bei der eine unabhängige Sicherheitsfirma uns überprüft, wird diese Seite das angeben.",
+    "body": "<b>Klare Sprache, keine Übertreibungen.</b> Wir beschreiben nur, was heute wahr ist: Verschlüsselung bei der Übertragung, Verschlüsselung im Ruhezustand, die von der App selbst angewendet wird, mit in Google Cloud KMS verwalteten Schlüsseln, Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrolle. Wir behaupten ausdrücklich <b>nicht</b>, \"Ende-zu-Ende\"- oder \"Zero-Knowledge\"-Verschlüsselung zu haben: Wir halten die Schlüssel, sodass wir deine Einträge entschlüsseln können, um den Dienst und die AI-Funktionen bereitzustellen, die du anforderst. Ebenso behaupten wir weder \"Bankniveau\" noch irgendeine Zertifizierung, die wir nicht erworben haben. Hier siehst du, was versiegelt ist und was nicht. Verschlüsselt: die Namen der Objekte, Beschreibungen, Orte und Notizen, die du schreibst, die genauen Bewertungen und die Dateien, die du hochlädst. Für unsere Server lesbar: die strukturierten Felder darum herum, damit dein Tresor weiter sortiert werden kann, ohne die versiegelten Teile zu öffnen — zum Beispiel Kategorie, Daten und Tags, Währung, Land, ein Institut oder eine Seriennummer, Kaufpreis, wem ein Objekt gehört und ein grober Wertebereich. Datenexport ist live (oben). Wenn wir ein formelles Audit durch Dritte hinzufügen, bei dem uns ein unabhängiges Sicherheitsunternehmen prüft, wird diese Seite das sagen.",
     "contact": "Bei Fragen zu Datenschutz oder Sicherheit kontaktiere"
   },
   "finalCta": {
-    "title": "Privat ab dem ersten Eintrag, den du hinzufügst.",
-    "body": "Starte kostenlos — dein Tresor gehört dir allein, und du kannst ihn jederzeit exportieren oder löschen."
+    "title": "Privat ab dem ersten Eintrag.",
+    "body": "Starte kostenlos — dein Tresor gehört nur dir, und du kannst ihn jederzeit exportieren oder löschen."
   }
 }

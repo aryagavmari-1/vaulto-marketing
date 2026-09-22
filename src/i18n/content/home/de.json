@@ -1,23 +1,23 @@
 {
   "meta": {
-    "title": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt",
-    "description": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — privat, mit starker Sicherheit. Starte kostenlos."
+    "title": "Inventar des Familienvermögens, Dokumenten-Tresor & Nettovermögen",
+    "description": "Erfasse dein Vermögen, bewahre Dokumente sicher auf und sieh dein gesamtes Nettovermögen — privat und sicher. Mach ein Foto; Vaulto übernimmt die Dateneingabe. Starte kostenlos."
   },
   "hero": {
-    "eyebrow": "Privat und sicher von Grund auf",
-    "heading": "Ein ruhiger, sicherer Ort für alles, was deine Familie besitzt.",
-    "sub": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Überblick — damit deine Familie immer weiß, was da ist und was als Nächstes zu tun ist.",
+    "eyebrow": "Privat & sicher — von Anfang an",
+    "heading": "Alles, was deine Familie besitzt, an einem privaten Ort.",
+    "sub": "Erfasse dein Vermögen, bewahre wichtige Dokumente sicher auf und behalte den Gesamtüberblick — und du musst nicht alles eintippen: Mach ein Foto und Vaulto liest es für dich aus.",
     "trust": [
-      "Verschlüsselt bei der Übertragung (TLS)",
-      "Deine Daten werden niemals verkauft",
-      "Für Familien entwickelt"
+      "Verschlüsselt bei der Übertragung und im Ruhezustand",
+      "Deine Daten werden nie verkauft",
+      "Für Familien gemacht"
     ],
     "art": {
       "cards": [
         {
           "icon": "home",
-          "label": "Familienhaus",
-          "sub": "Immobilie · Grundbuch & Versicherung angehängt"
+          "label": "Familienheim",
+          "sub": "Immobilie · Urkunde & Versicherung angehängt"
         },
         {
           "icon": "document",
@@ -26,32 +26,32 @@
         },
         {
           "icon": "chart",
-          "label": "Anlagen & Renten",
+          "label": "Investitionen & Renten",
           "sub": "Sammlung · 5 Einträge"
         }
       ],
-      "secured": "Gesichert",
+      "secured": "Geschützt",
       "lock": "Privater Speicher"
     }
   },
   "value": {
     "heading": "Alles an einem vertrauenswürdigen Ort",
-    "sub": "Keine Tabellen. Keine verstreuten Schubladen. Nur Klarheit.",
+    "sub": "Keine Tabellen. Keine verstreuten Schubladen. Einfach Klarheit.",
     "cards": [
       {
         "icon": "folders",
         "title": "Wisse, was du besitzt.",
-        "body": "Immobilien, Konten, Anlagen, Wertsachen, Renten — alles an einem organisierten Ort erfasst, nicht verteilt auf Schubladen und Tabellen."
+        "body": "Immobilien, Konten, Investitionen, Wertsachen, Renten — alles an einem geordneten Ort erfasst, statt über Schubladen und Tabellen verstreut."
       },
       {
         "icon": "shield",
         "title": "Bewahre es sicher auf.",
-        "body": "Speichere die wichtigen Dokumente — Urkunden, Policen, Kontoauszüge — privat und hinter starker Sicherheit."
+        "body": "Speichere die Dokumente, die wichtig sind — Urkunden, Policen, Auszüge — privat, geschützt durch starke Sicherheitsmaßnahmen."
       },
       {
         "icon": "compass",
         "title": "Plane mit Zuversicht.",
-        "body": "Behalte den Überblick und erhalte eine klare, kostenlose Übersicht, wenn du bereit bist, über Erbschaft, Testamente oder das, was danach kommt, nachzudenken."
+        "body": "Sieh das Gesamtbild und erhalte einen klaren, kostenlosen Überblick, wenn du über Erbe, Testament oder darüber, was als Nächstes passiert, nachdenken möchtest."
       }
     ]
   },
@@ -60,32 +60,32 @@
     "items": [
       {
         "title": "Füge hinzu, was du besitzt.",
-        "body": "Mach ein Foto oder lade ein Dokument hoch — Vaulto kann es lesen und Details vorschlagen, damit du nicht alles von Hand eingeben musst."
+        "body": "Mach ein Foto oder lade ein Dokument hoch — Vaulto kann es lesen und die Details vorschlagen, damit du nicht alles von Hand eintippen musst."
       },
       {
         "title": "Lass Vaulto es organisieren.",
-        "body": "Gruppiere Vermögenswerte in Sammlungen, ergänze die wichtigsten Fakten und halte Dokumente dort angehängt, wo sie hingehören."
+        "body": "Ordne Vermögenswerte in Sammlungen, ergänze die wichtigsten Angaben und behalte Dokumente dort angehängt, wo sie hingehören."
       },
       {
-        "title": "Behalte den Überblick.",
+        "title": "Sieh das ganze Bild.",
         "body": "Das Vermögen deiner Familie in einer Ansicht — bereit, es mit den wichtigen Menschen zu teilen und vorauszuplanen."
       }
     ]
   },
   "trustBand": {
-    "heading": "Entwickelt, damit du ihm deine sensibelsten Informationen anvertrauen kannst.",
-    "lead": "Deine Daten werden auf dem Weg zu uns verschlüsselt, deine Datenbank ist im Ruhezustand verschlüsselt und deine Dateien liegen in privatem Speicher. Der Zugriff ist geschützt, und wir verkaufen deine Informationen niemals.",
-    "cta": "Sieh dir genau an, wie wir alles sicher halten →",
+    "heading": "Entwickelt, um mit deinen sensibelsten Informationen vertrauenswürdig umzugehen.",
+    "lead": "Deine Daten werden auf dem Weg zu uns verschlüsselt, deine Einträge und hochgeladenen Dateien werden im Ruhezustand verschlüsselt, und Vaulto versiegelt die sensiblen Teile zusätzlich innerhalb der App selbst — mit Schlüsseln, die in Google Cloud KMS verwaltet werden. Deine Dateien werden in privatem Speicher aufbewahrt, der Zugriff ist geschützt, und wir verkaufen deine Informationen nie.",
+    "cta": "Sieh genau, wie wir sie sicher aufbewahren →",
     "proof": [
-      "Verschlüsselt bei der Übertragung (TLS); Dateien in privatem Speicher",
+      "Verschlüsselt bei der Übertragung (TLS) und im Ruhezustand; Dateien in privatem Speicher",
       "Passwörter gehasht — selbst wir können sie nicht lesen",
       "Kurzlebige, browsergeschützte Sitzungen",
-      "Der Tresor jeder Person ist von anderen Nutzern isoliert",
-      "Wir verkaufen oder teilen deine Daten niemals"
+      "Der Tresor jeder Person ist von anderen Nutzer:innen getrennt",
+      "Wir verkaufen oder teilen deine Daten nie"
     ]
   },
   "finalCta": {
-    "title": "Starte noch heute mit dem Tresor deiner Familie.",
+    "title": "Starte heute den Tresor deiner Familie.",
     "body": "Der Einstieg ist kostenlos. Keine Tabellen nötig."
   }
 }

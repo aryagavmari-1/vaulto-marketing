@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Preguntas frecuentes",
-    "description": "Respuestas sobre Vaulto: si mis datos están seguros, cuánto cuesta, qué puedes guardar y cómo la captura asistida por IA te ahorra escribir."
+    "description": "Respuestas sobre Vaulto: si mis datos están seguros, cuánto cuesta, qué puedes guardar y cómo la captura asistida por IA te ahorra tener que escribir."
   },
   "crumbs": {
     "home": "Inicio",
@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "¿Mis datos están seguros?",
-      "a": "Sí. Tu conexión se cifra en tránsito con TLS —el cifrado del icono del candado (HTTPS) que ves en sitios de banca y compras—, de modo que tus datos se cifran mientras viajan y nadie por el camino puede leerlos. La base de datos de tu cuenta se cifra en reposo (mientras está almacenada) en servidores gestionados profesionalmente y protegidos, y los archivos subidos se guardan en almacenamiento privado accesible solo mediante enlaces firmados de corta duración. Tu contraseña nunca se guarda en texto plano y el acceso está estrictamente limitado a tu cuenta.",
+      "a": "Sí. Tu conexión se cifra en tránsito con TLS — el cifrado del icono del candado (HTTPS) que ves en sitios bancarios y de compras — para que tus datos vayan codificados mientras viajan y nadie por el camino pueda leerlos. Tus registros y archivos subidos se cifran en reposo (mientras están almacenados) en servidores seguros y gestionados profesionalmente, y Vaulto vuelve a sellar las partes sensibles dentro de la propia aplicación — nombres de elementos, descripciones, ubicaciones y notas, las fotos y escaneos que subes, y las valoraciones exactas — con claves gestionadas en Google Cloud KMS. Los archivos subidos se guardan en almacenamiento privado accesible solo mediante enlaces firmados de corta duración. Tu contraseña nunca se almacena en texto plano y el acceso se limita estrictamente a tu cuenta.",
       "onward": "Ver cómo lo mantenemos seguro →"
     },
     {
@@ -25,16 +25,16 @@
     },
     {
       "q": "¿Cuánto cuesta?",
-      "a": "Empezar con Vaulto es gratis. Hay informes de planificación más avanzados disponibles cuando quieras; siempre verás qué está incluido antes de que se te cobre nada."
+      "a": "Empezar con Vaulto es gratis. Hay informes de planificación más detallados disponibles cuando estés listo; siempre verás qué está incluido antes de que se te cobre nada."
     },
     {
       "q": "¿Tengo que introducirlo todo a mano?",
-      "a": "No — sube una foto o un documento y Vaulto puede leerlo y sugerirte los datos.",
+      "a": "No — sube una foto o documento y Vaulto puede leerlo y sugerirte los detalles.",
       "onward": "Ver cómo funciona la captura →"
     },
     {
       "q": "¿Para quién es Vaulto?",
-      "a": "Para familias y personas que quieren un lugar de confianza para saber lo que tienen, guardar documentos importantes de forma segura y planificar con tiempo."
+      "a": "Para familias y personas que quieren un lugar de confianza para saber lo que tienen, mantener a salvo documentos importantes y planificar con antelación."
     },
     {
       "q": "¿Qué puedo guardar?",

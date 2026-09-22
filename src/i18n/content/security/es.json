@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Seguridad y privacidad",
-    "description": "Cómo Vaulto protege la información de tu familia: cifrado en tránsito, una base de datos cifrada, archivos en almacenamiento privado, contraseñas con hash y control de acceso estricto. En lenguaje claro, sin exageraciones."
+    "description": "Cómo Vaulto protege la información de tu familia — cifrado en tránsito, cifrado en reposo con un sellado a nivel de la app para campos sensibles (Google Cloud KMS), archivos en almacenamiento privado, contraseñas con hash y control de acceso estricto."
   },
   "crumbs": {
     "home": "Inicio",
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Seguridad y privacidad",
     "heading": "La información de tu familia, protegida.",
-    "intro": "Vaulto guarda datos sensibles — lo que tienes, dónde está, los documentos que lo demuestran. Nos tomamos esa responsabilidad muy en serio. Así es exactamente como lo protegemos, en lenguaje claro."
+    "intro": "Vaulto guarda datos sensibles — lo que tienes, dónde está, los documentos que lo demuestran. Nos tomamos esa responsabilidad muy en serio. Aquí te explicamos exactamente cómo lo protegemos, en lenguaje claro."
   },
   "protect": {
     "heading": "Cómo protegemos tus datos"
@@ -18,27 +18,27 @@
   "protections": [
     {
       "title": "Cifrado en tránsito.",
-      "body": "Cada conexión con Vaulto usa TLS (HTTPS): el mismo cifrado del icono del candado que ves en sitios de banca y compras. Tus datos se cifran mientras viajan entre tú y nosotros, de modo que nadie por el camino puede leerlos."
+      "body": "Cada conexión a Vaulto usa TLS (HTTPS) — el mismo cifrado del icono del candado que ves en sitios bancarios y de compras. Tus datos se codifican mientras viajan entre tú y nosotros, para que nadie en medio pueda leerlos."
     },
     {
       "title": "Cifrado en reposo.",
-      "body": "Tus registros y archivos subidos están cifrados en reposo: «en reposo» simplemente significa mientras están almacenados, no mientras se mueven. Residen en servidores gestionados profesionalmente y protegidos, y Vaulto cifra además las partes sensibles dentro de la propia app antes de escribirlas: los nombres, las descripciones, las ubicaciones y las notas, las fotos y escaneos que subes y las valoraciones exactas se cifran con claves gestionadas en Google Cloud KMS en lugar de guardarse junto a los datos. El bloque de más abajo indica qué campos están sellados y cuáles siguen siendo legibles."
+      "body": "Tus registros y archivos subidos están cifrados en reposo — «en reposo» simplemente significa mientras están almacenados, no mientras se mueven. Se guardan en servidores protegidos y gestionados profesionalmente, y Vaulto vuelve a sellar las partes sensibles dentro de la propia app antes de escribirlas: los nombres de los elementos, las descripciones, ubicaciones y notas, las fotos y escaneos que subes, y las valoraciones exactas se cifran con claves gestionadas en Google Cloud KMS en lugar de guardarse junto a los datos. El bloque de abajo indica qué campos están sellados y cuáles permanecen legibles."
     },
     {
       "title": "Las contraseñas nunca se guardan en texto plano.",
-      "body": "«Hasheamos» tu contraseña con un método sólido y moderno llamado scrypt: un hash es un revoltijo de un solo sentido que no puede deshacerse para recuperar tu contraseña. Ni siquiera nosotros podemos leerla."
+      "body": "Aplicamos un «hash» a tu contraseña con un método fuerte y moderno llamado scrypt — un hash es una codificación de una sola dirección que no puede volver a convertirse en tu contraseña. Ni siquiera nosotros podemos leerla."
     },
     {
       "title": "Sesiones de corta duración.",
-      "body": "El «token» de inicio de sesión que demuestra que eres tú caduca rápido y se mantiene en memoria. El token que mantiene tu sesión iniciada vive en una cookie segura y protegida contra scripts: un pequeño archivo del navegador que los scripts dañinos de una página no pueden leer ni robar."
+      "body": "El «token» de inicio de sesión que demuestra que eres tú caduca rápidamente y se guarda en memoria. El token que mantiene tu sesión iniciada vive en una cookie segura y a prueba de scripts — un pequeño archivo del navegador que los scripts maliciosos de una página no pueden leer ni robar."
     },
     {
       "title": "Protección contra abusos.",
-      "body": "Limitamos cuántas veces seguidas se pueden intentar el inicio de sesión y otras acciones sensibles: esto se llama «limitación de frecuencia» (rate-limiting). Bloquea las conjeturas rápidas y repetidas en las que se basan los ataques automatizados."
+      "body": "Limitamos cuántas veces seguidas se puede intentar iniciar sesión y otras acciones sensibles — esto se llama «rate-limiting». Bloquea las suposiciones rápidas y repetidas de las que dependen los ataques automatizados."
     },
     {
       "title": "Controles de acceso.",
-      "body": "La bóveda de cada persona está aislada de los demás usuarios, y nuestro equipo de soporte no puede consultar tu bóveda: Vaulto no tiene ningún tipo de cuenta de personal que pudiera abrirla."
+      "body": "La bóveda de cada persona está aislada de la de otros usuarios, y nuestro equipo de soporte no puede navegar por tu bóveda — Vaulto no tiene ningún tipo de cuenta de personal que pueda abrir una."
     }
   ],
   "promise": {
@@ -47,10 +47,10 @@
   "promises": [
     {
       "title": "Nunca vendemos tus datos.",
-      "body": "Punto."
+      "body": "Punto final."
     },
     {
-      "title": "No compartimos datos para publicidad.",
+      "title": "No los compartimos para hacer publicidad.",
       "body": "Tu información no se entrega a terceros para hacerte marketing."
     },
     {
@@ -60,14 +60,14 @@
   ],
   "yours": {
     "heading": "Tus datos son tuyos",
-    "body": "Tus datos son tuyos: exporta una copia completa y legible por máquina de tus registros (JSON, CSV o PDF) cuando quieras, desde Ajustes. «Legible por máquina» significa un archivo estándar que otra app o una hoja de cálculo pueden abrir y reutilizar, no un PDF bloqueado. Sin ataduras, sin esperar a que te lo demos. (También puedes exportar un archivo ZIP que incluye tus fotos y escaneos originales junto con el registro estructurado.) Esto respalda tu derecho a la portabilidad de datos del GDPR, la ley de privacidad de la UE (artículo 20) que te permite llevarte tus datos contigo."
+    "body": "Tus datos son tuyos — exporta una copia completa y legible por máquina de tus registros (JSON, CSV o PDF) en cualquier momento, desde Ajustes. Legible por máquina significa un archivo estándar que otra app o una hoja de cálculo puede abrir y reutilizar — no un PDF bloqueado. Sin dependencia, sin esperas por nuestra parte. (También puedes exportar un archivo ZIP que incluye tus fotos y escaneos originales subidos junto con el registro estructurado). Esto respalda tu derecho a la portabilidad de datos según el GDPR — la ley de privacidad de la UE (Article 20) que te permite llevarte tus datos."
   },
   "honesty": {
-    "body": "<b>Lenguaje claro, sin exagerar.</b> Describimos solo lo que es cierto hoy: cifrado en tránsito, cifrado en reposo aplicado por la propia app con claves gestionadas en Google Cloud KMS, archivos guardados en almacenamiento privado, contraseñas hasheadas y control de acceso estricto. Deliberadamente <b>no</b> afirmamos que el cifrado sea «de extremo a extremo» ni «de conocimiento cero»: nosotros tenemos las claves, así que podemos descifrar tus registros para prestar el servicio y las funciones de IA que nos pidas. Tampoco afirmamos «nivel bancario» ni ninguna certificación que no hayamos obtenido. Esto es lo que está sellado y lo que no. Cifrado: los nombres, las descripciones, las ubicaciones y las notas que escribes, las valoraciones exactas y los archivos que subes. Legible para nuestros servidores: los campos estructurados que los rodean, para que tu bóveda pueda seguir ordenándose sin abrir las partes selladas: cosas como la categoría, las fechas y las etiquetas, la moneda, el país, una entidad o un número de serie, el precio de compra, a quién pertenece un objeto y un rango de valor aproximado. La exportación de datos ya está disponible (arriba). Cuando añadamos una auditoría formal de terceros, en la que una empresa de seguridad independiente nos revise, esta página lo dirá.",
+    "body": "<b>Lenguaje claro, sin exagerar.</b> Describimos solo lo que es cierto hoy: cifrado en tránsito, cifrado en reposo aplicado por la propia app con claves gestionadas en Google Cloud KMS, archivos guardados en almacenamiento privado, contraseñas con hash y control de acceso estricto. Deliberadamente <b>no</b> afirmamos tener cifrado «end-to-end» ni «zero-knowledge»: nosotros tenemos las claves, así que podemos descifrar tus registros para prestar el servicio y las funciones de IA que nos pidas. Tampoco afirmamos tener nivel «bank-level» ni ninguna certificación que no hayamos obtenido. Aquí tienes qué está sellado y qué no. Cifrado: los nombres de los elementos, las descripciones, ubicaciones y notas que escribes, las valoraciones exactas y los archivos que subes. Legible para nuestros servidores: los campos estructurados de alrededor, para que tu bóveda pueda seguir ordenándose sin abrir las partes selladas — cosas como categoría, fechas y etiquetas, moneda, país, una institución o número de serie, precio de compra, a quién pertenece un elemento y una banda de valor aproximada. La exportación de datos está activa (arriba). Cuando añadamos una auditoría formal de terceros, en la que una empresa de seguridad independiente nos revise, esta página lo indicará.",
     "contact": "Para preguntas sobre privacidad o seguridad, contacta con"
   },
   "finalCta": {
     "title": "Privado desde lo primero que añades.",
-    "body": "Empieza gratis: tu bóveda es solo tuya y puedes exportarla o eliminarla cuando quieras."
+    "body": "Empieza gratis — tu bóveda es solo tuya, y puedes exportarla o eliminarla cuando quieras."
   }
 }

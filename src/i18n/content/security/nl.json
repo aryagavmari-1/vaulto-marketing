@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Beveiliging & privacy",
-    "description": "Hoe Vaulto de informatie van je gezin beschermt: versleuteling tijdens verzending, een versleutelde database, bestanden in privéopslag, gehashte wachtwoorden en strikte toegangscontrole. In duidelijke taal, zonder overdreven claims."
+    "description": "Hoe Vaulto de informatie van je gezin beschermt — versleuteling tijdens verzending, versleuteling van opgeslagen gegevens met een app-laagzegel voor gevoelige velden (Google Cloud KMS), bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole."
   },
   "crumbs": {
     "home": "Home",
@@ -10,7 +10,7 @@
   "hero": {
     "eyebrow": "Beveiliging & privacy",
     "heading": "De informatie van je gezin, beschermd.",
-    "intro": "Vaulto bevat gevoelige gegevens — wat je bezit, waar het is, en de documenten die dat bewijzen. We nemen die verantwoordelijkheid serieus. Dit is precies hoe we die beschermen, in heldere taal."
+    "intro": "Vaulto bewaart gevoelige gegevens — wat je bezit, waar het is, de documenten die dat bewijzen. We nemen die verantwoordelijkheid serieus. Hier lees je precies hoe we dat beschermen, in duidelijke taal."
   },
   "protect": {
     "heading": "Hoe we je gegevens beschermen"
@@ -18,27 +18,27 @@
   "protections": [
     {
       "title": "Versleuteld tijdens verzending.",
-      "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS) — dezelfde versleuteling met het hangslot-pictogram die je op bank- en winkelsites ziet. Je gegevens worden versleuteld terwijl ze tussen jou en ons onderweg zijn, zodat niemand ertussen ze kan lezen."
+      "body": "Elke verbinding met Vaulto gebruikt TLS (HTTPS) — dezelfde versleuteling met hangslot-icoon die je ziet op bank- en webwinkelsites. Je gegevens worden versleuteld terwijl ze tussen jou en ons reizen, zodat niemand ertussen ze kan lezen."
     },
     {
-      "title": "Versleuteld in rust.",
-      "body": "Je gegevens en geüploade bestanden zijn versleuteld in rust — \"in rust\" betekent simpelweg terwijl ze zijn opgeslagen, niet terwijl ze onderweg zijn. Ze staan op professioneel beheerde, beveiligde servers, en Vaulto versleutelt de gevoelige delen daarbovenop in de app zelf voordat ze worden weggeschreven: de namen, beschrijvingen, locaties en notities, de foto's en scans die je uploadt en de exacte waarderingen worden versleuteld met sleutels die in Google Cloud KMS worden beheerd in plaats van naast de gegevens te worden bewaard. Het blok hieronder zet uiteen welke velden verzegeld zijn en welke leesbaar blijven."
+      "title": "Versleuteld wanneer opgeslagen.",
+      "body": "Je gegevens en geüploade bestanden zijn versleuteld wanneer ze zijn opgeslagen — \"wanneer opgeslagen\" betekent simpelweg terwijl ze bewaard worden, niet terwijl ze onderweg zijn. Ze staan op professioneel beheerde, beveiligde servers, en Vaulto verzegelt de gevoelige delen nog eens binnen de app zelf voordat ze worden weggeschreven: itemnamen, beschrijvingen, locaties en notities, de foto's en scans die je uploadt, en exacte waarderingen worden versleuteld met sleutels die worden beheerd in Google Cloud KMS in plaats van naast de gegevens te worden bewaard. Het blok hieronder laat zien welke velden verzegeld zijn en welke leesbaar blijven."
     },
     {
       "title": "Wachtwoorden worden nooit onversleuteld opgeslagen.",
       "body": "We \"hashen\" je wachtwoord met een sterke, moderne methode genaamd scrypt — een hash is een eenrichtingsversleuteling die niet kan worden teruggedraaid naar je wachtwoord. Zelfs wij kunnen het niet lezen."
     },
     {
-      "title": "Kortdurende sessies.",
-      "body": "Het aanmeld-\"token\" dat bewijst dat jij het bent, verloopt snel en wordt in het geheugen bewaard. Het token dat je aangemeld houdt, zit in een veilige, scriptbestendige cookie — een klein browserbestand dat schadelijke scripts op een pagina niet kunnen lezen of stelen."
+      "title": "Sessies met korte geldigheid.",
+      "body": "Het inlog-\"token\" dat bewijst dat jij het bent, verloopt snel en wordt in het geheugen bewaard. Het token dat je ingelogd houdt, staat in een veilige, scriptbestendige cookie — een klein browserbestand dat schadelijke scripts op een pagina niet kunnen lezen of stelen."
     },
     {
       "title": "Beschermd tegen misbruik.",
-      "body": "We beperken hoe vaak achter elkaar aanmelden en andere gevoelige acties kunnen worden geprobeerd — dit heet \"rate-limiting\". Het blokkeert het snelle, herhaalde gokken waar geautomatiseerde aanvallen op steunen."
+      "body": "We beperken hoe vaak inloggen en andere gevoelige handelingen achter elkaar kunnen worden geprobeerd — dit heet \"rate-limiting.\" Het blokkeert het snelle, herhaalde raden waar geautomatiseerde aanvallen op vertrouwen."
     },
     {
-      "title": "Toegangscontrole.",
-      "body": "De kluis van elke persoon is geïsoleerd van andere gebruikers, en ons supportteam kan je kluis niet inzien — Vaulto heeft geen accounttype voor medewerkers dat er een zou kunnen openen."
+      "title": "Toegangscontroles.",
+      "body": "De kluis van elke persoon is afgeschermd van andere gebruikers, en ons supportteam kan niet door je kluis bladeren — Vaulto heeft geen personeelaccounttype waarmee er een geopend kan worden."
     }
   ],
   "promise": {
@@ -47,11 +47,11 @@
   "promises": [
     {
       "title": "We verkopen je gegevens nooit.",
-      "body": "Punt."
+      "body": "Punt uit."
     },
     {
       "title": "We delen niets voor advertenties.",
-      "body": "Je informatie wordt niet aan derden gegeven om je reclame te sturen."
+      "body": "Je informatie wordt niet aan derden gegeven om je te benaderen met marketing."
     },
     {
       "title": "Jij hebt de controle.",
@@ -60,14 +60,14 @@
   ],
   "yours": {
     "heading": "Je gegevens zijn van jou",
-    "body": "Je gegevens zijn van jou — exporteer wanneer je wilt een volledige, machineleesbare kopie van je records (JSON, CSV of PDF) vanuit Instellingen. \"Machineleesbaar\" betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — geen vergrendelde PDF. Geen lock-in, geen wachten op ons. (Je kunt ook een ZIP-archief exporteren met je originele geüploade foto's en scans naast het gestructureerde record.) Dit ondersteunt je recht op gegevensoverdraagbaarheid onder de GDPR — de EU-privacywet (artikel 20) waarmee je je gegevens kunt meenemen."
+    "body": "Je gegevens zijn van jou — exporteer op elk moment een volledige, machineleesbare kopie van je gegevens (JSON, CSV, of PDF) vanuit Instellingen. Machineleesbaar betekent een standaardbestand dat een andere app of spreadsheet kan openen en hergebruiken — niet een vergrendelde PDF. Geen lock-in, niet wachten op ons. (Je kunt ook een ZIP-archief exporteren dat je originele geüploade foto's en scans bevat naast het gestructureerde overzicht.) Dit ondersteunt je recht op dataportabiliteit onder GDPR — de privacywet van de EU (Article 20) die je het recht geeft je gegevens mee te nemen."
   },
   "honesty": {
-    "body": "<b>Heldere taal, geen overdrijving.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, versleuteling in rust die de app zelf toepast met sleutels beheerd in Google Cloud KMS, bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>geen</b> \"end-to-end\"- of \"zero-knowledge\"-versleuteling: wij hebben de sleutels, dus we kunnen je gegevens ontsleutelen om de dienst en de AI-functies te leveren waar je om vraagt. We claimen evenmin \"bankniveau\" of enige certificering die we niet hebben verdiend. Dit is wat verzegeld is en wat niet. Versleuteld: de namen, beschrijvingen, locaties en notities die je schrijft, de exacte waarderingen en de bestanden die je uploadt. Leesbaar voor onze servers: de gestructureerde velden eromheen, zodat je kluis nog steeds gesorteerd kan worden zonder de verzegelde delen te openen — dingen als de categorie, de datums en labels, de valuta, het land, een instelling of serienummer, de aankoopprijs, van wie een voorwerp is en een grof waardebereik. Gegevensexport is actief (hierboven). Wanneer we een formele audit door derden toevoegen, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
+    "body": "<b>Duidelijke taal, zonder te veel te claimen.</b> We beschrijven alleen wat vandaag waar is: versleuteling tijdens verzending, versleuteling van opgeslagen gegevens toegepast door de app zelf met sleutels beheerd in Google Cloud KMS, bestanden bewaard in privéopslag, gehashte wachtwoorden, strikte toegangscontrole. We claimen bewust <b>niet</b> \"end-to-end\"- of \"zero-knowledge\"-versleuteling: wij beheren de sleutels, dus we kunnen je gegevens ontsleutelen om de dienst uit te voeren en de AI-functies te leveren waar je om vraagt. Ook claimen we geen \"bank-level\" beveiliging of een certificering die we niet hebben behaald. Hier zie je wat verzegeld is en wat niet. Versleuteld: de itemnamen, beschrijvingen, locaties en notities die je schrijft, de exacte waarderingen en de bestanden die je uploadt. Leesbaar voor onze servers: de gestructureerde velden eromheen, zodat je kluis nog steeds kan worden gesorteerd zonder de verzegelde delen te openen — zaken zoals categorie, datums en tags, valuta, land, een instelling of serienummer, aankoopprijs, van wie een item is, en een grove waardeklasse. Gegevensexport is live (hierboven). Wanneer we een formele audit door een derde partij toevoegen, waarbij een onafhankelijk beveiligingsbedrijf ons beoordeelt, zal deze pagina dat vermelden.",
     "contact": "Voor vragen over privacy of beveiliging, neem contact op met"
   },
   "finalCta": {
-    "title": "Privé vanaf het eerste wat je toevoegt.",
-    "body": "Begin gratis — je kluis is alleen van jou, en je kunt hem exporteren of verwijderen wanneer je wilt."
+    "title": "Privé vanaf het eerste dat je toevoegt.",
+    "body": "Begin gratis — je kluis is alleen van jou, en je kunt die exporteren of verwijderen wanneer je maar wilt."
   }
 }
