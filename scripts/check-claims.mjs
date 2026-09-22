@@ -215,7 +215,13 @@ function main() {
   }
 
   if (problems.length || violations.length) process.exit(1)
-  console.log('\n✓ no retired claims found\n')
+  // State the scope on the success path. A bare "no retired claims found" reads
+  // as "this claim appears nowhere" — which is how C-005 stayed green here while
+  // the audit-trail over-claim shipped in 16/16 product locales (ARY-4252 §3.1).
+  console.log('\n✓ no retired claims found in marketing copy')
+  console.log('  Scope: this repo only. The guard cannot see the product repo')
+  console.log('  (web app, iOS, Android) — a green run is not evidence a claim is')
+  console.log('  unused. See scripts/claims/README.md#repo-scope.\n')
 }
 
 main()

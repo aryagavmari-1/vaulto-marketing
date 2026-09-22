@@ -9,7 +9,9 @@ unlikely **for English copy**. It runs in `prebuild`, so it gates both the
 GitHub Actions deploy workflow and Render's own auto-deploy — nothing reaches
 the site without passing. The rule patterns are English-only, so a green run is
 necessary but **not sufficient** for the other 15 locales — see
-[Locale coverage](#locale-coverage) before citing this guard as coverage.
+[Locale coverage](#locale-coverage) before citing this guard as coverage. It
+also only ever sees *this* repo, never the product — see
+[Repo scope](#repo-scope) before reading a green run as "not claimed anywhere".
 
 ```
 npm run guard:claims       # scan the site for retired wording
@@ -28,6 +30,39 @@ a bad regex edit fails the deploy instead of going quiet.
 `src/i18n` (all 16 locales), `src/content/blog`, `src/content/blog-i18n`,
 `src/pages`, `src/components`, `src/layouts`, `src/config` — every `.json`,
 `.md`, `.astro`, and `.ts` under them.
+
+## Repo scope
+
+**`SCAN_DIRS` is marketing-only. The guard has never been able to see the
+product repo, and a green run means "not in marketing copy" — not "not claimed
+anywhere".** The success line says so; this section is the long version.
+
+Everything in the list above lives in this repository. The product's user-facing
+copy lives in a different one and is invisible to `check-claims.mjs`:
+
+| surface | where the copy lives (product repo) |
+|---|---|
+| shared strings, 16 locales | `lib/i18n/src/translations.ts` |
+| web app pages | `artifacts/asset-vault/src/pages/` |
+| iOS | `artifacts/vault-ios/.../I18n/*.lproj/Localizable.strings` |
+| Android | `artifacts/vault-android-app/src/main/res/values-*/strings.xml`, `.../assets/i18n.json` |
+
+This is not theoretical. `C-005` was green here for months while *"Every
+significant action is logged in the audit trail below."* shipped in **16/16
+locales** on web and Android, in production, above an always-empty panel
+([ARY-4252](/ARY/issues/ARY-4252) §3.1, cut in
+[ARY-4259](/ARY/issues/ARY-4259)). The rule fired correctly; the file was simply
+outside `SCAN_DIRS`.
+
+**So: enforcing a ❌ row needs its own guard in the product repo.** The pattern
+to copy is `artifacts/asset-vault/src/lib/no-audit-claim.test.ts` (ARY-4259,
+modelled on `no-payment-surface.test.ts` / ARY-1371) — a unit test that asserts
+the retired wording is absent from every locale in `translations.ts`, run by the
+product repo's own CI. A retired claim that can reach both surfaces needs an
+entry here **and** a test there; neither one covers the other.
+
+Widening `SCAN_DIRS` across repos is a separate, larger question and is
+deliberately not done here.
 
 ## Locale coverage
 
@@ -174,6 +209,9 @@ has one, and it renders into all 226 pages. In `.astro`, put the marker in the
 Be honest about what it does not do. It is a cheap backstop under Brand & Trust
 review, never a replacement for it.
 
+- **Marketing copy only.** The product repo is outside `SCAN_DIRS` and always
+  has been — see [Repo scope](#repo-scope). A green run says nothing about what
+  the app ships.
 - **English patterns only.** Translated copy carries the same claim in 15 other
   languages and the regexes will not see it. This is not theoretical: the stale
   `/features` export claim was caught in `en.json` and had to be removed from 15
