@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Säkerhet och integritet",
-    "description": "Hur Vaulto skyddar din familjs information: kryptering under överföring, en krypterad databas, filer i privat lagring, hashade lösenord och strikt åtkomstkontroll. På ett tydligt språk, utan överdrifter."
+    "description": "Hur Vaulto skyddar din familjs information — kryptering under överföring, kryptering i vila med ett skyddslager i appen för känsliga fält (Google Cloud KMS), filer i privat lagring, hashade lösenord, strikt åtkomstkontroll."
   },
   "crumbs": {
     "home": "Hem",
@@ -10,35 +10,35 @@
   "hero": {
     "eyebrow": "Säkerhet och integritet",
     "heading": "Din familjs information, skyddad.",
-    "intro": "Vaulto lagrar känsliga uppgifter — vad du äger, var det finns och dokumenten som bevisar det. Vi tar det ansvaret på stort allvar. Här är exakt hur vi skyddar det, på klarspråk."
+    "intro": "Vaulto innehåller känsliga uppgifter — vad du äger, var det finns och dokumenten som bevisar det. Vi tar det ansvaret på allvar. Här är exakt hur vi skyddar det, på vanlig svenska."
   },
   "protect": {
-    "heading": "Så skyddar vi dina data"
+    "heading": "Så skyddar vi dina uppgifter"
   },
   "protections": [
     {
       "title": "Krypterat under överföring.",
-      "body": "Varje anslutning till Vaulto använder TLS (HTTPS) — samma kryptering med hänglåsikonen som du ser på bank- och shoppingsajter. Dina data krypteras medan de färdas mellan dig och oss, så att ingen däremellan kan läsa dem."
+      "body": "Varje anslutning till Vaulto använder TLS (HTTPS) — samma kryptering bakom hänglåsikonen som du ser på bank- och köpsajter. Dina uppgifter görs oläsliga medan de färdas mellan dig och oss, så att ingen däremellan kan läsa dem."
     },
     {
       "title": "Krypterat i vila.",
-      "body": "Dina uppgifter och uppladdade filer är krypterade i vila — \"i vila\" betyder helt enkelt medan de lagras, inte medan de är i rörelse. De ligger på professionellt hanterade, säkrade servrar, och Vaulto krypterar dessutom de känsliga delarna i själva appen innan de skrivs: namn, beskrivningar, platser och anteckningar, de foton och skanningar du laddar upp och de exakta värderingarna krypteras med nycklar som hanteras i Google Cloud KMS i stället för att förvaras bredvid data. Blocket längre ned anger vilka fält som är förseglade och vilka som förblir läsbara."
+      "body": "Dina register och uppladdade filer är krypterade i vila — \"i vila\" betyder helt enkelt medan de lagras, inte medan de flyttas. De ligger på professionellt hanterade, skyddade servrar, och Vaulto förseglar de känsliga delarna en gång till inne i själva appen innan de skrivs: objektnamn, beskrivningar, platser och anteckningar, fotona och skanningarna du laddar upp samt exakta värderingar krypteras med nycklar som hanteras i Google Cloud KMS i stället för att förvaras bredvid uppgifterna. Blocket nedan visar vilka fält som är förseglade och vilka som förblir läsbara."
     },
     {
       "title": "Lösenord lagras aldrig i klartext.",
-      "body": "Vi \"hashar\" ditt lösenord med en stark, modern metod som heter scrypt — en hash är en envägsförvrängning som inte kan göras om till ditt lösenord. Inte ens vi kan läsa det."
+      "body": "Vi \"hashar\" ditt lösenord med en stark, modern metod som heter scrypt — en hash är en envägsscrambling som inte kan omvandlas tillbaka till ditt lösenord. Inte ens vi kan läsa det."
     },
     {
       "title": "Kortlivade sessioner.",
-      "body": "Inloggnings-\"token\" som bevisar att det är du upphör snabbt och hålls i minnet. Token som håller dig inloggad finns i en säker, skriptskyddad cookie — en liten webbläsarfil som skadliga skript på en sida inte kan läsa eller stjäla."
+      "body": "Den inloggnings-\"token\" som visar att det är du går snabbt ut och lagras i minnet. Den token som håller dig inloggad finns i en säker, skriptskyddad cookie — en liten webbläsarfil som skadliga skript på en sida inte kan läsa eller stjäla."
     },
     {
       "title": "Skydd mot missbruk.",
-      "body": "Vi begränsar hur många gånger i rad inloggning och andra känsliga åtgärder kan försökas — detta kallas \"rate-limiting\" (frekvensbegränsning). Det blockerar de snabba, upprepade gissningar som automatiserade attacker bygger på."
+      "body": "Vi begränsar hur många gånger inloggning och andra känsliga åtgärder kan prövas i följd — detta kallas \"rate-limiting.\" Det stoppar det snabba, upprepade gissandet som automatiserade attacker bygger på."
     },
     {
       "title": "Åtkomstkontroller.",
-      "body": "Varje persons valv är isolerat från andra användare, och vårt supportteam kan inte se ditt valv — Vaulto har ingen kontotyp för anställda som skulle kunna öppna ett sådant."
+      "body": "Varje persons valv är isolerat från andra användare, och vårt supportteam kan inte bläddra i ditt valv — Vaulto har ingen personalkontotyp som skulle kunna öppna ett."
     }
   ],
   "promise": {
@@ -46,12 +46,12 @@
   },
   "promises": [
     {
-      "title": "Vi säljer aldrig dina data.",
+      "title": "Vi säljer aldrig dina uppgifter.",
       "body": "Punkt slut."
     },
     {
       "title": "Vi delar inte för reklam.",
-      "body": "Din information lämnas inte ut till tredje parter för att marknadsföra till dig."
+      "body": "Din information lämnas inte ut till tredje part för att marknadsföra till dig."
     },
     {
       "title": "Du har kontrollen.",
@@ -59,15 +59,15 @@
     }
   ],
   "yours": {
-    "heading": "Dina data är dina",
-    "body": "Dina data är dina — exportera en komplett, maskinläsbar kopia av dina poster (JSON, CSV eller PDF) när som helst, från Inställningar. \"Maskinläsbar\" betyder en standardfil som en annan app eller ett kalkylprogram kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Du kan även exportera ett ZIP-arkiv som innehåller dina uppladdade originalfoton och skanningar tillsammans med den strukturerade posten.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (artikel 20) som låter dig ta med dig dina data."
+    "heading": "Dina uppgifter är dina",
+    "body": "Dina uppgifter är dina — exportera en fullständig, maskinläsbar kopia av dina register (JSON, CSV eller PDF) när som helst, från Inställningar. Maskinläsbar betyder en standardfil som en annan app eller ett kalkylark kan öppna och återanvända — inte en låst PDF. Ingen inlåsning, ingen väntan på oss. (Du kan också exportera ett ZIP-arkiv som innehåller dina ursprungliga uppladdade foton och skanningar tillsammans med det strukturerade registret.) Detta stöder din rätt till dataportabilitet enligt GDPR — EU:s integritetslag (Article 20) som låter dig ta med dig dina uppgifter."
   },
   "honesty": {
-    "body": "<b>Klarspråk, inga överdrifter.</b> Vi beskriver bara det som är sant idag: kryptering under överföring, kryptering i vila som appen själv utför med nycklar som hanteras i Google Cloud KMS, filer i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi hävdar medvetet <b>inte</b> \"end-to-end\"- eller \"zero-knowledge\"-kryptering: vi har nycklarna, så vi kan dekryptera dina uppgifter för att leverera tjänsten och de AI-funktioner du ber om. Vi hävdar inte heller \"banknivå\" eller någon certifiering som vi inte har förtjänat. Det här är förseglat och det här är det inte. Krypterat: de namn, beskrivningar, platser och anteckningar du skriver, de exakta värderingarna och de filer du laddar upp. Läsbart för våra servrar: de strukturerade fälten runt omkring, så att ditt valv fortfarande kan sorteras utan att de förseglade delarna öppnas — sådant som kategori, datum och etiketter, valuta, land, ett institut eller serienummer, inköpspris, vem ett föremål tillhör och ett grovt värdeintervall. Dataexport är aktiv (ovan). När vi lägger till en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att ange det.",
+    "body": "<b>Vanligt språk, inga överdrifter.</b> Vi beskriver bara det som är sant i dag: kryptering under överföring, kryptering i vila som tillämpas av appen själv med nycklar som hanteras i Google Cloud KMS, filer som hålls i privat lagring, hashade lösenord, strikt åtkomstkontroll. Vi gör medvetet <b>inte</b> anspråk på \"end-to-end\"- eller \"zero-knowledge\"-kryptering: vi har nycklarna, så vi kan dekryptera dina register för att driva tjänsten och AI-funktionerna du ber om. Vi påstår inte heller \"bank-level\" eller någon certifiering som vi inte har fått. Här är vad som är förseglat och vad som inte är det. Krypterat: objektnamnen, beskrivningarna, platserna och anteckningarna du skriver, de exakta värderingarna och filerna du laddar upp. Läsbart för våra servrar: de strukturerade fälten runt dem, så att ditt valv fortfarande kan sorteras utan att de förseglade delarna öppnas — sådant som kategori, datum och taggar, valuta, land, en institution eller ett serienummer, inköpspris, vem ett objekt tillhör och ett grovt värdeintervall. Dataexport är live (ovan). När vi lägger till en formell tredjepartsgranskning, där ett oberoende säkerhetsföretag granskar oss, kommer den här sidan att säga det.",
     "contact": "För frågor om integritet eller säkerhet, kontakta"
   },
   "finalCta": {
-    "title": "Privat från det första du lägger till.",
-    "body": "Kom igång gratis — ditt valv är bara ditt, och du kan när som helst exportera eller radera det."
+    "title": "Privat från första saken du lägger till.",
+    "body": "Börja gratis — ditt valv är bara ditt, och du kan exportera eller radera det när du vill."
   }
 }

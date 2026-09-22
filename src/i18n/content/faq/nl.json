@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Veelgestelde vragen",
-    "description": "Antwoorden over Vaulto — of mijn gegevens veilig zijn, wat het kost, wat je kunt opslaan en hoe AI-ondersteunde vastlegging je typewerk bespaart."
+    "description": "Antwoorden over Vaulto — of mijn gegevens veilig zijn, wat het kost, wat je kunt opslaan en hoe vastleggen met AI je typewerk bespaart."
   },
   "crumbs": {
     "home": "Home",
@@ -10,12 +10,12 @@
   "hero": {
     "eyebrow": "FAQ",
     "heading": "Vragen, helder beantwoord.",
-    "intro": "Duidelijke antwoorden over je gegevens, wat het kost en hoe Vaulto werkt. Nog nieuwsgierig? Lees <a href=\"/security/\">hoe we het veilig houden</a> of <a href=\"/how-it-works/\">hoe het werkt</a>."
+    "intro": "Duidelijke antwoorden over je gegevens, wat het kost en hoe Vaulto werkt. Nog steeds benieuwd? Lees <a href=\"/security/\">hoe we het veilig houden</a> of <a href=\"/how-it-works/\">hoe het werkt</a>."
   },
   "items": [
     {
       "q": "Zijn mijn gegevens veilig?",
-      "a": "Ja. Je verbinding is tijdens verzending versleuteld met TLS — de versleuteling met het hangslot-pictogram (HTTPS) die je op bank- en winkelsites ziet — zodat je gegevens onderweg worden versleuteld en niemand ertussen ze kan lezen. De database van je account is versleuteld in rust (terwijl die is opgeslagen) op professioneel beheerde, beveiligde servers, en geüploade bestanden worden bewaard in privéopslag die alleen bereikbaar is via kortlevende, ondertekende links. Je wachtwoord wordt nooit als platte tekst opgeslagen en de toegang is strikt beperkt tot je account.",
+      "a": "Ja. Je verbinding wordt tijdens verzending versleuteld met TLS — de slotjeversleuteling (HTTPS) die je ziet op bank- en webwinkelsites — zodat je gegevens onleesbaar zijn terwijl ze onderweg zijn en niemand ertussenin ze kan lezen. Je gegevens en geüploade bestanden worden versleuteld opgeslagen (terwijl ze bewaard worden) op professioneel beheerde, beveiligde servers, en Vaulto verzegelt de gevoelige onderdelen daarna nog eens binnen de app zelf — namen van items, beschrijvingen, locaties en notities, de foto's en scans die je uploadt, en exacte waarderingen — met sleutels die worden beheerd in Google Cloud KMS. Geüploade bestanden worden in privéopslag bewaard die alleen bereikbaar is via kortdurende, ondertekende links. Je wachtwoord wordt nooit in platte tekst opgeslagen en toegang is strikt beperkt tot je account.",
       "onward": "Bekijk hoe we het veilig houden →"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "q": "Wat kost het?",
-      "a": "Vaulto is gratis om mee te beginnen. Uitgebreidere planningsrapporten zijn beschikbaar wanneer je er klaar voor bent; je ziet altijd wat is inbegrepen voordat er iets in rekening wordt gebracht."
+      "a": "Met Vaulto kun je gratis beginnen. Uitgebreidere planningsrapporten zijn beschikbaar wanneer je eraan toe bent; je ziet altijd wat erbij zit voordat er iets in rekening wordt gebracht."
     },
     {
       "q": "Moet ik alles met de hand invoeren?",
@@ -34,11 +34,11 @@
     },
     {
       "q": "Voor wie is Vaulto?",
-      "a": "Voor gezinnen en individuen die één vertrouwde plek willen om te weten wat ze bezitten, belangrijke documenten veilig te bewaren en vooruit te plannen."
+      "a": "Gezinnen en individuen die één vertrouwde plek willen om te weten wat ze bezitten, belangrijke documenten veilig te bewaren en vooruit te plannen."
     },
     {
       "q": "Wat kan ik opslaan?",
-      "a": "Allerlei soorten bezittingen — vastgoed, rekeningen, beleggingen, waardevolle spullen, pensioenen — plus de documenten die erbij horen."
+      "a": "Allerlei bezittingen — vastgoed, rekeningen, beleggingen, waardevolle spullen, pensioenen — plus de documenten die erbij horen."
     },
     {
       "q": "Kan ik Vaulto in mijn taal gebruiken?",
@@ -47,6 +47,6 @@
   ],
   "finalCta": {
     "title": "Klaar wanneer jij dat bent.",
-    "body": "Begin gratis en voeg je eerste paar dingen in enkele minuten toe."
+    "body": "Begin gratis en voeg je eerste dingen in een paar minuten toe."
   }
 }

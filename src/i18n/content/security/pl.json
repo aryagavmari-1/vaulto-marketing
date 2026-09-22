@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bezpieczeństwo i prywatność",
-    "description": "Jak Vaulto chroni informacje Twojej rodziny: szyfrowanie podczas przesyłania, zaszyfrowana baza danych, pliki w prywatnej przestrzeni, hasła zahaszowane i ścisła kontrola dostępu. Prostym językiem, bez przesady."
+    "description": "Jak Vaulto chroni informacje o Twojej rodzinie — szyfrowanie podczas przesyłania, szyfrowanie przechowywanych danych z dodatkowym zabezpieczeniem w warstwie aplikacji dla pól wrażliwych (Google Cloud KMS), pliki w prywatnej pamięci, haszowane hasła, ścisła kontrola dostępu."
   },
   "crumbs": {
     "home": "Strona główna",
@@ -9,8 +9,8 @@
   },
   "hero": {
     "eyebrow": "Bezpieczeństwo i prywatność",
-    "heading": "Informacje o Twojej rodzinie są chronione.",
-    "intro": "Vaulto przechowuje wrażliwe informacje — co posiadasz, gdzie się to znajduje i dokumenty, które to potwierdzają. Traktujemy tę odpowiedzialność poważnie. Oto dokładnie, jak to chronimy, prostym językiem."
+    "heading": "Informacje o Twojej rodzinie, chronione.",
+    "intro": "Vaulto przechowuje wrażliwe informacje — co posiadasz, gdzie to jest, oraz dokumenty, które to potwierdzają. Traktujemy tę odpowiedzialność poważnie. Oto dokładnie, jak to chronimy, prostym językiem."
   },
   "protect": {
     "heading": "Jak chronimy Twoje dane"
@@ -18,27 +18,27 @@
   "protections": [
     {
       "title": "Szyfrowanie podczas przesyłania.",
-      "body": "Każde połączenie z Vaulto korzysta z TLS (HTTPS) — tego samego szyfrowania z ikoną kłódki, które widzisz na stronach bankowych i sklepowych. Twoje dane są szyfrowane, gdy podróżują między Tobą a nami, więc nikt po drodze nie może ich odczytać."
+      "body": "Każde połączenie z Vaulto używa TLS (HTTPS) — tego samego szyfrowania z ikoną kłódki, które widzisz na stronach bankowych i zakupowych. Twoje dane są szyfrowane podczas przesyłania między Tobą a nami, więc nikt po drodze nie może ich odczytać."
     },
     {
-      "title": "Szyfrowane w spoczynku.",
-      "body": "Twoje dane i przesłane pliki są szyfrowane w spoczynku — „w spoczynku” oznacza po prostu, gdy są przechowywane, a nie gdy są w ruchu. Znajdują się na profesjonalnie zarządzanych, zabezpieczonych serwerach, a Vaulto szyfruje dodatkowo wrażliwe części w samej aplikacji, zanim zostaną zapisane: nazwy, opisy, lokalizacje i notatki, zdjęcia i skany, które przesyłasz, oraz dokładne wyceny są szyfrowane kluczami zarządzanymi w Google Cloud KMS, a nie przechowywanymi obok danych. Blok poniżej wskazuje, które pola są zapieczętowane, a które pozostają czytelne."
+      "title": "Szyfrowanie przechowywanych danych.",
+      "body": "Twoje wpisy i przesłane pliki są szyfrowane w spoczynku — „w spoczynku” znaczy po prostu podczas przechowywania, a nie podczas przesyłania. Znajdują się na profesjonalnie zarządzanych, zabezpieczonych serwerach, a Vaulto dodatkowo zabezpiecza wrażliwe części już w samej aplikacji, zanim zostaną zapisane: nazwy elementów, opisy, lokalizacje i notatki, przesyłane zdjęcia i skany oraz dokładne wyceny są szyfrowane przy użyciu kluczy zarządzanych w Google Cloud KMS, zamiast przechowywania ich obok danych. Poniższa sekcja pokazuje, które pola są zabezpieczone, a które pozostają czytelne."
     },
     {
-      "title": "Hasła nigdy nie są przechowywane w postaci jawnej.",
-      "body": "„Haszujemy” Twoje hasło silną, nowoczesną metodą o nazwie scrypt — hasz to jednokierunkowe wymieszanie, którego nie da się odwrócić z powrotem do Twojego hasła. Nawet my nie możemy go odczytać."
+      "title": "Hasła nigdy nie są przechowywane jawnie.",
+      "body": "Twoje hasło „haszujemy” silną, nowoczesną metodą o nazwie scrypt — hash to jednokierunkowe przekształcenie, którego nie da się odwrócić z powrotem do Twojego hasła. Nawet my nie możemy go odczytać."
     },
     {
-      "title": "Sesje o krótkim czasie życia.",
-      "body": "„Token” logowania, który potwierdza, że to Ty, szybko wygasa i jest przechowywany w pamięci. Token, który utrzymuje Twoje zalogowanie, znajduje się w bezpiecznym, odpornym na skrypty pliku cookie — małym pliku przeglądarki, którego szkodliwe skrypty na stronie nie mogą odczytać ani wykraść."
+      "title": "Sesje o krótkim czasie ważności.",
+      "body": "„Token” logowania, który potwierdza, że to Ty, szybko wygasa i jest przechowywany w pamięci. Token, który utrzymuje Cię zalogowanym, znajduje się w bezpiecznym, odpornym na skrypty cookie — małym pliku przeglądarki, którego złośliwe skrypty na stronie nie mogą odczytać ani wykraść."
     },
     {
       "title": "Ochrona przed nadużyciami.",
-      "body": "Ograniczamy, ile razy z rzędu można próbować logowania i innych wrażliwych działań — nazywa się to „ograniczaniem częstotliwości” (rate-limiting). Blokuje to szybkie, powtarzane zgadywanie, na którym opierają się ataki automatyczne."
+      "body": "Ograniczamy liczbę kolejnych prób logowania i innych wrażliwych działań — to nazywa się „rate-limiting”. Blokuje to szybkie, powtarzane zgadywanie, na którym polegają zautomatyzowane ataki."
     },
     {
       "title": "Kontrola dostępu.",
-      "body": "Sejf każdej osoby jest odizolowany od innych użytkowników, a nasz zespół wsparcia nie może przeglądać Twojego sejfu — Vaulto nie ma żadnego rodzaju konta dla pracowników, które mogłoby go otworzyć."
+      "body": "Skarbiec każdej osoby jest odseparowany od innych użytkowników, a nasz zespół wsparcia nie może przeglądać Twojego skarbca — Vaulto nie ma typu konta pracowniczego, który mógłby go otworzyć."
     }
   ],
   "promise": {
@@ -47,27 +47,27 @@
   "promises": [
     {
       "title": "Nigdy nie sprzedajemy Twoich danych.",
-      "body": "I kropka."
+      "body": "Po prostu."
     },
     {
       "title": "Nie udostępniamy danych do reklam.",
       "body": "Twoje informacje nie są przekazywane stronom trzecim, aby kierować do Ciebie marketing."
     },
     {
-      "title": "To Ty masz kontrolę.",
-      "body": "Ty decydujesz, co dodajesz — i co usuwasz."
+      "title": "Masz kontrolę.",
+      "body": "To Ty decydujesz, co dodajesz — i co usuwasz."
     }
   ],
   "yours": {
     "heading": "Twoje dane należą do Ciebie",
-    "body": "Twoje dane należą do Ciebie — w dowolnej chwili wyeksportuj pełną, odczytywalną maszynowo kopię swoich rekordów (JSON, CSV lub PDF) z Ustawień. „Odczytywalny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Możesz też wyeksportować archiwum ZIP, które oprócz uporządkowanych danych zawiera Twoje oryginalne przesłane zdjęcia i skany.) Wspiera to Twoje prawo do przenoszenia danych na mocy GDPR — unijnego prawa o ochronie prywatności (artykuł 20), które pozwala zabrać dane ze sobą."
+    "body": "Twoje dane należą do Ciebie — w każdej chwili możesz wyeksportować z Ustawień pełną kopię swoich wpisów w formacie czytelnym maszynowo (JSON, CSV lub PDF). „Czytelny maszynowo” oznacza standardowy plik, który inna aplikacja lub arkusz kalkulacyjny może otworzyć i ponownie wykorzystać — a nie zablokowany PDF. Bez uzależnienia, bez czekania na nas. (Możesz też wyeksportować archiwum ZIP, które zawiera Twoje oryginalne przesłane zdjęcia i skany wraz z uporządkowanym zapisem.) To wspiera Twoje prawo do przenoszenia danych zgodnie z GDPR — unijnym prawem o prywatności (Article 20), które pozwala zabrać swoje dane ze sobą."
   },
   "honesty": {
-    "body": "<b>Prosty język, bez przesady.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie w trakcie przesyłania, szyfrowanie w spoczynku wykonywane przez samą aplikację z kluczami zarządzanymi w Google Cloud KMS, pliki w prywatnym magazynie, zahaszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że szyfrowanie jest „end-to-end” ani „zero-knowledge”: klucze są w naszych rękach, więc możemy odszyfrować Twoje dane, aby świadczyć usługę i funkcje AI, o które prosisz. Nie twierdzimy też, że mamy „poziom bankowy” ani żadną certyfikację, na którą nie zasłużyliśmy. Oto, co jest zapieczętowane, a co nie. Szyfrowane: nazwy, opisy, lokalizacje i notatki, które wpisujesz, dokładne wyceny oraz pliki, które przesyłasz. Czytelne dla naszych serwerów: otaczające je pola strukturalne, aby Twój sejf nadal można było sortować bez otwierania zapieczętowanych części — rzeczy takie jak kategoria, daty i tagi, waluta, kraj, instytucja lub numer seryjny, cena zakupu, do kogo należy dany przedmiot oraz przybliżony przedział wartości. Eksport danych działa (powyżej). Gdy dodamy formalny audyt zewnętrzny, w którym niezależna firma zajmująca się bezpieczeństwem nas sprawdza, ta strona to odnotuje.",
+    "body": "<b>Prosty język, bez przesadnych deklaracji.</b> Opisujemy tylko to, co jest prawdą dzisiaj: szyfrowanie podczas przesyłania, szyfrowanie przechowywanych danych stosowane przez samą aplikację z kluczami zarządzanymi w Google Cloud KMS, pliki przechowywane w prywatnej pamięci, haszowane hasła, ścisłą kontrolę dostępu. Celowo <b>nie</b> twierdzimy, że stosujemy szyfrowanie „end-to-end” ani „zero-knowledge”: posiadamy klucze, więc możemy odszyfrować Twoje wpisy, aby świadczyć usługę i udostępniać funkcje AI, o które prosisz. Nie twierdzimy też, że jest to „bank-level”, ani nie powołujemy się na certyfikaty, których nie zdobyliśmy. Oto, co jest zabezpieczone, a co nie. Zaszyfrowane: nazwy elementów, opisy, lokalizacje i notatki, które zapisujesz, dokładne wyceny oraz przesyłane pliki. Czytelne dla naszych serwerów: uporządkowane pola wokół nich, aby Twój skarbiec nadal można było sortować bez otwierania zabezpieczonych części — takie jak kategoria, daty i tagi, waluta, kraj, instytucja lub numer seryjny, cena zakupu, do kogo należy dany element oraz przybliżony przedział wartości. Eksport danych działa już teraz (powyżej). Gdy dodamy formalny audyt zewnętrzny, w którym niezależna firma bezpieczeństwa nas oceni, ta strona będzie o tym informować.",
     "contact": "W sprawach prywatności lub bezpieczeństwa skontaktuj się z"
   },
   "finalCta": {
-    "title": "Prywatne od pierwszej rzeczy, którą dodasz.",
-    "body": "Zacznij za darmo — Twój sejf należy tylko do Ciebie, a w dowolnej chwili możesz go wyeksportować lub usunąć."
+    "title": "Prywatność od pierwszej dodanej rzeczy.",
+    "body": "Zacznij za darmo — Twój skarbiec należy tylko do Ciebie i możesz go wyeksportować lub usunąć, kiedy tylko chcesz."
   }
 }

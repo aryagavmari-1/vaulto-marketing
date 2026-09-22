@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Un hogar tranquilo y seguro para todo lo que tu familia posee",
-    "description": "Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — de forma privada y con seguridad sólida. Empieza gratis."
+    "title": "Inventario patrimonial familiar, bóveda de documentos y patrimonio neto",
+    "description": "Haz inventario de tus bienes, guarda tus documentos de forma segura y ve tu patrimonio neto completo — de forma privada y segura. Haz una foto; Vaulto introduce los datos por ti. Empieza gratis."
   },
   "hero": {
     "eyebrow": "Privado y seguro por diseño",
-    "heading": "Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.",
-    "sub": "Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.",
+    "heading": "Todo lo que posee tu familia, en un lugar privado.",
+    "sub": "Haz inventario de tus bienes, guarda a salvo los documentos importantes y ve el panorama completo — y no tienes que teclearlo todo: haz una foto y Vaulto lo lee por ti.",
     "trust": [
-      "Cifrado en tránsito (TLS)",
+      "Cifrado en tránsito y en reposo",
       "Tus datos nunca se venden",
-      "Hecho para familias"
+      "Pensado para familias"
     ],
     "art": {
       "cards": [
@@ -21,7 +21,7 @@
         },
         {
           "icon": "document",
-          "label": "Testamento y documentos del patrimonio",
+          "label": "Testamento y documentos sucesorios",
           "sub": "3 archivos · almacenamiento privado"
         },
         {
@@ -35,57 +35,57 @@
     }
   },
   "value": {
-    "heading": "Todo en un único lugar de confianza",
+    "heading": "Todo en un lugar de confianza",
     "sub": "Sin hojas de cálculo. Sin cajones desordenados. Solo claridad.",
     "cards": [
       {
         "icon": "folders",
-        "title": "Conoce lo que posees.",
-        "body": "Propiedades, cuentas, inversiones, objetos de valor, pensiones — reunido en un solo lugar organizado, no disperso entre cajones y hojas de cálculo."
+        "title": "Sabe lo que tienes.",
+        "body": "Propiedades, cuentas, inversiones, objetos de valor, pensiones — reunidos en un lugar organizado, no repartidos entre cajones y hojas de cálculo."
       },
       {
         "icon": "shield",
-        "title": "Mantenlo a salvo.",
-        "body": "Guarda los documentos que importan — escrituras, pólizas, extractos — de forma privada y con seguridad sólida."
+        "title": "Mantenlo seguro.",
+        "body": "Guarda en privado los documentos que importan — escrituras, pólizas, extractos — protegidos por una seguridad sólida."
       },
       {
         "icon": "compass",
         "title": "Planifica con confianza.",
-        "body": "Ve el panorama completo y obtén una visión clara y gratuita cuando quieras pensar en la herencia, el testamento o lo que viene después."
+        "body": "Ve el panorama completo y obtén una visión clara y gratuita cuando estés listo para pensar en herencias, testamentos o en lo que venga después."
       }
     ]
   },
   "steps": {
-    "heading": "Listo en tres pasos",
+    "heading": "Empieza en tres pasos",
     "items": [
       {
-        "title": "Añade lo que posees.",
+        "title": "Añade lo que tienes.",
         "body": "Haz una foto o sube un documento — Vaulto puede leerlo y sugerir los datos, para que no tengas que escribirlo todo a mano."
       },
       {
         "title": "Deja que Vaulto lo organice.",
-        "body": "Agrupa los bienes en colecciones, añade los datos clave y mantén los documentos adjuntos donde corresponde."
+        "body": "Agrupa tus bienes en colecciones, añade los datos clave y mantén los documentos adjuntos donde corresponden."
       },
       {
         "title": "Ve el panorama completo.",
-        "body": "Los bienes de tu familia en una sola vista — listos para compartir con las personas que importan y para planificar el futuro."
+        "body": "Los bienes de tu familia en una sola vista — listos para compartir con las personas importantes y para planificar con antelación."
       }
     ]
   },
   "trustBand": {
-    "heading": "Diseñado para merecer la confianza de tu información más sensible.",
-    "lead": "Tus datos se cifran de camino a nosotros, tu base de datos está cifrada en reposo y tus archivos se conservan en almacenamiento privado. El acceso está protegido y nunca vendemos tu información.",
-    "cta": "Mira exactamente cómo lo mantenemos a salvo →",
+    "heading": "Creado para ser digno de confianza con tu información más sensible.",
+    "lead": "Tus datos se cifran de camino a nuestros sistemas, tus registros y archivos subidos se cifran en reposo, y Vaulto vuelve a sellar las partes sensibles dentro de la propia app — con claves gestionadas en Google Cloud KMS. Tus archivos se guardan en almacenamiento privado, el acceso está protegido y nunca vendemos tu información.",
+    "cta": "Mira exactamente cómo lo mantenemos seguro →",
     "proof": [
-      "Cifrado en tránsito (TLS); archivos en almacenamiento privado",
-      "Contraseñas protegidas con hash — ni nosotros podemos leerlas",
-      "Sesiones efímeras y protegidas por el navegador",
-      "La bóveda de cada persona está aislada de los demás usuarios",
+      "Cifrado en tránsito (TLS) y en reposo; archivos en almacenamiento privado",
+      "Contraseñas con hash — ni siquiera nosotros podemos leerlas",
+      "Sesiones de corta duración protegidas por el navegador",
+      "La bóveda de cada persona está aislada de la de otros usuarios",
       "Nunca vendemos ni compartimos tus datos"
     ]
   },
   "finalCta": {
-    "title": "Crea hoy la bóveda de tu familia.",
-    "body": "Gratis para empezar. Sin hojas de cálculo."
+    "title": "Empieza hoy la bóveda de tu familia.",
+    "body": "Gratis para empezar. Sin necesidad de hojas de cálculo."
   }
 }

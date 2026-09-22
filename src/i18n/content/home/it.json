@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Una casa calma e sicura per tutto ciò che la tua famiglia possiede",
-    "description": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — in privato, con una sicurezza solida. Inizia gratis."
+    "title": "Inventario dei beni di famiglia, cassaforte documenti e patrimonio netto",
+    "description": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti e vedi il tuo patrimonio netto completo — in privato e in sicurezza. Scatta una foto; Vaulto inserisce i dati per te. Inizia gratis."
   },
   "hero": {
-    "eyebrow": "Privato e sicuro per progettazione",
-    "heading": "Un unico posto calmo e sicuro per tutto ciò che la tua famiglia possiede.",
-    "sub": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — così la tua famiglia saprà sempre cosa c'è e cosa fare dopo.",
+    "eyebrow": "Privato e sicuro fin dalla progettazione",
+    "heading": "Tutto ciò che possiede la tua famiglia, in un unico posto privato.",
+    "sub": "Fai l'inventario dei tuoi beni, tieni al sicuro i documenti importanti e vedi il quadro completo — senza dover digitare tutto: scatta una foto e Vaulto la legge per te.",
     "trust": [
-      "Crittografato in transito (TLS)",
+      "Crittografato in transito e a riposo",
       "I tuoi dati non vengono mai venduti",
       "Pensato per le famiglie"
     ],
@@ -22,7 +22,7 @@
         {
           "icon": "document",
           "label": "Testamento e documenti successori",
-          "sub": "3 file · archiviazione privata"
+          "sub": "3 file · archivio privato"
         },
         {
           "icon": "chart",
@@ -31,27 +31,27 @@
         }
       ],
       "secured": "Protetto",
-      "lock": "Archiviazione privata"
+      "lock": "Archivio privato"
     }
   },
   "value": {
-    "heading": "Tutto in un unico posto affidabile",
+    "heading": "Tutto in un unico posto fidato",
     "sub": "Niente fogli di calcolo. Niente cassetti sparsi. Solo chiarezza.",
     "cards": [
       {
         "icon": "folders",
-        "title": "Sapere cosa possiedi.",
-        "body": "Immobili, conti, investimenti, oggetti di valore, pensioni — raccolti in un unico posto organizzato, non sparsi tra cassetti e fogli di calcolo."
+        "title": "Sai cosa possiedi.",
+        "body": "Immobili, conti, investimenti, oggetti di valore, pensioni — raccolti in un unico posto ordinato, non sparsi tra cassetti e fogli di calcolo."
       },
       {
         "icon": "shield",
         "title": "Tieni tutto al sicuro.",
-        "body": "Conserva i documenti che contano — atti, polizze, estratti conto — in privato, protetti da una sicurezza solida."
+        "body": "Conserva in privato i documenti che contano — atti, polizze, estratti conto — protetti da una solida sicurezza."
       },
       {
         "icon": "compass",
-        "title": "Pianifica con fiducia.",
-        "body": "Vedi il quadro completo e ottieni una panoramica chiara e gratuita quando sei pronto a pensare a successione, testamento o a cosa succede dopo."
+        "title": "Pianifica con serenità.",
+        "body": "Vedi il quadro completo e ottieni una panoramica chiara e gratuita quando sei pronto a pensare a eredità, testamenti o a ciò che verrà dopo."
       }
     ]
   },
@@ -64,7 +64,7 @@
       },
       {
         "title": "Lascia che Vaulto lo organizzi.",
-        "body": "Raggruppa i beni in raccolte, aggiungi le informazioni chiave e tieni i documenti allegati dove devono stare."
+        "body": "Raggruppa i beni in raccolte, aggiungi i dati chiave e tieni allegati i documenti dove devono stare."
       },
       {
         "title": "Vedi il quadro completo.",
@@ -73,19 +73,19 @@
     ]
   },
   "trustBand": {
-    "heading": "Pensato per meritare fiducia con le tue informazioni più sensibili.",
-    "lead": "I tuoi dati vengono crittografati mentre arrivano a noi, il tuo database è crittografato a riposo e i tuoi file sono conservati in uno spazio di archiviazione privato. L'accesso è protetto e non vendiamo mai le tue informazioni.",
+    "heading": "Progettato per meritare fiducia con le tue informazioni più sensibili.",
+    "lead": "I tuoi dati sono crittografati nel tragitto verso di noi, i tuoi record e i file caricati sono crittografati a riposo, e Vaulto sigilla di nuovo le parti sensibili all'interno dell'app stessa — con chiavi gestite in Google Cloud KMS. I tuoi file sono conservati in un archivio privato, l'accesso è protetto e non vendiamo mai le tue informazioni.",
     "cta": "Scopri esattamente come li teniamo al sicuro →",
     "proof": [
-      "Crittografato in transito (TLS); file in archiviazione privata",
+      "Crittografato in transito (TLS) e a riposo; file in archivio privato",
       "Password sottoposte ad hashing — nemmeno noi possiamo leggerle",
-      "Sessioni di breve durata, protette dal browser",
-      "La cassaforte di ogni persona è isolata dagli altri utenti",
+      "Sessioni di breve durata protette nel browser",
+      "La cassaforte di ogni persona è isolata da quella degli altri utenti",
       "Non vendiamo né condividiamo mai i tuoi dati"
     ]
   },
   "finalCta": {
     "title": "Inizia oggi la cassaforte della tua famiglia.",
-    "body": "Gratis per cominciare. Nessun foglio di calcolo necessario."
+    "body": "Gratis per iniziare. Senza bisogno di fogli di calcolo."
   }
 }

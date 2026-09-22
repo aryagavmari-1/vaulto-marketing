@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sık sorulan sorular",
-    "description": "Vaulto hakkında yanıtlar — verilerim güvende mi, ücreti ne kadar, neleri saklayabilirsiniz ve yapay zekâ destekli yakalama yazma işini nasıl azaltır."
+    "description": "Vaulto hakkında yanıtlar — verilerim güvende mi, ücreti ne kadar, neleri saklayabilirsiniz ve yapay zekâ destekli ekleme nasıl daha az yazmanızı sağlar."
   },
   "crumbs": {
     "home": "Ana sayfa",
@@ -9,36 +9,36 @@
   },
   "hero": {
     "eyebrow": "SSS",
-    "heading": "Sorular, açıkça yanıtlandı.",
-    "intro": "Verileriniz, maliyeti ve Vaulto'nun nasıl çalıştığı hakkında net yanıtlar. Hâlâ merak mı ediyorsunuz? <a href=\"/security/\">Onu nasıl güvende tuttuğumuzu</a> veya <a href=\"/how-it-works/\">nasıl çalıştığını</a> okuyun."
+    "heading": "Sorulara açık ve net yanıtlar.",
+    "intro": "Verileriniz, maliyeti ve Vaulto'nun nasıl çalıştığı hakkında net yanıtlar. Hâlâ merak ettikleriniz mi var? <a href=\"/security/\">Onu nasıl güvende tuttuğumuzu</a> veya <a href=\"/how-it-works/\">nasıl çalıştığını</a> okuyun."
   },
   "items": [
     {
       "q": "Verilerim güvende mi?",
-      "a": "Evet. Bağlantınız aktarım sırasında TLS ile şifrelenir — bankacılık ve alışveriş sitelerinde gördüğünüz asma kilit simgeli şifreleme (HTTPS) — böylece verileriniz yol alırken şifrelenir ve aradaki hiç kimse onları okuyamaz. Hesabınızın veritabanı, profesyonelce yönetilen, güvenli sunucularda beklemede (depolanırken) şifrelenir ve yüklenen dosyalar yalnızca kısa ömürlü, imzalı bağlantılar aracılığıyla erişilebilen özel depolamada tutulur. Parolanız asla düz metin olarak saklanmaz ve erişim kesinlikle hesabınızla sınırlıdır.",
+      "a": "Evet. Bağlantınız, bankacılık ve alışveriş sitelerinde gördüğünüz asma kilit simgeli şifreleme (HTTPS) olan TLS ile aktarım sırasında şifrelenir; böylece verileriniz yolculuk ederken karıştırılır ve aradaki hiç kimse onları okuyamaz. Kayıtlarınız ve yüklediğiniz dosyalar, profesyonelce yönetilen ve güvenliği sağlanan sunucularda beklerken şifrelenir ve Vaulto uygulamanın içinde de hassas bölümleri — öğe adları, açıklamalar, konumlar ve notlar, yüklediğiniz fotoğraf ve taramalar ile tam değerlemeler — Google Cloud KMS'te yönetilen anahtarlarla yeniden mühürler. Yüklenen dosyalar, yalnızca kısa süreli, imzalı bağlantılarla erişilebilen özel depolamada tutulur. Parolanız hiçbir zaman düz metin olarak saklanmaz ve erişim hesabınızla sıkı şekilde sınırlandırılır.",
       "onward": "Onu nasıl güvende tuttuğumuzu görün →"
     },
     {
       "q": "Verilerimi satıyor musunuz?",
-      "a": "Hayır — asla. Bilgilerinizi reklam için satmayız veya paylaşmayız.",
-      "onward": "Gizlilik taahhütlerimizi okuyun →"
+      "a": "Hayır — asla. Bilgilerinizi reklam amacıyla satmıyor veya paylaşmıyoruz.",
+      "onward": "Gizlilik sözlerimizi okuyun →"
     },
     {
       "q": "Ücreti ne kadar?",
-      "a": "Vaulto'ya başlamak ücretsizdir. Daha kapsamlı planlama raporları hazır olduğunuzda sunulur; herhangi bir ücret alınmadan önce nelerin dahil olduğunu her zaman görürsünüz."
+      "a": "Vaulto'ya başlamak ücretsizdir. Daha kapsamlı planlama raporları hazır olduğunuzda sunulur; herhangi bir ücret yansıtılmadan önce nelerin dahil olduğunu her zaman görürsünüz."
     },
     {
-      "q": "Her şeyi tek tek elle girmem gerekiyor mu?",
-      "a": "Hayır — bir fotoğraf veya belge yükleyin, Vaulto bunu okuyup sizin için ayrıntıları önerebilir.",
-      "onward": "Yakalamanın nasıl çalıştığını görün →"
+      "q": "Her şeyi elle mi girmem gerekiyor?",
+      "a": "Hayır — bir fotoğraf veya belge yükleyin, Vaulto onu okuyup sizin için ayrıntıları önerebilir.",
+      "onward": "Eklemeyi nasıl çalıştığını görün →"
     },
     {
       "q": "Vaulto kimler için?",
-      "a": "Sahip olduklarını bilmek, önemli belgeleri güvende tutmak ve önceden plan yapmak için güvenilir tek bir yer isteyen aileler ve bireyler için."
+      "a": "Sahip olduklarını bilmek, önemli belgeleri güvende tutmak ve önceden plan yapmak için tek bir güvenilir yer isteyen aileler ve bireyler için."
     },
     {
       "q": "Neleri saklayabilirim?",
-      "a": "Her türden varlık — gayrimenkuller, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — ve bunlarla ilgili belgeler."
+      "a": "Her türden varlık — mülkler, hesaplar, yatırımlar, değerli eşyalar, emeklilikler — ve bunlara eşlik eden belgeler."
     },
     {
       "q": "Vaulto'yu kendi dilimde kullanabilir miyim?",
@@ -46,7 +46,7 @@
     }
   ],
   "finalCta": {
-    "title": "Hazır olduğunda burada.",
-    "body": "Ücretsiz başla ve ilk birkaç şeyini dakikalar içinde ekle."
+    "title": "Hazır olduğunuzda burada.",
+    "body": "Ücretsiz başlayın ve ilk birkaç şeyinizi dakikalar içinde ekleyin."
   }
 }
