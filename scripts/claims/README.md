@@ -48,9 +48,12 @@ read it before treating a rule as multilingual.
 more regexes — each governed field (`trustBand.proof[3]`, `protections[-1]`, …)
 has exactly one approved value per locale, so the gate asserts the live value
 equals the approved one rather than trying to describe every wrong phrasing in
-every language. For the C-002 trust band that gate is `scripts/ary1475-verify.py`
-(being pinned + wired into the build on ARY-1516; it is heartbeat-only until
-then). The durable, general per-locale field check is tracked on ARY-1377.
+every language. For the C-002 trust band that gate is `guard:trustband`
+(`scripts/check-trust-band.mjs`), which ARY-1516 pinned to literals and wired
+into `prebuild` — it replaced `scripts/ary1475-verify.py`, which read its own
+reference out of git at the same rev and had therefore been red at
+`origin/master` since ARY-1481 without anyone seeing it. The durable, general
+per-locale field check is tracked on ARY-1377.
 
 So: **do not cite `guard:claims` / `check-claims.mjs` as evidence for non-English
 copy.** It is the English backstop. The field gate is the locale-complete
@@ -66,6 +69,8 @@ control.
 > | `guard:claims:test` | `claims/rules.test.mjs` | the banned-claims rules themselves |
 > | `guard:tier` | `check-tier-claims.mjs` | free-vs-paid tier boundary (ARY-1506) |
 > | `guard:tier:test` | `check-tier-claims.test.mjs` | the tier guard itself |
+> | `guard:trustband` | `check-trust-band.mjs` | the C-002 trust-band bullet + `/security` clause, 16 locales (ARY-1516) |
+> | `guard:trustband:test` | `check-trust-band.test.mjs` | the trust-band gate itself |
 >
 > `claims:check`, `check:claims` and `test:claims` still work as aliases for one
 > release. Prefer the `guard:*` names — and note the alias set is why the controls
