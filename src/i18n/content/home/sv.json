@@ -8,7 +8,7 @@
     "heading": "En lugn, säker plats för allt din familj äger.",
     "sub": "Inventera dina tillgångar, håll viktiga dokument säkra och få överblick över helheten — så att din familj alltid vet vad som finns och vad ni ska göra härnäst.",
     "trust": [
-      "Krypterad under överföring (TLS)",
+      "Krypterat under överföring och i vila",
       "Dina data säljs aldrig",
       "Byggt för familjer"
     ],
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Byggt för att vara betrott med din mest känsliga information.",
-    "lead": "Dina uppgifter krypteras på vägen till oss, din databas är krypterad i vila och dina filer förvaras i privat lagring. Åtkomsten är skyddad och vi säljer aldrig din information.",
+    "lead": "Dina data är krypterade på vägen till oss, dina poster och uppladdade filer är krypterade i vila, och Vaulto förseglar de känsliga delarna en gång till i själva appen — med nycklar som hanteras i Google Cloud KMS. Dina filer sparas i privat lagring, åtkomsten är skyddad, och vi säljer aldrig din information.",
     "cta": "Se exakt hur vi håller det säkert →",
     "proof": [
-      "Krypterad under överföring (TLS); filer i privat lagring",
+      "Krypterat under överföring (TLS) och i vila; filer i privat lagring",
       "Lösenord hashas — inte ens vi kan läsa dem",
       "Kortlivade, webbläsarskyddade sessioner",
       "Varje persons valv är isolerat från andra användare",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Security & Privacy",
-    "description": "How Vaulto protects your family's information — encryption in transit, an encrypted database, files in private storage, hashed passwords, strict access control. Plain language, no overclaim."
+    "description": "How Vaulto protects your family's information — encryption in transit, at-rest encryption with an app-layer seal for sensitive fields (Google Cloud KMS), files in private storage, hashed passwords, strict access control."
   },
   "crumbs": {
     "home": "Home",

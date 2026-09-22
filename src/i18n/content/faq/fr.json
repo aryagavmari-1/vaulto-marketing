@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Mes données sont-elles en sécurité ?",
-      "a": "Oui. Votre connexion est chiffrée en transit avec TLS — le chiffrement à l'icône de cadenas (HTTPS) que vous voyez sur les sites bancaires et marchands — de sorte que vos données sont brouillées pendant leur trajet et que personne entre les deux ne peut les lire. La base de données de votre compte est chiffrée au repos (pendant qu'elle est stockée) sur des serveurs sécurisés et gérés par des professionnels, et les fichiers téléversés sont conservés dans un stockage privé accessible uniquement par des liens signés de courte durée. Votre mot de passe n'est jamais stocké en clair, et l'accès est strictement limité à votre compte.",
+      "a": "Oui. Votre connexion est chiffrée en transit avec TLS — le chiffrement avec l’icône de cadenas (HTTPS) que vous voyez sur les sites bancaires et commerciaux — afin que vos données soient brouillées pendant leur transmission et que personne entre les deux ne puisse les lire. Vos enregistrements et fichiers importés sont chiffrés au repos (pendant qu’ils sont stockés) sur des serveurs sécurisés et gérés par des professionnels, et Vaulto protège à nouveau les parties sensibles dans l’application elle-même — les noms des éléments, descriptions, emplacements et notes, les photos et scans que vous importez, ainsi que les évaluations exactes — avec des clés gérées dans Google Cloud KMS. Les fichiers importés sont conservés dans un stockage privé accessible uniquement via des liens signés de courte durée. Votre mot de passe n’est jamais stocké en clair, et l’accès est strictement limité à votre compte.",
       "onward": "Voir comment nous les protégeons →"
     },
     {

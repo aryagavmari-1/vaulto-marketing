@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Säkerhet och integritet",
-    "description": "Hur Vaulto skyddar din familjs information: kryptering under överföring, en krypterad databas, filer i privat lagring, hashade lösenord och strikt åtkomstkontroll. På ett tydligt språk, utan överdrifter."
+    "description": "Hur Vaulto skyddar din familjs information — kryptering under överföring, kryptering i vila med ett skydd på applagret för känsliga fält (Google Cloud KMS), filer i privat lagring, hashade lösenord, strikt åtkomstkontroll."
   },
   "crumbs": {
     "home": "Hem",

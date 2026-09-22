@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Segurança e Privacidade",
-    "description": "Como o Vaulto protege as informações da sua família: encriptação em trânsito, uma base de dados encriptada, ficheiros em armazenamento privado, palavras-passe com hash e controlo de acesso rigoroso. Em linguagem clara, sem exageros."
+    "description": "Como o Vaulto protege a informação da sua família — encriptação em trânsito, encriptação em repouso com um selo ao nível da aplicação para campos sensíveis (Google Cloud KMS), ficheiros em armazenamento privado, palavras-passe com hash, controlo de acesso rigoroso."
   },
   "crumbs": {
     "home": "Início",

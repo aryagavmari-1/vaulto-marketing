@@ -15,7 +15,7 @@
   "items": [
     {
       "q": "Sind meine Daten sicher?",
-      "a": "Ja. Deine Verbindung ist bei der Übertragung mit TLS verschlüsselt — der Verschlüsselung mit dem Schloss-Symbol (HTTPS), die du auf Banking- und Shopping-Seiten siehst — sodass deine Daten unterwegs verschlüsselt sind und niemand dazwischen sie lesen kann. Die Datenbank deines Kontos ist im Ruhezustand (während sie gespeichert ist) auf professionell verwalteten, gesicherten Servern verschlüsselt, und hochgeladene Dateien werden in privatem Speicher aufbewahrt, der nur über kurzlebige, signierte Links erreichbar ist. Dein Passwort wird niemals im Klartext gespeichert, und der Zugriff ist streng auf dein Konto beschränkt.",
+      "a": "Ja. Deine Verbindung ist während der Übertragung mit TLS verschlüsselt — die Verschlüsselung mit Schloss-Symbol (HTTPS), die du von Bank- und Einkaufsseiten kennst —, sodass deine Daten auf dem Übertragungsweg unlesbar sind und niemand dazwischen sie lesen kann. Deine Einträge und hochgeladenen Dateien sind im Ruhezustand (während der Speicherung) auf professionell verwalteten, gesicherten Servern verschlüsselt, und Vaulto versiegelt die sensiblen Teile zusätzlich direkt in der App — Namen, Beschreibungen, Orte und Notizen von Einträgen, die Fotos und Scans, die du hochlädst, sowie genaue Bewertungen — mit Schlüsseln, die in Google Cloud KMS verwaltet werden. Hochgeladene Dateien werden in privatem Speicher aufbewahrt, der nur über kurzlebige, signierte Links erreichbar ist. Dein Passwort wird niemals im Klartext gespeichert, und der Zugriff ist streng auf dein Konto begrenzt.",
       "onward": "So halten wir alles sicher →"
     },
     {

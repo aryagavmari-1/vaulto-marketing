@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sécurité et confidentialité",
-    "description": "Comment Vaulto protège les informations de votre famille : chiffrement en transit, une base de données chiffrée, des fichiers dans un stockage privé, des mots de passe hachés et un contrôle d'accès strict. En langage clair, sans promesses exagérées."
+    "description": "Comment Vaulto protège les informations de votre famille — chiffrement en transit, chiffrement au repos avec une couche de protection au niveau de l’application pour les champs sensibles (Google Cloud KMS), fichiers en stockage privé, mots de passe hachés, contrôle d’accès strict."
   },
   "crumbs": {
     "home": "Accueil",

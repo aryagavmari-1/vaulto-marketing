@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Güvenlik ve Gizlilik",
-    "description": "Vaulto ailenizin bilgilerini nasıl korur: aktarım sırasında şifreleme, şifreli bir veritabanı, özel depolamadaki dosyalar, hash'lenmiş parolalar ve sıkı erişim denetimi. Sade bir dille, abartısız."
+    "description": "Vaulto'nun ailenizin bilgilerini nasıl koruduğu — aktarım sırasında şifreleme, beklemede şifreleme ve hassas alanlar için uygulama katmanında ek mühür (Google Cloud KMS), özel depolamadaki dosyalar, hash'lenmiş parolalar, sıkı erişim denetimi."
   },
   "crumbs": {
     "home": "Ana Sayfa",
