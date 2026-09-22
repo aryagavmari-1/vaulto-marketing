@@ -8,7 +8,7 @@
     "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
     "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
     "trust": [
-      "Encriptado em trânsito (TLS)",
+      "Encriptado em trânsito e em repouso",
       "Os seus dados nunca são vendidos",
       "Feito para famílias"
     ],
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
-    "lead": "Os seus dados são encriptados a caminho de nós, a sua base de dados é encriptada em repouso e os seus ficheiros são mantidos em armazenamento privado. O acesso é protegido e nunca vendemos as suas informações.",
+    "lead": "Os seus dados são encriptados no caminho até nós, os seus registos e ficheiros carregados são encriptados em repouso, e o Vaulto sela novamente as partes sensíveis dentro da própria aplicação — com chaves geridas no Google Cloud KMS. Os seus ficheiros são mantidos em armazenamento privado, o acesso é protegido e nunca vendemos a sua informação.",
     "cta": "Veja exatamente como mantemos tudo seguro →",
     "proof": [
-      "Encriptado em trânsito (TLS); ficheiros em armazenamento privado",
+      "Encriptado em trânsito (TLS) e em repouso; ficheiros em armazenamento privado",
       "Palavras-passe com hash — nem nós as conseguimos ler",
       "Sessões de curta duração, protegidas pelo navegador",
       "O cofre de cada pessoa está isolado dos outros utilizadores",

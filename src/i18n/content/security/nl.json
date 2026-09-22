@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Beveiliging & privacy",
-    "description": "Hoe Vaulto de informatie van je gezin beschermt: versleuteling tijdens verzending, een versleutelde database, bestanden in privéopslag, gehashte wachtwoorden en strikte toegangscontrole. In duidelijke taal, zonder overdreven claims."
+    "description": "Hoe Vaulto de gegevens van je gezin beschermt — versleuteling tijdens verzending, versleuteling bij opslag met een extra afscherming op applicatieniveau voor gevoelige velden (Google Cloud KMS), bestanden in privéopslag, gehashte wachtwoorden, strikte toegangscontrole."
   },
   "crumbs": {
     "home": "Home",

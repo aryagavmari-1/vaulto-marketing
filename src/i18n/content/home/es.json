@@ -8,7 +8,7 @@
     "heading": "Un solo lugar, tranquilo y seguro, para todo lo que tu familia posee.",
     "sub": "Haz el inventario de tus bienes, guarda los documentos importantes a salvo y ve tu panorama completo — para que tu familia siempre sepa qué hay y qué hacer a continuación.",
     "trust": [
-      "Cifrado en tránsito (TLS)",
+      "Cifrado en tránsito y en reposo",
       "Tus datos nunca se venden",
       "Hecho para familias"
     ],
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Diseñado para merecer la confianza de tu información más sensible.",
-    "lead": "Tus datos se cifran de camino a nosotros, tu base de datos está cifrada en reposo y tus archivos se conservan en almacenamiento privado. El acceso está protegido y nunca vendemos tu información.",
+    "lead": "Tus datos se cifran de camino a nosotros, tus registros y archivos subidos se cifran en reposo, y Vaulto vuelve a sellar las partes sensibles dentro de la propia app — con claves gestionadas en Google Cloud KMS. Tus archivos se guardan en almacenamiento privado, el acceso está protegido y nunca vendemos tu información.",
     "cta": "Mira exactamente cómo lo mantenemos a salvo →",
     "proof": [
-      "Cifrado en tránsito (TLS); archivos en almacenamiento privado",
+      "Cifrado en tránsito (TLS) y en reposo; archivos en almacenamiento privado",
       "Contraseñas protegidas con hash — ni nosotros podemos leerlas",
       "Sesiones efímeras y protegidas por el navegador",
       "La bóveda de cada persona está aislada de los demás usuarios",

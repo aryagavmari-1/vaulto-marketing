@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sicurezza e privacy",
-    "description": "Come Vaulto protegge le informazioni della tua famiglia: crittografia in transito, un database crittografato, file in archiviazione privata, password con hash e un controllo degli accessi rigoroso. In linguaggio chiaro, senza promesse esagerate."
+    "description": "Come Vaulto protegge le informazioni della tua famiglia — crittografia in transito, crittografia a riposo con un sigillo a livello di app per i campi sensibili (Google Cloud KMS), file in archiviazione privata, password con hash, controllo degli accessi rigoroso."
   },
   "crumbs": {
     "home": "Home",

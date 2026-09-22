@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sicherheit & Datenschutz",
-    "description": "Wie Vaulto die Informationen deiner Familie schützt: Verschlüsselung bei der Übertragung, eine verschlüsselte Datenbank, Dateien in privatem Speicher, gehashte Passwörter und strenge Zugriffskontrolle. In klarer Sprache, ohne Übertreibung."
+    "description": "Wie Vaulto die Informationen deiner Familie schützt — Verschlüsselung bei der Übertragung, Verschlüsselung im Ruhezustand mit einer zusätzlichen Versiegelung sensibler Felder auf App-Ebene (Google Cloud KMS), Dateien in privatem Speicher, gehashte Passwörter, strenge Zugriffskontrolle."
   },
   "crumbs": {
     "home": "Startseite",

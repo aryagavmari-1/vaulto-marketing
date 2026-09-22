@@ -8,7 +8,7 @@
     "heading": "Jedno spokojne, bezpieczne miejsce na wszystko, co posiada Twoja rodzina.",
     "sub": "Zrób spis swojego majątku, chroń ważne dokumenty i zobacz pełny obraz — żeby Twoja rodzina zawsze wiedziała, co jest na miejscu i co zrobić dalej.",
     "trust": [
-      "Szyfrowane podczas przesyłania (TLS)",
+      "Szyfrowane podczas przesyłania i w spoczynku",
       "Twoje dane nigdy nie są sprzedawane",
       "Stworzone dla rodzin"
     ],
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Stworzone po to, by można było powierzyć mu Twoje najbardziej wrażliwe informacje.",
-    "lead": "Twoje dane są szyfrowane w drodze do nas, Twoja baza danych jest szyfrowana w spoczynku, a Twoje pliki są przechowywane w prywatnej przestrzeni. Dostęp jest chroniony i nigdy nie sprzedajemy Twoich informacji.",
+    "lead": "Twoje dane są szyfrowane w drodze do nas, Twoje wpisy i przesłane pliki są szyfrowane w spoczynku, a Vaulto dodatkowo zabezpiecza wrażliwe części jeszcze raz w samej aplikacji — przy użyciu kluczy zarządzanych w Google Cloud KMS. Twoje pliki są przechowywane w prywatnym magazynie, dostęp jest chroniony, a my nigdy nie sprzedajemy Twoich informacji.",
     "cta": "Zobacz dokładnie, jak dbamy o ich bezpieczeństwo →",
     "proof": [
-      "Szyfrowane podczas przesyłania (TLS); pliki w prywatnej przestrzeni",
+      "Szyfrowane podczas przesyłania (TLS) i w spoczynku; pliki w prywatnym magazynie",
       "Hasła są haszowane — nawet my nie możemy ich odczytać",
       "Krótkotrwałe sesje chronione przez przeglądarkę",
       "Sejf każdej osoby jest odizolowany od innych użytkowników",

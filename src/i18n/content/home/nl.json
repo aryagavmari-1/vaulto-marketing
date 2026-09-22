@@ -8,7 +8,7 @@
     "heading": "Eén rustige, veilige plek voor alles wat je gezin bezit.",
     "sub": "Inventariseer je bezittingen, bewaar belangrijke documenten veilig en zie het complete overzicht — zodat je gezin altijd weet wat er is, en wat de volgende stap is.",
     "trust": [
-      "Versleuteld tijdens verzending (TLS)",
+      "Versleuteld tijdens verzending en bij opslag",
       "Je gegevens worden nooit verkocht",
       "Gemaakt voor gezinnen"
     ],
@@ -74,10 +74,10 @@
   },
   "trustBand": {
     "heading": "Gemaakt om je meest gevoelige informatie toe te vertrouwen.",
-    "lead": "Je gegevens worden onderweg naar ons versleuteld, je database is versleuteld in rust en je bestanden worden in privéopslag bewaard. De toegang is beveiligd en we verkopen je informatie nooit.",
+    "lead": "Je gegevens worden versleuteld op weg naar ons, je gegevensrecords en geüploade bestanden worden versleuteld bij opslag, en Vaulto schermt de gevoelige delen binnen de app zelf nog eens extra af — met sleutels beheerd in Google Cloud KMS. Je bestanden worden bewaard in privéopslag, toegang is beschermd, en we verkopen je gegevens nooit.",
     "cta": "Bekijk precies hoe we het veilig houden →",
     "proof": [
-      "Versleuteld tijdens verzending (TLS); bestanden in privéopslag",
+      "Versleuteld tijdens verzending (TLS) en bij opslag; bestanden in privéopslag",
       "Wachtwoorden gehasht — zelfs wij kunnen ze niet lezen",
       "Kortdurende, door de browser beveiligde sessies",
       "De kluis van elke persoon is geïsoleerd van andere gebruikers",
