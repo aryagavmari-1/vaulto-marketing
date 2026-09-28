@@ -7,46 +7,46 @@
 > portfolio average (ARY-2487).
 
 - **Property:** https://myvaulto.com/
-- **Window:** 2026-08-19 → 2026-09-18 (GSC lags ~3 days, so the window ends a few days back)
-- **As of:** 2026-09-21T12:52:28.908Z
+- **Window:** 2026-08-26 → 2026-09-25 (GSC lags ~3 days, so the window ends a few days back)
+- **As of:** 2026-09-28T13:59:55.131Z
 - **Showing:** top 20 by impressions
 
 ## Top pages by impressions
 
 | Page | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| / | 30 | 0 | 0% | 33.2 |
-| /features/ | 24 | 0 | 0% | 53.6 |
-| /ru/features/ | 13 | 1 | 7.7% | 12.6 |
-| /privacy/ | 11 | 0 | 0% | 69.7 |
-| /faq/ | 10 | 0 | 0% | 63.9 |
-| /security/ | 9 | 0 | 0% | 39.2 |
-| /how-it-works/ | 8 | 0 | 0% | 35.3 |
-| /fr/features/ | 7 | 0 | 0% | 4.4 |
-| /tr/ | 6 | 2 | 33.3% | 11.3 |
-| /ru/ | 6 | 0 | 0% | 3.2 |
-| /ar/ | 5 | 0 | 0% | 6 |
+| / | 16 | 0 | 0% | 4.3 |
+| /features/ | 16 | 0 | 0% | 33.4 |
+| /ru/features/ | 9 | 0 | 0% | 5.1 |
+| /ar/ | 8 | 0 | 0% | 5.8 |
+| /hi/ | 8 | 0 | 0% | 4 |
+| /fr/features/ | 7 | 0 | 0% | 4.6 |
+| /ru/ | 5 | 1 | 20% | 2.4 |
+| /fr/ | 5 | 0 | 0% | 19.6 |
 | /de/ | 4 | 0 | 0% | 5.8 |
-| /de/planning/ | 3 | 0 | 0% | 77 |
-| /fr/ | 3 | 0 | 0% | 4.3 |
+| /faq/ | 4 | 0 | 0% | 19.8 |
+| /nl/ | 4 | 0 | 0% | 11.3 |
+| /security/ | 4 | 0 | 0% | 7.3 |
+| /tr/ | 4 | 0 | 0% | 16.5 |
 | /fr/security/ | 3 | 0 | 0% | 7.7 |
-| /hi/ | 3 | 0 | 0% | 7.3 |
 | /ja/ | 3 | 0 | 0% | 4.3 |
-| /ru/how-it-works/ | 3 | 0 | 0% | 5.7 |
-| /tr/security/ | 3 | 0 | 0% | 4 |
+| /privacy/ | 3 | 0 | 0% | 67.3 |
+| /pt/ | 3 | 0 | 0% | 3.7 |
+| /pt/security/ | 3 | 0 | 0% | 8.7 |
 | /es/ | 2 | 0 | 0% | 7 |
+| /es/delete-account/ | 2 | 0 | 0% | 8.5 |
 
 ## Top queries by impressions
 
 | Query | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| vaulto | 13 | 0 | 0% | 8.2 |
-| valutt | 2 | 0 | 0% | 81 |
+| vaulto | 12 | 0 | 0% | 6.1 |
+| vaultody | 4 | 0 | 0% | 49.8 |
 | apa itu estate planning | 1 | 0 | 0% | 92 |
 | estate planner | 1 | 0 | 0% | 77 |
-| gavult | 1 | 0 | 0% | 100 |
 | valtout | 1 | 0 | 0% | 69 |
-| vlut | 1 | 0 | 0% | 98 |
+| vendtaculott | 1 | 0 | 0% | 75 |
+| vuulto | 1 | 0 | 0% | 3 |
 
 ---
 
