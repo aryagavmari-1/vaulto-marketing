@@ -7,46 +7,49 @@
 > portfolio average (ARY-2487).
 
 - **Property:** https://myvaulto.com/
-- **Window:** 2026-08-26 → 2026-09-25 (GSC lags ~3 days, so the window ends a few days back)
-- **As of:** 2026-09-28T13:59:55.131Z
+- **Window:** 2026-09-02 → 2026-10-02 (GSC lags ~3 days, so the window ends a few days back)
+- **As of:** 2026-10-05T14:45:08.161Z
 - **Showing:** top 20 by impressions
 
 ## Top pages by impressions
 
 | Page | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| / | 16 | 0 | 0% | 4.3 |
-| /features/ | 16 | 0 | 0% | 33.4 |
-| /ru/features/ | 9 | 0 | 0% | 5.1 |
-| /ar/ | 8 | 0 | 0% | 5.8 |
-| /hi/ | 8 | 0 | 0% | 4 |
-| /fr/features/ | 7 | 0 | 0% | 4.6 |
-| /ru/ | 5 | 1 | 20% | 2.4 |
-| /fr/ | 5 | 0 | 0% | 19.6 |
-| /de/ | 4 | 0 | 0% | 5.8 |
-| /faq/ | 4 | 0 | 0% | 19.8 |
-| /nl/ | 4 | 0 | 0% | 11.3 |
+| / | 11 | 0 | 0% | 4.4 |
+| /features/ | 9 | 0 | 0% | 13.9 |
+| /hi/ | 7 | 0 | 0% | 3.3 |
+| /ru/features/ | 7 | 0 | 0% | 5.1 |
+| /ru/ | 6 | 1 | 16.7% | 2.2 |
+| /ar/ | 6 | 0 | 0% | 5 |
+| /fr/features/ | 6 | 0 | 0% | 4.8 |
+| /fr/ | 5 | 0 | 0% | 33.8 |
+| /planning/ | 5 | 0 | 0% | 80 |
 | /security/ | 4 | 0 | 0% | 7.3 |
-| /tr/ | 4 | 0 | 0% | 16.5 |
-| /fr/security/ | 3 | 0 | 0% | 7.7 |
-| /ja/ | 3 | 0 | 0% | 4.3 |
-| /privacy/ | 3 | 0 | 0% | 67.3 |
-| /pt/ | 3 | 0 | 0% | 3.7 |
-| /pt/security/ | 3 | 0 | 0% | 8.7 |
+| /de/ | 3 | 0 | 0% | 6.3 |
+| /faq/ | 3 | 0 | 0% | 5.3 |
+| /nl/ | 3 | 0 | 0% | 11.7 |
 | /es/ | 2 | 0 | 0% | 7 |
-| /es/delete-account/ | 2 | 0 | 0% | 8.5 |
+| /es/delete-account/ | 2 | 0 | 0% | 5.5 |
+| /es/security/ | 2 | 0 | 0% | 7.5 |
+| /fr/privacy/ | 2 | 0 | 0% | 8.5 |
+| /fr/security/ | 2 | 0 | 0% | 6.5 |
+| /how-it-works/ | 2 | 0 | 0% | 11.5 |
+| /nl/faq/ | 2 | 0 | 0% | 29.5 |
 
 ## Top queries by impressions
 
 | Query | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| vaulto | 12 | 0 | 0% | 6.1 |
+| vaulto | 9 | 0 | 0% | 6.1 |
 | vaultody | 4 | 0 | 0% | 49.8 |
-| apa itu estate planning | 1 | 0 | 0% | 92 |
+| estate planning service | 2 | 0 | 0% | 89 |
+| vendtaculott | 2 | 0 | 0% | 76 |
 | estate planner | 1 | 0 | 0% | 77 |
+| estate planning consultant | 1 | 0 | 0% | 70 |
+| inheritance plan | 1 | 0 | 0% | 75 |
 | valtout | 1 | 0 | 0% | 69 |
-| vendtaculott | 1 | 0 | 0% | 75 |
 | vuulto | 1 | 0 | 0% | 3 |
+| wault | 1 | 0 | 0% | 77 |
 
 ---
 
