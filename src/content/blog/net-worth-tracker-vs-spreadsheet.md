@@ -7,7 +7,7 @@ faqs:
   - question: "Does a net worth tracker connect to my bank?"
     answer: "Not always — and Vaulto deliberately doesn't. Some trackers link to your bank so balances update on their own, which means handing a third party read access to your live accounts. Vaulto takes the other approach: values are entered and updated by you, by hand, exactly as they would be in a spreadsheet. There's no bank login and no account linking. The trade-off is honest — you update the numbers yourself, in return for not connecting any accounts. If auto-syncing is what you're after, Vaulto isn't that tool; if you'd rather keep your accounts unconnected, it fits."
   - question: "Is a net worth tracker free?"
-    answer: "Vaulto is free to start — you can build your inventory, record what you own and owe, and see your net worth without paying. Some deeper features may be paid later, but the core of getting organised and seeing your position costs nothing up front. A spreadsheet is also free, of course; the question isn't really price, it's whether you want the extra structure, evidence, and family-readiness a purpose-built tool adds."
+    answer: "Vaulto is free to start — you can build your inventory, record what you own and owe, see your net worth, and get the advisory overview without paying. Going deeper is an optional paid upgrade to the full report; the organising-and-seeing-your-position part is the free part. A spreadsheet is free too; the real question is whether the added structure, evidence, and family-readiness are worth it to you."
   - question: "Is my data private in a net worth app?"
     answer: "It should be, and you should judge any app on specifics rather than slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control. It's a private vault you control — support cannot browse your records. Whatever tool you pick, ask who else can see your data, how it's protected, and whether you can export it."
   - question: "Can my partner use the same net worth tracker?"
@@ -61,7 +61,7 @@ A vault like Vaulto is built for the job a spreadsheet is stretched into. Here's
 | **Mobile capture** | Manual typing only | Photo an item or document → AI drafts a record you confirm |
 | **Account auto-sync** | Manual entry | Manual entry (no account linking, by design) |
 | **Family-readiness** | Personal file on one device | One organised source of truth your family could use |
-| **Advisory** | None | Free AI overview: estimate ranges + gaps in protection |
+| **Advisory** | None | Free AI overview: estimate ranges + gaps in protection. Going deeper is an optional paid upgrade to the full report |
 
 Notice the auto-sync row: **both are manual.** That's deliberate — the vault's advantage isn't automation, it's everything *around* the numbers.
 
@@ -87,7 +87,7 @@ If that last point is the one that lands, you're not really comparing tools any 
 Not always — and Vaulto deliberately doesn't. Some trackers link to your bank so balances update on their own, which means handing a third party read access to your live accounts. Vaulto takes the other approach: values are entered and updated by you, by hand, exactly as in a spreadsheet. There's no bank login and no account linking. If auto-syncing is what you're after, Vaulto isn't that tool; if you'd rather keep your accounts unconnected, it fits. (More on the private, no-login method: [track net worth without linking bank accounts](/blog/track-net-worth-without-linking-bank-accounts/).)
 
 **Is a net worth tracker free?**
-Vaulto is free to start — you can build your inventory, record what you own and owe, and see your net worth without paying up front. A spreadsheet is free too; the real question is whether the added structure, evidence, and family-readiness are worth it to you.
+Vaulto is free to start — you can build your inventory, record what you own and owe, see your net worth, and get the advisory overview without paying. Going deeper is an optional paid upgrade to the full report; the organising-and-seeing-your-position part is the free part. A spreadsheet is free too; the real question is whether the added structure, evidence, and family-readiness are worth it to you.
 
 **Is my data private in a net worth app?**
 Judge any app on specifics, not slogans. In Vaulto, each person's vault is isolated from other users, your password is stored using a slow hashing method (scrypt) rather than in readable form, and anything the AI reads is governed by a consent choice you control. It's a private vault you control, and support cannot browse your records.
