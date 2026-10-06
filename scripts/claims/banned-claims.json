@@ -1,8 +1,8 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Produced by scripts/claims/sync-proof-table.mjs from the ARY-23 §0 proof table (the single source of truth for product claims). To retire a claim: update the §0 row and its claims-guard entry in ARY-23, then run `npm run claims:sync`.",
   "source": "ARY-23 #document-positioning-deck §0",
-  "sourceRevisionId": "3619d839-2328-41e5-9675-5313f39106b7",
-  "generatedAt": "2026-10-06T20:51:18.061Z",
+  "sourceRevisionId": "fb7fb350-583e-4ad1-9538-3f2196afe2b6",
+  "generatedAt": "2026-10-06T21:11:21.966Z",
   "retiredClaimsInTable": [
     "C-002",
     "C-003",
@@ -302,6 +302,10 @@
     {
       "claim": "C-027",
       "reason": "ADDED 2026-10-06 (ARY-4291) off ARY-4252 §5 — §0.1's standing rule is absolute (every prohibition is either a rules regex or a notPatterned entry, no third option and no silent omission) and this prohibition had neither; the reasoning below lived only as C-027 row prose, which the guard does not inherit. C-027 bans DENYING that Vaulto AI-estimates property and tangible value (\"nothing auto-values your property\", \"user-maintained only\", \"no automated pricing\", \"it doesn't value anything for you\"). A regex cannot express it because the banned framings are context-dependent: the identical words are TRUE and approved outside the revaluable set — \"you record the mortgage yourself\" (a liability, not revaluable), \"Vaulto doesn't value pensions / investments / cash accounts\", and the standing safe denials (no bank or lender link, no Land Registry link, no market feed, no automatic mortgage-balance pull). A phrase-level pattern would fire on those honest denials far more often than on a real over-claim — the same 'worse than nothing' failure mode that put C-018 and C-020 in this list. Enforced by the CMO claim gate plus the C-027 row itself, English-manual, like C-023. Precedent for how it fails in practice: the three real instances fixed on ARY-4261 (02af77b) were each a GLOBAL denial that happened to sweep property in alongside genuinely unvalued categories, which is a semantic scope error no regex detects."
+    },
+    {
+      "reason": "ADDED 2026-10-06 (ARY-4316). The risk here is the INVERSE of a price leak, and it is context-dependent in exactly the way a regex cannot express. The banned shapes are (a) hardening the one-off into a permanence promise we do not honour -- 'pay once, free updates forever', 'never pay again', 'guaranteed for life' -- which would sweep in future SKUs and ignore revoke-on-refund, and (b) implying the report is purchasable today, or purchasable on the web at all (web has no card rail, ARY-830). Both are judgements about context and scope, not about a phrase. A regex on 'subscription' / 'one-time' / 'forever' would false-fire on precisely the sentences this row LICENSES -- 'not a subscription', 'you won't be charged again' are the product's own paywall compliance copy, shipped in 16 locales -- which is the same denial problem that made C-020, C-018/C-022 and C-027 notPatterned. The price leg needs no new regex: it is already enforced by the report-price rule under C-014. Enforced by the CMO gate plus this row (English-manual).",
+      "claim": "C-028"
     }
   ]
 }
