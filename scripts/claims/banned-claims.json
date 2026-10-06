@@ -1,8 +1,8 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Produced by scripts/claims/sync-proof-table.mjs from the ARY-23 §0 proof table (the single source of truth for product claims). To retire a claim: update the §0 row and its claims-guard entry in ARY-23, then run `npm run claims:sync`.",
   "source": "ARY-23 #document-positioning-deck §0",
-  "sourceRevisionId": "9bf51932-b0a7-425b-8348-43ac1b72531d",
-  "generatedAt": "2026-07-29T00:20:52.082Z",
+  "sourceRevisionId": "7d39f08a-aacd-44f0-859e-e11852b979da",
+  "generatedAt": "2026-10-06T20:29:28.076Z",
   "retiredClaimsInTable": [
     "C-002",
     "C-003",
@@ -238,6 +238,48 @@
         ]
       },
       "knownGap": "English-only, like every rule here — the same over-claim in the other 15 locales is invisible to it (de \"kein Administrationsbereich\", fr \"aucun espace d'administration\" share no root with \"admin\"). C-025 is not live in any locale yet (ARY-1393 blocked, ARY-1445 FAILed), so there is nothing translated to miss today; when it does ship, verify it per-locale by field (security/*.json protections[-1]) rather than by regex — see ARY-1377."
+    },
+    {
+      "id": "report-price",
+      "claim": "C-014",
+      "label": "A price or currency on the detailed advisory report",
+      "patterns": [
+        "£\\s?49(?![\\d,])",
+        "\\$\\s?39\\.99(?!\\d)",
+        "\\b(USD|GBP|EUR)\\s?(39\\.99|49|3999|4900)\\b",
+        "\\b(3999|4900)\\b[^.\n]{0,40}\\b(report|price|pay|cost|checkout)\\b",
+        "\\b(report|price|pay|cost|checkout)\\b[^.\n]{0,40}\\b(3999|4900)\\b",
+        "\\b(detailed|full|deeper|advisory)\\s+report\\b[^.\n]{0,60}(£|\\$|€)\\s?\\d",
+        "(£|\\$|€)\\s?\\d[\\d.,]*[^.\n]{0,60}\\b(detailed|full|deeper|advisory)\\s+report\\b",
+        "\\b(report|upgrade|unlock)\\b[^.\n]{0,40}\\b(costs?|priced|for just|only)\\b[^.\n]{0,25}(£|\\$|€)\\s?\\d"
+      ],
+      "guidance": "ADDED 2026-10-06 (ARY-4291) off ARY-4252 §5, which found the price ban had NO machine-readable entry at all — thirteen rules ids and not one covering a price literal. 'Never a price' survived only as prose inside free-tier-paid-fields' `instead` guidance, which the build does not enforce, so the C-014 price ban was kept by human sweep alone. claims:sync could not catch the gap: its coverage check fires on RETIRED rows and C-014 is ✅. BOTH currencies are patterned deliberately. The live asset-vault-api-prod service is configured at REPORT_PRICE_MINOR=3999 / REPORT_PRICE_CURRENCY=USD — the price is $39.99, NOT £49 — so a £49-only pattern is UNDER-INCLUSIVE and would pass a page reading $39.99 (ARY-4252 §3.2). £49 is still patterned because it is the env default (env.ts:186,195) and the retired copy that shipped under it. Why a regex is safe here when C-018/C-020 needed notPatterned: there is no denial problem — we never argue against a price by quoting one, so the strings never appear in honest copy. The numeric patterns carry deliberate negative lookaheads so ordinary estate-planning figures stay green: £49 does not match inside £49,000 or £490, and nothing matches the £325,000 nil-rate band, £300 probate fees, a £490,000 home, or the app-level JSON-LD Offer price:'0' in src/config/structured-data.ts. The word 'premium' is deliberately NOT patterned — an insurance premium next to a currency is legitimate copy. PRODUCT-SIDE TWINS, not substitutes: asset-vault/src/lib/no-payment-surface.test.ts (web) and NoPaymentSurfaceTest (Android, ARY-1080) keep the price out of the product; this rule keeps it out of marketing. claims:check SCAN_ROOTS cannot see the product repo and those tests cannot see this one.",
+      "instead": "the full report — never a number and never a currency, on any evergreen surface (C-014; see the ⛔ block under the §0 table)",
+      "controls": {
+        "mustFire": [
+          "Unlock the full report for £49.",
+          "The detailed report is $39.99.",
+          "Get the full report — just $ 39.99 today",
+          "£49 buys you the detailed report",
+          "The advisory report costs £49",
+          "Report price: USD 39.99",
+          "the report is priced at €45",
+          "amount 4900 for the report",
+          "Pay £49 once and keep it forever",
+          "the full report ($39.99)"
+        ],
+        "mustStayGreen": [
+          "Go deeper with the full report when you want your risk areas broken down.",
+          "The nil-rate band is £325,000 and the residence nil-rate band adds £175,000.",
+          "Probate fees in England and Wales are £300 for estates over £5,000.",
+          "A solicitor may charge £200 an hour to administer an estate.",
+          "Valuations on a £490,000 home move more than most people expect.",
+          "You might spend £4,900 on professional fees settling an estate.",
+          "Your insurance premium might be £1,200 a year.",
+          "Vaulto is free to start. The full report is an in-app purchase."
+        ]
+      },
+      "knownGap": "English-only like every rule here, but the price is the one claim family where that matters least — a numeral is locale-independent, so £49 / $39.99 / 3999 are caught in a translated file too. What an English regex still misses is a localized currency WORD or a store-rendered price pulled in at runtime. Verified zero-hit against origin/master @ c1423ab across all 307 scanned files in the seven SCAN_DIRS, so this rule carries NO copy-fix ordering dependency and could land ahead of any copy change. ⚠️ Zero here is NOT 'the price is not claimed anywhere': SCAN_ROOTS are marketing-only — see the Known limit paragraph above."
     }
   ],
   "notPatterned": [
@@ -255,7 +297,11 @@
     },
     {
       "claim": "C-022",
-      "reason": "\"bank-grade\" / \"military-grade\" / SOC 2 / ISO. Same denial problem as C-020: the blog argues against grade adjectives by name (\"adjectives aren't evidence; mechanisms are\"), so the strings appear in copy whose whole point is that we do not claim them. Enforced by Brand & Trust review."
+      "reason": "\"bank-grade\" / \"military-grade\" / SOC 2 / ISO. Same denial problem as C-020: the blog argues against grade adjectives by name (\"adjectives aren't evidence; mechanisms are\"), so the strings appear in copy whose whole point is that we do not claim them. Enforced by Brand & Trust review. RETAINED after the 2026-09-22 merge of C-022 into C-018 (ARY-4252 §5): the row is struck through in place, never deleted, and this entry must stay so claims:sync keeps resolving the immutable id C-022."
+    },
+    {
+      "claim": "C-027",
+      "reason": "ADDED 2026-10-06 (ARY-4291) off ARY-4252 §5 — §0.1's standing rule is absolute (every prohibition is either a rules regex or a notPatterned entry, no third option and no silent omission) and this prohibition had neither; the reasoning below lived only as C-027 row prose, which the guard does not inherit. C-027 bans DENYING that Vaulto AI-estimates property and tangible value (\"nothing auto-values your property\", \"user-maintained only\", \"no automated pricing\", \"it doesn't value anything for you\"). A regex cannot express it because the banned framings are context-dependent: the identical words are TRUE and approved outside the revaluable set — \"you record the mortgage yourself\" (a liability, not revaluable), \"Vaulto doesn't value pensions / investments / cash accounts\", and the standing safe denials (no bank or lender link, no Land Registry link, no market feed, no automatic mortgage-balance pull). A phrase-level pattern would fire on those honest denials far more often than on a real over-claim — the same 'worse than nothing' failure mode that put C-018 and C-020 in this list. Enforced by the CMO claim gate plus the C-027 row itself, English-manual, like C-023. Precedent for how it fails in practice: the three real instances fixed on ARY-4261 (02af77b) were each a GLOBAL denial that happened to sweep property in alongside genuinely unvalued categories, which is a semantic scope error no regex detects."
     }
   ]
 }
