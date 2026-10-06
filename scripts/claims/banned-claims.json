@@ -1,8 +1,8 @@
 {
   "$comment": "GENERATED FILE — do not edit by hand. Produced by scripts/claims/sync-proof-table.mjs from the ARY-23 §0 proof table (the single source of truth for product claims). To retire a claim: update the §0 row and its claims-guard entry in ARY-23, then run `npm run claims:sync`.",
   "source": "ARY-23 #document-positioning-deck §0",
-  "sourceRevisionId": "7d39f08a-aacd-44f0-859e-e11852b979da",
-  "generatedAt": "2026-10-06T20:29:28.076Z",
+  "sourceRevisionId": "3619d839-2328-41e5-9675-5313f39106b7",
+  "generatedAt": "2026-10-06T20:51:18.061Z",
   "retiredClaimsInTable": [
     "C-002",
     "C-003",
