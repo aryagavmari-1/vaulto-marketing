@@ -18,7 +18,7 @@ faqs:
 
 If you already keep your family's net worth in a spreadsheet, you don't need convincing that tracking it matters — you're just wondering whether a purpose-built tool is worth the switch, or whether it's another subscription doing what a free file already does.
 
-Here's the honest answer up front: **a spreadsheet is perfectly fine to start.** A dedicated vault becomes the better choice when you want four specific things a spreadsheet struggles with — **durability, evidence, easy capture, and family-readiness**. What it is *not* is magic: a good tool doesn't secretly update your balances for you. So the real decision isn't "spreadsheet vs automation" — it's "a fragile file I maintain alone vs a structured place that holds the numbers *and* the proof."
+Here's the honest answer up front: **a spreadsheet is perfectly fine to start.** A dedicated vault becomes the better choice when you want four specific things a spreadsheet struggles with — **durability, evidence, easy capture, and family-readiness**. What it is *not* is magic: a good tool doesn't secretly update your balances for you. So the real decision isn't "spreadsheet vs automation" — it's "a fragile file I maintain alone vs a structured place that holds the numbers *and* the proof." **And on the subscription worry: Vaulto isn't one.** The vault is free to start, and the one paid thing — the full report — is a one-off unlock for your account rather than a recurring charge.
 
 **[Track it in one place — start your vault (free to start)](https://app.myvaulto.com)**
 
