@@ -11,7 +11,7 @@ faqs:
   - question: "How can you reduce inheritance tax?"
     answer: "Common, legitimate levers in the UK include using your tax-free thresholds in full, spousal and civil-partner transfers, annual and small-gift exemptions, gifts that fall outside the estate after seven years, charitable giving, and writing life cover in trust so the payout sits outside the estate. The right mix depends entirely on your situation and where you live, so confirm the current rules with a qualified professional."
   - question: "Does Vaulto give tax advice or file my taxes?"
-    answer: "No. Vaulto gives a free estimate of your likely inheritance-tax exposure and an advisory overview of legitimate ways to reduce it, with an optional paid detailed report if you want to go deeper. It does not file returns, give regulated tax advice, or guarantee any saving — it helps you understand your position and gather what you'd need before you speak to a professional."
+    answer: "No. Vaulto gives a free estimate of your likely inheritance-tax exposure and an advisory overview of legitimate ways to reduce it, with an optional paid upgrade to the full report if you want to go deeper. It does not file returns, give regulated tax advice, or guarantee any saving — it helps you understand your position and gather what you'd need before you speak to a professional."
 ---
 
 **Inheritance tax planning** has a reputation for being complicated, expensive, and best left until later. Most of it isn't. The hardest part is usually the simplest: knowing what you actually own, what it's worth, and which bits of it the tax might touch. This guide covers the inheritance tax planning basics in plain terms — what to gather, how an estate is valued, and the honest first steps — so you can plan properly without pretending to be an expert.
@@ -76,7 +76,7 @@ Once you know what you own, an estimate is quick — and seeing it is often what
 
 The *Inheritance taxes & cost reduction* advisory estimates your exposure from your estate, your home, your gifts, and the rules where you live; it surfaces the reliefs, allowances, and structures you may be leaving on the table; and it weighs the things a tax calculator ignores — liquidity, timing, and the admin burden that lands on your family, not just the size of the bill. It's **jurisdiction-aware**, so UK thresholds, spousal transfers, and the seven-year gift rule are handled differently from the rules abroad.
 
-The honest frame: the **estimate is free**, and there's an **optional, paid detailed report** of legitimate ways to reduce your exposure if the potential savings make it worth going deeper. Free overview first, then go deeper only if it pays to.
+The honest frame: the **estimate is free**, and there's **an optional paid upgrade to the full report** of legitimate ways to reduce your exposure if the potential savings make it worth going deeper. Free overview first, then go deeper only if it pays to.
 
 And because it all rests on knowing what you own, the records live where the estimate is drawn from. Snap a photo of an item or a document and Vaulto drafts a record for you to confirm; a document registry notes where each original — the deed, the policy, the valuation — actually lives. It's a private vault you control: it's your data, not ours to browse, and the files you attach are reached through links that expire rather than sitting on an open address. (For the legacy side of the picture, our [digital estate-planning checklist](/blog/digital-estate-planning-checklist/) covers what your family needs to find.)
 
@@ -98,7 +98,7 @@ Common, legitimate levers in the UK include using your tax-free thresholds in fu
 
 ### Does Vaulto give tax advice or file my taxes?
 
-No. Vaulto gives a free estimate of your likely inheritance-tax exposure and an advisory overview of legitimate ways to reduce it, with an optional paid detailed report if you want to go deeper. It does not file returns, give regulated tax advice, or guarantee any saving — it helps you understand your position and gather what you'd need before you speak to a professional.
+No. Vaulto gives a free estimate of your likely inheritance-tax exposure and an advisory overview of legitimate ways to reduce it, with an optional paid upgrade to the full report if you want to go deeper. It does not file returns, give regulated tax advice, or guarantee any saving — it helps you understand your position and gather what you'd need before you speak to a professional.
 
 ---
 
