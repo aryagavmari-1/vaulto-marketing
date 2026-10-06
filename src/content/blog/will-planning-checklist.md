@@ -11,7 +11,7 @@ faqs:
   - question: "Do I need a power of attorney as well as a will?"
     answer: "They do different jobs. A will takes effect after you die; a power of attorney lets someone you trust make decisions while you're alive but unable to — for example after an accident or illness. Many people set up both at the same time. A short power of attorney checklist — who would handle money, who would handle health and care, and whether they know your wishes — is worth working through before any appointment."
   - question: "Can Vaulto write my will for me?"
-    answer: "No. Vaulto doesn't write wills or give legal advice. It helps you gather and organise everything a solicitor or will service will ask for, and its Will planning channel gives a free overview of whether your wishes would hold today — flagging gaps like an out-of-date will or a missing power of attorney. For the full picture there's an optional, paid detailed report. The will itself is still made with a qualified professional or a proper will service."
+    answer: "No. Vaulto doesn't write wills or give legal advice. It helps you gather and organise everything a solicitor or will service will ask for, and its Will planning channel gives a free overview of whether your wishes would hold today — flagging gaps like an out-of-date will or a missing power of attorney. If you want to go deeper, there's the full report. The will itself is still made with a qualified professional or a proper will service."
 ---
 
 > This is general information to help you get organized, not legal advice. Rules vary by country and region and change over time — check your local law or a qualified professional before acting.
@@ -83,7 +83,7 @@ Not strictly part of the will's legal force, but the part families are most grat
 
 ---
 
-**A quicker way to pull this together:** Vaulto's **Will planning** channel gives you a *free overview* of whether your wishes would hold up today — it looks for gaps like an out-of-date will, a missing power of attorney, unnamed guardians, or forgotten digital assets, and weighs who'd actually decide for you, not just who inherits. If you want to go deeper, there's an optional, paid detailed report with the full plan. [See the free overview in Vaulto](https://app.myvaulto.com) before your appointment.
+**A quicker way to pull this together:** Vaulto's **Will planning** channel gives you a *free overview* of whether your wishes would hold up today — it looks for gaps like an out-of-date will, a missing power of attorney, unnamed guardians, or forgotten digital assets, and weighs who'd actually decide for you, not just who inherits. If you want to go deeper, there's the full report. [See the free overview in Vaulto](https://app.myvaulto.com) before your appointment.
 
 ---
 
@@ -124,7 +124,7 @@ They do different jobs. A will takes effect after you die; a power of attorney l
 
 ### Can Vaulto write my will for me?
 
-No. Vaulto doesn't write wills or give legal advice. It helps you gather and organise everything a solicitor or will service will ask for, and its Will planning channel gives a free overview of whether your wishes would hold today — flagging gaps like an out-of-date will or a missing power of attorney. For the full picture there's an optional, paid detailed report. The will itself is still made with a qualified professional or a proper will service.
+No. Vaulto doesn't write wills or give legal advice. It helps you gather and organise everything a solicitor or will service will ask for, and its Will planning channel gives a free overview of whether your wishes would hold today — flagging gaps like an out-of-date will or a missing power of attorney. If you want to go deeper, there's the full report. The will itself is still made with a qualified professional or a proper will service.
 
 ---
 
