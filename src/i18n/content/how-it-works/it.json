@@ -32,7 +32,7 @@
   "plans": {
     "eyebrow": "Plans",
     "heading": "Quando vuoi, pianifica il prossimo passo.",
-    "intro": "La tua cassaforte mostra ciò che possiedi. Plans ti aiuta a riflettere su cosa farne — da un testamento o un'eredità all'assicurazione, un accordo prematrimoniale o beni in più di un paese. Inizia quando ti è più comodo e vai con i tuoi tempi.",
+    "intro": "Il tuo caveau mostra ciò che possiedi. Plans ti aiuta a riflettere su cosa farne — da un testamento o un'eredità all'assicurazione, un accordo prematrimoniale o beni in più di un paese. Inizia quando ti è più comodo e vai con i tuoi tempi.",
     "beats": [
       {
         "title": "Scegli un'area su cui concentrarti.",
@@ -54,7 +54,7 @@
   },
   "securityLink": "Come lo teniamo al sicuro →",
   "finalCta": {
-    "title": "Inizia la tua cassaforte — gratis",
+    "title": "Inizia il tuo caveau — gratis",
     "body": "Aggiungi le tue prime cose in pochi minuti. Nessun foglio di calcolo necessario."
   }
 }

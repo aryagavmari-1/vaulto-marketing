@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funzionalità",
-    "description": "Cosa fa Vaulto oggi: inventario dei beni, una cassaforte privata per i documenti, acquisizione assistita dall'IA, raccolte e una visione chiara di tutto ciò che possiede la tua famiglia."
+    "description": "Cosa fa Vaulto oggi: inventario dei beni, un caveau privato per i documenti, acquisizione assistita dall'IA, raccolte e una visione chiara di tutto ciò che possiede la tua famiglia."
   },
   "crumbs": {
     "home": "Home",
@@ -18,7 +18,7 @@
       "body": "Registra tutto ciò che possiedi — proprietà, conti, investimenti, oggetti di valore, pensioni — con i dettagli che contano: valore o fascia di valore, posizione, stato e le persone coinvolte."
     },
     {
-      "title": "Cassaforte documentale",
+      "title": "Caveau documentale",
       "body": "Conserva atti, polizze, testamenti ed estratti in modo sicuro, collegati ai beni a cui appartengono. Carica file fino a 20MB, conservati in uno spazio di archiviazione privato e raggiungibili solo tramite link firmati e di breve durata."
     },
     {
