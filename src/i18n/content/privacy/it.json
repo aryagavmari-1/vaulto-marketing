@@ -16,7 +16,7 @@
   "sections": [
     {
       "title": "Cosa raccogliamo",
-      "body": "Le informazioni che scegli di inserire nella tua cassaforte (beni, debiti, documenti e dettagli correlati), i dati dell'account necessari per accedere e i dati di utilizzo di base necessari per gestire e migliorare il servizio."
+      "body": "Le informazioni che scegli di inserire nel tuo caveau (beni, debiti, documenti e dettagli correlati), i dati dell'account necessari per accedere e i dati di utilizzo di base necessari per gestire e migliorare il servizio."
     },
     {
       "title": "Come le usiamo",
@@ -24,7 +24,7 @@
     },
     {
       "title": "Elaborazione AI &amp; terze parti",
-      "body": "Per offrire le nostre funzionalità AI — la scansione e compilazione delle foto dei beni, le valutazioni automatiche, la guida vocale e la panoramica, il report e la chat di consulenza — inviamo a <strong>OpenAI, L.L.C.</strong> le informazioni necessarie a tali funzionalità. OpenAI esegue i modelli AI per nostro conto come responsabile del trattamento dei dati in base a un Data Processing Addendum (DPA) sottoscritto. A seconda della funzionalità, ciò può includere le foto che acquisisci (che possono mostrare dettagli dei documenti come numeri di conto o di polizza e indirizzi), i nomi dei beni, le categorie, le valute e i valori nella tua cassaforte, le risposte e le note in testo libero che fornisci nel flusso di consulenza (che possono includere circostanze personali o familiari sensibili), il tuo paese e il testo letto ad alta voce dalla guida vocale. OpenAI elabora questi dati solo per restituirci i risultati e non li usa per addestrare i propri modelli. Istruiamo OpenAI a non conservare le nostre richieste e risposte (store=false); in assenza di un accordo di zero-retention, OpenAI può conservare i dati fino a 30 giorni esclusivamente per il monitoraggio degli abusi prima di eliminarli. Non vendiamo queste informazioni né le condividiamo con altre terze parti per l'elaborazione AI."
+      "body": "Per offrire le nostre funzionalità AI — la scansione e compilazione delle foto dei beni, le valutazioni automatiche, la guida vocale e la panoramica, il report e la chat di consulenza — inviamo a <strong>OpenAI, L.L.C.</strong> le informazioni necessarie a tali funzionalità. OpenAI esegue i modelli AI per nostro conto come responsabile del trattamento dei dati in base a un Data Processing Addendum (DPA) sottoscritto. A seconda della funzionalità, ciò può includere le foto che acquisisci (che possono mostrare dettagli dei documenti come numeri di conto o di polizza e indirizzi), i nomi dei beni, le categorie, le valute e i valori nel tuo caveau, le risposte e le note in testo libero che fornisci nel flusso di consulenza (che possono includere circostanze personali o familiari sensibili), il tuo paese e il testo letto ad alta voce dalla guida vocale. OpenAI elabora questi dati solo per restituirci i risultati e non li usa per addestrare i propri modelli. Istruiamo OpenAI a non conservare le nostre richieste e risposte (store=false); in assenza di un accordo di zero-retention, OpenAI può conservare i dati fino a 30 giorni esclusivamente per il monitoraggio degli abusi prima di eliminarli. Non vendiamo queste informazioni né le condividiamo con altre terze parti per l'elaborazione AI."
     },
     {
       "title": "Condivisione &amp; consenso",
@@ -32,13 +32,13 @@
     },
     {
       "title": "Come vengono protetti",
-      "body": "I tuoi dati e i file caricati sono cifrati a riposo. In più, Vaulto cifra di nuovo le parti sensibili nell'app stessa — nomi, descrizioni, luoghi e note, le foto e le scansioni che carichi e le valutazioni esatte — con chiavi gestite in Google Cloud KMS. La cassaforte di ogni persona è isolata dagli altri utenti e le password sono sottoposte ad hash con scrypt. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — inclusi quali campi restano leggibili e ciò che non dichiariamo ancora."
+      "body": "I tuoi dati e i file caricati sono cifrati a riposo. In più, Vaulto cifra di nuovo le parti sensibili nell'app stessa — nomi, descrizioni, luoghi e note, le foto e le scansioni che carichi e le valutazioni esatte — con chiavi gestite in Google Cloud KMS. Il caveau di ogni persona è isolato dagli altri utenti e le password sono sottoposte ad hash con scrypt. Consulta la <a href=\"/security/\">panoramica sulla sicurezza</a> per i dettagli — inclusi quali campi restano leggibili e ciò che non dichiariamo ancora."
     }
   ],
   "choices": {
     "title": "Le tue scelte",
     "items": [
-      "Accedi alle informazioni nella tua cassaforte ed esportale.",
+      "Accedi alle informazioni nel tuo caveau ed esportale.",
       "Rimuovere una persona che hai invitato a una sessione di acquisizione.",
       "Richiedi la cancellazione del tuo account e dei tuoi dati — vedi <a href=\"/delete-account/\">come eliminare il tuo account</a>."
     ]
