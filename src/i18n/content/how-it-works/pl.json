@@ -32,7 +32,7 @@
   "plans": {
     "eyebrow": "Plany",
     "heading": "Gdy będziesz gotów, zaplanuj, co dalej.",
-    "intro": "Twój skarbiec pokazuje, co posiadasz. Plany pomagają przemyśleć, co z tym zrobić — od testamentu lub spadku po ubezpieczenie, intercyzę czy majątek w więcej niż jednym kraju. Zacznij, kiedy Ci pasuje, i idź we własnym tempie.",
+    "intro": "Twój sejf pokazuje, co posiadasz. Plany pomagają przemyśleć, co z tym zrobić — od testamentu lub spadku po ubezpieczenie, intercyzę czy majątek w więcej niż jednym kraju. Zacznij, kiedy Ci pasuje, i idź we własnym tempie.",
     "beats": [
       {
         "title": "Wybierz obszar, na którym chcesz się skupić.",
@@ -54,7 +54,7 @@
   },
   "securityLink": "Jak dbamy o bezpieczeństwo →",
   "finalCta": {
-    "title": "Załóż swój skarbiec — za darmo",
+    "title": "Załóż swój sejf — za darmo",
     "body": "Dodaj pierwsze rzeczy w kilka minut. Bez arkuszy kalkulacyjnych."
   }
 }

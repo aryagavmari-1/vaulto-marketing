@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Fonctionnalités",
-    "description": "Ce que Vaulto fait aujourd'hui : inventaire des biens, un coffre-fort privé pour vos documents, saisie assistée par IA, collections et une vue claire de tout ce que possède votre famille."
+    "description": "Ce que Vaulto fait aujourd'hui : inventaire des biens, un coffre privé pour vos documents, saisie assistée par IA, collections et une vue claire de tout ce que possède votre famille."
   },
   "crumbs": {
     "home": "Accueil",
@@ -18,7 +18,7 @@
       "body": "Enregistrez tout ce que vous possédez — biens immobiliers, comptes, investissements, objets de valeur, retraites — avec les détails qui comptent : valeur ou fourchette de valeur, emplacement, état, et les personnes concernées."
     },
     {
-      "title": "Coffre-fort de documents",
+      "title": "Coffre de documents",
       "body": "Conservez actes, contrats, testaments et relevés en sécurité, rattachés aux biens auxquels ils appartiennent. Importez des fichiers jusqu'à 20MB, conservés dans un stockage privé et accessibles uniquement via des liens signés à durée limitée."
     },
     {

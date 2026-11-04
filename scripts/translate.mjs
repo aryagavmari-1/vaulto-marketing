@@ -95,6 +95,51 @@ const LOCALE_NOTES = {
 - The brand takes masculine agreement: "o Vaulto", never "a Vaulto".`,
 };
 
+// ---- The vault noun, pinned per locale (ARY-1389 ruling, ARY-4258) --------
+// SINGLE SOURCE OF TRUTH: `nav.vault` in Asset-Vault lib/i18n/src/translations.ts.
+// Mirrored in scripts/check-vault-noun.mjs (LEXICON) and I18N.md — change all three
+// together, and only to follow the app.
+//
+// This table exists because the PIPELINE was the root cause, not the JSON. The old
+// rule 3 told the model to "translate 'vault' to the natural local word for a secure
+// strongbox/safe", i.e. it asked for a fresh judgement on every run — so each re-cut
+// re-rolled the noun per locale and per group, which is how 금고 / Сейф / coffre-fort /
+// ボールト / skarbiec all reached production against a standing ruling. Pinning the
+// JSON without pinning the prompt does not hold: the next `--force` run overwrites
+// it, exactly as the ARY-431 pt register fix was lost (see ARY-1433).
+const VAULT_NOUN = {
+  es: 'bóveda', fr: 'coffre', pt: 'cofre', de: 'Tresor', it: 'caveau',
+  nl: 'kluis', zh: '保险库', ja: '保管庫', ar: 'الخزنة', hi: 'तिजोरी',
+  ru: 'хранилище', pl: 'sejf', tr: 'kasa', ko: '보관함', sv: 'valv',
+};
+
+// Nouns ruled OUT per locale — named explicitly because a model asked only for a
+// positive target still reaches for the most common dictionary word, which for
+// several of these IS the retired one.
+const VAULT_NOUN_RETIRED = {
+  es: ['baúl', 'caja fuerte'], fr: ['coffre-fort'], pt: ['caixa-forte'],
+  de: ['Schließfach', 'Gewölbe'], it: ['cassaforte'], zh: ['金库'],
+  ja: ['金庫', 'ボールト'], hi: ['वॉल्ट'], ru: ['сейф'], pl: ['skarbiec'],
+  ko: ['금고'], sv: ['kassaskåp'],
+};
+
+function vaultNounContract(locale) {
+  const noun = VAULT_NOUN[locale];
+  if (!noun) return '';
+  const retired = VAULT_NOUN_RETIRED[locale] || [];
+  return `VAULT NOUN CONTRACT — this overrides any instinct about the "natural" word:
+
+- The common noun "vault" MUST be rendered as "${noun}", because that is the word the
+  Vaulto app itself shows on screen. Use it every time, and never substitute a synonym
+  that reads better in isolation — the marketing site and the product must agree.
+${retired.length ? `- NEVER use: ${retired.map((r) => `"${r}"`).join(', ')}. These are retired for this locale.\n` : ''}- Inflect "${noun}" correctly for its position in the sentence, and make every word
+  that agrees with it agree: gender, number, case, articles, possessives, participles,
+  and (Korean) the topic/object particles that depend on whether the noun ends in a
+  consonant. Grammatical correctness wins over leaving the noun in dictionary form.
+- The BRAND "Vaulto" and the full product name "Family Asset Vault" are NOT this noun:
+  keep both verbatim, untranslated and untransliterated.`;
+}
+
 // ---- Glossary + guardrails (CEO quality bar, ARY-427) ----------------------
 // ── SECURITY-CLAIMS CONTRACT (rule 4 in SYSTEM, rule 5 in BLOG_SYSTEM) ────────
 // These two rules ARE a claims surface. They mirror the live claim ledger
@@ -111,14 +156,15 @@ Return ONLY a JSON object with EXACTLY the same shape and keys as the input. Tra
 HARD RULES — follow every one:
 1. Brand name "Vaulto" is NEVER translated or transliterated — keep it verbatim in every language (including non-Latin scripts).
 2. Preserve EXACTLY, unchanged: all emoji, all HTML tags and attributes (e.g. <b>, </b>, <a ...>), HTML entities (e.g. &nbsp;), arrows/symbols (→ · —), {curly_placeholders}, file extensions (.zip), and technical/standard terms: TLS, HTTPS, scrypt, AES-256, GDPR, and article references like "Article 20" / "Article 17".
-3. Keep the product's "vault" metaphor: translate the common noun "vault" to the natural local word for a secure strongbox/safe (e.g. ES "bóveda"), used consistently throughout; but the BRAND "Vaulto" stays "Vaulto".
+3. Keep the product's "vault" metaphor, using the EXACT noun pinned in the VAULT NOUN CONTRACT below — do not choose your own word for it; but the BRAND "Vaulto" stays "Vaulto".
 4. SECURITY/LEGAL ACCURACY IS CRITICAL. Translate exactly what the source asserts — add no claim it does not make, remove no claim it does. The English claims: encryption in transit (TLS/HTTPS); records AND uploaded files encrypted at rest, with encryption keys managed in Google Cloud KMS; uploaded files kept in private storage reachable only through short-lived, signed links; scrypt-hashed passwords; and strict access control. NEVER strengthen, weaken, add, or remove these claims. In particular, do NOT introduce "zero-knowledge", "end-to-end encrypted", "we can't read your data", "bank-level", "military-grade", or any certification; do NOT add a quantifier the source lacks ("everything", "all your data", "every file"); and do NOT name Google Cloud Storage (or any provider) as where files are stored. If the English explicitly disclaims a term, keep that disclaimer's meaning intact in translation.
 5. Tone: warm, plain-language, reassuring — never hype. Match the calm, respectful register of the source. Use the friendly/informal "you" register where the language distinguishes (e.g. ES "tú", FR "vous" for respect is acceptable, DE "du").
 6. Keep translations concise — similar length to the source so layout/CTA buttons don't overflow.`;
 
 async function translateGroupToLocale(group, enObj, locale) {
   const langName = LANG_FULL[locale] || locale;
-  const note = LOCALE_NOTES[locale] ? `\n${LOCALE_NOTES[locale]}\n` : '';
+  const contracts = [vaultNounContract(locale), LOCALE_NOTES[locale]].filter(Boolean);
+  const note = contracts.length ? `\n${contracts.join('\n\n')}\n` : '';
   const user = `Target language: ${langName} (locale code "${locale}", native name "${LOCALE_NAMES[locale] || langName}").
 ${note}
 Translate the string values of this JSON into ${langName}, obeying every hard rule. Return the JSON object only:
@@ -313,6 +359,7 @@ Return ONLY a JSON object with EXACTLY these keys: "title", "description", "body
 
 HARD RULES — follow every one:
 1. Brand name "Vaulto" is NEVER translated or transliterated — keep it verbatim everywhere (including non-Latin scripts), and keep its Markdown emphasis (e.g. **Vaulto**) intact.
+1b. The common noun "vault" MUST use the EXACT noun pinned in the VAULT NOUN CONTRACT below — never your own choice of synonym, and never the English word or a transliteration of it.
 2. "body" is Markdown. Preserve EXACTLY the Markdown structure: heading levels (#, ##, >), bullet/numbered lists, bold/italic, blockquotes, and line breaks. Translate the prose only.
 3. Do NOT change, translate, or localize any URL inside a link — keep the exact target in parentheses, e.g. [security page](/security/) and (https://app.myvaulto.com) stay byte-for-byte. Translate only the visible link text in the square brackets.
 4. Preserve unchanged: emoji, arrows/symbols (→ · —), HTML if any, {curly_placeholders}, file extensions, and technical/standard terms: TLS, HTTPS, AES-256, GDPR, "Article 20"/"Article 17".
@@ -325,7 +372,8 @@ async function translateArticle(en, locale) {
   const langName = LANG_FULL[locale] || locale;
   const payload = { title: en.title, description: en.description, body: en.body };
   if (en.faqs.length) payload.faqs = en.faqs;
-  const note = LOCALE_NOTES[locale] ? `\n${LOCALE_NOTES[locale]}\n` : '';
+  const contracts = [vaultNounContract(locale), LOCALE_NOTES[locale]].filter(Boolean);
+  const note = contracts.length ? `\n${contracts.join('\n\n')}\n` : '';
   const user = `Target language: ${langName} (locale "${locale}", native name "${LOCALE_NAMES[locale] || langName}").
 ${note}
 Translate this article into ${langName}, obeying every hard rule. Return the JSON object only:

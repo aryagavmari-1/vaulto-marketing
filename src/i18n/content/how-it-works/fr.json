@@ -32,7 +32,7 @@
   "plans": {
     "eyebrow": "Plans",
     "heading": "Quand tu es prêt, prépare la suite.",
-    "intro": "Ton coffre-fort montre ce que tu possèdes. Plans t’aide à réfléchir à ce qu’il faut en faire — d’un testament ou d’un héritage à l’assurance, un contrat prénuptial, ou des biens dans plusieurs pays. Commence quand ça te convient, et avance à ton rythme.",
+    "intro": "Ton coffre montre ce que tu possèdes. Plans t’aide à réfléchir à ce qu’il faut en faire — d’un testament ou d’un héritage à l’assurance, un contrat prénuptial, ou des biens dans plusieurs pays. Commence quand ça te convient, et avance à ton rythme.",
     "beats": [
       {
         "title": "Choisis un sujet.",
@@ -54,7 +54,7 @@
   },
   "securityLink": "Comment nous le gardons en sécurité →",
   "finalCta": {
-    "title": "Commence ton coffre-fort — gratuit",
+    "title": "Commence ton coffre — gratuit",
     "body": "Ajoute tes premiers éléments en quelques minutes. Aucun tableur nécessaire."
   }
 }
