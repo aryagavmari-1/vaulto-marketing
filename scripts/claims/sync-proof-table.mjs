@@ -12,6 +12,15 @@
 //   2. a fenced ```claims-guard block directly beneath it holding the
 //      machine-readable patterns for each retired row.
 //
+// ⚠️ ENCODING TRAP when you edit that block (ARY-4245). Write a regex newline
+// as \u000a, NOT as \n. The document store decodes the two-character
+// \n escape into a raw newline, which makes the block unparseable and drops
+// this script at the JSON.parse below with:
+//     SyntaxError: Bad control character in string literal in JSON
+// Every [^.<newline>] character class in the patterns is affected, so the
+// failure is immediate and total rather than subtle. \u000a survives the
+// round trip and is what the block already uses.
+//
 // The two are cross-checked: every retired row in the table must be covered by
 // either a `rules` entry (enforced by regex) or a `notPatterned` entry (an
 // explicit, reasoned decision not to). If a row is retired and neither exists,
