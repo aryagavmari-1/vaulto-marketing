@@ -178,8 +178,17 @@ for (const rule of guard.rules) {
 // we had investigated and cleared three times, which survived only in this
 // generated artifact. A regeneration that shortens explanatory prose is far
 // more likely to be that accident than a deliberate edit, so it stops here and
-// asks. Patterns are unaffected — only `guidance` / `instead` / `label`.
-const PROSE_FIELDS = ['label', 'guidance', 'instead']
+// asks. Patterns are unaffected — only the prose fields listed below.
+//
+// `controlsProvenance` joined the list in ARY-4438. ARY-4245 added it as a
+// per-rule prose field and it is now on 12 of the 14 rules, carrying the longest
+// reasoning text in the file (240–1789 chars) — exactly the kind of record this
+// guard exists to protect, and it was unguarded for that whole time. The two
+// rules without it (`visibility-absolute`, `no-internal-tooling`) are safe
+// either way: the `?? ''` below makes an absent field compare '' to '', which is
+// not a loss. All 12 values are plain strings, so the `b.length < a.length`
+// comparison needs no type handling.
+const PROSE_FIELDS = ['label', 'guidance', 'instead', 'controlsProvenance']
 if (!process.argv.includes('--allow-prose-loss')) {
   let previous = null
   try {
