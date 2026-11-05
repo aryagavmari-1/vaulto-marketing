@@ -16,7 +16,7 @@
   "sections": [
     {
       "title": "Ce que nous collectons",
-      "body": "Les informations que vous choisissez de mettre dans votre coffre-fort (actifs, passifs, documents et détails associés), les informations de compte nécessaires pour vous connecter, ainsi que des données d'usage de base nécessaires au fonctionnement et à l'amélioration du service."
+      "body": "Les informations que vous choisissez de mettre dans votre coffre (actifs, passifs, documents et détails associés), les informations de compte nécessaires pour vous connecter, ainsi que des données d'usage de base nécessaires au fonctionnement et à l'amélioration du service."
     },
     {
       "title": "Comment nous les utilisons",
@@ -24,7 +24,7 @@
     },
     {
       "title": "Traitement par l'IA &amp; tiers",
-      "body": "Pour faire fonctionner nos fonctionnalités d'IA — le scan et préremplissage de photos d'actifs, les valorisations automatisées, le guide vocal, ainsi que l'aperçu, le rapport et le chat de conseil — nous envoyons les informations nécessaires à ces fonctionnalités à <strong>OpenAI, L.L.C.</strong>, qui exécute les modèles d'IA pour notre compte en tant que sous-traitant, dans le cadre d'un Data Processing Addendum (DPA) signé. Selon la fonctionnalité, cela peut inclure les photos que vous prenez (qui peuvent montrer des détails de documents tels que des numéros de compte ou de police et des adresses), les noms des actifs, catégories, devises et valeurs dans votre coffre-fort, les réponses et notes en texte libre que vous fournissez dans le parcours de conseil (qui peuvent inclure des situations personnelles ou familiales sensibles), votre pays, et le texte lu à voix haute par le guide vocal. OpenAI traite ces données uniquement pour nous renvoyer des résultats et ne les utilise pas pour entraîner ses modèles. Nous demandons à OpenAI de ne pas conserver nos requêtes ni nos réponses (store=false) ; en l'absence d'un accord de conservation nulle, OpenAI peut conserver les données jusqu'à 30 jours uniquement pour la surveillance des abus avant de les supprimer. Nous ne vendons pas ces informations et ne les partageons avec aucun autre tiers pour un traitement par IA."
+      "body": "Pour faire fonctionner nos fonctionnalités d'IA — le scan et préremplissage de photos d'actifs, les valorisations automatisées, le guide vocal, ainsi que l'aperçu, le rapport et le chat de conseil — nous envoyons les informations nécessaires à ces fonctionnalités à <strong>OpenAI, L.L.C.</strong>, qui exécute les modèles d'IA pour notre compte en tant que sous-traitant, dans le cadre d'un Data Processing Addendum (DPA) signé. Selon la fonctionnalité, cela peut inclure les photos que vous prenez (qui peuvent montrer des détails de documents tels que des numéros de compte ou de police et des adresses), les noms des actifs, catégories, devises et valeurs dans votre coffre, les réponses et notes en texte libre que vous fournissez dans le parcours de conseil (qui peuvent inclure des situations personnelles ou familiales sensibles), votre pays, et le texte lu à voix haute par le guide vocal. OpenAI traite ces données uniquement pour nous renvoyer des résultats et ne les utilise pas pour entraîner ses modèles. Nous demandons à OpenAI de ne pas conserver nos requêtes ni nos réponses (store=false) ; en l'absence d'un accord de conservation nulle, OpenAI peut conserver les données jusqu'à 30 jours uniquement pour la surveillance des abus avant de les supprimer. Nous ne vendons pas ces informations et ne les partageons avec aucun autre tiers pour un traitement par IA."
     },
     {
       "title": "Partage &amp; consentement",
@@ -32,13 +32,13 @@
     },
     {
       "title": "Comment elles sont protégées",
-      "body": "Vos données et vos fichiers téléversés sont chiffrés au repos. En plus de cela, Vaulto chiffre une seconde fois les parties sensibles dans l'application elle-même — intitulés, descriptions, emplacements et notes, les photos et numérisations que vous téléversez et les valeurs exactes — avec des clés gérées dans Google Cloud KMS. Le coffre-fort de chaque personne est isolé des autres utilisateurs, et les mots de passe sont hachés avec scrypt. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris quels champs restent lisibles et ce que nous n'affirmons pas encore."
+      "body": "Vos données et vos fichiers téléversés sont chiffrés au repos. En plus de cela, Vaulto chiffre une seconde fois les parties sensibles dans l'application elle-même — intitulés, descriptions, emplacements et notes, les photos et numérisations que vous téléversez et les valeurs exactes — avec des clés gérées dans Google Cloud KMS. Le coffre de chaque personne est isolé des autres utilisateurs, et les mots de passe sont hachés avec scrypt. Consultez l'<a href=\"/security/\">aperçu de la sécurité</a> pour les détails — y compris quels champs restent lisibles et ce que nous n'affirmons pas encore."
     }
   ],
   "choices": {
     "title": "Vos choix",
     "items": [
-      "Accéder aux informations dans votre coffre-fort et les exporter.",
+      "Accéder aux informations dans votre coffre et les exporter.",
       "Retirer une personne que vous avez invitée à une session de saisie.",
       "Demander la suppression de votre compte et de vos données — voir <a href=\"/delete-account/\">comment supprimer votre compte</a>."
     ]
