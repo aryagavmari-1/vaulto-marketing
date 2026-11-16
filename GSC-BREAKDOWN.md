@@ -7,54 +7,48 @@
 > portfolio average (ARY-2487).
 
 - **Property:** https://myvaulto.com/
-- **Window:** 2026-09-23 → 2026-10-23 (GSC lags ~3 days, so the window ends a few days back)
-- **As of:** 2026-10-26T13:08:18.307Z
+- **Window:** 2026-10-14 → 2026-11-13 (GSC lags ~3 days, so the window ends a few days back)
+- **As of:** 2026-11-16T15:51:31.601Z
 - **Showing:** top 20 by impressions
 
 ## Top pages by impressions
 
 | Page | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| /fr/features/ | 40 | 5 | 12.5% | 2.6 |
-| /fr/security/ | 26 | 0 | 0% | 7.7 |
-| /fr/ | 23 | 4 | 17.4% | 12 |
-| /features/ | 20 | 0 | 0% | 31.7 |
-| / | 17 | 1 | 5.9% | 13.1 |
-| /ru/ | 12 | 1 | 8.3% | 3 |
-| /planning/ | 10 | 0 | 0% | 84.6 |
-| /ru/features/ | 10 | 0 | 0% | 6.1 |
-| /faq/ | 5 | 0 | 0% | 3.8 |
-| /privacy/ | 4 | 0 | 0% | 9.5 |
-| /fr/planning/ | 3 | 0 | 0% | 7 |
-| /ja/faq/ | 3 | 0 | 0% | 7.7 |
-| /ja/features/ | 3 | 0 | 0% | 4 |
-| /ru/delete-account/ | 3 | 0 | 0% | 5.3 |
-| /fr/faq/ | 2 | 0 | 0% | 3.5 |
-| /fr/how-it-works/ | 2 | 0 | 0% | 5.5 |
-| /nl/features/ | 2 | 0 | 0% | 34.5 |
-| /nl/privacy/ | 2 | 0 | 0% | 26 |
-| /pt/features/ | 2 | 0 | 0% | 5 |
-| /sv/ | 2 | 0 | 0% | 2 |
+| /fr/features/ | 38 | 4 | 10.5% | 3.3 |
+| / | 33 | 1 | 3% | 12.2 |
+| /fr/ | 27 | 5 | 18.5% | 11 |
+| /features/ | 26 | 0 | 0% | 18.7 |
+| /ru/ | 26 | 0 | 0% | 3.5 |
+| /fr/security/ | 23 | 0 | 0% | 7.4 |
+| /ru/features/ | 13 | 0 | 0% | 7.3 |
+| /how-it-works/ | 10 | 0 | 0% | 6.2 |
+| /security/ | 10 | 0 | 0% | 14.8 |
+| /privacy/ | 7 | 0 | 0% | 12.6 |
+| /ja/faq/ | 5 | 0 | 0% | 7.6 |
+| /ja/features/ | 5 | 0 | 0% | 1.4 |
+| /ru/delete-account/ | 5 | 0 | 0% | 6 |
+| /fr/faq/ | 4 | 1 | 25% | 2.5 |
+| /ar/ | 4 | 0 | 0% | 13.5 |
+| /faq/ | 4 | 0 | 0% | 4 |
+| /pl/features/ | 4 | 0 | 0% | 2.3 |
+| /pt/features/ | 4 | 0 | 0% | 4.5 |
+| /de/ | 3 | 0 | 0% | 4 |
+| /fr/planning/ | 3 | 0 | 0% | 6.7 |
 
 ## Top queries by impressions
 
 | Query | Impr | Clicks | CTR | Avg pos |
 | --- | --: | --: | --: | --: |
-| vaulto | 41 | 7 | 17.1% | 2.5 |
-| vaultody | 4 | 0 | 0% | 49.8 |
-| wault | 4 | 0 | 0% | 83.8 |
-| estate planning service | 3 | 0 | 0% | 89.3 |
-| estate planning services | 3 | 0 | 0% | 95.7 |
-| vendtaculott | 3 | 0 | 0% | 81 |
-| vaultofaeons | 2 | 0 | 0% | 10 |
-| avulto | 1 | 0 | 0% | 8 |
-| estate planning adalah | 1 | 0 | 0% | 78 |
-| estate planning consultant | 1 | 0 | 0% | 70 |
-| inheritance plan | 1 | 0 | 0% | 75 |
+| vaulto | 45 | 5 | 11.1% | 2.9 |
+| vaultofaeons | 3 | 0 | 0% | 8.7 |
+| vendtaculott | 3 | 0 | 0% | 84 |
+| wault | 2 | 0 | 0% | 90 |
+| avulto | 1 | 0 | 0% | 10 |
 | inheritance planner | 1 | 0 | 0% | 68 |
 | valutt | 1 | 0 | 0% | 96 |
-| vaulto sms | 1 | 0 | 0% | 1 |
-| vaulyt | 1 | 0 | 0% | 65 |
+| vaultu | 1 | 0 | 0% | 6 |
+| vertento® | 1 | 0 | 0% | 37 |
 
 ---
 
