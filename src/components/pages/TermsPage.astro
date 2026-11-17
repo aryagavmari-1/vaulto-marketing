@@ -1,0 +1,85 @@
+---
+/**
+ * Terms of Service page body, locale-aware (ARY-4503).
+ *
+ * WHY THIS PAGE EXISTS: declaring **trader** status on Google Play requires a
+ * link to terms of service for each app, and from 1 Mar 2027 that link is shown
+ * publicly on the store listing. Apple's listing carries the same EULA/ToS
+ * expectation. `/terms` returned 404 on 2026-11-16, so the declaration was not
+ * blocked on a decision — it was blocked on a missing page.
+ *
+ * Mirrors the PrivacyPage pattern exactly: all copy comes from
+ * `content/terms/<locale>.json` via `getContent`; the contact email link stays
+ * here (never machine-translated). English is the source + fallback. Inline
+ * legal prose (links, &amp;) is preserved inside the JSON strings and rendered
+ * via `set:html`.
+ *
+ * The counterparty itself is named in the APPROVED PROSE ("Who you are agreeing
+ * with"), not here — so this template never restates it. `BRAND.legal` carries
+ * the registration DETAIL the prose does not, and the block below renders only
+ * once some of it exists. Today both fields are blank on purpose: the CNPJ on
+ * record fails its mod-11 check, and a guessed registration number on a page
+ * whose job is to say who you are contracting with is the same defect as a
+ * guessed company name. Board ask: ARY-4506.
+ */
+import Base from '../../layouts/Base.astro';
+import { BRAND } from '../../config/brand';
+import { DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import { getContent } from '../../i18n/content';
+import FinalCta from '../marketing/FinalCta.astro';
+
+interface Props { locale?: Locale; }
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const c = getContent<any>('terms', locale);
+
+const crumbs = [
+  { name: c.crumbs.home, url: `${BRAND.url}/` },
+  { name: c.crumbs.terms, url: `${BRAND.url}/terms/` },
+];
+// Registration line: "<lead> <entity> — <number> · <address>." Rendered ONLY
+// when there is registration detail beyond the name, because the name already
+// appears in the approved body copy and repeating it would say nothing new.
+const registration = [BRAND.legal.registrationNumber, BRAND.legal.address]
+  .filter(Boolean)
+  .join(' · ');
+---
+<Base
+  title={c.meta.title}
+  description={c.meta.description}
+  path="/terms/"
+  locale={locale}
+  breadcrumbs={crumbs}
+>
+  <section class="section">
+    <div class="container prose">
+      <span class="eyebrow">{c.hero.eyebrow}</span>
+      <h1>{c.hero.heading}</h1>
+      <p class="lead" set:html={c.hero.lead} />
+      <p class="updated">{c.hero.updated}</p>
+
+      {registration && <p>{c.entity.lead} {BRAND.legal.entity} — {registration}.</p>}
+
+      {c.sections.map((s: any) => (
+        <Fragment>
+          <h2 set:html={s.title} />
+          <p set:html={s.body} />
+          {s.items && (
+            <ul>
+              {s.items.map((item: string) => (
+                <li set:html={item} />
+              ))}
+            </ul>
+          )}
+        </Fragment>
+      ))}
+
+      <h2 set:html={c.contact.title} />
+      <p>
+        {c.contact.lead}{' '}
+        <a href={`mailto:${BRAND.email.hello}`}>{BRAND.email.hello}</a>.
+      </p>
+    </div>
+  </section>
+
+  <FinalCta title={c.finalCta.title} body={c.finalCta.body} ctaId="terms_final" />
+</Base>

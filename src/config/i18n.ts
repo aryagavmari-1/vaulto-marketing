@@ -103,6 +103,15 @@ const PAGE_LOCALES: Record<string, readonly Locale[]> = {
   '/privacy/': ALL,
   '/delete-account/': ALL,
   '/faq/': ALL,
+  // ARY-4503: the ToS is hand-authored legal prose, NOT machine-translated
+  // marketing copy, so it is the first page to genuinely use this table's
+  // opt-out. It ships in the locales it has been written in — the ARY-4458 v1
+  // set (UK + Brazil). Everything else derives from here: `[locale]/terms.astro`
+  // only builds these, hreflang and the sitemap only advertise these, and the
+  // footer link + language switcher fall back to English elsewhere rather than
+  // offering a 404. Add a locale by writing `content/terms/<locale>.json` and
+  // listing it here.
+  '/terms/': ['en', 'pt'],
   // The blog INDEX exists in every locale at `/<locale>/blog/` (ARY-523). Note:
   // individual ARTICLES use translated slugs and derive their own hreflang via
   // `blogAlternates()` from the manifest, NOT from this prefix-based table.
@@ -126,6 +135,20 @@ export function localesWithPage(path: string): readonly Locale[] {
 export function localizedPath(path: string, locale: Locale): string {
   const clean = path.startsWith('/') ? path : `/${path}`;
   return locale === DEFAULT_LOCALE ? clean : `/${locale}${clean}`;
+}
+
+/**
+ * Like `localizedPath`, but NEVER returns a URL that was not built (ARY-4503).
+ *
+ * `localizedPath` is a pure string join: it happily produces `/de/terms/` for a
+ * page that only ships in `en` + `pt`. Every page in `PAGE_LOCALES` used to list
+ * ALL locales, so that could not bite — the ToS is the first page that opts out,
+ * and a global footer link built with the naive helper would 404 in 14 locales.
+ * This falls back to the default locale when `path` has no page in `locale`.
+ */
+export function availablePath(path: string, locale: Locale): string {
+  const live = localesWithPage(path);
+  return localizedPath(path, live.includes(locale) ? locale : DEFAULT_LOCALE);
 }
 
 /**

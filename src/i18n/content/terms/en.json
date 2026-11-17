@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Terms of Service",
+    "description": "The plain-English agreement between you and Vaulto — what the service is, what you agree to, what we commit to, and the rights you keep as a consumer."
+  },
+  "crumbs": {
+    "home": "Home",
+    "terms": "Terms"
+  },
+  "hero": {
+    "eyebrow": "Legal",
+    "heading": "Terms of Service",
+    "lead": "The agreement between you and Vaulto, in plain English. Read it alongside our <a href=\"/privacy/\">privacy summary</a> and <a href=\"/security/\">security overview</a>.",
+    "updated": "Version 1.0 · Last updated 17 November 2026"
+  },
+  "entity": {
+    "lead": "Vaulto is operated by"
+  },
+  "sections": [
+    {
+      "title": "What Vaulto is",
+      "body": "Vaulto is a private vault for the record of what your family owns — assets, liabilities, documents, and the details that go with them — and a place to get ready for life's big moments. It is a record-keeping and preparation tool. It is not a bank, a custodian, an insurer, or a professional adviser. We do not hold your money or your property. We hold the record you build of it."
+    },
+    {
+      "title": "Who you are agreeing with",
+      "body": "These terms are the agreement between you and MERKADO CONSULTORIA LTDA, a company registered in Brazil, which trades as Vaulto and operates <a href=\"https://myvaulto.com\">myvaulto.com</a>, the Vaulto web app, and the Vaulto apps for iOS and Android. \"We\" and \"us\" mean Vaulto; \"you\" means the person using the service. By creating an account or using Vaulto you accept these terms. If you do not accept them, please do not use the service."
+    },
+    {
+      "title": "Who can use Vaulto",
+      "body": "You need to be at least 18 years old and able to enter into a binding agreement where you live. One account belongs to one person, and you are responsible for what is done through yours — so keep your sign-in details to yourself, and tell us promptly if you think someone else has them."
+    },
+    {
+      "title": "What you put in, and who owns it",
+      "body": "Everything you add to your vault stays yours. You keep ownership of your records, photos, scans, and notes. You give us only the permission we need to run the service for you: to store your content, show it back to you, process it to produce the features you ask for, and keep backups. That permission exists so the product can work — it is not a licence to use your content for anything else, and it ends when you delete the content or your account."
+    },
+    {
+      "title": "What you agree not to do",
+      "body": "Vaulto is for your own records. Please do not:",
+      "items": [
+        "Use the service for anything unlawful, or to hold content you have no right to hold.",
+        "Add another person's information without the authority to do so.",
+        "Try to break, overload, probe, or work around the service's protections, or reach another person's account or content.",
+        "Copy, scrape, resell, or reverse-engineer the service, or use it to build a competing product.",
+        "Use the service in a way that harms Vaulto or other people using it."
+      ]
+    },
+    {
+      "title": "AI features, and what they are not",
+      "body": "Some Vaulto features use AI: reading a photo to fill in an item for you, estimating what something is worth, reading a walkthrough aloud, and producing an overview of how prepared you are. Those outputs are estimates and prompts to look closer. They are not financial, legal, tax, or insurance advice; they can be wrong or incomplete; and none of them is a valuation to rely on for a transaction, a tax filing, an insurance claim, or a court. Check anything that matters with a qualified professional before you act on it. Which information leaves Vaulto for AI processing, and who processes it, is set out in our <a href=\"/privacy/\">privacy summary</a>."
+    },
+    {
+      "title": "Keeping your own copies",
+      "body": "Vaulto is built so your information is never trapped: from Settings in the Vaulto web app you can export a complete archive — a machine-readable copy of your records together with the original photos and scans you uploaded. Wherever you use Vaulto, you can ask us for a copy of your data and we will provide it. Please do keep your own copies of anything irreplaceable. Vaulto is a record of what you own and a place to prepare — it is not a substitute for the original deeds, policies, certificates, and wills themselves."
+    },
+    {
+      "title": "What it costs",
+      "body": "Vaulto is free to use today. If we introduce features that cost money, we will say so clearly before you are asked to pay, and you will never be charged for something you have not agreed to."
+    },
+    {
+      "title": "Availability and changes to the product",
+      "body": "Vaulto is a young product and it changes often. We may add, change, or remove features, and we may take the service down for maintenance. We work to keep it available and quick, but we do not promise uninterrupted or error-free service and we do not offer a guaranteed level of availability. Where a change would meaningfully affect how you use Vaulto, we will give you reasonable notice."
+    },
+    {
+      "title": "Ending the agreement",
+      "body": "You can stop using Vaulto whenever you like, and you can delete your account and the data in it yourself — see <a href=\"/delete-account/\">how to delete your account</a>. We may suspend or close an account that breaches these terms, that is being used unlawfully, or where the law requires it; unless we are unable to, we will tell you why and give you a chance to put it right. If we ever discontinue the service, we will give you reasonable notice and a window to export your data first."
+    },
+    {
+      "title": "Our responsibility to you",
+      "body": "We will provide Vaulto with reasonable care and skill. Beyond that, the service is provided as it is: we do not warrant that it will meet every need, that AI outputs will be accurate, or that content will never be lost — and to the extent the law allows, we are not liable for indirect or consequential loss, for lost profits, or for loss arising from reliance on an estimate or an overview. Nothing here limits liability that cannot be limited by law, including liability for death or personal injury caused by negligence, and for fraud."
+    },
+    {
+      "title": "The rights you keep as a consumer",
+      "body": "If you use Vaulto as a consumer, you keep every right your local law gives you. In the United Kingdom that includes your rights under the Consumer Rights Act 2015; in Brazil it includes your rights under the Código de Defesa do Consumidor. Where those rights conflict with anything in these terms, those rights win."
+    },
+    {
+      "title": "Changes to these terms",
+      "body": "When we change these terms we publish the new version on this page with a new date and version number. If a change materially affects your rights, we will tell you — by email or in the app — before it takes effect. Continuing to use Vaulto after a change means you accept the updated terms; if you would rather not, you can delete your account."
+    },
+    {
+      "title": "Governing law",
+      "body": "These terms are governed by the laws of the Federative Republic of Brazil, where the company that operates Vaulto is registered, and the Brazilian courts have jurisdiction. If you are a consumer resident in another country, you may also bring proceedings in the courts of your country of residence, and the mandatory consumer law of that country continues to apply to you."
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "lead": "Questions about these terms? Email"
+  },
+  "finalCta": {
+    "title": "Your records, your rules.",
+    "body": "Start free — export or delete everything whenever you want. No lock-in."
+  }
+}

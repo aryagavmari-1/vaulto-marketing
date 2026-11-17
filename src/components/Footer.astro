@@ -1,10 +1,15 @@
 ---
 /**
  * Global footer (ARY-404 §2). Muted band: wordmark + Security · Privacy ·
- * Sign in →. "Sign in →" is the hand-off to the live app.
+ * Terms · Sign in →. "Sign in →" is the hand-off to the live app.
+ *
+ * ARY-4503: Terms lives here, in the global footer, because the Play and App
+ * Store listings need a ToS link that is reachable from every page. It uses
+ * `availablePath` — the ToS ships in fewer locales than the marketing pages, so
+ * the naive prefix join would 404 in the locales it has not been written in.
  */
 import { BRAND } from '../config/brand';
-import { DEFAULT_LOCALE, localizedPath, type Locale } from '../config/i18n';
+import { DEFAULT_LOCALE, availablePath, localizedPath, type Locale } from '../config/i18n';
 import { useTranslations } from '../i18n/ui';
 
 interface Props { locale?: Locale; }
@@ -20,6 +25,7 @@ const t = useTranslations(locale);
       <span class="muted">© {BRAND.name}</span>
       <a href={localizedPath('/security/', locale)}>{t('nav.security')}</a>
       <a href={localizedPath('/privacy/', locale)}>{t('footer.privacy')}</a>
+      <a href={availablePath('/terms/', locale)}>{t('footer.terms')}</a>
       <a href={BRAND.app} data-outbound="app">{t('footer.signIn')}</a>
     </nav>
   </div>
