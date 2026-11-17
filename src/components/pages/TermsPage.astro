@@ -17,10 +17,11 @@
  * The counterparty itself is named in the APPROVED PROSE ("Who you are agreeing
  * with"), not here — so this template never restates it. `BRAND.legal` carries
  * the registration DETAIL the prose does not, and the block below renders only
- * once some of it exists. Today both fields are blank on purpose: the CNPJ on
- * record fails its mod-11 check, and a guessed registration number on a page
- * whose job is to say who you are contracting with is the same defect as a
- * guessed company name. Board ask: ARY-4506.
+ * once some of it exists. Both fields were held blank until ARY-4506 resolved
+ * the CNPJ (the number on record failed its mod-11 check, and a guessed
+ * registration number on a page whose job is to say who you are contracting
+ * with is the same defect as a guessed company name). ARY-4508 filled them from
+ * the Receita Federal register; see `BRAND.legal` for the provenance.
  */
 import Base from '../../layouts/Base.astro';
 import { BRAND } from '../../config/brand';
@@ -36,10 +37,16 @@ const crumbs = [
   { name: c.crumbs.home, url: `${BRAND.url}/` },
   { name: c.crumbs.terms, url: `${BRAND.url}/terms/` },
 ];
-// Registration line: "<lead> <entity> — <number> · <address>." Rendered ONLY
-// when there is registration detail beyond the name, because the name already
-// appears in the approved body copy and repeating it would say nothing new.
-const registration = [BRAND.legal.registrationNumber, BRAND.legal.address]
+// Registration line: "<lead> <entity> — CNPJ <number> · <address>." Rendered
+// ONLY when there is registration detail beyond the name, because the name
+// already appears in the approved body copy and repeating it would say nothing
+// new. "CNPJ" is the Brazilian register's own acronym and is identical in en-GB
+// and pt-BR, so the label lives here rather than in the locale catalogues — an
+// unlabelled 14-digit number would not tell a reader what it is.
+const registration = [
+  BRAND.legal.registrationNumber && `CNPJ ${BRAND.legal.registrationNumber}`,
+  BRAND.legal.address,
+]
   .filter(Boolean)
   .join(' · ');
 ---
