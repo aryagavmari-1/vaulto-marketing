@@ -1,131 +1,131 @@
 ---
 title: "Como fazer um inventário doméstico para o seguro ou para um testamento"
-description: "Um inventário doméstico é um registo simples do que possui, com fotos e comprovativos. Veja como fazer um para um pedido ao seguro ou para um testamento — divisão por divisão, passo a passo."
+description: "Um inventário doméstico é um registro simples do que você tem, com fotos e comprovantes. Veja como fazer um para acionar o seguro ou para um testamento — ambiente por ambiente, passo a passo."
 pubDate: 2026-06-23
 ref: "how-to-make-a-home-inventory"
 locale: "pt"
 slug: "inventario-domestico-seguro-testamento"
 faqs:
   - question: "O que deve incluir um inventário doméstico?"
-    answer: "Para cada item valioso: uma descrição simples, a localização, um valor aproximado, o estado de conservação, qualquer número de série ou de modelo, e comprovativos como uma foto ou um recibo. Indique se já está segurado e ao abrigo de que apólice. Concentre-se nas coisas que seriam caras ou difíceis de substituir, em vez de catalogar tudo o que possui."
+    answer: "Para cada item valioso: uma descrição simples, a localização, um valor aproximado, o estado de conservação, qualquer número de série ou de modelo, e comprovantes como uma foto ou um recibo. Indique se já está segurado e sob qual apólice. Concentre-se nas coisas que seriam caras ou difíceis de substituir, em vez de catalogar tudo o que você tem."
   - question: "Como devo avaliar itens para um inventário doméstico?"
-    answer: "Use o custo de substituição — quanto custaria comprar novo hoje — para o seguro, e o valor de mercado — por quanto seria vendido agora — para uma herança. Uma verificação rápida de preço chega para itens do dia a dia; para peças realmente valiosas, como joias, arte ou antiguidades, obtenha uma avaliação escrita e guarde-a com o registo."
+    answer: "Use o custo de substituição — quanto custaria comprar novo hoje — para o seguro, e o valor de mercado — por quanto seria vendido agora — para uma herança. Uma verificação rápida de preço basta para itens do dia a dia; para peças realmente valiosas, como joias, arte ou antiguidades, obtenha uma avaliação escrita e guarde-a com o registro."
   - question: "Preciso de fotos no meu inventário doméstico?"
-    answer: "As fotos não são estritamente obrigatórias, mas são o comprovativo mais rápido e mais convincente que pode ter. Tire uma fotografia geral de cada divisão, além de aproximações dos itens valiosos e dos respetivos números de série. Tornam uma participação ao seguro muito mais fácil de comprovar e não deixam dúvidas sobre o que possuía."
+    answer: "As fotos não são estritamente obrigatórias, mas são o comprovante mais rápido e mais convincente que você pode ter. Tire uma foto geral de cada ambiente, além de aproximações dos itens valiosos e dos respectivos números de série. Elas tornam um aviso de sinistro muito mais fácil de comprovar e não deixam dúvidas sobre o que você tinha."
   - question: "Onde devo guardar o meu inventário doméstico?"
-    answer: "Num lugar privado, separado dos próprios objetos de valor, e acessível à pessoa que viria a precisar dele — normalmente o seu executor testamentário ou companheiro(a). Evite uma única cópia em papel, que pode perder-se ou ser roubada, e se o guardar online, escolha uma ferramenta que mantenha os seus ficheiros protegidos por acessos que controla, em vez de estarem num link público."
+    answer: "Em um lugar privado, separado dos próprios objetos de valor, e acessível à pessoa que viria a precisar dele — normalmente o seu inventariante ou companheiro(a). Evite uma única cópia em papel, que pode se perder ou ser roubada, e se você guardar online, escolha uma ferramenta que mantenha seus arquivos protegidos por acessos que você controla, em vez de estarem em um link público."
 ---
-Um **inventário doméstico** é um registo escrito das coisas que possui — o que são, quanto valem e onde estão os comprovativos. A maioria das pessoas só faz um quando precisa: depois de uma inundação, de um assalto ou de uma morte na família. Nessa altura, é difícil lembrar o que estava no quarto de hóspedes, quanto mais encontrar os recibos.
+Um **inventário doméstico** é um registro escrito das coisas que você tem — o que são, quanto valem e onde estão os comprovantes. A maioria das pessoas só faz um quando precisa: depois de uma enchente, de um assalto ou de uma morte na família. Nessa hora, é difícil lembrar o que estava no quarto de hóspedes, quanto mais encontrar os recibos.
 
-Este guia acompanha-o na criação de um inventário doméstico que possa realmente usar — para um pedido ao seguro, para o seu testamento ou simplesmente para que a sua família não fique a adivinhar. O objetivo é uma resposta calma e honesta a uma pergunta: *se acontecesse alguma coisa, as pessoas que importam saberiam o que temos e onde estão os registos?*
+Este guia acompanha você na criação de um inventário doméstico que possa realmente usar — para acionar o seguro, para o seu testamento ou simplesmente para que sua família não fique adivinhando. O objetivo é uma resposta calma e honesta a uma pergunta: *se acontecesse alguma coisa, as pessoas que importam saberiam o que temos e onde estão os registros?*
 
-Leva uma tarde para começar e alguns minutos por mês para manter atualizado. Não precisa de software especial para começar — embora lhe mostremos uma forma mais rápida perto do fim.
+Leva uma tarde para começar e alguns minutos por mês para manter atualizado. Você não precisa de software especial para começar — embora mostremos uma forma mais rápida perto do fim.
 
-> Estas são informações gerais para o ajudar a organizar-se, não aconselhamento jurídico, fiscal ou financeiro. As regras variam consoante o país e mudam ao longo do tempo — confirme os detalhes com um advogado, contabilista ou consultor qualificado.
+> Estas são informações gerais para ajudar você a se organizar, não aconselhamento jurídico, fiscal ou financeiro. As regras variam conforme o país e mudam ao longo do tempo — confirme os detalhes com um advogado, contador ou consultor qualificado.
 
-## Porque é que um inventário doméstico é importante
+## Por que um inventário doméstico é importante
 
 Um inventário doméstico faz dois trabalhos que parecem semelhantes, mas servem leitores diferentes.
 
-**Para o seguro,** é prova. Quando faz uma participação de sinistro sobre o recheio, a seguradora pergunta o que perdeu, quanto valia e o que o comprova. Reconstruir isso de memória depois do acontecimento é stressante e normalmente faz com que recupere menos do que devia. Uma lista feita *antes* de algo correr mal transforma um pedido numa tarefa administrativa, em vez de um jogo de adivinhação.
+**Para o seguro,** é prova. Quando você dá um aviso de sinistro sobre os bens da casa, a seguradora pergunta o que você perdeu, quanto valia e o que comprova. Reconstruir isso de memória depois do acontecimento é estressante e normalmente faz com que você receba menos do que deveria. Uma lista feita *antes* de algo dar errado transforma um pedido em uma tarefa administrativa, em vez de um jogo de adivinhação.
 
-**Para um testamento ou herança,** é um mapa. O executor testamentário — muitas vezes um cônjuge de luto ou um filho adulto — tem de localizar, avaliar e prestar contas de tudo o que possuía. Um **inventário de bens para o seu testamento** poupa-lhe semanas a abrir gavetas e a contactar instituições. É uma das formas mais generosas de organização que pode deixar para trás. (A nossa [checklist de planeamento patrimonial digital](/blog/digital-estate-planning-checklist/) cobre o quadro mais amplo; este guia trata da parte do inventário.)
+**Para um testamento ou herança,** é um mapa. O inventariante — muitas vezes um cônjuge de luto ou um filho adulto — precisa localizar, avaliar e prestar contas de tudo o que a pessoa tinha. Um **inventário de bens para o seu testamento** poupa a essa pessoa semanas abrindo gavetas e falando com instituições. É uma das formas mais generosas de organização que você pode deixar para trás. (A nossa [checklist de planejamento patrimonial digital](/blog/digital-estate-planning-checklist/) cobre o quadro mais amplo; este guia trata da parte do inventário.)
 
-O mesmo registo serve para ambos os fins. Crie-o uma vez, mantenha-o atualizado e fica protegido de qualquer das formas.
+O mesmo registro serve para ambos os fins. Crie uma vez, mantenha atualizado e você fica protegido de qualquer das formas.
 
 ## O que um inventário doméstico deve incluir
 
-Um **inventário do recheio da casa** útil regista mais do que um nome. Para cada item que valha a pena registar, anote:
+Um **inventário dos bens da casa** útil registra mais do que um nome. Para cada item que valha a pena registrar, anote:
 
 - **O que é** — uma descrição curta e simples ("TV Samsung de 55 polegadas", não "televisão").
-- **Onde está** — a divisão ou localização, para que um executor testamentário ou perito de seguros o possa encontrar.
-- **Quanto vale** — um valor exato, se o souber, ou um intervalo razoável, se não souber.
-- **Estado de conservação** — novo, bom, gasto; isto afeta tanto as participações ao seguro como as avaliações.
-- **Números de série ou de modelo** — para eletrónicos, eletrodomésticos, bicicletas e ferramentas.
-- **Comprovativo** — uma foto, um recibo, uma avaliação ou a apólice de seguro que o cobre.
-- **Situação do seguro** — se já está coberto e ao abrigo de que apólice.
+- **Onde está** — o ambiente ou localização, para que um inventariante ou perito do seguro consiga encontrar.
+- **Quanto vale** — um valor exato, se você souber, ou uma faixa razoável, se não souber.
+- **Estado de conservação** — novo, bom, gasto; isso afeta tanto os avisos de sinistro como as avaliações.
+- **Números de série ou de modelo** — para eletrônicos, eletrodomésticos, bicicletas e ferramentas.
+- **Comprovante** — uma foto, um recibo, uma avaliação ou a apólice de seguro que cobre o item.
+- **Situação do seguro** — se já está coberto e sob qual apólice.
 
-Não precisa de catalogar cada colher de chá. Concentre-se no que seria caro, difícil ou emocionalmente custoso substituir: eletrónicos, joias, relógios, arte, mobiliário, eletrodomésticos, ferramentas, instrumentos e coleções. Depois acrescente o quadro maior — veículos, imóveis e os documentos que provam a titularidade.
+Você não precisa catalogar cada colher de chá. Concentre-se no que seria caro, difícil ou emocionalmente custoso substituir: eletrônicos, joias, relógios, arte, móveis, eletrodomésticos, ferramentas, instrumentos e coleções. Depois acrescente o quadro maior — veículos, imóveis e os documentos que provam a titularidade.
 
 ## Como fazer um inventário doméstico, passo a passo
 
-### 1. Vá divisão a divisão
+### 1. Vá ambiente por ambiente
 
-Escolha uma divisão e termine-a antes de passar à seguinte. Pequenos progressos são melhores do que uma folha de cálculo abandonada. Abra armários e roupeiros — muitas vezes, as coisas mais caras são as que estão fora de vista.
+Escolha um ambiente e termine antes de passar ao seguinte. Pequenos progressos são melhores do que uma planilha abandonada. Abra armários e guarda-roupas — muitas vezes, as coisas mais caras são as que estão fora de vista.
 
 ### 2. Fotografe tudo
 
-Uma foto é o comprovativo mais rápido que existe. Tire uma fotografia geral de cada divisão e depois aproximações dos itens valiosos e dos respetivos números de série. As fotos ficam automaticamente datadas e eliminam a maior parte das dúvidas sobre se algo lhe pertencia.
+Uma foto é o comprovante mais rápido que existe. Tire uma foto geral de cada ambiente e depois aproximações dos itens valiosos e dos respectivos números de série. As fotos ficam automaticamente datadas e eliminam a maior parte das dúvidas sobre se algo pertencia a você.
 
-### 3. Registe os detalhes que importam
+### 3. Registre os detalhes que importam
 
-Para cada item, anote a descrição, a localização, o valor aproximado, o estado de conservação e qualquer número de série. Guarde recibos e avaliações juntamente com o registo do item, em vez de os meter numa caixa que acabará por perder.
+Para cada item, anote a descrição, a localização, o valor aproximado, o estado de conservação e qualquer número de série. Guarde recibos e avaliações junto com o registro do item, em vez de colocá-los em uma caixa que você acabará perdendo.
 
 ### 4. Anote onde estão os originais
 
-Muitas vezes, a prova de titularidade está fora de casa — o documento do carro, uma escritura do imóvel, uma avaliação de joias, um certificado de ações. O seu inventário deve indicar *onde* está guardado cada documento original, mesmo quando não consegue guardar o documento em si.
+Muitas vezes, a prova de titularidade está fora de casa — o documento do carro, uma escritura do imóvel, uma avaliação de joias, um certificado de ações. O seu inventário deve indicar *onde* está guardado cada documento original, mesmo quando você não consegue guardar o documento em si.
 
 ### 5. Avalie com bom senso
 
-Não precisa de um avaliador para tudo. Use preços de compra recentes, o custo atual de substituição para o seguro, ou uma estimativa conservadora para uma herança. Quando um item é genuinamente valioso — joias finas, arte, antiguidades — uma avaliação profissional vale a pena, e pode anexá-la ao registo.
+Você não precisa de um avaliador para tudo. Use preços de compra recentes, o custo atual de substituição para o seguro, ou uma estimativa conservadora para uma herança. Quando um item é genuinamente valioso — joias finas, arte, antiguidades — uma avaliação profissional vale a pena, e você pode anexá-la ao registro.
 
-### 6. Mantenha-o atualizado
+### 6. Mantenha atualizado
 
-Um inventário só é tão bom quanto a sua última atualização. Acrescente novas compras à medida que chegam e retire aquilo que vendeu ou ofereceu. Alguns minutos depois de uma compra importante são muito mais fáceis do que refazer tudo de poucos em poucos anos.
-
----
-
-**Fazer isto em papel ou numa folha de cálculo funciona** — mas rapidamente fica disperso: fotos no telemóvel, recibos no email, avaliações numa gaveta. [Vaulto](https://app.myvaulto.com) mantém o registo e os respetivos comprovativos juntos: tire uma foto de um item ou de um documento e a aplicação cria um rascunho do registo para confirmar, para que a imagem, o valor e a documentação fiquem no mesmo lugar. Pode [organizar o seu inventário doméstico no Vaulto](https://app.myvaulto.com) e deixar a folha de cálculo de lado.
+Um inventário só é tão bom quanto a sua última atualização. Acrescente novas compras à medida que chegam e retire aquilo que você vendeu ou doou. Alguns minutos depois de uma compra importante são muito mais fáceis do que refazer tudo a cada poucos anos.
 
 ---
 
-## Transformar um inventário doméstico num inventário de bens para o seu testamento
+**Fazer isso em papel ou em uma planilha funciona** — mas rapidamente fica disperso: fotos no celular, recibos no e-mail, avaliações em uma gaveta. [Vaulto](https://app.myvaulto.com) mantém o registro e os respectivos comprovantes juntos: tire uma foto de um item ou de um documento e o aplicativo cria um rascunho do registro para você confirmar, para que a imagem, o valor e a documentação fiquem no mesmo lugar. Você pode [organizar o seu inventário doméstico no Vaulto](https://app.myvaulto.com) e deixar a planilha de lado.
 
-Para o seguro, o recheio costuma ser suficiente. Para um testamento, o seu executor testamentário precisa da imagem financeira completa — não apenas dos bens físicos, mas também de contas, imóveis, pensões e de tudo o que deve.
+---
 
-Essa é a diferença entre uma lista de recheio e um **inventário de bens para um testamento** completo: a versão do testamento inclui os ativos que não estão numa divisão. Contas bancárias e poupanças, investimentos e pensões, imóveis, veículos, participações empresariais e os documentos que provam cada um deles — juntamente com hipotecas, empréstimos e cartões do outro lado do balanço.
+## Transformar um inventário doméstico em um inventário de bens para o seu testamento
 
-Se já começou um inventário doméstico, está a maior parte do caminho feito. Acrescente os elementos financeiros, anote onde está cada comprovativo e terá um registo único com o qual um executor testamentário pode realmente trabalhar. (Se também quiser ver o valor líquido total, o nosso guia sobre [como calcular o património líquido da sua família](/blog/how-to-calculate-your-familys-net-worth/) mostra como se junta a soma do "que temos e do que devemos", e [o que é um inventário de bens da família](/blog/what-is-a-family-asset-inventory/) explica a versão inicial.)
+Para o seguro, os bens da casa costumam ser suficientes. Para um testamento, o seu inventariante precisa da imagem financeira completa — não apenas dos bens físicos, mas também de contas, imóveis, previdência e de tudo o que você deve.
+
+Essa é a diferença entre uma lista de bens da casa e um **inventário de bens para um testamento** completo: a versão do testamento inclui os ativos que não estão em um ambiente. Contas bancárias e poupança, investimentos e previdência, imóveis, veículos, participações empresariais e os documentos que provam cada um deles — junto com financiamentos imobiliários, empréstimos e cartões do outro lado do balanço.
+
+Se você já começou um inventário doméstico, já fez a maior parte do caminho. Acrescente os elementos financeiros, anote onde está cada comprovante e você terá um registro único com o qual um inventariante pode realmente trabalhar. (Se você também quiser ver o valor líquido total, o nosso guia sobre [como calcular o patrimônio líquido da sua família](/blog/how-to-calculate-your-familys-net-worth/) mostra como se junta a soma do "que temos e do que devemos", e [o que é um inventário de bens da família](/blog/what-is-a-family-asset-inventory/) explica a versão inicial.)
 
 ## Como avaliar os seus itens
 
 A avaliação confunde muitas pessoas, por isso tenha dois números em mente:
 
-- **Custo de substituição** — quanto custaria comprar o item novo hoje. É isto que interessa à maioria das seguradoras de recheio.
-- **Valor de mercado** — por quanto o item seria vendido agora. Normalmente, é isto que importa para uma herança.
+- **Custo de substituição** — quanto custaria comprar o item novo hoje. É isso que interessa à maioria das seguradoras de bens residenciais.
+- **Valor de mercado** — por quanto o item seria vendido agora. Normalmente, é isso que importa para uma herança.
 
-Para itens do dia a dia, uma verificação rápida online do preço atual basta. Para objetos valiosos, obtenha uma avaliação escrita e anexe-a. Registar *que* base usou ("substituição" vs "mercado") evita confusão mais tarde — um item pode valer montantes bastante diferentes consoante quem pergunta.
+Para itens do dia a dia, uma verificação rápida online do preço atual basta. Para objetos valiosos, obtenha uma avaliação escrita e anexe. Registrar *qual* base você usou ("substituição" vs "mercado") evita confusão mais tarde — um item pode valer montantes bastante diferentes conforme quem pergunta.
 
 ## Onde guardar o seu inventário doméstico
 
 Um inventário doméstico é sensível: é uma lista dos seus objetos de valor e de onde estão. Três regras ajudam a mantê-lo útil e privado.
 
-1. **Não o deixe ao lado dos objetos de valor.** Uma cópia impressa na mesma gaveta das joias ajuda um ladrão, não a si. Guarde o registo num local separado das coisas que descreve.
-2. **Certifique-se de que alguém lhe consegue aceder.** Um inventário que o seu executor testamentário não consegue encontrar não é inventário nenhum. Decida agora quem deve poder vê-lo e como.
-3. **Controle quem pode abrir os comprovativos.** Se guardar fotos e documentos online, prefira uma ferramenta que não deixe os ficheiros num endereço público.
+1. **Não deixe ao lado dos objetos de valor.** Uma cópia impressa na mesma gaveta das joias ajuda um ladrão, não você. Guarde o registro em um local separado das coisas que ele descreve.
+2. **Certifique-se de que alguém consegue acessar.** Um inventário que o seu inventariante não consegue encontrar não é inventário nenhum. Decida agora quem deve poder vê-lo e como.
+3. **Controle quem pode abrir os comprovantes.** Se você guardar fotos e documentos online, prefira uma ferramenta que não deixe os arquivos em um endereço público.
 
-Isto é parte da razão pela qual construímos o Vaulto desta forma. O seu inventário fica num cofre privado que controla, e os ficheiros que anexa — recibos, avaliações, digitalizações — são acedidos através de links que expiram, em vez de ficarem num URL aberto. É um lugar mais tranquilo para guardar registos que preferia não enviar por email.
+Isso é parte da razão pela qual construímos o Vaulto desta forma. O seu inventário fica em um cofre privado que você controla, e os arquivos que você anexa — recibos, avaliações, digitalizações — são acessados por links que expiram, em vez de ficarem em uma URL aberta. É um lugar mais tranquilo para guardar registros que você preferia não enviar por e-mail.
 
-Quando estiver pronto, pode [começar o seu inventário no Vaulto](https://app.myvaulto.com): adicione um item ou digitalize um documento, confirme os detalhes do rascunho criado e construa o quadro geral, um registo de cada vez.
+Quando estiver pronto, você pode [começar o seu inventário no Vaulto](https://app.myvaulto.com): adicione um item ou digitalize um documento, confirme os detalhes do rascunho criado e construa o quadro geral, um registro de cada vez.
 
 ## Perguntas frequentes
 
 ### O que deve incluir um inventário doméstico?
 
-Para cada item valioso: uma descrição simples, a localização, um valor aproximado, o estado de conservação, qualquer número de série ou de modelo, e comprovativos como uma foto ou um recibo. Indique se já está segurado e ao abrigo de que apólice. Concentre-se nas coisas que seriam caras ou difíceis de substituir, em vez de catalogar tudo o que possui.
+Para cada item valioso: uma descrição simples, a localização, um valor aproximado, o estado de conservação, qualquer número de série ou de modelo, e comprovantes como uma foto ou um recibo. Indique se já está segurado e sob qual apólice. Concentre-se nas coisas que seriam caras ou difíceis de substituir, em vez de catalogar tudo o que você tem.
 
 ### Como devo avaliar itens para um inventário doméstico?
 
-Use o *custo de substituição* — quanto custaria comprar novo hoje — para o seguro, e o *valor de mercado* — por quanto seria vendido agora — para uma herança. Uma verificação rápida de preço chega para itens do dia a dia; para peças realmente valiosas, como joias, arte ou antiguidades, obtenha uma avaliação escrita e guarde-a com o registo.
+Use o *custo de substituição* — quanto custaria comprar novo hoje — para o seguro, e o *valor de mercado* — por quanto seria vendido agora — para uma herança. Uma verificação rápida de preço basta para itens do dia a dia; para peças realmente valiosas, como joias, arte ou antiguidades, obtenha uma avaliação escrita e guarde-a com o registro.
 
 ### Preciso de fotos no meu inventário doméstico?
 
-As fotos não são estritamente obrigatórias, mas são o comprovativo mais rápido e mais convincente que pode ter. Tire uma fotografia geral de cada divisão, além de aproximações dos itens valiosos e dos respetivos números de série. Tornam uma participação ao seguro muito mais fácil de comprovar e não deixam dúvidas sobre o que possuía.
+As fotos não são estritamente obrigatórias, mas são o comprovante mais rápido e mais convincente que você pode ter. Tire uma foto geral de cada ambiente, além de aproximações dos itens valiosos e dos respectivos números de série. Elas tornam um aviso de sinistro muito mais fácil de comprovar e não deixam dúvidas sobre o que você tinha.
 
 ### Onde devo guardar o meu inventário doméstico?
 
-Num lugar privado, separado dos próprios objetos de valor, e acessível à pessoa que viria a precisar dele — normalmente o seu executor testamentário ou companheiro(a). Evite uma única cópia em papel, que pode perder-se ou ser roubada, e se o guardar online, escolha uma ferramenta que mantenha os seus ficheiros protegidos por acessos que controla, em vez de estarem num link público.
+Em um lugar privado, separado dos próprios objetos de valor, e acessível à pessoa que viria a precisar dele — normalmente o seu inventariante ou companheiro(a). Evite uma única cópia em papel, que pode se perder ou ser roubada, e se você guardar online, escolha uma ferramenta que mantenha seus arquivos protegidos por acessos que você controla, em vez de estarem em um link público.
 
 ---
 
-*Estas são informações gerais para o ajudar a organizar-se, não aconselhamento jurídico, fiscal ou financeiro. As regras variam consoante o país e mudam ao longo do tempo — confirme os detalhes com um advogado, contabilista ou consultor qualificado.*
+*Estas são informações gerais para ajudar você a se organizar, não aconselhamento jurídico, fiscal ou financeiro. As regras variam conforme o país e mudam ao longo do tempo — confirme os detalhes com um advogado, contador ou consultor qualificado.*

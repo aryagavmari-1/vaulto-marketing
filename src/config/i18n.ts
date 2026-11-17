@@ -29,7 +29,7 @@ export const LOCALE_NAMES: Record<Locale, string> = {
   en: 'English',
   es: 'Español',
   fr: 'Français',
-  pt: 'Português',
+  pt: 'Português (Brasil)',
   de: 'Deutsch',
   it: 'Italiano',
   nl: 'Nederlands',
@@ -48,12 +48,19 @@ export const LOCALE_NAMES: Record<Locale, string> = {
  * Maps our internal locale codes → BCP-47 hreflang values. Kept explicit (rather
  * than reusing the code 1:1) so a future regionalised locale (e.g. `pt-BR`) is a
  * one-line change without renaming routes.
+ *
+ * ARY-4507: `pt` now declares **pt-BR**. Board directive ARY-4458 narrows v1 to
+ * Brazil + UK with `pt-BR` as the shipped Portuguese, which falsified the third
+ * premise of the ARY-1433 pt-PT ruling ("Portugal and Portuguese speakers in the
+ * UK/EU are the realistic `pt` audience"). The copy under `pt` was rewritten into
+ * Brazilian register in the same change, so the declaration matches the prose —
+ * the route stays `/pt/` exactly as this comment anticipated.
  */
 export const HREFLANG: Record<Locale, string> = {
   en: 'en',
   es: 'es',
   fr: 'fr',
-  pt: 'pt',
+  pt: 'pt-BR',
   de: 'de',
   it: 'it',
   nl: 'nl',

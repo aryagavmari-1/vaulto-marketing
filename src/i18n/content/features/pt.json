@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Funcionalidades",
-    "description": "O que o Vaulto faz hoje: inventário de bens, um cofre privado de documentos, captura assistida por IA, coleções e uma visão clara de tudo o que a sua família possui."
+    "description": "O que o Vaulto faz hoje: inventário de bens, um cofre privado de documentos, captura assistida por IA, coleções e uma visão clara de tudo o que sua família tem."
   },
   "crumbs": {
     "home": "Início",
@@ -9,38 +9,38 @@
   },
   "hero": {
     "eyebrow": "Funcionalidades",
-    "heading": "Tudo o que precisa para saber o que tem.",
-    "intro": "Um conjunto focado de ferramentas que faz trabalho real hoje. Eis o que já foi lançado — sem promessas de roadmap, sem iscos de \"em breve\"."
+    "heading": "Tudo o que você precisa para saber o que tem.",
+    "intro": "Um conjunto focado de ferramentas que faz trabalho real hoje. Veja o que já foi lançado — sem promessas de roadmap, sem iscas de \"em breve\"."
   },
   "features": [
     {
       "title": "Inventário de bens",
-      "body": "Registe tudo o que possui — imóveis, contas, investimentos, bens valiosos, pensões — com os detalhes que importam: valor ou intervalo de valor, localização, estado e as pessoas a quem diz respeito."
+      "body": "Registre tudo o que você tem — imóveis, contas, investimentos, bens valiosos, previdência — com os detalhes que importam: valor ou faixa de valor, localização, estado e as pessoas a quem diz respeito."
     },
     {
       "title": "Cofre de documentos",
-      "body": "Guarde escrituras, apólices, testamentos e extratos em segurança, associados aos bens a que pertencem. Carregue ficheiros até 20MB, mantidos em armazenamento privado e acessíveis apenas através de ligações assinadas e de curta duração."
+      "body": "Guarde escrituras, apólices, testamentos e extratos em segurança, associados aos bens a que pertencem. Envie arquivos de até 20MB, mantidos em armazenamento privado e acessíveis apenas por links assinados e de curta duração."
     },
     {
       "title": "Captura assistida por IA",
-      "body": "Fotografe um objeto ou um documento e o Vaulto lê-o, preparando o registo para confirmar ou editar. A introdução de dados faz-se praticamente sozinha."
+      "body": "Fotografe um objeto ou um documento e o Vaulto faz a leitura, preparando o registro para você confirmar ou editar. O preenchimento dos dados acontece praticamente sozinho."
     },
     {
       "title": "Coleções",
-      "body": "Agrupe bens e documentos relacionados da forma como a sua família realmente pensa neles — um imóvel e a sua documentação, um património, uma pessoa."
+      "body": "Agrupe bens e documentos relacionados da forma como sua família realmente pensa neles — um imóvel e a sua documentação, um patrimônio, uma pessoa."
     },
     {
       "title": "A visão completa",
-      "body": "Veja tudo numa única vista organizada e obtenha uma visão geral gratuita quando estiver pronto para planear o futuro — uma herança, um testamento ou o que acontece a seguir."
+      "body": "Veja tudo em uma única visão organizada e obtenha um panorama gratuito quando estiver pronto para planejar o futuro — uma herança, um testamento ou o que acontece em seguida."
     },
     {
-      "title": "Exporte a qualquer momento — os seus dados são seus",
-      "body": "Os seus dados são seus — exporte a qualquer momento uma cópia completa e legível por máquina dos seus registos (JSON, CSV ou PDF). Sem dependência. Também pode exportar um ficheiro ZIP que inclui as suas fotos e digitalizações originais, juntamente com o registo estruturado."
+      "title": "Exporte a qualquer momento — seus dados são seus",
+      "body": "Seus dados são seus — exporte a qualquer momento uma cópia completa e legível por máquina dos seus registros (JSON, CSV ou PDF). Sem dependência. Você também pode exportar um arquivo ZIP que inclui suas fotos e digitalizações originais, junto com o registro estruturado."
     }
   ],
   "foot": "Só listamos o que já está disponível. Quando lançarmos algo novo, aparece aqui — não antes.",
   "finalCta": {
     "title": "Veja com as suas próprias coisas.",
-    "body": "Comece grátis e adicione os seus primeiros bens em poucos minutos."
+    "body": "Comece grátis e adicione seus primeiros bens em poucos minutos."
   }
 }

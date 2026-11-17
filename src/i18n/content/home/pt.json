@@ -1,32 +1,32 @@
 {
   "meta": {
-    "title": "Um lar calmo e seguro para tudo o que a sua família possui",
-    "description": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — em privado, com segurança robusta. Comece grátis."
+    "title": "Um lar calmo e seguro para tudo o que sua família tem",
+    "description": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — com privacidade e segurança robusta. Comece grátis."
   },
   "hero": {
     "eyebrow": "Privado e seguro por design",
-    "heading": "Um lugar calmo e seguro para tudo o que a sua família possui.",
-    "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que a sua família saiba sempre o que existe e o que fazer a seguir.",
+    "heading": "Um lugar calmo e seguro para tudo o que sua família tem.",
+    "sub": "Faça o inventário dos seus bens, mantenha os documentos importantes em segurança e veja o panorama completo — para que sua família sempre saiba o que existe e o que fazer em seguida.",
     "trust": [
-      "Encriptado em trânsito e em repouso",
-      "Os seus dados nunca são vendidos",
+      "Criptografado em trânsito e em repouso",
+      "Seus dados nunca são vendidos",
       "Feito para famílias"
     ],
     "art": {
       "cards": [
         {
           "icon": "home",
-          "label": "Casa de família",
+          "label": "Casa da família",
           "sub": "Imóvel · escritura e seguro anexados"
         },
         {
           "icon": "document",
           "label": "Testamento e documentos da herança",
-          "sub": "3 ficheiros · armazenamento privado"
+          "sub": "3 arquivos · armazenamento privado"
         },
         {
           "icon": "chart",
-          "label": "Investimentos e pensões",
+          "label": "Investimentos e previdência",
           "sub": "Coleção · 5 itens"
         }
       ],
@@ -35,57 +35,57 @@
     }
   },
   "value": {
-    "heading": "Tudo num só lugar de confiança",
-    "sub": "Sem folhas de cálculo. Sem gavetas desorganizadas. Apenas clareza.",
+    "heading": "Tudo em um só lugar de confiança",
+    "sub": "Sem planilhas. Sem gavetas desorganizadas. Apenas clareza.",
     "cards": [
       {
         "icon": "folders",
-        "title": "Saiba o que possui.",
-        "body": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo reunido num só lugar organizado, e não espalhado por gavetas e folhas de cálculo."
+        "title": "Saiba o que você tem.",
+        "body": "Imóveis, contas, investimentos, objetos de valor, previdência — tudo reunido em um só lugar organizado, e não espalhado por gavetas e planilhas."
       },
       {
         "icon": "shield",
         "title": "Mantenha tudo seguro.",
-        "body": "Guarde os documentos importantes — escrituras, apólices, extratos — em privado, protegidos por segurança robusta."
+        "body": "Guarde os documentos importantes — escrituras, apólices, extratos — com privacidade, protegidos por segurança robusta."
       },
       {
         "icon": "compass",
-        "title": "Planeie com confiança.",
-        "body": "Veja o panorama completo e tenha uma visão geral clara e gratuita quando estiver pronto para pensar em herança, testamentos ou no que acontece a seguir."
+        "title": "Planeje com confiança.",
+        "body": "Veja o panorama completo e tenha uma visão geral clara e gratuita quando estiver pronto para pensar em herança, testamentos ou no que acontece em seguida."
       }
     ]
   },
   "steps": {
-    "heading": "Pronto a usar em três passos",
+    "heading": "Pronto para usar em três passos",
     "items": [
       {
-        "title": "Adicione o que possui.",
-        "body": "Tire uma foto ou carregue um documento — o Vaulto pode lê-lo e sugerir os detalhes, para que não tenha de escrever tudo à mão."
+        "title": "Adicione o que você tem.",
+        "body": "Tire uma foto ou envie um documento — o Vaulto pode lê-lo e sugerir os detalhes, para que você não precise digitar tudo à mão."
       },
       {
         "title": "Deixe o Vaulto organizar.",
-        "body": "Agrupe os bens em coleções, adicione os factos principais e mantenha os documentos anexados onde devem estar."
+        "body": "Agrupe os bens em coleções, adicione os fatos principais e mantenha os documentos anexados onde devem estar."
       },
       {
         "title": "Veja o panorama completo.",
-        "body": "Os bens da sua família numa única vista — prontos para partilhar com as pessoas importantes e para planear o futuro."
+        "body": "Os bens da sua família em uma única visão — prontos para compartilhar com as pessoas importantes e para planejar o futuro."
       }
     ]
   },
   "trustBand": {
-    "heading": "Criado para merecer a sua confiança com a sua informação mais sensível.",
-    "lead": "Os seus dados são encriptados no caminho até nós, os seus registos e ficheiros carregados são encriptados em repouso, e o Vaulto sela novamente as partes sensíveis dentro da própria aplicação — com chaves geridas no Google Cloud KMS. Os seus ficheiros são mantidos em armazenamento privado, o acesso é protegido e nunca vendemos a sua informação.",
+    "heading": "Criado para merecer sua confiança com a sua informação mais sensível.",
+    "lead": "Seus dados são criptografados no caminho até nós, seus registros e arquivos enviados são criptografados em repouso, e o Vaulto sela novamente as partes sensíveis dentro do próprio aplicativo — com chaves gerenciadas no Google Cloud KMS. Seus arquivos são mantidos em armazenamento privado, o acesso é protegido e nunca vendemos sua informação.",
     "cta": "Veja exatamente como mantemos tudo seguro →",
     "proof": [
-      "Encriptado em trânsito (TLS) e em repouso; ficheiros em armazenamento privado",
-      "Palavras-passe com hash — nem nós as conseguimos ler",
+      "Criptografado em trânsito (TLS) e em repouso; arquivos em armazenamento privado",
+      "Senhas com hash — nem nós conseguimos lê-las",
       "Sessões de curta duração, protegidas pelo navegador",
-      "O cofre de cada pessoa está isolado dos outros utilizadores",
-      "Nunca vendemos nem partilhamos os seus dados"
+      "O cofre de cada pessoa está isolado dos outros usuários",
+      "Nunca vendemos nem compartilhamos seus dados"
     ]
   },
   "finalCta": {
     "title": "Comece hoje o cofre da sua família.",
-    "body": "Grátis para começar. Sem folhas de cálculo."
+    "body": "Grátis para começar. Sem planilhas."
   }
 }

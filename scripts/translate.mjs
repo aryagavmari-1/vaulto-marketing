@@ -65,7 +65,7 @@ if (onlyLocales) targets = targets.filter((l) => onlyLocales.split(',').includes
 // pt-PT vs pt-BR per group, which is how /privacy ended up European and
 // /security Brazilian on the same site (ARY-1433).
 const LANG_FULL = {
-  es: 'Spanish', fr: 'French', pt: 'European Portuguese (pt-PT)', de: 'German', it: 'Italian',
+  es: 'Spanish', fr: 'French', pt: 'Brazilian Portuguese (pt-BR)', de: 'German', it: 'Italian',
   nl: 'Dutch', zh: 'Simplified Chinese', ja: 'Japanese', ar: 'Arabic',
   hi: 'Hindi', ru: 'Russian', pl: 'Polish', tr: 'Turkish', ko: 'Korean', sv: 'Swedish',
 };
@@ -77,21 +77,27 @@ const LANG_FULL = {
 const LOCALE_NOTES = {
   pt: `VARIANT AND REGISTER CONTRACT for Portuguese — this overrides the generic tone rule:
 
-- Write EUROPEAN Portuguese (pt-PT, as written in Portugal). Never Brazilian Portuguese.
-- Address the reader with the FORMAL third person: third-person-singular verbs plus "o seu / a sua"
-  ("Comece grátis", "Saiba o que possui", "os seus dados"). Do NOT use the "tu" forms
-  ("o teu cofre", "podes", "vês", "começa"). Do NOT use "você" as an ordinary subject pronoun —
-  pt-PT omits it ("O que possui", not "O que você possui"). "você"/"si" is fine only where the
-  pronoun is obligatory ("comprova que é você", "além de si").
-- Required lexicon — use the pt-PT term on the left, NEVER the Brazilian term on the right:
-  ficheiro (not arquivo, when it means a computer file), palavra-passe (not senha),
-  utilizador (not usuário), ecrã (not tela), gerir (not gerenciar), registo (not registro),
-  encriptação/encriptado (not criptografia/criptografado), desencriptar (not descriptografar),
-  base de dados (not banco de dados), aplicação (not aplicativo), Definições (not Configurações),
-  folha de cálculo (not planilha), planeamento (not planejamento), contacto (not contato),
-  controlo (not controle), partilhar (not compartilhar), ligação (not conexão),
-  telemóvel (not celular), facto (not fato), equipa (not time), registar (not cadastrar).
-  "arquivo" is allowed ONLY in its pt-PT sense of a physical archive/filing folder.
+- Write BRAZILIAN Portuguese (pt-BR, as written in Brazil). Never European Portuguese.
+  (ARY-4507: board directive ARY-4458 narrows v1 to Brazil + UK and names pt-BR as the
+  shipped Portuguese. The route stays /pt/ but it declares lang="pt-BR".)
+- Address the reader with the formal-polite "você" plus third-person-singular verbs — the
+  standard Brazilian business register ("Comece grátis", "Saiba o que você tem", "seus dados").
+  "você" IS the correct subject pronoun here; do not suppress it the way pt-PT does. Do NOT use
+  the "tu" forms ("o teu cofre", "podes", "vês").
+- Brazilian usage, not European, on these grammar points:
+  * Possessives normally drop the article: "seus dados", "sua família" (not "os seus dados").
+  * Progressive uses the GERUND: "está guardando" (never "está a guardar").
+  * Write "em outro / em algum" (never the contractions "noutro", "nalgum").
+  * Prefer a proclitic pronoun: "se você quiser", "nos avise".
+- Required lexicon — use the pt-BR term on the left, NEVER the European term on the right:
+  arquivo (not ficheiro, when it means a computer file), senha (not palavra-passe),
+  usuário (not utilizador), tela (not ecrã), gerenciar (not gerir), registro (not registo),
+  criptografia/criptografado (not encriptação/encriptado), descriptografar (not desencriptar),
+  banco de dados (not base de dados), aplicativo (not aplicação), Configurações (not Definições),
+  planilha (not folha de cálculo), planejamento (not planeamento), contato (not contacto),
+  controle (not controlo), compartilhar (not partilhar), conexão (not ligação),
+  celular (not telemóvel), fato (not facto), equipe (not equipa), cadastrar (not registar),
+  suporte (not apoio), vinculante (not vinculativo), propor/ajuizar uma ação (not intentar).
 - The brand takes masculine agreement: "o Vaulto", never "a Vaulto".`,
 };
 
