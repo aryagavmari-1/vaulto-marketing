@@ -44,22 +44,38 @@ export const BRAND = {
    * on the page. They exist for the registration detail the prose does not
    * carry, and `TermsPage.astro` renders that block only once there is some.
    *
-   * 🔴 `registrationNumber` IS BLANK ON PURPOSE — DO NOT FILL IT BY INFERENCE.
-   * The CNPJ on record is `7.187.794/0001-61`, which is 13 digits where a CNPJ
-   * has 14, and the obvious leading-zero repair (`07.187.794/0001-61`) FAILS its
-   * mod-11 check — the check digits for root 07187794 / branch 0001 compute to
-   * 99, not 61. So the number we hold is not a valid CNPJ under any one-digit
-   * repair. Publishing a guessed company registration number on the page whose
-   * whole job is to say who the user's counterparty is would be the same defect
-   * as inventing the entity name. The board ask is ARY-4506; it also supplies
-   * the registered address, and both are the SAME two facts the Play trader
-   * declaration needs (ARY-4502), so one answer serves both.
+   * `registrationNumber` + `address` RESOLVED on ARY-4506 / ARY-4508. The CNPJ
+   * carried since 2026-08-17 was `7.187.794/0001-61` — 13 digits where a CNPJ
+   * has 14 — so it was held blank rather than repaired by inference. Two
+   * independent methods now agree, and NEITHER is sufficient alone:
+   *
+   *  1. mod-11 arithmetic narrows the 13-digit string to exactly TWO valid
+   *     single-digit insertions, `57.187.794/0001-61` and `71.877.594/0001-61`.
+   *     (The obvious leading-zero repair `07.187.794/0001-61` is not one of
+   *     them — its check digits compute to 93.) Arithmetic alone cannot pick
+   *     between the two survivors.
+   *  2. the Receita Federal public register, read via two independent mirrors
+   *     (brasilapi.com.br, minhareceita.org), returns MERKADO CONSULTORIA LTDA
+   *     / ATIVA / MATRIZ / Sociedade Empresária Limitada for the first and
+   *     `não encontrado` for the second. The name it returns is the same one
+   *     the board confirmed on ARY-1732, independently of this repair.
+   *
+   * So the published number is register-sourced, not inferred. `address` is the
+   * registered seat exactly as the register holds it, re-cased from its ALL
+   * CAPS form; the register records NO complemento, so none is invented. These
+   * are the SAME two facts the Play trader declaration needs (ARY-4502).
+   *
+   * ⚠️ `address` is a single-locale string (`BRAND` is `as const`, one value per
+   * field) and carries the pt-BR rendering, per the ARY-4508 scope guard — only
+   * the country word and the `CEP` label would differ in en-GB. Do not restructure
+   * `BRAND` for that; if it ever needs to localize, move the line into
+   * `content/terms/<locale>.json` beside `entity.lead`, which is already per-locale.
    */
   legal: {
     entity: 'MERKADO CONSULTORIA LTDA',
     jurisdiction: 'Brazil',
-    registrationNumber: '',
-    address: '',
+    registrationNumber: '57.187.794/0001-61',
+    address: 'Av. Pedroso de Morais, 103, Pinheiros, São Paulo — SP, CEP 05419-000, Brasil',
   },
 
   // Social profiles — populated once the accounts exist (ARY-27). When set,
