@@ -1,0 +1,24 @@
+---
+/**
+ * Localized Terms of Service (ARY-4503).
+ *
+ * Unlike the other `[locale]/` routes, this one enumerates the locales DECLARED
+ * for `/terms/` in `PAGE_LOCALES` rather than every non-default locale. The ToS
+ * is hand-authored legal prose, not machine-translated marketing copy, so it
+ * ships only in the locales it has actually been written in (ARY-4458 v1: en +
+ * pt). That keeps hreflang, the sitemap, the footer link and the language
+ * switcher all pointing at pages that exist AND are genuinely in that language
+ * — adding a locale is one entry in `PAGE_LOCALES` plus its JSON catalog.
+ */
+import { localesWithPage, DEFAULT_LOCALE, type Locale } from '../../config/i18n';
+import TermsPage from '../../components/pages/TermsPage.astro';
+
+export function getStaticPaths() {
+  return localesWithPage('/terms/')
+    .filter((locale) => locale !== DEFAULT_LOCALE)
+    .map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params as { locale: Locale };
+---
+<TermsPage locale={locale} />

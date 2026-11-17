@@ -32,6 +32,24 @@ export const BRAND = {
     privacy: 'privacy@myvaulto.com',
   },
 
+  /**
+   * Registered operating entity behind the Terms of Service (ARY-4503).
+   *
+   * BLANK ON PURPOSE, and it is the one field on /terms/ engineering cannot
+   * author: no legal entity name appears anywhere in this repo or the product
+   * repo, so inventing one would publish a false statement of who the user's
+   * counterparty is. While `entity` is empty, /terms/ names "Vaulto" as the
+   * operator and renders NO registration block — never a placeholder.
+   *
+   * Filling it in is a one-line change, and it is the SAME fact Google Play
+   * needs for a trader declaration (ARY-4502), so the two unblock together.
+   * `address` is optional; the entity alone renders a valid identity line.
+   */
+  legal: {
+    entity: '',
+    address: '',
+  },
+
   // Social profiles — populated once the accounts exist (ARY-27). When set,
   // `linkedin`/`x` feed Organization JSON-LD `sameAs`, and `xHandle` (the
   // "@vaulto" form) drives the Twitter card `twitter:site` attribution.

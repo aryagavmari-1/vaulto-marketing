@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Termos de Serviço",
+    "description": "O acordo, em linguagem clara, entre o utilizador e a Vaulto — o que é o serviço, o que aceita, o que nos comprometemos a fazer e os direitos que mantém como consumidor."
+  },
+  "crumbs": {
+    "home": "Início",
+    "terms": "Termos"
+  },
+  "hero": {
+    "eyebrow": "Jurídico",
+    "heading": "Termos de Serviço",
+    "lead": "O acordo entre o utilizador e a Vaulto, em linguagem clara. Leia-o em conjunto com o nosso <a href=\"/privacy/\">resumo de privacidade</a> e a <a href=\"/security/\">visão geral de segurança</a>.",
+    "updated": "Versão 1.0 · Última atualização: 16 de novembro de 2026"
+  },
+  "entity": {
+    "lead": "A Vaulto é operada por"
+  },
+  "sections": [
+    {
+      "title": "O que é a Vaulto",
+      "body": "A Vaulto é um cofre privado para o registo de tudo o que a sua família possui — bens, dívidas, documentos e os detalhes que os acompanham — e um lugar para se preparar para os grandes momentos da vida. É uma ferramenta de registo e de preparação. Não é um banco, um depositário, uma seguradora nem um consultor profissional. Não guardamos o seu dinheiro nem os seus bens. Guardamos o registo que constrói sobre eles."
+    },
+    {
+      "title": "Com quem está a celebrar este acordo",
+      "body": "Estes termos constituem o acordo entre o utilizador e a Vaulto, que opera <a href=\"https://myvaulto.com\">myvaulto.com</a>, a aplicação web Vaulto e as aplicações Vaulto para iOS e Android. \"Nós\" significa a Vaulto; \"o utilizador\" significa a pessoa que usa o serviço. Ao criar uma conta ou ao usar a Vaulto, aceita estes termos. Se não os aceitar, por favor não use o serviço."
+    },
+    {
+      "title": "Quem pode usar a Vaulto",
+      "body": "É necessário ter pelo menos 18 anos e capacidade para celebrar um acordo vinculativo no país onde vive. Uma conta pertence a uma só pessoa e o utilizador é responsável por aquilo que é feito através da sua — por isso, mantenha os seus dados de início de sessão só para si e avise-nos de imediato se achar que outra pessoa os obteve."
+    },
+    {
+      "title": "O que coloca lá dentro, e a quem pertence",
+      "body": "Tudo o que acrescenta ao seu cofre continua a ser seu. Mantém a propriedade dos seus registos, fotografias, digitalizações e notas. Dá-nos apenas a permissão de que precisamos para operar o serviço para si: guardar o seu conteúdo, mostrá-lo de volta, processá-lo para produzir as funcionalidades que pede e manter cópias de segurança. Essa permissão existe para que o produto funcione — não é uma licença para usar o seu conteúdo para outros fins e termina quando apaga o conteúdo ou a sua conta."
+    },
+    {
+      "title": "O que aceita não fazer",
+      "body": "A Vaulto serve para os seus próprios registos. Por favor, não:",
+      "items": [
+        "Usar o serviço para qualquer fim ilegal, nem para guardar conteúdo que não tem o direito de guardar.",
+        "Acrescentar informação de outra pessoa sem ter autoridade para o fazer.",
+        "Tentar quebrar, sobrecarregar, sondar ou contornar as proteções do serviço, nem alcançar a conta ou o conteúdo de outra pessoa.",
+        "Copiar, recolher automaticamente, revender ou fazer engenharia inversa do serviço, nem usá-lo para construir um produto concorrente.",
+        "Usar o serviço de uma forma que prejudique a Vaulto ou as outras pessoas que o usam."
+      ]
+    },
+    {
+      "title": "Funcionalidades de IA, e o que elas não são",
+      "body": "Algumas funcionalidades da Vaulto usam IA: ler uma fotografia para preencher um item por si, estimar quanto algo vale, ler uma visita guiada em voz alta e produzir uma visão geral do seu grau de preparação. Esses resultados são estimativas e convites a olhar mais de perto. Não são conselho financeiro, jurídico, fiscal ou de seguros; podem estar errados ou incompletos; e nenhum deles é uma avaliação em que se deva basear para uma transação, uma declaração fiscal, uma participação de sinistro ou um tribunal. Confirme com um profissional qualificado tudo o que seja importante antes de agir. A informação que sai da Vaulto para processamento por IA, e quem a processa, está descrita no nosso <a href=\"/privacy/\">resumo de privacidade</a>."
+    },
+    {
+      "title": "Guardar as suas próprias cópias",
+      "body": "A Vaulto foi construída para que a sua informação nunca fique presa: pode exportar uma cópia dos seus registos juntamente com as fotografias e digitalizações que carregou, a partir das Definições, sempre que quiser. Guarde também as suas próprias cópias de tudo o que seja insubstituível. A Vaulto é um registo daquilo que possui e um lugar para se preparar — não substitui as próprias escrituras, apólices, certidões e testamentos originais."
+    },
+    {
+      "title": "Quanto custa",
+      "body": "Hoje, a Vaulto é gratuita. Se introduzirmos funcionalidades pagas, diremos isso com clareza antes de lhe ser pedido qualquer pagamento, e nunca será cobrado por algo que não tenha aceitado."
+    },
+    {
+      "title": "Disponibilidade e alterações ao produto",
+      "body": "A Vaulto é um produto jovem e muda com frequência. Podemos acrescentar, alterar ou remover funcionalidades e podemos interromper o serviço para manutenção. Trabalhamos para o manter disponível e rápido, mas não prometemos um serviço ininterrupto ou sem erros nem oferecemos um nível de disponibilidade garantido. Quando uma alteração afetar de forma significativa a maneira como usa a Vaulto, daremos aviso com antecedência razoável."
+    },
+    {
+      "title": "Terminar o acordo",
+      "body": "Pode deixar de usar a Vaulto quando quiser e pode apagar a sua conta e os dados nela contidos — veja <a href=\"/delete-account/\">como apagar a sua conta</a>. Podemos suspender ou encerrar uma conta que viole estes termos, que esteja a ser usada de forma ilegal ou quando a lei o exija; salvo se nos for impossível, explicaremos o motivo e daremos a oportunidade de corrigir a situação. Se algum dia descontinuarmos o serviço, daremos aviso com antecedência razoável e um período para exportar os seus dados primeiro."
+    },
+    {
+      "title": "A nossa responsabilidade perante o utilizador",
+      "body": "Prestaremos o serviço Vaulto com cuidado e competência razoáveis. Para além disso, o serviço é fornecido tal como está: não garantimos que satisfaça todas as necessidades, que os resultados de IA sejam exatos, nem que nenhum conteúdo se perca — e, na medida em que a lei o permita, não somos responsáveis por danos indiretos ou consequenciais, por lucros cessantes, nem por prejuízos resultantes da confiança numa estimativa ou numa visão geral. Nada aqui limita a responsabilidade que não pode ser limitada por lei, incluindo a responsabilidade por morte ou danos pessoais causados por negligência e por dolo."
+    },
+    {
+      "title": "Os direitos que mantém como consumidor",
+      "body": "Se usar a Vaulto como consumidor, mantém todos os direitos que a lei local lhe confere. No Reino Unido, isso inclui os direitos previstos no Consumer Rights Act 2015; no Brasil, inclui os direitos previstos no Código de Defesa do Consumidor. Quando esses direitos entrarem em conflito com algo nestes termos, prevalecem esses direitos."
+    },
+    {
+      "title": "Alterações a estes termos",
+      "body": "Quando alterarmos estes termos, publicamos a nova versão nesta página com uma nova data e um novo número de versão. Se uma alteração afetar materialmente os seus direitos, avisaremos — por e-mail ou na aplicação — antes de entrar em vigor. Continuar a usar a Vaulto depois de uma alteração significa que aceita os termos atualizados; se preferir não os aceitar, pode apagar a sua conta."
+    },
+    {
+      "title": "Lei aplicável",
+      "body": "Estes termos regem-se pela lei de Inglaterra e do País de Gales, e os tribunais de Inglaterra e do País de Gales têm competência. Se for um consumidor residente noutro país, pode também intentar uma ação no seu país de residência, e a lei de consumo imperativa desse país continua a aplicar-se."
+    }
+  ],
+  "contact": {
+    "title": "Contacto",
+    "lead": "Dúvidas sobre estes termos? Envie um e-mail para"
+  },
+  "finalCta": {
+    "title": "Os seus registos, as suas regras.",
+    "body": "Comece grátis — exporte ou apague tudo quando quiser. Sem dependência."
+  }
+}

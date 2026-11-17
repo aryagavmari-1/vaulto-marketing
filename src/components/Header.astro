@@ -6,7 +6,7 @@
  */
 import { BRAND } from '../config/brand';
 import MarketingButton from './marketing/MarketingButton.astro';
-import { DEFAULT_LOCALE, LOCALES, LOCALE_NAMES, localizedPath, type Locale } from '../config/i18n';
+import { DEFAULT_LOCALE, LOCALE_NAMES, localesWithPage, localizedPath, type Locale } from '../config/i18n';
 import { useTranslations, type UIKey } from '../i18n/ui';
 
 interface Props {
@@ -35,8 +35,11 @@ const norm = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const isActive = (href: string) => norm(href) === norm(path);
 // Language switcher: each option navigates to this same page in that locale.
 // Blog pages pass an explicit `switcher` (translated-slug URLs); other pages
-// derive it by prefixing the current path.
-const langOptions = switcher ?? LOCALES.map((l) => ({
+// derive it by prefixing the current path — but only for the locales that
+// actually HAVE this page (ARY-4503). Every marketing page ships in all 16, so
+// this is a no-op for them; /terms/ is the first page that opts out, and
+// offering `/de/terms/` in the dropdown would have navigated to a 404.
+const langOptions = switcher ?? localesWithPage(path).map((l) => ({
   value: localizedPath(path, l),
   label: LOCALE_NAMES[l],
   selected: l === locale,
