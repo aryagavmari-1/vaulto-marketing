@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { BRAND } from './src/config/brand';
-import { LOCALES, DEFAULT_LOCALE } from './src/config/i18n';
+import { LOCALES, DEFAULT_LOCALE, HREFLANG } from './src/config/i18n';
 
 // Blog articles use TRANSLATED slugs (ARY-523), so the sitemap's prefix-based
 // i18n pairing can't link them — `/blog/<en-slug>/` and `/pt/blog/<pt-slug>/`
@@ -11,8 +11,11 @@ import { LOCALES, DEFAULT_LOCALE } from './src/config/i18n';
 const blogSlugs = JSON.parse(readFileSync(new URL('./src/i18n/blog-slugs.json', import.meta.url)));
 const blogAlternatesByPath = {};
 for (const slugs of Object.values(blogSlugs)) {
+  // `lang` must be the BCP-47 value from HREFLANG, not the internal locale code:
+  // `/pt/` declares `pt-BR` (ARY-4507). Using `loc` here would make the sitemap
+  // contradict the `<link rel="alternate">` tags the pages themselves emit.
   const links = Object.entries(slugs).map(([loc, slug]) => ({
-    lang: loc,
+    lang: HREFLANG[loc],
     url: new URL(loc === DEFAULT_LOCALE ? `/blog/${slug}/` : `/${loc}/blog/${slug}/`, BRAND.url).href,
   }));
   links.push({ lang: 'x-default', url: new URL(`/blog/${slugs[DEFAULT_LOCALE]}/`, BRAND.url).href });
@@ -45,7 +48,11 @@ export default defineConfig({
     sitemap({
       i18n: {
         defaultLocale: DEFAULT_LOCALE,
-        locales: Object.fromEntries(LOCALES.map((l) => [l, l])),
+        // Key = the URL path segment, value = the declared language tag. These
+        // diverge for regionalised locales (`/pt/` → `pt-BR`, ARY-4507), so the
+        // value comes from HREFLANG — the same map the pages' own hreflang tags
+        // use — rather than echoing the path segment back.
+        locales: Object.fromEntries(LOCALES.map((l) => [l, HREFLANG[l]])),
       },
       // Override the prefix-derived alternates for translated-slug blog URLs
       // (ARY-523) with the manifest-correct set; leave every other page as-is.

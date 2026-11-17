@@ -40,6 +40,18 @@
  * `/security` clause to its support-access form, ARY-2587 restored the app's own
  * vault noun (ARY-1389) in fr/hi/ja/ko/ru.
  *
+ * ARY-4507 re-registered the `pt` pins from European into Brazilian register,
+ * because board directive ARY-4458 makes pt-BR the shipped Portuguese. This is a
+ * REGISTER change only — the claim is meaning-preserving, clause for clause:
+ *   "utilizadores"            -> "usuários"
+ *   "a nossa equipa de apoio" -> "nossa equipe de suporte"
+ *   "qualquer tipo de conta para funcionários que o pudesse abrir"
+ *                             -> "nenhum tipo de conta de funcionário que possa abri-lo"
+ * Nothing was added, removed, weakened or strengthened: it still says the vault
+ * is isolated from other users, that support cannot browse it, and that no staff
+ * account type exists that could open one. Flagged for Brand & Trust on the
+ * ARY-4507 PR precisely because a pin edit must be a visible decision.
+ *
  * Usage:
  *   node scripts/check-trust-band.mjs           # working tree (what prebuild runs)
  *   REV=<rev> node scripts/check-trust-band.mjs # read content at <rev> — the control
@@ -73,7 +85,7 @@ export const APPROVED_SECURITY = {
   ko: "각 사용자의 보관함은 다른 사용자와 분리되어 있으며, 저희 지원팀은 사용자의 보관함을 열람할 수 없습니다. Vaulto에는 사용자의 보관함을 열 수 있는 직원용 계정 유형이 없습니다.",
   nl: "De kluis van elke persoon is geïsoleerd van andere gebruikers, en ons supportteam kan je kluis niet inzien — Vaulto heeft geen accounttype voor medewerkers dat er een zou kunnen openen.",
   pl: "Sejf każdej osoby jest odizolowany od innych użytkowników, a nasz zespół wsparcia nie może przeglądać Twojego sejfu — Vaulto nie ma żadnego rodzaju konta dla pracowników, które mogłoby go otworzyć.",
-  pt: "O cofre de cada pessoa está isolado dos outros utilizadores e a nossa equipa de apoio não pode consultar o seu cofre — o Vaulto não tem qualquer tipo de conta para funcionários que o pudesse abrir.",
+  pt: "O cofre de cada pessoa está isolado dos outros usuários, e nossa equipe de suporte não pode consultar o seu cofre — o Vaulto não tem nenhum tipo de conta de funcionário que possa abri-lo.",
   ru: "Хранилище каждого пользователя изолировано от других пользователей, а наша служба поддержки не может просматривать ваше хранилище — в Vaulto нет типа учётной записи для сотрудников, который позволил бы его открыть.",
   sv: "Varje persons valv är isolerat från andra användare, och vårt supportteam kan inte se ditt valv — Vaulto har ingen kontotyp för anställda som skulle kunna öppna ett sådant.",
   tr: "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır ve destek ekibimiz kasanızı görüntüleyemez — Vaulto’da kasanızı açabilecek bir çalışan hesabı türü yoktur.",
@@ -98,7 +110,7 @@ export const APPROVED_TRUST_BAND = {
   ko: "각 사용자의 보관함은 다른 사용자와 분리되어 있습니다",
   nl: "De kluis van elke persoon is geïsoleerd van andere gebruikers",
   pl: "Sejf każdej osoby jest odizolowany od innych użytkowników",
-  pt: "O cofre de cada pessoa está isolado dos outros utilizadores",
+  pt: "O cofre de cada pessoa está isolado dos outros usuários",
   ru: "Хранилище каждого пользователя изолировано от других пользователей",
   sv: "Varje persons valv är isolerat från andra användare",
   tr: "Her kişinin kasası diğer kullanıcılardan yalıtılmıştır",

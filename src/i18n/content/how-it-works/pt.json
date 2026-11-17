@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Como funciona — inventarie os seus bens em 3 passos",
-    "description": "Adicione o que tem, deixe o Vaulto organizar, e veja a visão completa. Depois, use os Planos para pensar em testamentos, heranças, seguros e muito mais."
+    "title": "Como funciona — inventarie seus bens em 3 passos",
+    "description": "Adicione o que você tem, deixe o Vaulto organizar, e veja a visão completa. Depois, use os Planos para pensar em testamentos, heranças, seguros e muito mais."
   },
   "crumbs": {
     "home": "Início",
@@ -10,51 +10,51 @@
   "hero": {
     "eyebrow": "Como funciona",
     "heading": "De disperso a organizado, em três passos.",
-    "intro": "Não tem de escrever tudo à mão. O Vaulto lê as suas fotos e documentos e trata do trabalho pesado — para que começar leve minutos, não fins de semana."
+    "intro": "Você não precisa digitar tudo à mão. O Vaulto lê suas fotos e documentos e cuida do trabalho pesado — para que começar leve minutos, não fins de semana."
   },
   "steps": [
     {
-      "title": "Adicione o que tem.",
-      "body": "Tire uma foto ou carregue um documento e o Vaulto lê-o por si — preparando os detalhes para que não tenha de escrever tudo à mão. Adicione uma divisão, um recibo ou uma pasta de documentos de uma só vez.",
+      "title": "Adicione o que você tem.",
+      "body": "Tire uma foto ou envie um documento e o Vaulto faz a leitura por você — preparando os detalhes para que você não precise digitar tudo à mão. Adicione um ambiente, um recibo ou uma pasta de documentos de uma só vez.",
       "detail": "A captura assistida por IA transforma uma tarefa esmagadora em algumas sessões curtas."
     },
     {
       "title": "Deixe o Vaulto organizar.",
-      "body": "Agrupe os bens em coleções, adicione os factos principais que importam e mantenha os documentos que os comprovam anexados exatamente onde pertencem.",
-      "detail": "Imóveis, contas, investimentos, objetos de valor, pensões — tudo numa só estrutura."
+      "body": "Agrupe os bens em coleções, adicione os fatos principais que importam e mantenha os documentos que os comprovam anexados exatamente onde pertencem.",
+      "detail": "Imóveis, contas, investimentos, objetos de valor, previdência — tudo em uma só estrutura."
     },
     {
       "title": "Veja a visão completa.",
-      "body": "Os bens e documentos da sua família numa visão clara — prontos para partilhar com as pessoas importantes e para planear o futuro com uma visão geral gratuita quando estiver pronto.",
-      "detail": "Uma visão simples que pode entregar a um advogado ou consultor."
+      "body": "Os bens e documentos da sua família em uma visão clara — prontos para compartilhar com as pessoas importantes e para planejar o futuro com um panorama gratuito quando você estiver pronto.",
+      "detail": "Uma visão simples que você pode entregar a um advogado ou consultor."
     }
   ],
   "plans": {
     "eyebrow": "Planos",
-    "heading": "Quando estiver pronto, planeie o que vem a seguir.",
-    "intro": "O seu cofre mostra o que tem. Os Planos ajudam-no a pensar no que fazer com isso — desde um testamento ou herança até seguros, um acordo pré-nupcial ou bens em mais do que um país. Comece quando lhe fizer sentido e avance ao seu ritmo.",
+    "heading": "Quando estiver pronto, planeje o que vem em seguida.",
+    "intro": "Seu cofre mostra o que você tem. Os Planos ajudam você a pensar no que fazer com isso — desde um testamento ou herança até seguros, um pacto antenupcial ou bens em mais de um país. Comece quando fizer sentido para você e avance no seu ritmo.",
     "beats": [
       {
         "title": "Escolha uma área de foco.",
-        "body": "Escolha a área em que está a pensar — testamentos e heranças, seguros, um acordo pré-nupcial, bens em vários países e mais. Cada uma é um espaço calmo e guiado, não um formulário longo para preencher.",
-        "detail": "Áreas que cobrem os momentos que tendem a precisar de um plano."
+        "body": "Escolha a área em que você está pensando — testamentos e heranças, seguros, um pacto antenupcial, bens em vários países e mais. Cada uma é um espaço calmo e guiado, não um formulário longo para preencher.",
+        "detail": "Áreas que cobrem os momentos que costumam precisar de um plano."
       },
       {
         "title": "Converse sobre isso.",
-        "body": "Responda a algumas perguntas numa conversa curta e em linguagem simples. Escreva as suas respostas ou diga-as em voz alta — o que lhe for mais fácil.",
-        "detail": "Sem jargão e sem formulários longos. O Vaulto pergunta; você responde com as suas próprias palavras."
+        "body": "Responda a algumas perguntas em uma conversa curta e em linguagem simples. Escreva suas respostas ou fale em voz alta — o que for mais fácil para você.",
+        "detail": "Sem jargão e sem formulários longos. O Vaulto pergunta; você responde com suas próprias palavras."
       },
       {
         "title": "Receba um plano feito para a sua situação.",
-        "body": "O Vaulto transforma a conversa numa visão geral clara e pessoal da sua situação — o que acontece hoje, os custos prováveis e onde a sua proteção tem lacunas. Comece com uma visão geral gratuita e avance mais quando estiver pronto.",
-        "detail": "Use o seu plano para se sentir preparado — e para orientar uma conversa com um profissional qualificado."
+        "body": "O Vaulto transforma a conversa em um panorama claro e pessoal da sua situação — o que acontece hoje, os custos prováveis e onde a sua proteção tem lacunas. Comece com um panorama gratuito e avance mais quando estiver pronto.",
+        "detail": "Use seu plano para se sentir preparado — e para orientar uma conversa com um profissional qualificado."
       }
     ],
-    "honesty": "Os Planos dão-lhe informação geral para o ajudar a preparar-se e a fazer melhores perguntas. Não constituem aconselhamento jurídico, fiscal ou financeiro."
+    "honesty": "Os Planos dão a você informação geral para ajudar a se preparar e a fazer melhores perguntas. Não constituem aconselhamento jurídico, fiscal ou financeiro."
   },
   "securityLink": "Como mantemos tudo seguro →",
   "finalCta": {
-    "title": "Comece o seu cofre — grátis",
-    "body": "Adicione as suas primeiras coisas em minutos. Sem folhas de cálculo."
+    "title": "Comece seu cofre — grátis",
+    "body": "Adicione suas primeiras coisas em minutos. Sem planilhas."
   }
 }
