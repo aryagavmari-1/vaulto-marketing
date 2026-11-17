@@ -14,11 +14,13 @@
  * legal prose (links, &amp;) is preserved inside the JSON strings and rendered
  * via `set:html`.
  *
- * The one fact engineering cannot author is the registered operating entity, so
- * it is NOT content — it reads from `BRAND.legal` and the registration block
- * renders only once it is set. An unset entity ships a terms page with no
- * company identity rather than a placeholder (ARY-4502 needs the same fact for
- * the Play trader declaration).
+ * The counterparty itself is named in the APPROVED PROSE ("Who you are agreeing
+ * with"), not here — so this template never restates it. `BRAND.legal` carries
+ * the registration DETAIL the prose does not, and the block below renders only
+ * once some of it exists. Today both fields are blank on purpose: the CNPJ on
+ * record fails its mod-11 check, and a guessed registration number on a page
+ * whose job is to say who you are contracting with is the same defect as a
+ * guessed company name. Board ask: ARY-4506.
  */
 import Base from '../../layouts/Base.astro';
 import { BRAND } from '../../config/brand';
@@ -34,11 +36,12 @@ const crumbs = [
   { name: c.crumbs.home, url: `${BRAND.url}/` },
   { name: c.crumbs.terms, url: `${BRAND.url}/terms/` },
 ];
-// Registration line: "<lead> <entity>, <address>." Address is optional so the
-// entity alone still renders a valid identity.
-const entity = BRAND.legal.entity
-  ? [BRAND.legal.entity, BRAND.legal.address].filter(Boolean).join(', ')
-  : '';
+// Registration line: "<lead> <entity> — <number> · <address>." Rendered ONLY
+// when there is registration detail beyond the name, because the name already
+// appears in the approved body copy and repeating it would say nothing new.
+const registration = [BRAND.legal.registrationNumber, BRAND.legal.address]
+  .filter(Boolean)
+  .join(' · ');
 ---
 <Base
   title={c.meta.title}
@@ -54,7 +57,7 @@ const entity = BRAND.legal.entity
       <p class="lead" set:html={c.hero.lead} />
       <p class="updated">{c.hero.updated}</p>
 
-      {entity && <p>{c.entity.lead} {entity}.</p>}
+      {registration && <p>{c.entity.lead} {BRAND.legal.entity} — {registration}.</p>}
 
       {c.sections.map((s: any) => (
         <Fragment>

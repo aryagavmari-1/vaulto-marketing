@@ -35,18 +35,30 @@ export const BRAND = {
   /**
    * Registered operating entity behind the Terms of Service (ARY-4503).
    *
-   * BLANK ON PURPOSE, and it is the one field on /terms/ engineering cannot
-   * author: no legal entity name appears anywhere in this repo or the product
-   * repo, so inventing one would publish a false statement of who the user's
-   * counterparty is. While `entity` is empty, /terms/ names "Vaulto" as the
-   * operator and renders NO registration block — never a placeholder.
+   * Board-confirmed on ARY-1732 and supplied by the CEO on ARY-4504. The name
+   * exists in neither this repo nor the product repo — it only ever lived in
+   * that issue thread, which is why a source sweep could not find it.
    *
-   * Filling it in is a one-line change, and it is the SAME fact Google Play
-   * needs for a trader declaration (ARY-4502), so the two unblock together.
-   * `address` is optional; the entity alone renders a valid identity line.
+   * The counterparty is NAMED IN THE APPROVED PROSE (`content/terms/*.json` →
+   * "Who you are agreeing with"), so these fields are not what puts the entity
+   * on the page. They exist for the registration detail the prose does not
+   * carry, and `TermsPage.astro` renders that block only once there is some.
+   *
+   * 🔴 `registrationNumber` IS BLANK ON PURPOSE — DO NOT FILL IT BY INFERENCE.
+   * The CNPJ on record is `7.187.794/0001-61`, which is 13 digits where a CNPJ
+   * has 14, and the obvious leading-zero repair (`07.187.794/0001-61`) FAILS its
+   * mod-11 check — the check digits for root 07187794 / branch 0001 compute to
+   * 99, not 61. So the number we hold is not a valid CNPJ under any one-digit
+   * repair. Publishing a guessed company registration number on the page whose
+   * whole job is to say who the user's counterparty is would be the same defect
+   * as inventing the entity name. The board ask is ARY-4506; it also supplies
+   * the registered address, and both are the SAME two facts the Play trader
+   * declaration needs (ARY-4502), so one answer serves both.
    */
   legal: {
-    entity: '',
+    entity: 'MERKADO CONSULTORIA LTDA',
+    jurisdiction: 'Brazil',
+    registrationNumber: '',
     address: '',
   },
 
